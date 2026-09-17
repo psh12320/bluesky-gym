@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "verify-only does not extract",
+    "restores correct bytes",
+    "skips identical files",
+    "refuses different files",
+    "rejects traversal"
+  ],
+  "passed": 5
+}

@@ -2,6 +2,8 @@
 
 The `research-handoff-20260917` release accompanies `AGENT_HANDOFF.md`. Git contains source, tests and text experiment evidence. Release ZIP files contain local models, checkpoints, demonstrations, frozen source bundles and media. `replay-*.zip` separately preserves historical replay bytes; these are archival only. **Do not deserialize historical replay pickle files.**
 
+The release contains fourteen ZIP files (4.69 GB total): one 0.93 GB model/data/source archive and thirteen optional historical replay archives. There are 7,313 text experiment records in Git and 1,376 binary files mapped to release archives. The index has 626 retained run/record groups.
+
 The manifest in `artifacts/manifest.json` maps every included file to its exact path, size, SHA-256 and storage location. It also records excluded caches, dependencies, generated test fixtures, duplicate expanded source bundles and reference-only material. Local originals remain intact. Remote-only cluster artifacts are absent: receipts are not a substitute for downloading them.
 
 Clone the competition branch:

@@ -1,0 +1,25 @@
+{
+  "fixed_source_files_preserved": 65,
+  "fixed_source_manifest": "runs/sac-comparison-development-v1/protected-source.json",
+  "git_records_byte_exact": 7313,
+  "staged_credential_scan_findings": 0,
+  "harness_outside_allowed_hooks_unchanged": true,
+  "harness_comparison_base": "00930013219af4c17e509c3efc84a8becd0f3546",
+  "rl_suite": {
+    "passed": 309,
+    "seconds": 48.95,
+    "log": "runs/pretrained-mappo-development-v1/tests/full.log",
+    "sha256": "962564e3636750b923d073d26828b67fd13cb4a3abc275b3d0d7a7825c8797d6"
+  },
+  "model_source_data_archive": {
+    "asset": "artifacts-01.zip",
+    "members_verified": 1284,
+    "byte_checksums_match": true,
+    "models_or_pickle_objects_loaded": false
+  },
+  "historical_replay_objects_deserialized": false,
+  "limitations": [
+    "Remote cluster raw artifacts remain unavailable locally.",
+    "Passing tests and provenance checks do not establish competitive learned performance."
+  ]
+}
