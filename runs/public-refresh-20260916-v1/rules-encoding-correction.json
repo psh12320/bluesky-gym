@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-15T16:13:03.260608+00:00",
+  "original_audit_sha256": "6f16c1af6828c6709c6aaef1263292a8bdd856bebcd1bb6cd896f85198c9f2e4",
+  "local_rules_sha256": "3bc7ffb51adb22239ae22cf47dcbd2cf60bc874da7d0d709ac4197a8469536b4",
+  "remote_rules_sha256": "c5a9d6a02e5708f826ee6c5eacc8d08896db6cfc42ceae057751e964205c02fc",
+  "rules_equal_after_explicit_utf8_and_newline_normalization": true,
+  "explanation": "The initial comparison read local UTF-8 Markdown using Windows cp1252, producing a false mismatch. Explicit UTF-8 decoding shows identical text; the local file has CRLF line endings.",
+  "local_default_encoding": "cp1252",
+  "local_rules_modified": false
+}

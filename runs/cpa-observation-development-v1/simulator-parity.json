@@ -1,0 +1,14 @@
+{
+  "cases": 4,
+  "worlds_per_case": 2,
+  "all_scored_aircraft_metrics_identical": true,
+  "scenarios_identical": true,
+  "added_local_features": 45,
+  "actor_dimensions": {
+    "g0-cpa0": 125,
+    "g0-cpa1": 170,
+    "g1-cpa0": 125,
+    "g1-cpa1": 170
+  },
+  "scope": "Fixed zero latent actions, goal_offset, guidance off/on, filtering off; validates observation-only parity, not policy quality."
+}

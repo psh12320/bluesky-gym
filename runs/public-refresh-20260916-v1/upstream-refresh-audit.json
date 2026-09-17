@@ -1,0 +1,230 @@
+{
+  "checked_at_utc": "2026-09-15T16:11:13.327116+00:00",
+  "upstream_competition_commit": "00930013219af4c17e509c3efc84a8becd0f3546",
+  "matches_frozen_upstream_commit": true,
+  "rules_url": "https://raw.githubusercontent.com/TUDelft-CNS-ATM/bluesky-gym/00930013219af4c17e509c3efc84a8becd0f3546/docs/competition/COMPETITION.md",
+  "rules_sha256": "c5a9d6a02e5708f826ee6c5eacc8d08896db6cfc42ceae057751e964205c02fc",
+  "rules_equal_to_local_after_newline_normalization": false,
+  "requests": {
+    "upstream-competition-branch": {
+      "url": "https://api.github.com/repos/TUDelft-CNS-ATM/bluesky-gym/branches/AI4REAL-NET-Competition",
+      "sha256": "9379092f20fbffc72d4c8b99b6f79adad942fee0e4e489e23a3b8c06dc74cc7b"
+    },
+    "recent-issues": {
+      "url": "https://api.github.com/repos/TUDelft-CNS-ATM/bluesky-gym/issues?state=all&sort=updated&direction=desc&per_page=30",
+      "sha256": "97367264f795bcd56f2afef67bc13794e3a26a1e9aadeb4c70ea7397aaa3b9d1"
+    }
+  },
+  "recent_issue_titles": [
+    {
+      "number": 67,
+      "title": "Add repository cloning instructions to the competition getting-started guide",
+      "updated_at": "2026-07-24T10:46:13Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/67",
+      "is_pull_request": false
+    },
+    {
+      "number": 68,
+      "title": "Add repository cloning instructions to the competition getting-started guide",
+      "updated_at": "2026-07-24T10:45:11Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/68",
+      "is_pull_request": true
+    },
+    {
+      "number": 66,
+      "title": "update gif quality",
+      "updated_at": "2026-07-23T11:52:08Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/66",
+      "is_pull_request": true
+    },
+    {
+      "number": 65,
+      "title": "Small tweaks to the competition branch documentation",
+      "updated_at": "2026-07-22T12:13:58Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/65",
+      "is_pull_request": true
+    },
+    {
+      "number": 64,
+      "title": "Update README.md with functional Discord link",
+      "updated_at": "2026-07-22T11:52:39Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/64",
+      "is_pull_request": true
+    },
+    {
+      "number": 63,
+      "title": "Competition environment Branch for the AI4REAL-NET reinforcement learning competition",
+      "updated_at": "2026-07-22T11:12:22Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/63",
+      "is_pull_request": true
+    },
+    {
+      "number": 62,
+      "title": "Improve logging and multi-processing.",
+      "updated_at": "2026-07-14T09:28:51Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/62",
+      "is_pull_request": true
+    },
+    {
+      "number": 61,
+      "title": "Inconsistencies between compiled and python based geo functions in BlueSky create downstream issues",
+      "updated_at": "2026-07-09T13:55:04Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/61",
+      "is_pull_request": false
+    },
+    {
+      "number": 41,
+      "title": "Discrepancy between Simulation Heading (Compass) and Render Logic (Cartesian) causes 90\u00b0 rotation",
+      "updated_at": "2026-07-09T13:32:56Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/41",
+      "is_pull_request": false
+    },
+    {
+      "number": 2,
+      "title": "Rendering Issue Horizontal Environments Heading",
+      "updated_at": "2026-07-09T13:32:37Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/2",
+      "is_pull_request": false
+    },
+    {
+      "number": 60,
+      "title": "Refactor rendering",
+      "updated_at": "2026-07-09T13:31:27Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/60",
+      "is_pull_request": true
+    },
+    {
+      "number": 53,
+      "title": "Incorrect normalization of obstacle distance in StaticObstacleEnv",
+      "updated_at": "2026-07-09T13:19:48Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/53",
+      "is_pull_request": false
+    },
+    {
+      "number": 57,
+      "title": "Refactor observations for all environments",
+      "updated_at": "2026-07-09T13:17:32Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/57",
+      "is_pull_request": true
+    },
+    {
+      "number": 59,
+      "title": "Vertical environments are unable to accurately sustain altitude",
+      "updated_at": "2026-07-02T14:02:11Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/59",
+      "is_pull_request": false
+    },
+    {
+      "number": 58,
+      "title": "Enable discrete actions by default for all environments",
+      "updated_at": "2026-07-02T09:30:49Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/58",
+      "is_pull_request": false
+    },
+    {
+      "number": 51,
+      "title": "Bug: Incorrect Relative Velocity Calculation in horizontal_cr_env.py",
+      "updated_at": "2026-07-01T14:30:57Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/51",
+      "is_pull_request": false
+    },
+    {
+      "number": 56,
+      "title": "Create time-derivative actions for Control based systems",
+      "updated_at": "2026-07-01T11:56:59Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/56",
+      "is_pull_request": false
+    },
+    {
+      "number": 55,
+      "title": "Undesired coupling of sim_time steps and action frequency",
+      "updated_at": "2026-07-01T11:52:18Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/55",
+      "is_pull_request": false
+    },
+    {
+      "number": 54,
+      "title": "Altitude for HorizontalCREnv and PlanWaypointEnv initialized at 0, leading to unexpected behaviour.",
+      "updated_at": "2026-07-01T11:46:51Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/54",
+      "is_pull_request": false
+    },
+    {
+      "number": 50,
+      "title": "Deprecated obsolete ScreenDummy",
+      "updated_at": "2026-05-07T07:48:17Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/50",
+      "is_pull_request": true
+    },
+    {
+      "number": 52,
+      "title": "feat: Implement Bluesky-Gym experiment framework for automated RL workflows",
+      "updated_at": "2026-04-09T14:56:05Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/52",
+      "is_pull_request": true
+    },
+    {
+      "number": 46,
+      "title": "Refactor BaseEnv and Rendering Architecture for Modularity",
+      "updated_at": "2026-03-12T13:07:50Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/46",
+      "is_pull_request": false
+    },
+    {
+      "number": 49,
+      "title": "Issue: Tunneling Effect / Frame Skipping in Collision Detection",
+      "updated_at": "2026-02-09T15:55:26Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/49",
+      "is_pull_request": false
+    },
+    {
+      "number": 48,
+      "title": "Fix/Refactor Logging to Support Vectorized Environments (Replace Custom Callback with SB3 Wrappers)",
+      "updated_at": "2026-02-06T22:52:11Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/48",
+      "is_pull_request": false
+    },
+    {
+      "number": 47,
+      "title": "Proposed Base Class architecture",
+      "updated_at": "2026-01-28T16:05:13Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/47",
+      "is_pull_request": true
+    },
+    {
+      "number": 45,
+      "title": "Fix: Reward-hacking SectorCREnv and observation airspeed",
+      "updated_at": "2026-01-27T17:45:40Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/45",
+      "is_pull_request": true
+    },
+    {
+      "number": 44,
+      "title": "Potential Reward Hacking in SectorCREnv-v0",
+      "updated_at": "2026-01-19T15:57:04Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/44",
+      "is_pull_request": false
+    },
+    {
+      "number": 39,
+      "title": "Human-Readable Mode pygame window freezes",
+      "updated_at": "2026-01-14T22:17:28Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/39",
+      "is_pull_request": false
+    },
+    {
+      "number": 43,
+      "title": "Refactor random number generation to use self.np_random for seeding environments correctly",
+      "updated_at": "2026-01-14T22:11:15Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/pull/43",
+      "is_pull_request": true
+    },
+    {
+      "number": 42,
+      "title": "Use self.np_random instead of np.random or random for proper seeding and reproducibility",
+      "updated_at": "2026-01-13T17:43:37Z",
+      "url": "https://github.com/TUDelft-CNS-ATM/bluesky-gym/issues/42",
+      "is_pull_request": false
+    }
+  ]
+}

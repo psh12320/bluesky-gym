@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 101144,
+  "padded_transitions": 47336,
+  "optimizer_steps": 1091,
+  "verified_checkpoints": 4,
+  "verified_source_files": 92,
+  "learning_curve_rows": 29,
+  "aircraft_completed": 487,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "ffa8a1ceee4fae55e8fc4e42f0953aecc4277799428c12b86b3441f4ef8da3d9",
+  "policy_quality_assessed": false
+}

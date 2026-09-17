@@ -1,0 +1,28 @@
+{
+  "episodes": 2,
+  "seed": 2026,
+  "checked_aircraft_decisions": 2210,
+  "identical_initial_actions": true,
+  "identical_policy_state_tensors": true,
+  "initial_optimizers_empty": true,
+  "exact_reference_metrics": [
+    "waypoint_reached",
+    "flight_time",
+    "intrusion_events",
+    "intrusion_time",
+    "restricted_area_events",
+    "time_in_restricted_area",
+    "sector_exit_events",
+    "time_outside_sector",
+    "total_reward"
+  ],
+  "prediction_trainability": [
+    true,
+    false
+  ],
+  "model_sha256": {
+    "runs\\public-projected-v4-391k": "b4c7a671dbd0fae8146522fa8278f19f4119c859caf2e1b07fe0bb56eae45093",
+    "runs\\public-cpa-guarded-initial-predictions": "8ddfb994b18d1a27972fbcab066c5896f2e371b22121baac8cc028c22c77e906",
+    "runs\\public-cpa-guarded-initial-control": "9cd7c6461b681b630dcca8645a0b1b0236f2dc7f735d03c9f71ae04da8172ddc"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "algorithm": "ppo",
+  "training_seed": 49900,
+  "workers": 2,
+  "budget_live_transitions": 100000,
+  "factorial_controls": {
+    "initial_action_std": [
+      0.6065306597126334,
+      0.05
+    ],
+    "neutral_action_mean": [
+      false,
+      true
+    ]
+  },
+  "fixed_settings": {
+    "reward_scale": 1.0,
+    "progress_scale": 0.0,
+    "guidance": false,
+    "filter": false,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10
+  },
+  "existing_control": "runs/ppo-direct-pilot-v1",
+  "development_seed": 20260,
+  "evaluation_worlds": 20,
+  "current_action": "Create and evaluate an untrained neutral-mean, std-0.05 reference. No initialization training run has yet started.",
+  "evaluation_source": "runs/onpolicy-cluster-v1-verify",
+  "interpretation": "Distinguish initial-policy performance from incremental benefit of PPO updates. No classical planner or filter is introduced.",
+  "selection_scope": "Development-only pilot; multiple training seeds and reserved scenarios still required."
+}

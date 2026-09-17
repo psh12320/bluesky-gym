@@ -1,0 +1,40 @@
+{
+  "registered_at_utc": "2026-09-16T03:26:09.411738+00:00",
+  "selection": "First saved checkpoint at/above 50k; selected before these intermediate evaluations.",
+  "rows": [
+    {
+      "seed": 49920,
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\train",
+      "checkpoint": {
+        "file": "policy-live-50488.zip",
+        "sha256": "d493705b6ee74e874fda55c5d8e704b121d60caaf7221b5aaa38373a83c7a769",
+        "live_transitions": 50488,
+        "counted_transitions": 71680,
+        "padded_transitions": 21192,
+        "optimizer_steps": 570,
+        "policy_epochs": 140,
+        "rollouts": 14
+      }
+    },
+    {
+      "seed": 49940,
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\train",
+      "checkpoint": {
+        "file": "policy-live-52008.zip",
+        "sha256": "711696f3d3e7b6e040d607888d6b5318683ebf633c76a59be93207f971b565ee",
+        "live_transitions": 52008,
+        "counted_transitions": 76800,
+        "padded_transitions": 24792,
+        "optimizer_steps": 580,
+        "policy_epochs": 150,
+        "rollouts": 15
+      }
+    }
+  ],
+  "evaluation_worlds": 20,
+  "evaluation_seed": 20260,
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-goal-offset-source-v1-verify",
+  "analysis_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-learning-source-v2-verify",
+  "classical": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "first_seed_curve": "Existing seed49900 curve includes initial, 50100 and final; preserve it."
+}

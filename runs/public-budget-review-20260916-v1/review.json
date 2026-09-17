@@ -1,0 +1,65 @@
+{
+  "repository": "CGCooke/bluesky-gym",
+  "pinned_revision": "a458870c711679e4fedb764abc1d58c8f4ffdb61",
+  "live_browser_attempt": "Both pinned GitHub pages returned cache miss. No fresh source or ranking claim.",
+  "cache_verification": [
+    {
+      "public_path": "EXPERIMENTS.md",
+      "cached_path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\public-source-a458870c\\EXPERIMENTS.md.txt",
+      "cached_sha256": "d72d96626771c548350dccf256f8182a4ed6564e882072bbab23ff683e982106",
+      "expected_git_blob_sha1": "7d596bafb44d4ec32a22f6ac9c788df4e0d584e6",
+      "raw_git_blob_sha1": "7d596bafb44d4ec32a22f6ac9c788df4e0d584e6",
+      "lf_git_blob_sha1": "7d596bafb44d4ec32a22f6ac9c788df4e0d584e6",
+      "raw_match": true,
+      "lf_match": true
+    },
+    {
+      "public_path": "e27_train.py",
+      "cached_path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\public-source-a458870c\\e27_train.py.txt",
+      "cached_sha256": "8eff2a91f08e526c4a38d1b5fc2d1f6c4d05f9f777997164277b2c65df06be15",
+      "expected_git_blob_sha1": "cf9db7c107c815b4d2d290b2cf99894f8c3ae027",
+      "raw_git_blob_sha1": "700b9b8fe60f780b774e1322f7c4db03fcf389f8",
+      "lf_git_blob_sha1": "cf9db7c107c815b4d2d290b2cf99894f8c3ae027",
+      "raw_match": false,
+      "lf_match": true
+    },
+    {
+      "public_path": "explib.py",
+      "cached_path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\public-source-a458870c\\explib.py.txt",
+      "cached_sha256": "11f1c795832ab294fda5918198259d3f37f6a69c1a02e7358e42dcb202496902",
+      "expected_git_blob_sha1": "422387740b96daf7be3af490793aec668e16ab31",
+      "raw_git_blob_sha1": "e554f8518da84bea9ef47172b2adcf18acbe5e5f",
+      "lf_git_blob_sha1": "422387740b96daf7be3af490793aec668e16ab31",
+      "raw_match": false,
+      "lf_match": true
+    },
+    {
+      "public_path": "rust_port/staggered.py",
+      "cached_path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\public-source-a458870c\\rust_port_staggered.py.txt",
+      "cached_sha256": "278f0cf2a7e41f84e0ec8693242e40e84020487be23613ec94158c0b8106d7a8",
+      "expected_git_blob_sha1": "20ce67a4b94f108a50afedaa6b09e495e97e8e64",
+      "raw_git_blob_sha1": "105f35d2b572171fab9a524f1c46f613928d0fc0",
+      "lf_git_blob_sha1": "20ce67a4b94f108a50afedaa6b09e495e97e8e64",
+      "raw_match": false,
+      "lf_match": true
+    }
+  ],
+  "verification_correction": "Initial raw-byte check passed EXPERIMENTS.md and failed e27_train.py. The three cached Python files use CRLF. Explicit CRLF-to-LF normalization exactly reproduces their recorded Git blob hashes; cached files were not edited.",
+  "author_reported_ppo_budget": {
+    "planned_counted_steps": 10000000,
+    "selected_checkpoint_counted_steps": 7000000,
+    "selection": "Same seed-0 trajectory extended beyond an earlier 2M run."
+  },
+  "sac_e27_script": {
+    "total_counted_steps": 3000000,
+    "worlds": 16,
+    "aircraft_per_world": 10
+  },
+  "interpretation": "A million live steps is a diagnostic budget, not evidence of convergence. The author reports unstable PPO results across seeds; preserve all our planned seed results.",
+  "limitations": [
+    "Author-reported experiments were not independently rerun.",
+    "Counted-step and live-aircraft-step budgets are not directly interchangeable.",
+    "Different simulator, scheduling, observations, architecture and optimizer settings prevent an equal-budget algorithm ranking.",
+    "No verified competition leaderboard rank is inferred."
+  ]
+}

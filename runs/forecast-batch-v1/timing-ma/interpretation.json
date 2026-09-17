@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-09-15T15:46:08.584612+00:00",
+  "timing_summary_sha256": "3d6d1bea12d778adcac51ded2562c47e6ae1f526c5365d592ea522e8581483d7",
+  "all_four_replays_match_all_nine_metrics": true,
+  "distinct_scenarios": 2,
+  "scenario_executions": 8,
+  "timing_pairs": 2,
+  "direction_agrees_for_active_replay": false,
+  "reliable_overall_speedup_established": false,
+  "interpretation": "Pair 1 favors batching; pair 2 favors scalar execution. Local load and startup vary substantially. Report both pairs without treating the median ratio as a reliable speedup.",
+  "baseline_forecast_counters": "The zero forecast/batch counters in scalar rows mean uninstrumented; the baseline still computes its original forecasts.",
+  "production_deployment_promoted": false
+}

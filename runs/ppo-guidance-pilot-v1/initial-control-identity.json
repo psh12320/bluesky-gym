@@ -1,0 +1,13 @@
+{
+  "verified_at_utc": "2026-09-16T02:34:33.701384+00:00",
+  "policy_fingerprint": "3817e1a9ed5b41fbe00da564e86543a3edb85bb6daf74298d19ef73951d8b310",
+  "own_initial_sha256": "71b606008bc1113790ed8afaf00d7b1d9c4fc6cf57a9d36ed48d5ed4f2fab0e0",
+  "support_control_sha256": "f9c6e64ed1b8c3ed59d1fcf7f15b69ad4d44935e40abae082079d1a8f1af8870",
+  "exact_full_policy_tensor_identity": true,
+  "both_zero_experience": true,
+  "support_flags_match": true,
+  "guidance": true,
+  "filter": false,
+  "control_evaluation": "runs/initial-support-ablation-v1/eval-g1-f0-dev20",
+  "meaning": "The registered untrained g1-f0 evaluation is the exact initial control for this guided PPO run, once its full evaluation completes."
+}

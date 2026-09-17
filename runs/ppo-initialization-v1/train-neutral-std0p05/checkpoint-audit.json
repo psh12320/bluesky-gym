@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-initialization-v1\\train-neutral-std0p05",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 101525,
+  "padded_transitions": 875,
+  "optimizer_steps": 897,
+  "verified_checkpoints": 6,
+  "verified_source_files": 84,
+  "learning_curve_rows": 20,
+  "aircraft_completed": 160,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "d27919d0b5447de87483a996d40cd4f69893c0cdbae2652713d85e04abc9a58d",
+  "policy_quality_assessed": false
+}

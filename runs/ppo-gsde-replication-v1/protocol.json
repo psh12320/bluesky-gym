@@ -1,0 +1,115 @@
+{
+  "registered_at_utc": "2026-09-16T07:59:25.211339+00:00",
+  "purpose": "Test repeatability of the selected exploration-persistence signal and its safety cost on three fresh paired training seeds.",
+  "seeds": [
+    52200,
+    52300,
+    52400
+  ],
+  "arm_order": {
+    "52200": [
+      "every12",
+      "every1"
+    ],
+    "52300": [
+      "every1",
+      "every12"
+    ],
+    "52400": [
+      "every12",
+      "every1"
+    ]
+  },
+  "config": {
+    "algorithm": "ppo",
+    "workers": 1,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "device": "cpu",
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600,
+    "static_filter": true,
+    "mask_conflict_features": false,
+    "exploration": "gsde",
+    "sde_weight_std": 0.01
+  },
+  "arms": {
+    "every1": {
+      "sde_sample_freq": 1
+    },
+    "every12": {
+      "sde_sample_freq": 12
+    }
+  },
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-gsde-source-v1-verify",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-gsde-source-v1-verify",
+  "source_bundle_sha256": "51fba29cbe8b9196b7a169aedb107e9edf6a5ed3593a1638c9f964d3d478a669",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "stages": [
+    "initial",
+    "50k",
+    "final"
+  ],
+  "checkpoint_selection": "First saved checkpoint at/above 50k, within one full 2560-slot rollout; retain exact live counts.",
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "capacity_control": "Same local inputs, full_std gSDE architecture, parameter count and complete initial policy tensors, including log_std.",
+  "learning_control": "Each run is evaluated against its own saved zero-experience policy; paired initial behavior must be identical.",
+  "primary_contrast": "For each metric: (trained - own initial) with twelve-decision resampling minus (trained - own initial) with every-decision resampling.",
+  "aggregation": "Primary analysis includes only these three fresh seeds. Show each seed, mean and sample SD of own-initial learning and paired timing contrasts; report the original pilot separately.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "resource_policy": "One simulator worker, six sequential arms; existing SAC/PPO and GAE coordinators remain unchanged. Combined local simulator use stays below five workers.",
+  "limitations": [
+    "The recipe was selected after observing a pilot. The original seed 51700 is reported separately and excluded from the primary three-seed aggregate.",
+    "Twenty reused development worlds measure training-seed repeatability, not unseen-scenario generalization.",
+    "Same source, action support, full initial tensors and gSDE weight std within each seed; only resampling frequency differs.",
+    "The timing intervention changes both temporal action correlation and the optimizer response through the fixed KL stopping rule.",
+    "Both heading and speed noise timing change; their separate contributions are not isolated.",
+    "100k live transitions per run is a screening budget, not a convergence claim.",
+    "The prior pilot failed the restricted-area criterion. This follow-up does not waive that failure or declare a safe/competitive system.",
+    "Fixed route guidance and static filtering remain present. Aircraft-conflict filtering remains off.",
+    "Reserved streams20301/20302 and the official stream42 remain untouched."
+  ],
+  "failure_behavior": "Stop this coordinator on a failed check or incomplete budget, preserve every artifact, and do not restart automatically.",
+  "training_bundle_sha256": "51fba29cbe8b9196b7a169aedb107e9edf6a5ed3593a1638c9f964d3d478a669",
+  "initial_control": "Full initial policy tensors and conditional action distributions are identical; only subsequent noise resampling differs.",
+  "source_review": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\exploration-actuation-diagnostic-v2\\analysis.json",
+  "noise_scale_review": {
+    "reference_checkpoint": "runs/gsde-development-v1/ppo/train/initial-model.zip",
+    "reference_observations": "runs/ppo-observation-diagnostic-v1/observations.npz",
+    "observations": 371,
+    "reference_initial_seed": 49040,
+    "weight_std_001_heading_action_std_median": 0.0736365020275116,
+    "weight_std_005_heading_action_std_median": 0.36814987659454346,
+    "selected_weight_std": 0.01,
+    "interpretation": "Noise matrix std is not marginal action std; input-dependent noise varies with features. These descriptive values are on a different initial seed, not performance evidence."
+  },
+  "selected_pilot": {
+    "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1",
+    "protocol_sha256": "9cb39695d73093e01fbb1f614bacc628247547f848a5292c2db8af9098a58dea",
+    "results_sha256": "d98f4b1983bb25a27bbc9f354424cacf3789de2d8a286714ffcf3fd24cd38cb9",
+    "screen_passed": false,
+    "why_follow_up": "A 16-point own-initial clean-completion gain with shorter flights, accompanied by a restricted-area cost. Check repeatability before treating this as a candidate."
+  },
+  "promotion_rule": "No automatic promotion. Apply the unchanged multi-metric screen to each fresh seed and the fresh-seed mean, report every failure and all physical metrics, and require further candidate selection before untouched scenarios.",
+  "optimizer_accounting": "Report actual steps and full-budget fractions per arm and seed. The exploratory pilot revealed different adaptive KL stopping; do not describe a matched update-count experiment."
+}

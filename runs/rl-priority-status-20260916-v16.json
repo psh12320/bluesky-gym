@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-09-16T03:09:14.0514914Z",
+  "cluster_bootstrap_job": 851402,
+  "cluster_bootstrap_status": "COMPLETED",
+  "next_bundle": "runs/cluster-ppo-baseline-v1.zip",
+  "next_bundle_sha256": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+  "next_training_seeds": [
+    50100,
+    50200,
+    50300
+  ],
+  "live_steps_per_seed": 1000000,
+  "cluster_training_submitted": false,
+  "local_guided_replication_training": "All three 100k seeds complete",
+  "local_support_controls": "All four control cells evaluated and support-effects.json saved",
+  "remaining_local_evaluation": "seed49940 final evaluation, session88767",
+  "existing_sources_and_logs_preserved": true,
+  "competitive_learned_performance_demonstrated": false,
+  "unseen_scenarios_used": false,
+  "full_goal_complete": false
+}

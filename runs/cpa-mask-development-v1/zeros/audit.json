@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cpa-mask-development-v1\\zeros\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 1280,
+  "padded_transitions": 0,
+  "optimizer_steps": 12,
+  "verified_checkpoints": 3,
+  "verified_source_files": 93,
+  "learning_curve_rows": 2,
+  "aircraft_completed": 0,
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 109825,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "d1c817c1ed733645179b2bdc22116a579ddaa0b9097cc506ba26adea3eee5223",
+  "policy_quality_assessed": false
+}

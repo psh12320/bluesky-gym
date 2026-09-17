@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+  "algorithm": "mappo",
+  "status": "wall_limit_before_budget",
+  "live_transitions": 708127,
+  "padded_transitions": 244193,
+  "optimizer_steps": 7729,
+  "verified_checkpoints": 9,
+  "verified_source_files": 89,
+  "learning_curve_rows": 186,
+  "aircraft_completed": 3900,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 423425,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": true,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "3ec248d5d7cbccceff6715cf796da06e027cdb872054e46a96ee01b105957b94",
+  "policy_quality_assessed": false
+}

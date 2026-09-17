@@ -1,0 +1,13 @@
+{
+  "observed_at_utc": "2026-09-15T15:28:32.952499+00:00",
+  "status": "incomplete",
+  "tool_exit_code": 1,
+  "tool_session_id": 72540,
+  "original_state_sha256": "e83a878f15704712ca5e1607183dcb093ea8c39433e9a4028cc01a2923441452",
+  "log_sha256": "38a15b032d0dad2b603d72e795180c2df39152c60c741671e6669452f9202ecc",
+  "summary_exists": false,
+  "interpretation": "Process exited before final evidence was written. No controller parity or speedup established.",
+  "resource_context": "Severe local memory/disk pressure observed around the exit; causal diagnosis is unconfirmed.",
+  "restart_performed": false,
+  "unchanged_extracted_files": 145
+}

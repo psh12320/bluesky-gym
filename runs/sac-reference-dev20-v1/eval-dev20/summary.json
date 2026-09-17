@@ -1,0 +1,59 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.995,
+      "std": 0.07053367989832944
+    },
+    "flight_time": {
+      "mean": 1068.13,
+      "std": 487.2443464012692
+    },
+    "intrusion_events": {
+      "mean": 0.03,
+      "std": 0.1705872210923198
+    },
+    "intrusion_time": {
+      "mean": 1.29,
+      "std": 7.815746925278479
+    },
+    "restricted_area_events": {
+      "mean": 0.01,
+      "std": 0.09949874371066199
+    },
+    "time_in_restricted_area": {
+      "mean": 0.205,
+      "std": 2.392274022765787
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 35.791152286903376,
+      "std": 7.909475604353021
+    }
+  },
+  "clean_completion_rate": 0.955,
+  "all_aircraft_clean_completion_rate": 0.7,
+  "algorithm": "sac",
+  "mode": "learned",
+  "seed": 20260,
+  "world_decisions": 7348,
+  "wall_seconds": 739.0618145000008,
+  "csv_sha256": "419a2c9343b4f9ebc284a9a77ffcda80932d3a5ff1487e703efb50af180e8dc9",
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "execution_sources_unchanged": true,
+  "additional_training_transitions": 0,
+  "runtime": {
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "navdata_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+    "isolated_simulator_files": true
+  }
+}

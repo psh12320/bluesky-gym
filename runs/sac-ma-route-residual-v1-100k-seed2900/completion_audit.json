@@ -1,0 +1,18 @@
+{
+  "model_sha256": "87aae77801f720d791ba141b0ef559095a5647181df0263b954b6c975e236ab3",
+  "timesteps": 100000,
+  "optimizer_updates": 38000,
+  "actual_training": {
+    "timesteps": 100000,
+    "new_timesteps": 100000,
+    "wall_seconds": 2382.1293312000344,
+    "live_transitions": 60517,
+    "skipped_transitions": 39483,
+    "new_live_transitions": 60517,
+    "new_skipped_transitions": 39483
+  },
+  "actual_net_arch": [
+    64,
+    64
+  ]
+}

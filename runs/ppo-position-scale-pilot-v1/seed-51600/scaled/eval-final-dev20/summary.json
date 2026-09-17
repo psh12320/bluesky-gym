@@ -1,0 +1,77 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.985,
+      "std": 0.12155245781143219
+    },
+    "flight_time": {
+      "mean": 1221.33,
+      "std": 532.9586861099085
+    },
+    "intrusion_events": {
+      "mean": 1.49,
+      "std": 1.337871443749361
+    },
+    "intrusion_time": {
+      "mean": 136.66,
+      "std": 242.2986883992565
+    },
+    "restricted_area_events": {
+      "mean": 0.01,
+      "std": 0.09949874371066199
+    },
+    "time_in_restricted_area": {
+      "mean": 0.325,
+      "std": 4.057015528686081
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -92.66383236938236,
+      "std": 229.74477287868632
+    }
+  },
+  "clean_completion_rate": 0.275,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 48933,
+  "padded_transitions": 29737,
+  "world_decisions": 7867,
+  "aircraft_terminated": 197,
+  "aircraft_truncated": 3,
+  "wall_seconds": 345.73020579999866,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 20.0
+  },
+  "csv_sha256": "b15a868d3b296c1d630543cdbd7553d47fe75b1893f2bee0e45999e5a271653e"
+}

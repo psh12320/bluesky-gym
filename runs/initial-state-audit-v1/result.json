@@ -1,0 +1,155 @@
+{
+  "seed": 2026,
+  "episodes": 200,
+  "scenario_checks": {
+    "86": {
+      "exact_saved_scenario_match": true,
+      "scenario_sha256": "6d801052d9f60d2a5f5e0635c2ba00640c83c695c289a88340598f50ac528f30"
+    },
+    "96": {
+      "exact_saved_scenario_match": true,
+      "scenario_sha256": "160c4f45127136f0b804cb2881d77686a9da2e9f426b55188d5b69d7b476562f"
+    },
+    "179": {
+      "exact_saved_scenario_match": true,
+      "scenario_sha256": "c4eb002f5d3121808ce426d6ebf1f1bee80bd43371cc4766324585f7a8eec243"
+    },
+    "181": {
+      "exact_saved_scenario_match": true,
+      "scenario_sha256": "8c4fe76dd1a9a5569b2704bd166092239dd6f8a6ed034fe8118a85ad0cbb80be"
+    }
+  },
+  "scope": "Reset-time scored events only; no official metrics removed or adjusted",
+  "script_sha256": "46f34a980294164737cf161bf039953e85c5b8c0d59d301394f7953a16f95506",
+  "20": {
+    "initial_intrusion_scenarios": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "initial_intrusion_count": 4,
+    "initial_scored_safety_scenarios": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "maximum_possible_clean_completion_rate": 0.8,
+    "retained_policy_conflict_scenarios_without_initial_intrusion": [],
+    "initial_metric_totals": {
+      "intrusion_events": 4.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0
+    }
+  },
+  "200": {
+    "initial_intrusion_scenarios": [
+      1,
+      4,
+      8,
+      16,
+      27,
+      28,
+      32,
+      48,
+      72,
+      74,
+      75,
+      105,
+      108,
+      115,
+      135,
+      136,
+      142,
+      153,
+      161,
+      170,
+      172,
+      173,
+      184,
+      193,
+      195
+    ],
+    "initial_intrusion_count": 25,
+    "initial_scored_safety_scenarios": [
+      1,
+      4,
+      8,
+      16,
+      27,
+      28,
+      32,
+      48,
+      54,
+      72,
+      74,
+      75,
+      102,
+      105,
+      108,
+      115,
+      135,
+      136,
+      142,
+      153,
+      161,
+      170,
+      172,
+      173,
+      184,
+      193,
+      195
+    ],
+    "maximum_possible_clean_completion_rate": 0.865,
+    "retained_policy_conflict_scenarios_without_initial_intrusion": [
+      22,
+      25,
+      29,
+      33,
+      36,
+      40,
+      42,
+      45,
+      46,
+      59,
+      64,
+      65,
+      68,
+      85,
+      86,
+      88,
+      91,
+      93,
+      94,
+      102,
+      109,
+      111,
+      130,
+      134,
+      140,
+      147,
+      155,
+      157,
+      158,
+      166,
+      171,
+      183,
+      187,
+      188,
+      189,
+      197
+    ],
+    "initial_metric_totals": {
+      "intrusion_events": 25.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 2.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0
+    }
+  }
+}

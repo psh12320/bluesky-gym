@@ -1,0 +1,8 @@
+{
+  "initial_real_models_checked": true,
+  "controlled_configuration_passed": true,
+  "known_constant_effect_checked": true,
+  "invalid_inputs_rejected": 8,
+  "incomplete_analysis_rejected": true,
+  "source_sha256": "dafff32bfbbb064dd4f509e42bc33e08ef3c50daaec3a204535ffbc61eb04dc7"
+}

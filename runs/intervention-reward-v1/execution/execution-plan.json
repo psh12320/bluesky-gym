@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-09-15T16:52:59.659067+00:00",
+  "protocol_sha256": "89a73663fe90b4198d431678ba9342f96255b26377aa2c8d116bb75db1dd7d13",
+  "runner_sha256": "4438a6153952acb232e9d8741937175870c266ad29e38176f83cea8025680faa",
+  "extension_sha256": "82335cb0a4861d8ac64e08bf3d8c8d273727d71a32e4cd72dfc5eb1b26201dc3",
+  "stage_order": [
+    "validate_0",
+    "validate_1",
+    "train_0",
+    "evaluate_0",
+    "train_1",
+    "evaluate_1"
+  ]
+}

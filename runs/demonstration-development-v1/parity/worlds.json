@@ -1,0 +1,18 @@
+[
+  {
+    "episode": 0,
+    "file": "world-00000.npz",
+    "sha256": "73ed479ab79af4c97d0e0501d9f0e07149a94aa3a23686b94dbc0da2d2bf3c76",
+    "scenario_sha256": "6684926c7289bd8432a31af5074bd32b85fff20f3961f66edf76fb6119b4b60b",
+    "live_transitions": 1727,
+    "interventions": 179
+  },
+  {
+    "episode": 1,
+    "file": "world-00001.npz",
+    "sha256": "83d7d09fd22982b62c903a0392a73422143242944111fa4234c1d0023d9b4efd",
+    "scenario_sha256": "ccab10940199f04759a7aee3b98da016aa5c2c4f70da11a1ab00aafd823377c1",
+    "live_transitions": 1779,
+    "interventions": 451
+  }
+]

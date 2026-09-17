@@ -1,0 +1,52 @@
+{
+  "raw": {
+    "optimizer_epsilon": 1e-05,
+    "max_grad_norm": 0.5,
+    "groups": {
+      "actor_hidden": {
+        "parameters": 32640,
+        "median_bias_corrected_gradient_rms": 1.6392899851780385e-05,
+        "fraction_below_adam_epsilon": 0.2830576002597809,
+        "median_epsilon_attenuation_factor": 0.621110200881958
+      },
+      "actor_head": {
+        "parameters": 258,
+        "median_bias_corrected_gradient_rms": 0.00169833202380687,
+        "fraction_below_adam_epsilon": 0.0,
+        "median_epsilon_attenuation_factor": 0.9941463470458984
+      },
+      "critic": {
+        "parameters": 98305,
+        "median_bias_corrected_gradient_rms": 0.0001329030783381313,
+        "fraction_below_adam_epsilon": 0.008534662425518036,
+        "median_epsilon_attenuation_factor": 0.9300224781036377
+      }
+    },
+    "interpretation": "Saved optimizer moments after clipping; diagnostic evidence, not a causal ablation."
+  },
+  "shaped": {
+    "optimizer_epsilon": 1e-05,
+    "max_grad_norm": 0.5,
+    "groups": {
+      "actor_hidden": {
+        "parameters": 32640,
+        "median_bias_corrected_gradient_rms": 2.330328470634413e-06,
+        "fraction_below_adam_epsilon": 0.9953431487083435,
+        "median_epsilon_attenuation_factor": 0.18899160623550415
+      },
+      "actor_head": {
+        "parameters": 258,
+        "median_bias_corrected_gradient_rms": 0.000327379530062899,
+        "fraction_below_adam_epsilon": 0.0,
+        "median_epsilon_attenuation_factor": 0.9703598022460938
+      },
+      "critic": {
+        "parameters": 98305,
+        "median_bias_corrected_gradient_rms": 0.00031018926529213786,
+        "fraction_below_adam_epsilon": 0.0003865520702674985,
+        "median_epsilon_attenuation_factor": 0.9687684774398804
+      }
+    },
+    "interpretation": "Saved optimizer moments after clipping; diagnostic evidence, not a causal ablation."
+  }
+}

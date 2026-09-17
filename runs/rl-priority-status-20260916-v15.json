@@ -1,0 +1,40 @@
+{
+  "recorded_at_utc": "2026-09-16T02:53:12.058981+00:00",
+  "goal_turn_classification": "progress",
+  "completed_evidence": [
+    "Audited wall-limited PPO and MAPPO final checkpoints.",
+    "Evaluated both final checkpoints on twenty paired development worlds.",
+    "Completed matched-budget PPO/MAPPO comparison at 700844 and 701204 live transitions.",
+    "Completed guided PPO seed49900 at 101144 live transitions and evaluated initial, 50100 and final checkpoints.",
+    "Recorded original success-screen failures and all native metrics, uncertainty and learning curves.",
+    "Fixed and tested two additional CPU-only fixtures for future cluster test portability."
+  ],
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "classical_and_sac_preserved": true,
+  "unseen_scenarios_used": false,
+  "final_unguided_results": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-scaled-final-evaluations-v1\\final-results.json",
+  "matched_algorithm_comparison": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-scaled-final-evaluations-v1\\validated-700k-comparison.json",
+  "guided_pilot_results": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\validated-results.json",
+  "live_handles": {
+    "support_controls": 86431,
+    "seed_replication_training": 63980,
+    "seed49920_initial_evaluation": 51717
+  },
+  "replication_current_seed": 49920,
+  "replication_last_recorded_live_transitions": 83773,
+  "replication_additional_queued_seed": 49940,
+  "cluster": {
+    "failed_job": 851227,
+    "recovery_bundle_sha256": "d3c98a95e061d827ab295b1e458dd42e30c308ef2d1c45902b23ce372b6802c3",
+    "new_job_id": "Not yet supplied",
+    "resubmission_status_question_pending": true
+  },
+  "remaining_work": [
+    "Finish every existing support evaluation and seed replication.",
+    "Evaluate each replicated policy against its own initial model.",
+    "Use results to choose larger-budget PPO/SAC/MAPPO comparisons and complete trained guidance/filter ablations.",
+    "Validate and run university-cluster training with CPU provisioning.",
+    "Establish strong learned performance across training seeds and reserved unseen scenarios."
+  ]
+}

@@ -1,0 +1,17 @@
+{"verified_files": 154, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+Specified working directory C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\maneuver-mapping-development-v1\native\simulator doesn't exist!
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\maneuver-mapping-development-v1\native\simulator\scenario"
+Traceback (most recent call last):
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\maneuver-mapping-development-v1\integration.py", line 205, in <module>
+    main()
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\maneuver-mapping-development-v1\integration.py", line 189, in main
+    {"vector":vector, "native":native, "review":review}[sys.argv[1]]()
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\maneuver-mapping-development-v1\integration.py", line 125, in native
+    bs.init(mode="sim", detached=True, workdir=str(directory / "simulator"))
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\.venv\Lib\site-packages\bluesky\__init__.py", line 71, in init
+    pathfinder.init(workdir)
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\.venv\Lib\site-packages\bluesky\pathfinder.py", line 143, in init
+    subdir.mkdir()
+  File "C:\Users\Shricharan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\maneuver-mapping-development-v1\\native\\simulator\\scenario'

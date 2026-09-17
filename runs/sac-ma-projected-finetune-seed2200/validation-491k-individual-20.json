@@ -1,0 +1,62 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.975,
+      "std": 0.15612494995995996
+    },
+    "flight_time": {
+      "mean": 1264.38,
+      "std": 570.7354427403296
+    },
+    "intrusion_events": {
+      "mean": 0.66,
+      "std": 0.8685620300243386
+    },
+    "intrusion_time": {
+      "mean": 43.39,
+      "std": 70.65746881965133
+    },
+    "restricted_area_events": {
+      "mean": 0.125,
+      "std": 0.35968736424845393
+    },
+    "time_in_restricted_area": {
+      "mean": 8.04,
+      "std": 29.743880042791996
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -8.66353143586472,
+      "std": 69.58368103799317
+    }
+  },
+  "clean_completion_rate": 0.47,
+  "all_aircraft_clean_completion_rate": 0.1,
+  "wall_seconds": 578.1409260000219,
+  "world_decisions": 4683,
+  "seed": 2026,
+  "env": "ma",
+  "static_projection_statistics": {
+    "actions": 25381,
+    "interventions": 6258,
+    "no_feasible_candidate": 478
+  },
+  "policy": "runs\\sac-ma-projected-finetune-seed2200\\checkpoints\\model_491520_steps.zip",
+  "recipe": "public_weights",
+  "guard_static": true,
+  "official_protocol": false,
+  "model_sha256": "c5558ca89ac8102d7e88c25af4a0fbb2a707c0d41d9b134204d99b0652f91bce",
+  "inference_mode": "per_aircraft",
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0
+}

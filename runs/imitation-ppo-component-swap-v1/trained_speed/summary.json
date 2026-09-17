@@ -1,0 +1,77 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.995,
+      "std": 0.07053367989832943
+    },
+    "flight_time": {
+      "mean": 1082.285,
+      "std": 490.78021942107654
+    },
+    "intrusion_events": {
+      "mean": 1.16,
+      "std": 1.1976643937263893
+    },
+    "intrusion_time": {
+      "mean": 103.51,
+      "std": 201.96108511294943
+    },
+    "restricted_area_events": {
+      "mean": 0.04,
+      "std": 0.27999999999999997
+    },
+    "time_in_restricted_area": {
+      "mean": 1.175,
+      "std": 8.87999859234223
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -61.377934006397666,
+      "std": 191.35118789806347
+    }
+  },
+  "clean_completion_rate": 0.35,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "arm": "trained_speed",
+  "component_sources": {
+    "heading": "initial",
+    "speed": "trained"
+  },
+  "world_decisions": 7215,
+  "csv_sha256": "8150acf5b629b71afe39ea9276dfc93a47fe4a6d31fa2e5a12b4baaa6206516a",
+  "wall_seconds": 668.781999999992,
+  "pre_filter_commands": {
+    "live_commands": 43368,
+    "mean_speed_increment": 0.9222034364119684,
+    "negative_speed_fraction": 2.3058476295886366e-05,
+    "positive_speed_fraction": 0.9999769415237041,
+    "mean_absolute_heading_command_degrees": 2.1658829957256187
+  },
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "direct",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0
+  },
+  "diagnostic_only": true
+}

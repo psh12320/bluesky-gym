@@ -1,0 +1,41 @@
+{
+  "registered_at_utc": "2026-09-16T06:21:23.963017+00:00",
+  "dataset": "runs/ppo-observation-diagnostic-v1/observations.npz",
+  "dataset_sha256": "a1679dfd030e75b7b50944a6ca7f157b3e760dddd9d5744275d2cf53fc7762e4",
+  "layout": "runs/ppo-observation-diagnostic-v1/layout.json",
+  "models": {
+    "cpa_50400_features": {
+      "path": "runs/ppo-cpa-matched-v1/seed-50400/features/train/model.zip",
+      "sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c"
+    },
+    "cpa_50400_zeros": {
+      "path": "runs/ppo-cpa-matched-v1/seed-50400/zeros/train/model.zip",
+      "sha256": "9d38e5f15de2c660cddaa683faf0fb30052a85117994b9d5391ea297d9d2f85c"
+    },
+    "cpa_50500_features": {
+      "path": "runs/ppo-cpa-matched-v1/seed-50500/features/train/model.zip",
+      "sha256": "c0d189d6433fca44f4419f2279e4c8c4648d6a476b89cf7e8696340491631916"
+    },
+    "cpa_50500_zeros": {
+      "path": "runs/ppo-cpa-matched-v1/seed-50500/zeros/train/model.zip",
+      "sha256": "baa23019d5e5e9acc86c5e3788710d65fc3adb6b244eeb28ea0e2292c55b3a44"
+    },
+    "static_std005": {
+      "path": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/train/model.zip",
+      "sha256": "e2736c6f8d482e3d0dfca676bef28063b969d1c4b6a5bebfeae1fe09a1355ac2"
+    },
+    "static_std020": {
+      "path": "runs/ppo-exploration-static-pilot-v1/seed-51200/std020/train/model.zip",
+      "sha256": "09d4ab2242ae29bb73ea6863d5c3596be736d78a11906b849541abf7e6ada930"
+    }
+  },
+  "purpose": "Measure relative-position scaling and local actor sensitivities on existing observations before proposing another representation change.",
+  "procedure": "For every reference state, differentiate the deterministic mean with respect to each input; multiply by that input's empirical standard deviation, then summarize group gradient norms.",
+  "limitations": [
+    "One reused development world under an untrained reference trajectory, not each learned policy's state distribution.",
+    "Partial derivatives hold other observations fixed; they are not physically consistent interventions or causal importance scores.",
+    "Gradient magnitudes depend on the chosen state distribution and model; small sensitivity does not prove an input is useless or improperly scaled.",
+    "No simulator commands, training, model selection or performance comparison are performed.",
+    "All completed models from the two completed CPA seed pairs and both width arms are included; incomplete CPA seed 50600 is excluded until complete."
+  ]
+}

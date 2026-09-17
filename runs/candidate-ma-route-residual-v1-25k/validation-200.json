@@ -1,0 +1,102 @@
+{
+  "episodes": 200,
+  "agent_episodes": 2000,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.9855,
+      "std": 0.11953974234538069
+    },
+    "flight_time": {
+      "mean": 1108.5855,
+      "std": 497.45616961673113
+    },
+    "intrusion_events": {
+      "mean": 0.028,
+      "std": 0.1876592656918384
+    },
+    "intrusion_time": {
+      "mean": 1.189,
+      "std": 9.669605938196241
+    },
+    "restricted_area_events": {
+      "mean": 0.009,
+      "std": 0.0995941765365827
+    },
+    "time_in_restricted_area": {
+      "mean": 0.5745,
+      "std": 7.206556025592253
+    },
+    "sector_exit_events": {
+      "mean": 0.0005,
+      "std": 0.02235508890610816
+    },
+    "time_outside_sector": {
+      "mean": 0.0165,
+      "std": 0.7377179339015691
+    },
+    "total_reward": {
+      "mean": 35.39645958550618,
+      "std": 11.632931363012016
+    }
+  },
+  "clean_completion_rate": 0.9555,
+  "all_aircraft_clean_completion_rate": 0.775,
+  "wall_seconds": 10264.311917199986,
+  "world_decisions": 37210,
+  "seed": 2026,
+  "env": "ma",
+  "residual_statistics": {
+    "actions": 222599,
+    "heading_adjusted_actions": 210765,
+    "speed_adjusted_actions": 222599,
+    "absolute_heading_adjustment_deg": 880505.2356000919,
+    "absolute_speed_action": 78970.99738794565
+  },
+  "route_input_statistics": {
+    "observations": 224599,
+    "redirected_observations": 108918,
+    "route_replans": 1339,
+    "failed_replans": 719
+  },
+  "traffic_projection_statistics": {
+    "actions": 222599,
+    "interventions": 39462,
+    "speed_interventions": 3059,
+    "nominal_static_violation": 8897,
+    "nominal_traffic_conflict": 31095,
+    "no_static_feasible_candidate": 574,
+    "no_jointly_feasible_candidate": 2868
+  },
+  "policy": "runs\\candidate-ma-route-residual-v1-25k\\model.zip",
+  "recipe": "public_route_residual",
+  "guard_static": true,
+  "guard_traffic": true,
+  "official_protocol": false,
+  "model_sha256": "dcea8a2871e307b9b4ba030ab2d85fece64cb8a20e18517db1ad410a1854f041",
+  "inference_mode": "per_aircraft",
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0,
+  "route_input_revision": 1,
+  "route_input_planner_revision": 2,
+  "route_input_clearances_km": [
+    6.0,
+    3.0,
+    1.0,
+    0.0
+  ],
+  "route_input_sector_clearance_km": 6.0,
+  "route_input_distance": "original_goal",
+  "route_input_direct_bearing": "original_observation",
+  "route_residual_revision": 1,
+  "route_residual_heading_limit_deg": 15.0,
+  "route_residual_speed_scale": 1.0,
+  "route_residual_composition": "clipped_direct_reference_plus_adjustment",
+  "route_residual_reference": "last_observation_bearing_float32",
+  "traffic_projection_revision": 1,
+  "traffic_projection_horizon_seconds": 90.0,
+  "traffic_projection_sample_seconds": 5.0,
+  "traffic_projection_margin_km": 1.0,
+  "traffic_projection_turn_rate": 1.5,
+  "traffic_projection_acceleration": 1.0
+}

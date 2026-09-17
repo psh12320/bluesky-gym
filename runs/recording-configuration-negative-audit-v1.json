@@ -1,0 +1,5 @@
+{
+  "returncode": 2,
+  "expected_message": "Checkpoint configuration differs from reference: recipe",
+  "output_directory_not_created": true
+}

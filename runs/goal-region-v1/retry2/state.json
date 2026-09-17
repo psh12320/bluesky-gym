@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "execution_plan_sha256": "fb391270c129dfb0c4efc2edeb9e472b647fd8731a0467496f497d08ac35f374",
+  "stages": [
+    {
+      "mode": "classical_point_goal",
+      "started_at_utc": "2026-09-15T16:01:16.032406+00:00",
+      "pid": 13152,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:09:56.278499+00:00"
+    },
+    {
+      "mode": "classical_goal_region",
+      "started_at_utc": "2026-09-15T16:09:56.281502+00:00",
+      "pid": 21964,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:20:58.193442+00:00"
+    }
+  ],
+  "comparison_sha256": "9ef3ec08e9032b8dee685361233bf6f676719ac8b2f9203c786939151dcd10bd",
+  "completed_at_utc": "2026-09-15T16:20:58.630721+00:00"
+}

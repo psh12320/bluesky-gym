@@ -1,0 +1,30 @@
+{
+  "ma_factory": {
+    "speed_increment_knots": 20.0,
+    "executor_increment_knots": 20.0,
+    "heading_limit": 45.0,
+    "action_frequency": 10,
+    "goal_radius_km": 5.0,
+    "separation_nm": 5.0
+  },
+  "sa_factory": {
+    "speed_increment_knots": 20.0,
+    "executor_increment_knots": 20.0,
+    "heading_limit": 45.0,
+    "action_frequency": 10,
+    "goal_radius_km": 5.0,
+    "separation_nm": 5.0
+  },
+  "route-choice-speed20-v1-training-smoke": {
+    "timesteps": 400,
+    "optimizer_updates": 30,
+    "model_sha256": "326ff8e3410d317a128fee7639b593857049b9d7f33dc7e9886457aa0471614f"
+  },
+  "route-choice-speed20-v1-resume-smoke": {
+    "timesteps": 600,
+    "optimizer_updates": 50,
+    "model_sha256": "e011719948912638c0a993d228fe652f69483e3a03a470ff20c595d15f0deafc"
+  },
+  "replay_stale_metadata_rejected": true,
+  "evaluation_stale_metadata_rejected": true
+}

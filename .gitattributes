@@ -1,1 +1,3 @@
 *.scripts.common.results linguist-generated
+# Preserve scientific source and evidence hashes across platforms.
+* -text

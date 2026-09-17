@@ -1,0 +1,117 @@
+{
+  "recorded_at_utc": "2026-09-16T12:14:15.393904+00:00",
+  "heading_choices": [
+    "local observed route-bearing command",
+    -45.0,
+    -40.0,
+    -35.0,
+    -30.0,
+    -25.0,
+    -20.0,
+    -15.0,
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0,
+    40.0,
+    45.0
+  ],
+  "speed_choices": [
+    -1,
+    0,
+    1
+  ],
+  "datasets": {
+    "train": {
+      "worlds": 32,
+      "rows": 62744,
+      "protocol_sha256": "8206e5e72eb910b5b84590defbc9ed7167c83e1f97f15062bbef1f6b8e0f0534",
+      "world_manifest_sha256": "f9b6d17d046700f6616d5ffa0599c9985a554e47edf67d08b52c0f3456995f6f",
+      "heading_labels_represented_within_1e_7": 62744,
+      "speed_labels_represented_exactly": 62744,
+      "maximum_heading_error_degrees": 0.0,
+      "mean_heading_error_degrees": 0.0,
+      "local_nominal_matches_recorded_nominal_exactly": true,
+      "heading_choice_histogram": [
+        53212,
+        18,
+        29,
+        26,
+        38,
+        38,
+        44,
+        75,
+        142,
+        982,
+        6918,
+        879,
+        141,
+        55,
+        37,
+        29,
+        15,
+        24,
+        19,
+        23
+      ],
+      "speed_choice_histogram": [
+        333,
+        160,
+        62251
+      ]
+    },
+    "validation": {
+      "worlds": 8,
+      "rows": 16108,
+      "protocol_sha256": "8d35a6494c4a2a6391021bf81106afe17634ee8ef822527712a3f9d793ccf878",
+      "world_manifest_sha256": "5204b0e1479ceef96b2cdbc06a5c4e09662aaf9cfd8ae42f95163e3029463922",
+      "heading_labels_represented_within_1e_7": 16108,
+      "speed_labels_represented_exactly": 16108,
+      "maximum_heading_error_degrees": 0.0,
+      "mean_heading_error_degrees": 0.0,
+      "local_nominal_matches_recorded_nominal_exactly": true,
+      "heading_choice_histogram": [
+        13615,
+        0,
+        0,
+        6,
+        4,
+        8,
+        9,
+        13,
+        53,
+        271,
+        1744,
+        290,
+        35,
+        27,
+        11,
+        3,
+        5,
+        1,
+        2,
+        11
+      ],
+      "speed_choice_histogram": [
+        145,
+        30,
+        15933
+      ]
+    }
+  },
+  "trained_models": 0,
+  "new_rl_updates": 0,
+  "interpretation": "A categorical choice over these local actions can represent the preserved teacher commands. This measures representation capacity only; no learned selection or flight improvement is demonstrated.",
+  "next_experiment_condition": "Review the two running PPO arms before selecting another main training recipe. If steering remains weak, compare learned categorical maneuvers against their own initial selector and the fixed classical benchmark.",
+  "limitations": [
+    "Nearest-label selection uses teacher labels and is an oracle diagnostic, not a deployable policy.",
+    "The dynamic route-bearing option is a navigation prior and needs an explicit initial-policy control.",
+    "A categorical policy changes representation, parameterization and exploration; it is not a learning-rate-only ablation."
+  ]
+}

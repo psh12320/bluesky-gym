@@ -1,0 +1,11 @@
+{
+  "inspected_at_utc": "2026-09-16T09:11:15.939069+00:00",
+  "figure": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ppo-credit-review-v1\\artifacts\\learning-curves.png",
+  "figure_sha256": "5354d3e67f71bba538b5756fd341d74f67d1a93d14489191450950feb7f37d48",
+  "visually_checked": true,
+  "readable_labels_and_legend": true,
+  "all_three_registered_checkpoints_visible": true,
+  "six_metrics_shown_all_eleven_in_csv": true,
+  "world_uncertainty_distinguished_from_training_seed_variability": true,
+  "fixed_classical_reference_visible": true
+}

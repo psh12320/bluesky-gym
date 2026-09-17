@@ -1,0 +1,170 @@
+{"verified_files": 135, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"arm": "full_policy", "episode": 0}
+{"arm": "full_policy", "episode": 1}
+{"arm": "full_policy", "episode": 2}
+{"arm": "full_policy", "episode": 3}
+{"arm": "full_policy", "episode": 4}
+{"arm": "full_policy", "episode": 5}
+{"arm": "full_policy", "episode": 6}
+{"arm": "full_policy", "episode": 7}
+{"arm": "full_policy", "episode": 8}
+{"arm": "full_policy", "episode": 9}
+{"arm": "full_policy", "episode": 10}
+{"arm": "full_policy", "episode": 11}
+{"arm": "full_policy", "episode": 12}
+{"arm": "full_policy", "episode": 13}
+{"arm": "full_policy", "episode": 14}
+{"arm": "full_policy", "episode": 15}
+{"arm": "full_policy", "episode": 16}
+{"arm": "full_policy", "episode": 17}
+{"arm": "full_policy", "episode": 18}
+{"arm": "full_policy", "episode": 19}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\full_policy\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"arm_completed": "full_policy", "clean_completion": 0.415, "metrics": {"waypoint_reached": 1.0, "flight_time": 1019.12, "intrusion_events": 1.0, "intrusion_time": 89.82, "restricted_area_events": 0.035, "time_in_restricted_area": 1.285, "sector_exit_events": 0.0, "time_outside_sector": 0.0, "total_reward": -48.27886684587821}}
+{"arm": "zero_both", "episode": 0}
+{"arm": "zero_both", "episode": 1}
+{"arm": "zero_both", "episode": 2}
+{"arm": "zero_both", "episode": 3}
+{"arm": "zero_both", "episode": 4}
+{"arm": "zero_both", "episode": 5}
+{"arm": "zero_both", "episode": 6}
+{"arm": "zero_both", "episode": 7}
+{"arm": "zero_both", "episode": 8}
+{"arm": "zero_both", "episode": 9}
+{"arm": "zero_both", "episode": 10}
+{"arm": "zero_both", "episode": 11}
+{"arm": "zero_both", "episode": 12}
+{"arm": "zero_both", "episode": 13}
+{"arm": "zero_both", "episode": 14}
+{"arm": "zero_both", "episode": 15}
+{"arm": "zero_both", "episode": 16}
+{"arm": "zero_both", "episode": 17}
+{"arm": "zero_both", "episode": 18}
+{"arm": "zero_both", "episode": 19}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_both\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"arm_completed": "zero_both", "clean_completion": 0.255, "metrics": {"waypoint_reached": 0.995, "flight_time": 1090.18, "intrusion_events": 1.56, "intrusion_time": 113.34, "restricted_area_events": 0.01, "time_in_restricted_area": 0.38, "sector_exit_events": 0.0, "time_outside_sector": 0.0, "total_reward": -70.24052915930741}}
+{"arm": "zero_heading", "episode": 0}
+{"arm": "zero_heading", "episode": 1}
+{"arm": "zero_heading", "episode": 2}
+{"arm": "zero_heading", "episode": 3}
+{"arm": "zero_heading", "episode": 4}
+{"arm": "zero_heading", "episode": 5}
+{"arm": "zero_heading", "episode": 6}
+{"arm": "zero_heading", "episode": 7}
+{"arm": "zero_heading", "episode": 8}
+{"arm": "zero_heading", "episode": 9}
+{"arm": "zero_heading", "episode": 10}
+{"arm": "zero_heading", "episode": 11}
+{"arm": "zero_heading", "episode": 12}
+{"arm": "zero_heading", "episode": 13}
+{"arm": "zero_heading", "episode": 14}
+{"arm": "zero_heading", "episode": 15}
+{"arm": "zero_heading", "episode": 16}
+{"arm": "zero_heading", "episode": 17}
+{"arm": "zero_heading", "episode": 18}
+{"arm": "zero_heading", "episode": 19}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_heading\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"arm_completed": "zero_heading", "clean_completion": 0.26, "metrics": {"waypoint_reached": 1.0, "flight_time": 1015.545, "intrusion_events": 1.52, "intrusion_time": 114.0, "restricted_area_events": 0.02, "time_in_restricted_area": 0.565, "sector_exit_events": 0.0, "time_outside_sector": 0.0, "total_reward": -70.76415876667188}}
+{"arm": "zero_speed", "episode": 0}
+{"arm": "zero_speed", "episode": 1}
+{"arm": "zero_speed", "episode": 2}
+{"arm": "zero_speed", "episode": 3}
+{"arm": "zero_speed", "episode": 4}
+{"arm": "zero_speed", "episode": 5}
+{"arm": "zero_speed", "episode": 6}
+{"arm": "zero_speed", "episode": 7}
+{"arm": "zero_speed", "episode": 8}
+{"arm": "zero_speed", "episode": 9}
+{"arm": "zero_speed", "episode": 10}
+{"arm": "zero_speed", "episode": 11}
+{"arm": "zero_speed", "episode": 12}
+{"arm": "zero_speed", "episode": 13}
+{"arm": "zero_speed", "episode": 14}
+{"arm": "zero_speed", "episode": 15}
+{"arm": "zero_speed", "episode": 16}
+{"arm": "zero_speed", "episode": 17}
+{"arm": "zero_speed", "episode": 18}
+{"arm": "zero_speed", "episode": 19}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-gsde-action-components-v1\zero_speed\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"arm_completed": "zero_speed", "clean_completion": 0.41, "metrics": {"waypoint_reached": 0.995, "flight_time": 1097.365, "intrusion_events": 0.99, "intrusion_time": 82.48, "restricted_area_events": 0.035, "time_in_restricted_area": 1.35, "sector_exit_events": 0.0, "time_outside_sector": 0.0, "total_reward": -41.56539926841544}}
+{"verified_files": 135, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}

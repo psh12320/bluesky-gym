@@ -1,0 +1,70 @@
+{
+  "repair": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cluster-reload-fix-v1.zip",
+    "sha256": "d3c98a95e061d827ab295b1e458dd42e30c308ef2d1c45902b23ce372b6802c3",
+    "bytes": 160354,
+    "source_files": 84,
+    "original_bundle_sha256": "a1e578f3540edccddbf97506aff7eba5ac221b5a4946242cc154253b564dd293",
+    "changed_files": [
+      "jobs/bootstrap_onpolicy.slurm",
+      "tests/rl/test_policy_and_buffer.py"
+    ],
+    "unchanged_source_files": 82,
+    "failed_cluster_job": "851227",
+    "environment_reuse_path": "$HOME/cs4246-rl/onpolicy-v1/.venv-cluster/bin/python"
+  },
+  "test_suites": {
+    "original-suite.xml": {
+      "tests": 13,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    "current-suite.xml": {
+      "tests": 119,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    }
+  },
+  "cluster_rerun": "pending user upload/submission",
+  "cluster_previous_result": "User reported dependencies and CUDA passed in job 851227; serialization tests failed.",
+  "local_training_finished_while_repairing": {
+    "goal-offset-scaled-million-retry-v1": {
+      "status": "wall_limit_before_budget",
+      "algorithm": "ppo",
+      "live_transitions": 948398,
+      "padded_transitions": 249682,
+      "counted_transitions": 1198080,
+      "optimizer_steps": 10156,
+      "policy_epochs": 2304,
+      "rollouts": 234,
+      "worlds_completed": 552,
+      "aircraft_completed": 5523,
+      "wall_seconds": 8484.131857299999,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "dec5dc24e64da553b140de9d64d68e67a97114fea09d546e3a4b357fe4e62559",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "mappo-goal-scaled-million-v1": {
+      "status": "wall_limit_before_budget",
+      "algorithm": "mappo",
+      "live_transitions": 708127,
+      "padded_transitions": 244193,
+      "counted_transitions": 952320,
+      "optimizer_steps": 7729,
+      "policy_epochs": 1837,
+      "rollouts": 186,
+      "worlds_completed": 389,
+      "aircraft_completed": 3900,
+      "wall_seconds": 7841.5220383,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "3ec248d5d7cbccceff6715cf796da06e027cdb872054e46a96ee01b105957b94",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    }
+  }
+}

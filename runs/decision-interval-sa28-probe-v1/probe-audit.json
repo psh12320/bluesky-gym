@@ -1,0 +1,8 @@
+{
+  "script_sha256": "c098b97b574b2719aefdea5aad2bf0a479556a3d4606219eeeb0f06972e4c969",
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "scenario_sha256": "495e95316759232b591f1c382c10f4cbabfdd30ca97c52e8d802f26134d97595",
+  "all_trajectory_hashes_verified": true,
+  "both_ten_second_reference_arms_match_all_nine_metrics": true,
+  "all_scenario_rng_states_unchanged": true
+}

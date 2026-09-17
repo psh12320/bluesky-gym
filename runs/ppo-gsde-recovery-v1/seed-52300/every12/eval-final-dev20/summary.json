@@ -1,0 +1,76 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.995,
+      "std": 0.07053367989832943
+    },
+    "flight_time": {
+      "mean": 1116.1,
+      "std": 455.9985964890682
+    },
+    "intrusion_events": {
+      "mean": 1.54,
+      "std": 1.303226764611593
+    },
+    "intrusion_time": {
+      "mean": 133.63,
+      "std": 165.2550546882001
+    },
+    "restricted_area_events": {
+      "mean": 0.04,
+      "std": 0.19595917942265428
+    },
+    "time_in_restricted_area": {
+      "mean": 1.105,
+      "std": 6.536357930835796
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -89.80606565154592,
+      "std": 156.32873162317966
+    }
+  },
+  "clean_completion_rate": 0.24,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 44729,
+  "padded_transitions": 26861,
+  "world_decisions": 7159,
+  "aircraft_terminated": 199,
+  "aircraft_truncated": 1,
+  "wall_seconds": 443.28038929999457,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false
+  },
+  "csv_sha256": "64824cab7a72aa19baf5042e437871e4fdc47440d0a8e230ced05470be0d0009"
+}

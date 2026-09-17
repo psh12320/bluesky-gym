@@ -1,0 +1,87 @@
+{
+  "registered_at_utc": "2026-09-16T07:45:25.013519+00:00",
+  "purpose": "Isolate GAE lambda in shared PPO while keeping reward, discount, inputs, action support and initialization fixed.",
+  "seed": 51800,
+  "config": {
+    "workers": 1,
+    "live_steps": 100000,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0,
+    "reward_scale": 0.01,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600,
+    "algorithm": "ppo",
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "gae_lambda": 0.95,
+    "neutral_action_mean": true,
+    "progress_scale": 0.0,
+    "exploration": "gaussian"
+  },
+  "arms": {
+    "lambda095": {
+      "gae_lambda": 0.95
+    },
+    "lambda099": {
+      "gae_lambda": 0.99
+    }
+  },
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-comparison-source-v1-verify",
+  "source_bundle_sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+  "control_protocol": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ppo-matched-pilot-v1\\protocol.json",
+  "control_protocol_sha256": "6e866ef99fa39e3b11fcb49bc1ee5fde6c7fe3ef25b12b2624105656bf13e087",
+  "control_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ppo-matched-pilot-v1\\seed-51800\\ppo",
+  "new_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-credit-pilot-v1\\seed-51800\\lambda099",
+  "control_reuse": "Reuse the pre-registered PPO arm after its coordinator completes. Do not alter or restart its source, models, logs, or evaluations.",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "stages": [
+    "initial",
+    "50k",
+    "final"
+  ],
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "primary_contrast": "For every physical metric: (lambda 0.99 trained minus own initial) minus (lambda 0.95 trained minus own initial).",
+  "initial_control": "Require exact complete initial policy tensors, matching gamma, identical neutral Gaussian actor, and identical deterministic initial physical metrics.",
+  "evidence": {
+    "diagnostic": "runs/ppo-credit-diagnostic-v1/analysis.json",
+    "validation": "runs/credit-assignment-development-v1/validation.json",
+    "diagnostic_heldout": false,
+    "native_metric_matches": 540,
+    "residual_weight_at_180_seconds": {
+      "lambda095": 0.13911231531105975,
+      "lambda099": 0.6140203911277885
+    },
+    "method": "https://arxiv.org/abs/1506.02438"
+  },
+  "checkpoint_selection": "First checkpoint at or above 50k within one 2560-slot rollout; final at or above 100k. Report both arms and all checkpoints, not the best intermediate result.",
+  "resource_policy": "One added simulator worker; the existing SAC/PPO and exploration coordinators continue unchanged. Local use stays below five workers.",
+  "limitations": [
+    "One exploratory training seed and twenty reused development worlds; multiple training seeds and held-out validation are required before a performance claim.",
+    "GAE lambda controls temporal-difference residual weighting, not a hard planning horizon. A learned critic can convey longer-term consequences.",
+    "Higher lambda may increase variance. The two-world diagnostic does not prove a credit-assignment defect or predict that higher lambda wins.",
+    "The comparison reuses an already registered control from a different study; it is not an additional independent control replicate.",
+    "100k live transitions is a screening budget, not a convergence claim. Exact live counts, optimizer steps and curves are retained.",
+    "Neither gamma nor the native reward, reward scale, progress shaping, action mapping, observation scaling, route guidance or filters change.",
+    "Reserved streams 20301/20302 and official seed42 remain unused."
+  ]
+}

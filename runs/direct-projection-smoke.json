@@ -1,0 +1,12 @@
+{
+  "sa": {
+    "actions": 12,
+    "interventions": 1,
+    "no_feasible_candidate": 0
+  },
+  "ma": {
+    "actions": 120,
+    "interventions": 11,
+    "no_feasible_candidate": 0
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "filter": false,
+    "static_filter": false,
+    "runtime": {
+      "static_area_filter": false,
+      "traffic_conflict_filter": false,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap",
+      "population": 10,
+      "decision_interval_seconds": 5,
+      "episode_time_limit": 3000,
+      "actor_addition": "time_remaining_fraction",
+      "worker_imported_torch": true,
+      "isolated_simulator_files": true,
+      "training_progress_scale": 0.0,
+      "action_reference": "direct",
+      "conflict_features": false,
+      "mask_conflict_features": false
+    }
+  },
+  {
+    "filter": false,
+    "static_filter": true,
+    "runtime": {
+      "static_area_filter": true,
+      "traffic_conflict_filter": false,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap",
+      "population": 10,
+      "decision_interval_seconds": 5,
+      "episode_time_limit": 3000,
+      "actor_addition": "time_remaining_fraction",
+      "worker_imported_torch": true,
+      "isolated_simulator_files": true,
+      "training_progress_scale": 0.0,
+      "action_reference": "direct",
+      "conflict_features": false,
+      "mask_conflict_features": false
+    }
+  },
+  {
+    "filter": true,
+    "static_filter": false,
+    "runtime": {
+      "static_area_filter": true,
+      "traffic_conflict_filter": true,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap",
+      "population": 10,
+      "decision_interval_seconds": 5,
+      "episode_time_limit": 3000,
+      "actor_addition": "time_remaining_fraction",
+      "worker_imported_torch": true,
+      "isolated_simulator_files": true,
+      "training_progress_scale": 0.0,
+      "action_reference": "direct",
+      "conflict_features": false,
+      "mask_conflict_features": false
+    }
+  },
+  {
+    "filter": true,
+    "static_filter": true,
+    "runtime": {
+      "static_area_filter": true,
+      "traffic_conflict_filter": true,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap",
+      "population": 10,
+      "decision_interval_seconds": 5,
+      "episode_time_limit": 3000,
+      "actor_addition": "time_remaining_fraction",
+      "worker_imported_torch": true,
+      "isolated_simulator_files": true,
+      "training_progress_scale": 0.0,
+      "action_reference": "direct",
+      "conflict_features": false,
+      "mask_conflict_features": false
+    }
+  }
+]

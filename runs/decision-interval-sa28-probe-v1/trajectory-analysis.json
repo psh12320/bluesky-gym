@@ -1,0 +1,63 @@
+{
+  "learned10": {
+    "minimum_sampled_goal_distance_km": 42.661285084394656,
+    "minimum_distance_sample_time": 630.0,
+    "last_sample_goal_distance_km": 56.557263791753364,
+    "heading_forecast_mean_absolute_error_degrees": 0.2283156697078308,
+    "heading_forecast_max_absolute_error_degrees": 3.5004782576281173,
+    "scored_result": {
+      "episode": 0,
+      "agent": "KL001",
+      "total_reward": -39.16788843411973,
+      "flight_time": 3000.0,
+      "waypoint_reached": 0,
+      "intrusion_events": 1,
+      "intrusion_time": 41.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    }
+  },
+  "learned5": {
+    "minimum_sampled_goal_distance_km": 43.14041748515193,
+    "minimum_distance_sample_time": 625.0,
+    "last_sample_goal_distance_km": 57.24580448941453,
+    "heading_forecast_mean_absolute_error_degrees": 0.12189402792080226,
+    "heading_forecast_max_absolute_error_degrees": 2.4644986162598173,
+    "scored_result": {
+      "episode": 0,
+      "agent": "KL001",
+      "total_reward": -39.564147317674504,
+      "flight_time": 3000.0,
+      "waypoint_reached": 0,
+      "intrusion_events": 1,
+      "intrusion_time": 41.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    }
+  },
+  "zero10": {
+    "minimum_sampled_goal_distance_km": 6.283608146476875,
+    "minimum_distance_sample_time": 880.0,
+    "last_sample_goal_distance_km": 6.283608146476875,
+    "heading_forecast_mean_absolute_error_degrees": 0.2418028019946984,
+    "heading_forecast_max_absolute_error_degrees": 2.9632828614877553,
+    "scored_result": {
+      "episode": 0,
+      "agent": "KL001",
+      "total_reward": -167.83109993259887,
+      "flight_time": 888.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 5,
+      "intrusion_time": 217.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    }
+  },
+  "caveats": "Selected scenario; heading comparison is an empirical one-decision diagnostic, not a full position forecast or causal estimate."
+}

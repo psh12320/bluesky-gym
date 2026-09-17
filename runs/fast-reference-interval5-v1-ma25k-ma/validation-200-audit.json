@@ -1,0 +1,509 @@
+{
+  "all_summary_metrics_exact": true,
+  "first_twenty_maximum_metric_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "decision_interval_seconds": 5,
+  "episodes": 200,
+  "agent_episodes": 2000,
+  "additional_180": {
+    "episodes": 180,
+    "agent_episodes": 1800,
+    "metrics": {
+      "waypoint_reached": {
+        "mean": 0.9955555555555555,
+        "std": 0.06651835354264785
+      },
+      "flight_time": {
+        "mean": 1004.2366666666667,
+        "std": 384.9972793410364
+      },
+      "intrusion_events": {
+        "mean": 0.057777777777777775,
+        "std": 0.3382890866889435
+      },
+      "intrusion_time": {
+        "mean": 2.781111111111111,
+        "std": 18.038535259853766
+      },
+      "restricted_area_events": {
+        "mean": 0.015555555555555555,
+        "std": 0.14056324089660863
+      },
+      "time_in_restricted_area": {
+        "mean": 0.43444444444444447,
+        "std": 5.879071376239073
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "total_reward": {
+        "mean": 34.30504629856801,
+        "std": 17.634407550812835
+      }
+    },
+    "clean_completion_rate": 0.9455555555555556,
+    "all_aircraft_clean_completion_rate": 0.7888888888888889
+  },
+  "missed_arrivals": [
+    {
+      "episode": 29,
+      "agent": "KL008",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.8590480078134758
+    },
+    {
+      "episode": 95,
+      "agent": "KL006",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.8594493612960648
+    },
+    {
+      "episode": 95,
+      "agent": "KL0010",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.7920268962909468
+    },
+    {
+      "episode": 103,
+      "agent": "KL006",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.8723020124526957
+    },
+    {
+      "episode": 107,
+      "agent": "KL005",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.7805098862194298
+    },
+    {
+      "episode": 162,
+      "agent": "KL004",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.773493072125056
+    },
+    {
+      "episode": 183,
+      "agent": "KL003",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -0.7895481831053288
+    },
+    {
+      "episode": 195,
+      "agent": "KL0010",
+      "waypoint_reached": 0.0,
+      "flight_time": 3000.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 1.0,
+      "time_in_restricted_area": 181.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -91.43650768947572
+    }
+  ],
+  "outside_entries": [],
+  "classical_misses_fixed": [
+    [
+      32,
+      "KL007"
+    ],
+    [
+      54,
+      "KL005"
+    ],
+    [
+      56,
+      "KL005"
+    ],
+    [
+      60,
+      "KL004"
+    ],
+    [
+      139,
+      "KL002"
+    ],
+    [
+      159,
+      "KL005"
+    ],
+    [
+      162,
+      "KL009"
+    ]
+  ],
+  "classical_arrivals_lost": [
+    [
+      29,
+      "KL008"
+    ],
+    [
+      95,
+      "KL006"
+    ],
+    [
+      162,
+      "KL004"
+    ],
+    [
+      183,
+      "KL003"
+    ]
+  ],
+  "classical_clean_cases_fixed": [
+    [
+      10,
+      "KL007"
+    ],
+    [
+      11,
+      "KL0010"
+    ],
+    [
+      11,
+      "KL006"
+    ],
+    [
+      30,
+      "KL001"
+    ],
+    [
+      30,
+      "KL006"
+    ],
+    [
+      32,
+      "KL007"
+    ],
+    [
+      44,
+      "KL002"
+    ],
+    [
+      44,
+      "KL0010"
+    ],
+    [
+      54,
+      "KL005"
+    ],
+    [
+      56,
+      "KL005"
+    ],
+    [
+      57,
+      "KL007"
+    ],
+    [
+      126,
+      "KL002"
+    ],
+    [
+      153,
+      "KL0010"
+    ],
+    [
+      153,
+      "KL005"
+    ],
+    [
+      159,
+      "KL005"
+    ],
+    [
+      162,
+      "KL009"
+    ],
+    [
+      167,
+      "KL005"
+    ],
+    [
+      167,
+      "KL004"
+    ],
+    [
+      177,
+      "KL001"
+    ],
+    [
+      197,
+      "KL004"
+    ],
+    [
+      197,
+      "KL009"
+    ]
+  ],
+  "classical_clean_cases_lost": [
+    [
+      21,
+      "KL0010"
+    ],
+    [
+      25,
+      "KL001"
+    ],
+    [
+      25,
+      "KL0010"
+    ],
+    [
+      29,
+      "KL008"
+    ],
+    [
+      39,
+      "KL001"
+    ],
+    [
+      39,
+      "KL004"
+    ],
+    [
+      44,
+      "KL008"
+    ],
+    [
+      44,
+      "KL004"
+    ],
+    [
+      79,
+      "KL006"
+    ],
+    [
+      79,
+      "KL0010"
+    ],
+    [
+      84,
+      "KL0010"
+    ],
+    [
+      84,
+      "KL007"
+    ],
+    [
+      85,
+      "KL005"
+    ],
+    [
+      95,
+      "KL003"
+    ],
+    [
+      95,
+      "KL001"
+    ],
+    [
+      95,
+      "KL006"
+    ],
+    [
+      121,
+      "KL005"
+    ],
+    [
+      121,
+      "KL004"
+    ],
+    [
+      122,
+      "KL003"
+    ],
+    [
+      122,
+      "KL007"
+    ],
+    [
+      126,
+      "KL003"
+    ],
+    [
+      126,
+      "KL001"
+    ],
+    [
+      139,
+      "KL009"
+    ],
+    [
+      139,
+      "KL004"
+    ],
+    [
+      139,
+      "KL003"
+    ],
+    [
+      139,
+      "KL001"
+    ],
+    [
+      149,
+      "KL008"
+    ],
+    [
+      162,
+      "KL004"
+    ],
+    [
+      166,
+      "KL005"
+    ],
+    [
+      166,
+      "KL006"
+    ],
+    [
+      167,
+      "KL008"
+    ],
+    [
+      167,
+      "KL003"
+    ],
+    [
+      167,
+      "KL002"
+    ],
+    [
+      170,
+      "KL001"
+    ],
+    [
+      170,
+      "KL0010"
+    ],
+    [
+      172,
+      "KL007"
+    ],
+    [
+      177,
+      "KL008"
+    ],
+    [
+      177,
+      "KL009"
+    ],
+    [
+      183,
+      "KL003"
+    ]
+  ],
+  "ten_second_misses_fixed": [
+    [
+      67,
+      "KL002"
+    ],
+    [
+      153,
+      "KL0010"
+    ],
+    [
+      153,
+      "KL005"
+    ],
+    [
+      153,
+      "KL006"
+    ],
+    [
+      157,
+      "KL002"
+    ],
+    [
+      177,
+      "KL009"
+    ],
+    [
+      194,
+      "KL003"
+    ],
+    [
+      196,
+      "KL0010"
+    ]
+  ],
+  "ten_second_arrivals_lost": [
+    [
+      29,
+      "KL008"
+    ],
+    [
+      95,
+      "KL006"
+    ],
+    [
+      183,
+      "KL003"
+    ]
+  ]
+}

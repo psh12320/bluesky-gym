@@ -1,0 +1,33 @@
+{
+  "command": [
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "atc_rl.imitation",
+    "--epochs",
+    "40",
+    "--batch-size",
+    "1024",
+    "--learning-rate",
+    "0.0003",
+    "--seed",
+    "62300",
+    "--exploration",
+    "categorical",
+    "--device",
+    "cpu",
+    "--intervention-fraction",
+    "0.5",
+    "--training-data",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train",
+    "--validation-data",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation",
+    "--teacher-source",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\demonstration-source-v1-verify",
+    "--out",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc"
+  ],
+  "cwd": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-source-v1-verify",
+  "protocol_sha256": "64ce7b5bf0834b56b6810e7069498d2b82e03e24fd86d4cd5a21094447918a49",
+  "script_sha256": "b0096d5c95776ad3a19a33e63b197a01559bf72f47822e318675852f8a42e83e"
+}

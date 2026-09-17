@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "algorithm": "mappo",
+  "live_transitions": 1280,
+  "padded_transitions": 0,
+  "counted_transitions": 1280,
+  "optimizer_steps": 7,
+  "policy_epochs": 3,
+  "rollouts": 2,
+  "worlds_completed": 0,
+  "aircraft_completed": 0,
+  "wall_seconds": 36.38598600000114,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "ad5a4398c7f91ddc6e4534a4332a9c246b770ef121648c7ec0d1cff52c913659",
+  "training_seed": 49040,
+  "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+}

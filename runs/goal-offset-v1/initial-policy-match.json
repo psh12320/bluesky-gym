@@ -1,0 +1,8 @@
+{
+  "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-initialization-v1\\train-neutral-std0p05\\initial-model.zip",
+  "target": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-v1\\train\\initial-model.zip",
+  "full_policy_fingerprint": "3817e1a9ed5b41fbe00da564e86543a3edb85bb6daf74298d19ef73951d8b310",
+  "all_initial_policy_tensors_identical": true,
+  "action_reference_differs": true,
+  "initial_performance_must_be_evaluated_separately": true
+}

@@ -1,0 +1,7 @@
+track,training_seed,role,waypoint_reached,flight_time,intrusion_events,intrusion_time,restricted_area_events,time_in_restricted_area,sector_exit_events,time_outside_sector,clean_completion_rate,all_aircraft_clean_completion_rate
+ma,2900,primary,0.9935,995.1085,0.056,2.671,0.0215,0.9,0.0,0.0,0.939,0.735
+ma,2902,replication,0.992,999.199,0.051,2.347,0.018,0.9435,0.0,0.0,0.939,0.725
+ma,2904,replication,0.993,1001.9095,0.049,2.527,0.0195,0.956,0.0,0.0,0.9445,0.735
+sa,2900,primary,1.0,1243.15,0.335,17.67,0.03,1.09,0.0,0.0,0.69,0.69
+sa,2902,replication,0.98,1250.8,0.335,18.35,0.04,1.495,0.0,0.0,0.68,0.68
+sa,2904,replication,0.99,1198.75,0.33,16.08,0.025,1.61,0.005,0.32,0.685,0.685

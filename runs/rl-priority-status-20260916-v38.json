@@ -1,0 +1,184 @@
+{
+  "recorded_at_utc": "2026-09-16T11:39:48.732551+00:00",
+  "previous_status": "runs/rl-priority-status-20260916-v37.json",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "cluster_sac_check": {
+    "job": 852491,
+    "status": "application checks complete per user transcript",
+    "live_transitions": 21493,
+    "gradient_rounds": 2576,
+    "matched_native_vector_values": 180,
+    "cuda_reload": "passed on H200 NVL",
+    "raw_archive_downloaded": false,
+    "repeat_needed": false
+  },
+  "implementation_validation": {
+    "bc_handoff_fix": "runs/pretrained-space-fix-v1/validation.json",
+    "bc_handoff_suite_passed": 237,
+    "native_action_conversion_fix": "runs/native-action-precision-v1/validation.json",
+    "latest_rl_suite_passed": 239,
+    "latest_source_bundle_sha256": "c329c4ba0ee3a472c89477856740811947c6f3634335c395089eff6682e4404d",
+    "original_dtype_failure_retained": "runs/imitation-ppo-pilot-v1/technical/train/failure.json",
+    "original_precision_mismatch_retained": "runs/native-action-precision-v1/original-mismatch.json",
+    "precision_change": "Native RL actions converted to float32 before projection, matching WorldPool.",
+    "strict_metric_equality_retained": true
+  },
+  "behavior_cloning": {
+    "training_worlds": 32,
+    "validation_worlds": 8,
+    "demonstration_transitions": 62744,
+    "validation_transitions": 16108,
+    "epochs": 40,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "rl_updates": 0,
+    "model_sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+    "parent_reused_unchanged": true,
+    "closed_loop_performance_not_established": true,
+    "validation_mse_initial": 0.5171535862003136,
+    "validation_mse_final": 0.03046279247519368,
+    "heading_mae_increased": true,
+    "imitation_error_is_not_flight_performance": true
+  },
+  "imitation_ppo_pipeline": {
+    "session": 60532,
+    "confirmed_live": true,
+    "protocol": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\protocol.json",
+    "protocol_sha256": "28c14001a32333b0142c1b2da23e02c7a4db87184329b23b382815a8ce6675ff",
+    "short_training_complete": true,
+    "technical_live_transitions": 1808,
+    "technical_optimizer_steps": 2,
+    "technical_checkpoint_reused": true,
+    "technical_parity_complete_at_snapshot": true,
+    "full_100k_pilot_started_at_snapshot": true,
+    "failure_history": [
+      "Original handoff stopped at zero live transitions because of Box dtype mismatch.",
+      "First recovery completed 1808 technical live transitions, then strict parity caught ten reward differences below 5e-9; all 160 physical metric values matched."
+    ],
+    "learning_reference": "Unchanged behavior-cloned parent; supervised experience is separate from PPO updates.",
+    "latest_confirmed_stage": "ppo/train.log",
+    "native_vector_metric_matches": 180,
+    "technical_integration_report": "runs/native-action-precision-v1/integration-validation.json"
+  },
+  "support_factorial": {
+    "session": 99673,
+    "exit_code": 0,
+    "all_twelve_complete": true,
+    "existing_nine_unchanged": true,
+    "review": "runs/ppo-support-factorial-v1/review.json",
+    "plot": "runs/ppo-support-factorial-v1/learning-contribution.png",
+    "clean_completion_learning": {
+      "g0-f0": {
+        "checks": {
+          "arrival_at_least_95_percent": true,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": true,
+          "time_in_restricted_area_not_increased": true,
+          "time_outside_sector_not_increased": true
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": -0.8333333333333337,
+        "across_seed_sample_sd_percentage_points": 0.7637626158259733
+      },
+      "g1-f0": {
+        "checks": {
+          "arrival_at_least_95_percent": true,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": false,
+          "time_in_restricted_area_not_increased": false,
+          "time_outside_sector_not_increased": false
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": -1.6666666666666663,
+        "across_seed_sample_sd_percentage_points": 0.763762615825973
+      },
+      "g0-f1": {
+        "checks": {
+          "arrival_at_least_95_percent": false,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": false,
+          "time_in_restricted_area_not_increased": false,
+          "time_outside_sector_not_increased": true
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": 1.1666666666666663,
+        "across_seed_sample_sd_percentage_points": 1.6072751268321595
+      },
+      "g1-f1": {
+        "checks": {
+          "arrival_at_least_95_percent": true,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": false,
+          "time_in_restricted_area_not_increased": false,
+          "time_outside_sector_not_increased": true
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": -3.0000000000000004,
+        "across_seed_sample_sd_percentage_points": 1.3228756555322951
+      }
+    },
+    "any_group_passes_screen": false,
+    "three_training_seeds": true,
+    "reused_development_worlds": 20,
+    "unseen_scenarios_used": false
+  },
+  "gsde_recovery": {
+    "session": 73914,
+    "confirmed_live": true,
+    "protocol": "runs/ppo-gsde-recovery-v1/protocol.json",
+    "reused_completed_seed": 52200,
+    "new_seed_arms": 4,
+    "seeds": [
+      52300,
+      52400
+    ],
+    "max_wall_seconds": 14400,
+    "old_incomplete_attempt_preserved": true,
+    "three_seed_results_complete": false,
+    "completed_training_arm": {
+      "seed": 52300,
+      "arm": "every1",
+      "summary": {
+        "status": "complete",
+        "algorithm": "ppo",
+        "live_transitions": 101267,
+        "padded_transitions": 42093,
+        "counted_transitions": 143360,
+        "optimizer_steps": 2165,
+        "policy_epochs": 552,
+        "rollouts": 56,
+        "worlds_completed": 50,
+        "aircraft_completed": 501,
+        "wall_seconds": 2077.0305858000065,
+        "actor_and_critic_parameters_changed": true,
+        "source_unchanged": true,
+        "model_sha256": "f58e043d2369859b313285697af7210b02a5672bbda882d1c96af35698138019",
+        "training_seed": 52300,
+        "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+      }
+    }
+  },
+  "cluster_gsde_submission_observed": false,
+  "cluster_next_commands": "docs/competition/GSDE_CLUSTER.md",
+  "preservation": {
+    "fixed_source_files_checked": 65,
+    "fixed_files_changed": [],
+    "imitation_original_artifacts_checked": 57,
+    "original_bc_model_unchanged": true,
+    "completed_and_running_evaluation_sources_unchanged": true
+  },
+  "next_actions": [
+    "Allow the registered 100k PPO pilot and initial/50k/final evaluations to complete; preserve technical and failed attempts.",
+    "Review PPO initial/50k/final metrics against its own BC initial policy and fixed classical benchmark; do not treat demonstration fitting as RL gain.",
+    "Complete remaining gSDE recovery seeds and analyze all six arms, including the preserved partial attempt in the audit.",
+    "Run the prepared cluster PPO exploration study once the user uploads and submits it; do not repeat the successful SAC check.",
+    "Require replicated gains and unseen-scenario evaluation before competitive-performance claims."
+  ]
+}

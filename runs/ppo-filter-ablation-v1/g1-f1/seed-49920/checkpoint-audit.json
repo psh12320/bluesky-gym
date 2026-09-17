@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49920\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 100462,
+  "padded_transitions": 63378,
+  "optimizer_steps": 1140,
+  "verified_checkpoints": 4,
+  "verified_source_files": 92,
+  "learning_curve_rows": 32,
+  "aircraft_completed": 398,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "c17a8942f10d79669a5ce5d9f4c0c29f53b35bafa4b0c069d79f6f863a962a92",
+  "policy_quality_assessed": false
+}

@@ -1,0 +1,59 @@
+{
+  "six_job_rows_dry_run": [
+    {
+      "index": 0,
+      "seed": 50800,
+      "arm": "features",
+      "command_count": 10,
+      "evaluation_count": 5
+    },
+    {
+      "index": 1,
+      "seed": 50800,
+      "arm": "zeros",
+      "command_count": 9,
+      "evaluation_count": 5
+    },
+    {
+      "index": 2,
+      "seed": 50900,
+      "arm": "zeros",
+      "command_count": 9,
+      "evaluation_count": 5
+    },
+    {
+      "index": 3,
+      "seed": 50900,
+      "arm": "features",
+      "command_count": 9,
+      "evaluation_count": 5
+    },
+    {
+      "index": 4,
+      "seed": 51000,
+      "arm": "features",
+      "command_count": 9,
+      "evaluation_count": 5
+    },
+    {
+      "index": 5,
+      "seed": 51000,
+      "arm": "zeros",
+      "command_count": 9,
+      "evaluation_count": 5
+    }
+  ],
+  "all_cluster_base_files_identical": 127,
+  "unchanged_controller_and_simulator_files": 64,
+  "preserved_old_archives": {
+    "onpolicy-cluster-reload-fix-v1": "d3c98a95e061d827ab295b1e458dd42e30c308ef2d1c45902b23ce372b6802c3",
+    "cluster-ppo-baseline-v1": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+    "onpolicy-learning-source-v2": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c",
+    "onpolicy-goal-offset-source-v1": "abd2a67c99a9adfc5bd5540c33bb5f7659a04aa1ce108e5120b7c35b58b7e695",
+    "onpolicy-cpa-source-v1": "7eb8df2ea08d3dda66ae2e70f6aafc430965d877c448d0a466809ae9fa70a816",
+    "onpolicy-cpa-source-v2": "e6048403809a7c1121291a8b16590946d71a991788717798fd85498e9c15fe71"
+  },
+  "slurm_syntax_checked_separately": true,
+  "simulator_integration": "See integration-complete.json",
+  "performance_jobs_submitted": false
+}

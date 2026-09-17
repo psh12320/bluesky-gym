@@ -1,0 +1,28 @@
+{
+  "training_run": "runs/ppo-direct-million-v1",
+  "development_seed": 20260,
+  "worlds": 20,
+  "evaluation_checkpoints": [
+    {
+      "live_transitions": 0,
+      "evaluation": "runs/ppo-direct-pilot-v1/eval-initial-dev20"
+    },
+    {
+      "live_transitions": 101244,
+      "evaluation": "runs/ppo-direct-pilot-v1/eval-trained-dev20"
+    },
+    {
+      "live_transitions": 302514,
+      "model": "policy-live-302514.zip"
+    },
+    {
+      "live_transitions": 1000371,
+      "model": "model.zip"
+    }
+  ],
+  "existing_point_reuse": "Exact policy tensor fingerprints and matched training settings already verified by curve-prefix-dev20.",
+  "baseline": "runs/ppo-direct-pilot-v1/eval-classical-dev20",
+  "source_snapshot": "runs/onpolicy-cluster-v1-verify",
+  "purpose": "Assess actual arrival and safety versus experience; no checkpoint is selected using the reserved unseen streams.",
+  "limitations": "One training seed; multiple seeds remain required."
+}

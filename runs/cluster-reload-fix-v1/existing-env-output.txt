@@ -1,0 +1,3 @@
+Filesystem      Size  Used Avail Use% Mounted on
+C:              459G  447G   12G  98% /c
+Existing environment preserved. Set ATC_PYTHON to its bin/python to reuse it.

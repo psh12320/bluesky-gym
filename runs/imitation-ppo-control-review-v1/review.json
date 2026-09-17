@@ -1,0 +1,65 @@
+{
+  "recorded_at_utc": "2026-09-17T03:08:45.630758+00:00",
+  "training_summary": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\training_summary.json",
+  "verified_raw_curve_means_and_differences": 66,
+  "paired_worlds": 20,
+  "training_seeds": 1,
+  "clean_learning_gain": {
+    "mean": 0.5700000000000001,
+    "world_bootstrap_95_interval": [
+      0.45,
+      0.685
+    ],
+    "difference_from_initial": 0.225,
+    "paired_difference_95_interval": [
+      0.08,
+      0.36
+    ]
+  },
+  "performance_by_checkpoint": {
+    "initial": {
+      "arrival": 0.99,
+      "clean_completion": 0.345,
+      "flight_time": 1088.405,
+      "intrusion_time": 99.4,
+      "time_in_restricted_area": 1.215,
+      "time_outside_sector": 0.0
+    },
+    "50k": {
+      "arrival": 0.94,
+      "clean_completion": 0.455,
+      "flight_time": 1203.195,
+      "intrusion_time": 108.38,
+      "time_in_restricted_area": 1.265,
+      "time_outside_sector": 0.0
+    },
+    "final": {
+      "arrival": 0.93,
+      "clean_completion": 0.57,
+      "flight_time": 1564.1,
+      "intrusion_time": 80.18,
+      "time_in_restricted_area": 2.87,
+      "time_outside_sector": 0.0
+    }
+  },
+  "limitations": [
+    "One training seed and repeatedly used development scenarios; these are not unseen results.",
+    "More clean completions accompany fewer arrivals, much longer flights and higher restricted-area time.",
+    "The contrast measures additional PPO after a shared supervised initialization, with support unchanged."
+  ],
+  "decision": "Retain as learning-contribution evidence; do not promote for competitive deployment.",
+  "plot_provenance_correction": {
+    "original_curve_missing_pretraining_flag": true,
+    "original_preserved": true,
+    "all_numeric_curve_values_unchanged": true,
+    "corrected_curve": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-control-review-v1\\curve\\curve.json",
+    "interpretation": "Zero on the horizontal axis is the learned BC parent, not an untrained actor."
+  },
+  "curve_visual_check": {
+    "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-control-review-v1\\curve\\performance-curve.png",
+    "sha256": "8d8926a1b159ec97cc018bee0c436f590e325a07b47d041c66161a56f6646e79",
+    "reviewed": true,
+    "readable": true,
+    "notes": "Six metric panels, units, uncertainty legend and additional-RL x-axis are visible."
+  }
+}

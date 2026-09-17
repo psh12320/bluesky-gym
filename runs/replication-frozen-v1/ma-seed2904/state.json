@@ -1,0 +1,256 @@
+{
+  "track": "ma",
+  "training_seed": 2904,
+  "started_at_utc": "2026-09-15T13:29:29.764656+00:00",
+  "protocol_sha256": "c8efeedd860d54e619c4f35b7fe7284d0bd5b5fa52c09978e55745b694916177",
+  "runner_sha256": "5de95cb2e2e141e3f0f779a8a4e6871b542558038992e2d344bc6f63ea1059ff",
+  "stages": [
+    {
+      "name": "train",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.train",
+        "--env",
+        "ma",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual",
+        "--guard-traffic",
+        "--workers",
+        "1",
+        "--steps",
+        "25000",
+        "--seed",
+        "2904",
+        "--device",
+        "cpu",
+        "--run-dir",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-fast-reference-v1-25k-seed2904",
+        "--checkpoint-every",
+        "25000",
+        "--learning-starts",
+        "5000",
+        "--gradient-steps",
+        "4",
+        "--batch-size",
+        "256",
+        "--buffer-size",
+        "100000",
+        "--save-replay",
+        "--critic-warmup-updates",
+        "0",
+        "--max-wall-seconds",
+        "0"
+      ],
+      "started_at_utc": "2026-09-15T13:29:29.869651+00:00",
+      "pid": 19080,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T13:41:44.856422+00:00"
+    },
+    {
+      "name": "development-20",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.evaluate",
+        "--env",
+        "ma",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual_interval5",
+        "--model",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\candidate\\model.zip",
+        "--episodes",
+        "20",
+        "--seed",
+        "2026",
+        "--out",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\development-20"
+      ],
+      "started_at_utc": "2026-09-15T13:41:54.192584+00:00",
+      "pid": 25500,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T13:58:37.799070+00:00"
+    },
+    {
+      "name": "replication-200",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.evaluate",
+        "--env",
+        "ma",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual_interval5",
+        "--model",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\candidate\\model.zip",
+        "--episodes",
+        "200",
+        "--seed",
+        "2027",
+        "--out",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\replication-200"
+      ],
+      "started_at_utc": "2026-09-15T13:58:37.868757+00:00",
+      "pid": 42880,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:37:23.824273+00:00"
+    },
+    {
+      "name": "comparison",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.compare",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\heldout-2027-ma-interval5-v1\\classical",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\replication-200",
+        "--out",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\comparison.json"
+      ],
+      "started_at_utc": "2026-09-15T16:37:24.076100+00:00",
+      "pid": 23824,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:37:25.293523+00:00"
+    }
+  ],
+  "training_audit": {
+    "exact_25000_step_callback": true,
+    "callback_optimizer_updates": 7996,
+    "final_optimizer_updates": 8000,
+    "matched_configuration_except": [
+      "max_wall_seconds",
+      "run_dir",
+      "seed",
+      "world_seeds"
+    ],
+    "initial_hidden_actor_weights_differ_from_primary": true,
+    "initial_actor_mean_zero": true,
+    "checkpoint_sha256": "b80405b8f9a1d759f600ccb5fb097a800fbf1a9fbfa8fa9ca212581942109e56",
+    "training_summary": {
+      "timesteps": 25000,
+      "new_timesteps": 25000,
+      "wall_seconds": 706.6402965000016,
+      "critic_updates": 8000,
+      "held_actor_updates": 0,
+      "actor_updates": 8000,
+      "live_transitions": 15507,
+      "skipped_transitions": 9493,
+      "new_live_transitions": 15507,
+      "new_skipped_transitions": 9493
+    }
+  },
+  "deployed_model_sha256": "b80405b8f9a1d759f600ccb5fb097a800fbf1a9fbfa8fa9ca212581942109e56",
+  "evaluations": {
+    "development-20": {
+      "seed": 2026,
+      "episodes": 20,
+      "summary_recomputed": true,
+      "csv_sha256": "1c385a96e38a9993beeb8328d7872809959b370555fc27d44ce35896322287e4",
+      "summary": {
+        "episodes": 20,
+        "agent_episodes": 200,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 929.885,
+            "std": 259.33721633232665
+          },
+          "intrusion_events": {
+            "mean": 0.02,
+            "std": 0.13999999999999999
+          },
+          "intrusion_time": {
+            "mean": 1.29,
+            "std": 9.259908206888445
+          },
+          "restricted_area_events": {
+            "mean": 0.005,
+            "std": 0.07053367989832944
+          },
+          "time_in_restricted_area": {
+            "mean": 0.065,
+            "std": 0.9169378386782824
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": 36.086014528355484,
+            "std": 8.76909747481878
+          }
+        },
+        "clean_completion_rate": 0.975,
+        "all_aircraft_clean_completion_rate": 0.85
+      }
+    },
+    "replication-200": {
+      "seed": 2027,
+      "episodes": 200,
+      "summary_recomputed": true,
+      "csv_sha256": "c728df9701efc00e0159b5a16c21dcae17427a8025716832bed0834dfcbdfc83",
+      "summary": {
+        "episodes": 200,
+        "agent_episodes": 2000,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 0.993,
+            "std": 0.08337265738837883
+          },
+          "flight_time": {
+            "mean": 1001.9095,
+            "std": 400.3384859212889
+          },
+          "intrusion_events": {
+            "mean": 0.049,
+            "std": 0.2749527232089182
+          },
+          "intrusion_time": {
+            "mean": 2.527,
+            "std": 17.67821458745198
+          },
+          "restricted_area_events": {
+            "mean": 0.0195,
+            "std": 0.173550424949062
+          },
+          "time_in_restricted_area": {
+            "mean": 0.956,
+            "std": 11.251491634445632
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": 34.18624476398581,
+            "std": 18.60284052891105
+          }
+        },
+        "clean_completion_rate": 0.9445,
+        "all_aircraft_clean_completion_rate": 0.735
+      }
+    }
+  },
+  "completed_at_utc": "2026-09-15T16:37:25.363548+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,43 @@
+{
+  "recipe_parameter_changes": {
+    "reach_reward": [
+      37.41716380974046,
+      250.0
+    ]
+  },
+  "original_undiscounted_timeout_return": -39.16788843411973,
+  "original_undiscounted_arrival_return": -167.83109993259887,
+  "arrival_bonus_equalizing_these_fixed_undiscounted_returns": 166.0803753082196,
+  "new_undiscounted_arrival_return": 44.75173625766064,
+  "objective_metrics_and_trace_bytes_unchanged": true,
+  "planned_training_run": "runs/sac-ma-fast-reference-reach250-v1-25k-seed2900",
+  "planned_seed": 2900,
+  "planned_counted_transitions": 25000,
+  "learning_starts": 5000,
+  "gradient_steps": 4,
+  "batch_size": 256,
+  "buffer_size": 100000,
+  "workers": 1,
+  "device": "cpu",
+  "critic_warmup_updates": 0,
+  "planned_checkpoint": "checkpoints/model_25000_steps.zip",
+  "planned_primary_evaluation": {
+    "env": "ma",
+    "episodes": 20,
+    "seed": 2026,
+    "inference_mode": "per_aircraft"
+  },
+  "planned_secondary_evaluation": {
+    "env": "sa",
+    "episodes": 20,
+    "seed": 2026,
+    "transfer": "same checkpoint bytes; zero SA training"
+  },
+  "comparisons": [
+    "same-budget fast-reference seed2900",
+    "matching classical route follower"
+  ],
+  "fresh_replay_required": true,
+  "hypothesis": "A larger arrival bonus may improve destination completion or efficiency; retain every safety metric when assessing any gain.",
+  "caveats": "The diagnostic uses two fixed trajectories and undiscounted returns. It does not establish the optimal policy, discounted SAC preferences, a safe-arrival guarantee or a competitive scoring formula. A larger reward also changes critic value scale."
+}

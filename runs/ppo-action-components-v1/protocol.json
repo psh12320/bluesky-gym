@@ -1,0 +1,36 @@
+{
+  "registered_at_utc": "2026-09-16T04:18:45.212611+00:00",
+  "checkpoint": {
+    "file": "model.zip",
+    "sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c",
+    "live_transitions": 100555,
+    "counted_transitions": 143360,
+    "padded_transitions": 42805,
+    "optimizer_steps": 1894,
+    "policy_epochs": 485,
+    "rollouts": 56
+  },
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cpa-source-v2-verify",
+  "diagnostic_script_sha256": "05b6a8aab542ab9d279b2758906f5be7a09bb1fbfbb0d54de9c70ea86975668a",
+  "worlds_per_arm": 2,
+  "stream": 20260,
+  "arms": [
+    "full_policy",
+    "zero_heading",
+    "zero_speed"
+  ],
+  "mapping": "Zero the selected latent action after deterministic model prediction, before goal_offset mapping.",
+  "support": {
+    "guidance": true,
+    "filter": false,
+    "conflict_features": true
+  },
+  "reason": "A passive reference-trajectory probe found a mean heading offset near -7.2 degrees for this policy.",
+  "selection": "First completed real-feature pilot; selected before these component evaluations.",
+  "limits": [
+    "Two development worlds; diagnostic evidence only.",
+    "Heading and speed interact through subsequent states; this is a closed-loop policy-component ablation.",
+    "Changing inference behavior is not additional RL training.",
+    "These variants are not nominated competition candidates."
+  ]
+}

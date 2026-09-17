@@ -1,0 +1,23 @@
+{
+  "checkpoints": {
+    "checkpoints/model_25000_steps.zip": {
+      "sha256": "70c68ac17d6884bbd02e39237673b414e6275c499db4605e7e41030c051e18bf",
+      "timesteps": 25000,
+      "optimizer_updates": 7996
+    },
+    "model.zip": {
+      "sha256": "ca18f26086fade211b1cbdd8dd272eeaae0f59953730b830e95cb6d25b7cb41f",
+      "timesteps": 25000,
+      "optimizer_updates": 8000
+    }
+  },
+  "training": {
+    "timesteps": 25000,
+    "new_timesteps": 25000,
+    "wall_seconds": 655.4333997000358,
+    "live_transitions": 13270,
+    "skipped_transitions": 11730,
+    "new_live_transitions": 13270,
+    "new_skipped_transitions": 11730
+  }
+}

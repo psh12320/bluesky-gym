@@ -1,0 +1,33 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-pilot-v1\technical\train\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\pretrained-ppo-source-v1-verify\atc_rl\train.py", line 241, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\pretrained-ppo-source-v1-verify\atc_rl\train.py", line 174, in main
+    config['pretraining']=initialize_from_pretrained(model,args.pretrained_model,config,directory)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\pretrained-ppo-source-v1-verify\atc_rl\pretrained.py", line 69, in initialize_from_pretrained
+    raise ValueError("Pretrained observation/action spaces differ")
+ValueError: Pretrained observation/action spaces differ

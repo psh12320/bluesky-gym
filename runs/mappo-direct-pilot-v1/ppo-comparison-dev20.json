@@ -1,0 +1,116 @@
+{
+  "training_seed": 49900,
+  "worlds": 20,
+  "ppo_live_transitions": 101244,
+  "mappo_live_transitions": 100744,
+  "optimizer_updates_each": 1000,
+  "initial_actor_tensors_identical": true,
+  "initial_physical_records_identical": true,
+  "critic_parameter_counts": {
+    "ppo": 98305,
+    "mappo": 423425
+  },
+  "metrics": {
+    "waypoint_reached": {
+      "ppo_mean": 0.01,
+      "mappo_mean": 0.0,
+      "mappo_minus_ppo": -0.01,
+      "paired_world_bootstrap_95_interval": [
+        -0.025,
+        0.0
+      ]
+    },
+    "flight_time": {
+      "ppo_mean": 2981.25,
+      "mappo_mean": 3000.0,
+      "mappo_minus_ppo": 18.75,
+      "paired_world_bootstrap_95_interval": [
+        0.0,
+        48.76500000000001
+      ]
+    },
+    "intrusion_events": {
+      "ppo_mean": 0.1,
+      "mappo_mean": 1.9600000000000002,
+      "mappo_minus_ppo": 1.8599999999999999,
+      "paired_world_bootstrap_95_interval": [
+        0.8099999999999999,
+        3.12
+      ]
+    },
+    "intrusion_time": {
+      "ppo_mean": 89.75,
+      "mappo_mean": 138.80999999999997,
+      "mappo_minus_ppo": 49.06,
+      "paired_world_bootstrap_95_interval": [
+        -59.53074999999998,
+        164.22224999999995
+      ]
+    },
+    "restricted_area_events": {
+      "ppo_mean": 0.8500000000000002,
+      "mappo_mean": 1.095,
+      "mappo_minus_ppo": 0.24499999999999994,
+      "paired_world_bootstrap_95_interval": [
+        -0.215,
+        0.6649999999999999
+      ]
+    },
+    "time_in_restricted_area": {
+      "ppo_mean": 141.13,
+      "mappo_mean": 185.89,
+      "mappo_minus_ppo": 44.76,
+      "paired_world_bootstrap_95_interval": [
+        -34.403375000000004,
+        122.86012499999997
+      ]
+    },
+    "sector_exit_events": {
+      "ppo_mean": 1.0,
+      "mappo_mean": 0.5349999999999999,
+      "mappo_minus_ppo": -0.465,
+      "paired_world_bootstrap_95_interval": [
+        -0.6551250000000001,
+        -0.255
+      ]
+    },
+    "time_outside_sector": {
+      "ppo_mean": 2019.325,
+      "mappo_mean": 296.775,
+      "mappo_minus_ppo": -1722.55,
+      "paired_world_bootstrap_95_interval": [
+        -1908.095625,
+        -1486.6665
+      ]
+    },
+    "total_reward": {
+      "ppo_mean": -427.4719531778261,
+      "mappo_mean": -265.08347269449035,
+      "mappo_minus_ppo": 162.38848048333577,
+      "paired_world_bootstrap_95_interval": [
+        27.850180462637326,
+        283.58650414080455
+      ]
+    },
+    "clean_completion": {
+      "ppo_mean": 0.005,
+      "mappo_mean": 0.0,
+      "mappo_minus_ppo": -0.005,
+      "paired_world_bootstrap_95_interval": [
+        -0.015000000000000003,
+        0.0
+      ]
+    },
+    "all_aircraft_clean_completion": {
+      "ppo_mean": 0.0,
+      "mappo_mean": 0.0,
+      "mappo_minus_ppo": 0.0,
+      "paired_world_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "interpretation": "Neither policy demonstrates useful flight completion. Do not scale this raw-reward MAPPO recipe solely because its scalar reward is higher.",
+  "limitations": "One training seed and twenty development worlds. Critic information and parameter count differ; no algorithm superiority claim."
+}

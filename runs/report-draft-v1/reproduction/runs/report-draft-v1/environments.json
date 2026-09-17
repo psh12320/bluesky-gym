@@ -1,0 +1,16 @@
+{
+  "figure_runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "report_runtime": {
+    "python": "3.12.14",
+    "packages": {
+      "reportlab": "4.4.9",
+      "pypdf": "6.10.0"
+    }
+  }
+}

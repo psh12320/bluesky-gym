@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-v1\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 103226,
+  "padded_transitions": 24774,
+  "optimizer_steps": 1093,
+  "verified_checkpoints": 6,
+  "verified_source_files": 86,
+  "learning_curve_rows": 25,
+  "aircraft_completed": 581,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "d26fff6aad639e84fa545d5d161546af0ae4d13369b792f6737af12246e127ff",
+  "policy_quality_assessed": false
+}

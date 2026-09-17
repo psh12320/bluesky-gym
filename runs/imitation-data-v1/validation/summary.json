@@ -1,0 +1,45 @@
+{
+  "episodes": 8,
+  "agent_episodes": 80,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 1004.7375,
+      "std": 358.65849856618485
+    },
+    "intrusion_events": {
+      "mean": 0.05,
+      "std": 0.2179449471770336
+    },
+    "intrusion_time": {
+      "mean": 3.875,
+      "std": 17.97524339195439
+    },
+    "restricted_area_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_in_restricted_area": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 33.65892949529113,
+      "std": 17.04949281648464
+    }
+  },
+  "clean_completion_rate": 0.95,
+  "all_aircraft_clean_completion_rate": 0.75,
+  "csv_sha256": "dcbbb2266b7a0c993f49b71257c8275eeab873de2e96ab2b9147431518029675"
+}

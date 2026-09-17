@@ -1,0 +1,63 @@
+{
+  "registered_at_utc": "2026-09-15T19:52:52.832180+00:00",
+  "algorithm": "ppo",
+  "training_seed": 49900,
+  "workers": 2,
+  "world_seeds": [
+    49900,
+    49910
+  ],
+  "live_transition_budget_per_run": 1000000,
+  "finish_current_rollout": true,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "action_reference": "goal_offset",
+  "initial_action_std": 0.05,
+  "neutral_action_mean": true,
+  "guidance": false,
+  "filter": false,
+  "progress_scale": 0.0,
+  "reward_scales": [
+    1.0,
+    0.01
+  ],
+  "initial_reference": "runs/goal-offset-v1/train/initial-model.zip",
+  "initial_evaluation": "runs/goal-offset-v1/eval-initial-dev20",
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "development_seed": 20260,
+  "development_worlds": 20,
+  "checkpoint_live_interval": 100000,
+  "curve_targets": [
+    0,
+    100000,
+    300000,
+    1000000
+  ],
+  "source_bundle_sha256": "34c542b8ceb1113734b63869084740f05e76d8e97f5994425e3dcea8fb8daf53",
+  "changed_code_since_pilot": [
+    "atc_rl/train.py"
+  ],
+  "source_change_description": "Only descriptive training metadata about the navigation prior; numerical training behavior is unchanged.",
+  "required_checks": [
+    "Both full initial policy fingerprints match the original goal-offset initial checkpoint.",
+    "Native-scale initial and approximately-100k policy tensors reproduce the earlier pilot exactly.",
+    "All final checkpoints, experience and optimizer counts, sources and actor/critic dependencies pass the audit.",
+    "Every evaluated policy uses goal_offset semantics, native metrics and the same frozen evaluator.",
+    "Retain every registered curve point and all nine physical metrics."
+  ],
+  "initial_learning_screen_failed": true,
+  "purpose": "Separate increased learning budget from reward-scale effects after the navigation prior stabilized arrival. No success is claimed from the prior.",
+  "advancement_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "success_standard_unchanged": "Working RL with learned safety gains, strong performance, multiple training seeds and unseen scenarios. These one-seed runs cannot establish the final claim."
+}

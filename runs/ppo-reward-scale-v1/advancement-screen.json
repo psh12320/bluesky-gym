@@ -1,0 +1,7 @@
+{
+  "screen_passed": false,
+  "arrival_gain_percentage_points": 4,
+  "required_arrival_gain_percentage_points": 10,
+  "intrusion_time_change_seconds": 194.79,
+  "decision": "Do not extend reward scaling alone as a successful navigation recipe."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "exact_metric_matches": 180,
+  "exact_physical_metric_matches": 160,
+  "exact_reward_matches": 20,
+  "technical_only": true,
+  "used_for_model_selection": false
+}

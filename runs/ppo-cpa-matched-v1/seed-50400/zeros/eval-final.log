@@ -1,0 +1,42 @@
+{"episode": 0, "arrival_rate": 1.0}
+{"episode": 1, "arrival_rate": 1.0}
+{"episode": 2, "arrival_rate": 0.8}
+{"episode": 3, "arrival_rate": 1.0}
+{"episode": 4, "arrival_rate": 1.0}
+{"episode": 5, "arrival_rate": 1.0}
+{"episode": 6, "arrival_rate": 1.0}
+{"episode": 7, "arrival_rate": 1.0}
+{"episode": 8, "arrival_rate": 1.0}
+{"episode": 9, "arrival_rate": 1.0}
+{"episode": 10, "arrival_rate": 1.0}
+{"episode": 11, "arrival_rate": 1.0}
+{"episode": 12, "arrival_rate": 1.0}
+{"episode": 13, "arrival_rate": 1.0}
+{"episode": 14, "arrival_rate": 1.0}
+{"episode": 15, "arrival_rate": 1.0}
+{"episode": 16, "arrival_rate": 0.8}
+{"episode": 17, "arrival_rate": 0.7}
+{"episode": 18, "arrival_rate": 1.0}
+{"episode": 19, "arrival_rate": 1.0}
+{"episodes": 20, "agent_episodes": 200, "metrics": {"waypoint_reached": {"mean": 0.965, "std": 0.1837797594948911}, "flight_time": {"mean": 1139.405, "std": 535.8488788595157}, "intrusion_events": {"mean": 1.58, "std": 1.3833293172632466}, "intrusion_time": {"mean": 135.35, "std": 181.70442344643126}, "restricted_area_events": {"mean": 0.075, "std": 0.28173569173961616}, "time_in_restricted_area": {"mean": 5.385, "std": 37.864056504817334}, "sector_exit_events": {"mean": 0.005, "std": 0.07053367989832943}, "time_outside_sector": {"mean": 0.245, "std": 3.4561503150181427}, "total_reward": {"mean": -94.71952141723362, "std": 176.3217099835248}}, "clean_completion_rate": 0.215, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "ppo", "guidance": true, "filter": false, "action_reference": "goal_offset", "conflict_features": true, "mask_conflict_features": true, "seed": 20260, "live_transitions": 45648, "padded_transitions": 28732, "world_decisions": 7438, "aircraft_terminated": 193, "aircraft_truncated": 7, "wall_seconds": 529.8350021000006, "actor_inference_uses_joint_context": false, "runtime": {"geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true, "training_progress_scale": 0.0, "action_reference": "goal_offset", "conflict_features": true, "mask_conflict_features": true}, "csv_sha256": "33d831c087991f1fc4e47a2877dfabf0cab29ec34c8b99c1ca03ad0b0f1403d2"}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-cpa-matched-v1\seed-50400\zeros\eval-final-dev20\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

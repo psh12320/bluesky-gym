@@ -1,0 +1,77 @@
+{
+  "registered_at_utc": "2026-09-17T03:12:14.208756+00:00",
+  "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train",
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-component-swap-v1\\source",
+  "source_bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-ppo-source-v3.zip",
+  "source_bundle_sha256": "c329c4ba0ee3a472c89477856740811947c6f3634335c395089eff6682e4404d",
+  "source_files": 150,
+  "all_evaluator_source_files_identical_to_original": true,
+  "cache": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-component-swap-v1\\source\\runs\\simulator\\cache\\navdata.p",
+  "cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "component_helper": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-component-swap-v1\\component_selector.py",
+  "component_helper_sha256": "4940cd85d582fd1bc5fc63b215713e9accbaeab495583a7587e3f906e043b2e4",
+  "protected_files": {
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\model.zip": "1581131726e13f64b28f594dc020dbc6f160dc283d726bc8f6da05a5642bfc7a",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\initial-model.zip": "fb28701a296ecd83488081bb76c29ecc41dc0e64064429ae9ce710749794e07b",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\checkpoints.json": "78bbd4b1756e22aabdda4daade2da602e298baaa2bcd41db668db23c5101e20a",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\config.json": "b9e2e5b324a9fff2d5db0b4e962d6fe42cb40fcb3f84ac3e4e77b78878790153",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\provenance.json": "c27a69715bbf1ead79b272b96ac9e211076f27bcc8b7e23f728ff93bd4ac2f92",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train\\training_summary.json": "da6b153a4bd8412bfaf1c98d988f9670a1419886e5a36c29e3c2fce4d443c32c",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-initial-dev20\\aircraft.csv": "c1809323ee4cd0e178ff836581c467ba985f0cd2b823cf35ae17906f52b114d3",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-initial-dev20\\summary.json": "1041280eaef54c21c308bb2b027374e9f4b1794fce143ef16c1069b6b81d97ce",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-initial-dev20\\protocol.json": "ff8bfd1bb8537bda57d6560c925941c98d507ac4cab49f2d030061a01bf905fe",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-initial-dev20\\scenarios.json": "4eba8f13eeeb7893540fb95f5fcbc7abeb8bba4f0ed61455707ddfd11cbc4ee8",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-final-dev20\\aircraft.csv": "a918394a4556f114c97b233312c03389bb40c2f02fea2d9f3fd20c0bfe8b4dcf",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-final-dev20\\summary.json": "8c057c977f4dd1bc8691aad6c308538eb4e2253a6e159eaee812b9622d158899",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-final-dev20\\protocol.json": "045eff1238a1d0c2a7fc27462581962807f2870d08a6e0a53e8252bf2ca4cbe2",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-final-dev20\\scenarios.json": "4eba8f13eeeb7893540fb95f5fcbc7abeb8bba4f0ed61455707ddfd11cbc4ee8"
+  },
+  "scenario_seed": 20260,
+  "worlds": 20,
+  "control_replay_worlds": 2,
+  "arms": {
+    "initial_replay": [
+      "initial",
+      "initial"
+    ],
+    "trained_replay": [
+      "trained",
+      "trained"
+    ],
+    "trained_heading": [
+      "trained",
+      "initial"
+    ],
+    "trained_speed": [
+      "initial",
+      "trained"
+    ]
+  },
+  "control_evaluations": {
+    "initial": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-initial-dev20",
+    "final": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\eval-final-dev20"
+  },
+  "checkpoints": {
+    "initial": "initial-model.zip",
+    "trained": "model.zip"
+  },
+  "support": {
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true,
+    "action_reference": "direct"
+  },
+  "purpose": "Diagnose the observed clean-completion/flight-time tradeoff by swapping learned components with the same supervised starting policy.",
+  "initial_policy_is_untrained": false,
+  "checkpoint_choice": "The fixed final 100k default-rate PPO checkpoint; diagnosis selected after observing its tradeoff.",
+  "resource_policy": "One simulator reused sequentially across arms, fresh seed reset for each arm; no elapsed-time cutoff; at most 600 decisions per world.",
+  "analysis": "All native metrics and clean completions, paired whole-world bootstrap 10000 resamples seed701; include interaction and pre-filter command statistics.",
+  "controls": "Both unchanged policy controls must replay all 180 metric values on the first two development worlds exactly; reuse their preserved 20-world evaluations for contrasts.",
+  "limitations": [
+    "One selected training run and reused development scenarios; this is an exploratory component diagnostic.",
+    "Components change subsequent states; this measures closed-loop intervention, not retraining or an additive causal decomposition.",
+    "No model, reward or filter is updated; hybrid inference variants are not promoted as competition candidates.",
+    "Two-world control replay checks wiring only. The reused 20-world controls retain their original observations and source records."
+  ]
+}

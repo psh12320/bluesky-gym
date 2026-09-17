@@ -1,0 +1,6 @@
+{
+  "full_policy_tensors_identical": true,
+  "policy_fingerprint": "3817e1a9ed5b41fbe00da564e86543a3edb85bb6daf74298d19ef73951d8b310",
+  "reference": "neutral-reference/initial-model.zip",
+  "actual_training_initial": "train-neutral-std0p05/initial-model.zip"
+}

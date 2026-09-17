@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-09-15T14:06:38.459791+00:00",
+  "torch_cpu": {
+    "filename": "torch-2.14.0+cpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "sha256": "a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260",
+    "compressed_bytes": 0,
+    "metadata_sha256": "6e6cbfdc8067a91fe9fa5068191574caef6d04c743da805707b849396a8834f6",
+    "requires_dist": [
+      "Requires-Dist: filelock",
+      "Requires-Dist: typing-extensions>=4.10.0",
+      "Requires-Dist: setuptools>=77.0.3",
+      "Requires-Dist: sympy>=1.13.3",
+      "Requires-Dist: networkx>=2.5.1",
+      "Requires-Dist: jinja2",
+      "Requires-Dist: fsspec>=0.8.5",
+      "Requires-Dist: optree>=0.13.0; extra == \"optree\"",
+      "Requires-Dist: opt-einsum>=3.3; extra == \"opt-einsum\"",
+      "Requires-Dist: pyyaml; extra == \"pyyaml\""
+    ],
+    "gpu_dependencies_declared": false,
+    "http_errors": {
+      "wheel_head_http_status": 403
+    }
+  },
+  "python_release": "20260901",
+  "matching_python_3_12_14_assets": [
+    {
+      "name": "cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+      "size": 34143368,
+      "browser_download_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14%2B20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+      "digest": "sha256:72748da13197c1fb161e3afeef20a6a385ff24f2165e6e2758e47008e7faba4c"
+    }
+  ],
+  "binary_archives_downloaded": false,
+  "environment_created": false,
+  "linux_code_executed": false
+}

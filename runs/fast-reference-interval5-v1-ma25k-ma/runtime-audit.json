@@ -1,0 +1,50 @@
+{
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "bytes_unchanged": true,
+  "additional_training_transitions": 0,
+  "runtime_checks": [
+    {
+      "env": "ma",
+      "decision_interval_seconds": 5,
+      "scoring_interval_seconds": 1,
+      "first_step_aircraft_flight_times": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "episode_time_limit_seconds": 3000.0,
+      "observation_shape": [
+        124
+      ],
+      "speed_increment_knots": 6.666666666666667,
+      "heading_limit_deg": 45.0,
+      "separation_nm": 5.0,
+      "goal_radius_km": 5.0,
+      "actual_scripted_intruders": 0
+    },
+    {
+      "env": "sa",
+      "decision_interval_seconds": 5,
+      "scoring_interval_seconds": 1,
+      "first_step_aircraft_flight_times": [
+        5.0
+      ],
+      "episode_time_limit_seconds": 3000.0,
+      "observation_shape": [
+        124
+      ],
+      "speed_increment_knots": 6.666666666666667,
+      "heading_limit_deg": 45.0,
+      "separation_nm": 5.0,
+      "goal_radius_km": 5.0,
+      "actual_scripted_intruders": 10
+    }
+  ]
+}

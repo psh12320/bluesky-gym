@@ -1,0 +1,6 @@
+{
+  "error": "Wrong evaluation stream or source",
+  "cause": "Local validation uses an older fixed classical evaluator (73 files) and newer learned evaluator (85 files).",
+  "resolution": "Declare the legacy classical source explicitly and verify unchanged controller/simulator files. Cluster CLI continues to require the same evaluator source for every policy.",
+  "original_results_modified": false
+}

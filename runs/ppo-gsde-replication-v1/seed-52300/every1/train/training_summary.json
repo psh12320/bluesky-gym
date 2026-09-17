@@ -1,0 +1,18 @@
+{
+  "status": "wall_limit_before_budget",
+  "algorithm": "ppo",
+  "live_transitions": 13481,
+  "padded_transitions": 6999,
+  "counted_transitions": 20480,
+  "optimizer_steps": 290,
+  "policy_epochs": 80,
+  "rollouts": 8,
+  "worlds_completed": 6,
+  "aircraft_completed": 60,
+  "wall_seconds": 4073.339893599994,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "878a06427ad4fb00f21bb9fd00c24f79c0dcc23d10a356762bad49d1409c4d20",
+  "training_seed": 52300,
+  "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+}

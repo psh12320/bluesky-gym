@@ -1,0 +1,56 @@
+{
+  "episode": 3,
+  "seed": 2026,
+  "exact_reference_metrics_match": true,
+  "sampling_seconds": 10,
+  "failed_aircraft": {
+    "KL001": {
+      "start_goal_km": 155.42719757846976,
+      "minimum_goal_km": 59.0462208570631,
+      "minimum_goal_time": 660.0,
+      "final_sample_goal_km": 142.61400021670767,
+      "sampled_path_length_km": 467.2431804042396,
+      "last_1000s_mean_cas_mps": 147.943664878763,
+      "last_1000s_static_threat_decisions": 90,
+      "last_1000s_traffic_threat_decisions": 0,
+      "last_1000s_correction_decisions": 90,
+      "last_1000s_no_joint_candidate": 19,
+      "metrics": {
+        "agent": "KL001",
+        "total_reward": -45.49403373732712,
+        "flight_time": 3000.0,
+        "waypoint_reached": 0,
+        "intrusion_events": 0,
+        "intrusion_time": 0.0,
+        "sector_exit_events": 0,
+        "time_outside_sector": 0.0,
+        "restricted_area_events": 1,
+        "time_in_restricted_area": 90.0
+      }
+    },
+    "KL0010": {
+      "start_goal_km": 160.86290983396356,
+      "minimum_goal_km": 89.18358931427632,
+      "minimum_goal_time": 2990.0,
+      "final_sample_goal_km": 89.18358931427632,
+      "sampled_path_length_km": 488.7358513908195,
+      "last_1000s_mean_cas_mps": 160.7484793350982,
+      "last_1000s_static_threat_decisions": 70,
+      "last_1000s_traffic_threat_decisions": 0,
+      "last_1000s_correction_decisions": 70,
+      "last_1000s_no_joint_candidate": 0,
+      "metrics": {
+        "agent": "KL0010",
+        "total_reward": -0.4158596220944846,
+        "flight_time": 3000.0,
+        "waypoint_reached": 0,
+        "intrusion_events": 0,
+        "intrusion_time": 0.0,
+        "sector_exit_events": 0,
+        "time_outside_sector": 0.0,
+        "restricted_area_events": 0,
+        "time_in_restricted_area": 0.0
+      }
+    }
+  }
+}

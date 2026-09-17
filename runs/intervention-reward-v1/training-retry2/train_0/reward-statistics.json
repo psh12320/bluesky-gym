@@ -1,0 +1,11 @@
+[
+  {
+    "steps": 2500,
+    "commands": 13875,
+    "interventions": 3959,
+    "correction_cost": 331.6052213489992,
+    "penalty": 0.0,
+    "original_reward": 3167.9355076552097,
+    "training_reward": 3167.9355076552097
+  }
+]

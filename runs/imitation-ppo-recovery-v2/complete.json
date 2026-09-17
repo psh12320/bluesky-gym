@@ -1,0 +1,152 @@
+{
+  "status": "complete",
+  "finished_at_utc": "2026-09-17T02:57:27.577297+00:00",
+  "protocol_sha256": "28c14001a32333b0142c1b2da23e02c7a4db87184329b23b382815a8ce6675ff",
+  "supervised_training": {
+    "status": "complete",
+    "completed_at_utc": "2026-09-16T11:02:56.706119+00:00",
+    "training_method": "behavior_cloning_only",
+    "reinforcement_learning_updates": 0,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "demonstration_transitions": 62744,
+    "validation_transitions": 16108,
+    "epochs": 40,
+    "changed_parameter_names": [
+      "mlp_extractor.policy_net.0.weight",
+      "mlp_extractor.policy_net.0.bias",
+      "mlp_extractor.policy_net.2.weight",
+      "mlp_extractor.policy_net.2.bias",
+      "action_net.weight",
+      "action_net.bias"
+    ],
+    "actor_mean_only_changed": true,
+    "critic_and_noise_unchanged": true,
+    "initial_errors": {
+      "epoch": 0,
+      "supervised_optimizer_steps": 0,
+      "train": {
+        "action_mse": 0.5166919110554802,
+        "mean_absolute_heading_command_error_degrees": 2.190115451812744,
+        "mean_absolute_speed_action_error": 0.9974499344825745,
+        "intervention_action_mse": 0.5040441952817271,
+        "nominal_action_mse": 0.5189653798204673,
+        "equal_world_mean_action_mse": 0.5157230030047679,
+        "rows": 62744,
+        "worlds": 32
+      },
+      "validation": {
+        "action_mse": 0.5171535862003136,
+        "mean_absolute_heading_command_error_degrees": 2.253941774368286,
+        "mean_absolute_speed_action_error": 0.9981375932693481,
+        "intervention_action_mse": 0.5034580000691571,
+        "nominal_action_mse": 0.519672060145643,
+        "equal_world_mean_action_mse": 0.5161985937154389,
+        "rows": 16108,
+        "worlds": 8
+      }
+    },
+    "final_errors": {
+      "epoch": 40,
+      "supervised_optimizer_steps": 2480,
+      "supervised_examples_seen": 2509760,
+      "weighted_training_loss": 0.02806804598187148,
+      "train": {
+        "action_mse": 0.016574143064256572,
+        "mean_absolute_heading_command_error_degrees": 3.6523211002349854,
+        "mean_absolute_speed_action_error": 0.03208823874592781,
+        "intervention_action_mse": 0.04365881562433587,
+        "nominal_action_mse": 0.011705583541197792,
+        "equal_world_mean_action_mse": 0.015808134599953318,
+        "rows": 62744,
+        "worlds": 32
+      },
+      "validation": {
+        "action_mse": 0.03046279247519368,
+        "mean_absolute_heading_command_error_degrees": 4.6501007080078125,
+        "mean_absolute_speed_action_error": 0.04360433667898178,
+        "intervention_action_mse": 0.12142717710801101,
+        "nominal_action_mse": 0.013735400857428793,
+        "equal_world_mean_action_mse": 0.028771770486488657,
+        "rows": 16108,
+        "worlds": 8
+      }
+    },
+    "serialization_actions_identical": true,
+    "model_sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+    "performance_claim": false,
+    "next_validation": "Evaluate the saved learned policy in the simulator, then measure PPO gains against its own pretrained starting policy."
+  },
+  "ppo_training": {
+    "status": "complete",
+    "algorithm": "ppo",
+    "live_transitions": 101628,
+    "padded_transitions": 77572,
+    "counted_transitions": 179200,
+    "optimizer_steps": 268,
+    "policy_epochs": 145,
+    "rollouts": 70,
+    "worlds_completed": 40,
+    "aircraft_completed": 404,
+    "wall_seconds": 52949.7289733,
+    "actor_and_critic_parameters_changed": true,
+    "source_unchanged": true,
+    "model_sha256": "1581131726e13f64b28f594dc020dbc6f160dc283d726bc8f6da05a5642bfc7a",
+    "training_seed": 61420,
+    "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations.",
+    "pretraining": {
+      "method": "behavior_cloning",
+      "original_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-pilot-v1\\bc",
+      "archived_directory": "pretraining",
+      "archived_files": {
+        "model.zip": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+        "config.json": "60fdfd3b93d991b8ec83b25eaa5e031e9030a19d2638ed429576650f324601b8",
+        "training_summary.json": "745612c99f6283b102f684d0776be0a7d14fd324a81726fe3a0930b3e769ee3e",
+        "checkpoints.json": "204efb0e4d6062f51a9dd9d500ac3f47be574a973a6ecfa72ac5aa65afa5e635",
+        "provenance.json": "774c1dbb9ac77697569cec14cd909cb71a40cfddbc33e82bf3565d34eb6dd583"
+      },
+      "parent_checkpoint": {
+        "file": "model.zip",
+        "sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+        "policy_fingerprint": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee",
+        "live_transitions": 0,
+        "counted_transitions": 0,
+        "padded_transitions": 0,
+        "optimizer_steps": 0,
+        "policy_epochs": 0,
+        "rollouts": 0,
+        "training_method": "behavior_cloning",
+        "supervised_epochs": 40,
+        "supervised_optimizer_steps": 2480,
+        "supervised_examples_seen": 2509760,
+        "demonstration_transitions": 62744
+      },
+      "demonstration_transitions": 62744,
+      "supervised_optimizer_steps": 2480,
+      "supervised_examples_seen": 2509760,
+      "initial_policy_is_untrained": false,
+      "rl_live_transitions_at_initialization": 0,
+      "ppo_optimizer_inherited": false,
+      "action_space_compatibility": {
+        "parent_dtype": "float32",
+        "ppo_dtype": "float64",
+        "shape": [
+          2
+        ],
+        "low": [
+          -1.0,
+          -1.0
+        ],
+        "high": [
+          1.0,
+          1.0
+        ],
+        "only_floating_storage_dtype_may_differ": true
+      }
+    },
+    "training_method": "ppo_after_behavior_cloning"
+  },
+  "learning_reference": "The PPO initial checkpoint is the verified behavior-cloned policy, not an untrained actor.",
+  "candidate_promoted": false,
+  "unseen_scenarios_used": false
+}

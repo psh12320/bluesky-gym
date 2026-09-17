@@ -1,0 +1,208 @@
+{
+  "episodes": 20,
+  "seed": 2026,
+  "agent_episodes": 200,
+  "scope": "Descriptive development audit; no training-seed or held-out inference.",
+  "common_completed_aircraft": 196,
+  "policies": {
+    "neutral": {
+      "prefix": "runs/neutral-ma-20",
+      "model_sha256": null,
+      "csv_sha256": "85889a52ce90fc8b559325a1e7be23318b4d92770b6f3bde75460928dd94a83a",
+      "statistics": {
+        "intrusion_time": {
+          "mean": 61.45,
+          "median": 19.0,
+          "p90": 195.2,
+          "p99": 389.2099999999998,
+          "maximum": 426.0,
+          "positive_count": 105,
+          "common_completed_mean": 59.27040816326531
+        },
+        "time_in_restricted_area": {
+          "mean": 112.715,
+          "median": 0.0,
+          "p90": 376.0999999999999,
+          "p99": 635.02,
+          "maximum": 641.0,
+          "positive_count": 95,
+          "common_completed_mean": 113.26530612244898
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "p99": 0.0,
+          "maximum": 0.0,
+          "positive_count": 0,
+          "common_completed_mean": 0.0
+        },
+        "flight_time": {
+          "mean": 838.23,
+          "median": 828.5,
+          "p90": 1026.3,
+          "p99": 1076.01,
+          "maximum": 1085.0,
+          "positive_count": 200,
+          "common_completed_mean": 834.7704081632653
+        }
+      },
+      "failed_arrivals": []
+    },
+    "public391k": {
+      "prefix": "runs/sac-ma-public-600k-seed1400/validation-final-individual-20",
+      "model_sha256": "b4c7a671dbd0fae8146522fa8278f19f4119c859caf2e1b07fe0bb56eae45093",
+      "csv_sha256": "872d5ecd0bcc0bf71728885501f8e81b9375b58e261c07ef44dde5f57ba3eb2f",
+      "statistics": {
+        "intrusion_time": {
+          "mean": 24.55,
+          "median": 0.0,
+          "p90": 81.0,
+          "p99": 172.28999999999974,
+          "maximum": 201.0,
+          "positive_count": 70,
+          "common_completed_mean": 24.331632653061224
+        },
+        "time_in_restricted_area": {
+          "mean": 79.505,
+          "median": 0.0,
+          "p90": 311.99999999999994,
+          "p99": 512.4099999999996,
+          "maximum": 680.0,
+          "positive_count": 84,
+          "common_completed_mean": 81.12755102040816
+        },
+        "time_outside_sector": {
+          "mean": 50.84,
+          "median": 0.0,
+          "p90": 197.7999999999999,
+          "p99": 823.5599999999995,
+          "maximum": 925.0,
+          "positive_count": 26,
+          "common_completed_mean": 50.275510204081634
+        },
+        "flight_time": {
+          "mean": 1046.94,
+          "median": 966.5,
+          "p90": 1438.0,
+          "p99": 2295.619999999995,
+          "maximum": 3000.0,
+          "positive_count": 200,
+          "common_completed_mean": 1025.9591836734694
+        }
+      },
+      "failed_arrivals": [
+        {
+          "episode": 14,
+          "agent": "KL002",
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -0.38592847024913474
+        }
+      ]
+    },
+    "public594k": {
+      "prefix": "runs/sac-ma-public-to1m-seed1800/validation-final-individual-20",
+      "model_sha256": "d0019028f5f6c25b968f7604a8102a479e92249cd2d46d7cb2a6507abadf84b0",
+      "csv_sha256": "f5b0147f74a8d22e30e2507544e9752a881acdd1e795fe2f44aa6c3054411efe",
+      "statistics": {
+        "intrusion_time": {
+          "mean": 21.36,
+          "median": 0.0,
+          "p90": 61.29999999999998,
+          "p99": 182.1999999999989,
+          "maximum": 301.0,
+          "positive_count": 60,
+          "common_completed_mean": 20.260204081632654
+        },
+        "time_in_restricted_area": {
+          "mean": 63.66,
+          "median": 0.0,
+          "p90": 256.29999999999995,
+          "p99": 441.82999999999925,
+          "maximum": 674.0,
+          "positive_count": 72,
+          "common_completed_mean": 62.255102040816325
+        },
+        "time_outside_sector": {
+          "mean": 56.96,
+          "median": 0.0,
+          "p90": 241.1,
+          "p99": 707.159999999998,
+          "maximum": 986.0,
+          "positive_count": 31,
+          "common_completed_mean": 56.47959183673469
+        },
+        "flight_time": {
+          "mean": 1083.37,
+          "median": 969.0,
+          "p90": 1442.7999999999997,
+          "p99": 3000.0,
+          "maximum": 3000.0,
+          "positive_count": 200,
+          "common_completed_mean": 1044.2551020408164
+        }
+      },
+      "failed_arrivals": [
+        {
+          "episode": 3,
+          "agent": "KL0010",
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 1.0,
+          "time_in_restricted_area": 300.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -150.47112924611298
+        },
+        {
+          "episode": 11,
+          "agent": "KL001",
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -0.3901043384778718
+        },
+        {
+          "episode": 11,
+          "agent": "KL005",
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 1.0,
+          "intrusion_time": 301.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 5.0,
+          "time_outside_sector": 322.0,
+          "total_reward": -328.2906533351791
+        },
+        {
+          "episode": 14,
+          "agent": "KL002",
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 2.0,
+          "time_in_restricted_area": 230.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -115.37663326967075
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "seven_known_factorial_contrasts_verified": true,
+  "training_seed_sd_distinct_from_world_interval": true,
+  "invalid_input_cases_rejected": 4,
+  "syntax_valid": true
+}

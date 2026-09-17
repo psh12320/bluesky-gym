@@ -1,0 +1,18 @@
+{
+  "algorithm": "sac",
+  "status": "complete",
+  "model_sha256": "61f23006dcc7f5299aa8d75aa3e2172adcf2e8a3050affdceb62a28325346a29",
+  "live_transitions": 100441,
+  "optimizer_steps": 15116,
+  "verified_checkpoints": 4,
+  "verified_source_files": 101,
+  "learning_rows": 122,
+  "aircraft_completed": 307,
+  "actor_parameter_count": 38916,
+  "critic_parameter_count": 220674,
+  "actor_and_critic_changed": true,
+  "actor_and_critics_use_local_inputs_only": true,
+  "finite_task_deadline": true,
+  "historical_replay_loaded": false,
+  "policy_quality_assessed": false
+}

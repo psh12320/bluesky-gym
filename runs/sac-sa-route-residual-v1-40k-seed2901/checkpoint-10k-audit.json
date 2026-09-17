@@ -1,0 +1,6 @@
+{
+  "model": "runs\\sac-sa-route-residual-v1-40k-seed2901\\checkpoints\\model_10000_steps.zip",
+  "model_sha256": "8774a64c78f1d2f2e4307064e29aeb8e91e4377d1aa4d06be907af32e0e7924c",
+  "timesteps": 10000,
+  "optimizer_updates": 8999
+}

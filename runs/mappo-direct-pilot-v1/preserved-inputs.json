@@ -1,0 +1,9 @@
+{
+  "verified_sha256": {
+    "runs/onpolicy-cluster-v1.zip": "a1e578f3540edccddbf97506aff7eba5ac221b5a4946242cc154253b564dd293",
+    "output/candidates/decimal-heading-v1.zip": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+    "runs/ppo-direct-pilot-v1/model.zip": "b6dd36852a5304a30ec8bea607a1ebe8993753bef5d3f9b916a1a0e743bded27",
+    "runs/progress-reward-v1/train/model.zip": "2f09e8210b4ce95331e06e77527f66f8a5885f561c3774c87002012bb02de4c2"
+  },
+  "existing_evaluation_processes_not_stopped": true
+}

@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-09-15T15:57:18.925772+00:00",
+  "protocol_sha256": "5e33d56dadf207105ff600d1e8283d8bf5baf8793cd84e7c4ff7534119365371",
+  "runner_sha256": "576c8aaa9379a57f34a1f424b2ea81f5560aff3b99ef1f6197f9a89dcbb5df35",
+  "extension_sha256": "1586748db416454ff5db0c06200cb6977f43a9fd9db45b3fec675bb0a734f917",
+  "geometry_test_source_sha256": "8b3e80ec34aebcc674e78f11d5209729b25550f9b3c45dede98138dd611e1a0a",
+  "geometry_tests_xml_sha256": "aff655031665c9330c82dd6b32a38f2beee7de15a1aeedfc09d1783344bfa7e1",
+  "geometry_tests_passed": 9,
+  "arms": [
+    "classical_point_goal",
+    "classical_goal_region"
+  ],
+  "arm_order_fixed_before_results": true
+}

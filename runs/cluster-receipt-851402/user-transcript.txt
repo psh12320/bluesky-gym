@@ -1,0 +1,117 @@
+Last login: Wed Sep 16 01:18:01 2026 from 137.132.80.26
+shri@xlogin2:~$ (
+set -euo pipefail
+cd "$HOME/cs4246-rl"
+
+printf '%s  %s\n' \
+  'd3c98a95e061d827ab295b1e458dd42e30c308ef2d1c45902b23ce372b6802c3' \
+  'onpolicy-cluster-reload-fix-v1.zip' | sha256sum -c -
+
+export ATC_PYTHON="$PWD/onpolicy-v1/.venv-cluster/bin/python"
+test -x "$ATC_PYTHON"
+
+mkdir onpolicy-reload-fix-v1
+python3 -m zipfile -e onpolicy-cluster-reload-fix-v1.zip onpolicy-reload-fix-v1
+cd onpolicy-reload-fix-v1
+python3 -m atc_rl.cluster verify
+
+job_id=$(sbatch --parsable --export=ALL jobs/bootstrap_onpolicy.slurm)
+job_id=${job_id%%;*}
+printf '%s\n' "$job_id" > submission-job-id.txt
+printf 'Submitted job %s. Log: %s/bootstrap-rl-%s.log\n' "$job_id" "$PWD" "$job_id"
+)
+onpolicy-cluster-reload-fix-v1.zip: OK
+{"verified_files": 84, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+Submitted job 851402. Log: /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/bootstrap-rl-851402.log
+shri@xlogin2:~$ squeue -u shri
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+shri@xlogin2:~$ cd "$HOME/cs4246-rl/onpolicy-reload-fix-v1"
+job_id=$(cat submission-job-id.txt)
+sacct -j "$job_id" --format=JobID,State,Elapsed,AllocCPUS,MaxRSS,ExitCode
+tail -n 80 "bootstrap-rl-$job_id.log"
+JobID             State    Elapsed  AllocCPUS     MaxRSS ExitCode
+------------ ---------- ---------- ---------- ---------- --------
+851402        COMPLETED   00:01:02         16                 0:0
+851402.batch  COMPLETED   00:01:02         16   4690400K      0:0
+851402.exte+  COMPLETED   00:01:02         16                 0:0
+
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin AREA
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"rollout": 1, "live_transitions": 5120, "padded_transitions": 0, "counted_transitions": 5120, "worlds_completed": 0, "aircraft_completed": 0, "optimizer_steps": 10, "policy_epochs": 2, "wall_seconds": 10.949677997967228, "live_transitions_per_second": 467.5936590053617, "training_return_last100": null}
+{"rollout": 2, "live_transitions": 10240, "padded_transitions": 0, "counted_transitions": 10240, "worlds_completed": 0, "aircraft_completed": 0, "optimizer_steps": 20, "policy_epochs": 4, "wall_seconds": 11.962451502971817, "live_transitions_per_second": 856.011829803957, "training_return_last100": null}
+{"rollout": 3, "live_transitions": 15258, "padded_transitions": 102, "counted_transitions": 15360, "worlds_completed": 0, "aircraft_completed": 2, "optimizer_steps": 30, "policy_epochs": 6, "wall_seconds": 12.99106218398083, "live_transitions_per_second": 1174.4998048592602, "training_return_last100": -19.362526803359824}
+{"status": "complete", "algorithm": "ppo", "live_transitions": 15258, "padded_transitions": 102, "counted_transitions": 15360, "optimizer_steps": 30, "policy_epochs": 6, "rollouts": 3, "worlds_completed": 0, "aircraft_completed": 2, "wall_seconds": 13.079873963957652, "actor_and_critic_parameters_changed": true, "source_unchanged": true, "model_sha256": "5f0f0f5d42be5b16d842220cb2f1d06629e3eb085f361fd1e534eff6923f8d56", "training_seed": 49000, "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."}
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/scenario"
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/plugins"
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/output"
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/cache"
+Copying default configfile to /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/settings.cfg
+Reading config from /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/cache/navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/classical/workers/world-0/simulator/cache/navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"episode": 0, "arrival_rate": 1.0}
+{"episode": 1, "arrival_rate": 1.0}
+{"episodes": 2, "agent_episodes": 20, "metrics": {"waypoint_reached": {"mean": 1.0, "std": 0.0}, "flight_time": {"mean": 874.35, "std": 256.17987333122016}, "intrusion_events": {"mean": 0.0, "std": 0.0}, "intrusion_time": {"mean": 0.0, "std": 0.0}, "restricted_area_events": {"mean": 0.0, "std": 0.0}, "time_in_restricted_area": {"mean": 0.0, "std": 0.0}, "sector_exit_events": {"mean": 0.0, "std": 0.0}, "time_outside_sector": {"mean": 0.0, "std": 0.0}, "total_reward": {"mean": 37.35685214455989, "std": 0.08612151469496385}}, "clean_completion_rate": 1.0, "all_aircraft_clean_completion_rate": 1.0, "algorithm": "classical", "guidance": true, "filter": true, "seed": 20260, "live_transitions": 3506, "padded_transitions": 2394, "world_decisions": 590, "aircraft_terminated": 20, "aircraft_truncated": 0, "wall_seconds": 13.646355195960496, "actor_inference_uses_joint_context": false, "runtime": {"geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true}, "csv_sha256": "c25bac332c4f68d7dc2ffb1b827fac96d619339bd356797716bab5674f9d8f28"}
+Two scenario fingerprints and all 180 aircraft metrics match the Windows reference.
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/scenario"
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/plugins"
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/output"
+Creating directory "/home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/cache"
+Copying default configfile to /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/settings.cfg
+Reading config from /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/cache/navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: /home/s/shri/cs4246-rl/onpolicy-reload-fix-v1/runs/cluster-check-851402/reload/workers/world-0/simulator/cache/navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"episode": 0, "arrival_rate": 0.0}
+{"episode": 1, "arrival_rate": 0.0}
+{"episodes": 2, "agent_episodes": 20, "metrics": {"waypoint_reached": {"mean": 0.0, "std": 0.0}, "flight_time": {"mean": 3000.0, "std": 0.0}, "intrusion_events": {"mean": 0.1, "std": 0.30000000000000004}, "intrusion_time": {"mean": 5.6, "std": 16.799999999999997}, "restricted_area_events": {"mean": 0.3, "std": 0.5567764362830021}, "time_in_restricted_area": {"mean": 41.75, "std": 116.50402353567021}, "sector_exit_events": {"mean": 1.0, "std": 0.0}, "time_outside_sector": {"mean": 1838.0, "std": 714.3247160780593}, "total_reward": {"mean": -274.3794150243813, "std": 87.92414751278488}}, "clean_completion_rate": 0.0, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "ppo", "guidance": false, "filter": false, "seed": 20260, "live_transitions": 12000, "padded_transitions": 0, "world_decisions": 1200, "aircraft_terminated": 0, "aircraft_truncated": 20, "wall_seconds": 19.819308108009864, "actor_inference_uses_joint_context": false, "runtime": {"geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true}, "csv_sha256": "84b77df8f2897a013adefee7aa6cd7bdf6b0d5d1f6921c5f5b2528c5a7564f1d"}
+{"verified_files": 84, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+GPU checks passed. Results: runs/cluster-check-851402
+shri@xlogin2:~/cs4246-rl/onpolicy-reload-fix-v1$

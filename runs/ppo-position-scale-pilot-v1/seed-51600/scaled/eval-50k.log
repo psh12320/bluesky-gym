@@ -1,0 +1,42 @@
+{"episode": 0, "arrival_rate": 1.0}
+{"episode": 1, "arrival_rate": 1.0}
+{"episode": 2, "arrival_rate": 0.9}
+{"episode": 3, "arrival_rate": 1.0}
+{"episode": 4, "arrival_rate": 1.0}
+{"episode": 5, "arrival_rate": 1.0}
+{"episode": 6, "arrival_rate": 1.0}
+{"episode": 7, "arrival_rate": 0.9}
+{"episode": 8, "arrival_rate": 1.0}
+{"episode": 9, "arrival_rate": 1.0}
+{"episode": 10, "arrival_rate": 1.0}
+{"episode": 11, "arrival_rate": 1.0}
+{"episode": 12, "arrival_rate": 1.0}
+{"episode": 13, "arrival_rate": 1.0}
+{"episode": 14, "arrival_rate": 1.0}
+{"episode": 15, "arrival_rate": 0.9}
+{"episode": 16, "arrival_rate": 0.7}
+{"episode": 17, "arrival_rate": 1.0}
+{"episode": 18, "arrival_rate": 1.0}
+{"episode": 19, "arrival_rate": 1.0}
+{"episodes": 20, "agent_episodes": 200, "metrics": {"waypoint_reached": {"mean": 0.97, "std": 0.1705872210923198}, "flight_time": {"mean": 1253.485, "std": 544.1553636370775}, "intrusion_events": {"mean": 1.55, "std": 1.3407087677791922}, "intrusion_time": {"mean": 152.47, "std": 254.8368872435857}, "restricted_area_events": {"mean": 0.01, "std": 0.09949874371066199}, "time_in_restricted_area": {"mean": 0.39, "std": 4.966678970901986}, "sector_exit_events": {"mean": 0.0, "std": 0.0}, "time_outside_sector": {"mean": 0.0, "std": 0.0}, "total_reward": {"mean": -108.20345295063757, "std": 243.83577783121888}}, "clean_completion_rate": 0.25, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "ppo", "guidance": true, "filter": false, "static_filter": true, "action_reference": "goal_offset", "conflict_features": true, "mask_conflict_features": false, "seed": 20260, "live_transitions": 50215, "padded_transitions": 28835, "world_decisions": 7905, "aircraft_terminated": 194, "aircraft_truncated": 6, "wall_seconds": 376.46258999999554, "actor_inference_uses_joint_context": false, "runtime": {"static_area_filter": true, "traffic_conflict_filter": false, "geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true, "training_progress_scale": 0.0, "action_reference": "goal_offset", "conflict_features": true, "mask_conflict_features": false, "traffic_position_scale": 20.0}, "csv_sha256": "31b0ea45383bee92a9cfc2555f5c2290cc31f4f0863ca3dc1c42e55e7d4714c3"}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-position-scale-pilot-v1\seed-51600\scaled\eval-50k-dev20\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

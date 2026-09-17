@@ -1,0 +1,6 @@
+{
+  "all_policy_tensors_identical": true,
+  "policy_fingerprint": "12b569809f9ef0ff5720fda1a18b6dd5e3f694fb2b9ca917eff0f645df702c78",
+  "includes_actor_critic_and_log_standard_deviation": true,
+  "reference": "runs/ppo-direct-pilot-v1/initial-model.zip"
+}

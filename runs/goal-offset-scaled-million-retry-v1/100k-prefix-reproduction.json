@@ -1,0 +1,16 @@
+{
+  "live_transitions": 100699,
+  "rollouts_verified": 24,
+  "all_policy_tensors_identical": true,
+  "optimizer_state_identical": true,
+  "policy_fingerprint": "0c70ea26c4a93e9a64f6f7be917c7e598dacbe139392a75ba71db66c860c1b24",
+  "all_nontiming_learning_fields_identical": true,
+  "original_checkpoint_sha256": "e7853e2bc896540ab9d22cc3b517a0f66fe0da7d2982361de77cce46ab4b11f3",
+  "retry_checkpoint_sha256": "6d07c2639bedc5a4112980597e12c2067f552b567bee0bed3d16a45203ec6e01",
+  "durable_aircraft_verified_through_checkpoint": 590,
+  "native_and_scaled_returns_match": true,
+  "reusable_evaluation": "runs/goal-offset-budget-scale-v1/eval-scaled-100k-dev20",
+  "required_evaluator_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "independent_training_seed": false,
+  "larger_budget_completed": false
+}

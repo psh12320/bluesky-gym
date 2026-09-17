@@ -1,0 +1,182 @@
+{
+  "batches_tested": 1050,
+  "aircraft_forecasts_tested": 6150,
+  "byte_mismatching_batches": 0,
+  "maximum_absolute_coordinate_error_km": 0.0,
+  "first_failure_cases": [],
+  "all_coordinates_and_bytes_exact": true,
+  "synthetic_rng_seed": 8032,
+  "controller_integrated": false,
+  "scope": "Pure deterministic forecast kernel with zero commanded turns and unchanged target speeds; no simulator scenarios, training or policy selection",
+  "timing": {
+    "pairs": 40,
+    "fleet_size": 10,
+    "calls_per_sample": 10,
+    "scalar_median_seconds": 0.09264944499882405,
+    "batched_median_seconds": 0.008443449999322183,
+    "median_paired_speedup": 11.940493921930088,
+    "samples": [
+      {
+        "scalar": 0.06616535999928601,
+        "batched": 0.005069920001551509
+      },
+      {
+        "batched": 0.004963369999313727,
+        "scalar": 0.06540807000128553
+      },
+      {
+        "scalar": 0.07636753999977372,
+        "batched": 0.0053281300002709035
+      },
+      {
+        "batched": 0.007943719998002053,
+        "scalar": 0.23422833000076934
+      },
+      {
+        "scalar": 0.3020756800018717,
+        "batched": 0.012247040000511333
+      },
+      {
+        "batched": 0.0150009700038936,
+        "scalar": 0.15125182999763637
+      },
+      {
+        "scalar": 0.3271039400016889,
+        "batched": 0.02339016000041738
+      },
+      {
+        "batched": 0.05055905999615788,
+        "scalar": 0.5906746300053782
+      },
+      {
+        "scalar": 0.3512496900046244,
+        "batched": 0.01081662999931723
+      },
+      {
+        "batched": 0.027560929994797333,
+        "scalar": 0.6879159100004472
+      },
+      {
+        "scalar": 0.11890548000228592,
+        "batched": 0.009747850004350767
+      },
+      {
+        "batched": 0.009221440000692383,
+        "scalar": 0.09770434999954887
+      },
+      {
+        "scalar": 0.15204096999950706,
+        "batched": 0.01733737000031397
+      },
+      {
+        "batched": 0.010544000001391395,
+        "scalar": 0.10816613999777473
+      },
+      {
+        "scalar": 0.14372118000173942,
+        "batched": 0.011713470000540838
+      },
+      {
+        "batched": 0.01201895999838598,
+        "scalar": 0.08759453999809921
+      },
+      {
+        "scalar": 0.08639811999746598,
+        "batched": 0.009907729999395088
+      },
+      {
+        "batched": 0.00748122000368312,
+        "scalar": 0.13492224999936298
+      },
+      {
+        "scalar": 0.13812051999848335,
+        "batched": 0.006647469999734312
+      },
+      {
+        "batched": 0.00825817000004463,
+        "scalar": 0.07651848000241443
+      },
+      {
+        "scalar": 0.08119589999550954,
+        "batched": 0.004545839998172596
+      },
+      {
+        "batched": 0.0059568599972408265,
+        "scalar": 0.08349200999946334
+      },
+      {
+        "scalar": 0.08681920999661089,
+        "batched": 0.008628729998599738
+      },
+      {
+        "batched": 0.011902980000013486,
+        "scalar": 0.08369576000259257
+      },
+      {
+        "scalar": 0.11024433000129648,
+        "batched": 0.011662169999908656
+      },
+      {
+        "batched": 0.007121419999748468,
+        "scalar": 0.07546805000165477
+      },
+      {
+        "scalar": 0.06230369999539107,
+        "batched": 0.005746959999669343
+      },
+      {
+        "batched": 0.004832330002682283,
+        "scalar": 0.06137625999981537
+      },
+      {
+        "scalar": 0.05344305000035092,
+        "batched": 0.0054869300045538695
+      },
+      {
+        "batched": 0.004764699999941513,
+        "scalar": 0.052240909996908155
+      },
+      {
+        "scalar": 0.05829318999894895,
+        "batched": 0.0063826800032984465
+      },
+      {
+        "batched": 0.004472180001903326,
+        "scalar": 0.07863815000164323
+      },
+      {
+        "scalar": 0.058290619996842,
+        "batched": 0.005975640000542626
+      },
+      {
+        "batched": 0.007050789997447282,
+        "scalar": 0.20732122999615968
+      },
+      {
+        "scalar": 0.11969224999775178,
+        "batched": 0.011365459999069571
+      },
+      {
+        "batched": 0.008824970002751797,
+        "scalar": 0.12920516000012866
+      },
+      {
+        "scalar": 0.07714351000031457,
+        "batched": 0.0070065699983388186
+      },
+      {
+        "batched": 0.005951329995878041,
+        "scalar": 0.14349866000120529
+      },
+      {
+        "scalar": 0.18056610000203363,
+        "batched": 0.010834049998084083
+      },
+      {
+        "batched": 0.0149902299977839,
+        "scalar": 0.0797710700018797
+      }
+    ],
+    "scope": "Interleaved local kernel timings under concurrent work; no end-to-end or GPU speedup claim"
+  }
+}

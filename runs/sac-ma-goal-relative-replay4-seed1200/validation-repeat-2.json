@@ -1,0 +1,53 @@
+{
+  "episodes": 2,
+  "agent_episodes": 20,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.95,
+      "std": 0.21794494717703372
+    },
+    "flight_time": {
+      "mean": 1170.8,
+      "std": 458.97664428595925
+    },
+    "intrusion_events": {
+      "mean": 0.8,
+      "std": 0.6782329983125269
+    },
+    "intrusion_time": {
+      "mean": 50.6,
+      "std": 52.0599654244987
+    },
+    "restricted_area_events": {
+      "mean": 1.35,
+      "std": 0.8529361054615991
+    },
+    "time_in_restricted_area": {
+      "mean": 198.25,
+      "std": 162.5308816809901
+    },
+    "sector_exit_events": {
+      "mean": 0.05,
+      "std": 0.21794494717703364
+    },
+    "time_outside_sector": {
+      "mean": 29.65,
+      "std": 129.24135367598097
+    },
+    "total_reward": {
+      "mean": -255.49859340118573,
+      "std": 200.87902777568644
+    }
+  },
+  "clean_completion_rate": 0.05,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "wall_seconds": 26.020507799985353,
+  "world_decisions": 423,
+  "seed": 2026,
+  "env": "ma",
+  "policy": "runs\\sac-ma-goal-relative-replay4-seed1200\\model.zip",
+  "recipe": "goal_relative",
+  "guard_static": false,
+  "official_protocol": false,
+  "model_sha256": "d6057ea75fdc9e613ca782c76c96c11b4f5d813a935552c3b7a6206082854840"
+}

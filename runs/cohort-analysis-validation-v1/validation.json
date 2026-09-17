@@ -1,0 +1,7 @@
+{
+  "two_completed_real_runs_audited": true,
+  "all_seed_metric_effects_matched": 22,
+  "real_incomplete_million_step_run_rejected": "Seed 49900 did not complete the registered budget",
+  "cluster_baseline_results_received": false,
+  "validation_does_not_constitute_new_training": true
+}

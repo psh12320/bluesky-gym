@@ -1,0 +1,325 @@
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Scenario 1/200: completion=100%, intrusion=0.0s
+Scenario 2/200: completion=100%, intrusion=0.0s
+Scenario 3/200: completion=100%, intrusion=0.0s
+Scenario 4/200: completion=100%, intrusion=15.2s
+Scenario 5/200: completion=100%, intrusion=0.0s
+Scenario 6/200: completion=100%, intrusion=0.0s
+Scenario 7/200: completion=100%, intrusion=0.0s
+Scenario 8/200: completion=100%, intrusion=0.0s
+Scenario 9/200: completion=100%, intrusion=18.4s
+Scenario 10/200: completion=100%, intrusion=0.0s
+Scenario 11/200: completion=100%, intrusion=0.0s
+Scenario 12/200: completion=100%, intrusion=0.0s
+Scenario 13/200: completion=90%, intrusion=7.4s
+Scenario 14/200: completion=100%, intrusion=0.0s
+Scenario 15/200: completion=100%, intrusion=12.2s
+Scenario 16/200: completion=100%, intrusion=0.0s
+Scenario 17/200: completion=100%, intrusion=23.2s
+Scenario 18/200: completion=100%, intrusion=0.0s
+Scenario 19/200: completion=100%, intrusion=0.0s
+Scenario 20/200: completion=100%, intrusion=0.0s
+Scenario 21/200: completion=100%, intrusion=0.0s
+Scenario 22/200: completion=100%, intrusion=0.0s
+Scenario 23/200: completion=100%, intrusion=0.0s
+Scenario 24/200: completion=100%, intrusion=0.0s
+Scenario 25/200: completion=100%, intrusion=0.0s
+Scenario 26/200: completion=100%, intrusion=0.0s
+Scenario 27/200: completion=90%, intrusion=10.8s
+Scenario 28/200: completion=100%, intrusion=6.8s
+Scenario 29/200: completion=100%, intrusion=22.6s
+Scenario 30/200: completion=100%, intrusion=0.0s
+Scenario 31/200: completion=100%, intrusion=0.0s
+Scenario 32/200: completion=100%, intrusion=0.0s
+Scenario 33/200: completion=100%, intrusion=0.0s
+Scenario 34/200: completion=100%, intrusion=0.0s
+Scenario 35/200: completion=100%, intrusion=0.0s
+Scenario 36/200: completion=100%, intrusion=0.0s
+Scenario 37/200: completion=100%, intrusion=0.0s
+Scenario 38/200: completion=100%, intrusion=0.0s
+Scenario 39/200: completion=100%, intrusion=0.0s
+Scenario 40/200: completion=100%, intrusion=0.0s
+Scenario 41/200: completion=100%, intrusion=0.0s
+Scenario 42/200: completion=100%, intrusion=0.0s
+Scenario 43/200: completion=100%, intrusion=0.0s
+Scenario 44/200: completion=100%, intrusion=12.0s
+Scenario 45/200: completion=100%, intrusion=0.0s
+Scenario 46/200: completion=100%, intrusion=0.0s
+Scenario 47/200: completion=100%, intrusion=14.8s
+Scenario 48/200: completion=100%, intrusion=0.0s
+Scenario 49/200: completion=100%, intrusion=0.0s
+Scenario 50/200: completion=100%, intrusion=0.0s
+Scenario 51/200: completion=100%, intrusion=0.0s
+Scenario 52/200: completion=100%, intrusion=0.0s
+Scenario 53/200: completion=100%, intrusion=6.6s
+Scenario 54/200: completion=100%, intrusion=0.0s
+Scenario 55/200: completion=100%, intrusion=16.0s
+Scenario 56/200: completion=100%, intrusion=0.0s
+Scenario 57/200: completion=100%, intrusion=0.0s
+Scenario 58/200: completion=100%, intrusion=0.0s
+Scenario 59/200: completion=100%, intrusion=0.0s
+Scenario 60/200: completion=100%, intrusion=0.0s
+Scenario 61/200: completion=80%, intrusion=35.8s
+Scenario 62/200: completion=100%, intrusion=3.4s
+Scenario 63/200: completion=100%, intrusion=0.0s
+Scenario 64/200: completion=100%, intrusion=0.0s
+Scenario 65/200: completion=100%, intrusion=0.0s
+Scenario 66/200: completion=100%, intrusion=0.0s
+Scenario 67/200: completion=100%, intrusion=0.0s
+Scenario 68/200: completion=100%, intrusion=0.0s
+Scenario 69/200: completion=100%, intrusion=0.0s
+Scenario 70/200: completion=100%, intrusion=0.0s
+Scenario 71/200: completion=100%, intrusion=0.0s
+Scenario 72/200: completion=100%, intrusion=0.0s
+Scenario 73/200: completion=100%, intrusion=0.0s
+Scenario 74/200: completion=100%, intrusion=0.0s
+Scenario 75/200: completion=100%, intrusion=0.0s
+Scenario 76/200: completion=100%, intrusion=11.4s
+Scenario 77/200: completion=80%, intrusion=0.0s
+Scenario 78/200: completion=100%, intrusion=9.2s
+Scenario 79/200: completion=100%, intrusion=0.0s
+Scenario 80/200: completion=100%, intrusion=0.0s
+Scenario 81/200: completion=90%, intrusion=0.0s
+Scenario 82/200: completion=90%, intrusion=0.0s
+Scenario 83/200: completion=100%, intrusion=0.0s
+Scenario 84/200: completion=100%, intrusion=0.0s
+Scenario 85/200: completion=100%, intrusion=5.8s
+Scenario 86/200: completion=100%, intrusion=0.0s
+Scenario 87/200: completion=100%, intrusion=0.0s
+Scenario 88/200: completion=100%, intrusion=0.0s
+Scenario 89/200: completion=100%, intrusion=0.0s
+Scenario 90/200: completion=80%, intrusion=0.0s
+Scenario 91/200: completion=100%, intrusion=7.0s
+Scenario 92/200: completion=100%, intrusion=0.0s
+Scenario 93/200: completion=100%, intrusion=0.0s
+Scenario 94/200: completion=100%, intrusion=0.0s
+Scenario 95/200: completion=100%, intrusion=0.0s
+Scenario 96/200: completion=80%, intrusion=76.0s
+Scenario 97/200: completion=100%, intrusion=0.0s
+Scenario 98/200: completion=100%, intrusion=0.0s
+Scenario 99/200: completion=100%, intrusion=0.0s
+Scenario 100/200: completion=100%, intrusion=6.4s
+Scenario 101/200: completion=100%, intrusion=9.8s
+Scenario 102/200: completion=100%, intrusion=0.0s
+Scenario 103/200: completion=100%, intrusion=0.0s
+Scenario 104/200: completion=100%, intrusion=0.0s
+Scenario 105/200: completion=100%, intrusion=0.0s
+Scenario 106/200: completion=100%, intrusion=0.0s
+Scenario 107/200: completion=100%, intrusion=0.0s
+Scenario 108/200: completion=100%, intrusion=0.0s
+Scenario 109/200: completion=90%, intrusion=0.0s
+Scenario 110/200: completion=90%, intrusion=0.0s
+Scenario 111/200: completion=100%, intrusion=0.0s
+Scenario 112/200: completion=100%, intrusion=0.0s
+Scenario 113/200: completion=100%, intrusion=0.0s
+Scenario 114/200: completion=100%, intrusion=0.0s
+Scenario 115/200: completion=100%, intrusion=0.0s
+Scenario 116/200: completion=100%, intrusion=0.0s
+Scenario 117/200: completion=100%, intrusion=0.0s
+Scenario 118/200: completion=100%, intrusion=0.0s
+Scenario 119/200: completion=100%, intrusion=0.0s
+Scenario 120/200: completion=100%, intrusion=0.0s
+Scenario 121/200: completion=100%, intrusion=0.0s
+Scenario 122/200: completion=100%, intrusion=0.0s
+Scenario 123/200: completion=100%, intrusion=0.0s
+Scenario 124/200: completion=100%, intrusion=6.8s
+Scenario 125/200: completion=100%, intrusion=0.0s
+Scenario 126/200: completion=100%, intrusion=0.0s
+Scenario 127/200: completion=100%, intrusion=7.6s
+Scenario 128/200: completion=100%, intrusion=0.0s
+Scenario 129/200: completion=100%, intrusion=16.8s
+Scenario 130/200: completion=100%, intrusion=0.0s
+Scenario 131/200: completion=100%, intrusion=0.0s
+Scenario 132/200: completion=100%, intrusion=21.4s
+Scenario 133/200: completion=100%, intrusion=5.0s
+Scenario 134/200: completion=100%, intrusion=0.0s
+Scenario 135/200: completion=100%, intrusion=0.0s
+Scenario 136/200: completion=100%, intrusion=0.0s
+Scenario 137/200: completion=100%, intrusion=0.0s
+Scenario 138/200: completion=100%, intrusion=0.0s
+Scenario 139/200: completion=100%, intrusion=0.0s
+Scenario 140/200: completion=100%, intrusion=0.0s
+Scenario 141/200: completion=100%, intrusion=0.0s
+Scenario 142/200: completion=100%, intrusion=0.0s
+Scenario 143/200: completion=100%, intrusion=0.0s
+Scenario 144/200: completion=100%, intrusion=0.0s
+Scenario 145/200: completion=100%, intrusion=0.0s
+Scenario 146/200: completion=100%, intrusion=0.0s
+Scenario 147/200: completion=100%, intrusion=0.0s
+Scenario 148/200: completion=100%, intrusion=0.0s
+Scenario 149/200: completion=100%, intrusion=0.0s
+Scenario 150/200: completion=100%, intrusion=0.0s
+Scenario 151/200: completion=100%, intrusion=0.0s
+Scenario 152/200: completion=100%, intrusion=7.2s
+Scenario 153/200: completion=100%, intrusion=0.0s
+Scenario 154/200: completion=100%, intrusion=0.0s
+Scenario 155/200: completion=100%, intrusion=0.0s
+Scenario 156/200: completion=100%, intrusion=0.0s
+Scenario 157/200: completion=100%, intrusion=0.0s
+Scenario 158/200: completion=100%, intrusion=0.0s
+Scenario 159/200: completion=100%, intrusion=0.0s
+Scenario 160/200: completion=100%, intrusion=0.0s
+Scenario 161/200: completion=100%, intrusion=6.6s
+Scenario 162/200: completion=100%, intrusion=0.0s
+Scenario 163/200: completion=100%, intrusion=0.0s
+Scenario 164/200: completion=100%, intrusion=0.0s
+Scenario 165/200: completion=100%, intrusion=0.0s
+Scenario 166/200: completion=100%, intrusion=0.0s
+Scenario 167/200: completion=100%, intrusion=0.0s
+Scenario 168/200: completion=90%, intrusion=0.0s
+Scenario 169/200: completion=100%, intrusion=0.0s
+Scenario 170/200: completion=90%, intrusion=0.0s
+Scenario 171/200: completion=100%, intrusion=0.0s
+Scenario 172/200: completion=100%, intrusion=8.4s
+Scenario 173/200: completion=100%, intrusion=0.0s
+Scenario 174/200: completion=100%, intrusion=0.0s
+Scenario 175/200: completion=100%, intrusion=0.0s
+Scenario 176/200: completion=100%, intrusion=0.0s
+Scenario 177/200: completion=100%, intrusion=0.0s
+Scenario 178/200: completion=100%, intrusion=0.0s
+Scenario 179/200: completion=100%, intrusion=0.0s
+Scenario 180/200: completion=100%, intrusion=0.0s
+Scenario 181/200: completion=100%, intrusion=6.8s
+Scenario 182/200: completion=100%, intrusion=5.8s
+Scenario 183/200: completion=100%, intrusion=0.0s
+Scenario 184/200: completion=100%, intrusion=15.2s
+Scenario 185/200: completion=100%, intrusion=12.4s
+Scenario 186/200: completion=100%, intrusion=11.4s
+Scenario 187/200: completion=100%, intrusion=0.0s
+Scenario 188/200: completion=100%, intrusion=0.0s
+Scenario 189/200: completion=100%, intrusion=6.4s
+Scenario 190/200: completion=100%, intrusion=0.0s
+Scenario 191/200: completion=100%, intrusion=0.0s
+Scenario 192/200: completion=100%, intrusion=0.0s
+Scenario 193/200: completion=100%, intrusion=0.8s
+Scenario 194/200: completion=100%, intrusion=0.0s
+Scenario 195/200: completion=100%, intrusion=0.0s
+Scenario 196/200: completion=100%, intrusion=0.0s
+Scenario 197/200: completion=100%, intrusion=0.0s
+Scenario 198/200: completion=100%, intrusion=0.0s
+Scenario 199/200: completion=100%, intrusion=0.0s
+Scenario 200/200: completion=100%, intrusion=0.0s
+{
+  "episodes": 200,
+  "agent_episodes": 2000,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.992,
+      "std": 0.08908422980528033
+    },
+    "flight_time": {
+      "mean": 999.199,
+      "std": 402.35383731114086
+    },
+    "intrusion_events": {
+      "mean": 0.051,
+      "std": 0.25179158047877614
+    },
+    "intrusion_time": {
+      "mean": 2.347,
+      "std": 13.328075292404376
+    },
+    "restricted_area_events": {
+      "mean": 0.018,
+      "std": 0.17797752667120645
+    },
+    "time_in_restricted_area": {
+      "mean": 0.9435,
+      "std": 11.348581750597738
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 34.32805992338492,
+      "std": 14.999051188321797
+    }
+  },
+  "clean_completion_rate": 0.939,
+  "all_aircraft_clean_completion_rate": 0.725,
+  "wall_seconds": 8864.335694900015,
+  "world_decisions": 65610,
+  "seed": 2027,
+  "env": "ma",
+  "residual_statistics": {
+    "actions": 400464,
+    "heading_adjusted_actions": 389309,
+    "speed_adjusted_actions": 20759,
+    "absolute_heading_adjustment_deg": 2075258.6633222343,
+    "absolute_speed_action": 395000.2424868345
+  },
+  "route_input_statistics": {
+    "observations": 402464,
+    "redirected_observations": 176031,
+    "route_replans": 1450,
+    "failed_replans": 2737,
+    "route_choices": 3438,
+    "shorter_route_choices": 287,
+    "lower_clearance_fallbacks": 390,
+    "geometric_detour_avoided_km": 29477.171325432402,
+    "unroutable_initializations": 12
+  },
+  "traffic_projection_statistics": {
+    "actions": 400464,
+    "interventions": 71461,
+    "speed_interventions": 4863,
+    "nominal_static_violation": 17904,
+    "nominal_traffic_conflict": 55106,
+    "no_static_feasible_candidate": 2127,
+    "no_jointly_feasible_candidate": 6565
+  },
+  "policy": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2902\\candidate\\model.zip",
+  "recipe": "public_route_choice_fast_residual_interval5",
+  "guard_static": true,
+  "guard_traffic": true,
+  "official_protocol": false,
+  "model_sha256": "069d02fcce6238e68abf71fbe55508106723c944ad0d4e4647e4a4dae88aa84f",
+  "inference_mode": "per_aircraft",
+  "decision_interval_seconds": 5,
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0,
+  "route_input_revision": 1,
+  "route_input_planner_revision": 2,
+  "route_input_clearances_km": [
+    6.0,
+    3.0,
+    2.0,
+    1.0,
+    0.0
+  ],
+  "route_input_sector_clearance_km": 6.0,
+  "route_input_distance": "original_goal",
+  "route_input_direct_bearing": "original_observation",
+  "route_choice_revision": 1,
+  "route_choice_min_preferred_clearance_km": 2.0,
+  "route_choice_max_detour_ratio": 1.15,
+  "route_choice_fallback": "lower_clearance_only_if_no_preferred_path",
+  "route_residual_revision": 1,
+  "route_residual_heading_limit_deg": 15.0,
+  "route_residual_speed_scale": 2.0,
+  "route_residual_composition": "clipped_direct_reference_plus_adjustment",
+  "route_residual_reference": "last_observation_bearing_float32",
+  "route_residual_speed_reference": 1.0,
+  "traffic_projection_revision": 1,
+  "traffic_projection_horizon_seconds": 90.0,
+  "traffic_projection_sample_seconds": 5.0,
+  "traffic_projection_margin_km": 1.0,
+  "traffic_projection_turn_rate": 1.5,
+  "traffic_projection_acceleration": 1.0
+}

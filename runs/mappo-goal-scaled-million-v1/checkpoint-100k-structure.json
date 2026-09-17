@@ -1,0 +1,20 @@
+{
+  "checkpoint": {
+    "file": "policy-live-100275.zip",
+    "sha256": "34404cd69a17f2cbfab207cb7b1f7619386f2da432352b7612b16542421d83f2",
+    "live_transitions": 100275,
+    "counted_transitions": 122880,
+    "padded_transitions": 22605,
+    "optimizer_steps": 1045,
+    "policy_epochs": 222,
+    "rollouts": 24
+  },
+  "serialized_training_counters_match": true,
+  "finite_policy_parameters": true,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": true,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 423425,
+  "interpretation": "Structural check on a saved intermediate checkpoint using synthetic bounded inputs. Training remains active; this is not performance evidence or a completed-run audit."
+}

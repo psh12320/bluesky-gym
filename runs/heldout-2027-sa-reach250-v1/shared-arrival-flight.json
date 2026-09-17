@@ -1,0 +1,5 @@
+{
+  "shared_arrival_scenarios": 194,
+  "mean_flight_delta_learned_minus_classical": 57.08762886597938,
+  "scope": "Descriptive common-arrival subset only; the principal comparison retains all 200 scenarios and timeouts"
+}

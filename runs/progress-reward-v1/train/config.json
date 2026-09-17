@@ -1,0 +1,55 @@
+{
+  "algorithm": "ppo",
+  "workers": 2,
+  "live_steps": 100000,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "seed": 49900,
+  "device": "cpu",
+  "guidance": false,
+  "filter": false,
+  "progress_scale": 100.0,
+  "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\progress-reward-v1\\train",
+  "checkpoint_live_steps": 25000,
+  "max_wall_seconds": 1800.0,
+  "world_seeds": [
+    49900,
+    49910
+  ],
+  "actor_information": "own standard aircraft observation plus remaining-time fraction",
+  "critic_information": "same local observation as actor",
+  "actor_widths": [
+    128,
+    128
+  ],
+  "critic_widths": [
+    256,
+    256
+  ],
+  "shared_actor": true,
+  "shared_critic": true,
+  "gamma": 0.996508469331006,
+  "gae_lambda": 0.95,
+  "learning_rate": 0.0003,
+  "clip_range": 0.2,
+  "entropy_coefficient": 0.01,
+  "value_coefficient": 0.5,
+  "max_grad_norm": 0.5,
+  "target_kl": 0.03,
+  "decision_interval_seconds": 5,
+  "reward_recipe": "public_weights",
+  "automatic_residual_controller": false,
+  "progress_shaping": {
+    "scale": 100.0,
+    "distance_norm_km": 150.0,
+    "distance_cap_km": 1500.0,
+    "potential": "-scale * clipped_distance_to_goal_region / 150 * remaining_time_fraction",
+    "formula": "gamma * next_potential - current_potential; terminal potential is zero",
+    "original_scoring_info_unchanged": true
+  },
+  "finite_horizon": "Do not bootstrap beyond goal completion or the actual 3000-second competition deadline; bootstrap at rollout cuts.",
+  "action_distribution": "SB3 diagonal Gaussian; clip sampled commands to the original [-1,1] execution bounds",
+  "active_mask": "Policy, value, entropy and advantage-normalization samples exclude inactive aircraft slots",
+  "budget_unit": "Live aircraft transitions; finish the current rollout, recording exact overshoot and padded slot count"
+}

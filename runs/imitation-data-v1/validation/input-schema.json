@@ -1,0 +1,127 @@
+[
+  {
+    "name": "airspeed",
+    "offset": 0,
+    "size": 1
+  },
+  {
+    "name": "cos_drift",
+    "offset": 1,
+    "size": 1
+  },
+  {
+    "name": "cos_track",
+    "offset": 2,
+    "size": 9
+  },
+  {
+    "name": "inside_sector",
+    "offset": 11,
+    "size": 1
+  },
+  {
+    "name": "intruder_distance",
+    "offset": 12,
+    "size": 9
+  },
+  {
+    "name": "obstacle_cos_bearing",
+    "offset": 21,
+    "size": 5
+  },
+  {
+    "name": "obstacle_distance",
+    "offset": 26,
+    "size": 5
+  },
+  {
+    "name": "obstacle_radius",
+    "offset": 31,
+    "size": 5
+  },
+  {
+    "name": "obstacle_sin_bearing",
+    "offset": 36,
+    "size": 5
+  },
+  {
+    "name": "sector_point_cos_bearing",
+    "offset": 41,
+    "size": 12
+  },
+  {
+    "name": "sector_point_distance",
+    "offset": 53,
+    "size": 12
+  },
+  {
+    "name": "sector_point_sin_bearing",
+    "offset": 65,
+    "size": 12
+  },
+  {
+    "name": "sin_drift",
+    "offset": 77,
+    "size": 1
+  },
+  {
+    "name": "sin_track",
+    "offset": 78,
+    "size": 9
+  },
+  {
+    "name": "traffic_dcpa",
+    "offset": 87,
+    "size": 9
+  },
+  {
+    "name": "traffic_entry_time",
+    "offset": 96,
+    "size": 9
+  },
+  {
+    "name": "traffic_predicted_conflict",
+    "offset": 105,
+    "size": 9
+  },
+  {
+    "name": "traffic_present",
+    "offset": 114,
+    "size": 9
+  },
+  {
+    "name": "traffic_tcpa",
+    "offset": 123,
+    "size": 9
+  },
+  {
+    "name": "vx_r",
+    "offset": 132,
+    "size": 9
+  },
+  {
+    "name": "vy_r",
+    "offset": 141,
+    "size": 9
+  },
+  {
+    "name": "waypoint_distance",
+    "offset": 150,
+    "size": 1
+  },
+  {
+    "name": "x_r",
+    "offset": 151,
+    "size": 9
+  },
+  {
+    "name": "y_r",
+    "offset": 160,
+    "size": 9
+  },
+  {
+    "name": "time_remaining_fraction",
+    "offset": 169,
+    "size": 1
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "algorithm": "ppo",
+  "live_transitions": 102374,
+  "padded_transitions": 87066,
+  "counted_transitions": 189440,
+  "optimizer_steps": 1210,
+  "policy_epochs": 370,
+  "rollouts": 37,
+  "worlds_completed": 38,
+  "aircraft_completed": 395,
+  "wall_seconds": 1270.229824799997,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "f2a8d568f35c7a33db4be3b2fd9b9906b90fa1344e77a14c28f3f6c777d6fd03",
+  "training_seed": 49940,
+  "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+}

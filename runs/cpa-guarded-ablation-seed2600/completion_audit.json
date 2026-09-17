@@ -1,0 +1,71 @@
+{
+  "matched_configuration_fields": [
+    "env",
+    "algorithm",
+    "recipe",
+    "guard_static",
+    "workers",
+    "seed",
+    "world_seeds",
+    "gamma",
+    "reward_kwargs",
+    "observation_shape",
+    "actual_net_arch",
+    "actual_learning_rate",
+    "actual_tau",
+    "actual_gradient_steps",
+    "actual_buffer_size",
+    "actual_learning_starts",
+    "actual_batch_size",
+    "initial_timesteps",
+    "static_projection_revision",
+    "static_projection_horizon_seconds",
+    "static_projection_clearance_km",
+    "conflict_prediction_horizon_seconds"
+  ],
+  "matched_counted_budget": true,
+  "matched_optimizer_update_count": true,
+  "records": [
+    {
+      "variant": "control",
+      "training": {
+        "timesteps": 491520,
+        "new_timesteps": 100000,
+        "wall_seconds": 2057.0960793000413,
+        "live_transitions": 61096,
+        "skipped_transitions": 38904,
+        "new_live_transitions": 61096,
+        "new_skipped_transitions": 38904
+      },
+      "num_updates": 188600,
+      "model_sha256": "d19609f77bcf808077de56e3b477651cfc3da45b7febf2b7f76fb549f295cc24",
+      "prediction_projection_trainable": false,
+      "projection_norms": {
+        "actor.features_extractor.projection.weight": 0.0,
+        "critic.features_extractor.projection.weight": 0.0,
+        "critic_target.features_extractor.projection.weight": 0.0
+      }
+    },
+    {
+      "variant": "predictions",
+      "training": {
+        "timesteps": 491520,
+        "new_timesteps": 100000,
+        "wall_seconds": 2097.7749144000118,
+        "live_transitions": 60479,
+        "skipped_transitions": 39521,
+        "new_live_transitions": 60479,
+        "new_skipped_transitions": 39521
+      },
+      "num_updates": 188600,
+      "model_sha256": "eb72857355e112fda1a5ac576766e415facb4c42155aa3fb79e3bbf3ed303f7f",
+      "prediction_projection_trainable": true,
+      "projection_norms": {
+        "actor.features_extractor.projection.weight": 3.7757351398468018,
+        "critic.features_extractor.projection.weight": 3.9624907970428467,
+        "critic_target.features_extractor.projection.weight": 3.9452619552612305
+      }
+    }
+  ],
+  "note": "Live transitions differ because the evolving policies produce different trajectories."
+}

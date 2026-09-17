@@ -1,0 +1,23 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\gsde-development-v1\\ppo\\train",
+  "algorithm": "ppo",
+  "exploration": "gsde",
+  "sde_weight_std": 0.05,
+  "sde_sample_freq": 12,
+  "status": "complete",
+  "live_transitions": 1280,
+  "padded_transitions": 0,
+  "optimizer_steps": 12,
+  "verified_checkpoints": 3,
+  "verified_source_files": 97,
+  "learning_curve_rows": 2,
+  "aircraft_completed": 0,
+  "actor_parameter_count": 38914,
+  "critic_parameter_count": 109825,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "79e1636a9f5015f161421e71c8776c315ed8cbc342bbaacc1fc006a653317d1a",
+  "policy_quality_assessed": false
+}

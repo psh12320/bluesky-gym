@@ -1,0 +1,149 @@
+{
+  "time_utc": "2026-09-15T19:40:32.775057+00:00",
+  "completed_training": {
+    "ppo_million": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 1000371,
+      "padded_transitions": 23629,
+      "counted_transitions": 1024000,
+      "optimizer_steps": 10000,
+      "policy_epochs": 2000,
+      "rollouts": 200,
+      "worlds_completed": 170,
+      "aircraft_completed": 1701,
+      "wall_seconds": 3639.562960600015,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "8feb479b0aa5f226e7b0429592fc4b18ec87ef61041c096b492e882debe45379",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "mappo_pilot": {
+      "status": "complete",
+      "algorithm": "mappo",
+      "live_transitions": 100744,
+      "padded_transitions": 1656,
+      "counted_transitions": 102400,
+      "optimizer_steps": 1000,
+      "policy_epochs": 200,
+      "rollouts": 20,
+      "worlds_completed": 16,
+      "aircraft_completed": 160,
+      "wall_seconds": 454.0156860999996,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "fc6fe1eefe31ff7dbfbfe608d380a78f655b9ca386595bf64b800aab07790d5d",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "ppo_reward_scale": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 101160,
+      "padded_transitions": 1240,
+      "counted_transitions": 102400,
+      "optimizer_steps": 1000,
+      "policy_epochs": 200,
+      "rollouts": 20,
+      "worlds_completed": 16,
+      "aircraft_completed": 161,
+      "wall_seconds": 426.3496927000233,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "a31820eda06930693afaab06bbf6b7cc1d89ce34685f6a863c0c27f74c8acd35",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "ppo_progress_scaled": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 104783,
+      "padded_transitions": 2737,
+      "counted_transitions": 107520,
+      "optimizer_steps": 1050,
+      "policy_epochs": 210,
+      "rollouts": 21,
+      "worlds_completed": 16,
+      "aircraft_completed": 161,
+      "wall_seconds": 298.1709397000377,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "4d997326d527b7349c1180abb5f8408e9c79f08a3f2b4a99f61da1adef9e4d7f",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "ppo_neutral_initialization": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 101525,
+      "padded_transitions": 875,
+      "counted_transitions": 102400,
+      "optimizer_steps": 897,
+      "policy_epochs": 181,
+      "rollouts": 20,
+      "worlds_completed": 16,
+      "aircraft_completed": 160,
+      "wall_seconds": 288.6089060000377,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "d27919d0b5447de87483a996d40cd4f69893c0cdbae2652713d85e04abc9a58d",
+      "training_seed": 49900,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    }
+  },
+  "measured_development_results": {
+    "raw_ppo_curve": "Arrival 4%, 1%, 4.5%, 5.5% at 0, 101244, 302514, 1000371 live steps. One seed; not competitive.",
+    "mappo": "0/200 arrivals; improved native reward did not deliver navigation.",
+    "reward_scale_only": "8% arrival; intrusion time worsened to 295.43 seconds; advancement screen failed.",
+    "neutral_initial_policy": "Untrained control: 100% arrival, 19.5% clean completion; not learned success."
+  },
+  "running_evaluations": {
+    "neutral_trained": {
+      "session": 19055,
+      "out": "runs/ppo-initialization-v1/eval-neutral-trained-dev20"
+    },
+    "progress_scaled": {
+      "session": 53481,
+      "out": "runs/progress-scaled-v1/eval-trained-dev20"
+    },
+    "preserved_original_ma": {
+      "session": 78410,
+      "out": "runs/official-decimal-v1/ma"
+    }
+  },
+  "running_training": {
+    "session": 74664,
+    "run": "runs/goal-offset-v1/train",
+    "source": "runs/onpolicy-goal-offset-source-v1-verify",
+    "budget": 100000
+  },
+  "goal_offset_validation": {
+    "status": "passed",
+    "paired_worlds": 4,
+    "paired_aircraft": 40,
+    "decision_pairs": 888,
+    "padding_slots": 2322,
+    "arrivals": 40,
+    "timeouts": 0,
+    "all_observations_rewards_terminals_metrics_identical": true,
+    "supported_guidance_filter_combinations": 4,
+    "guided_filtered_world_matches_preserved_fixture": true,
+    "source_unchanged": true,
+    "wall_seconds": 215.92302869999548,
+    "records_sha256": "765e4b0c1b167370bdc048d3a8ae377077316d8b959f643eb6fa797a894584a7"
+  },
+  "goal_offset_protocol_sha256": "30779943b7e70c199d4d4b65a3786981684ea4a23548fc8807a9cd59e13d5f3a",
+  "goal_offset_initial_weights_match_neutral_control": true,
+  "goal_offset_needs_separate_initial_evaluation": true,
+  "rl_unit_tests_passed": 51,
+  "max_local_long_simulators": 5,
+  "preservation": "All 106 original MA execution source hashes and both historical selected model hashes checked unchanged.",
+  "cluster_status": "No authenticated session or submitted job available. Awaiting user bootstrap job ID or exact error; allocation details are sufficient for an attempt.",
+  "next_actions": [
+    "Let the two PPO evaluations finish, then compare each with its own initial policy and fixed classical system.",
+    "Audit goal-offset training after completion; evaluate its initial and final policies using the frozen goal-offset evaluator.",
+    "Use preset learning and safety screens; do not credit navigation priors as learned gains.",
+    "Keep three-seed support ablations and unseen evaluation as required next stages once a viable recipe exists."
+  ]
+}

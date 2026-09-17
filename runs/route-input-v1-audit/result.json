@@ -1,0 +1,23 @@
+{
+  "ma": {
+    "checked_observations": 200,
+    "redirected": 180,
+    "shape": [
+      124
+    ],
+    "original_fields_unchanged_except_bearing": true,
+    "controlled_aircraft": 10
+  },
+  "sa": {
+    "checked_observations": 20,
+    "redirected": 20,
+    "shape": [
+      124
+    ],
+    "original_fields_unchanged_except_bearing": true,
+    "controlled_aircraft": 1,
+    "actual_intruders": 10,
+    "observed_intruders": 9
+  },
+  "model_sha256": "b4c7a671dbd0fae8146522fa8278f19f4119c859caf2e1b07fe0bb56eae45093"
+}

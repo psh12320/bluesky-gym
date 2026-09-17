@@ -1,0 +1,67 @@
+{
+  "recorded_at_utc": "2026-09-16T10:50:51.327052+00:00",
+  "coordinator_session": 76853,
+  "coordinator_exit_code": 1,
+  "source": "runs/ppo-gsde-replication-v1/seed-52300/every1/train/training_summary.json",
+  "training_summary": {
+    "status": "wall_limit_before_budget",
+    "algorithm": "ppo",
+    "live_transitions": 13481,
+    "padded_transitions": 6999,
+    "counted_transitions": 20480,
+    "optimizer_steps": 290,
+    "policy_epochs": 80,
+    "rollouts": 8,
+    "worlds_completed": 6,
+    "aircraft_completed": 60,
+    "wall_seconds": 4073.339893599994,
+    "actor_and_critic_parameters_changed": true,
+    "source_unchanged": true,
+    "model_sha256": "878a06427ad4fb00f21bb9fd00c24f79c0dcc23d10a356762bad49d1409c4d20",
+    "training_seed": 52300,
+    "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+  },
+  "checkpoint_audit": {
+    "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-replication-v1\\seed-52300\\every1\\train",
+    "algorithm": "ppo",
+    "exploration": "gsde",
+    "sde_weight_std": 0.01,
+    "sde_sample_freq": 1,
+    "status": "wall_limit_before_budget",
+    "live_transitions": 13481,
+    "padded_transitions": 6999,
+    "optimizer_steps": 290,
+    "verified_checkpoints": 2,
+    "verified_source_files": 97,
+    "learning_curve_rows": 8,
+    "aircraft_completed": 60,
+    "actor_parameter_count": 38914,
+    "critic_parameter_count": 109825,
+    "actor_and_critic_changed": true,
+    "actor_gradient_to_joint_context_zero": true,
+    "critic_uses_joint_context": false,
+    "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+    "model_sha256": "878a06427ad4fb00f21bb9fd00c24f79c0dcc23d10a356762bad49d1409c4d20",
+    "policy_quality_assessed": false
+  },
+  "verified_windows_power_events": [
+    {
+      "provider": "Microsoft-Windows-Kernel-Power",
+      "id": 42,
+      "created_at": "2026-09-16T17:53:27.6402895+08:00",
+      "reason": "Hibernate from Sleep - Standby Battery Budget Exceeded"
+    },
+    {
+      "provider": "Microsoft-Windows-Power-Troubleshooter",
+      "id": 1,
+      "created_at": "2026-09-16T18:30:55.4623686+08:00",
+      "sleep_utc": "2026-09-16T09:53:12.091525600Z",
+      "wake_utc": "2026-09-16T10:30:52.548604600Z"
+    }
+  ],
+  "interpretation": "Registered one-hour wall limit was crossed during a verified local sleep/hibernate interruption. The saved checkpoint is internally consistent but has only 13481 live transitions. It is not a completed performance trial.",
+  "old_run_and_completed_seed_preserved": true,
+  "restarted": false,
+  "recovery_required": true,
+  "all_three_seed_conclusions_available": false
+}

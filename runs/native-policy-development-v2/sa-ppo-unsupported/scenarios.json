@@ -1,0 +1,12 @@
+[
+  {
+    "episode": 0,
+    "sha256": "499c403837c819274f024623107a66a2189aa6fb801083e744c058c433be989b",
+    "simulated_aircraft_at_reset": 11
+  },
+  {
+    "episode": 1,
+    "sha256": "a0fe249c98cac4410bb6a7f5e30ead76abcdb5774993b32c256893902005af09",
+    "simulated_aircraft_at_reset": 11
+  }
+]

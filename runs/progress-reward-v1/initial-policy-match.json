@@ -1,0 +1,8 @@
+{
+  "identical_initial_policy_serialization": true,
+  "policy_state_sha256": "df71410e31e386891e622cec3cd4c1a30ac231d1c32e10b3aca8b656c5efb26e",
+  "models": [
+    "runs\\ppo-direct-pilot-v1\\initial-model.zip",
+    "runs\\progress-reward-v1\\train\\initial-model.zip"
+  ]
+}

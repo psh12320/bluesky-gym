@@ -1,0 +1,77 @@
+{
+  "episodes": 2,
+  "agent_episodes": 20,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 849.0,
+      "std": 167.9208146716779
+    },
+    "intrusion_events": {
+      "mean": 2.1,
+      "std": 1.57797338380595
+    },
+    "intrusion_time": {
+      "mean": 124.3,
+      "std": 106.14805697703562
+    },
+    "restricted_area_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_in_restricted_area": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -80.16534135747119,
+      "std": 100.37312666554577
+    }
+  },
+  "clean_completion_rate": 0.25,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 3404,
+  "padded_transitions": 1206,
+  "world_decisions": 461,
+  "aircraft_terminated": 20,
+  "aircraft_truncated": 0,
+  "wall_seconds": 41.972116600001755,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 20.0
+  },
+  "csv_sha256": "0f63edd24ec4c9f90ef88c055584d44a65a53ed0d75ebe2f09ffe73e98601e4b"
+}

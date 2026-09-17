@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-09-15T16:41:52.051434+00:00",
+  "ready_for_final_report": false,
+  "missing_completed_inputs": [
+    "corrected_sa_full_score",
+    "corrected_ma_full_score"
+  ],
+  "heldout_tracks_audited": [
+    "sa",
+    "ma"
+  ],
+  "passing_regression_tests": 108,
+  "corrected_video_tracks_verified": [
+    "sa",
+    "ma"
+  ],
+  "process_status": "Not inferred from files; inspect live tool handles separately",
+  "final_pdf_written": false
+}

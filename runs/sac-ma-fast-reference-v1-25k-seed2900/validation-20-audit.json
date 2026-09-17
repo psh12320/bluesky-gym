@@ -1,0 +1,9 @@
+{
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "all_summary_values_exact": true,
+  "episodes": 20,
+  "agent_episodes": 200,
+  "csv_sha256": "846e9f7b751e6f772d4e0ea94c3c7d5dc65531c713b4e1474566d7210ba0032b",
+  "nonzero_heading_adjustments": 18386,
+  "nonzero_speed_adjustments": 1079
+}

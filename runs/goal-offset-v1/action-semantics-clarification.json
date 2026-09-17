@@ -1,0 +1,8 @@
+{
+  "action_reference": "goal_offset",
+  "navigation_prior": "Goal/reference-bearing tracking plus a learned heading offset.",
+  "learned_navigation_gain_requires_matching_untrained_evaluation": true,
+  "legacy_config_field": "The frozen version-1 trainer emits automatic_residual_controller=false for every mode. That field is misleading for goal_offset; its action_reference and action_mapping fields describe the actual behavior.",
+  "future_trainer_metadata_corrected": true,
+  "original_run_configuration_and_source_unchanged": true
+}

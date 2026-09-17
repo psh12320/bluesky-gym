@@ -1,0 +1,77 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.945,
+      "std": 0.22798026230356
+    },
+    "flight_time": {
+      "mean": 1564.13,
+      "std": 625.5947115345525
+    },
+    "intrusion_events": {
+      "mean": 0.71,
+      "std": 1.1072036849649662
+    },
+    "intrusion_time": {
+      "mean": 94.66,
+      "std": 268.430408858609
+    },
+    "restricted_area_events": {
+      "mean": 0.065,
+      "std": 0.246525860712421
+    },
+    "time_in_restricted_area": {
+      "mean": 3.28,
+      "std": 16.966779305454526
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -56.109776587362106,
+      "std": 257.03371667365957
+    }
+  },
+  "clean_completion_rate": 0.535,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "arm": "trained_heading",
+  "component_sources": {
+    "heading": "trained",
+    "speed": "initial"
+  },
+  "world_decisions": 10533,
+  "csv_sha256": "70e5a74c8ad5656126a905eed1053fb41e2b915416b67c1b1c7c62082147498e",
+  "wall_seconds": 620.2810000000027,
+  "pre_filter_commands": {
+    "live_commands": 62639,
+    "mean_speed_increment": 0.9767554016132403,
+    "negative_speed_fraction": 0.0,
+    "positive_speed_fraction": 1.0,
+    "mean_absolute_heading_command_degrees": 5.356802671310409
+  },
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "direct",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0
+  },
+  "diagnostic_only": true
+}

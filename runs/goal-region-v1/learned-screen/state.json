@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "execution_plan_sha256": "90f149febfb20f7b3da1c051331e0fc304698698645eb608936bc77f658e1121",
+  "stages": [
+    {
+      "mode": "learned_point_goal",
+      "started_at_utc": "2026-09-15T16:39:42.229584+00:00",
+      "pid": 34172,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:50:07.502985+00:00"
+    },
+    {
+      "mode": "learned_goal_region",
+      "started_at_utc": "2026-09-15T16:50:07.508105+00:00",
+      "pid": 44588,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:59:44.383254+00:00"
+    }
+  ],
+  "comparison_sha256": "c8d1ce355e8d3abad1d3ecd048dfc428c335be47e8e9989f0e33947fe55e3fde",
+  "completed_at_utc": "2026-09-15T16:59:44.734359+00:00"
+}

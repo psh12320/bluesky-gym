@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "stages": [
+    {
+      "stage": "validate_0",
+      "started_at_utc": "2026-09-15T16:52:59.663070+00:00",
+      "pid": 11212,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:54:12.374348+00:00"
+    },
+    {
+      "stage": "validate_1",
+      "started_at_utc": "2026-09-15T16:54:12.376351+00:00",
+      "pid": 43600,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T16:55:57.913758+00:00"
+    },
+    {
+      "stage": "train_0",
+      "started_at_utc": "2026-09-15T16:55:58.024830+00:00",
+      "pid": 35892,
+      "exit_code": 1,
+      "finished_at_utc": "2026-09-15T16:56:06.654227+00:00"
+    }
+  ],
+  "error": "RuntimeError('train_0 failed; preserve logs and completed stages')"
+}

@@ -1,0 +1,89 @@
+{
+  "results_sha256": "c104f5aad5211469e24210f4bf4bf4e11f9550942107a4b40b9764b11ccd3e5f",
+  "protocol_sha256": "058735fd873fc3310697bf13218485be43995e231a39b76a003acf1434a738e9",
+  "csv_provenance": {
+    "zero_both": {
+      "csv_sha256": "1ea2645fe0f1fd30f9bf3739291d7d10282734f625171ee90a415f6aa5fd5ffd",
+      "summary_sha256": "af5462faf979e7725444f6b8700610267c7b7f33478e40e279d9db65affa68b1"
+    },
+    "zero_speed": {
+      "csv_sha256": "c536158bf0a688076b39d9f1dc46cfd6579b26d4b0293a9f3fea67be15f9e33f",
+      "summary_sha256": "ed270950357c219bb84b7a565ef4a456ee56af8b558534b8061742633d30a37a"
+    },
+    "zero_heading": {
+      "csv_sha256": "79af2877695d9ef30dc2827aa02abdf8b3e637f79040869d02a64eda4ec18e66",
+      "summary_sha256": "30e05a0475e7415bb59331f3130d30686b4e5c45b4d931b5bd554a5ec23a3f6d"
+    },
+    "full_policy": {
+      "csv_sha256": "673675cd116d8065f8d9323fc411652b56e17732e11d79c279920c850a17bb43",
+      "summary_sha256": "0b69e4d5b56ad7f8d605c330cf63e26411bbb587d97595ec5d669f8a7617c8df"
+    }
+  },
+  "exact_control_metric_checks": 3600,
+  "all_four_conditions_audited": true,
+  "all_effects_exported": 55,
+  "means": {
+    "full_policy": {
+      "waypoint_reached": 1.0,
+      "flight_time": 1019.1199999999999,
+      "intrusion_events": 0.9999999999999998,
+      "intrusion_time": 89.82000000000001,
+      "restricted_area_events": 0.034999999999999996,
+      "time_in_restricted_area": 1.2850000000000001,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -48.27886684587822,
+      "clean_completion": 0.41500000000000004,
+      "all_aircraft_clean_completion": 0.05
+    },
+    "zero_both": {
+      "waypoint_reached": 0.9949999999999999,
+      "flight_time": 1090.1799999999998,
+      "intrusion_events": 1.56,
+      "intrusion_time": 113.33999999999999,
+      "restricted_area_events": 0.01,
+      "time_in_restricted_area": 0.38,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -70.2405291593074,
+      "clean_completion": 0.255,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "zero_heading": {
+      "waypoint_reached": 1.0,
+      "flight_time": 1015.5450000000001,
+      "intrusion_events": 1.52,
+      "intrusion_time": 114.0,
+      "restricted_area_events": 0.02,
+      "time_in_restricted_area": 0.5650000000000001,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -70.76415876667188,
+      "clean_completion": 0.25999999999999995,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "zero_speed": {
+      "waypoint_reached": 0.9949999999999999,
+      "flight_time": 1097.3650000000002,
+      "intrusion_events": 0.9899999999999999,
+      "intrusion_time": 82.48,
+      "restricted_area_events": 0.034999999999999996,
+      "time_in_restricted_area": 1.35,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -41.56539926841545,
+      "clean_completion": 0.41000000000000003,
+      "all_aircraft_clean_completion": 0.05
+    }
+  },
+  "limitations": [
+    "Twenty reused development worlds and one outcome-selected training seed; no unseen generalization or across-seed inference.",
+    "Heading and speed interact through subsequent states; this is a closed-loop policy-component ablation.",
+    "Changing inference behavior is not additional RL training.",
+    "These variants are not nominated competition candidates.",
+    "Disabling a component changes subsequent observations; this does not estimate retraining with that action removed.",
+    "Zero heading retains route support and may still turn the aircraft; this is not a constant-heading controller.",
+    "World bootstrap intervals do not account for outcome-based checkpoint selection or training-seed variation."
+  ],
+  "promoted_to_candidate": false
+}

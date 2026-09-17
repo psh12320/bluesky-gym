@@ -1,0 +1,341 @@
+shri@xlogin1:~$ (
+cd "$HOME/cs4246-rl/cluster-ppo-gsde-v1" || exit 1
+
+cat runs/cluster-ppo-gsde-v1/submissions.tsv
+
+python3 - <<'PY'
+from pathlib import Path
+import json
+
+root = Path("runs/cluster-ppo-gsde-v1")
+plan = json.loads(Path("jobs/ppo_gsde_v1.json").read_text())
+
+for row in plan["rows"]:
+    folder = root / f"seed-{row['seed']}" / row["arm"]
+    path = folder / "train/training_summary.json"
+    summary = json.loads(path.read_text()) if path.exists() else {}
+    print(row, {
+        "status": summary.get("status", "no completion report"),
+        "live_transitions": summary.get("live_transitions"),
+        "optimizer_steps": summary.get("optimizer_steps"),
+        "training_checks_passed": (folder / "train-complete.json").exists(),
+        "evaluation_complete": (folder / "evaluate-complete.json").exists(),
+    })
+
+path = root / "three-seed-results.json"
+if path.exists():
+    result = json.loads(path.read_text())
+    for arm, values in result["fresh_seed_aggregate"].items():
+        print(arm, json.dumps({
+            "final_metrics": values["mean_physical_metrics"]["final"],
+)oneif [ -f "$log" ]; then tail -n 40 "$log"; fible.")fresh_seed_mean"],
+stage   job_id
+train_row0      852634
+train_rows1_5   852635
+eval_row0       852636
+eval_rows1_5    852637
+analyze_all_rows        852638
+{'seed': 52600, 'arm': 'every12'} {'status': 'complete', 'live_transitions': 1001475, 'optimizer_steps': 3229, 'training_checks_passed': True, 'evaluation_complete': True}
+{'seed': 52600, 'arm': 'every1'} {'status': 'complete', 'live_transitions': 1010530, 'optimizer_steps': 10240, 'training_checks_passed': True, 'evaluation_complete': True}
+{'seed': 52700, 'arm': 'every1'} {'status': 'complete', 'live_transitions': 1012872, 'optimizer_steps': 10260, 'training_checks_passed': True, 'evaluation_complete': True}
+{'seed': 52700, 'arm': 'every12'} {'status': 'complete', 'live_transitions': 1004353, 'optimizer_steps': 2966, 'training_checks_passed': True, 'evaluation_complete': True}
+{'seed': 52800, 'arm': 'every12'} {'status': 'complete', 'live_transitions': 1002831, 'optimizer_steps': 2867, 'training_checks_passed': True, 'evaluation_complete': True}
+{'seed': 52800, 'arm': 'every1'} {'status': 'complete', 'live_transitions': 1009068, 'optimizer_steps': 10230, 'training_checks_passed': True, 'evaluation_complete': True}
+every1 {
+  "final_metrics": {
+    "waypoint_reached": 0.985,
+    "flight_time": 1089.8316666666667,
+    "intrusion_events": 1.4866666666666668,
+    "intrusion_time": 119.53333333333335,
+    "restricted_area_events": 0.013333333333333334,
+    "time_in_restricted_area": 0.305,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": -76.44230230276604,
+    "clean_completion": 0.25833333333333336,
+    "all_aircraft_clean_completion": 0.0
+  },
+  "learning_contribution": {
+    "waypoint_reached": {
+      "mean": -0.01,
+      "sample_standard_deviation": 0.008660254037844387,
+      "per_seed_values": [
+        -0.015000000000000003,
+        0.0,
+        -0.014999999999999996
+      ],
+      "minimum": -0.015000000000000003,
+      "maximum": 0.0
+    },
+    "flight_time": {
+      "mean": -0.3483333333333351,
+      "sample_standard_deviation": 36.96286052693072,
+      "per_seed_values": [
+        41.684999999999995,
+        -27.779999999999994,
+        -14.950000000000006
+      ],
+      "minimum": -27.779999999999994,
+      "maximum": 41.684999999999995
+    },
+    "intrusion_events": {
+      "mean": -0.07333333333333336,
+      "sample_standard_deviation": 0.05033222956847166,
+      "per_seed_values": [
+        -0.020000000000000035,
+        -0.08000000000000003,
+        -0.12000000000000002
+      ],
+      "minimum": -0.12000000000000002,
+      "maximum": -0.020000000000000035
+    },
+    "intrusion_time": {
+      "mean": 6.1933333333333325,
+      "sample_standard_deviation": 16.529314363679255,
+      "per_seed_values": [
+        19.830000000000002,
+        10.939999999999996,
+        -12.19
+      ],
+      "minimum": -12.19,
+      "maximum": 19.830000000000002
+    },
+    "restricted_area_events": {
+      "mean": 0.0033333333333333335,
+      "sample_standard_deviation": 0.007637626158259733,
+      "per_seed_values": [
+        0.01,
+        0.005,
+        -0.005
+      ],
+      "minimum": -0.005,
+      "maximum": 0.01
+    },
+    "time_in_restricted_area": {
+      "mean": -0.07499999999999998,
+      "sample_standard_deviation": 0.265,
+      "per_seed_values": [
+        0.19,
+        -0.075,
+        -0.33999999999999997
+      ],
+      "minimum": -0.33999999999999997,
+      "maximum": 0.19
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "total_reward": {
+      "mean": -6.201773143458671,
+      "sample_standard_deviation": 15.684099766724893,
+      "per_seed_values": [
+        -19.41886347018852,
+        -10.31574531343847,
+        11.129289353250977
+      ],
+      "minimum": -19.41886347018852,
+      "maximum": 11.129289353250977
+    },
+    "clean_completion": {
+      "mean": 0.0033333333333333353,
+      "sample_standard_deviation": 0.007637626158259735,
+      "per_seed_values": [
+        -0.004999999999999999,
+        0.005000000000000002,
+        0.010000000000000004
+      ],
+      "minimum": -0.004999999999999999,
+      "maximum": 0.010000000000000004
+    },
+    "all_aircraft_clean_completion": {
+      "mean": 0.0,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum": 0.0,
+      "maximum": 0.0
+    }
+  },
+  "screen_checks": {
+    "arrival_level": true,
+    "arrival_change": true,
+    "clean_change": false,
+    "intrusion_time": false,
+    "time_in_restricted_area": true,
+    "time_outside_sector": true
+  }
+}
+every12 {
+  "final_metrics": {
+    "waypoint_reached": 0.99,
+    "flight_time": 1048.091666666667,
+    "intrusion_events": 1.3966666666666665,
+    "intrusion_time": 117.04333333333334,
+    "restricted_area_events": 0.034999999999999996,
+    "time_in_restricted_area": 1.6583333333333332,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": -74.58796866485267,
+    "clean_completion": 0.27,
+    "all_aircraft_clean_completion": 0.0
+  },
+  "learning_contribution": {
+    "waypoint_reached": {
+      "mean": -0.004999999999999999,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        -0.004999999999999999,
+        -0.004999999999999999,
+        -0.004999999999999999
+      ],
+      "minimum": -0.004999999999999999,
+      "maximum": -0.004999999999999999
+    },
+    "flight_time": {
+      "mean": -42.088333333333345,
+      "sample_standard_deviation": 21.303225890304343,
+      "per_seed_values": [
+        -55.345000000000006,
+        -17.515000000000015,
+        -53.405000000000015
+      ],
+      "minimum": -55.345000000000006,
+      "maximum": -17.515000000000015
+    },
+    "intrusion_events": {
+      "mean": -0.16333333333333333,
+      "sample_standard_deviation": 0.11930353445448853,
+      "per_seed_values": [
+        -0.10999999999999999,
+        -0.3,
+        -0.07999999999999999
+      ],
+      "minimum": -0.3,
+      "maximum": -0.07999999999999999
+    },
+    "intrusion_time": {
+      "mean": 3.7033333333333327,
+      "sample_standard_deviation": 7.959612637140915,
+      "per_seed_values": [
+        9.160000000000002,
+        -5.4300000000000015,
+        7.379999999999998
+      ],
+      "minimum": -5.4300000000000015,
+      "maximum": 9.160000000000002
+    },
+    "restricted_area_events": {
+      "mean": 0.025,
+      "sample_standard_deviation": 0.005000000000000003,
+      "per_seed_values": [
+        0.025,
+        0.030000000000000006,
+        0.02
+      ],
+      "minimum": 0.02,
+      "maximum": 0.030000000000000006
+    },
+    "time_in_restricted_area": {
+      "mean": 1.2783333333333333,
+      "sample_standard_deviation": 0.15307950004273385,
+      "per_seed_values": [
+        1.3350000000000002,
+        1.395,
+        1.105
+      ],
+      "minimum": 1.105,
+      "maximum": 1.395
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "total_reward": {
+      "mean": -4.3474395055453074,
+      "sample_standard_deviation": 7.480964107430155,
+      "per_seed_values": [
+        -9.533804766009126,
+        4.228304074267375,
+        -7.736817824894172
+      ],
+      "minimum": -9.533804766009126,
+      "maximum": 4.228304074267375
+    },
+    "clean_completion": {
+      "mean": 0.015000000000000003,
+      "sample_standard_deviation": 0.031224989991991997,
+      "per_seed_values": [
+        0.005000000000000002,
+        0.05000000000000001,
+        -0.010000000000000002
+      ],
+      "minimum": -0.010000000000000002,
+      "maximum": 0.05000000000000001
+    },
+    "all_aircraft_clean_completion": {
+      "mean": 0.0,
+      "sample_standard_deviation": 0.0,
+      "per_seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum": 0.0,
+      "maximum": 0.0
+    }
+  },
+  "screen_checks": {
+    "arrival_level": true,
+    "arrival_change": true,
+    "clean_change": false,
+    "intrusion_time": false,
+    "time_in_restricted_area": false,
+    "time_outside_sector": true
+  }
+}
+{"verified_files": 143, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 143, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 143, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 143, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"results": "/home/s/shri/cs4246-rl/cluster-ppo-gsde-v1/runs/cluster-ppo-gsde-v1/three-seed-results.json", "persistent_minus_frequent_learning": {"waypoint_reached": {"mean": 0.005000000000000001, "sample_standard_deviation": 0.008660254037844387, "per_seed_values": [0.010000000000000004, -0.004999999999999999, 0.009999999999999998], "minimum": -0.004999999999999999, "maximum": 0.010000000000000004}, "flight_time": {"mean": -41.74000000000001, "sample_standard_deviation": 53.72287850627514, "per_seed_values": [-97.03, 10.264999999999981, -38.455000000000005], "minimum": -97.03, "maximum": 10.264999999999981}, "intrusion_events": {"mean": -0.08999999999999997, "sample_standard_deviation": 0.13, "per_seed_values": [-0.08999999999999994, -0.21999999999999997, 0.04000000000000002], "minimum": -0.21999999999999997, "maximum": 0.04000000000000002}, "intrusion_time": {"mean": -2.490000000000004, "sample_standard_deviation": 19.315931248583375, "per_seed_values": [-10.670000000000002, -16.369999999999997, 19.569999999999986], "minimum": -16.369999999999997, "maximum": 19.569999999999986}, "restricted_area_events": {"mean": 0.021666666666666667, "sample_standard_deviation": 0.005773502691896259, "per_seed_values": [0.015, 0.025, 0.025], "minimum": 0.015, "maximum": 0.025}, "time_in_restricted_area": {"mean": 1.3533333333333333, "sample_standard_deviation": 0.18085445345175588, "per_seed_values": [1.145, 1.4700000000000002, 1.4449999999999998], "minimum": 1.145, "maximum": 1.4700000000000002}, "sector_exit_events": {"mean": 0.0, "sample_standard_deviation": 0.0, "per_seed_values": [0.0, 0.0, 0.0], "minimum": 0.0, "maximum": 0.0}, "time_outside_sector": {"mean": 0.0, "sample_standard_deviation": 0.0, "per_seed_values": [0.0, 0.0, 0.0], "minimum": 0.0, "maximum": 0.0}, "total_reward": {"mean": 1.854333637913367, "sample_standard_deviation": 18.09500067024409, "per_seed_values": [9.885058704179396, 14.544049387705844, -18.86610717814514], "minimum": -18.86610717814514, "maximum": 14.544049387705844}, "clean_completion": {"mean": 0.011666666666666669, "sample_standard_deviation": 0.03253203549323856, "per_seed_values": [0.01, 0.045000000000000005, -0.02], "minimum": -0.02, "maximum": 0.045000000000000005}, "all_aircraft_clean_completion": {"mean": 0.0, "sample_standard_deviation": 0.0, "per_seed_values": [0.0, 0.0, 0.0], "minimum": 0.0, "maximum": 0.0}}}
+shri@xlogin1:~$

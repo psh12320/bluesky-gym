@@ -1,0 +1,50 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "6ca6acd6cb28d0ddb155388691a8c35f765b84d83f2fde5123c5ae558d6bf5dc",
+    "live_transitions": 0,
+    "padded_transitions": 0,
+    "counted_transitions": 0,
+    "replay_size": 0,
+    "optimizer_steps": 0,
+    "actor_optimizer_steps": 0,
+    "entropy_optimizer_steps": 0,
+    "gradient_rounds": 0
+  },
+  {
+    "file": "policy-live-640.zip",
+    "sha256": "c96ad172f926f7dc1cfaa2870b7c84c6d59b893e080220cbb162115ef93d4fec",
+    "live_transitions": 640,
+    "padded_transitions": 0,
+    "counted_transitions": 640,
+    "replay_size": 640,
+    "optimizer_steps": 54,
+    "actor_optimizer_steps": 54,
+    "entropy_optimizer_steps": 54,
+    "gradient_rounds": 54
+  },
+  {
+    "file": "policy-live-1280.zip",
+    "sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+    "live_transitions": 1280,
+    "padded_transitions": 0,
+    "counted_transitions": 1280,
+    "replay_size": 1280,
+    "optimizer_steps": 118,
+    "actor_optimizer_steps": 118,
+    "entropy_optimizer_steps": 118,
+    "gradient_rounds": 118
+  },
+  {
+    "file": "model.zip",
+    "sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+    "live_transitions": 1280,
+    "padded_transitions": 0,
+    "counted_transitions": 1280,
+    "replay_size": 1280,
+    "optimizer_steps": 118,
+    "actor_optimizer_steps": 118,
+    "entropy_optimizer_steps": 118,
+    "gradient_rounds": 118
+  }
+]

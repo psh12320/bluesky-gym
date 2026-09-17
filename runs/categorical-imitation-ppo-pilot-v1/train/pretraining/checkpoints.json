@@ -1,0 +1,34 @@
+[
+  {
+    "file": "untrained-model.zip",
+    "sha256": "05714828087e8f775dfcd7509098957b385e94977d5882c59c98f473f64091bd",
+    "policy_fingerprint": "ade4ff030be2dd0e53b26ecbd3a44e381560b0ba125118f745cbb15c66556193",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0,
+    "training_method": "behavior_cloning",
+    "supervised_epochs": 0,
+    "supervised_optimizer_steps": 0,
+    "supervised_examples_seen": 0,
+    "demonstration_transitions": 62744
+  },
+  {
+    "file": "model.zip",
+    "sha256": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+    "policy_fingerprint": "20f8d97607394c3f488f4bc5ea04f0a686c71f35ba712972d95d24048fac1350",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0,
+    "training_method": "behavior_cloning",
+    "supervised_epochs": 40,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "demonstration_transitions": 62744
+  }
+]

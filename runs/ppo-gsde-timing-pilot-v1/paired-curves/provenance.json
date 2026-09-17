@@ -1,0 +1,21 @@
+{
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\paired-results.json",
+  "source_sha256": "d98f4b1983bb25a27bbc9f354424cacf3789de2d8a286714ffcf3fd24cd38cb9",
+  "point_count": 24,
+  "seed": 51700,
+  "fresh_seed_replications_included": false,
+  "noise_schedule_note": "Both schedules also resample at rollout starts.",
+  "optimizer_review": "../optimizer-review.json",
+  "decision": "../decision.json",
+  "limitations": [
+    "One exploratory training seed, 100k live transitions and twenty reused development worlds.",
+    "This is a within-gSDE timing comparison, not a matched Gaussian-versus-gSDE algorithm comparison.",
+    "Resampling changes both heading and speed noise persistence; it does not isolate heading alone.",
+    "SB3 resamples at rollout starts as well as at the configured interval. State-dependent noise can change with observations even while its matrix is held.",
+    "The noise matrix weight std is .01, not the marginal action standard deviation.",
+    "The current input-scaling study is separate: both timing arms retain original coordinate scale and GAE lambda .95.",
+    "Fixed route/static support stays on; aircraft conflict filtering stays off.",
+    "Classical results are the preserved Windows benchmark from an earlier evaluator source.",
+    "Unseen and official streams remain reserved; no competition readiness claim."
+  ]
+}

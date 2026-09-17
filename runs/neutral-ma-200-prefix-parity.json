@@ -1,0 +1,19 @@
+{
+  "first_episodes": 20,
+  "aircraft_records": 200,
+  "exact_metrics": [
+    "waypoint_reached",
+    "flight_time",
+    "intrusion_events",
+    "intrusion_time",
+    "restricted_area_events",
+    "time_in_restricted_area",
+    "sector_exit_events",
+    "time_outside_sector",
+    "total_reward"
+  ],
+  "reference": "runs/neutral-ma-20",
+  "expanded": "runs/neutral-ma-200",
+  "expanded_csv_sha256": "18aa53418742e32ccb2fdb7144ac476c18c6ce0c4114b1f9d84c31be20390e14",
+  "exact_prefix_match": true
+}

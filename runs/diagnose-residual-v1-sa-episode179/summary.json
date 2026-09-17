@@ -1,0 +1,78 @@
+{
+  "env": "sa",
+  "episode": 179,
+  "seed": 2026,
+  "model": "runs\\candidate-sa-route-residual-v1-ma25k\\model.zip",
+  "sampling_seconds": 10,
+  "final_metrics": [
+    {
+      "agent": "KL001",
+      "total_reward": -0.41127283123925523,
+      "flight_time": 3000.0,
+      "waypoint_reached": 0,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    }
+  ],
+  "prefix_mode": "resets_only",
+  "prefix_setup_commands_processed": true,
+  "scenario_rng_unchanged_during_rollout": true,
+  "inference_mode": "per_aircraft",
+  "mean_metrics": {
+    "waypoint_reached": 0.0,
+    "flight_time": 3000.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": -0.41127283123925523
+  },
+  "trajectory_statistics": {
+    "cas_mps": {
+      "mean": 161.87391014374572,
+      "min": 150.0,
+      "max": 162.99999999999994
+    },
+    "goal_distance_km": {
+      "mean": 135.91645316408102,
+      "min": 24.65882678582008,
+      "max": 196.5803769820084
+    },
+    "heading_error_deg": {
+      "mean": 74.34553108595475,
+      "min": -173.66686921223504,
+      "max": 170.32824755664194
+    },
+    "heading_action": {
+      "mean": 0.09080180088678996,
+      "min": -0.6941919326782227,
+      "max": 0.7556672096252441
+    },
+    "speed_action": {
+      "mean": 0.33449549198150635,
+      "min": -0.20343297719955444,
+      "max": 0.8411755561828613
+    }
+  },
+  "reference_comparison": {
+    "reference": "runs\\candidate-sa-route-residual-v1-ma25k\\validation-200",
+    "matches_reference": true,
+    "max_absolute_metric_differences": {
+      "waypoint_reached": 0.0,
+      "flight_time": 0.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 0.0
+    }
+  }
+}

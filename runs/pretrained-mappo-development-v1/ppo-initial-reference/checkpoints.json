@@ -1,0 +1,60 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "d176efdad51deacda5640c5d83fc0e44e0185a6a0fab4df38d8e6e25b3f81e52",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0,
+    "pretraining": {
+      "method": "behavior_cloning",
+      "original_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc",
+      "archived_directory": "pretraining",
+      "archived_files": {
+        "model.zip": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+        "config.json": "b293d1c035ebb289eb055e513c8720b1999542a28375a2f8414a867af01b0110",
+        "training_summary.json": "67c9e25021692bad8a87a9b539f068ffd733b71d8bd663afa67107c13db1bbfc",
+        "checkpoints.json": "3af25ef493045593a1bb388f6705aae877b6089e6aa328c098fe68e90f796dd1",
+        "provenance.json": "5d980e512e1f80ac7f9629d151d9982d5659f3bc4035f21be88060ce76067332"
+      },
+      "parent_checkpoint": {
+        "file": "model.zip",
+        "sha256": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+        "policy_fingerprint": "20f8d97607394c3f488f4bc5ea04f0a686c71f35ba712972d95d24048fac1350",
+        "live_transitions": 0,
+        "counted_transitions": 0,
+        "padded_transitions": 0,
+        "optimizer_steps": 0,
+        "policy_epochs": 0,
+        "rollouts": 0,
+        "training_method": "behavior_cloning",
+        "supervised_epochs": 40,
+        "supervised_optimizer_steps": 2480,
+        "supervised_examples_seen": 2509760,
+        "demonstration_transitions": 62744
+      },
+      "demonstration_transitions": 62744,
+      "supervised_optimizer_steps": 2480,
+      "supervised_examples_seen": 2509760,
+      "initial_policy_is_untrained": false,
+      "rl_live_transitions_at_initialization": 0,
+      "ppo_optimizer_inherited": false,
+      "action_space_compatibility": {
+        "kind": "categorical",
+        "nvec": [
+          20,
+          3
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "parent_dtype": "int64",
+        "ppo_dtype": "int64"
+      }
+    },
+    "live_transition_scope": "Additional PPO experience after supervised initialization"
+  }
+]

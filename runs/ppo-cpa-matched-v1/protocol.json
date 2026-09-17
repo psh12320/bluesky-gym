@@ -1,0 +1,87 @@
+{
+  "registered_at_utc": "2026-09-16T03:40:24.988908+00:00",
+  "purpose": "Test whether derived conflict observations improve PPO learning against a same-size zero-feature control.",
+  "seeds": [
+    50400,
+    50500,
+    50600
+  ],
+  "arm_order": {
+    "50400": [
+      "features",
+      "zeros"
+    ],
+    "50500": [
+      "zeros",
+      "features"
+    ],
+    "50600": [
+      "features",
+      "zeros"
+    ]
+  },
+  "config": {
+    "algorithm": "ppo",
+    "workers": 1,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600
+  },
+  "arms": {
+    "features": {
+      "mask_conflict_features": false
+    },
+    "zeros": {
+      "mask_conflict_features": true
+    }
+  },
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cpa-source-v2-verify",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cpa-source-v2-verify",
+  "source_bundle_sha256": "e6048403809a7c1121291a8b16590946d71a991788717798fd85498e9c15fe71",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "stages": [
+    "initial",
+    "50k",
+    "final"
+  ],
+  "checkpoint_selection": "First saved checkpoint at/above 50k, within one full 2560-slot rollout; retain exact live counts.",
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "capacity_control": "Same 170-dimensional local input, spaces, actor/critic architecture, parameter count and full initial policy tensors for each paired seed. Both actor and critic receive the selected inputs.",
+  "learning_control": "Each run is evaluated against its own saved zero-experience policy; paired initial behavior must be identical.",
+  "primary_contrast": "For each training seed and every native metric, (trained - own initial) with real features minus the same change with zero features.",
+  "aggregation": "Retain all three paired seeds; report their mean effects and sample standard deviations. Scenario intervals resample whole worlds.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "resource_policy": "One simulator world for both arms, batch size 512, sequential runs. Start only after existing intermediate-curve evaluations and mask integration checks finish, keeping at most five local simulator workers as the two existing cohorts change phases.",
+  "limitations": [
+    "100k live-transition pilot, not proof of competition readiness.",
+    "One world still contains ten learning aircraft. The worker count and batch differ from previous two-world pilots, so only the paired feature/zero comparison isolates this representation change.",
+    "The extra values are computed from current relative state using a constant-velocity approximation; they are not future simulator truth.",
+    "Goal-relative actions and route guidance provide navigation support; conflict filtering is disabled in both arms.",
+    "This compares feature inputs to zero inputs for actor and critic together; it does not isolate actor-only from critic-only benefit.",
+    "Repeated development worlds; unseen streams 20301/20302 remain reserved."
+  ],
+  "failure_behavior": "Stop this coordinator on a failed check or incomplete budget, preserve every artifact, and do not restart automatically."
+}

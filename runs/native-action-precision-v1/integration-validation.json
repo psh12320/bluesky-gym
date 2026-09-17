@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-09-16T11:39:48.723547+00:00",
+  "technical_checkpoint_sha256": "d10c979bf504e073418c5ee243ba8d86c3e455eeeebbc4fc56795e291103da4d",
+  "evaluation_source_sha256": "c329c4ba0ee3a472c89477856740811947c6f3634335c395089eff6682e4404d",
+  "exact_metric_values": 180,
+  "physical_metric_values": 160,
+  "reward_values": 20,
+  "vector_and_native_csv_sha256": "fdb59caf98a01a42691c9a4844ecccf24eb685d49cabbced18dc7522b85bdda3",
+  "original_vector_csv_unchanged": true,
+  "new_technical_training_performed": false,
+  "original_checkpoints_and_logs_preserved": true,
+  "strict_equality_used": true,
+  "root_cause_supported": "Native action dtype affected the filtered heading; matching collector float32 restored exact original vector results."
+}

@@ -1,0 +1,36 @@
+{"episode": 0, "arrival_rate": 1.0}
+{"episode": 1, "arrival_rate": 1.0}
+{"episode": 2, "arrival_rate": 0.9}
+{"episode": 3, "arrival_rate": 1.0}
+{"episode": 4, "arrival_rate": 1.0}
+{"episode": 5, "arrival_rate": 1.0}
+{"episode": 6, "arrival_rate": 1.0}
+{"episode": 7, "arrival_rate": 1.0}
+{"episode": 8, "arrival_rate": 1.0}
+{"episode": 9, "arrival_rate": 1.0}
+{"episode": 10, "arrival_rate": 1.0}
+{"episode": 11, "arrival_rate": 1.0}
+{"episode": 12, "arrival_rate": 1.0}
+{"episode": 13, "arrival_rate": 1.0}
+{"episode": 14, "arrival_rate": 1.0}
+{"episode": 15, "arrival_rate": 1.0}
+{"episode": 16, "arrival_rate": 0.7}
+{"episode": 17, "arrival_rate": 0.8}
+{"episode": 18, "arrival_rate": 1.0}
+{"episode": 19, "arrival_rate": 1.0}
+{"episodes": 20, "agent_episodes": 200, "metrics": {"waypoint_reached": {"mean": 0.97, "std": 0.1705872210923198}, "flight_time": {"mean": 1106.52, "std": 499.08127554537646}, "intrusion_events": {"mean": 1.53, "std": 1.3450278807519194}, "intrusion_time": {"mean": 110.15, "std": 156.35526054469673}, "restricted_area_events": {"mean": 0.035, "std": 0.20922475952907676}, "time_in_restricted_area": {"mean": 3.85, "std": 48.639978412824156}, "sector_exit_events": {"mean": 0.0, "std": 0.0}, "time_outside_sector": {"mean": 0.0, "std": 0.0}, "total_reward": {"mean": -69.89785084417257, "std": 149.86336399476633}}, "clean_completion_rate": 0.25, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "ppo", "guidance": true, "filter": false, "action_reference": "goal_offset", "seed": 20260, "live_transitions": 44344, "padded_transitions": 24146, "world_decisions": 6849, "aircraft_terminated": 194, "aircraft_truncated": 6, "wall_seconds": 362.3854484000003, "actor_inference_uses_joint_context": false, "runtime": {"geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true, "training_progress_scale": 0.0, "action_reference": "goal_offset"}, "csv_sha256": "32d2b4198b212049818f61558782e977d45b70f1b1fd3427e53c2461c97d5c26"}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-guidance-replication-v1\seed-49940\eval-50k-dev20\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-guidance-replication-v1\seed-49940\eval-50k-dev20\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-guidance-replication-v1\seed-49940\eval-50k-dev20\workers\world-0\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-guidance-replication-v1\seed-49940\eval-50k-dev20\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-guidance-replication-v1\seed-49940\eval-50k-dev20\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\ppo-guidance-replication-v1\seed-49940\eval-50k-dev20\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

@@ -1,0 +1,9 @@
+{
+  "reviewed_runs": 13,
+  "general_optimizer_early_stop_failure_supported": false,
+  "evidence": "Guidance/support pilots received about 96-100% of possible optimizer updates. The CPA feature arm received 83.8%; its first three rollouts were affected more strongly.",
+  "next_test": "Same-source, same-seed static-supported PPO with std 0.05 versus 0.20, changing exploration only.",
+  "current_cluster_recipe_changed": false,
+  "exploration_causes_poor_performance_established": false,
+  "new_performance_claim": false
+}

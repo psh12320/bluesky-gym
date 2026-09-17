@@ -1,0 +1,83 @@
+{
+  "time_utc": "2026-09-16T01:10:24.480441+00:00",
+  "goal_turn_classification": "progress",
+  "running_training": [
+    {
+      "algorithm": "ppo",
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "session": 83552,
+      "latest_learning_row": {
+        "rollout": "206",
+        "live_transitions": "840829",
+        "padded_transitions": "213891",
+        "counted_transitions": "1054720",
+        "worlds_completed": "490",
+        "aircraft_completed": "4909",
+        "optimizer_steps": "8971",
+        "policy_epochs": "2024",
+        "wall_seconds": "4434.8029996000005",
+        "live_transitions_per_second": "189.5978243173009",
+        "training_return_last100": "-0.49272753905875005",
+        "native_return_last100": "-49.272753905875",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.010796420084807324",
+        "value_loss": "0.0103151825373061",
+        "approx_kl": "0.01383669301867485",
+        "clip_fraction": "0.15262949718162416"
+      }
+    },
+    {
+      "algorithm": "mappo",
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "session": 33044,
+      "latest_learning_row": {
+        "rollout": "158",
+        "live_transitions": "614423",
+        "padded_transitions": "194537",
+        "counted_transitions": "808960",
+        "worlds_completed": "345",
+        "aircraft_completed": "3450",
+        "optimizer_steps": "6709",
+        "policy_epochs": "1557",
+        "wall_seconds": "3801.7920152999995",
+        "live_transitions_per_second": "161.61404872420826",
+        "training_return_last100": "-1.026253351820195",
+        "native_return_last100": "-102.62533518201954",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.014842587341263425",
+        "value_loss": "0.02101056647952646",
+        "approx_kl": "0.01294854935258627",
+        "clip_fraction": "0.1377270843833685"
+      }
+    }
+  ],
+  "sac_reference_completed": "runs/sac-reference-dev20-v1/comparison-classical-dev20.json",
+  "sac_reference_session": 5393,
+  "sac_session_status": "exited_successfully",
+  "sac_evaluation_csv_sha256": "419a2c9343b4f9ebc284a9a77ffcda80932d3a5ff1487e703efb50af180e8dc9",
+  "sac_result": "95.5% clean completion versus classical 94.5%; paired difference interval [-2,5] percentage points. No clear learning advantage established.",
+  "diagnostics": {
+    "module": "atc_rl/rollout_diagnostics.py",
+    "full_rl_tests_passed": 119,
+    "bundle": "runs/onpolicy-diagnostics-source-v1.zip",
+    "bundle_sha256": "877612208c27e39cdc2af01aed410e7b257a86e4797a1592b1326c1f146262ef",
+    "real_rollout_parity": "runs/live-diagnostics-smoke-v1/numerical-parity.json",
+    "frozen_active_training_source_unchanged": true,
+    "limitation": "Existing SB3 critic explained variance includes padding; new live-only fields are for future runs."
+  },
+  "free_simulator_slots": 1,
+  "next_actions": [
+    "Keep existing learners running to one million live transitions; do not restart on observation timeouts.",
+    "When each finishes, run its completed-training audit and evaluate its final model on twenty seed-20260 worlds using onpolicy-goal-offset-source-v1-verify.",
+    "Then finish the registered 0/100k/300k/1M curves and paired comparison before choosing the next training change."
+  ],
+  "completed_handles": [
+    5393,
+    91553,
+    50829,
+    77918
+  ],
+  "remaining_scope": "Strong learned performance, three training seeds, guidance/filter ablations, unseen scenarios and authenticated cluster execution are still incomplete.",
+  "cluster": "Bootstrap result pending. Local SSH agent is stopped; no authenticated session or Slurm job is available.",
+  "completion": false
+}

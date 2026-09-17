@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-exploration-static-pilot-v1\\seed-51200\\std005\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 101257,
+  "padded_transitions": 49783,
+  "optimizer_steps": 1999,
+  "verified_checkpoints": 4,
+  "verified_source_files": 94,
+  "learning_curve_rows": 59,
+  "aircraft_completed": 481,
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 109825,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "e2736c6f8d482e3d0dfca676bef28063b969d1c4b6a5bebfeae1fe09a1355ac2",
+  "policy_quality_assessed": false
+}

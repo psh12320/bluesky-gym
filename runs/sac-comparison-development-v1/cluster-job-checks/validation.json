@@ -1,0 +1,16 @@
+{
+  "shell_syntax_valid": true,
+  "inline_python_blocks_compiled": 2,
+  "duplicate_submission_refused": true,
+  "fake_sbatch_calls_on_duplicate_test": 1,
+  "failed_submission_lock_preserved": true,
+  "all_145_base_files_byte_identical": true,
+  "bundle_files_verified": 148,
+  "real_jobs_submitted": 0,
+  "cuda_execution_verified": false,
+  "outputs": {
+    "first": "stage\tjob_id\ncheck\t999991\n",
+    "duplicate": "mkdir: cannot create directory \u00e2\u20ac\u02dcruns/cluster-sac-check-v1/submission-lock\u00e2\u20ac\u2122: File exists\n",
+    "failure": ""
+  }
+}

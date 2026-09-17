@@ -1,0 +1,21 @@
+{
+  "source_run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo\\train",
+  "prefix_sha256": "37c63b5ff8c7c00e5b299610a52093a69b577d387c10f9bb7c2743b5c018e383",
+  "rollouts_observed": 7,
+  "optimizer_steps_per_rollout": 1,
+  "configured_epochs": 10,
+  "target_kl": 0.03,
+  "kl_stop_threshold": 0.045,
+  "recorded_approximate_kl": [
+    0.33742401003837585,
+    0.11824097484350204,
+    0.05802144855260849,
+    0.07660219073295593,
+    0.1319579780101776,
+    0.170695498585701,
+    0.20176385343074799
+  ],
+  "hypothesis": "Reducing constant learning rate from 3e-4 to 3e-5 may avoid large first-minibatch policy shifts and permit stable PPO optimization.",
+  "selection_basis": "Partial training diagnostics only; no policy-performance evaluation selected the alternative.",
+  "limitations": "Different KL stopping means equal simulator budgets need not produce equal optimizer updates. This remains an exploratory one-seed comparison."
+}

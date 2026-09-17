@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-16T00:08:55.323403+00:00",
+  "first_collection_before_learning_identical": true,
+  "live_transitions": 4343,
+  "padded_transitions": 777,
+  "completed_aircraft": 20,
+  "all_nine_aircraft_metrics_identical": true,
+  "native_and_learning_returns_identical": true,
+  "interpretation": "Matched actors and reconstructed learner RNG produce identical initial training trajectories. Later trajectories may diverge because the critics produce different advantages."
+}

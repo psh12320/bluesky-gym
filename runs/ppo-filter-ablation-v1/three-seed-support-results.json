@@ -1,0 +1,1012 @@
+{
+  "training_seeds": [
+    49900,
+    49920,
+    49940
+  ],
+  "evaluation_worlds": 20,
+  "all_registered_rows_included": true,
+  "rows": [
+    {
+      "group": "g0-f1",
+      "seed": 49900,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49900\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 102477,
+        "padded_transitions": 86963,
+        "optimizer_steps": 1220,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 37,
+        "aircraft_completed": 403,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "a8d41bb333b83e086b26e0932f594e170107eb65cfaa6a91fb45f067e09b24fc",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.8800000000000001,
+        "flight_time": 1376.345,
+        "intrusion_events": 0.05,
+        "intrusion_time": 2.29,
+        "restricted_area_events": 0.049999999999999996,
+        "time_in_restricted_area": 1.395,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 29.88065825405357,
+        "clean_completion": 0.8300000000000001,
+        "all_aircraft_clean_completion": 0.35
+      },
+      "final": {
+        "waypoint_reached": 0.865,
+        "flight_time": 1408.72,
+        "intrusion_events": 0.030000000000000006,
+        "intrusion_time": 1.11,
+        "restricted_area_events": 0.065,
+        "time_in_restricted_area": 1.8849999999999998,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 30.18017638162821,
+        "clean_completion": 0.8299999999999998,
+        "all_aircraft_clean_completion": 0.4
+      },
+      "initial_csv_sha256": "17f20bcb6b53c556aebfc8d0d24578885fa7e121cff071890569d07085b4a768",
+      "final_csv_sha256": "8c227df50d0ada11f592c0f4591c83f1236e9e6f33f1b14d485f47b339002a02"
+    },
+    {
+      "group": "g0-f1",
+      "seed": 49920,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49920\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 102007,
+        "padded_transitions": 82313,
+        "optimizer_steps": 1190,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 36,
+        "aircraft_completed": 358,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "e1c419363a540b5518878eb228de4d23c9e4d37a1e79a9e7c2491cbe081c5530",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.8800000000000001,
+        "flight_time": 1376.345,
+        "intrusion_events": 0.05,
+        "intrusion_time": 2.29,
+        "restricted_area_events": 0.049999999999999996,
+        "time_in_restricted_area": 1.395,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 29.88065825405357,
+        "clean_completion": 0.8300000000000001,
+        "all_aircraft_clean_completion": 0.35
+      },
+      "final": {
+        "waypoint_reached": 0.9099999999999999,
+        "flight_time": 1266.8650000000002,
+        "intrusion_events": 0.08,
+        "intrusion_time": 4.290000000000001,
+        "restricted_area_events": 0.09000000000000001,
+        "time_in_restricted_area": 2.395,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 28.63569916041117,
+        "clean_completion": 0.835,
+        "all_aircraft_clean_completion": 0.4
+      },
+      "initial_csv_sha256": "17f20bcb6b53c556aebfc8d0d24578885fa7e121cff071890569d07085b4a768",
+      "final_csv_sha256": "a570dc0f6378a39679c8bc9ecfca930b98d45dba6a82f136e6cd869be0675a53"
+    },
+    {
+      "group": "g0-f1",
+      "seed": 49940,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49940\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 102374,
+        "padded_transitions": 87066,
+        "optimizer_steps": 1210,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 37,
+        "aircraft_completed": 395,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "f2a8d568f35c7a33db4be3b2fd9b9906b90fa1344e77a14c28f3f6c777d6fd03",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.8800000000000001,
+        "flight_time": 1376.345,
+        "intrusion_events": 0.05,
+        "intrusion_time": 2.29,
+        "restricted_area_events": 0.049999999999999996,
+        "time_in_restricted_area": 1.395,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 29.88065825405357,
+        "clean_completion": 0.8300000000000001,
+        "all_aircraft_clean_completion": 0.35
+      },
+      "final": {
+        "waypoint_reached": 0.93,
+        "flight_time": 1294.18,
+        "intrusion_events": 0.04,
+        "intrusion_time": 1.58,
+        "restricted_area_events": 0.07,
+        "time_in_restricted_area": 1.955,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 32.1654623192639,
+        "clean_completion": 0.86,
+        "all_aircraft_clean_completion": 0.35
+      },
+      "initial_csv_sha256": "17f20bcb6b53c556aebfc8d0d24578885fa7e121cff071890569d07085b4a768",
+      "final_csv_sha256": "e3f6dbc0d7f4b19d9781e0296c986327219c90ee7a89e99bd780eb763cf268de"
+    },
+    {
+      "group": "g1-f1",
+      "seed": 49900,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49900\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 102580,
+        "padded_transitions": 56140,
+        "optimizer_steps": 1140,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 31,
+        "aircraft_completed": 454,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "073701436ffee186e68a9ccdcb79d48c265b7f345f0945bc9a3185c7e5724d66",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.99,
+        "flight_time": 1155.56,
+        "intrusion_events": 0.02,
+        "intrusion_time": 0.77,
+        "restricted_area_events": 0.005,
+        "time_in_restricted_area": 0.04,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 36.17764495752881,
+        "clean_completion": 0.97,
+        "all_aircraft_clean_completion": 0.8
+      },
+      "final": {
+        "waypoint_reached": 0.9799999999999999,
+        "flight_time": 1133.98,
+        "intrusion_events": 0.030000000000000006,
+        "intrusion_time": 0.8299999999999998,
+        "restricted_area_events": 0.01,
+        "time_in_restricted_area": 0.27999999999999997,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 35.62106888652208,
+        "clean_completion": 0.945,
+        "all_aircraft_clean_completion": 0.65
+      },
+      "initial_csv_sha256": "9c333730b1f911f6dff16836166704ce7edc0b733a28470ab5419e17e90c1462",
+      "final_csv_sha256": "bf6c7af08dc0ff54d2ac7c169e05ea477ac81ca8d7859dbfd9b0612fdc41e049"
+    },
+    {
+      "group": "g1-f1",
+      "seed": 49920,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49920\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 100462,
+        "padded_transitions": 63378,
+        "optimizer_steps": 1140,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 32,
+        "aircraft_completed": 398,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "c17a8942f10d79669a5ce5d9f4c0c29f53b35bafa4b0c069d79f6f863a962a92",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.99,
+        "flight_time": 1155.56,
+        "intrusion_events": 0.02,
+        "intrusion_time": 0.77,
+        "restricted_area_events": 0.005,
+        "time_in_restricted_area": 0.04,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 36.17764495752881,
+        "clean_completion": 0.97,
+        "all_aircraft_clean_completion": 0.8
+      },
+      "final": {
+        "waypoint_reached": 0.97,
+        "flight_time": 1145.9150000000002,
+        "intrusion_events": 0.05,
+        "intrusion_time": 2.7,
+        "restricted_area_events": 0.01,
+        "time_in_restricted_area": 0.22000000000000003,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 33.513464342439576,
+        "clean_completion": 0.925,
+        "all_aircraft_clean_completion": 0.65
+      },
+      "initial_csv_sha256": "9c333730b1f911f6dff16836166704ce7edc0b733a28470ab5419e17e90c1462",
+      "final_csv_sha256": "9e11ff13b5174e2aacc702fa4c3081f5bb2555eb83ee1c0a096d6d4f1cc86213"
+    },
+    {
+      "group": "g1-f1",
+      "seed": 49940,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49940\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 103665,
+        "padded_transitions": 60175,
+        "optimizer_steps": 1141,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 32,
+        "aircraft_completed": 477,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "7b2c28d3205fc71789c4e5a4bb898bd9828547a8b1088d534da575b80b76d010",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.99,
+        "flight_time": 1155.56,
+        "intrusion_events": 0.02,
+        "intrusion_time": 0.77,
+        "restricted_area_events": 0.005,
+        "time_in_restricted_area": 0.04,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 36.17764495752881,
+        "clean_completion": 0.97,
+        "all_aircraft_clean_completion": 0.8
+      },
+      "final": {
+        "waypoint_reached": 0.99,
+        "flight_time": 1142.46,
+        "intrusion_events": 0.04,
+        "intrusion_time": 2.3400000000000003,
+        "restricted_area_events": 0.005,
+        "time_in_restricted_area": 0.04,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 34.686180125386265,
+        "clean_completion": 0.95,
+        "all_aircraft_clean_completion": 0.75
+      },
+      "initial_csv_sha256": "9c333730b1f911f6dff16836166704ce7edc0b733a28470ab5419e17e90c1462",
+      "final_csv_sha256": "f56c06883104fd81d4bf2bee3bdd8c9156668ae3654c6dc30b2552ba3ef1254d"
+    },
+    {
+      "group": "g1-f0",
+      "seed": 49900,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 101144,
+        "padded_transitions": 47336,
+        "optimizer_steps": 1091,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 29,
+        "aircraft_completed": 487,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "ffa8a1ceee4fae55e8fc4e42f0953aecc4277799428c12b86b3441f4ef8da3d9",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.9949999999999999,
+        "flight_time": 1087.5500000000002,
+        "intrusion_events": 1.53,
+        "intrusion_time": 114.07000000000001,
+        "restricted_area_events": 0.015000000000000003,
+        "time_in_restricted_area": 0.705,
+        "sector_exit_events": 0.005,
+        "time_outside_sector": 0.034999999999999996,
+        "total_reward": -71.09742242524528,
+        "clean_completion": 0.25999999999999995,
+        "all_aircraft_clean_completion": 0.0
+      },
+      "final": {
+        "waypoint_reached": 1.0,
+        "flight_time": 1055.17,
+        "intrusion_events": 1.4600000000000002,
+        "intrusion_time": 99.24,
+        "restricted_area_events": 0.075,
+        "time_in_restricted_area": 11.09,
+        "sector_exit_events": 0.005,
+        "time_outside_sector": 0.10500000000000001,
+        "total_reward": -62.08716639448098,
+        "clean_completion": 0.23500000000000004,
+        "all_aircraft_clean_completion": 0.0
+      },
+      "initial_csv_sha256": "935bee120e9bc8c279389e78297227422defd1751e66d744047fb4be9154c18b",
+      "final_csv_sha256": "195bfdd260e3a89c429c13c0e9d5fe18f835ca1322334cacde2bf1f0326c4731"
+    },
+    {
+      "group": "g1-f0",
+      "seed": 49920,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 101336,
+        "padded_transitions": 52264,
+        "optimizer_steps": 1140,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 30,
+        "aircraft_completed": 440,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "e651505027477200aa6d4289246a47114282b2341351d46f11b8577258f31d12",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.9949999999999999,
+        "flight_time": 1087.5500000000002,
+        "intrusion_events": 1.53,
+        "intrusion_time": 114.07000000000001,
+        "restricted_area_events": 0.015000000000000003,
+        "time_in_restricted_area": 0.705,
+        "sector_exit_events": 0.005,
+        "time_outside_sector": 0.034999999999999996,
+        "total_reward": -71.09742242524528,
+        "clean_completion": 0.25999999999999995,
+        "all_aircraft_clean_completion": 0.0
+      },
+      "final": {
+        "waypoint_reached": 0.9650000000000001,
+        "flight_time": 1119.2,
+        "intrusion_events": 1.59,
+        "intrusion_time": 138.56,
+        "restricted_area_events": 0.015000000000000003,
+        "time_in_restricted_area": 0.07999999999999999,
+        "sector_exit_events": 0.005,
+        "time_outside_sector": 0.35,
+        "total_reward": -95.11800347425347,
+        "clean_completion": 0.24500000000000002,
+        "all_aircraft_clean_completion": 0.0
+      },
+      "initial_csv_sha256": "935bee120e9bc8c279389e78297227422defd1751e66d744047fb4be9154c18b",
+      "final_csv_sha256": "a74bf25da165e03490779e792cdca92ef468fee4bc38e76bbbd29b4d5e0555d6"
+    },
+    {
+      "group": "g1-f0",
+      "seed": 49940,
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\train",
+        "algorithm": "ppo",
+        "status": "complete",
+        "live_transitions": 101894,
+        "padded_transitions": 51706,
+        "optimizer_steps": 1121,
+        "verified_checkpoints": 4,
+        "verified_source_files": 92,
+        "learning_curve_rows": 30,
+        "aircraft_completed": 490,
+        "actor_parameter_count": 32900,
+        "critic_parameter_count": 98305,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "cb683c1ccb8d6fe7b8d7db996a984729c642ba7894850d45edab1c13519f2927",
+        "policy_quality_assessed": false
+      },
+      "initial": {
+        "waypoint_reached": 0.9949999999999999,
+        "flight_time": 1087.5500000000002,
+        "intrusion_events": 1.53,
+        "intrusion_time": 114.07000000000001,
+        "restricted_area_events": 0.015000000000000003,
+        "time_in_restricted_area": 0.705,
+        "sector_exit_events": 0.005,
+        "time_outside_sector": 0.034999999999999996,
+        "total_reward": -71.09742242524528,
+        "clean_completion": 0.25999999999999995,
+        "all_aircraft_clean_completion": 0.0
+      },
+      "final": {
+        "waypoint_reached": 0.97,
+        "flight_time": 1082.615,
+        "intrusion_events": 1.56,
+        "intrusion_time": 133.89,
+        "restricted_area_events": 0.04,
+        "time_in_restricted_area": 2.43,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": -91.63956339750106,
+        "clean_completion": 0.25,
+        "all_aircraft_clean_completion": 0.0
+      },
+      "initial_csv_sha256": "935bee120e9bc8c279389e78297227422defd1751e66d744047fb4be9154c18b",
+      "final_csv_sha256": "6d771b36d414714885efc1de8fb97dd7e58d9d478e8eea9b7198d00af5fd44e8"
+    }
+  ],
+  "learning_changes": {
+    "g1-f0": {
+      "waypoint_reached": {
+        "mean": -0.016666666666666535,
+        "sample_standard_deviation": 0.01892969448600089,
+        "per_seed": {
+          "49900": 0.0050000000000001155,
+          "49920": -0.029999999999999805,
+          "49940": -0.02499999999999991
+        }
+      },
+      "flight_time": {
+        "mean": -1.8883333333334729,
+        "sample_standard_deviation": 32.123540563476695,
+        "per_seed": {
+          "49900": -32.38000000000011,
+          "49920": 31.649999999999864,
+          "49940": -4.935000000000173
+        }
+      },
+      "intrusion_events": {
+        "mean": 0.006666666666666747,
+        "sample_standard_deviation": 0.06806859285554039,
+        "per_seed": {
+          "49900": -0.06999999999999984,
+          "49920": 0.06000000000000005,
+          "49940": 0.030000000000000027
+        }
+      },
+      "intrusion_time": {
+        "mean": 9.826666666666654,
+        "sample_standard_deviation": 21.480587360063815,
+        "per_seed": {
+          "49900": -14.830000000000013,
+          "49920": 24.489999999999995,
+          "49940": 19.81999999999998
+        }
+      },
+      "restricted_area_events": {
+        "mean": 0.028333333333333332,
+        "sample_standard_deviation": 0.03013856886670854,
+        "per_seed": {
+          "49900": 0.06,
+          "49920": 0.0,
+          "49940": 0.024999999999999998
+        }
+      },
+      "time_in_restricted_area": {
+        "mean": 3.828333333333333,
+        "sample_standard_deviation": 5.798537171850615,
+        "per_seed": {
+          "49900": 10.385,
+          "49920": -0.625,
+          "49940": 1.725
+        }
+      },
+      "sector_exit_events": {
+        "mean": -0.0016666666666666668,
+        "sample_standard_deviation": 0.002886751345948129,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": -0.005
+        }
+      },
+      "time_outside_sector": {
+        "mean": 0.11666666666666668,
+        "sample_standard_deviation": 0.17960605038064092,
+        "per_seed": {
+          "49900": 0.07,
+          "49920": 0.315,
+          "49940": -0.034999999999999996
+        }
+      },
+      "total_reward": {
+        "mean": -11.85082199683322,
+        "sample_standard_deviation": 18.149747069780982,
+        "per_seed": {
+          "49900": 9.010256030764303,
+          "49920": -24.020581049008186,
+          "49940": -20.54214097225578
+        }
+      },
+      "clean_completion": {
+        "mean": -0.016666666666666597,
+        "sample_standard_deviation": 0.007637626158259712,
+        "per_seed": {
+          "49900": -0.02499999999999991,
+          "49920": -0.01499999999999993,
+          "49940": -0.009999999999999953
+        }
+      },
+      "all_aircraft_clean_completion": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      }
+    },
+    "g0-f1": {
+      "waypoint_reached": {
+        "mean": 0.02166666666666654,
+        "sample_standard_deviation": 0.03329164059239698,
+        "per_seed": {
+          "49900": -0.015000000000000124,
+          "49920": 0.029999999999999805,
+          "49940": 0.04999999999999993
+        }
+      },
+      "flight_time": {
+        "mean": -53.08999999999992,
+        "sample_standard_deviation": 75.2643805196056,
+        "per_seed": {
+          "49900": 32.375,
+          "49920": -109.47999999999979,
+          "49940": -82.16499999999996
+        }
+      },
+      "intrusion_events": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.026457513110645904,
+        "per_seed": {
+          "49900": -0.019999999999999997,
+          "49920": 0.03,
+          "49940": -0.010000000000000002
+        }
+      },
+      "intrusion_time": {
+        "mean": 0.03666666666666699,
+        "sample_standard_deviation": 1.7164595344293248,
+        "per_seed": {
+          "49900": -1.18,
+          "49920": 2.000000000000001,
+          "49940": -0.71
+        }
+      },
+      "restricted_area_events": {
+        "mean": 0.025000000000000012,
+        "sample_standard_deviation": 0.013228756555322957,
+        "per_seed": {
+          "49900": 0.015000000000000006,
+          "49920": 0.040000000000000015,
+          "49940": 0.02000000000000001
+        }
+      },
+      "time_in_restricted_area": {
+        "mean": 0.6833333333333332,
+        "sample_standard_deviation": 0.2764657905299196,
+        "per_seed": {
+          "49900": 0.48999999999999977,
+          "49920": 1.0,
+          "49940": 0.56
+        }
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "total_reward": {
+        "mean": 0.4464543663808567,
+        "sample_standard_deviation": 1.7694631058895776,
+        "per_seed": {
+          "49900": 0.2995181275746397,
+          "49920": -1.2449590936424002,
+          "49940": 2.2848040652103307
+        }
+      },
+      "clean_completion": {
+        "mean": 0.011666666666666528,
+        "sample_standard_deviation": 0.016072751268321646,
+        "per_seed": {
+          "49900": -2.220446049250313e-16,
+          "49920": 0.004999999999999893,
+          "49940": 0.029999999999999916
+        }
+      },
+      "all_aircraft_clean_completion": {
+        "mean": 0.03333333333333336,
+        "sample_standard_deviation": 0.028867513459481315,
+        "per_seed": {
+          "49900": 0.050000000000000044,
+          "49920": 0.050000000000000044,
+          "49940": 0.0
+        }
+      }
+    },
+    "g1-f1": {
+      "waypoint_reached": {
+        "mean": -0.010000000000000045,
+        "sample_standard_deviation": 0.010000000000000009,
+        "per_seed": {
+          "49900": -0.01000000000000012,
+          "49920": -0.020000000000000018,
+          "49940": 0.0
+        }
+      },
+      "flight_time": {
+        "mean": -14.774999999999864,
+        "sample_standard_deviation": 6.141276333141256,
+        "per_seed": {
+          "49900": -21.579999999999927,
+          "49920": -9.644999999999754,
+          "49940": -13.099999999999909
+        }
+      },
+      "intrusion_events": {
+        "mean": 0.020000000000000004,
+        "sample_standard_deviation": 0.009999999999999998,
+        "per_seed": {
+          "49900": 0.010000000000000005,
+          "49920": 0.030000000000000002,
+          "49940": 0.02
+        }
+      },
+      "intrusion_time": {
+        "mean": 1.1866666666666668,
+        "sample_standard_deviation": 0.9921861384505095,
+        "per_seed": {
+          "49900": 0.05999999999999983,
+          "49920": 1.9300000000000002,
+          "49940": 1.5700000000000003
+        }
+      },
+      "restricted_area_events": {
+        "mean": 0.0033333333333333335,
+        "sample_standard_deviation": 0.002886751345948129,
+        "per_seed": {
+          "49900": 0.005,
+          "49920": 0.005,
+          "49940": 0.0
+        }
+      },
+      "time_in_restricted_area": {
+        "mean": 0.13999999999999999,
+        "sample_standard_deviation": 0.12489995996796795,
+        "per_seed": {
+          "49900": 0.23999999999999996,
+          "49920": 0.18000000000000002,
+          "49940": 0.0
+        }
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "total_reward": {
+        "mean": -1.570740506079505,
+        "sample_standard_deviation": 1.05603631704498,
+        "per_seed": {
+          "49900": -0.5565760710067309,
+          "49920": -2.6641806150892364,
+          "49940": -1.4914648321425474
+        }
+      },
+      "clean_completion": {
+        "mean": -0.02999999999999999,
+        "sample_standard_deviation": 0.013228756555322902,
+        "per_seed": {
+          "49900": -0.025000000000000022,
+          "49920": -0.04499999999999993,
+          "49940": -0.020000000000000018
+        }
+      },
+      "all_aircraft_clean_completion": {
+        "mean": -0.1166666666666667,
+        "sample_standard_deviation": 0.05773502691896257,
+        "per_seed": {
+          "49900": -0.15000000000000002,
+          "49920": -0.15000000000000002,
+          "49940": -0.050000000000000044
+        }
+      }
+    }
+  },
+  "effects_on_learning_changes": {
+    "filter_effect_with_guidance": {
+      "waypoint_reached": {
+        "mean": 0.0066666666666664876,
+        "sample_standard_deviation": 0.02020725942163697,
+        "per_seed": {
+          "49900": -0.015000000000000235,
+          "49920": 0.009999999999999787,
+          "49940": 0.02499999999999991
+        }
+      },
+      "flight_time": {
+        "mean": -12.886666666666391,
+        "sample_standard_deviation": 26.366510165991404,
+        "per_seed": {
+          "49900": 10.800000000000182,
+          "49920": -41.29499999999962,
+          "49940": -8.164999999999736
+        }
+      },
+      "intrusion_events": {
+        "mean": 0.013333333333333258,
+        "sample_standard_deviation": 0.05859465277082309,
+        "per_seed": {
+          "49900": 0.07999999999999985,
+          "49920": -0.03000000000000005,
+          "49940": -0.010000000000000026
+        }
+      },
+      "intrusion_time": {
+        "mean": -8.639999999999986,
+        "sample_standard_deviation": 20.491210310764956,
+        "per_seed": {
+          "49900": 14.890000000000013,
+          "49920": -22.559999999999995,
+          "49940": -18.24999999999998
+        }
+      },
+      "restricted_area_events": {
+        "mean": -0.024999999999999998,
+        "sample_standard_deviation": 0.030000000000000002,
+        "per_seed": {
+          "49900": -0.055,
+          "49920": 0.005,
+          "49940": -0.024999999999999998
+        }
+      },
+      "time_in_restricted_area": {
+        "mean": -3.688333333333333,
+        "sample_standard_deviation": 5.732942816157626,
+        "per_seed": {
+          "49900": -10.145,
+          "49920": 0.805,
+          "49940": -1.725
+        }
+      },
+      "sector_exit_events": {
+        "mean": 0.0016666666666666668,
+        "sample_standard_deviation": 0.002886751345948129,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.005
+        }
+      },
+      "time_outside_sector": {
+        "mean": -0.11666666666666668,
+        "sample_standard_deviation": 0.17960605038064092,
+        "per_seed": {
+          "49900": -0.07,
+          "49920": -0.315,
+          "49940": 0.034999999999999996
+        }
+      },
+      "total_reward": {
+        "mean": 10.280081490753716,
+        "sample_standard_deviation": 17.22655146834732,
+        "per_seed": {
+          "49900": -9.566832101771034,
+          "49920": 21.35640043391895,
+          "49940": 19.050676140113232
+        }
+      },
+      "clean_completion": {
+        "mean": -0.013333333333333391,
+        "sample_standard_deviation": 0.015275252316519411,
+        "per_seed": {
+          "49900": -1.1102230246251565e-16,
+          "49920": -0.03,
+          "49940": -0.010000000000000064
+        }
+      },
+      "all_aircraft_clean_completion": {
+        "mean": -0.1166666666666667,
+        "sample_standard_deviation": 0.05773502691896257,
+        "per_seed": {
+          "49900": -0.15000000000000002,
+          "49920": -0.15000000000000002,
+          "49940": -0.050000000000000044
+        }
+      }
+    },
+    "guidance_effect_with_filter": {
+      "waypoint_reached": {
+        "mean": -0.031666666666666586,
+        "sample_standard_deviation": 0.031754264805429346,
+        "per_seed": {
+          "49900": 0.0050000000000000044,
+          "49920": -0.04999999999999982,
+          "49940": -0.04999999999999993
+        }
+      },
+      "flight_time": {
+        "mean": 38.315000000000055,
+        "sample_standard_deviation": 81.3757513022153,
+        "per_seed": {
+          "49900": -53.95499999999993,
+          "49920": 99.83500000000004,
+          "49940": 69.06500000000005
+        }
+      },
+      "intrusion_events": {
+        "mean": 0.020000000000000004,
+        "sample_standard_deviation": 0.017320508075688773,
+        "per_seed": {
+          "49900": 0.030000000000000002,
+          "49920": 3.469446951953614e-18,
+          "49940": 0.030000000000000002
+        }
+      },
+      "intrusion_time": {
+        "mean": 1.1499999999999997,
+        "sample_standard_deviation": 1.1775822688882511,
+        "per_seed": {
+          "49900": 1.2399999999999998,
+          "49920": -0.07000000000000073,
+          "49940": 2.2800000000000002
+        }
+      },
+      "restricted_area_events": {
+        "mean": -0.021666666666666678,
+        "sample_standard_deviation": 0.012583057392117921,
+        "per_seed": {
+          "49900": -0.010000000000000005,
+          "49920": -0.03500000000000002,
+          "49940": -0.02000000000000001
+        }
+      },
+      "time_in_restricted_area": {
+        "mean": -0.5433333333333333,
+        "sample_standard_deviation": 0.2853652630109933,
+        "per_seed": {
+          "49900": -0.2499999999999998,
+          "49920": -0.82,
+          "49940": -0.56
+        }
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "sample_standard_deviation": 0.0,
+        "per_seed": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "total_reward": {
+        "mean": -2.0171948724603617,
+        "sample_standard_deviation": 1.549204364900924,
+        "per_seed": {
+          "49900": -0.8560941985813706,
+          "49920": -1.4192215214468362,
+          "49940": -3.776268897352878
+        }
+      },
+      "clean_completion": {
+        "mean": -0.04166666666666652,
+        "sample_standard_deviation": 0.01443375672974069,
+        "per_seed": {
+          "49900": -0.0249999999999998,
+          "49920": -0.04999999999999982,
+          "49940": -0.04999999999999993
+        }
+      },
+      "all_aircraft_clean_completion": {
+        "mean": -0.15000000000000005,
+        "sample_standard_deviation": 0.08660254037844388,
+        "per_seed": {
+          "49900": -0.20000000000000007,
+          "49920": -0.20000000000000007,
+          "49940": -0.050000000000000044
+        }
+      }
+    }
+  },
+  "classical_means": {
+    "waypoint_reached": 0.9949999999999999,
+    "flight_time": 1082.1299999999999,
+    "intrusion_events": 0.06000000000000001,
+    "intrusion_time": 2.51,
+    "restricted_area_events": 0.01,
+    "time_in_restricted_area": 0.26999999999999996,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 34.60570799520568,
+    "clean_completion": 0.945,
+    "all_aircraft_clean_completion": 0.8
+  },
+  "protocol_sha256": "fe9f40c1a7d9fba3036b3a43d9b25d47e9ade0d885be34c35a0e341925e7bd16",
+  "limitations": [
+    "100k feasibility pilots, not the canonical eight-world million-transition matrix.",
+    "Goal-offset actions supply a navigation prior even with guidance disabled.",
+    "These six runs and the existing three guidance-only runs do not constitute a complete four-cell, three-seed training matrix.",
+    "Previously used development worlds; unseen streams 20301/20302 remain reserved.",
+    "The historical +5-point clean-completion gate is not used to rank a control already at 97%; no previous screen outcome is changed.",
+    "Three support cells only; the four-cell interaction is not estimated.",
+    "Differences in learning changes are not the same as differences in final system performance.",
+    "Three seeds provide a limited estimate of training variability; no unseen or official-score claim."
+  ]
+}

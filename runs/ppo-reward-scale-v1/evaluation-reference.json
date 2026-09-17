@@ -1,0 +1,8 @@
+{
+  "initial_evaluation": "runs/ppo-direct-pilot-v1/eval-initial-dev20",
+  "evaluation_source": "runs/onpolicy-cluster-v1-verify",
+  "initial_policy_tensors_exactly_match": true,
+  "reason": "Learning reward scaling is absent during evaluation. The frozen version-1 evaluator uses the same policy implementation and native simulator scoring; it can evaluate the saved scaled-training actor.",
+  "data_reuse": "Reuse the already completed initial evaluation; it is not counted as an independent measurement.",
+  "training_recipe": "Read scale 0.01 from the saved training config; the version-1 evaluator predates explicit training-scale metadata."
+}

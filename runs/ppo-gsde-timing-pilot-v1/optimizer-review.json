@@ -1,0 +1,1036 @@
+{
+  "recorded_at_utc": "2026-09-16T07:50:50.189502+00:00",
+  "arms": {
+    "every1": {
+      "live_transitions": 100094,
+      "applied_optimizer_steps": 2168,
+      "planned_steps_without_early_stop": 2280,
+      "applied_fraction": 0.9508771929824561,
+      "rollouts_below_full_budget": 6,
+      "rollouts": 63,
+      "target_kl": 0.03,
+      "epochs": 10,
+      "learning_csv_sha256": "199c40215768ba7b857b5d1fee791df8236a07a61e32837c67469ea13f036426",
+      "rollout_details": [
+        {
+          "rollout": 1,
+          "live_samples": 1890,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.020314887166023254
+        },
+        {
+          "rollout": 2,
+          "live_samples": 610,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.014379650354385376
+        },
+        {
+          "rollout": 3,
+          "live_samples": 1703,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.019288623705506325
+        },
+        {
+          "rollout": 4,
+          "live_samples": 2068,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.010985312983393669
+        },
+        {
+          "rollout": 5,
+          "live_samples": 1648,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.014827314764261246
+        },
+        {
+          "rollout": 6,
+          "live_samples": 1005,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01354646123945713
+        },
+        {
+          "rollout": 7,
+          "live_samples": 436,
+          "planned_steps_without_early_stop": 10,
+          "applied_steps": 10,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.010735100135207176
+        },
+        {
+          "rollout": 8,
+          "live_samples": 2052,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 36,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.05791677534580231
+        },
+        {
+          "rollout": 9,
+          "live_samples": 2114,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.015947824344038963
+        },
+        {
+          "rollout": 10,
+          "live_samples": 595,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.0253654383122921
+        },
+        {
+          "rollout": 11,
+          "live_samples": 2038,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.013118926435709
+        },
+        {
+          "rollout": 12,
+          "live_samples": 865,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.02357264794409275
+        },
+        {
+          "rollout": 13,
+          "live_samples": 2491,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01715821772813797
+        },
+        {
+          "rollout": 14,
+          "live_samples": 1641,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.013426980003714561
+        },
+        {
+          "rollout": 15,
+          "live_samples": 900,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.019188139587640762
+        },
+        {
+          "rollout": 16,
+          "live_samples": 2118,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01056020986288786
+        },
+        {
+          "rollout": 17,
+          "live_samples": 1003,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.015221530571579933
+        },
+        {
+          "rollout": 18,
+          "live_samples": 2185,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01909380406141281
+        },
+        {
+          "rollout": 19,
+          "live_samples": 1041,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.013691455125808716
+        },
+        {
+          "rollout": 20,
+          "live_samples": 2059,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 19,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03493529558181763
+        },
+        {
+          "rollout": 21,
+          "live_samples": 1386,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.012587730772793293
+        },
+        {
+          "rollout": 22,
+          "live_samples": 1781,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.0164977815002203
+        },
+        {
+          "rollout": 23,
+          "live_samples": 2098,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.010344804264605045
+        },
+        {
+          "rollout": 24,
+          "live_samples": 1573,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01586472988128662
+        },
+        {
+          "rollout": 25,
+          "live_samples": 1507,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01874154806137085
+        },
+        {
+          "rollout": 26,
+          "live_samples": 1497,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.014039582572877407
+        },
+        {
+          "rollout": 27,
+          "live_samples": 1902,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.012331197038292885
+        },
+        {
+          "rollout": 28,
+          "live_samples": 672,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.010833905078470707
+        },
+        {
+          "rollout": 29,
+          "live_samples": 2183,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.024290895089507103
+        },
+        {
+          "rollout": 30,
+          "live_samples": 1424,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.018365265801548958
+        },
+        {
+          "rollout": 31,
+          "live_samples": 2381,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.0188307948410511
+        },
+        {
+          "rollout": 32,
+          "live_samples": 2176,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.022562693804502487
+        },
+        {
+          "rollout": 33,
+          "live_samples": 1906,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.015558081679046154
+        },
+        {
+          "rollout": 34,
+          "live_samples": 1945,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.015261508524417877
+        },
+        {
+          "rollout": 35,
+          "live_samples": 730,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.015849478542804718
+        },
+        {
+          "rollout": 36,
+          "live_samples": 2048,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01573859341442585
+        },
+        {
+          "rollout": 37,
+          "live_samples": 1628,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.016868798062205315
+        },
+        {
+          "rollout": 38,
+          "live_samples": 1561,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.019557109102606773
+        },
+        {
+          "rollout": 39,
+          "live_samples": 2064,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.027737755328416824
+        },
+        {
+          "rollout": 40,
+          "live_samples": 1039,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 4,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04615559056401253
+        },
+        {
+          "rollout": 41,
+          "live_samples": 1515,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01753794588148594
+        },
+        {
+          "rollout": 42,
+          "live_samples": 2144,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.02130996808409691
+        },
+        {
+          "rollout": 43,
+          "live_samples": 1007,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.017967205494642258
+        },
+        {
+          "rollout": 44,
+          "live_samples": 1972,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.016913115978240967
+        },
+        {
+          "rollout": 45,
+          "live_samples": 315,
+          "planned_steps_without_early_stop": 10,
+          "applied_steps": 10,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.018705882132053375
+        },
+        {
+          "rollout": 46,
+          "live_samples": 2056,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 31,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.049754947423934937
+        },
+        {
+          "rollout": 47,
+          "live_samples": 2126,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 47,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03888074681162834
+        },
+        {
+          "rollout": 48,
+          "live_samples": 1398,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.016833676025271416
+        },
+        {
+          "rollout": 49,
+          "live_samples": 1895,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01575091853737831
+        },
+        {
+          "rollout": 50,
+          "live_samples": 1185,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.015462412498891354
+        },
+        {
+          "rollout": 51,
+          "live_samples": 2040,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.020631197839975357
+        },
+        {
+          "rollout": 52,
+          "live_samples": 1138,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.018716024234890938
+        },
+        {
+          "rollout": 53,
+          "live_samples": 1480,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.013479865156114101
+        },
+        {
+          "rollout": 54,
+          "live_samples": 1031,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 11,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.026176000013947487
+        },
+        {
+          "rollout": 55,
+          "live_samples": 2013,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.021003449335694313
+        },
+        {
+          "rollout": 56,
+          "live_samples": 827,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.013147004880011082
+        },
+        {
+          "rollout": 57,
+          "live_samples": 1713,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01670500449836254
+        },
+        {
+          "rollout": 58,
+          "live_samples": 1710,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.024941336363554
+        },
+        {
+          "rollout": 59,
+          "live_samples": 1290,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 30,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.009899567812681198
+        },
+        {
+          "rollout": 60,
+          "live_samples": 2277,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.020470816642045975
+        },
+        {
+          "rollout": 61,
+          "live_samples": 2184,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 50,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.028246557340025902
+        },
+        {
+          "rollout": 62,
+          "live_samples": 864,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.023547029122710228
+        },
+        {
+          "rollout": 63,
+          "live_samples": 1951,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 40,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.01613577827811241
+        }
+      ]
+    },
+    "every12": {
+      "live_transitions": 100438,
+      "applied_optimizer_steps": 814,
+      "planned_steps_without_early_stop": 2250,
+      "applied_fraction": 0.36177777777777775,
+      "rollouts_below_full_budget": 61,
+      "rollouts": 62,
+      "target_kl": 0.03,
+      "epochs": 10,
+      "learning_csv_sha256": "b69c890dc0fe2ff0d41dd23f04d639e8c908a96394f8b067d92520f6b9506eca",
+      "rollout_details": [
+        {
+          "rollout": 1,
+          "live_samples": 1921,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 9,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.042742129415273666
+        },
+        {
+          "rollout": 2,
+          "live_samples": 657,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 20,
+          "below_full_budget": false,
+          "logged_mean_approximate_kl": 0.028915198519825935
+        },
+        {
+          "rollout": 3,
+          "live_samples": 1711,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 16,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04823944717645645
+        },
+        {
+          "rollout": 4,
+          "live_samples": 1972,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 17,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.040525250136852264
+        },
+        {
+          "rollout": 5,
+          "live_samples": 1822,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 22,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.041748929768800735
+        },
+        {
+          "rollout": 6,
+          "live_samples": 628,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 6,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.05218812823295593
+        },
+        {
+          "rollout": 7,
+          "live_samples": 742,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 8,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.056455355137586594
+        },
+        {
+          "rollout": 8,
+          "live_samples": 2005,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 21,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04228568822145462
+        },
+        {
+          "rollout": 9,
+          "live_samples": 1835,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 10,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03534475713968277
+        },
+        {
+          "rollout": 10,
+          "live_samples": 1640,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 14,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03477776423096657
+        },
+        {
+          "rollout": 11,
+          "live_samples": 1369,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 18,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04578368365764618
+        },
+        {
+          "rollout": 12,
+          "live_samples": 1792,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 36,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04538310319185257
+        },
+        {
+          "rollout": 13,
+          "live_samples": 1622,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 5,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.039192792028188705
+        },
+        {
+          "rollout": 14,
+          "live_samples": 1294,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 4,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.05318598449230194
+        },
+        {
+          "rollout": 15,
+          "live_samples": 1894,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 18,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.040006447583436966
+        },
+        {
+          "rollout": 16,
+          "live_samples": 2101,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 21,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04825817048549652
+        },
+        {
+          "rollout": 17,
+          "live_samples": 972,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 12,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.046483542770147324
+        },
+        {
+          "rollout": 18,
+          "live_samples": 1875,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 10,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.044186413288116455
+        },
+        {
+          "rollout": 19,
+          "live_samples": 2180,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 9,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.026884350925683975
+        },
+        {
+          "rollout": 20,
+          "live_samples": 1859,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 10,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.034555692225694656
+        },
+        {
+          "rollout": 21,
+          "live_samples": 1413,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 17,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.042419806122779846
+        },
+        {
+          "rollout": 22,
+          "live_samples": 1038,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 4,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.046706486493349075
+        },
+        {
+          "rollout": 23,
+          "live_samples": 1694,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 11,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04517204314470291
+        },
+        {
+          "rollout": 24,
+          "live_samples": 1844,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 8,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.050475090742111206
+        },
+        {
+          "rollout": 25,
+          "live_samples": 2128,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 10,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.0474935807287693
+        },
+        {
+          "rollout": 26,
+          "live_samples": 1834,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 17,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.049174875020980835
+        },
+        {
+          "rollout": 27,
+          "live_samples": 2162,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 12,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.037283577024936676
+        },
+        {
+          "rollout": 28,
+          "live_samples": 1006,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 3,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03627625107765198
+        },
+        {
+          "rollout": 29,
+          "live_samples": 1273,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 12,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04709561914205551
+        },
+        {
+          "rollout": 30,
+          "live_samples": 2055,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 15,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.057773932814598083
+        },
+        {
+          "rollout": 31,
+          "live_samples": 1805,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 11,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.039930954575538635
+        },
+        {
+          "rollout": 32,
+          "live_samples": 1779,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 16,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.047392815351486206
+        },
+        {
+          "rollout": 33,
+          "live_samples": 1865,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 20,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.053403813391923904
+        },
+        {
+          "rollout": 34,
+          "live_samples": 1987,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 21,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.043119389563798904
+        },
+        {
+          "rollout": 35,
+          "live_samples": 1551,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 15,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04191674292087555
+        },
+        {
+          "rollout": 36,
+          "live_samples": 1913,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 3,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.022916633635759354
+        },
+        {
+          "rollout": 37,
+          "live_samples": 1876,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 12,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.046964433044195175
+        },
+        {
+          "rollout": 38,
+          "live_samples": 1784,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 17,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04547186940908432
+        },
+        {
+          "rollout": 39,
+          "live_samples": 1912,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 3,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.018304582685232162
+        },
+        {
+          "rollout": 40,
+          "live_samples": 868,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 15,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04479970037937164
+        },
+        {
+          "rollout": 41,
+          "live_samples": 1567,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 3,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.027791552245616913
+        },
+        {
+          "rollout": 42,
+          "live_samples": 1711,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 14,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03651668503880501
+        },
+        {
+          "rollout": 43,
+          "live_samples": 977,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 6,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.054541707038879395
+        },
+        {
+          "rollout": 44,
+          "live_samples": 1386,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 8,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.042504701763391495
+        },
+        {
+          "rollout": 45,
+          "live_samples": 1707,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 20,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04587594419717789
+        },
+        {
+          "rollout": 46,
+          "live_samples": 641,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 8,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.047956619411706924
+        },
+        {
+          "rollout": 47,
+          "live_samples": 2320,
+          "planned_steps_without_early_stop": 50,
+          "applied_steps": 15,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04959692806005478
+        },
+        {
+          "rollout": 48,
+          "live_samples": 2004,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 27,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04102916270494461
+        },
+        {
+          "rollout": 49,
+          "live_samples": 1578,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 8,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04534413293004036
+        },
+        {
+          "rollout": 50,
+          "live_samples": 1972,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 16,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.050209369510412216
+        },
+        {
+          "rollout": 51,
+          "live_samples": 2031,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 21,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04473273083567619
+        },
+        {
+          "rollout": 52,
+          "live_samples": 1962,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 18,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03693171963095665
+        },
+        {
+          "rollout": 53,
+          "live_samples": 1186,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 23,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.0417332798242569
+        },
+        {
+          "rollout": 54,
+          "live_samples": 1397,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 11,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.038876697421073914
+        },
+        {
+          "rollout": 55,
+          "live_samples": 1989,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 3,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.02286934293806553
+        },
+        {
+          "rollout": 56,
+          "live_samples": 1579,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 12,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.05191892012953758
+        },
+        {
+          "rollout": 57,
+          "live_samples": 2014,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 22,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.03592158481478691
+        },
+        {
+          "rollout": 58,
+          "live_samples": 608,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 5,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.040744222700595856
+        },
+        {
+          "rollout": 59,
+          "live_samples": 1518,
+          "planned_steps_without_early_stop": 30,
+          "applied_steps": 12,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.05270988121628761
+        },
+        {
+          "rollout": 60,
+          "live_samples": 978,
+          "planned_steps_without_early_stop": 20,
+          "applied_steps": 10,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.052576303482055664
+        },
+        {
+          "rollout": 61,
+          "live_samples": 1886,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 13,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.04946674779057503
+        },
+        {
+          "rollout": 62,
+          "live_samples": 1749,
+          "planned_steps_without_early_stop": 40,
+          "applied_steps": 11,
+          "below_full_budget": true,
+          "logged_mean_approximate_kl": 0.037722617387771606
+        }
+      ]
+    }
+  },
+  "sb3_ppo_implementation_sha256": "724a5f6324bd3c6160e6e3125147df597c0ea9d3c6f5cc0dbc1bcb8731cdb12a",
+  "mechanism": "Frozen PPO stops an epoch before optimization when the current minibatch approximate KL exceeds 1.5 times target_kl. Logged KL is an average, so it is not used to identify the triggering minibatch.",
+  "interpretation": "The registered timing intervention also changes the amount of optimization through adaptive KL stopping. Report these counts with performance; the study does not isolate physical exploration persistence from this optimizer response.",
+  "changes_to_running_study": false,
+  "policy_quality_assessed": false
+}

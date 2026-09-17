@@ -1,0 +1,32 @@
+{
+  "started_at_utc": "2026-09-15T14:16:40.878497+00:00",
+  "status": "failed",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu",
+    "--exec",
+    "/usr/bin/env",
+    "TMPDIR=/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/tmp",
+    "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/.venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--disable-pip-version-check",
+    "--no-cache-dir",
+    "--only-binary=:all:",
+    "--report",
+    "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/installation-report.json",
+    "--constraint",
+    "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/constraints-linux.txt",
+    "--requirement",
+    "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/requirements-linux.txt"
+  ],
+  "source_packages_sha256": "661038473d7bbcd951ac484816cca2cbf346893f1d7a60df3cf376c501cd8725",
+  "source_constraints": "Frozen Windows package versions, excluding editable local project path",
+  "torch_cpu_wheel_sha256": "a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260",
+  "simulator_evaluation_started": false,
+  "pid": 33572,
+  "pip_exit_code": 1,
+  "error": "RuntimeError('pip exited with 1; preserve install.log')"
+}

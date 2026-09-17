@@ -1,0 +1,288 @@
+{
+  "algorithm": "ppo",
+  "workers": 1,
+  "live_steps": 4000,
+  "rollout_steps": 64,
+  "batch_size": 128,
+  "epochs": 2,
+  "learning_rate": 3e-05,
+  "gae_lambda": 0.95,
+  "seed": 62220,
+  "device": "cpu",
+  "initial_action_std": null,
+  "neutral_action_mean": false,
+  "exploration": "categorical",
+  "sde_weight_std": null,
+  "sde_sample_freq": null,
+  "action_reference": "direct",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "traffic_position_scale": 1.0,
+  "progress_scale": 0.0,
+  "reward_scale": 0.01,
+  "actor_reference": null,
+  "pretrained_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-development-v1\\bc\\model.zip",
+  "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-development-v1\\train",
+  "checkpoint_live_steps": 2000,
+  "max_wall_seconds": 0.0,
+  "world_seeds": [
+    62220
+  ],
+  "actor_information": "own aircraft observation with current-state closest-approach features plus remaining-time fraction",
+  "critic_information": "same local observation as actor",
+  "actor_widths": [
+    128,
+    128
+  ],
+  "critic_widths": [
+    256,
+    256
+  ],
+  "shared_actor": true,
+  "shared_critic": true,
+  "gamma": 0.996508469331006,
+  "clip_range": 0.2,
+  "entropy_coefficient": 0.01,
+  "value_coefficient": 0.5,
+  "max_grad_norm": 0.5,
+  "target_kl": 0.03,
+  "decision_interval_seconds": 5,
+  "reward_recipe": "public_weights",
+  "automatic_residual_controller": false,
+  "navigation_prior": "Initial category probabilities prefer observed route bearing and speed +1 with probability .9 each; all later logits are learned.",
+  "learning_reward_formula": "reward_scale * (native_reward + potential_shaping)",
+  "progress_shaping": {
+    "scale": 0.0,
+    "distance_norm_km": 150.0,
+    "distance_cap_km": 1500.0,
+    "potential": "-scale * clipped_distance_to_goal_region / 150 * remaining_time_fraction",
+    "formula": "gamma * next_potential - current_potential; terminal potential is zero",
+    "original_scoring_info_unchanged": true
+  },
+  "finite_horizon": "Do not bootstrap beyond goal completion or the actual 3000-second competition deadline; bootstrap at rollout cuts.",
+  "action_distribution": "Independent categorical heading and speed choices; no continuous action clipping",
+  "action_mapping": "Twenty headings: local observed bearing or a fixed five-degree turn grid; three speed increments.",
+  "active_mask": "Policy, value, entropy and advantage-normalization samples exclude inactive aircraft slots",
+  "critic_fit_diagnostic": "Live rollout samples only; collected value predictions versus GAE targets, before optimization",
+  "budget_unit": "Live aircraft transitions; finish the current rollout, recording exact overshoot and padded slot count",
+  "traffic_position_normalization_m": 1000000.0,
+  "maneuver_mapping": {
+    "version": 1,
+    "actor_dim": 170,
+    "cosine_index": 1,
+    "sine_index": 77,
+    "heading_choices": [
+      "observed_route_bearing",
+      -45.0,
+      -40.0,
+      -35.0,
+      -30.0,
+      -25.0,
+      -20.0,
+      -15.0,
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0
+    ],
+    "speed_choices": [
+      -1,
+      0,
+      1
+    ],
+    "default_deterministic_choice": [
+      0,
+      2
+    ],
+    "navigation_prior": "Category zero follows the bearing in the existing local observation; no planner or other-aircraft state is queried.",
+    "command_dtype": "float32",
+    "mapping_changes_rewards": false
+  },
+  "maneuver_observation_schema": [
+    {
+      "name": "airspeed",
+      "offset": 0,
+      "size": 1
+    },
+    {
+      "name": "cos_drift",
+      "offset": 1,
+      "size": 1
+    },
+    {
+      "name": "cos_track",
+      "offset": 2,
+      "size": 9
+    },
+    {
+      "name": "inside_sector",
+      "offset": 11,
+      "size": 1
+    },
+    {
+      "name": "intruder_distance",
+      "offset": 12,
+      "size": 9
+    },
+    {
+      "name": "obstacle_cos_bearing",
+      "offset": 21,
+      "size": 5
+    },
+    {
+      "name": "obstacle_distance",
+      "offset": 26,
+      "size": 5
+    },
+    {
+      "name": "obstacle_radius",
+      "offset": 31,
+      "size": 5
+    },
+    {
+      "name": "obstacle_sin_bearing",
+      "offset": 36,
+      "size": 5
+    },
+    {
+      "name": "sector_point_cos_bearing",
+      "offset": 41,
+      "size": 12
+    },
+    {
+      "name": "sector_point_distance",
+      "offset": 53,
+      "size": 12
+    },
+    {
+      "name": "sector_point_sin_bearing",
+      "offset": 65,
+      "size": 12
+    },
+    {
+      "name": "sin_drift",
+      "offset": 77,
+      "size": 1
+    },
+    {
+      "name": "sin_track",
+      "offset": 78,
+      "size": 9
+    },
+    {
+      "name": "traffic_dcpa",
+      "offset": 87,
+      "size": 9
+    },
+    {
+      "name": "traffic_entry_time",
+      "offset": 96,
+      "size": 9
+    },
+    {
+      "name": "traffic_predicted_conflict",
+      "offset": 105,
+      "size": 9
+    },
+    {
+      "name": "traffic_present",
+      "offset": 114,
+      "size": 9
+    },
+    {
+      "name": "traffic_tcpa",
+      "offset": 123,
+      "size": 9
+    },
+    {
+      "name": "vx_r",
+      "offset": 132,
+      "size": 9
+    },
+    {
+      "name": "vy_r",
+      "offset": 141,
+      "size": 9
+    },
+    {
+      "name": "waypoint_distance",
+      "offset": 150,
+      "size": 1
+    },
+    {
+      "name": "x_r",
+      "offset": 151,
+      "size": 9
+    },
+    {
+      "name": "y_r",
+      "offset": 160,
+      "size": 9
+    },
+    {
+      "name": "time_remaining_fraction",
+      "offset": 169,
+      "size": 1
+    }
+  ],
+  "route_choice_initial_probability": 0.9,
+  "pretraining": {
+    "method": "behavior_cloning",
+    "original_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-development-v1\\bc",
+    "archived_directory": "pretraining",
+    "archived_files": {
+      "model.zip": "f25dc8176d8fb9f2ef2c0c80e92c8b0defddb4cc3ab1909da93e01e65c3de937",
+      "config.json": "be43112d59122bcf56beca5114bd6dce7cc28d38f9567ef8e4606b9e809a18bc",
+      "training_summary.json": "8e59786dd6953a8cd61b3b7d044a1ddde7ca5bccb821298faa6fc5863ec920db",
+      "checkpoints.json": "b87070bed955c81ecfab18c5317744c6c86a06b07aaf01211afddecb3c028c9d",
+      "provenance.json": "5d980e512e1f80ac7f9629d151d9982d5659f3bc4035f21be88060ce76067332"
+    },
+    "parent_checkpoint": {
+      "file": "model.zip",
+      "sha256": "f25dc8176d8fb9f2ef2c0c80e92c8b0defddb4cc3ab1909da93e01e65c3de937",
+      "policy_fingerprint": "e4b4aa5a6a3d4c0bdebad167315d6263fbdc7832b66fa1edc3adea5830a704f1",
+      "live_transitions": 0,
+      "counted_transitions": 0,
+      "padded_transitions": 0,
+      "optimizer_steps": 0,
+      "policy_epochs": 0,
+      "rollouts": 0,
+      "training_method": "behavior_cloning",
+      "supervised_epochs": 1,
+      "supervised_optimizer_steps": 62,
+      "supervised_examples_seen": 62744,
+      "demonstration_transitions": 62744
+    },
+    "demonstration_transitions": 62744,
+    "supervised_optimizer_steps": 62,
+    "supervised_examples_seen": 62744,
+    "initial_policy_is_untrained": false,
+    "rl_live_transitions_at_initialization": 0,
+    "ppo_optimizer_inherited": false,
+    "action_space_compatibility": {
+      "kind": "categorical",
+      "nvec": [
+        20,
+        3
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "parent_dtype": "int64",
+      "ppo_dtype": "int64"
+    }
+  },
+  "training_method": "ppo_after_behavior_cloning"
+}

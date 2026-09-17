@@ -1,0 +1,32 @@
+{
+  "env": "ma",
+  "algorithm": "sac",
+  "recipe": "public_cpa",
+  "guard_static": false,
+  "gamma": 0.996508469331006,
+  "reward_kwargs": {
+    "reach_reward": 37.41716380974046,
+    "intrusion_penalty": -0.9456977940944832,
+    "restricted_area_penalty": -0.5,
+    "sector_exit_penalty": -0.13428297844288217,
+    "drift_penalty": -0.0010342143754210312
+  },
+  "conflict_prediction_horizon_seconds": 180.0,
+  "buffer_size": 400000,
+  "actual_buffer_size": 400000,
+  "initialization": "zero prediction residual from an existing SAC checkpoint",
+  "source_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-public-600k-seed1400\\model.zip",
+  "source_model_sha256": "b4c7a671dbd0fae8146522fa8278f19f4119c859caf2e1b07fe0bb56eae45093",
+  "source_timesteps": 391520,
+  "source_observation_shape": [
+    124
+  ],
+  "observation_shape": [
+    169
+  ],
+  "prediction_projection_trainable": false,
+  "optimizer_state": "reset",
+  "replay_state": "empty",
+  "transitions_trained_after_extension": 0,
+  "source_entropy_coefficient": 0.13904857635498047
+}

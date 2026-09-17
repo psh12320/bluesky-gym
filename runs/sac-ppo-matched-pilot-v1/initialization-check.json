@@ -1,0 +1,5 @@
+{
+  "identical_initial_physical_metrics": true,
+  "network_tensors_matched": false,
+  "reason": "Algorithm recipes have different critic and actor distribution parameterizations"
+}

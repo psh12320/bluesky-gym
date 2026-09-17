@@ -1,0 +1,25 @@
+{
+  "declared_at_utc": "2026-09-15T16:19:34.947550+00:00",
+  "stage": "Learned-policy transfer screen after the classical component screen",
+  "parent_protocol_sha256": "5e33d56dadf207105ff600d1e8283d8bf5baf8793cd84e7c4ff7534119365371",
+  "extension_sha256": "1586748db416454ff5db0c06200cb6977f43a9fd9db45b3fec675bb0a734f917",
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "initial_arms": [
+    "learned_point_goal",
+    "learned_goal_region"
+  ],
+  "track": "ma",
+  "episodes_per_arm": 20,
+  "scenario_seed": 2026,
+  "heading_transport": "plain_decimal",
+  "decision_interval_seconds": 5,
+  "navigation_radius_km": 4.75,
+  "maximum_endpoint_scored_distance_km": 4.95,
+  "training_performed": false,
+  "checkpoint_selection_performed": false,
+  "selected_deployment_changed": false,
+  "purpose": "Measure the routing extension with the existing frozen learned model and compare learned/classical control under both routing choices.",
+  "interpretation": "Transfer without retraining on twenty development worlds. No held-out or official outcome is used for parameter or checkpoint selection. Retain all four controller arms.",
+  "execution_dependency": "Complete the declared classical screen and require at least 1.5 GiB free physical memory before launching this sequential two-arm screen."
+}

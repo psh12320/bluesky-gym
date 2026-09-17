@@ -1,0 +1,51 @@
+{
+  "episodes": 1,
+  "agent_episodes": 10,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.2,
+      "std": 0.4000000000000001
+    },
+    "flight_time": {
+      "mean": 2601.7,
+      "std": 796.9200775485582
+    },
+    "intrusion_events": {
+      "mean": 0.4,
+      "std": 0.4898979485566356
+    },
+    "intrusion_time": {
+      "mean": 129.0,
+      "std": 163.8242961224006
+    },
+    "restricted_area_events": {
+      "mean": 1.4,
+      "std": 1.6852299546352716
+    },
+    "time_in_restricted_area": {
+      "mean": 171.2,
+      "std": 204.01362699584556
+    },
+    "sector_exit_events": {
+      "mean": 0.8,
+      "std": 0.4
+    },
+    "time_outside_sector": {
+      "mean": 1200.1,
+      "std": 866.6598467680385
+    },
+    "total_reward": {
+      "mean": -1504.6316796906244,
+      "std": 952.0754101321817
+    }
+  },
+  "clean_completion_rate": 0.2,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "wall_seconds": 18.8143891999498,
+  "world_decisions": 300,
+  "seed": 2026,
+  "env": "ma",
+  "policy": "runs\\ppo-ma-pipeline-smoke\\model.zip",
+  "recipe": "baseline",
+  "official_protocol": false
+}

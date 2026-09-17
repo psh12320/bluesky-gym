@@ -1,0 +1,32 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "c86fb00fe3d968c3fc1a780d2f2b73b3e34c07f76450e0fa386cb1aaefaa8421",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0
+  },
+  {
+    "file": "policy-live-1280.zip",
+    "sha256": "c5c424e8136ea7dbe4c647484c18934dda227fc2672185a7c2042d1385044ddc",
+    "live_transitions": 1280,
+    "counted_transitions": 1280,
+    "padded_transitions": 0,
+    "optimizer_steps": 7,
+    "policy_epochs": 3,
+    "rollouts": 2
+  },
+  {
+    "file": "model.zip",
+    "sha256": "c5c424e8136ea7dbe4c647484c18934dda227fc2672185a7c2042d1385044ddc",
+    "live_transitions": 1280,
+    "counted_transitions": 1280,
+    "padded_transitions": 0,
+    "optimizer_steps": 7,
+    "policy_epochs": 3,
+    "rollouts": 2
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-09-15T16:39:42.209675+00:00",
+  "protocol_sha256": "630b9e383c6b0b025eab21eae2d4a8a058aa5b36ea335487707b3d338e79ac8d",
+  "runner_sha256": "e3413ae34845ddeb692320644c232b0642b8b22e483eb9c49036af85a4abae00",
+  "extension_sha256": "1586748db416454ff5db0c06200cb6977f43a9fd9db45b3fec675bb0a734f917",
+  "geometry_test_source_sha256": "8b3e80ec34aebcc674e78f11d5209729b25550f9b3c45dede98138dd611e1a0a",
+  "geometry_tests_xml_sha256": "aff655031665c9330c82dd6b32a38f2beee7de15a1aeedfc09d1783344bfa7e1",
+  "classical_comparison_sha256": "9ef3ec08e9032b8dee685361233bf6f676719ac8b2f9203c786939151dcd10bd",
+  "geometry_tests_passed": 9,
+  "arms": [
+    "learned_point_goal",
+    "learned_goal_region"
+  ],
+  "arm_order_fixed_before_results": true
+}

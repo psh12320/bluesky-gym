@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-09-16T03:28:49.082039+00:00",
+  "unit_tests": {
+    "passed": 128,
+    "failed": 0,
+    "errors": 0,
+    "seconds": 20.638
+  },
+  "fixed_action_parity": {
+    "cases": 4,
+    "worlds_per_case": 2,
+    "all_scored_aircraft_metrics_identical": true,
+    "scenarios_identical": true,
+    "added_local_features": 45,
+    "actor_dimensions": {
+      "g0-cpa0": 125,
+      "g0-cpa1": 170,
+      "g1-cpa0": 125,
+      "g1-cpa1": 170
+    },
+    "scope": "Fixed zero latent actions, goal_offset, guidance off/on, filtering off; validates observation-only parity, not policy quality."
+  },
+  "historical_reference_metrics_matched": 360,
+  "controller_and_simulator_source_files_unchanged": 64,
+  "smoke_live_transitions": 1280,
+  "smoke_optimizer_steps": 7,
+  "smoke_model_sha256": "c4a3336026bef9d2c72571449aeb4c4925332da854a2eb3e1bf64610b6a7cb88",
+  "model_reload_passed": true,
+  "feature_performance_evidence": false,
+  "new_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cpa-source-v1.zip",
+    "sha256": "7eb8df2ea08d3dda66ae2e70f6aafc430965d877c448d0a466809ae9fa70a816",
+    "bytes": 241694,
+    "source_files": 123,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "cluster_baseline_bundle_unchanged": true
+}

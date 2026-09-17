@@ -1,0 +1,60 @@
+{
+  "modified": {
+    "atc_rl/world_pool.py": {
+      "before": "a4e66bfa41fa57be7c9204cb198ffe8ef2bf0e320002abddaeca89f6ecfd69d8",
+      "after": "f8cdcbb1406ae05bfcabb881dfd258dd3d7b1bf1be65e1fd0055eb4377aed35c"
+    },
+    "atc_rl/world_worker.py": {
+      "before": "6546b207dc52a9778b7ae6729d623da2d02114f6ec3a7bda211cc36ca0832672",
+      "after": "9464c9e39fe6602efec44a5a3c403e4017c7bda92eb3188b8f898bcc6e527970"
+    },
+    "atc_rl/train.py": {
+      "before": "29a5ab8f5d0cce768dc6a1db691bf582f5bccc1fa62f6e2f36e11fa0aa4fd608",
+      "after": "fbc65de015283cbbe875baef3b3bf55c5effb7acd6ea76b732e0757fc48b9ecd"
+    },
+    "atc_rl/evaluate.py": {
+      "before": "2ec370e1cbe59256df279f9d1fb839030e1aebd560613c75f6606aaebb47c2dd",
+      "after": "033f3c2f4347c2c823157b751e6e138c70a7384feab70d49aed02401da6609b6"
+    },
+    "atc_rl/curves.py": {
+      "before": "aa6606726816da01b87a1abf100c6fcaa1079d3f0b24e18e79771b40356be8ac",
+      "after": "2075cdf05cdf14e4eae8f6915377c45ab1d9f7a97164ad75560f721c86c02d1e"
+    },
+    "atc_rl/compare.py": {
+      "before": "772caff9ec1acc179d5037e4dab935667026d4f6f7188da91b6b6d4959fbe078",
+      "after": "7805ee2300bdd885f43057809209a426be0e49734e60348581c024d531ab5318"
+    },
+    "atc_rl/algorithm_compare.py": {
+      "before": "86815753cf0b53344994b2122f962a64367d5926ce453f6b0a15cd42b4620f25",
+      "after": "30467a5c6e5bbca5e14da8a82c445d87fe4245c82f649fdbd2778a6f9b0bb7f9"
+    },
+    "atc_rl/matrix_evaluate.py": {
+      "before": "0c14723ac55670aa06f147d3044ed50692c2f32540f05534e86915e48373b696",
+      "after": "34ab0da127323eec4a26efec7a935fe332f16bb9ec3204e880eff3cefac1bd00"
+    },
+    "scripts/analyze_rl_cohort.py": {
+      "before": "7eb3ccb87c5af7199084692af0463309248a88d9ed043318c8ff6b4d84d66ae4",
+      "after": "ee77cd22c9d50c96c12c60ef57278d80c3beb8c1c30d563f84aa66005b724adc"
+    },
+    "jobs/train_onpolicy.slurm": {
+      "before": "279d4130985f1d32c1695285e39d244588551bad19cdaf3f639415d049dd37a9",
+      "after": "20e10e4bec8425e11a64f8ecbd5cd90e22666cc6bbeee12dd00cd447555fda04"
+    },
+    "tests/rl/test_curve_configuration.py": {
+      "before": "9084149b55fafffea56f2bf9cb9d4adacc9c74c98ba80eded51a4ebd34ffd16c",
+      "after": "fbb8609f8f93466658de28c6a32638212d7801a4b835ef0cc412dd0bc824825f"
+    },
+    "tests/rl/test_algorithm_compare.py": {
+      "before": "ca837fdabbae298787da4342c3d5f9d4e57de103cf1086cc49894c534420b660",
+      "after": "ab88c6f3ee64de09eb67d049b300a34137047500067004ab8b6be3142faa3b07"
+    },
+    "atc_rl/cluster.py": {
+      "before": "fed87bc532c12fe7d94bb87865d0dc1fa02d6aea1cdc86d5b0252f16bf7c8d65",
+      "after": "c39f198c279c853e26bdb5e35dadbc8545f85988d5f3971826c2fb82515c8797"
+    }
+  },
+  "added": [
+    "atc_rl/action_support.py",
+    "docs/competition/STATIC_FILTER.md"
+  ]
+}

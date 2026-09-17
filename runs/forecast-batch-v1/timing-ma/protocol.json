@@ -1,0 +1,33 @@
+{
+  "started_at_utc": "2026-09-15T15:36:48.707304+00:00",
+  "track": "ma",
+  "seed": 2026,
+  "scenarios_per_run": 2,
+  "order": [
+    "scalar",
+    "batch",
+    "batch",
+    "scalar"
+  ],
+  "pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "script_sha256": "a64f51305d9ea126b1e58029b4ea176d729a53ca1b92ea8dea51376bb1b98235",
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "prior_exact_replays": {
+    "ma": "b7169b55c844e9134b118ad7d9a5a3513f5572c7726e563f2ae97f727d86a834",
+    "sa": "75c8e54a4357cfc7524deec3c3ced11af7053a903109666ed84a01f606ef1328"
+  },
+  "pass_rule": "All nine archived development metrics must match exactly for every run; all package files must remain unchanged",
+  "scope": "Descriptive local timings from two ordered pairs under concurrent scoring load. No confidence interval, cluster throughput or universal speedup claim. No model selection.",
+  "scalar_recheck_disabled_for_timing": true,
+  "production_source_changed": false
+}

@@ -1,0 +1,168 @@
+{
+  "recorded_at_utc": "2026-09-16T07:29:47.862317+00:00",
+  "previous_status": "runs/rl-priority-status-20260916-v27.json",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "cluster_baseline": {
+    "receipt": "runs/cluster-receipt-851486-851489/receipt.json",
+    "attachment_hash_reverified": true,
+    "total_live_transitions": 3024460,
+    "final_clean_completion_by_seed": [
+      0.2,
+      0.19,
+      0.2
+    ],
+    "initial_clean_completion": 0.195,
+    "paired_cluster_classical_clean_completion": 0.95,
+    "raw_archive_present": false,
+    "retrieval_instructions": "docs/competition/BASELINE_RESULTS_DOWNLOAD.md",
+    "accounting_error": "sacct Unknown error 1054; application completion markers are present"
+  },
+  "fresh_sac": {
+    "validation": "runs/sac-comparison-development-v1/validation.json",
+    "source_bundle": "runs/sac-comparison-source-v1.zip",
+    "source_bundle_sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+    "tests_passed": 201,
+    "matched_metric_values": 558,
+    "integration_live_transitions": 1280,
+    "integration_gradient_rounds": 118,
+    "training_summary": {
+      "status": "complete",
+      "algorithm": "sac",
+      "live_transitions": 1280,
+      "padded_transitions": 0,
+      "counted_transitions": 1280,
+      "replay_size": 1280,
+      "optimizer_steps": 118,
+      "actor_optimizer_steps": 118,
+      "entropy_optimizer_steps": 118,
+      "gradient_rounds": 118,
+      "first_update": {
+        "live_transitions": 110,
+        "counted_transitions": 110
+      },
+      "worlds_completed": 0,
+      "aircraft_completed": 0,
+      "wall_seconds": 30.822426800004905,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+      "training_seed": 49040,
+      "performance_evaluation": "Separate paired initial/trained/classical evaluations required"
+    },
+    "performance_evidence": false,
+    "coordinator_session": 85030,
+    "coordinator_exit_code": 0
+  },
+  "position_scaling": {
+    "complete": false,
+    "analysis_present": false,
+    "protocol_sha256": "8694b607c0d1dabf9e8022bc222b92f880d5ed0cec633dea8c0ced080339a901",
+    "arms": {
+      "original": {
+        "training": {
+          "status": "complete",
+          "algorithm": "ppo",
+          "live_transitions": 101437,
+          "padded_transitions": 57283,
+          "counted_transitions": 158720,
+          "optimizer_steps": 2019,
+          "policy_epochs": 569,
+          "rollouts": 62,
+          "worlds_completed": 47,
+          "aircraft_completed": 470,
+          "wall_seconds": 888.4463512000002,
+          "actor_and_critic_parameters_changed": true,
+          "source_unchanged": true,
+          "model_sha256": "7e8a1fae8835f3546747bcf67915932910f83906c70fe569a194f2723bdfb43d",
+          "training_seed": 51600,
+          "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+        },
+        "completed_evaluations": [
+          "initial",
+          "50k",
+          "final"
+        ]
+      },
+      "scaled": {
+        "training": {
+          "status": "complete",
+          "algorithm": "ppo",
+          "live_transitions": 100623,
+          "padded_transitions": 58097,
+          "counted_transitions": 158720,
+          "optimizer_steps": 1967,
+          "policy_epochs": 559,
+          "rollouts": 62,
+          "worlds_completed": 44,
+          "aircraft_completed": 446,
+          "wall_seconds": 583.3502204999968,
+          "actor_and_critic_parameters_changed": true,
+          "source_unchanged": true,
+          "model_sha256": "77624406e1b5baae28c75f68ffc51aa15ec0f6952e593e73a50db2ecc74fca27",
+          "training_seed": 51600,
+          "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+        },
+        "completed_evaluations": [
+          "initial"
+        ]
+      }
+    }
+  },
+  "exploration_persistence": {
+    "complete": false,
+    "analysis_present": false,
+    "protocol_sha256": "9cb39695d73093e01fbb1f614bacc628247547f848a5292c2db8af9098a58dea",
+    "arms": {
+      "every1": {
+        "training": {
+          "status": "complete",
+          "algorithm": "ppo",
+          "live_transitions": 100094,
+          "padded_transitions": 61186,
+          "counted_transitions": 161280,
+          "optimizer_steps": 2168,
+          "policy_epochs": 605,
+          "rollouts": 63,
+          "worlds_completed": 37,
+          "aircraft_completed": 370,
+          "wall_seconds": 905.5046963999994,
+          "actor_and_critic_parameters_changed": true,
+          "source_unchanged": true,
+          "model_sha256": "774bcfbb9d2ea8b1d023a246e7e160cf64a466c184fdbf3459556b63103e779a",
+          "training_seed": 51700,
+          "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+        },
+        "completed_evaluations": [
+          "initial",
+          "50k",
+          "final"
+        ]
+      },
+      "every12": {
+        "latest_training_live_transitions": 53787,
+        "completed_evaluations": []
+      }
+    }
+  },
+  "active_coordinators": {
+    "position_scaling": 50520,
+    "exploration_persistence": 76386
+  },
+  "cluster_static_study": {
+    "bundle": "runs/cluster-ppo-static-v1.zip",
+    "instructions": "docs/competition/STATIC_FILTER_CLUSTER.md",
+    "new_submission_observed": false,
+    "submission_status_question_pending": true
+  },
+  "preserved": {
+    "classical_benchmark_fixed": true,
+    "historical_sac_unchanged": true,
+    "existing_frozen_evaluations_unchanged": true,
+    "reserved_unseen_streams": [
+      20301,
+      20302
+    ]
+  }
+}

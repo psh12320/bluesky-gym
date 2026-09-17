@@ -1,0 +1,23 @@
+{
+  "tracks": {
+    "sa": {
+      "recording_sha256": "4ad7c0cd9189a186554890c4ea4f158e0ca1aadb3385babab6562a5b614f9b79",
+      "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+      "deployment_manifest_sha256": "8d1a0e58ecc73c5613161bc763aff92e56a0936c1d6f7440c3c123fa5b013840",
+      "episodes": 5,
+      "aircraft_records": 5,
+      "all_nine_metrics_exact": true,
+      "all_scenario_rng_states_unchanged": true
+    },
+    "ma": {
+      "recording_sha256": "44bda7a9a381b95a779831865521cc17f81d22fd0be8039e6f4fc9863d6e4a05",
+      "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+      "deployment_manifest_sha256": "44034e213b22719f2d076f53b771f637497affa9f8f8d7f29b4fff35768342e4",
+      "episodes": 5,
+      "aircraft_records": 50,
+      "all_nine_metrics_exact": true,
+      "all_scenario_rng_states_unchanged": true
+    }
+  },
+  "scope": "Corrected deployment replay checks on the first five development scenarios per track; not full scoring"
+}

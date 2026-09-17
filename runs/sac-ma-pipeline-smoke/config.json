@@ -1,0 +1,17 @@
+{
+  "env": "ma",
+  "algorithm": "sac",
+  "recipe": "baseline",
+  "workers": 2,
+  "steps": 400,
+  "seed": 0,
+  "device": "cpu",
+  "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-pipeline-smoke",
+  "checkpoint_every": 250000,
+  "learning_starts": 40,
+  "gradient_steps": 1,
+  "batch_size": 32,
+  "torch": "2.14.0+cpu",
+  "step_unit": "SB3 vector transitions, including inactive aircraft padding in MA",
+  "gamma": 0.99
+}

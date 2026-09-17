@@ -1,0 +1,195 @@
+{
+  "recorded_at_utc": "2026-09-16T09:11:15.940086+00:00",
+  "previous_status": "runs/rl-priority-status-20260916-v34.json",
+  "previous_goal_turn_classification": "no_progress",
+  "previous_turn_reason": "Reconfirmed an already archived cluster technical-check receipt; no new experimental result or implementation change.",
+  "this_goal_turn_classification": "progress",
+  "progress": [
+    "Launched the missing g0-f0 PPO support cell with three seeds and the exact preserved source/recipe.",
+    "Implemented and numerically checked complete four-cell analysis; independently re-audited all nine prior runs and verified unchanged metrics.",
+    "SAC/PPO coordinator finished with exit 0. Audited paired SAC/PPO and GAE comparisons, including reused control and full initial tensor identity for the GAE comparison.",
+    "Created and visually checked the three-run learning-curve comparison, validating 99 raw metric/curve entries."
+  ],
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "completed_paired_pilots": {
+    "coordinator_session": 57529,
+    "coordinator_exit_code": 0,
+    "analysis_session": 12890,
+    "analysis_exit_code": 0,
+    "algorithm_results": "runs/sac-ppo-matched-pilot-v1/paired-results.json",
+    "credit_results": "runs/ppo-credit-pilot-v1/paired-results.json",
+    "review": "runs/sac-ppo-credit-review-v1/decision.json",
+    "figure": "runs/sac-ppo-credit-review-v1/artifacts/learning-curves.png",
+    "unique_training_runs": 3,
+    "seed": 51800,
+    "worlds": 20,
+    "all_three_screens_failed": true,
+    "rows": {
+      "sac": {
+        "live_transitions": 100441,
+        "optimizer_steps": 15116,
+        "initial": {
+          "waypoint_reached": 0.9949999999999999,
+          "flight_time": 1090.1799999999998,
+          "intrusion_events": 1.56,
+          "intrusion_time": 113.33999999999999,
+          "restricted_area_events": 0.01,
+          "time_in_restricted_area": 0.38,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -70.2405291593074,
+          "clean_completion": 0.255,
+          "all_aircraft_clean_completion": 0.0
+        },
+        "final": {
+          "waypoint_reached": 0.8899999999999999,
+          "flight_time": 1775.3799999999999,
+          "intrusion_events": 0.99,
+          "intrusion_time": 95.65,
+          "restricted_area_events": 0.06499999999999999,
+          "time_in_restricted_area": 3.9300000000000006,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -59.48148063940857,
+          "clean_completion": 0.4149999999999999,
+          "all_aircraft_clean_completion": 0.0
+        },
+        "screen_checks": {
+          "arrival_level": false,
+          "arrival_change": false,
+          "clean_change": true,
+          "intrusion_time": true,
+          "time_in_restricted_area": false,
+          "time_outside_sector": true
+        },
+        "screen_passed": false
+      },
+      "ppo095": {
+        "live_transitions": 100137,
+        "optimizer_steps": 2110,
+        "initial": {
+          "waypoint_reached": 0.9949999999999999,
+          "flight_time": 1090.1799999999998,
+          "intrusion_events": 1.56,
+          "intrusion_time": 113.33999999999999,
+          "restricted_area_events": 0.01,
+          "time_in_restricted_area": 0.38,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -70.2405291593074,
+          "clean_completion": 0.255,
+          "all_aircraft_clean_completion": 0.0
+        },
+        "final": {
+          "waypoint_reached": 0.925,
+          "flight_time": 1463.73,
+          "intrusion_events": 1.54,
+          "intrusion_time": 191.6,
+          "restricted_area_events": 0.01,
+          "time_in_restricted_area": 0.08,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -146.75992418545428,
+          "clean_completion": 0.23000000000000004,
+          "all_aircraft_clean_completion": 0.0
+        },
+        "screen_checks": {
+          "arrival_level": false,
+          "arrival_change": false,
+          "clean_change": false,
+          "intrusion_time": false,
+          "time_in_restricted_area": true,
+          "time_outside_sector": true
+        },
+        "screen_passed": false
+      },
+      "ppo099": {
+        "live_transitions": 100093,
+        "optimizer_steps": 2005,
+        "initial": {
+          "waypoint_reached": 0.9949999999999999,
+          "flight_time": 1090.1799999999998,
+          "intrusion_events": 1.56,
+          "intrusion_time": 113.33999999999999,
+          "restricted_area_events": 0.01,
+          "time_in_restricted_area": 0.38,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -70.2405291593074,
+          "clean_completion": 0.255,
+          "all_aircraft_clean_completion": 0.0
+        },
+        "final": {
+          "waypoint_reached": 0.9799999999999999,
+          "flight_time": 1182.3949999999998,
+          "intrusion_events": 1.54,
+          "intrusion_time": 128.44,
+          "restricted_area_events": 0.02,
+          "time_in_restricted_area": 0.8300000000000001,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -85.31854319157819,
+          "clean_completion": 0.25999999999999995,
+          "all_aircraft_clean_completion": 0.0
+        },
+        "screen_checks": {
+          "arrival_level": true,
+          "arrival_change": true,
+          "clean_change": false,
+          "intrusion_time": false,
+          "time_in_restricted_area": false,
+          "time_outside_sector": true
+        },
+        "screen_passed": false
+      }
+    },
+    "candidate_promoted": false,
+    "interpretation": "SAC improves clean completion over its own initial policy but loses arrivals and increases restricted-area time. Higher GAE improves several outcomes relative to a poor PPO control, but does not establish a useful learning gain over its own initial policy. One training seed, reused development worlds, different SAC/PPO recipes; no general ranking."
+  },
+  "support_factorial": {
+    "protocol": "runs/ppo-support-factorial-v1/protocol.json",
+    "protocol_sha256": "d0391720f09bdec7027ce99b315d13cdd7929019bb6880cc71129663a8e931d8",
+    "coordinator_session": 99673,
+    "last_confirmed_live_stage": "g0-f0/seed-49900/eval-initial.log",
+    "first_training_live_transitions": 100699,
+    "new_seeds": [
+      49900,
+      49920,
+      49940
+    ],
+    "all_twelve_results_complete": false,
+    "existing_nine_audit": "runs/ppo-support-factorial-v1/existing-nine-audit.json",
+    "analyzer_math_validation": "runs/ppo-support-factorial-v1/analyzer-math-validation.json",
+    "existing_nine_unchanged": true,
+    "limitations": [
+      "Retrospective exploratory completion of nine already observed runs.",
+      "The filter combines static-area and aircraft-conflict filtering.",
+      "Goal-offset actions retain navigation support when guidance is off.",
+      "Full factorial effects require all twelve runs."
+    ]
+  },
+  "gsde_replication": {
+    "session": 76853,
+    "last_confirmed_live_stage": "seed-52200/every1/eval-50k.log",
+    "all_six_results_complete": false,
+    "source_and_protocol_unchanged": true
+  },
+  "cluster_gsde": {
+    "instructions": "docs/competition/GSDE_CLUSTER.md",
+    "submission_observed": false,
+    "existing_environment_reused": true
+  },
+  "preservation": {
+    "fixed_source_files_checked": 65,
+    "changed_fixed_files": [],
+    "existing_evaluations_not_interrupted": true,
+    "existing_training_models_and_sources_not_edited": true
+  },
+  "next_actions": [
+    "Let both live coordinators finish; audit all seeds before aggregate conclusions.",
+    "Run the all-twelve-cell analysis when all three new support rows finish.",
+    "Use the prepared cluster study when the user returns its submission table; do not submit duplicates.",
+    "Retain reserved unseen scenarios for a candidate supported by repeatable learning evidence."
+  ]
+}

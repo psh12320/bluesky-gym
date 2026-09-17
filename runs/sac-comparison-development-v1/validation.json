@@ -1,0 +1,73 @@
+{
+  "recorded_at_utc": "2026-09-16T07:29:47.860319+00:00",
+  "automated_tests": {
+    "passed": 201,
+    "seconds": 15.3,
+    "command": "python -m pytest tests/rl -q -p no:cacheprovider --basetemp=runs/sac-comparison-development-v1/tests-full"
+  },
+  "bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-comparison-source-v1.zip",
+    "sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+    "bytes": 289112,
+    "source_files": 145,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "protected_files_unchanged": 65,
+  "integration": {
+    "complete": true,
+    "performance_evidence": false,
+    "matched_metric_values": {
+      "initial_sac_ppo": 180,
+      "trained_sac_vector_native": 180,
+      "unchanged_ppo_evaluation": 180,
+      "initial_sa_sac_ppo": 18
+    },
+    "training": {
+      "status": "complete",
+      "algorithm": "sac",
+      "live_transitions": 1280,
+      "padded_transitions": 0,
+      "counted_transitions": 1280,
+      "replay_size": 1280,
+      "optimizer_steps": 118,
+      "actor_optimizer_steps": 118,
+      "entropy_optimizer_steps": 118,
+      "gradient_rounds": 118,
+      "first_update": {
+        "live_transitions": 110,
+        "counted_transitions": 110
+      },
+      "worlds_completed": 0,
+      "aircraft_completed": 0,
+      "wall_seconds": 30.822426800004905,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+      "training_seed": 49040,
+      "performance_evaluation": "Separate paired initial/trained/classical evaluations required"
+    },
+    "audit": {
+      "algorithm": "sac",
+      "status": "complete",
+      "model_sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+      "live_transitions": 1280,
+      "optimizer_steps": 118,
+      "verified_checkpoints": 4,
+      "verified_source_files": 101,
+      "learning_rows": 2,
+      "aircraft_completed": 0,
+      "actor_parameter_count": 38916,
+      "critic_parameter_count": 220674,
+      "actor_and_critic_changed": true,
+      "actor_and_critics_use_local_inputs_only": true,
+      "finite_task_deadline": true,
+      "historical_replay_loaded": false,
+      "policy_quality_assessed": false
+    }
+  },
+  "performance_evidence": false,
+  "substantive_sac_comparison_started": false,
+  "local_device": "CPU; new SAC CUDA training has not yet been exercised",
+  "historical_sources_models_logs_and_replay_files_preserved": true,
+  "next_step": "Register a paired SAC/PPO development pilot with identical simulator/observation/action support, its own initial controls, exact experience and update counts. Keep held-out streams untouched until selection."
+}

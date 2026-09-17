@@ -1,0 +1,734 @@
+{
+  "wall_seconds": 260.0948882000521,
+  "profiler_total_seconds": 246.6949817000009,
+  "total_calls": 50926231,
+  "primitive_calls": 50095000,
+  "top_self_time": [
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 26,
+      "function": "predict_commands",
+      "primitive_calls": 8706,
+      "total_calls": 8706,
+      "self_seconds": 19.2075622,
+      "cumulative_seconds": 33.708185900000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\navdatabase\\loadnavdata_txt.py",
+      "line": 355,
+      "function": "loadthresholds_txt",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "self_seconds": 11.094359800000001,
+      "cumulative_seconds": 35.2976769
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\core\\tools.py",
+      "line": 16,
+      "function": "kwikqdrdist",
+      "primitive_calls": 182151,
+      "total_calls": 182151,
+      "self_seconds": 7.8189538,
+      "cumulative_seconds": 7.8189538
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "primitive_calls": 271672,
+      "total_calls": 271672,
+      "self_seconds": 5.4438849000000005,
+      "cumulative_seconds": 5.4438849000000005
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\zipfile\\__init__.py",
+      "line": 949,
+      "function": "readline",
+      "primitive_calls": 2465649,
+      "total_calls": 2465649,
+      "self_seconds": 5.314517100000001,
+      "cumulative_seconds": 12.0266821
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\shapely\\predicates.py",
+      "line": 714,
+      "function": "covers",
+      "primitive_calls": 25850,
+      "total_calls": 25850,
+      "self_seconds": 5.1880926,
+      "cumulative_seconds": 5.1880926
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method matplotlib._path.points_in_path>",
+      "primitive_calls": 121962,
+      "total_calls": 121962,
+      "self_seconds": 5.0155919,
+      "cumulative_seconds": 5.3098003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method _io.open_code>",
+      "primitive_calls": 3000,
+      "total_calls": 3000,
+      "self_seconds": 4.804451800000001,
+      "cumulative_seconds": 4.804451800000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\navdatabase\\loadnavdata_txt.py",
+      "line": 12,
+      "function": "loadnavdata_txt",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "self_seconds": 4.518466500000001,
+      "cumulative_seconds": 8.1458024
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'split' of 'str' objects>",
+      "primitive_calls": 2879005,
+      "total_calls": 2879005,
+      "self_seconds": 3.8547382000000003,
+      "cumulative_seconds": 3.8547382000000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\_core\\_methods.py",
+      "line": 98,
+      "function": "_clip",
+      "primitive_calls": 347566,
+      "total_calls": 347566,
+      "self_seconds": 3.7859127000000004,
+      "cumulative_seconds": 3.7859127000000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\tools\\shapes.py",
+      "line": 162,
+      "function": "checkInside",
+      "primitive_calls": 121962,
+      "total_calls": 121962,
+      "self_seconds": 3.3656621,
+      "cumulative_seconds": 19.5426447
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py",
+      "line": 628,
+      "function": "column_stack",
+      "primitive_calls": 156903,
+      "total_calls": 156903,
+      "self_seconds": 3.0353933000000004,
+      "cumulative_seconds": 4.1856378
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "primitive_calls": 4735825,
+      "total_calls": 4788255,
+      "self_seconds": 2.9491901,
+      "cumulative_seconds": 3.0290157
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 64,
+      "function": "traffic_risk",
+      "primitive_calls": 4636,
+      "total_calls": 4636,
+      "self_seconds": 2.9405251000000003,
+      "cumulative_seconds": 6.0025873
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\core\\observations.py",
+      "line": 325,
+      "function": "observe",
+      "primitive_calls": 4090,
+      "total_calls": 4090,
+      "self_seconds": 2.9032213000000002,
+      "cumulative_seconds": 3.6498084000000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\shapely\\decorators.py",
+      "line": 73,
+      "function": "wrapped",
+      "primitive_calls": 215029,
+      "total_calls": 215029,
+      "self_seconds": 2.7822061000000002,
+      "cumulative_seconds": 12.6323235
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.array>",
+      "primitive_calls": 858758,
+      "total_calls": 858758,
+      "self_seconds": 2.6861317000000002,
+      "cumulative_seconds": 2.6861452000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'find' of 'bytes' objects>",
+      "primitive_calls": 2465649,
+      "total_calls": 2465649,
+      "self_seconds": 2.6438623000000003,
+      "cumulative_seconds": 2.6438623000000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\_core\\shape_base.py",
+      "line": 380,
+      "function": "stack",
+      "primitive_calls": 66749,
+      "total_calls": 66749,
+      "self_seconds": 2.6043151,
+      "cumulative_seconds": 3.0592143000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.isinstance>",
+      "primitive_calls": 2616412,
+      "total_calls": 2838445,
+      "self_seconds": 2.5994348,
+      "cumulative_seconds": 3.8077553
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'decode' of 'bytes' objects>",
+      "primitive_calls": 2700967,
+      "total_calls": 2700967,
+      "self_seconds": 2.5878862000000002,
+      "cumulative_seconds": 2.5906462
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'append' of 'list' objects>",
+      "primitive_calls": 3089859,
+      "total_calls": 3089859,
+      "self_seconds": 2.4208778,
+      "cumulative_seconds": 2.4208778
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 48,
+      "function": "capture_times",
+      "primitive_calls": 8706,
+      "total_calls": 8706,
+      "self_seconds": 2.3426093000000003,
+      "cumulative_seconds": 3.8988591
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'read' of '_io.BufferedReader' objects>",
+      "primitive_calls": 9661,
+      "total_calls": 9661,
+      "self_seconds": 2.3061384,
+      "cumulative_seconds": 2.3061384
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'strip' of 'str' objects>",
+      "primitive_calls": 3102202,
+      "total_calls": 3102202,
+      "self_seconds": 2.2583577000000004,
+      "cumulative_seconds": 2.2583577000000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\_core\\shape_base.py",
+      "line": 220,
+      "function": "vstack",
+      "primitive_calls": 122071,
+      "total_calls": 122071,
+      "self_seconds": 2.0235233,
+      "cumulative_seconds": 4.0932769
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\bluesky_zoo\\competition\\competition.py",
+      "line": 385,
+      "function": "_update_metrics",
+      "primitive_calls": 20327,
+      "total_calls": 20327,
+      "self_seconds": 1.9502408000000002,
+      "cumulative_seconds": 32.9867545
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\tools\\aero.py",
+      "line": 85,
+      "function": "vatmos",
+      "primitive_calls": 40086,
+      "total_calls": 40086,
+      "self_seconds": 1.9221157000000002,
+      "cumulative_seconds": 2.5931879
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\navdatabase\\loadnavdata_txt.py",
+      "line": 408,
+      "function": "thresholds",
+      "primitive_calls": 30038,
+      "total_calls": 30038,
+      "self_seconds": 1.9218101,
+      "cumulative_seconds": 3.6691200000000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\traffic\\autopilot.py",
+      "line": 306,
+      "function": "update",
+      "primitive_calls": 2859,
+      "total_calls": 2859,
+      "self_seconds": 1.8240979000000002,
+      "cumulative_seconds": 5.1197755
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\shapely\\creation.py",
+      "line": 140,
+      "function": "linestrings",
+      "primitive_calls": 29942,
+      "total_calls": 29942,
+      "self_seconds": 1.8149318,
+      "cumulative_seconds": 1.8686001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\navdatabase\\loadnavdata_txt.py",
+      "line": 429,
+      "function": "thrpoints",
+      "primitive_calls": 30038,
+      "total_calls": 30038,
+      "self_seconds": 1.7473099,
+      "cumulative_seconds": 1.7473099
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py",
+      "line": 2241,
+      "function": "clip",
+      "primitive_calls": 347566,
+      "total_calls": 347566,
+      "self_seconds": 1.6627449,
+      "cumulative_seconds": 7.606304100000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\bluesky\\traffic\\performance\\openap\\perfoap.py",
+      "line": 168,
+      "function": "update",
+      "primitive_calls": 2859,
+      "total_calls": 2859,
+      "self_seconds": 1.5319774000000002,
+      "cumulative_seconds": 6.927762100000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'decompress' of 'zlib.Decompress' objects>",
+      "primitive_calls": 29208,
+      "total_calls": 29208,
+      "self_seconds": 1.3730872,
+      "cumulative_seconds": 1.3730872
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.getattr>",
+      "primitive_calls": 990616,
+      "total_calls": 991550,
+      "self_seconds": 1.3587811,
+      "cumulative_seconds": 1.8057217
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py",
+      "line": 89,
+      "function": "_wrapreduction_any_all",
+      "primitive_calls": 123012,
+      "total_calls": 123012,
+      "self_seconds": 1.3461965,
+      "cumulative_seconds": 4.3697163
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Lib\\site-packages\\numpy\\_core\\shape_base.py",
+      "line": 80,
+      "function": "atleast_2d",
+      "primitive_calls": 122071,
+      "total_calls": 122071,
+      "self_seconds": 1.3423987000000002,
+      "cumulative_seconds": 1.8370845
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method nt._getfinalpathname>",
+      "primitive_calls": 4229,
+      "total_calls": 4229,
+      "self_seconds": 1.3307646000000002,
+      "cumulative_seconds": 1.3307646000000002
+    }
+  ],
+  "top_controller_cumulative_time": [
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\envs.py",
+      "line": 34,
+      "function": "step",
+      "primitive_calls": 573,
+      "total_calls": 573,
+      "self_seconds": 0.0110433,
+      "cumulative_seconds": 134.1874338
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\residual.py",
+      "line": 62,
+      "function": "_get_action",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.32953770000000004,
+      "cumulative_seconds": 58.357659100000006
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_input.py",
+      "line": 100,
+      "function": "_get_action",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.10223760000000001,
+      "cumulative_seconds": 57.3976089
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 168,
+      "function": "_get_action",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.8340696000000001,
+      "cumulative_seconds": 52.2491532
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 26,
+      "function": "predict_commands",
+      "primitive_calls": 8706,
+      "total_calls": 8706,
+      "self_seconds": 19.2075622,
+      "cumulative_seconds": 33.708185900000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 98,
+      "function": "choose_command",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.2648689,
+      "cumulative_seconds": 31.401261400000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 107,
+      "function": "assess",
+      "primitive_calls": 4636,
+      "total_calls": 4636,
+      "self_seconds": 0.3605979,
+      "cumulative_seconds": 30.4073916
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\residual.py",
+      "line": 56,
+      "function": "_get_obs",
+      "primitive_calls": 4090,
+      "total_calls": 4090,
+      "self_seconds": 0.0749577,
+      "cumulative_seconds": 23.302119
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_input.py",
+      "line": 90,
+      "function": "_get_obs",
+      "primitive_calls": 4090,
+      "total_calls": 4090,
+      "self_seconds": 0.12600070000000002,
+      "cumulative_seconds": 22.9062649
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 165,
+      "function": "_get_obs",
+      "primitive_calls": 4090,
+      "total_calls": 4090,
+      "self_seconds": 0.20631580000000002,
+      "cumulative_seconds": 21.0621292
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_choice.py",
+      "line": 85,
+      "function": "_route_reference",
+      "primitive_calls": 8160,
+      "total_calls": 8160,
+      "self_seconds": 0.309342,
+      "cumulative_seconds": 12.7388788
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\deployment.py",
+      "line": 65,
+      "function": "<lambda>",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.0271218,
+      "cumulative_seconds": 12.190819600000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 39,
+      "function": "visible",
+      "primitive_calls": 21214,
+      "total_calls": 21214,
+      "self_seconds": 0.6012299,
+      "cumulative_seconds": 9.5460699
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 64,
+      "function": "traffic_risk",
+      "primitive_calls": 4636,
+      "total_calls": 4636,
+      "self_seconds": 2.9405251000000003,
+      "cumulative_seconds": 6.0025873
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 152,
+      "function": "_route_reference",
+      "primitive_calls": 8160,
+      "total_calls": 8160,
+      "self_seconds": 0.475019,
+      "cumulative_seconds": 5.351258700000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 48,
+      "function": "capture_times",
+      "primitive_calls": 8706,
+      "total_calls": 8706,
+      "self_seconds": 2.3426093000000003,
+      "cumulative_seconds": 3.8988591
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 80,
+      "function": "target_index",
+      "primitive_calls": 8160,
+      "total_calls": 8160,
+      "self_seconds": 0.21212270000000003,
+      "cumulative_seconds": 3.6761428
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\envs.py",
+      "line": 30,
+      "function": "reset",
+      "primitive_calls": 2,
+      "total_calls": 2,
+      "self_seconds": 6.2e-05,
+      "cumulative_seconds": 3.4645699000000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\residual.py",
+      "line": 52,
+      "function": "reset",
+      "primitive_calls": 2,
+      "total_calls": 2,
+      "self_seconds": 3.49e-05,
+      "cumulative_seconds": 3.4544604000000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_input.py",
+      "line": 56,
+      "function": "reset",
+      "primitive_calls": 2,
+      "total_calls": 2,
+      "self_seconds": 3.27e-05,
+      "cumulative_seconds": 3.4544022
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 112,
+      "function": "reset",
+      "primitive_calls": 2,
+      "total_calls": 2,
+      "self_seconds": 2.2400000000000002e-05,
+      "cumulative_seconds": 3.4541763000000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\traffic_projection.py",
+      "line": 164,
+      "function": "reset",
+      "primitive_calls": 2,
+      "total_calls": 2,
+      "self_seconds": 3.03e-05,
+      "cumulative_seconds": 3.4541539
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\projection.py",
+      "line": 84,
+      "function": "reset",
+      "primitive_calls": 2,
+      "total_calls": 2,
+      "self_seconds": 8.850000000000001e-05,
+      "cumulative_seconds": 3.4540964
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_choice.py",
+      "line": 64,
+      "function": "_ensure_routes",
+      "primitive_calls": 16320,
+      "total_calls": 16320,
+      "self_seconds": 0.027036400000000002,
+      "cumulative_seconds": 2.3621036
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 116,
+      "function": "_xy",
+      "primitive_calls": 20510,
+      "total_calls": 20510,
+      "self_seconds": 0.9635907,
+      "cumulative_seconds": 2.0366789
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\projection.py",
+      "line": 15,
+      "function": "stop_at_goal",
+      "primitive_calls": 4636,
+      "total_calls": 4636,
+      "self_seconds": 1.0860904,
+      "cumulative_seconds": 2.0114251000000003
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\envs.py",
+      "line": 24,
+      "function": "_flatten",
+      "primitive_calls": 575,
+      "total_calls": 575,
+      "self_seconds": 0.022938800000000002,
+      "cumulative_seconds": 1.7709129000000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\deployment.py",
+      "line": 68,
+      "function": "make_env",
+      "primitive_calls": 1,
+      "total_calls": 2,
+      "self_seconds": 0.0002187,
+      "cumulative_seconds": 1.7173139000000002
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\envs.py",
+      "line": 39,
+      "function": "make_env",
+      "primitive_calls": 1,
+      "total_calls": 2,
+      "self_seconds": 0.0002765,
+      "cumulative_seconds": 1.6918617
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 18,
+      "function": "__init__",
+      "primitive_calls": 10,
+      "total_calls": 10,
+      "self_seconds": 0.06735590000000001,
+      "cumulative_seconds": 1.6348339
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\projection.py",
+      "line": 90,
+      "function": "_projection_xy",
+      "primitive_calls": 16292,
+      "total_calls": 16292,
+      "self_seconds": 0.6543921,
+      "cumulative_seconds": 1.4470864
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\deployment.py",
+      "line": 1,
+      "function": "<module>",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "self_seconds": 0.0001498,
+      "cumulative_seconds": 1.3461705000000002
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\submission.py",
+      "line": 1,
+      "function": "<module>",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "self_seconds": 4.22e-05,
+      "cumulative_seconds": 1.3135031000000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_choice.py",
+      "line": 52,
+      "function": "_choose_route",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 0.0007075,
+      "cumulative_seconds": 0.9525894
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\route_choice.py",
+      "line": 22,
+      "function": "choose_route",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 0.007490800000000001,
+      "cumulative_seconds": 0.9518186000000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\routes.py",
+      "line": 46,
+      "function": "path",
+      "primitive_calls": 150,
+      "total_calls": 150,
+      "self_seconds": 0.0779406,
+      "cumulative_seconds": 0.9276768000000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\envs.py",
+      "line": 1,
+      "function": "<module>",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "self_seconds": 5.3e-05,
+      "cumulative_seconds": 0.8167268000000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\residual.py",
+      "line": 27,
+      "function": "compose_command",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.1305012,
+      "cumulative_seconds": 0.5888652000000001
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\heading_transport.py",
+      "line": 21,
+      "function": "execute",
+      "primitive_calls": 4070,
+      "total_calls": 4070,
+      "self_seconds": 0.11318,
+      "cumulative_seconds": 0.42034760000000004
+    },
+    {
+      "file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\source\\atc\\deployment.py",
+      "line": 20,
+      "function": "validate_manifest",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "self_seconds": 4.2000000000000004e-05,
+      "cumulative_seconds": 0.37747820000000004
+    }
+  ],
+  "all_metric_checks_passed": true,
+  "unchanged_packaged_files": 145,
+  "scope": "Diagnostic profile of a fixed development prefix; no policy changes or new performance-selection data",
+  "timing_limitations": "cProfile overhead and other simultaneous local jobs; not an isolated throughput benchmark"
+}

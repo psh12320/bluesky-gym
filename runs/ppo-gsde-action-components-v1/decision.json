@@ -1,0 +1,178 @@
+{
+  "recorded_at_utc": "2026-09-16T08:55:04.011213+00:00",
+  "result_sha256": "c104f5aad5211469e24210f4bf4bf4e11f9550942107a4b40b9764b11ccd3e5f",
+  "audit_sha256": "7269975a170ad2859b704b0c3ff52a08066f7e1821913dbbb8c74cf145f6b9b9",
+  "figure_visually_checked": true,
+  "figure": "review/action-components.png",
+  "exact_replay_metric_checks": 3600,
+  "promoted_to_candidate": false,
+  "action_space_change_selected": false,
+  "finding": "For this selected checkpoint, heading-only retains nearly all of the clean-completion gain. Speed-only primarily shortens flights. Disabling learned speed does not remove the restricted-area cost.",
+  "heading_only_clean_gain": {
+    "mean_difference": 0.15499999999999997,
+    "paired_world_bootstrap_95_interval": [
+      0.020000000000000007,
+      0.2951249999999982
+    ]
+  },
+  "speed_only_flight_change": {
+    "mean_difference": -74.63500000000002,
+    "paired_world_bootstrap_95_interval": [
+      -82.690125,
+      -67.64474999999999
+    ]
+  },
+  "heading_only_restricted_change": {
+    "mean_difference": 0.97,
+    "paired_world_bootstrap_95_interval": [
+      0.010000000000000009,
+      2.605124999999999
+    ]
+  },
+  "restricted_exposure": {
+    "zero_both": {
+      "aircraft_with_restricted_exposure": 2,
+      "worlds_with_restricted_exposure": 2,
+      "maximum_aircraft_restricted_seconds": 68.0,
+      "cases": [
+        {
+          "world": 4,
+          "agent": "KL004",
+          "scenario_sha256": "d46ac064805525f914d87a00b0dd1b99da09e909b7cd766db7ee9c83f10827d6",
+          "restricted_seconds": 8.0
+        },
+        {
+          "world": 13,
+          "agent": "KL005",
+          "scenario_sha256": "182af055cce0c2a777f85dc27409503530046680ed808fe93752e61f45e35d5a",
+          "restricted_seconds": 68.0
+        }
+      ]
+    },
+    "zero_speed": {
+      "aircraft_with_restricted_exposure": 7,
+      "worlds_with_restricted_exposure": 5,
+      "maximum_aircraft_restricted_seconds": 70.0,
+      "cases": [
+        {
+          "world": 2,
+          "agent": "KL008",
+          "scenario_sha256": "07a72834afc7379c1010660987a6759a162efff1b4ea783c53ab2a58d863cbde",
+          "restricted_seconds": 47.0
+        },
+        {
+          "world": 4,
+          "agent": "KL004",
+          "scenario_sha256": "d46ac064805525f914d87a00b0dd1b99da09e909b7cd766db7ee9c83f10827d6",
+          "restricted_seconds": 8.0
+        },
+        {
+          "world": 7,
+          "agent": "KL003",
+          "scenario_sha256": "b03e4b74439428fe825d98c3965ed8c90b492a0bb5769a86382ed1e73f59a1f9",
+          "restricted_seconds": 5.0
+        },
+        {
+          "world": 13,
+          "agent": "KL005",
+          "scenario_sha256": "182af055cce0c2a777f85dc27409503530046680ed808fe93752e61f45e35d5a",
+          "restricted_seconds": 70.0
+        },
+        {
+          "world": 17,
+          "agent": "KL005",
+          "scenario_sha256": "155b6a12d7a1102eb8bd93d6bd2a87ba163d4dd09605e8396b9b50c604673a86",
+          "restricted_seconds": 48.0
+        },
+        {
+          "world": 17,
+          "agent": "KL009",
+          "scenario_sha256": "155b6a12d7a1102eb8bd93d6bd2a87ba163d4dd09605e8396b9b50c604673a86",
+          "restricted_seconds": 46.0
+        },
+        {
+          "world": 17,
+          "agent": "KL003",
+          "scenario_sha256": "155b6a12d7a1102eb8bd93d6bd2a87ba163d4dd09605e8396b9b50c604673a86",
+          "restricted_seconds": 46.0
+        }
+      ]
+    },
+    "zero_heading": {
+      "aircraft_with_restricted_exposure": 3,
+      "worlds_with_restricted_exposure": 3,
+      "maximum_aircraft_restricted_seconds": 57.0,
+      "cases": [
+        {
+          "world": 2,
+          "agent": "KL008",
+          "scenario_sha256": "07a72834afc7379c1010660987a6759a162efff1b4ea783c53ab2a58d863cbde",
+          "restricted_seconds": 48.0
+        },
+        {
+          "world": 4,
+          "agent": "KL004",
+          "scenario_sha256": "d46ac064805525f914d87a00b0dd1b99da09e909b7cd766db7ee9c83f10827d6",
+          "restricted_seconds": 8.0
+        },
+        {
+          "world": 13,
+          "agent": "KL005",
+          "scenario_sha256": "182af055cce0c2a777f85dc27409503530046680ed808fe93752e61f45e35d5a",
+          "restricted_seconds": 57.0
+        }
+      ]
+    },
+    "full_policy": {
+      "aircraft_with_restricted_exposure": 6,
+      "worlds_with_restricted_exposure": 5,
+      "maximum_aircraft_restricted_seconds": 84.0,
+      "cases": [
+        {
+          "world": 4,
+          "agent": "KL004",
+          "scenario_sha256": "d46ac064805525f914d87a00b0dd1b99da09e909b7cd766db7ee9c83f10827d6",
+          "restricted_seconds": 8.0
+        },
+        {
+          "world": 7,
+          "agent": "KL003",
+          "scenario_sha256": "b03e4b74439428fe825d98c3965ed8c90b492a0bb5769a86382ed1e73f59a1f9",
+          "restricted_seconds": 5.0
+        },
+        {
+          "world": 13,
+          "agent": "KL005",
+          "scenario_sha256": "182af055cce0c2a777f85dc27409503530046680ed808fe93752e61f45e35d5a",
+          "restricted_seconds": 64.0
+        },
+        {
+          "world": 16,
+          "agent": "KL009",
+          "scenario_sha256": "418e90bf0089a9af55825f8d303373659697686aae06c6f49429f64232a23e5f",
+          "restricted_seconds": 84.0
+        },
+        {
+          "world": 17,
+          "agent": "KL005",
+          "scenario_sha256": "155b6a12d7a1102eb8bd93d6bd2a87ba163d4dd09605e8396b9b50c604673a86",
+          "restricted_seconds": 48.0
+        },
+        {
+          "world": 17,
+          "agent": "KL009",
+          "scenario_sha256": "155b6a12d7a1102eb8bd93d6bd2a87ba163d4dd09605e8396b9b50c604673a86",
+          "restricted_seconds": 48.0
+        }
+      ]
+    }
+  },
+  "next_action": "Retain both learned action components in the registered fresh-seed and one-million-transition cluster studies; evaluate all physical metrics against own initial policies. Await complete paired cohorts before algorithm or schedule ranking.",
+  "not_established": [
+    "Unseen-scenario performance or repeatability across training seeds.",
+    "The result of retraining with only one action component.",
+    "Whether useful heading behavior depends on traffic inputs, rather than other local state or a learned convention.",
+    "Competitive performance: this selected policy remains well behind the fixed classical benchmark."
+  ],
+  "preserved": "No trained checkpoint, simulator, controller, registered training recipe or ongoing evaluation was edited."
+}

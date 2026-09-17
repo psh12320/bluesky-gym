@@ -1,0 +1,101 @@
+{
+  "registered_at_utc": "2026-09-16T07:31:49.987711+00:00",
+  "purpose": "Compare fresh shared SAC and PPO at the same live-experience budget with identical world, observations and physical action support.",
+  "seeds": [
+    51800
+  ],
+  "arm_order": {
+    "51800": [
+      "sac",
+      "ppo"
+    ]
+  },
+  "common": {
+    "workers": 1,
+    "live_steps": 100000,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0,
+    "reward_scale": 0.01,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600
+  },
+  "arms": {
+    "sac": {
+      "collection_steps": 128,
+      "learning_starts": 5000,
+      "buffer_size": 200000,
+      "batch_size": 256,
+      "gradient_steps": 1,
+      "entropy_initial": 0.01
+    },
+    "ppo": {
+      "algorithm": "ppo",
+      "rollout_steps": 256,
+      "batch_size": 512,
+      "epochs": 10,
+      "gae_lambda": 0.95,
+      "neutral_action_mean": true,
+      "progress_scale": 0.0,
+      "exploration": "gaussian"
+    }
+  },
+  "modules": {
+    "sac": {
+      "train": "atc_rl.train_sac",
+      "audit": "atc_rl.audit_sac"
+    },
+    "ppo": {
+      "train": "atc_rl.train",
+      "audit": "atc_rl.audit"
+    }
+  },
+  "collection_slots": {
+    "sac": 1280,
+    "ppo": 2560
+  },
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-comparison-source-v1-verify",
+  "source_bundle_sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "stages": [
+    "initial",
+    "50k",
+    "final"
+  ],
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "implementation_validation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-comparison-development-v1\\validation.json",
+  "primary_contrast": "For every physical metric, compare (SAC trained minus its own initial) with (PPO trained minus its own initial).",
+  "initial_control": "Both actors have zero deterministic actions, the same pre-transform Gaussian std and identical physical action mapping. Their deterministic initial metrics must match on all paired worlds; network tensors and initial critics are not matched.",
+  "checkpoint_selection": "First saved checkpoint at or above 50k within one collection chunk; final at or above 100k. Record exact live experience and all optimizer counts. Do not select the best checkpoint.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "resource_policy": "One simulator worker; sequential algorithms. Two existing PPO coordinators remain unchanged; combined local simulator use stays below five workers.",
+  "failure_behavior": "Stop this coordinator on technical failure, incomplete budget or identity mismatch. Retain all outputs and never auto-restart a failed run.",
+  "limitations": [
+    "One exploratory training seed and twenty repeatedly used development worlds; no unseen-scenario or across-seed claim.",
+    "PPO uses clipped Gaussian sampling and one value critic; SAC uses tanh-squashed Gaussian sampling and two action-value critics.",
+    "PPO and SAC differ in critic capacity, initialization, minibatches, replay reuse and optimizer budgets. This compares registered algorithm recipes, not a single isolated mechanism.",
+    "SAC entropy temperature is learned from .01; PPO entropy weight stays .01. Their entropy objectives are not equivalent.",
+    "SAC warmup is 5000 counted slots; actual live count before optimization is recorded. One gradient round per vector decision depends on worker count.",
+    "Equal seed values do not couple stochastic actions. Identical zero-action initial physical behavior is verified separately.",
+    "100k live transitions is a screening budget, not a convergence claim. Failing the screen does not rule out either algorithm at a larger budget.",
+    "Fixed route guidance and static-area filtering provide support; aircraft conflict filtering remains off.",
+    "Use reserved streams 20301/20302 only after candidate selection. Official stream 42 remains untouched."
+  ]
+}

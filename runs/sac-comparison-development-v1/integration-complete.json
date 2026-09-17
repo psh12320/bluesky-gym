@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "performance_evidence": false,
+  "matched_metric_values": {
+    "initial_sac_ppo": 180,
+    "trained_sac_vector_native": 180,
+    "unchanged_ppo_evaluation": 180,
+    "initial_sa_sac_ppo": 18
+  },
+  "training": {
+    "status": "complete",
+    "algorithm": "sac",
+    "live_transitions": 1280,
+    "padded_transitions": 0,
+    "counted_transitions": 1280,
+    "replay_size": 1280,
+    "optimizer_steps": 118,
+    "actor_optimizer_steps": 118,
+    "entropy_optimizer_steps": 118,
+    "gradient_rounds": 118,
+    "first_update": {
+      "live_transitions": 110,
+      "counted_transitions": 110
+    },
+    "worlds_completed": 0,
+    "aircraft_completed": 0,
+    "wall_seconds": 30.822426800004905,
+    "actor_and_critic_parameters_changed": true,
+    "source_unchanged": true,
+    "model_sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+    "training_seed": 49040,
+    "performance_evaluation": "Separate paired initial/trained/classical evaluations required"
+  },
+  "audit": {
+    "algorithm": "sac",
+    "status": "complete",
+    "model_sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9",
+    "live_transitions": 1280,
+    "optimizer_steps": 118,
+    "verified_checkpoints": 4,
+    "verified_source_files": 101,
+    "learning_rows": 2,
+    "aircraft_completed": 0,
+    "actor_parameter_count": 38916,
+    "critic_parameter_count": 220674,
+    "actor_and_critic_changed": true,
+    "actor_and_critics_use_local_inputs_only": true,
+    "finite_task_deadline": true,
+    "historical_replay_loaded": false,
+    "policy_quality_assessed": false
+  }
+}

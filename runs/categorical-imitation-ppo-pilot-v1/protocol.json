@@ -1,0 +1,102 @@
+{
+  "registered_at_utc": "2026-09-17T03:18:13.901627+00:00",
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-source-v1-verify",
+  "source_bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-source-v1.zip",
+  "source_bundle_sha256": "d72575b87b1e63f5cdd8fb0c77fe7db5d31017f7fbcb72f27dc2c13971275903",
+  "source_files": 156,
+  "static_navigation_cache": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-source-v1-verify\\runs\\simulator\\cache\\navdata.p",
+  "static_navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "protected_files": {
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-lr-recovery-v1\\paired-results.json": "7534580aead81385a284f75421fe4efb6d955ff015dfd8cca237a65fc5dd243a",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-development-v1\\complete.json": "c010b5cf332f5b4571c7d07638a47d4ceac7d1b0322b3d30ade73392f8318a9c",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-training-development-v1\\complete.json": "73b1a2d658faa59e16940f9b34c76551d0b1b5fb941ecb66f36e4af43b7bbd6b",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-single-agent-check-v1\\complete.json": "1e5d30f817d526e12c6f48970849e2d31422f77b4fbb141bb2705561293d5dca",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train\\complete.json": "fd609798f023be25c58232979729bde7efb538f1a6771da524ad026f9e736606",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train\\protocol.json": "8206e5e72eb910b5b84590defbc9ed7167c83e1f97f15062bbef1f6b8e0f0534",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train\\worlds.json": "f9b6d17d046700f6616d5ffa0599c9985a554e47edf67d08b52c0f3456995f6f",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train\\space.npz": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train\\input-schema.json": "0dee54bf881d451960ba8d2a2a50db484f0c69635ebef34d2450ce6638923e87",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation\\complete.json": "6ce0738e4a839680c67d7812af63e0ae55ca99a3e41096576e66286b31e860ec",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation\\protocol.json": "8d35a6494c4a2a6391021bf81106afe17634ee8ef822527712a3f9d793ccf878",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation\\worlds.json": "5204b0e1479ceef96b2cdbc06a5c4e09662aaf9cfd8ae42f95163e3029463922",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation\\space.npz": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation\\input-schema.json": "0dee54bf881d451960ba8d2a2a50db484f0c69635ebef34d2450ce6638923e87",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20\\aircraft.csv": "202955dcbe08427b0b537f51f4dcd59593b4a91e99cd6589c68c9d8105e61641",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20\\summary.json": "4b6492f17431cfe99bcc096cf3ece1e05bd784814b18b514c21e37030225b001",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20\\protocol.json": "074dfb27a42f29b0f6c1caabc200cd24d8bc76b0e8a68552fc539176d9c0da94",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20\\scenarios.json": "4eba8f13eeeb7893540fb95f5fcbc7abeb8bba4f0ed61455707ddfd11cbc4ee8"
+  },
+  "classical": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "teacher_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\demonstration-source-v1-verify",
+  "training_data": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train",
+  "validation_data": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation",
+  "supervised": {
+    "epochs": 40,
+    "batch_size": 1024,
+    "learning_rate": 0.0003,
+    "seed": 62300,
+    "exploration": "categorical",
+    "device": "cpu",
+    "intervention_fraction": 0.5
+  },
+  "ppo": {
+    "algorithm": "ppo",
+    "workers": 1,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "learning_rate": 0.0003,
+    "seed": 62320,
+    "device": "cpu",
+    "exploration": "categorical",
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 0
+  },
+  "evaluation": {
+    "episodes": 20,
+    "seed": 20260
+  },
+  "evaluation_stages": [
+    "untrained_navigation_prior",
+    "initial_supervised_policy",
+    "first_checkpoint_at_least_50k",
+    "fixed_final_checkpoint"
+  ],
+  "native_check": {
+    "episodes": 2,
+    "seed": 20260,
+    "env": "ma"
+  },
+  "motivation": "Continuous imitation averaged distinct heading commands; default-rate PPO improved clean completion but substantially delayed flights, while smaller-rate PPO did not improve clean completion. Test exact categorical maneuvers using the same demonstrations and unchanged support.",
+  "hypothesis": "A categorical policy can learn distinct hold/turn choices without averaging their angles; subsequent PPO can improve its own learned starting policy.",
+  "learning_rate_rationale": "Use the default PPO rate for the new categorical distribution. The Gaussian rate comparison does not establish an optimal categorical learning rate.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ],
+    "flight_time_relative_increase_at_most": 0.05
+  },
+  "screen_scope": "Only advance to multi-seed replication if passed; a pass is not a competition-quality claim. The new five-percent flight-time ceiling addresses the observed delay tradeoff and is registered before this pilot.",
+  "budget_accounting": "62,744 distinct teacher transitions; 40 complete supervised passes (2,480 Adam updates); separately count live/padded PPO transitions and optimizer steps.",
+  "selection": "Fixed final supervised epoch and fixed final PPO budget. Intermediate evaluations are learning curves, not checkpoint selection.",
+  "resources": "At most two simulator processes from this study at once: train alongside untrained-prior evaluation, then two concurrent evaluation stages. Other existing studies use at most two more workers.",
+  "limitations": [
+    "One exploratory training seed and reused development scenarios; no unseen or official scenarios.",
+    "The categorical navigation prior and actor output dimension differ from the continuous recipe, so cross-recipe differences are not a pure distribution ablation.",
+    "The teacher uses the frozen combined classical filter; the student receives local observations, route guidance and static-area filtering only.",
+    "Supervised fitting and navigation-prior gains are reported separately from additional PPO learning."
+  ],
+  "performance_claim_before_evaluation": false
+}

@@ -1,0 +1,32 @@
+{
+  "training_checks": [
+    {
+      "run": "smoke-route-residual-v1-train-400",
+      "timesteps": 400,
+      "optimizer_updates": 120,
+      "observation_shape": [
+        124
+      ],
+      "metadata_matches": true
+    },
+    {
+      "run": "smoke-route-residual-v1-resume-200",
+      "timesteps": 600,
+      "optimizer_updates": 200,
+      "observation_shape": [
+        124
+      ],
+      "metadata_matches": true
+    },
+    {
+      "run": "smoke-route-residual-v1-sa-train-200",
+      "timesteps": 200,
+      "optimizer_updates": 100,
+      "observation_shape": [
+        131
+      ],
+      "metadata_matches": true
+    }
+  ],
+  "stale_replay_mapping_rejected_before_run_creation": true
+}

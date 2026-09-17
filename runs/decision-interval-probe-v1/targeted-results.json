@@ -1,0 +1,402 @@
+{
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "scenario_sha256": "5135df8a67391ee1ec49329cd83efec3b604680fe8c6dd9a8e86cdce7703d180",
+  "script_sha256": "bd7b9a2ce53c72aae27a3ad887f80dad5b3a69df84f16c60780d4dcd246f497d",
+  "scope": "Selected MA development failure; no population or additional training claim",
+  "unchanged": "Policy weights, nominal per-command ranges, route planning, joint filter, original simulator and one-second scoring",
+  "caveat": "More frequent decisions also permit more frequent heading and speed changes; this is not an isolated observation-latency change.",
+  "arms": {
+    "10": {
+      "summary": {
+        "episodes": 1,
+        "agent_episodes": 10,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 903.1,
+            "std": 287.7410120229648
+          },
+          "intrusion_events": {
+            "mean": 0.2,
+            "std": 0.4000000000000001
+          },
+          "intrusion_time": {
+            "mean": 7.2,
+            "std": 14.400000000000002
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": 30.5771479787318,
+            "std": 13.626973074755545
+          }
+        },
+        "clean_completion_rate": 0.8,
+        "all_aircraft_clean_completion_rate": 0.0
+      },
+      "records": [
+        {
+          "episode": 0,
+          "agent": "KL009",
+          "total_reward": 37.41202009916185,
+          "flight_time": 583.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL0010",
+          "total_reward": 37.41233450686381,
+          "flight_time": 610.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL008",
+          "total_reward": 37.40464007469593,
+          "flight_time": 698.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL005",
+          "total_reward": 3.3603230736094645,
+          "flight_time": 740.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 1,
+          "intrusion_time": 36.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL007",
+          "total_reward": 37.39388488851123,
+          "flight_time": 773.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL002",
+          "total_reward": 37.395191338424404,
+          "flight_time": 821.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL006",
+          "total_reward": 37.40049660380202,
+          "flight_time": 944.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL003",
+          "total_reward": 37.385284010140104,
+          "flight_time": 1064.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL004",
+          "total_reward": 3.2862106760918337,
+          "flight_time": 1281.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 1,
+          "intrusion_time": 36.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL001",
+          "total_reward": 37.32109451601736,
+          "flight_time": 1517.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        }
+      ],
+      "world_decisions": 152,
+      "wall_seconds": 46.32968450000044,
+      "scoring_interval_seconds": 1,
+      "traffic_statistics": {
+        "actions": 908,
+        "interventions": 175,
+        "speed_interventions": 9,
+        "nominal_static_violation": 34,
+        "nominal_traffic_conflict": 141,
+        "no_static_feasible_candidate": 0,
+        "no_jointly_feasible_candidate": 25
+      },
+      "all_nine_reference_metrics_exact": true,
+      "maximum_absolute_metric_differences": {
+        "waypoint_reached": 0.0,
+        "flight_time": 0.0,
+        "intrusion_events": 0.0,
+        "intrusion_time": 0.0,
+        "restricted_area_events": 0.0,
+        "time_in_restricted_area": 0.0,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 0.0
+      }
+    },
+    "5": {
+      "summary": {
+        "episodes": 1,
+        "agent_episodes": 10,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 912.3,
+            "std": 291.1717877817149
+          },
+          "intrusion_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "intrusion_time": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": 37.351496703850316,
+            "std": 0.06370485792365693
+          }
+        },
+        "clean_completion_rate": 1.0,
+        "all_aircraft_clean_completion_rate": 1.0
+      },
+      "records": [
+        {
+          "episode": 0,
+          "agent": "KL009",
+          "total_reward": 37.40786324012589,
+          "flight_time": 583.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL0010",
+          "total_reward": 37.40802911719411,
+          "flight_time": 610.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL008",
+          "total_reward": 37.40704737753597,
+          "flight_time": 680.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL007",
+          "total_reward": 37.358922990005915,
+          "flight_time": 774.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL005",
+          "total_reward": 37.3639133562302,
+          "flight_time": 810.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL002",
+          "total_reward": 37.37265965902211,
+          "flight_time": 821.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL006",
+          "total_reward": 37.38355495178443,
+          "flight_time": 944.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL003",
+          "total_reward": 37.352352081476056,
+          "flight_time": 1066.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL004",
+          "total_reward": 37.2361024042574,
+          "flight_time": 1315.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        },
+        {
+          "episode": 0,
+          "agent": "KL001",
+          "total_reward": 37.224521860871064,
+          "flight_time": 1520.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        }
+      ],
+      "world_decisions": 304,
+      "wall_seconds": 65.95295919995988,
+      "scoring_interval_seconds": 1,
+      "traffic_statistics": {
+        "actions": 1827,
+        "interventions": 360,
+        "speed_interventions": 9,
+        "nominal_static_violation": 48,
+        "nominal_traffic_conflict": 312,
+        "no_static_feasible_candidate": 0,
+        "no_jointly_feasible_candidate": 14
+      }
+    }
+  }
+}

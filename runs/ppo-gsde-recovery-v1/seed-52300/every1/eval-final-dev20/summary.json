@@ -1,0 +1,76 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.995,
+      "std": 0.07053367989832943
+    },
+    "flight_time": {
+      "mean": 1065.515,
+      "std": 449.0953905074066
+    },
+    "intrusion_events": {
+      "mean": 1.48,
+      "std": 1.3302631318652713
+    },
+    "intrusion_time": {
+      "mean": 115.29,
+      "std": 159.71147704532697
+    },
+    "restricted_area_events": {
+      "mean": 0.015,
+      "std": 0.1215524578114322
+    },
+    "time_in_restricted_area": {
+      "mean": 0.39,
+      "std": 4.500877692184047
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -72.09522709544555,
+      "std": 151.95825543325088
+    }
+  },
+  "clean_completion_rate": 0.275,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 42705,
+  "padded_transitions": 21395,
+  "world_decisions": 6410,
+  "aircraft_terminated": 199,
+  "aircraft_truncated": 1,
+  "wall_seconds": 51231.26412829999,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false
+  },
+  "csv_sha256": "864955291ad01e52b608b4d7345fd901008ac93e69b0b92f1cabca90fdbf0d80"
+}

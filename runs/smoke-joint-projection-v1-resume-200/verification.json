@@ -1,0 +1,8 @@
+{
+  "initial_steps": 400,
+  "resumed_steps": 600,
+  "initial_updates": 120,
+  "resumed_updates": 200,
+  "joint_settings_preserved": true,
+  "incompatible_replay_switch_rejected": true
+}

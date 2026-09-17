@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-09-16T03:58:22.100209+00:00",
+  "unit_tests": {
+    "tests": 133,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "integration": {
+    "same_initial_actor_and_critic_tensors": true,
+    "initial_policy_fingerprint": "ad867ec9e93870b346fdca71c11b918629ac247de2f4f1059f75b3a8ce06a7e7",
+    "actor_parameters_each": 38660,
+    "critic_parameters_each": 109825,
+    "smoke_live_transitions_by_arm": {
+      "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cpa-mask-development-v1\\features\\train": 1280,
+      "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cpa-mask-development-v1\\zeros\\train": 1280
+    },
+    "masked_initial_physical_metrics_identical": 180,
+    "worlds": 2,
+    "masked_checkpoint_reload_uses_recorded_features": true,
+    "performance_evidence": false,
+    "scope": "Small integration runs, excluded from pilot performance claims."
+  },
+  "unchanged_controller_and_simulator_files": 64,
+  "verified_archive_sha256": {
+    "onpolicy-cluster-reload-fix-v1": "d3c98a95e061d827ab295b1e458dd42e30c308ef2d1c45902b23ce372b6802c3",
+    "cluster-ppo-baseline-v1": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+    "onpolicy-learning-source-v2": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c",
+    "onpolicy-goal-offset-source-v1": "abd2a67c99a9adfc5bd5540c33bb5f7659a04aa1ce108e5120b7c35b58b7e695",
+    "onpolicy-cpa-source-v1": "7eb8df2ea08d3dda66ae2e70f6aafc430965d877c448d0a466809ae9fa70a816",
+    "onpolicy-cpa-source-v2": "e6048403809a7c1121291a8b16590946d71a991788717798fd85498e9c15fe71"
+  },
+  "frozen_runtime_sources_verified": true,
+  "performance_evidence": false
+}

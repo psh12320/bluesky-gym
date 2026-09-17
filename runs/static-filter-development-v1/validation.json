@@ -1,0 +1,104 @@
+{
+  "verified_at_utc": "2026-09-16T05:02:16.967351+00:00",
+  "unit_tests": {
+    "tests.xml": {
+      "tests": 142,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "pair-tests.xml": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_tests_passed": 149,
+  "integration": {
+    "guard_selection_cases": 4,
+    "classical_physical_metrics_unchanged": 180,
+    "legacy_checkpoint_physical_metrics_unchanged": 180,
+    "ppo_mappo_initial_actor_identity": {
+      "initial_actor_tensors_identical": true,
+      "actor_parameters": 38660,
+      "ppo_critic_parameters": 109825,
+      "mappo_critic_parameters": 550145
+    },
+    "smoke_live_transitions": {
+      "ppo": 1280,
+      "mappo": 1280
+    },
+    "static_only_checkpoint_reload_verified": true,
+    "performance_evidence": false
+  },
+  "cluster_jobs": {
+    "six_job_rows_dry_run": [
+      {
+        "index": 0,
+        "seed": 50800,
+        "arm": "features",
+        "command_count": 10,
+        "evaluation_count": 5
+      },
+      {
+        "index": 1,
+        "seed": 50800,
+        "arm": "zeros",
+        "command_count": 9,
+        "evaluation_count": 5
+      },
+      {
+        "index": 2,
+        "seed": 50900,
+        "arm": "zeros",
+        "command_count": 9,
+        "evaluation_count": 5
+      },
+      {
+        "index": 3,
+        "seed": 50900,
+        "arm": "features",
+        "command_count": 9,
+        "evaluation_count": 5
+      },
+      {
+        "index": 4,
+        "seed": 51000,
+        "arm": "features",
+        "command_count": 9,
+        "evaluation_count": 5
+      },
+      {
+        "index": 5,
+        "seed": 51000,
+        "arm": "zeros",
+        "command_count": 9,
+        "evaluation_count": 5
+      }
+    ],
+    "all_cluster_base_files_identical": 127,
+    "unchanged_controller_and_simulator_files": 64,
+    "preserved_old_archives": {
+      "onpolicy-cluster-reload-fix-v1": "d3c98a95e061d827ab295b1e458dd42e30c308ef2d1c45902b23ce372b6802c3",
+      "cluster-ppo-baseline-v1": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+      "onpolicy-learning-source-v2": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c",
+      "onpolicy-goal-offset-source-v1": "abd2a67c99a9adfc5bd5540c33bb5f7659a04aa1ce108e5120b7c35b58b7e695",
+      "onpolicy-cpa-source-v1": "7eb8df2ea08d3dda66ae2e70f6aafc430965d877c448d0a466809ae9fa70a816",
+      "onpolicy-cpa-source-v2": "e6048403809a7c1121291a8b16590946d71a991788717798fd85498e9c15fe71"
+    },
+    "slurm_syntax_checked_separately": true,
+    "simulator_integration": "See integration-complete.json",
+    "performance_jobs_submitted": false
+  },
+  "cluster_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cluster-ppo-static-v1.zip",
+    "sha256": "a0ad40c1e209cc7d33675e20250f02348a3f4d2e90b903ac69f0c1ba77dafb53",
+    "files": 134,
+    "bytes": 259637,
+    "base_bundle_sha256": "37d3ce7b264dd96ba1c0804224263ee616056ffb609f8a88b5cd3ecbe3525b1a"
+  },
+  "ready_for_manual_cluster_submission": true,
+  "submitted": false,
+  "new_performance_claim": false
+}

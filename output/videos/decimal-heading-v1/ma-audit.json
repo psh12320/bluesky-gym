@@ -1,0 +1,68 @@
+{
+  "env": "ma",
+  "episodes": 5,
+  "seed": 2026,
+  "heading_transport": {
+    "revision": 1,
+    "encoding": "plain_decimal"
+  },
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "deployment_manifest_sha256": "44034e213b22719f2d076f53b771f637497affa9f8f8d7f29b4fff35768342e4",
+  "recording_sha256": "44bda7a9a381b95a779831865521cc17f81d22fd0be8039e6f4fc9863d6e4a05",
+  "reel_sha256": "f256514d94a74eb68dc8e8fea71fbe54786eb5f4c05b0c176bef928284f0b39c",
+  "reel_frame_count": 353,
+  "matches_original_reel_bytes": false,
+  "file": "ma-first-five.mp4",
+  "mp4_sha256": "41f6427a993529988a1af716cb893c8c03f65ec8fa88a895e7bacd208fb91766",
+  "duration_seconds": 44.8,
+  "bytes": 1274979,
+  "codec": "h264",
+  "full_stream_decodes": true,
+  "visual_check_frames": {
+    "motion": "ma-motion-check.png",
+    "final": "ma-final-check.png"
+  },
+  "visual_inspection": {
+    "in_flight_frame_inspected": true,
+    "final_frame_inspected": true,
+    "metrics_headers_readable": true,
+    "original_simulator_view_preserved": true
+  },
+  "all_nine_metrics_exact": true,
+  "scope": "First five development scenarios; corrected deployment, not a population estimate or official-protocol score",
+  "conversion_command": [
+    "C:\\ffmpeg\\bin\\ffmpeg.exe",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-n",
+    "-ignore_loop",
+    "1",
+    "-i",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\preview-decimal-v1\\ma\\five-scenario-reel.gif",
+    "-vf",
+    "fps=10",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-threads",
+    "1",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "-an",
+    "-metadata",
+    "title=MA first five development scenarios, decimal heading transport revision 1",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\output\\videos\\decimal-heading-v1\\ma-first-five.mp4"
+  ],
+  "decoded_original_reel_comparison": {
+    "frames": 353,
+    "changed_rgb_frames": [],
+    "all_durations_match": true
+  }
+}

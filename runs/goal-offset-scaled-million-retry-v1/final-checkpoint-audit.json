@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+  "algorithm": "ppo",
+  "status": "wall_limit_before_budget",
+  "live_transitions": 948398,
+  "padded_transitions": 249682,
+  "optimizer_steps": 10156,
+  "verified_checkpoints": 11,
+  "verified_source_files": 89,
+  "learning_curve_rows": 234,
+  "aircraft_completed": 5523,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "dec5dc24e64da553b140de9d64d68e67a97114fea09d546e3a4b357fe4e62559",
+  "policy_quality_assessed": false
+}

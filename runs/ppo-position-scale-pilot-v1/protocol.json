@@ -1,0 +1,86 @@
+{
+  "registered_at_utc": "2026-09-16T06:33:43.510791+00:00",
+  "purpose": "Matched Gaussian PPO pilot of existing relative-position input conditioning; no action or feature-information change.",
+  "seeds": [
+    51600
+  ],
+  "arm_order": {
+    "51600": [
+      "original",
+      "scaled"
+    ]
+  },
+  "config": {
+    "algorithm": "ppo",
+    "workers": 1,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "device": "cpu",
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600,
+    "static_filter": true,
+    "mask_conflict_features": false,
+    "initial_action_std": 0.05,
+    "exploration": "gaussian"
+  },
+  "arms": {
+    "original": {
+      "traffic_position_scale": 1.0
+    },
+    "scaled": {
+      "traffic_position_scale": 20.0
+    }
+  },
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-position-source-v1-verify",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-position-source-v1-verify",
+  "source_bundle_sha256": "f8a31797cffd66c74c3259cde4f0115ab29b6a1b87271e2b8cf39322fee863af",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "stages": [
+    "initial",
+    "50k",
+    "final"
+  ],
+  "checkpoint_selection": "First saved checkpoint at/above 50k, within one full 2560-slot rollout; retain exact live counts.",
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "capacity_control": "Same local inputs and 170-dimensional architecture, parameters, full initial tensors, and Gaussian exploration. Multiply existing x_r/y_r by 20 in one arm only.",
+  "learning_control": "Each run is evaluated against its own saved zero-experience policy; paired initial behavior must be identical.",
+  "primary_contrast": "For each metric: (trained - own initial) with scale 20 minus (trained - own initial) with scale 1.",
+  "aggregation": "One exploratory training seed. Report both arms and all checkpoints; no across-seed or generalization claim.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "resource_policy": "One simulator worker, sequential arms; existing evaluators are preserved. Do not launch before the rescaling integration succeeds.",
+  "limitations": [
+    "One training seed, 100k live transitions, and twenty repeatedly used development worlds.",
+    "The diagnostic gradient shares are not causal feature importance and do not prove a scaling problem.",
+    "Both actor and critic receive the rescaling; this is not an actor-only intervention.",
+    "Initial full tensors and neutral actor distributions match, but initial critic predictions need not match.",
+    "Fixed route guidance and static guards supply support; aircraft-conflict filtering stays disabled.",
+    "The wider Gaussian pilot failed the multi-metric screen; use the same 0.05 Gaussian standard deviation in both arms here.",
+    "Classical data are the preserved fixed Windows benchmark from an earlier evaluator revision.",
+    "Unseen streams and official evaluation remain reserved; the cluster static-support bundle is unchanged."
+  ],
+  "failure_behavior": "Stop this coordinator on a failed check or incomplete budget, preserve every artifact, and do not restart automatically.",
+  "training_bundle_sha256": "f8a31797cffd66c74c3259cde4f0115ab29b6a1b87271e2b8cf39322fee863af",
+  "initial_control": "Full initial policy tensors and Gaussian action distributions match; the changed inputs can affect initial critic values.",
+  "source_review": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\traffic-input-sensitivity-v1\\results.json",
+  "previous_exploration_result": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-exploration-static-pilot-v1\\paired-results.json"
+}

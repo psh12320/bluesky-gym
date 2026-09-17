@@ -1,0 +1,43 @@
+{
+  "created_at_utc": "2026-09-15T19:35:34.230009+00:00",
+  "algorithm": "ppo",
+  "seed": 49900,
+  "workers": 2,
+  "live_transition_budget": 100000,
+  "finish_current_rollout": true,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "action_reference": "goal_offset",
+  "initial_action_std": 0.05,
+  "neutral_action_mean": true,
+  "guidance": false,
+  "filter": false,
+  "progress_scale": 0.0,
+  "reward_scale": 1.0,
+  "source_bundle_sha256": "abd2a67c99a9adfc5bd5540c33bb5f7659a04aa1ce108e5120b7c35b58b7e695",
+  "control_run": "runs/ppo-initialization-v1/train-neutral-std0p05",
+  "changed_factor": "Heading actions choose an offset from the observed goal bearing instead of cumulative heading increments.",
+  "physical_noise_caveat": "The same normalized Gaussian standard deviation means 4.5-degree offset noise instead of 2.25-degree increment noise before aircraft dynamics.",
+  "required_validation": "Four support configurations must preserve observations, native rewards, terminals and metrics against equivalent direct bearing commands.",
+  "evaluation": {
+    "seed": 20260,
+    "worlds": 20,
+    "initial_and_trained_checkpoints": true,
+    "classical_reference": "runs/ppo-direct-pilot-v1/eval-classical-dev20",
+    "own_initial_required": true,
+    "source": "onpolicy-goal-offset-source-v1-verify"
+  },
+  "advancement_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "limitations": "One-seed development screen, not generalization. Mapping-induced navigation is not learned progress. Unseen streams remain reserved."
+}

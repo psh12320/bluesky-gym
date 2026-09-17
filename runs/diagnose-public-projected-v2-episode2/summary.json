@@ -1,0 +1,167 @@
+{
+  "episode": 2,
+  "seed": 2026,
+  "model": "runs\\public-projected-v2-391k\\model.zip",
+  "sampling_seconds": 10,
+  "final_metrics": [
+    {
+      "agent": "KL006",
+      "total_reward": 37.381990047760446,
+      "flight_time": 686.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL003",
+      "total_reward": 37.399374749060414,
+      "flight_time": 711.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL007",
+      "total_reward": 37.388184589432186,
+      "flight_time": 784.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL009",
+      "total_reward": 37.38069217839995,
+      "flight_time": 849.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL008",
+      "total_reward": 37.362716967961816,
+      "flight_time": 855.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL004",
+      "total_reward": 37.34551075057383,
+      "flight_time": 862.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL005",
+      "total_reward": -14.658480682849003,
+      "flight_time": 874.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 1,
+      "intrusion_time": 55.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL0010",
+      "total_reward": -14.623815095683405,
+      "flight_time": 893.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 1,
+      "intrusion_time": 55.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL001",
+      "total_reward": 37.366943978897346,
+      "flight_time": 1122.0,
+      "waypoint_reached": 1,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    },
+    {
+      "agent": "KL002",
+      "total_reward": -0.4081000131171611,
+      "flight_time": 3000.0,
+      "waypoint_reached": 0,
+      "intrusion_events": 0,
+      "intrusion_time": 0.0,
+      "sector_exit_events": 0,
+      "time_outside_sector": 0.0,
+      "restricted_area_events": 0,
+      "time_in_restricted_area": 0.0
+    }
+  ],
+  "inference_mode": "per_aircraft",
+  "mean_metrics": {
+    "waypoint_reached": 0.9,
+    "flight_time": 1063.6,
+    "intrusion_events": 0.2,
+    "intrusion_time": 11.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 23.193501747043644
+  },
+  "trajectory_statistics": {
+    "cas_mps": {
+      "mean": 158.85715165012658,
+      "min": 135.84101747269068,
+      "max": 162.99999999999994
+    },
+    "goal_distance_km": {
+      "mean": 87.27004507922736,
+      "min": 5.037947818791195,
+      "max": 236.3717549519725
+    },
+    "heading_error_deg": {
+      "mean": -9.983016412900605,
+      "min": -173.78831505251344,
+      "max": 172.74754941196
+    },
+    "heading_action": {
+      "mean": 0.006161679610456675,
+      "min": -0.9988864660263062,
+      "max": 0.9953444004058838
+    },
+    "speed_action": {
+      "mean": 0.32128914373851025,
+      "min": -0.9956976175308228,
+      "max": 0.9936444759368896
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"arm": "initial_replay", "worlds_completed": 1}
+{"arm": "initial_replay", "worlds_completed": 2}
+{"arm_complete": "initial_replay", "clean_completion": 0.35}
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"arm": "trained_replay", "worlds_completed": 1}
+{"arm": "trained_replay", "worlds_completed": 2}
+{"arm_complete": "trained_replay", "clean_completion": 0.8}
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"arm": "trained_heading", "worlds_completed": 1}
+{"arm": "trained_heading", "worlds_completed": 2}
+{"arm": "trained_heading", "worlds_completed": 3}
+{"arm": "trained_heading", "worlds_completed": 4}
+{"arm": "trained_heading", "worlds_completed": 5}
+{"arm": "trained_heading", "worlds_completed": 6}
+{"arm": "trained_heading", "worlds_completed": 7}
+{"arm": "trained_heading", "worlds_completed": 8}
+{"arm": "trained_heading", "worlds_completed": 9}
+{"arm": "trained_heading", "worlds_completed": 10}
+{"arm": "trained_heading", "worlds_completed": 11}
+{"arm": "trained_heading", "worlds_completed": 12}
+{"arm": "trained_heading", "worlds_completed": 13}
+{"arm": "trained_heading", "worlds_completed": 14}
+{"arm": "trained_heading", "worlds_completed": 15}
+{"arm": "trained_heading", "worlds_completed": 16}
+{"arm": "trained_heading", "worlds_completed": 17}
+{"arm": "trained_heading", "worlds_completed": 18}
+{"arm": "trained_heading", "worlds_completed": 19}
+{"arm": "trained_heading", "worlds_completed": 20}
+{"arm_complete": "trained_heading", "clean_completion": 0.535}
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"arm": "trained_speed", "worlds_completed": 1}
+{"arm": "trained_speed", "worlds_completed": 2}
+{"arm": "trained_speed", "worlds_completed": 3}
+{"arm": "trained_speed", "worlds_completed": 4}
+{"arm": "trained_speed", "worlds_completed": 5}
+{"arm": "trained_speed", "worlds_completed": 6}
+{"arm": "trained_speed", "worlds_completed": 7}
+{"arm": "trained_speed", "worlds_completed": 8}
+{"arm": "trained_speed", "worlds_completed": 9}
+{"arm": "trained_speed", "worlds_completed": 10}
+{"arm": "trained_speed", "worlds_completed": 11}
+{"arm": "trained_speed", "worlds_completed": 12}
+{"arm": "trained_speed", "worlds_completed": 13}
+{"arm": "trained_speed", "worlds_completed": 14}
+{"arm": "trained_speed", "worlds_completed": 15}
+{"arm": "trained_speed", "worlds_completed": 16}
+{"arm": "trained_speed", "worlds_completed": 17}
+{"arm": "trained_speed", "worlds_completed": 18}
+{"arm": "trained_speed", "worlds_completed": 19}
+{"arm": "trained_speed", "worlds_completed": 20}
+{"arm_complete": "trained_speed", "clean_completion": 0.35}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-component-swap-v1\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-component-swap-v1\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-component-swap-v1\workers\world-0\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-component-swap-v1\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-component-swap-v1\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-component-swap-v1\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"status": "complete", "candidate_promoted": false}

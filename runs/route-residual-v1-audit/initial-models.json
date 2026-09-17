@@ -1,0 +1,14 @@
+[
+  {
+    "path": "runs\\smoke-route-residual-v1-train-400\\initial-model.zip",
+    "timesteps": 0,
+    "optimizer_updates": 0,
+    "sha256": "0b17e145a34d1a4a26f64115ee91a96e91b669b9a5b7781a842a559c602e2153"
+  },
+  {
+    "path": "runs\\smoke-route-residual-v1-sa-train-200\\initial-model.zip",
+    "timesteps": 0,
+    "optimizer_updates": 0,
+    "sha256": "70c826f504f0e16b488dfbd46486234b1ff33c45ae592bb1013ece1fd829ea67"
+  }
+]

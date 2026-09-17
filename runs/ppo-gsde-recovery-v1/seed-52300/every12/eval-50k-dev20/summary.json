@@ -1,0 +1,76 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.975,
+      "std": 0.15612494995995996
+    },
+    "flight_time": {
+      "mean": 1288.195,
+      "std": 544.2995471015937
+    },
+    "intrusion_events": {
+      "mean": 1.6,
+      "std": 1.3928388277184118
+    },
+    "intrusion_time": {
+      "mean": 185.67,
+      "std": 353.39264437732714
+    },
+    "restricted_area_events": {
+      "mean": 0.02,
+      "std": 0.13999999999999999
+    },
+    "time_in_restricted_area": {
+      "mean": 0.515,
+      "std": 4.0987528591023885
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -139.49113658635218,
+      "std": 339.10896303060787
+    }
+  },
+  "clean_completion_rate": 0.235,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 51612,
+  "padded_transitions": 31218,
+  "world_decisions": 8283,
+  "aircraft_terminated": 195,
+  "aircraft_truncated": 5,
+  "wall_seconds": 460.0940016999957,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false
+  },
+  "csv_sha256": "499c3ee178d8de380fe933df717c64d3b94838d3ec425a5b7e594be4d459490a"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+    "-m",
+    "atc_rl.evaluate",
+    "--model",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\g0-f1\\initial-model.zip",
+    "--episodes",
+    "20",
+    "--seed",
+    "20260",
+    "--out",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\eval-g0-f1-dev20"
+  ],
+  "cwd": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-goal-offset-source-v1-verify",
+  "started_at_utc": "2026-09-16T02:37:25.120111+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "screen_passed": false,
+  "checks": [
+    {
+      "metric": "arrival",
+      "observed": 1.0,
+      "minimum": 0.95,
+      "passed": true
+    },
+    {
+      "metric": "arrival_change",
+      "observed": 0.0,
+      "minimum": -0.02,
+      "passed": true
+    },
+    {
+      "metric": "clean_completion_change",
+      "observed": -0.015000000000000003,
+      "minimum": 0.05,
+      "passed": false
+    },
+    {
+      "metric": "intrusion_time_change",
+      "observed": 1.7599999999999998,
+      "maximum": 0.0,
+      "passed": false
+    },
+    {
+      "metric": "time_in_restricted_area_change",
+      "observed": 4.4,
+      "maximum": 0.0,
+      "passed": false
+    },
+    {
+      "metric": "time_outside_sector_change",
+      "observed": 0.0,
+      "maximum": 0.0,
+      "passed": true
+    }
+  ],
+  "comparison_sha256": "a79582964fa5be22871865e272c4c8bf6e9d2aae20bc9bff2be77765398b11de",
+  "protocol_sha256": "30779943b7e70c199d4d4b65a3786981684ea4a23548fc8807a9cd59e13d5f3a",
+  "decision": "No learned safety gain established at 103226 live transitions. Do not promote as a successful RL system.",
+  "next_investigation": "Matched longer-budget and reward-scale runs will test whether additional experience or optimization scale can produce a learning contribution; the current pilot remains a failed screen."
+}

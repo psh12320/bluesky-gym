@@ -1,0 +1,50 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "dbb06c303fea556566e1733f2be658e105f71d68e2e2667242f6dd44068a33d4",
+    "live_transitions": 0,
+    "padded_transitions": 0,
+    "counted_transitions": 0,
+    "replay_size": 0,
+    "optimizer_steps": 0,
+    "actor_optimizer_steps": 0,
+    "entropy_optimizer_steps": 0,
+    "gradient_rounds": 0
+  },
+  {
+    "file": "policy-live-50477.zip",
+    "sha256": "97e5f8f9234ff88a887d2742ebeeae14e7d1a8870c8f133f1104ac0c806ec2d3",
+    "live_transitions": 50477,
+    "padded_transitions": 27603,
+    "counted_transitions": 78080,
+    "replay_size": 50477,
+    "optimizer_steps": 7308,
+    "actor_optimizer_steps": 7308,
+    "entropy_optimizer_steps": 7308,
+    "gradient_rounds": 7308
+  },
+  {
+    "file": "policy-live-100441.zip",
+    "sha256": "61f23006dcc7f5299aa8d75aa3e2172adcf2e8a3050affdceb62a28325346a29",
+    "live_transitions": 100441,
+    "padded_transitions": 55719,
+    "counted_transitions": 156160,
+    "replay_size": 100441,
+    "optimizer_steps": 15116,
+    "actor_optimizer_steps": 15116,
+    "entropy_optimizer_steps": 15116,
+    "gradient_rounds": 15116
+  },
+  {
+    "file": "model.zip",
+    "sha256": "61f23006dcc7f5299aa8d75aa3e2172adcf2e8a3050affdceb62a28325346a29",
+    "live_transitions": 100441,
+    "padded_transitions": 55719,
+    "counted_transitions": 156160,
+    "replay_size": 100441,
+    "optimizer_steps": 15116,
+    "actor_optimizer_steps": 15116,
+    "entropy_optimizer_steps": 15116,
+    "gradient_rounds": 15116
+  }
+]

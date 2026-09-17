@@ -1,0 +1,26 @@
+{
+  "training_summary": {
+    "timesteps": 25000,
+    "new_timesteps": 25000,
+    "wall_seconds": 848.7086404000293,
+    "critic_updates": 8000,
+    "held_actor_updates": 0,
+    "actor_updates": 8000,
+    "live_transitions": 15426,
+    "skipped_transitions": 9574,
+    "new_live_transitions": 15426,
+    "new_skipped_transitions": 9574
+  },
+  "models": {
+    "checkpoints/model_25000_steps.zip": {
+      "sha256": "069d02fcce6238e68abf71fbe55508106723c944ad0d4e4647e4a4dae88aa84f",
+      "timesteps": 25000,
+      "critic_updates": 7996
+    },
+    "model.zip": {
+      "sha256": "4204b0ffccae63d892ae7de95dbc3433ff4a62822ae82943444c6ee9f3812057",
+      "timesteps": 25000,
+      "critic_updates": 8000
+    }
+  }
+}

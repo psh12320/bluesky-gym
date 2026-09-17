@@ -1,0 +1,45 @@
+{
+  "seed": 2026,
+  "episodes_per_track": 1,
+  "controller": "neutral",
+  "purpose": "Observation adapter consistency, not policy quality or forecast accuracy",
+  "tracks": {
+    "ma": {
+      "aircraft_decisions": 857,
+      "present_slots": 7012,
+      "absent_slots": 701,
+      "predicted_conflict_slots": 192,
+      "traffic_populations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "max_position_error_m": 2.1100277081131935e-10,
+      "max_velocity_error_mps": 1.1368683772161603e-13,
+      "max_feature_error": 7.105427357601002e-15,
+      "no_wind_verified": true,
+      "passed": true
+    },
+    "sa": {
+      "aircraft_decisions": 78,
+      "present_slots": 780,
+      "absent_slots": 0,
+      "predicted_conflict_slots": 13,
+      "traffic_populations": [
+        11
+      ],
+      "max_position_error_m": 2.1191226551309228e-10,
+      "max_velocity_error_mps": 8.526512829121202e-14,
+      "max_feature_error": 4.440892098500626e-15,
+      "no_wind_verified": true,
+      "passed": true
+    }
+  }
+}

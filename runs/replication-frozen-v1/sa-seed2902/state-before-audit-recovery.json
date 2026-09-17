@@ -1,0 +1,53 @@
+{
+  "track": "sa",
+  "training_seed": 2902,
+  "started_at_utc": "2026-09-15T11:49:03.055375+00:00",
+  "protocol_sha256": "c8efeedd860d54e619c4f35b7fe7284d0bd5b5fa52c09978e55745b694916177",
+  "stages": [
+    {
+      "name": "train",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.train",
+        "--env",
+        "ma",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual_reach250",
+        "--guard-traffic",
+        "--workers",
+        "1",
+        "--steps",
+        "25000",
+        "--seed",
+        "2902",
+        "--device",
+        "cpu",
+        "--run-dir",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-fast-reference-reach250-v1-25k-seed2902",
+        "--checkpoint-every",
+        "25000",
+        "--learning-starts",
+        "5000",
+        "--gradient-steps",
+        "4",
+        "--batch-size",
+        "256",
+        "--buffer-size",
+        "100000",
+        "--save-replay",
+        "--max-wall-seconds",
+        "0"
+      ],
+      "started_at_utc": "2026-09-15T11:49:03.082283+00:00",
+      "pid": 41928,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T11:58:14.655823+00:00"
+    }
+  ],
+  "status": "failed",
+  "error": "AssertionError()"
+}

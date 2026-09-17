@@ -1,0 +1,23 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\position-scale-development-v1\\ppo\\train",
+  "algorithm": "ppo",
+  "exploration": "gaussian",
+  "sde_weight_std": null,
+  "sde_sample_freq": null,
+  "status": "complete",
+  "live_transitions": 1280,
+  "padded_transitions": 0,
+  "optimizer_steps": 7,
+  "verified_checkpoints": 3,
+  "verified_source_files": 98,
+  "learning_curve_rows": 2,
+  "aircraft_completed": 0,
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 109825,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "0e2b8d752b754720e1d0b3bc717ab6a9fe74f5c03852bc60351d6775c929795d",
+  "policy_quality_assessed": false
+}

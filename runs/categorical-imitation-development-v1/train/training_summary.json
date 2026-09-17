@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "algorithm": "ppo",
+  "live_transitions": 4518,
+  "padded_transitions": 1242,
+  "counted_transitions": 5760,
+  "optimizer_steps": 76,
+  "policy_epochs": 18,
+  "rollouts": 9,
+  "worlds_completed": 2,
+  "aircraft_completed": 20,
+  "wall_seconds": 57.918177300001844,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "0e8092c6a05757680e810fc1066ed0ecaa7298ba023d41f94861c80826d904c1",
+  "training_seed": 62220,
+  "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations.",
+  "pretraining": {
+    "method": "behavior_cloning",
+    "original_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-development-v1\\bc",
+    "archived_directory": "pretraining",
+    "archived_files": {
+      "model.zip": "f25dc8176d8fb9f2ef2c0c80e92c8b0defddb4cc3ab1909da93e01e65c3de937",
+      "config.json": "be43112d59122bcf56beca5114bd6dce7cc28d38f9567ef8e4606b9e809a18bc",
+      "training_summary.json": "8e59786dd6953a8cd61b3b7d044a1ddde7ca5bccb821298faa6fc5863ec920db",
+      "checkpoints.json": "b87070bed955c81ecfab18c5317744c6c86a06b07aaf01211afddecb3c028c9d",
+      "provenance.json": "5d980e512e1f80ac7f9629d151d9982d5659f3bc4035f21be88060ce76067332"
+    },
+    "parent_checkpoint": {
+      "file": "model.zip",
+      "sha256": "f25dc8176d8fb9f2ef2c0c80e92c8b0defddb4cc3ab1909da93e01e65c3de937",
+      "policy_fingerprint": "e4b4aa5a6a3d4c0bdebad167315d6263fbdc7832b66fa1edc3adea5830a704f1",
+      "live_transitions": 0,
+      "counted_transitions": 0,
+      "padded_transitions": 0,
+      "optimizer_steps": 0,
+      "policy_epochs": 0,
+      "rollouts": 0,
+      "training_method": "behavior_cloning",
+      "supervised_epochs": 1,
+      "supervised_optimizer_steps": 62,
+      "supervised_examples_seen": 62744,
+      "demonstration_transitions": 62744
+    },
+    "demonstration_transitions": 62744,
+    "supervised_optimizer_steps": 62,
+    "supervised_examples_seen": 62744,
+    "initial_policy_is_untrained": false,
+    "rl_live_transitions_at_initialization": 0,
+    "ppo_optimizer_inherited": false,
+    "action_space_compatibility": {
+      "kind": "categorical",
+      "nvec": [
+        20,
+        3
+      ],
+      "start": [
+        0,
+        0
+      ],
+      "parent_dtype": "int64",
+      "ppo_dtype": "int64"
+    }
+  },
+  "training_method": "ppo_after_behavior_cloning"
+}

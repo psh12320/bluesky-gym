@@ -1,0 +1,74 @@
+{
+  "recorded_at_utc": "2026-09-16T10:50:51.328416+00:00",
+  "previous_status": "runs/rl-priority-status-20260916-v35.json",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "progress": [
+    "Implemented and tested collection of actual frozen-teacher commands with evaluation-data exclusion.",
+    "Exact replay of 180 physical metrics confirms demonstration recording preserves benchmark behavior.",
+    "Implemented actor-only behavior cloning with separate supervised accounting, fixed epochs and whole-world validation.",
+    "Implemented explicit PPO fine-tuning handoff, parent archive, fresh optimizer/RNG and independent lineage audit; full RL suite passed 227 tests.",
+    "Frozen source and launched the registered fresh-data-to-PPO pipeline.",
+    "Confirmed and audited a partial gSDE run after Windows sleep/hibernate caused its wall limit to expire."
+  ],
+  "implementation_validation": "runs/pretraining-development-v1/validation.json",
+  "demonstration_collection": {
+    "session": 69697,
+    "confirmed_live": true,
+    "protocol": "runs/imitation-data-v1/protocol.json",
+    "completed_training_worlds_at_snapshot": 32,
+    "collected_training_transitions_at_snapshot": 62744,
+    "planned_training_worlds": 32,
+    "planned_validation_worlds": 8,
+    "training_complete": true,
+    "validation_complete": false
+  },
+  "imitation_ppo_pipeline": {
+    "session": 8750,
+    "confirmed_live": true,
+    "stage": "waiting_for_registered_training_and_validation_data",
+    "protocol": "runs/imitation-ppo-pilot-v1/protocol.json",
+    "protocol_sha256": "265f660db7dbe38d9237ed4156292309b5683dd5b47a1a02ce23d2c309aff210",
+    "technical_ppo_live_budget": 1280,
+    "pilot_ppo_live_budget": 100000,
+    "supervised_training_epochs": 40,
+    "actual_student_trained": false,
+    "new_rl_performance_established": false,
+    "reference": "The learned behavior-cloning parent, not a zero-learning policy.",
+    "frozen_source_sha256": "2c946ef77e00580f05578a11d53add541359926000fca350b2da6c6427c8fb8a"
+  },
+  "support_factorial": {
+    "session": 99673,
+    "confirmed_live": true,
+    "latest_confirmed_stage": "g0-f0/seed-49920/eval-final.log",
+    "all_twelve_results_complete": false,
+    "first_missing_cell_seed_complete": 49900
+  },
+  "gsde_replication": {
+    "session": 76853,
+    "exit_code": 1,
+    "review": "runs/ppo-gsde-replication-v1/partial-run-review.json",
+    "completed_seed_pair": 52200,
+    "incomplete_seed": 52300,
+    "incomplete_arm": "every1",
+    "incomplete_live_transitions": 13481,
+    "not_restarted": true,
+    "fresh_three_seed_conclusions_unavailable": true
+  },
+  "cluster_gsde_submission_observed": false,
+  "preservation": {
+    "fixed_source_files_checked": 65,
+    "changed_fixed_files": [],
+    "running_experiment_sources_unchanged": true,
+    "before_files": "runs/pretraining-development-v1/before"
+  },
+  "next_actions": [
+    "Recover the remaining gSDE replications transparently in fresh directories, preserving the incomplete seed and the completed pair; do not count a partial run as final.",
+    "Monitor registered demonstration/BC/PPO pipeline and address any technical failure before its full pilot proceeds.",
+    "Let support-factorial evaluations finish and run all-twelve-cell analysis.",
+    "Prioritize cluster execution; local sleep has been confirmed to interrupt wall-limited training.",
+    "Require repeated PPO improvement over the learned starting policy, alongside the fixed classical benchmark, before claiming an RL success."
+  ]
+}

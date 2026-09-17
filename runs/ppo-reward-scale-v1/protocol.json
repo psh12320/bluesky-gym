@@ -1,0 +1,32 @@
+{
+  "algorithm": "ppo",
+  "workers": 2,
+  "seed": 49900,
+  "live_steps": 100000,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "reward_scale": 0.01,
+  "progress_scale": 0.0,
+  "guidance": false,
+  "filter": false,
+  "reward_recipe": "public_weights",
+  "source_bundle": "runs/onpolicy-cluster-v2.zip",
+  "source_bundle_sha256": "168c833c62837eb664ce84bc6067b99fcbca42cd927593f157046e9a358cb3e4",
+  "comparison": "Same initial actor and critic, seed, worker count, controls and PPO settings as raw PPO. Only learning rewards are multiplied by 0.01.",
+  "hypothesis": "Conditioning value targets may change learning when global gradient clipping and Adam epsilon interact. Existing optimizer moments are diagnostic, not causal proof.",
+  "initial_reference": "runs/ppo-direct-pilot-v1/initial-model.zip",
+  "initial_policy_state_must_match": true,
+  "development_seed": 20260,
+  "evaluation_worlds": 20,
+  "evaluation_rewards": "Native; all nine metrics retained.",
+  "advance_screen": {
+    "minimum_arrival_gain_percentage_points": 10,
+    "intrusion_time_must_not_increase": true,
+    "restricted_area_time_must_not_increase": true,
+    "outside_sector_time_must_not_increase": true
+  },
+  "screen_scope": "Development triage against its matching initial policy, not a competitive-quality or statistical-significance claim.",
+  "heldout_used": false,
+  "multiple_training_seeds": "Required after viable settings and cluster execution are established."
+}

@@ -1,0 +1,102 @@
+{
+  "airspeed": [
+    0,
+    1
+  ],
+  "cos_drift": [
+    1,
+    2
+  ],
+  "cos_track": [
+    2,
+    11
+  ],
+  "inside_sector": [
+    11,
+    12
+  ],
+  "intruder_distance": [
+    12,
+    21
+  ],
+  "obstacle_cos_bearing": [
+    21,
+    26
+  ],
+  "obstacle_distance": [
+    26,
+    31
+  ],
+  "obstacle_radius": [
+    31,
+    36
+  ],
+  "obstacle_sin_bearing": [
+    36,
+    41
+  ],
+  "sector_point_cos_bearing": [
+    41,
+    53
+  ],
+  "sector_point_distance": [
+    53,
+    65
+  ],
+  "sector_point_sin_bearing": [
+    65,
+    77
+  ],
+  "sin_drift": [
+    77,
+    78
+  ],
+  "sin_track": [
+    78,
+    87
+  ],
+  "traffic_dcpa": [
+    87,
+    96
+  ],
+  "traffic_entry_time": [
+    96,
+    105
+  ],
+  "traffic_predicted_conflict": [
+    105,
+    114
+  ],
+  "traffic_present": [
+    114,
+    123
+  ],
+  "traffic_tcpa": [
+    123,
+    132
+  ],
+  "vx_r": [
+    132,
+    141
+  ],
+  "vy_r": [
+    141,
+    150
+  ],
+  "waypoint_distance": [
+    150,
+    151
+  ],
+  "x_r": [
+    151,
+    160
+  ],
+  "y_r": [
+    160,
+    169
+  ],
+  "time_remaining": [
+    169,
+    170
+  ]
+}

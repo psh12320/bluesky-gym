@@ -1,0 +1,77 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 1006.285,
+      "std": 438.2980649911656
+    },
+    "intrusion_events": {
+      "mean": 1.54,
+      "std": 1.3595587519485872
+    },
+    "intrusion_time": {
+      "mean": 104.45,
+      "std": 153.2031249681285
+    },
+    "restricted_area_events": {
+      "mean": 0.015,
+      "std": 0.1215524578114322
+    },
+    "time_in_restricted_area": {
+      "mean": 0.355,
+      "std": 4.204637320863715
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -61.62691743182274,
+      "std": 144.99484729786826
+    }
+  },
+  "clean_completion_rate": 0.255,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "behavior_cloning",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "direct",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 40330,
+  "padded_transitions": 21190,
+  "world_decisions": 6152,
+  "aircraft_terminated": 200,
+  "aircraft_truncated": 0,
+  "wall_seconds": 539.7492595999938,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "direct",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0
+  },
+  "csv_sha256": "274c30e63fae931fb58b99404d6d13619e383f2505cad74a78545aa770382e92"
+}

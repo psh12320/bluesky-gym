@@ -1,0 +1,20 @@
+{
+  "original_runner_sha256": "4438a6153952acb232e9d8741937175870c266ad29e38176f83cea8025680faa",
+  "retry_runner_sha256": "f51e73ccb0154f689ab70864cf3d811c60dc5ae9e10517557f9db89253183869",
+  "protocol_sha256": "89a73663fe90b4198d431678ba9342f96255b26377aa2c8d116bb75db1dd7d13",
+  "extension_sha256": "82335cb0a4861d8ac64e08bf3d8c8d273727d71a32e4cd72dfc5eb1b26201dc3",
+  "original_attempt_state_sha256": "2b90795420510de0c52d2632045ef16387d795239f7c5afa0e5c092e834f25a6",
+  "validation_audit_sha256": "2f90a07e496cd1b06ffe547488af7366c0b403ef450f49c1d1625d9733601bff",
+  "training_started_before_failure": false,
+  "failure": "Git-based source capture treated an extracted archive as a standalone checkout; no training environment or initial model was created.",
+  "recovery": "Use actual fixed archive files and explicitly hash/archive the experimental extension, driver and protocol. Reuse completed fixed-policy validation without repeating it.",
+  "unchanged": [
+    "reward normalization",
+    "coefficients",
+    "training seed",
+    "training budget",
+    "model selection rule",
+    "evaluation worlds",
+    "screening rule"
+  ]
+}

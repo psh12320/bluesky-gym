@@ -1,0 +1,73 @@
+{
+  "episodes": 2,
+  "agent_episodes": 2,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.5,
+      "std": 0.5
+    },
+    "flight_time": {
+      "mean": 1920.0,
+      "std": 1080.0
+    },
+    "intrusion_events": {
+      "mean": 0.5,
+      "std": 0.5
+    },
+    "intrusion_time": {
+      "mean": 13.0,
+      "std": 13.0
+    },
+    "restricted_area_events": {
+      "mean": 0.5,
+      "std": 0.5
+    },
+    "time_in_restricted_area": {
+      "mean": 1.0,
+      "std": 1.0
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -15.527655096568331,
+      "std": 16.286509515329872
+    }
+  },
+  "clean_completion_rate": 0.5,
+  "all_aircraft_clean_completion_rate": 0.5,
+  "wall_seconds": 17.562363099947106,
+  "world_decisions": 384,
+  "seed": 2026,
+  "env": "sa",
+  "traffic_projection_statistics": {
+    "actions": 384,
+    "interventions": 264,
+    "speed_interventions": 23,
+    "nominal_static_violation": 250,
+    "nominal_traffic_conflict": 17,
+    "no_static_feasible_candidate": 13,
+    "no_jointly_feasible_candidate": 21
+  },
+  "policy": "goal",
+  "recipe": "baseline",
+  "guard_static": true,
+  "guard_traffic": true,
+  "official_protocol": false,
+  "model_sha256": null,
+  "inference_mode": "goal",
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0,
+  "traffic_projection_revision": 1,
+  "traffic_projection_horizon_seconds": 90.0,
+  "traffic_projection_sample_seconds": 5.0,
+  "traffic_projection_margin_km": 1.0,
+  "traffic_projection_turn_rate": 1.5,
+  "traffic_projection_acceleration": 1.0
+}

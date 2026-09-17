@@ -1,0 +1,25 @@
+{
+  "full_initial_and_final_policy_tensors_identical": true,
+  "full_initial_and_final_optimizer_states_identical": true,
+  "all_original_nontiming_learning_fields_identical": true,
+  "completed_training_aircraft_and_returns_byte_identical": true,
+  "live_transitions": 2270,
+  "padded_transitions": 290,
+  "optimizer_steps": 5,
+  "initial_fingerprint": "eaf762aea4a409eeff1caacc8c0cb35843dc3a36070605ba67db304b38c0eb14",
+  "final_fingerprint": "354f18d3e057baf8a91631bec65051c1c70dc0deb349119b1c971b4bee0d262d",
+  "newer_model_sha256": "42706547980704a75da27df49a39dd235bcd08dd37746c0d864d5a91caf9e0c1",
+  "reference_model_sha256": "864dda25f9db639e91342a74bcb40afb30e3ff6b8c6b266af56fdbc2289b41e9",
+  "live_diagnostics": {
+    "rollout_live_samples": "2270",
+    "rollout_return_variance_live": "0.19894572786963788",
+    "rollout_value_mse_live": "0.0928124447186813",
+    "rollout_value_explained_variance_live": "0.6676250258041958",
+    "rollout_action_box_clip_fraction_live": "0.0"
+  },
+  "full_rl_unit_tests_passed": 119,
+  "both_completed_training_audits_passed": true,
+  "source_snapshots_unchanged": true,
+  "performance_evidence": false,
+  "scope": "One real PPO rollout verifies observational logging parity; it does not establish policy quality or multi-seed performance."
+}

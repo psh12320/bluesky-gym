@@ -1,0 +1,52 @@
+{
+  "recorded_at_utc": "2026-09-16T07:02:41.951097+00:00",
+  "review_sha256": "d6da89cb7f1a520412121d02b0861296b15b21b8c177440dc524ccaea74d7e91",
+  "six_deployed_model_hashes_verified": {
+    "ma-2900": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\fast-reference-interval5-v1-ma25k-ma\\model.zip",
+      "sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb"
+    },
+    "ma-2902": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2902\\candidate\\model.zip",
+      "sha256": "069d02fcce6238e68abf71fbe55508106723c944ad0d4e4647e4a4dae88aa84f"
+    },
+    "ma-2904": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\ma-seed2904\\candidate\\model.zip",
+      "sha256": "b80405b8f9a1d759f600ccb5fb097a800fbf1a9fbfa8fa9ca212581942109e56"
+    },
+    "sa-2900": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\fast-reference-reach250-v1-ma25k-sa\\model.zip",
+      "sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08"
+    },
+    "sa-2902": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2902\\candidate\\model.zip",
+      "sha256": "87e374be18cea1f85e235374c6522d489cc3b5438eb871a06eb124c1135e995e"
+    },
+    "sa-2904": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\candidate\\model.zip",
+      "sha256": "8b99fa0662d2c7cb304afbbd99c91eab1c64863c91184f4d03c958436a5e5143"
+    }
+  },
+  "decision": "Retain the fixed historical SAC comparison. No strong overall MA improvement over its matching classical control is established by these three replicas.",
+  "historical_ma_summary": {
+    "training_seeds": [
+      2900,
+      2902,
+      2904
+    ],
+    "worlds": 200,
+    "scenario_seed": 2027,
+    "mean_clean_completion_change_percentage_points": 0.28333333333333544,
+    "mean_flight_time_change_seconds": 4.665500000000027
+  },
+  "future_comparison_requirements": [
+    "Same scenario stream and physical evaluation protocol as PPO.",
+    "Same observation and action support; own initial policy evaluated separately.",
+    "Record live aircraft transitions separately from inactive padding.",
+    "State the treatment of the actual 3000-second task deadline and remaining-time observation.",
+    "Use a fresh experiment; do not relabel or alter historical model results."
+  ],
+  "current_priority": "Let the registered conflict-feature, input-scaling and exploration-persistence PPO studies complete.",
+  "replay_deserialization_attempt": "Rejected before execution; completed a safer source/CSV/JSON audit and synthetic probe instead.",
+  "training_timeout_frequency": "Not measured; no causal attribution of SAC performance to the deadline-treatment difference."
+}

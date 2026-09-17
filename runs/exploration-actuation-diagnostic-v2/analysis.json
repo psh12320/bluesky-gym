@@ -1,0 +1,451 @@
+{
+  "protocol_sha256": "62d7e0eb4df537b2e8c3ad27468802acb41beb77973c8eb9908ed46d548ea0e5",
+  "cases": {
+    "zero": {
+      "pooled": {
+        "aircraft": 20,
+        "live_decisions": 3462,
+        "latent_heading_offset_std_degrees": 0.0,
+        "latent_heading_lag_one_correlation": null,
+        "actual_turn_rms_degrees_per_decision": 1.4029365993887624,
+        "applied_turn_command_rms_degrees": 4.99247064930787,
+        "route_drift_rms_degrees": 5.601715168838323,
+        "route_drift_absolute_p50_p90_degrees": [
+          1.5914853065623902e-05,
+          0.007491517160087829
+        ],
+        "mean_per_aircraft_route_drift_rms_degrees": 2.6853346473913904,
+        "static_override_fraction": 0.0028885037550548816,
+        "mapped_turn_saturation_fraction": 0.006065857885615251,
+        "latent_heading_clipped_fraction": 0.0,
+        "unfiltered_unsaturated_decisions": 3433,
+        "unfiltered_unsaturated_turn_rms_degrees": 1.242594804935107,
+        "unfiltered_unsaturated_route_drift_rms_degrees": 3.7844519019137177
+      },
+      "worlds": {
+        "0": {
+          "aircraft": 10,
+          "live_decisions": 1824,
+          "latent_heading_offset_std_degrees": 0.0,
+          "latent_heading_lag_one_correlation": null,
+          "actual_turn_rms_degrees_per_decision": 1.7459258075716204,
+          "applied_turn_command_rms_degrees": 6.295477806633552,
+          "route_drift_rms_degrees": 7.214723801396812,
+          "route_drift_absolute_p50_p90_degrees": [
+            2.0019380826852284e-05,
+            0.016926576755940916
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 4.436568797231995,
+          "static_override_fraction": 0.005482456140350877,
+          "mapped_turn_saturation_fraction": 0.010416666666666666,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1797,
+          "unfiltered_unsaturated_turn_rms_degrees": 1.5280544464185564,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 4.681758266229385
+        },
+        "1": {
+          "aircraft": 10,
+          "live_decisions": 1638,
+          "latent_heading_offset_std_degrees": 0.0,
+          "latent_heading_lag_one_correlation": null,
+          "actual_turn_rms_degrees_per_decision": 0.8745351133642303,
+          "applied_turn_command_rms_degrees": 2.9234080855636764,
+          "route_drift_rms_degrees": 2.8911415716046216,
+          "route_drift_absolute_p50_p90_degrees": [
+            1.4996467143646441e-05,
+            0.003071161080151796
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 0.9341004975507852,
+          "static_override_fraction": 0.0,
+          "mapped_turn_saturation_fraction": 0.001221001221001221,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1636,
+          "unfiltered_unsaturated_turn_rms_degrees": 0.82147471955931,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 2.444930803697105
+        }
+      },
+      "descriptive_physical_summary": {
+        "episodes": 2,
+        "agent_episodes": 20,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 863.75,
+            "std": 172.8759309447096
+          },
+          "intrusion_events": {
+            "mean": 2.2,
+            "std": 1.6613247725836149
+          },
+          "intrusion_time": {
+            "mean": 127.9,
+            "std": 108.65537262372257
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": -83.56859744798803,
+            "std": 102.74255839712914
+          }
+        },
+        "clean_completion_rate": 0.25,
+        "all_aircraft_clean_completion_rate": 0.0
+      },
+      "steps_csv_sha256": "e37d13dfed4ad4cdf3f882005e00ee0cd8422f2551bb7e9e4347c7d99ac0e2b2"
+    },
+    "iid005": {
+      "pooled": {
+        "aircraft": 20,
+        "live_decisions": 3475,
+        "latent_heading_offset_std_degrees": 4.541815281003443,
+        "latent_heading_lag_one_correlation": 0.0015898502712354404,
+        "actual_turn_rms_degrees_per_decision": 5.275259082387026,
+        "applied_turn_command_rms_degrees": 7.5518238629356,
+        "route_drift_rms_degrees": 6.6489617174931475,
+        "route_drift_absolute_p50_p90_degrees": [
+          2.9394142627716064,
+          6.980228042602539
+        ],
+        "mean_per_aircraft_route_drift_rms_degrees": 5.658134375187904,
+        "static_override_fraction": 0.007482014388489209,
+        "mapped_turn_saturation_fraction": 0.0057553956834532375,
+        "latent_heading_clipped_fraction": 0.0,
+        "unfiltered_unsaturated_decisions": 3432,
+        "unfiltered_unsaturated_turn_rms_degrees": 5.26569531828409,
+        "unfiltered_unsaturated_route_drift_rms_degrees": 5.451346568946316
+      },
+      "worlds": {
+        "0": {
+          "aircraft": 10,
+          "live_decisions": 1826,
+          "latent_heading_offset_std_degrees": 4.506038831743561,
+          "latent_heading_lag_one_correlation": -0.023384138184296042,
+          "actual_turn_rms_degrees_per_decision": 5.342996322048866,
+          "applied_turn_command_rms_degrees": 8.307410101502112,
+          "route_drift_rms_degrees": 7.886038612645712,
+          "route_drift_absolute_p50_p90_degrees": [
+            2.913626194000244,
+            7.20702052116394
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 6.6924823846272945,
+          "static_override_fraction": 0.014238773274917854,
+          "mapped_turn_saturation_fraction": 0.0104052573932092,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1784,
+          "unfiltered_unsaturated_turn_rms_degrees": 5.328864247223561,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 5.982646751007587
+        },
+        "1": {
+          "aircraft": 10,
+          "live_decisions": 1649,
+          "latent_heading_offset_std_degrees": 4.580122972908675,
+          "latent_heading_lag_one_correlation": 0.027946088352005474,
+          "actual_turn_rms_degrees_per_decision": 5.199176203939457,
+          "applied_turn_command_rms_degrees": 6.615194181800347,
+          "route_drift_rms_degrees": 4.929274545043462,
+          "route_drift_absolute_p50_p90_degrees": [
+            2.971853256225586,
+            6.8313517570495605
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 4.623786365748516,
+          "static_override_fraction": 0.0,
+          "mapped_turn_saturation_fraction": 0.0006064281382656155,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1648,
+          "unfiltered_unsaturated_turn_rms_degrees": 5.1964154867380055,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 4.810506356729624
+        }
+      },
+      "descriptive_physical_summary": {
+        "episodes": 2,
+        "agent_episodes": 20,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 866.9,
+            "std": 173.30577024438625
+          },
+          "intrusion_events": {
+            "mean": 2.3,
+            "std": 1.584297951775486
+          },
+          "intrusion_time": {
+            "mean": 119.9,
+            "std": 108.24596990188597
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": -76.00942472639949,
+            "std": 102.35875593366535
+          }
+        },
+        "clean_completion_rate": 0.2,
+        "all_aircraft_clean_completion_rate": 0.0
+      },
+      "steps_csv_sha256": "0a19bfc8293a20783a12a4b4b654320c29ac2ead25a08d5bab070e99d6a100a4"
+    },
+    "iid020": {
+      "pooled": {
+        "aircraft": 20,
+        "live_decisions": 3549,
+        "latent_heading_offset_std_degrees": 18.12281199164024,
+        "latent_heading_lag_one_correlation": 0.0032303441829856093,
+        "actual_turn_rms_degrees_per_decision": 7.678608843316458,
+        "applied_turn_command_rms_degrees": 20.146139141596013,
+        "route_drift_rms_degrees": 11.06776585140017,
+        "route_drift_absolute_p50_p90_degrees": [
+          6.857236385345459,
+          17.435565185546885
+        ],
+        "mean_per_aircraft_route_drift_rms_degrees": 10.772052177590936,
+        "static_override_fraction": 0.013806706114398421,
+        "mapped_turn_saturation_fraction": 0.037757114680191606,
+        "latent_heading_clipped_fraction": 0.0,
+        "unfiltered_unsaturated_decisions": 3374,
+        "unfiltered_unsaturated_turn_rms_degrees": 7.643767872340029,
+        "unfiltered_unsaturated_route_drift_rms_degrees": 10.754144516501626
+      },
+      "worlds": {
+        "0": {
+          "aircraft": 10,
+          "live_decisions": 1855,
+          "latent_heading_offset_std_degrees": 18.024165077874976,
+          "latent_heading_lag_one_correlation": -0.01853806896144644,
+          "actual_turn_rms_degrees_per_decision": 7.630747630892561,
+          "applied_turn_command_rms_degrees": 20.325964589785084,
+          "route_drift_rms_degrees": 11.636152447399201,
+          "route_drift_absolute_p50_p90_degrees": [
+            6.912831783294678,
+            17.635184478759765
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 11.18686434091676,
+          "static_override_fraction": 0.023180592991913745,
+          "mapped_turn_saturation_fraction": 0.039892183288409704,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1744,
+          "unfiltered_unsaturated_turn_rms_degrees": 7.602975688514056,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 11.057366943217568
+        },
+        "1": {
+          "aircraft": 10,
+          "live_decisions": 1694,
+          "latent_heading_offset_std_degrees": 18.22633321633624,
+          "latent_heading_lag_one_correlation": 0.026128000270387093,
+          "actual_turn_rms_degrees_per_decision": 7.7307057088618025,
+          "applied_turn_command_rms_degrees": 19.94736337292072,
+          "route_drift_rms_degrees": 10.409820727855639,
+          "route_drift_absolute_p50_p90_degrees": [
+            6.814105272293091,
+            17.176315116882325
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 10.35724001426511,
+          "static_override_fraction": 0.0035419126328217238,
+          "mapped_turn_saturation_fraction": 0.03541912632821724,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1630,
+          "unfiltered_unsaturated_turn_rms_degrees": 7.6871907717334365,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 10.419948600500282
+        }
+      },
+      "descriptive_physical_summary": {
+        "episodes": 2,
+        "agent_episodes": 20,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 885.25,
+            "std": 182.30273585440236
+          },
+          "intrusion_events": {
+            "mean": 1.9,
+            "std": 1.4106735979665883
+          },
+          "intrusion_time": {
+            "mean": 114.8,
+            "std": 101.61377859325968
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": -71.19625922245723,
+            "std": 96.08887642095358
+          }
+        },
+        "clean_completion_rate": 0.2,
+        "all_aircraft_clean_completion_rate": 0.0
+      },
+      "steps_csv_sha256": "a948ef62ec2a0134be2756644f220e767c1f84b11b3230d6113c70d144e67a13"
+    },
+    "held020": {
+      "pooled": {
+        "aircraft": 20,
+        "live_decisions": 3638,
+        "latent_heading_offset_std_degrees": 18.335367628667164,
+        "latent_heading_lag_one_correlation": 0.9167077399747453,
+        "actual_turn_rms_degrees_per_decision": 3.999942687788024,
+        "applied_turn_command_rms_degrees": 11.350477923301819,
+        "route_drift_rms_degrees": 17.76799508601548,
+        "route_drift_absolute_p50_p90_degrees": [
+          11.827979564666748,
+          27.426579475402836
+        ],
+        "mean_per_aircraft_route_drift_rms_degrees": 17.513333035361573,
+        "static_override_fraction": 0.019791094007696537,
+        "mapped_turn_saturation_fraction": 0.019791094007696537,
+        "latent_heading_clipped_fraction": 0.0,
+        "unfiltered_unsaturated_decisions": 3495,
+        "unfiltered_unsaturated_turn_rms_degrees": 3.866744881486623,
+        "unfiltered_unsaturated_route_drift_rms_degrees": 17.539117018453087
+      },
+      "worlds": {
+        "0": {
+          "aircraft": 10,
+          "live_decisions": 1899,
+          "latent_heading_offset_std_degrees": 18.58894469824745,
+          "latent_heading_lag_one_correlation": 0.9153050926423585,
+          "actual_turn_rms_degrees_per_decision": 4.1114329942510155,
+          "applied_turn_command_rms_degrees": 12.269331798757033,
+          "route_drift_rms_degrees": 18.11430373599627,
+          "route_drift_absolute_p50_p90_degrees": [
+            11.165751457214355,
+            28.637590789794924
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 17.726045960201837,
+          "static_override_fraction": 0.031068983675618746,
+          "mapped_turn_saturation_fraction": 0.028962611901000527,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1786,
+          "unfiltered_unsaturated_turn_rms_degrees": 3.935712708933659,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 17.70060272615551
+        },
+        "1": {
+          "aircraft": 10,
+          "live_decisions": 1739,
+          "latent_heading_offset_std_degrees": 18.05438859585528,
+          "latent_heading_lag_one_correlation": 0.9183396907405154,
+          "actual_turn_rms_degrees_per_decision": 3.874469642643149,
+          "applied_turn_command_rms_degrees": 10.253455782480502,
+          "route_drift_rms_degrees": 17.38194433665414,
+          "route_drift_absolute_p50_p90_degrees": [
+            12.375534057617188,
+            26.541841888427733
+          ],
+          "mean_per_aircraft_route_drift_rms_degrees": 17.3006201105213,
+          "static_override_fraction": 0.007475560667050029,
+          "mapped_turn_saturation_fraction": 0.0097757331799885,
+          "latent_heading_clipped_fraction": 0.0,
+          "unfiltered_unsaturated_decisions": 1709,
+          "unfiltered_unsaturated_turn_rms_degrees": 3.793269401506118,
+          "unfiltered_unsaturated_route_drift_rms_degrees": 17.368751145965895
+        }
+      },
+      "descriptive_physical_summary": {
+        "episodes": 2,
+        "agent_episodes": 20,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 907.35,
+            "std": 180.93625258637363
+          },
+          "intrusion_events": {
+            "mean": 1.5,
+            "std": 0.9746794344808963
+          },
+          "intrusion_time": {
+            "mean": 82.7,
+            "std": 55.50234229291589
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": -40.85463325131168,
+            "std": 52.48589274469925
+          }
+        },
+        "clean_completion_rate": 0.2,
+        "all_aircraft_clean_completion_rate": 0.0
+      },
+      "steps_csv_sha256": "c8474552b182a39412335d784f6db114198a3d993e34ebbe31f45c006f804158"
+    }
+  },
+  "paired_speed_noise_checks": 3547,
+  "zero_noise_reference_metric_matches": 180,
+  "limitations": [
+    "No PPO training and no learned-policy claim.",
+    "Temporal holding is an actuation probe, not a valid drop-in on-policy sampling method.",
+    "Only two previously used development worlds; this cannot justify a performance ranking.",
+    "Static support can change commands; intervention rates are recorded.",
+    "Terminal aircraft removed before step returns have no post-step simulator heading."
+  ],
+  "interpretation": "Physical-response diagnostics only. These are untrained policies, and no training or generalization benefit can be inferred."
+}

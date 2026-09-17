@@ -1,0 +1,36 @@
+{"episode": 0, "arrival_rate": 0.9}
+{"episode": 1, "arrival_rate": 1.0}
+{"episode": 2, "arrival_rate": 0.6}
+{"episode": 3, "arrival_rate": 0.7}
+{"episode": 4, "arrival_rate": 0.8}
+{"episode": 5, "arrival_rate": 0.7}
+{"episode": 6, "arrival_rate": 0.9}
+{"episode": 7, "arrival_rate": 0.7}
+{"episode": 8, "arrival_rate": 0.8}
+{"episode": 9, "arrival_rate": 0.9}
+{"episode": 10, "arrival_rate": 0.7}
+{"episode": 11, "arrival_rate": 0.8}
+{"episode": 12, "arrival_rate": 0.9}
+{"episode": 13, "arrival_rate": 0.9}
+{"episode": 14, "arrival_rate": 0.6}
+{"episode": 15, "arrival_rate": 0.2}
+{"episode": 16, "arrival_rate": 0.6}
+{"episode": 17, "arrival_rate": 0.7}
+{"episode": 18, "arrival_rate": 0.8}
+{"episode": 19, "arrival_rate": 0.7}
+{"episodes": 20, "agent_episodes": 200, "metrics": {"waypoint_reached": {"mean": 0.745, "std": 0.43586121644395015}, "flight_time": {"mean": 1510.075, "std": 960.8971950083943}, "intrusion_events": {"mean": 1.08, "std": 1.1373653766490344}, "intrusion_time": {"mean": 70.4, "std": 88.64101759343696}, "restricted_area_events": {"mean": 0.115, "std": 0.46019017807858525}, "time_in_restricted_area": {"mean": 5.595, "std": 27.04239218338496}, "sector_exit_events": {"mean": 0.01, "std": 0.09949874371066199}, "time_outside_sector": {"mean": 1.28, "std": 12.848797609115024}, "total_reward": {"mean": -41.987154861528786, "std": 90.0016531474825}}, "clean_completion_rate": 0.285, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "ppo", "guidance": true, "filter": false, "static_filter": true, "action_reference": "direct", "conflict_features": true, "mask_conflict_features": false, "seed": 20260, "live_transitions": 60462, "padded_transitions": 55568, "world_decisions": 11603, "aircraft_terminated": 149, "aircraft_truncated": 51, "wall_seconds": 661.460942900012, "actor_inference_uses_joint_context": false, "runtime": {"static_area_filter": true, "traffic_conflict_filter": false, "geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true, "training_progress_scale": 0.0, "action_reference": "direct", "conflict_features": true, "mask_conflict_features": false, "traffic_position_scale": 1.0}, "csv_sha256": "18d1b6c5da257d2263d52777862ef0b549d3fd227549aa0f933783daeac4441c"}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\categorical-imitation-ppo-pilot-v1\eval-final-dev20\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\categorical-imitation-ppo-pilot-v1\eval-final-dev20\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\categorical-imitation-ppo-pilot-v1\eval-final-dev20\workers\world-0\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\categorical-imitation-ppo-pilot-v1\eval-final-dev20\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\categorical-imitation-ppo-pilot-v1\eval-final-dev20\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\categorical-imitation-ppo-pilot-v1\eval-final-dev20\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

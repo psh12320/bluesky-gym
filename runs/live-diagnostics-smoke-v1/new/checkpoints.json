@@ -1,0 +1,22 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "1527624e14c7605c297093f88aea97236251762866a2bb300ff79667480425a2",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0
+  },
+  {
+    "file": "model.zip",
+    "sha256": "42706547980704a75da27df49a39dd235bcd08dd37746c0d864d5a91caf9e0c1",
+    "live_transitions": 2270,
+    "counted_transitions": 2560,
+    "padded_transitions": 290,
+    "optimizer_steps": 5,
+    "policy_epochs": 2,
+    "rollouts": 1
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cluster\\source-v12.zip",
+  "source_files": 112,
+  "bytes": 366667,
+  "sha256": "a4b627e4e3c16af92f3879b425ca2d1e641a1da7bc0643dbd0f579aabffc9c6d",
+  "archive_crc_valid": true,
+  "archive_source_hashes_match": true,
+  "local_source_hashes_match": true,
+  "git_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+}

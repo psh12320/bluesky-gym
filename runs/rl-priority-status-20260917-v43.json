@@ -1,0 +1,155 @@
+{
+  "recorded_at_utc": "2026-09-17T03:08:45.672678+00:00",
+  "previous_status": "runs/rl-priority-status-20260917-v42.json",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "scope_unchanged": "Strong substantive RL, multiple training seeds, support ablations, unseen scenarios, genuine MAPPO and cluster training. Fixed classical benchmark preserved.",
+  "fixed_environment_and_benchmark_files_unchanged": 65,
+  "categorical_training": {
+    "complete": "runs/categorical-training-development-v1/complete.json",
+    "source_bundle_sha256": "5ff710b6d69a4d49bb3030c440dce6fdc64c46c6a7e31366dc5959638079ad3e",
+    "source_files": 155,
+    "tests_passed_at_freeze": 282,
+    "session": 34307,
+    "exit_code": 0,
+    "ppo": {
+      "live_transitions": 4228,
+      "padded_transitions": 1532,
+      "counted_transitions": 5760,
+      "optimizer_steps": 74,
+      "model_sha256": "e5091059de23caf2c39217882eee6ee68176fcba443edcb5588b92ebf9c3cbd2"
+    },
+    "mappo": {
+      "live_transitions": 4228,
+      "padded_transitions": 1532,
+      "counted_transitions": 5760,
+      "optimizer_steps": 74,
+      "model_sha256": "6a64747ff63b494871d9e849e3b2206a69bebb3d4f91bfc2811a5db67a23230d"
+    },
+    "initial_actor_tensors_identical": true,
+    "initial_metric_values_identical": 180,
+    "native_vector_exact_values_per_arm": 180,
+    "mappo_critic_uses_joint_context": true,
+    "actors_use_joint_context": false,
+    "performance_claim": false,
+    "single_agent_deployment_check": "runs/categorical-single-agent-check-v1/complete.json"
+  },
+  "categorical_imitation": {
+    "complete": "runs/categorical-imitation-development-v1/complete.json",
+    "source_bundle_sha256": "d72575b87b1e63f5cdd8fb0c77fe7db5d31017f7fbcb72f27dc2c13971275903",
+    "source_files": 156,
+    "latest_rl_tests_passed": 289,
+    "session": 17957,
+    "exit_code": 0,
+    "supervised_epochs": 1,
+    "supervised_updates": 62,
+    "demonstration_rows": 62744,
+    "validation_rows": 16108,
+    "ppo": {
+      "live_transitions": 4518,
+      "padded_transitions": 1242,
+      "counted_transitions": 5760,
+      "optimizer_steps": 76,
+      "model_sha256": "0e8092c6a05757680e810fc1066ed0ecaa7298ba023d41f94861c80826d904c1"
+    },
+    "full_initial_tensors_match_supervised_parent": true,
+    "fresh_ppo_optimizer": true,
+    "unchanged_greedy_actions_after_one_technical_bc_epoch": true,
+    "main_categorical_performance_experiment_started": false,
+    "performance_claim": false
+  },
+  "default_rate_imitation_ppo": {
+    "session": 60532,
+    "exit_code": 0,
+    "status": "complete",
+    "review": "runs/imitation-ppo-control-review-v1/review.json",
+    "training": {
+      "live_transitions": 101628,
+      "padded_transitions": 77572,
+      "counted_transitions": 179200,
+      "optimizer_steps": 268,
+      "model_sha256": "1581131726e13f64b28f594dc020dbc6f160dc283d726bc8f6da05a5642bfc7a"
+    },
+    "performance": {
+      "initial": {
+        "arrival": 0.99,
+        "clean_completion": 0.345,
+        "flight_time": 1088.405,
+        "intrusion_time": 99.4,
+        "time_in_restricted_area": 1.215,
+        "time_outside_sector": 0.0
+      },
+      "50k": {
+        "arrival": 0.94,
+        "clean_completion": 0.455,
+        "flight_time": 1203.195,
+        "intrusion_time": 108.38,
+        "time_in_restricted_area": 1.265,
+        "time_outside_sector": 0.0
+      },
+      "final": {
+        "arrival": 0.93,
+        "clean_completion": 0.57,
+        "flight_time": 1564.1,
+        "intrusion_time": 80.18,
+        "time_in_restricted_area": 2.87,
+        "time_outside_sector": 0.0
+      }
+    },
+    "clean_gain_pp": 22.5,
+    "paired_world_95_interval_pp": [
+      8.0,
+      36.0
+    ],
+    "scope": "One training seed, 20 reused development worlds, additional PPO after BC.",
+    "promoted": false
+  },
+  "smaller_rate_imitation_ppo": {
+    "session": 3048,
+    "confirmed_live_at_last_poll": true,
+    "stage": "final 20-world evaluation, six worlds logged at last read",
+    "directory": "runs/imitation-ppo-lr-recovery-v1",
+    "training": {
+      "live_transitions": 101083,
+      "padded_transitions": 60197,
+      "counted_transitions": 161280,
+      "optimizer_steps": 2350,
+      "model_sha256": "28dab6ded89e69076b800c0de0f30d14e0e16860e3f11f56415fa39b4d1a5b17"
+    },
+    "recovery_prefix_check": {
+      "matched_rollout_rows_excluding_elapsed_time": 37,
+      "matched_partial_live_transitions": 59207,
+      "50k_full_policy_tensors_identical": true,
+      "preserved_partial_model_sha256": "fd358f6e1c404cc3aab0f2b499457c4c0a925494118c1887e608c38989ec713d"
+    },
+    "initial_tensor_identity_check_passed": true,
+    "paired_analysis_pending": true,
+    "interrupted_original_preserved": true
+  },
+  "gsde_recovery": {
+    "session": 73914,
+    "confirmed_live_at_last_poll": true,
+    "stage_at_last_poll": "seed-52300/every12 final evaluation",
+    "remaining_arms": [
+      "seed-52400/every12",
+      "seed-52400/every1"
+    ],
+    "aggregate_complete": false
+  },
+  "cluster": {
+    "sac_job_852491_passed_per_user_transcript": true,
+    "ppo_gsde_submission_ids_received": false,
+    "pending_user_item": "Existing cluster-ppo-gsde-v1 submissions.tsv, if submitted.",
+    "resubmit_or_reinstall": false
+  },
+  "next_actions": [
+    "Poll the two confirmed live handles; never restart solely on observation timeout.",
+    "Run runs/imitation-ppo-lr-recovery-v1/analyze.py when its complete.json exists; the default-rate control is now complete.",
+    "Review both learning rates before selecting the next substantive experiment. Categorical production training and BC handoff now work.",
+    "If advancing categorical BC/PPO, register a full-budget pilot and own-initial controls; one epoch and 4k transitions were only technical checks.",
+    "Consider initial-versus-trained heading/speed swaps to explain the clean-completion/flight-time tradeoff.",
+    "Obtain existing cluster job IDs before further submissions; preserve source snapshots, checkpoints, logs and unused held-out streams."
+  ]
+}

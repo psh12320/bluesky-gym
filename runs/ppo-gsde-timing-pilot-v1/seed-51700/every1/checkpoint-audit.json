@@ -1,0 +1,23 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every1\\train",
+  "algorithm": "ppo",
+  "exploration": "gsde",
+  "sde_weight_std": 0.01,
+  "sde_sample_freq": 1,
+  "status": "complete",
+  "live_transitions": 100094,
+  "padded_transitions": 61186,
+  "optimizer_steps": 2168,
+  "verified_checkpoints": 4,
+  "verified_source_files": 97,
+  "learning_curve_rows": 63,
+  "aircraft_completed": 370,
+  "actor_parameter_count": 38914,
+  "critic_parameter_count": 109825,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "774bcfbb9d2ea8b1d023a246e7e160cf64a466c184fdbf3459556b63103e779a",
+  "policy_quality_assessed": false
+}

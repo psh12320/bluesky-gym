@@ -1,0 +1,55 @@
+{
+  "registered_at_utc": "2026-09-15T23:50:54.659373+00:00",
+  "algorithm": "ppo",
+  "live_steps": 1000000,
+  "seed": 49900,
+  "workers": 2,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "reward_scale": 0.01,
+  "progress_scale": 0.0,
+  "action_reference": "goal_offset",
+  "initial_action_std": 0.05,
+  "neutral_action_mean": true,
+  "guidance": false,
+  "filter": false,
+  "max_wall_seconds": 7200,
+  "checkpoint_live_steps": 100000,
+  "source_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-durable-source-v1.zip",
+    "sha256": "b44303f1712386362bf36321b1add00201a3707727ff0b5320d33f2e622f658f",
+    "bytes": 226612,
+    "source_files": 117,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "navdata_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "reason": "The interrupted scaled run showed lower restricted-area exposure at 300k on paired development scenarios, while native-scale PPO worsened. Finish the already intended million-step scaled test in a fresh run.",
+  "continuation_type": "Fresh restart from the same zero-experience initial policy, not optimizer/simulator resumption and not an independent training seed.",
+  "code_changes": "Only rollout-by-rollout metric persistence and atomic checkpoint-manifest replacement affect the training path; policy and numerical training settings are unchanged.",
+  "required_prefix_checks": [
+    "Exact initial full policy tensor identity with the interrupted scaled run.",
+    "Exact full policy tensor identity at 100699 live transitions before reusing that evaluation."
+  ],
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "evaluation_episodes": 20,
+  "curve_targets": [
+    0,
+    100000,
+    300000,
+    1000000
+  ],
+  "advancement_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "limitations": "One development seed; no final claim until multiple seeds and unseen scenarios. The prior interrupted run remains partial and unchanged."
+}

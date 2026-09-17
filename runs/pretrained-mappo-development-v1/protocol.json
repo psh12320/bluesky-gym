@@ -1,0 +1,68 @@
+{
+  "registered_at_utc": "2026-09-17T03:35:53.550131+00:00",
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-source-v1-verify",
+  "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-source-v1.zip",
+  "bundle_sha256": "992e59457c8ba2747487511cc7321603706f21ecdb9dbfeeddbd91d2e3df1fe5",
+  "source_files": 159,
+  "tests_passed": 309,
+  "static_navigation_cache": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-source-v1-verify\\runs\\simulator\\cache\\navdata.p",
+  "static_navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "protected_files": {
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc\\model.zip": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc\\config.json": "b293d1c035ebb289eb055e513c8720b1999542a28375a2f8414a867af01b0110",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc\\training_summary.json": "67c9e25021692bad8a87a9b539f068ffd733b71d8bd663afa67107c13db1bbfc",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc\\checkpoints.json": "3af25ef493045593a1bb388f6705aae877b6089e6aa328c098fe68e90f796dd1",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc\\provenance.json": "5d980e512e1f80ac7f9629d151d9982d5659f3bc4035f21be88060ce76067332",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\train\\initial-model.zip": "d176efdad51deacda5640c5d83fc0e44e0185a6a0fab4df38d8e6e25b3f81e52",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\train\\config.json": "c94229e393404ec41b14c6f59c5f76f80a000e8e3447c4f5b602d5dd96b642fe",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\train\\provenance.json": "c8f7716df440407aea82fe62903967b07ca5e7f18268c7a40ed6a750a53b2fa2",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\checkpoints.json": "7a1e66afa9286f81aed96ee3cca86789cc079b359ac073cbd1a346c57ef13c3a",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\config.json": "c94229e393404ec41b14c6f59c5f76f80a000e8e3447c4f5b602d5dd96b642fe",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\initial-model.zip": "d176efdad51deacda5640c5d83fc0e44e0185a6a0fab4df38d8e6e25b3f81e52",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\provenance.json": "c8f7716df440407aea82fe62903967b07ca5e7f18268c7a40ed6a750a53b2fa2",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\pretraining\\checkpoints.json": "3af25ef493045593a1bb388f6705aae877b6089e6aa328c098fe68e90f796dd1",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\pretraining\\config.json": "b293d1c035ebb289eb055e513c8720b1999542a28375a2f8414a867af01b0110",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\pretraining\\model.zip": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\pretraining\\provenance.json": "5d980e512e1f80ac7f9629d151d9982d5659f3bc4035f21be88060ce76067332",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\pretraining\\training_summary.json": "67c9e25021692bad8a87a9b539f068ffd733b71d8bd663afa67107c13db1bbfc"
+  },
+  "pretrained_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-imitation-ppo-pilot-v1\\bc\\model.zip",
+  "ppo_initial_reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-mappo-development-v1\\ppo-initial-reference\\initial-model.zip",
+  "training": {
+    "algorithm": "mappo",
+    "workers": 1,
+    "live_steps": 4000,
+    "rollout_steps": 64,
+    "batch_size": 128,
+    "epochs": 2,
+    "learning_rate": 3e-05,
+    "seed": 62420,
+    "device": "cpu",
+    "exploration": "categorical",
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "checkpoint_live_steps": 2000,
+    "max_wall_seconds": 0
+  },
+  "evaluation": {
+    "episodes": 2,
+    "seed": 20260
+  },
+  "checks": [
+    "Exact actor tensor identity with supervised parent and PPO initial policy",
+    "Fresh MAPPO critic retained and optimizer reset; supervised budget recorded separately",
+    "Actor uses only local input; trained critic depends on joint aircraft context",
+    "180 paired initial metric values match PPO actor reference",
+    "180 trained native/vector metric values match"
+  ],
+  "resources": "One simulator worker, sequential training and evaluations.",
+  "limitations": [
+    "Technical integration only; no algorithm quality comparison or checkpoint selection.",
+    "MAPPO critic architecture and learner random state differ from the PPO reference.",
+    "Only actor weights and deterministic initial behavior are asserted identical.",
+    "No reserved unseen or official scenarios. Existing full pilot remains untouched."
+  ]
+}

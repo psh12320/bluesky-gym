@@ -1,0 +1,10 @@
+{
+  "bundle": "runs\\cluster\\source-v16.zip",
+  "source_files": 115,
+  "git_commit": "00930013219af4c17e509c3efc84a8becd0f3546",
+  "bytes": 389726,
+  "sha256": "8452e8e5621bc97c3985c016b49cbd7d9533e406e3d2dfc0253addc5cf32cd60",
+  "crc_valid": true,
+  "archive_source_hashes_match": true,
+  "local_source_hashes_match_at_pack_verification": true
+}

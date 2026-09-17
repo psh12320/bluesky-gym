@@ -1,0 +1,13 @@
+{
+  "geo_backend": "bluesky.tools.geo._cgeo",
+  "performance_module": "bluesky.traffic.performance.openap.perfoap",
+  "population": 10,
+  "decision_interval_seconds": 5,
+  "episode_time_limit": 3000,
+  "actor_addition": "time_remaining_fraction",
+  "worker_imported_torch": true,
+  "isolated_simulator_files": true,
+  "training_progress_scale": 0.0,
+  "action_reference": "goal_offset",
+  "conflict_features": true
+}

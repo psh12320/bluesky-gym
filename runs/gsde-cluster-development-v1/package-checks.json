@@ -1,0 +1,7 @@
+{
+  "packaged_source_verified": true,
+  "all_training_flags_supported": 23,
+  "fresh_seed_worker_streams_disjoint": true,
+  "cohort_analyzer_import_passed": true,
+  "no_training_or_cluster_submission": true
+}

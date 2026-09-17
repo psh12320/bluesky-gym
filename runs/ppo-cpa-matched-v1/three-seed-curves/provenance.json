@@ -1,0 +1,16 @@
+{
+  "paired_results_sha256": "56efd049b0ada499bc395d596691e27cd1cf9734680ee93583d2db7932693e87",
+  "curves_sha256": {
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50400\\features\\curve\\curve.json": "82f4cdb36ea817ccc6e6fd1a59d73ff36354b5308c417bbd5acd3bacb597ff84",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50400\\zeros\\curve\\curve.json": "7019ab6df56bcecef1a6213119be82dad5b205066c310d042bed132d15a5f3ca",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50500\\features\\curve\\curve.json": "74f709ec1e41828b411f928278ffc14a86e3f448352edd81a1c7c8a699168313",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50500\\zeros\\curve\\curve.json": "39bdcac6c877be4dbb293bc8129406da5e7467cc93fa3ea3c01aa75e36820d44",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50600\\features\\curve\\curve.json": "470246f7ed994bd2dd08e1b9d0b7fcd3c98037806a23f42173599178a676f891",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50600\\zeros\\curve\\curve.json": "c6df7e2265183ddbdc94ea0d71e2cb9d472b8a6624bc6d28c61dad7c7d16e037"
+  },
+  "script_sha256": "68069adf638061e02fd8786cb558df1b871857035796c9a9636015d2e8caf186",
+  "all_six_registered_runs_included": true,
+  "error_bars": "Sample standard deviation across three training seeds, not confidence intervals.",
+  "x_positions": "Individual curves use exact budgets; group points use mean exact budget at the registered stage.",
+  "unseen_scenarios_used": false
+}

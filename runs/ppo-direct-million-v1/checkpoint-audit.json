@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-million-v1",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 1000371,
+  "padded_transitions": 23629,
+  "optimizer_steps": 10000,
+  "verified_checkpoints": 12,
+  "verified_source_files": 74,
+  "learning_curve_rows": 200,
+  "aircraft_completed": 1701,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "8feb479b0aa5f226e7b0429592fc4b18ec87ef61041c096b492e882debe45379",
+  "policy_quality_assessed": false
+}

@@ -1,0 +1,4 @@
+Filesystem      Size  Used Avail Use% Mounted on
+C:              459G  447G   12G  98% /c
+Reusing environment without installing packages: /c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/cluster-reload-fix-v1/old-environment/python
+GPU checks passed. Results: runs/cluster-check-900001

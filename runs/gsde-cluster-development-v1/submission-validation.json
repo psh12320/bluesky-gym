@@ -1,0 +1,30 @@
+{
+  "fake_scheduler_only": true,
+  "real_jobs_submitted": false,
+  "cases": {
+    "success": {
+      "first_exit_code": 0,
+      "fake_scheduler_calls": 5,
+      "receipt_lines": 6,
+      "second_launch_blocked_before_any_submission": true
+    },
+    "first_failure": {
+      "first_exit_code": 1,
+      "fake_scheduler_calls": 1,
+      "receipt_lines": 1,
+      "second_launch_blocked_before_any_submission": true
+    },
+    "third_failure": {
+      "first_exit_code": 1,
+      "fake_scheduler_calls": 3,
+      "receipt_lines": 3,
+      "second_launch_blocked_before_any_submission": true
+    },
+    "invalid_reply": {
+      "first_exit_code": 2,
+      "fake_scheduler_calls": 1,
+      "receipt_lines": 1,
+      "second_launch_blocked_before_any_submission": true
+    }
+  }
+}

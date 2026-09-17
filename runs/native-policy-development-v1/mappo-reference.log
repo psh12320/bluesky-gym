@@ -1,0 +1,18 @@
+{"episode": 0, "arrival_rate": 1.0}
+{"episode": 1, "arrival_rate": 1.0}
+{"episodes": 2, "agent_episodes": 20, "metrics": {"waypoint_reached": {"mean": 1.0, "std": 0.0}, "flight_time": {"mean": 852.85, "std": 167.81128537735475}, "intrusion_events": {"mean": 2.2, "std": 1.6613247725836149}, "intrusion_time": {"mean": 125.4, "std": 109.21648227259475}, "restricted_area_events": {"mean": 0.0, "std": 0.0}, "time_in_restricted_area": {"mean": 0.0, "std": 0.0}, "sector_exit_events": {"mean": 0.0, "std": 0.0}, "time_outside_sector": {"mean": 0.0, "std": 0.0}, "total_reward": {"mean": -81.2046327148309, "std": 103.27395659368969}}, "clean_completion_rate": 0.25, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "mappo", "guidance": true, "filter": false, "static_filter": true, "action_reference": "goal_offset", "conflict_features": true, "mask_conflict_features": false, "seed": 20260, "live_transitions": 3419, "padded_transitions": 1191, "world_decisions": 461, "aircraft_terminated": 20, "aircraft_truncated": 0, "wall_seconds": 30.199067500005185, "actor_inference_uses_joint_context": false, "runtime": {"static_area_filter": true, "traffic_conflict_filter": false, "geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap", "population": 10, "decision_interval_seconds": 5, "episode_time_limit": 3000, "actor_addition": "time_remaining_fraction", "worker_imported_torch": true, "isolated_simulator_files": true, "training_progress_scale": 0.0, "action_reference": "goal_offset", "conflict_features": true, "mask_conflict_features": false}, "csv_sha256": "e26d78ab038529ca38d1c30d38ddc314c4cc435b1c7d7498dbf5428e0708cab2"}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\mappo-reference\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\mappo-reference\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\mappo-reference\workers\world-0\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\mappo-reference\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\mappo-reference\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\mappo-reference\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

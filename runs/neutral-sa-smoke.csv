@@ -1,0 +1,4 @@
+episode,agent,waypoint_reached,flight_time,intrusion_events,intrusion_time,restricted_area_events,time_in_restricted_area,sector_exit_events,time_outside_sector,total_reward
+0,KL001,1,772.0,1,36.0,1,77.0,0,0.0,-112.0137795179873
+1,KL001,1,690.0,2,174.0,1,247.0,0,0.0,-420.0006379208333
+2,KL001,1,784.0,1,55.0,0,0.0,0,0.0,-54.000059996426124

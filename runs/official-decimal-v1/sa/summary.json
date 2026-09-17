@@ -1,0 +1,62 @@
+{
+  "episodes": 1000,
+  "agent_episodes": 1000,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.985,
+      "std": 0.12155245781143219
+    },
+    "flight_time": {
+      "mean": 1175.885,
+      "std": 471.03143607937676
+    },
+    "intrusion_events": {
+      "mean": 0.344,
+      "std": 0.6274264897181183
+    },
+    "intrusion_time": {
+      "mean": 17.386,
+      "std": 40.04239008850496
+    },
+    "restricted_area_events": {
+      "mean": 0.028,
+      "std": 0.17668050260286222
+    },
+    "time_in_restricted_area": {
+      "mean": 1.04,
+      "std": 8.63807849003469
+    },
+    "sector_exit_events": {
+      "mean": 0.001,
+      "std": 0.03160696125855822
+    },
+    "time_outside_sector": {
+      "mean": 0.087,
+      "std": 2.7498056294945648
+    },
+    "total_reward": {
+      "mean": 229.20133580199519,
+      "std": 50.05007014518853
+    }
+  },
+  "clean_completion_rate": 0.704,
+  "all_aircraft_clean_completion_rate": 0.704,
+  "completed_at_utc": "2026-09-15T16:55:53.023503+00:00",
+  "wall_seconds": 11923.892461399955,
+  "env": "sa",
+  "seed": 42,
+  "official_protocol": true,
+  "judge_verified": false,
+  "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+  "deployment_sha256": "8d1a0e58ecc73c5613161bc763aff92e56a0936c1d6f7440c3c123fa5b013840",
+  "heading_transport": {
+    "revision": 1,
+    "encoding": "plain_decimal"
+  },
+  "csv_sha256": "306f5ce2f220b6868f4c457fd701b479f81975485c401f8e7f850d2c8ca9fe50",
+  "protocol_sha256": "6c1cf29d3a4f420e173403f4beeeb8c04143019f4465ce2b7f781cef968bf653",
+  "all_metrics_recomputed": true,
+  "execution_sources_unchanged": true,
+  "record_grouping": "Original CSV indexes final records, not scenario IDs. Consecutive groups contain exactly the fixed aircraft count per scenario; completion slots are not aircraft identities.",
+  "parser_diagnostic_lines": []
+}

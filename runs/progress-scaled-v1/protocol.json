@@ -1,0 +1,36 @@
+{
+  "algorithm": "ppo",
+  "workers": 2,
+  "seed": 49900,
+  "live_steps": 100000,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "progress_scale": 100.0,
+  "reward_scale": 0.01,
+  "guidance": false,
+  "filter": false,
+  "initial_action_std": 0.6065306597126334,
+  "neutral_action_mean": false,
+  "source_bundle": "runs/onpolicy-cluster-v2.zip",
+  "source_bundle_sha256": "168c833c62837eb664ce84bc6067b99fcbca42cd927593f157046e9a358cb3e4",
+  "existing_factorial_cells": {
+    "no_shaping_scale_1": "runs/ppo-direct-pilot-v1",
+    "shaping_100_scale_1": "runs/progress-reward-v1/train",
+    "no_shaping_scale_0p01": "runs/ppo-reward-scale-v1/train"
+  },
+  "hypothesis": "Test whether smaller value-target magnitudes allow potential-based progress feedback to improve navigation; neither component alone gave useful performance.",
+  "initial_reference": "runs/ppo-direct-pilot-v1/initial-model.zip",
+  "initial_evaluation": "runs/ppo-direct-pilot-v1/eval-initial-dev20",
+  "evaluation_source": "runs/onpolicy-cluster-v1-verify",
+  "evaluation_worlds": 20,
+  "development_seed": 20260,
+  "screen": {
+    "minimum_arrival_gain_percentage_points": 10,
+    "intrusion_time_must_not_increase": true,
+    "restricted_time_must_not_increase": true,
+    "outside_time_must_not_increase": true
+  },
+  "registered_before_training": true,
+  "interpretation": "A one-seed developmental interaction test, not an algorithm superiority or competition-quality claim."
+}

@@ -1,0 +1,21 @@
+{
+  "full_rl_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "289",
+    "time": "24.827",
+    "timestamp": "2026-09-17T10:58:53.099028+08:00",
+    "hostname": "Shri-Laptop"
+  },
+  "source_bundle_sha256": "d72575b87b1e63f5cdd8fb0c77fe7db5d31017f7fbcb72f27dc2c13971275903",
+  "source_files": 156,
+  "changed_files": [
+    "atc_rl/imitation.py"
+  ],
+  "new_files": [
+    "tests/rl/test_categorical_imitation.py"
+  ],
+  "fixed_environment_and_benchmark_files_unchanged": 65
+}

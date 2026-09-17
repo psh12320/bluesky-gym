@@ -1,0 +1,22 @@
+{
+  "declared_at_utc": "2026-09-15T12:23:31.043411+00:00",
+  "phase": "Corrective deployment revision, separate from original frozen evaluations",
+  "candidates": {
+    "ma": {
+      "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+      "manifest_sha256": "44034e213b22719f2d076f53b771f637497affa9f8f8d7f29b4fff35768342e4",
+      "source_protocol_sha256": "6809dc93f273525ff8de0be1cc4dcf1386f6f23822ffc1c079d315727bc50b50"
+    },
+    "sa": {
+      "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+      "manifest_sha256": "8d1a0e58ecc73c5613161bc763aff92e56a0936c1d6f7440c3c123fa5b013840",
+      "source_protocol_sha256": "601ee6b571f0061157ba47b60d86879c5eccd21cf3cedddcdbd3049a8572f94c"
+    }
+  },
+  "formatting_only_no_retraining": true,
+  "why": "A finite scientific-notation heading was rejected during original MA held-out testing. Plain decimal serializes the identical numeric target correctly.",
+  "analysis_discipline": "Retain original results. Corrected runs on previously used seeds are revision checks, not new untouched evidence. Do not tune recipes or select different weights from these results.",
+  "official_entry": "python -m atc.deployment --env TRACK --model MODEL --out CSV",
+  "harness_scope": "Only make_env and load_policy are replaced; the original seed, scoring loops, scenario counts and metrics remain unchanged.",
+  "old_entry_rejects_missing_legacy_configuration": true
+}

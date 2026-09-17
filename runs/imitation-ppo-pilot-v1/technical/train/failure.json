@@ -1,0 +1,5 @@
+{
+  "error": "ValueError('Pretrained observation/action spaces differ')",
+  "live_transitions": 0,
+  "counted_or_padding_records_retained": true
+}

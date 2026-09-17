@@ -1,0 +1,64 @@
+{
+  "registered_at_utc": "2026-09-16T02:30:01.056058+00:00",
+  "configuration": {
+    "algorithm": "ppo",
+    "workers": 2,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "seed": 49900,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "progress_scale": 0.0,
+    "reward_scale": 0.01,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600.0
+  },
+  "purpose": "Measure whether PPO learns conflict avoidance with fixed static route guidance and no action filter.",
+  "hypothesis": "Separating obstacle routing from learned traffic avoidance makes the safety learning problem easier without attributing the route prior to RL.",
+  "source_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-learning-source-v1.zip",
+    "sha256": "d907085646612d257658f0c701c2937342cd712cc55047fa231b6cde525526ba",
+    "bytes": 238396,
+    "source_files": 122,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "initial_reference": "Verify exact full policy tensor identity with the registered g1-f0 support control before reusing its evaluation.",
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "curve_targets": [
+    0,
+    50000,
+    100000
+  ],
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "comparisons": [
+    "Exact own initial policy under the same support flags",
+    "Fixed classical benchmark",
+    "Previous guidance-off PPO at the same approximate live budget; source logging parity documented."
+  ],
+  "limitations": [
+    "One exploratory training seed, not independent replication across seeds.",
+    "A 100k pilot tests direction and execution, not convergence or competition readiness.",
+    "Route guidance is classical support; only trained-minus-initial differences count as learning.",
+    "Three training seeds, separately trained support configurations and unseen evaluation remain required."
+  ],
+  "classical_refinements": false,
+  "unseen_scenarios_used": false
+}

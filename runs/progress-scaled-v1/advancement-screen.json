@@ -1,0 +1,37 @@
+{
+  "screen_passed": false,
+  "checks": [
+    {
+      "criterion": "arrival_gain_percentage_points",
+      "observed": 14.000000000000002,
+      "relation": ">=",
+      "threshold": 10,
+      "passed": true
+    },
+    {
+      "criterion": "intrusion_time_change_seconds",
+      "observed": 162.67000000000002,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": false
+    },
+    {
+      "criterion": "time_in_restricted_area_change_seconds",
+      "observed": -182.555,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": true
+    },
+    {
+      "criterion": "time_outside_sector_change_seconds",
+      "observed": -379.61999999999995,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": true
+    }
+  ],
+  "comparison_sha256": "0771336a70cec64a033e210705ec4025e7e14a609f44cc7640205062d2aa8ad2",
+  "protocol_sha256": "34570cb712ed42c2181d39141cd814011cbc642af85ba0ce46918a9e037fa35e",
+  "decision": "Do not extend this recipe as a successful navigation and safety system.",
+  "interpretation": "Registered one-seed development triage. This is not final generalization evidence."
+}

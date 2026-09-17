@@ -1,0 +1,64 @@
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Using cpu device
+Logging to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-ma-fast-reference-reach250-v1-25k-seed2904
+------------------------------------
+| time/                 |          |
+|    episodes           | 40       |
+|    fps                | 51       |
+|    time_elapsed       | 145      |
+|    total_timesteps    | 7420     |
+| train/                |          |
+|    actor_loss         | -16.1    |
+|    actor_updates      | 964      |
+|    critic_loss        | 468      |
+|    ent_coef           | 0.742    |
+|    ent_coef_loss      | -0.776   |
+|    held_actor_updates | 0        |
+|    learning_rate      | 0.0003   |
+|    n_updates          | 964      |
+------------------------------------
+------------------------------------
+| time/                 |          |
+|    episodes           | 80       |
+|    fps                | 47       |
+|    time_elapsed       | 361      |
+|    total_timesteps    | 17210    |
+| train/                |          |
+|    actor_loss         | -56      |
+|    actor_updates      | 4880     |
+|    critic_loss        | 44.7     |
+|    ent_coef           | 0.264    |
+|    ent_coef_loss      | -2.2     |
+|    held_actor_updates | 0        |
+|    learning_rate      | 0.0003   |
+|    n_updates          | 4880     |
+------------------------------------
+------------------------------------
+| time/                 |          |
+|    episodes           | 120      |
+|    fps                | 46       |
+|    time_elapsed       | 507      |
+|    total_timesteps    | 23500    |
+| train/                |          |
+|    actor_loss         | -86      |
+|    actor_updates      | 7396     |
+|    critic_loss        | 34.4     |
+|    ent_coef           | 0.143    |
+|    ent_coef_loss      | -1.77    |
+|    held_actor_updates | 0        |
+|    learning_rate      | 0.0003   |
+|    n_updates          | 7396     |
+------------------------------------
+Saving model checkpoint to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-ma-fast-reference-reach250-v1-25k-seed2904\checkpoints\model_25000_steps.zip
+Saving model replay buffer checkpoint to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-ma-fast-reference-reach250-v1-25k-seed2904\checkpoints\model_replay_buffer_25000_steps.pkl
+{"timesteps": 25000, "new_timesteps": 25000, "wall_seconds": 561.1744912999566, "critic_updates": 8000, "held_actor_updates": 0, "actor_updates": 8000, "live_transitions": 14191, "skipped_transitions": 10809, "new_live_transitions": 14191, "new_skipped_transitions": 10809}

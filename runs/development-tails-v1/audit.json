@@ -1,0 +1,15 @@
+{
+  "source_hashes_match": true,
+  "quantile_order_and_counts_valid": true,
+  "conditional_mean_identities_valid": true,
+  "slot_counts_and_weighted_means_match": true,
+  "figure_visually_reviewed": true,
+  "no_heldout_data_read": true,
+  "artifacts": {
+    "analyze.py": "582c46d1bc38d7030a757f47ccda66dfc484f5cabe74ae6656206fa76502f673",
+    "tails.json": "2a5f0e1d046b44c60ec5471c33b59afdc4611f3f4abf0fd644448ae9b0f10b88",
+    "quantiles.csv": "04c26fa16520beff8ace72d65ac8b32b17ba473a82aa84b3fbab1b5352e59938",
+    "development-tails.png": "5d7427eafb390b1bed878df35e1a7f43a973ac078a40559061a17958c6379a7f",
+    "development-tails.svg": "5ce97a526358e4367cc813d6a85647f204919bf780bf02e1d292247161d90364"
+  }
+}

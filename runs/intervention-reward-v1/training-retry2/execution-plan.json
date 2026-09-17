@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-09-15T16:58:13.880285+00:00",
+  "protocol_sha256": "89a73663fe90b4198d431678ba9342f96255b26377aa2c8d116bb75db1dd7d13",
+  "runner_sha256": "f51e73ccb0154f689ab70864cf3d811c60dc5ae9e10517557f9db89253183869",
+  "extension_sha256": "82335cb0a4861d8ac64e08bf3d8c8d273727d71a32e4cd72dfc5eb1b26201dc3",
+  "stage_order": [
+    "train_0",
+    "evaluate_0",
+    "train_1",
+    "evaluate_1"
+  ],
+  "original_attempt_state_sha256": "2b90795420510de0c52d2632045ef16387d795239f7c5afa0e5c092e834f25a6",
+  "reused_validation_audit_sha256": "2f90a07e496cd1b06ffe547488af7366c0b403ef450f49c1d1625d9733601bff",
+  "recovery_scope": "Training had not started. Preserve validated physics/reward separation; replace Git-based capture with archive-based provenance. No policy, reward, budget or evaluation changes."
+}

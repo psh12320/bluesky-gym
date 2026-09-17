@@ -1,0 +1,177 @@
+{
+  "protocol_sha256": "ae7b2662874c1dac7f57fdc78740ea81b06c3d5f7876d29b9e84646ce687887a",
+  "results": [
+    {
+      "mode": "scalar",
+      "ordinal": 0,
+      "wall_seconds": 159.54221490002237,
+      "active_replay_seconds": 113.63548479997553,
+      "command_statistics": {
+        "mode": "scalar",
+        "decision_batches": 0,
+        "aircraft_forecasts": 0,
+        "actions": 4070,
+        "command_seconds": 47.97312459629029
+      },
+      "development_check": {
+        "env": "ma",
+        "seed": 2026,
+        "episodes": 2,
+        "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+        "extracted_source_used": true,
+        "source_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\forecast-batch-v1\\timing-ma\\00-scalar\\candidate\\source",
+        "all_metrics_match": true,
+        "metric_max_absolute_difference": {
+          "waypoint_reached": 0.0,
+          "flight_time": 0.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": 0.0
+        },
+        "dependency_environment": "Existing interpreter; dependencies were not reinstalled by this check"
+      },
+      "unchanged_packaged_files": 145,
+      "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+      "navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+      "per_forecast_scalar_verification": false
+    },
+    {
+      "mode": "batch",
+      "ordinal": 1,
+      "wall_seconds": 107.6703643000219,
+      "active_replay_seconds": 73.7342732999823,
+      "command_statistics": {
+        "mode": "batch",
+        "decision_batches": 573,
+        "aircraft_forecasts": 4070,
+        "actions": 4070,
+        "command_seconds": 26.63352979964111
+      },
+      "development_check": {
+        "env": "ma",
+        "seed": 2026,
+        "episodes": 2,
+        "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+        "extracted_source_used": true,
+        "source_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\forecast-batch-v1\\timing-ma\\01-batch\\candidate\\source",
+        "all_metrics_match": true,
+        "metric_max_absolute_difference": {
+          "waypoint_reached": 0.0,
+          "flight_time": 0.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": 0.0
+        },
+        "dependency_environment": "Existing interpreter; dependencies were not reinstalled by this check"
+      },
+      "unchanged_packaged_files": 145,
+      "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+      "navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+      "per_forecast_scalar_verification": false
+    },
+    {
+      "mode": "batch",
+      "ordinal": 2,
+      "wall_seconds": 83.87784309999552,
+      "active_replay_seconds": 65.56641179998405,
+      "command_statistics": {
+        "mode": "batch",
+        "decision_batches": 573,
+        "aircraft_forecasts": 4070,
+        "actions": 4070,
+        "command_seconds": 23.892756000976078
+      },
+      "development_check": {
+        "env": "ma",
+        "seed": 2026,
+        "episodes": 2,
+        "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+        "extracted_source_used": true,
+        "source_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\forecast-batch-v1\\timing-ma\\02-batch\\candidate\\source",
+        "all_metrics_match": true,
+        "metric_max_absolute_difference": {
+          "waypoint_reached": 0.0,
+          "flight_time": 0.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": 0.0
+        },
+        "dependency_environment": "Existing interpreter; dependencies were not reinstalled by this check"
+      },
+      "unchanged_packaged_files": 145,
+      "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+      "navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+      "per_forecast_scalar_verification": false
+    },
+    {
+      "mode": "scalar",
+      "ordinal": 3,
+      "wall_seconds": 79.9915737999836,
+      "active_replay_seconds": 59.91202249994967,
+      "command_statistics": {
+        "mode": "scalar",
+        "decision_batches": 0,
+        "aircraft_forecasts": 0,
+        "actions": 4070,
+        "command_seconds": 25.464237002423033
+      },
+      "development_check": {
+        "env": "ma",
+        "seed": 2026,
+        "episodes": 2,
+        "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+        "extracted_source_used": true,
+        "source_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\forecast-batch-v1\\timing-ma\\03-scalar\\candidate\\source",
+        "all_metrics_match": true,
+        "metric_max_absolute_difference": {
+          "waypoint_reached": 0.0,
+          "flight_time": 0.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": 0.0
+        },
+        "dependency_environment": "Existing interpreter; dependencies were not reinstalled by this check"
+      },
+      "unchanged_packaged_files": 145,
+      "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+      "navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+      "per_forecast_scalar_verification": false
+    }
+  ],
+  "pairs": [
+    {
+      "scalar_ordinal": 0,
+      "batch_ordinal": 1,
+      "wall_ratio": 1.4817653486846234,
+      "active_replay_ratio": 1.5411487726699111,
+      "command_ratio": 1.801230439869699
+    },
+    {
+      "scalar_ordinal": 3,
+      "batch_ordinal": 2,
+      "wall_ratio": 0.953667510317607,
+      "active_replay_ratio": 0.9137608854167042,
+      "command_ratio": 1.0657722784840207
+    }
+  ],
+  "median_paired_active_replay_ratio": 1.2274548290433076,
+  "median_paired_command_ratio": 1.43350135917686,
+  "scope": "Descriptive local timings from two ordered pairs under concurrent scoring load. No confidence interval, cluster throughput or universal speedup claim. No model selection.",
+  "production_source_changed": false
+}

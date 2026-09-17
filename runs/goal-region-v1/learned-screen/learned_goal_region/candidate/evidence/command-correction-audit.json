@@ -1,0 +1,10 @@
+{
+  "diagnostic_sha256": "19a84eb2c2b13c9a17c6edd1fbf38200348bdd008339a49eafc7bed03e743231",
+  "formatter_sha256": "15c2e510e25cf72ff8674d6e4cdd800c8689474365308156121bcbeaa649fcdb",
+  "physical_metrics_identical_per_aircraft": true,
+  "command_rejections": 0,
+  "heading_commands": 1925,
+  "reward_max_absolute_change": 6.1094145422657675e-06,
+  "not_a_fresh_validation_set": true,
+  "not_enabled_in_original_frozen_runs": true
+}

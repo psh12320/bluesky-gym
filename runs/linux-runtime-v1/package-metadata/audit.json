@@ -1,0 +1,339 @@
+{
+  "target": "CPython 3.12 Linux x86-64 glibc 2.35",
+  "packages": {
+    "bluesky-navdata": {
+      "version": "1.0.0",
+      "compatible_wheels": [
+        "bluesky_navdata-1.0.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 34069869
+    },
+    "bluesky-simulator": {
+      "version": "1.1.1",
+      "compatible_wheels": [
+        "bluesky_simulator-1.1.1-cp312-cp312-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 672001
+    },
+    "cloudpickle": {
+      "version": "3.1.2",
+      "compatible_wheels": [
+        "cloudpickle-3.1.2-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 22228
+    },
+    "colorama": {
+      "version": "0.4.6",
+      "compatible_wheels": [
+        "colorama-0.4.6-py2.py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 25335
+    },
+    "contourpy": {
+      "version": "1.4.0",
+      "compatible_wheels": [
+        "contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 383243
+    },
+    "cycler": {
+      "version": "0.12.1",
+      "compatible_wheels": [
+        "cycler-0.12.1-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 8321
+    },
+    "Farama-Notifications": {
+      "version": "0.0.6",
+      "compatible_wheels": [
+        "farama_notifications-0.0.6-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 2897
+    },
+    "filelock": {
+      "version": "3.32.6",
+      "compatible_wheels": [
+        "filelock-3.32.6-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 100189
+    },
+    "fonttools": {
+      "version": "4.65.0",
+      "compatible_wheels": [
+        "fonttools-4.65.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "fonttools-4.65.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 1196441
+    },
+    "fsspec": {
+      "version": "2026.7.0",
+      "compatible_wheels": [
+        "fsspec-2026.7.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 206583
+    },
+    "gymnasium": {
+      "version": "1.3.0",
+      "compatible_wheels": [
+        "gymnasium-1.3.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 953904
+    },
+    "iniconfig": {
+      "version": "2.3.0",
+      "compatible_wheels": [
+        "iniconfig-2.3.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 7484
+    },
+    "Jinja2": {
+      "version": "3.1.6",
+      "compatible_wheels": [
+        "jinja2-3.1.6-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 134899
+    },
+    "kiwisolver": {
+      "version": "1.5.1",
+      "compatible_wheels": [
+        "kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 1477929
+    },
+    "MarkupSafe": {
+      "version": "3.0.3",
+      "compatible_wheels": [
+        "markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 22947
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "compatible_wheels": [
+        "matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 9860353
+    },
+    "mpmath": {
+      "version": "1.3.0",
+      "compatible_wheels": [
+        "mpmath-1.3.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 536198
+    },
+    "msgpack": {
+      "version": "1.2.2",
+      "compatible_wheels": [
+        "msgpack-1.2.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 420619
+    },
+    "networkx": {
+      "version": "3.6.1",
+      "compatible_wheels": [
+        "networkx-3.6.1-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 2068504
+    },
+    "numpy": {
+      "version": "2.3.5",
+      "compatible_wheels": [
+        "numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 16606086
+    },
+    "openap": {
+      "version": "2.6.1",
+      "compatible_wheels": [
+        "openap-2.6.1-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 2700581
+    },
+    "packaging": {
+      "version": "26.3",
+      "compatible_wheels": [
+        "packaging-26.3-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 129956
+    },
+    "pandas": {
+      "version": "3.0.5",
+      "compatible_wheels": [
+        "pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 10998091
+    },
+    "pettingzoo": {
+      "version": "1.27.0",
+      "compatible_wheels": [
+        "pettingzoo-1.27.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 668492
+    },
+    "pillow": {
+      "version": "12.3.0",
+      "compatible_wheels": [
+        "pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 6940830
+    },
+    "pluggy": {
+      "version": "1.6.0",
+      "compatible_wheels": [
+        "pluggy-1.6.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 20538
+    },
+    "pygame": {
+      "version": "2.6.1",
+      "compatible_wheels": [
+        "pygame-2.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 13952653
+    },
+    "Pygments": {
+      "version": "2.21.0",
+      "compatible_wheels": [
+        "pygments-2.21.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 1250147
+    },
+    "pyparsing": {
+      "version": "3.3.2",
+      "compatible_wheels": [
+        "pyparsing-3.3.2-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 122781
+    },
+    "PyQt6": {
+      "version": "6.11.0",
+      "compatible_wheels": [
+        "pyqt6-6.11.0-cp310-abi3-manylinux_2_34_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 8334632
+    },
+    "PyQt6-Qt6": {
+      "version": "6.11.2",
+      "compatible_wheels": [
+        "pyqt6_qt6-6.11.2-py3-none-manylinux_2_34_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 86012424
+    },
+    "PyQt6_sip": {
+      "version": "13.12.0",
+      "compatible_wheels": [
+        "pyqt6_sip-13.12.0-cp312-cp312-manylinux1_x86_64.manylinux_2_5_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 299556
+    },
+    "pytest": {
+      "version": "9.1.1",
+      "compatible_wheels": [
+        "pytest-9.1.1-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 386536
+    },
+    "python-dateutil": {
+      "version": "2.9.0.post0",
+      "compatible_wheels": [
+        "python_dateutil-2.9.0.post0-py2.py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 229892
+    },
+    "PyYAML": {
+      "version": "6.0.3",
+      "compatible_wheels": [
+        "pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 807870
+    },
+    "pyzmq": {
+      "version": "27.2.0",
+      "compatible_wheels": [
+        "pyzmq-27.2.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 872258
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "compatible_wheels": [
+        "scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 35344199
+    },
+    "setuptools": {
+      "version": "84.0.0",
+      "compatible_wheels": [
+        "setuptools-84.0.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 818216
+    },
+    "shapely": {
+      "version": "2.1.2",
+      "compatible_wheels": [
+        "shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 3099844
+    },
+    "six": {
+      "version": "1.17.0",
+      "compatible_wheels": [
+        "six-1.17.0-py2.py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 11050
+    },
+    "stable_baselines3": {
+      "version": "2.9.0",
+      "compatible_wheels": [
+        "stable_baselines3-2.9.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 187606
+    },
+    "SuperSuit": {
+      "version": "3.11.0",
+      "compatible_wheels": [
+        "supersuit-3.11.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 50574
+    },
+    "sympy": {
+      "version": "1.14.0",
+      "compatible_wheels": [
+        "sympy-1.14.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 6299353
+    },
+    "tinyscaler": {
+      "version": "1.2.8",
+      "compatible_wheels": [
+        "tinyscaler-1.2.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      ],
+      "minimum_wheel_bytes": 563642
+    },
+    "typing_extensions": {
+      "version": "4.16.0",
+      "compatible_wheels": [
+        "typing_extensions-4.16.0-py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 45571
+    },
+    "tzdata": {
+      "version": "2026.4",
+      "compatible_wheels": [
+        "tzdata-2026.4-py2.py3-none-any.whl"
+      ],
+      "minimum_wheel_bytes": 347494
+    },
+    "zmq": {
+      "version": "0.0.0",
+      "compatible_wheels": [],
+      "minimum_wheel_bytes": null
+    }
+  },
+  "no_compatible_published_wheel": [
+    "zmq"
+  ],
+  "minimum_total_published_wheel_bytes": 249270816,
+  "torch_cpu_checked_separately": true,
+  "scope": "Availability of all frozen version constraints, including optional test tools; actual native resolution remains required"
+}

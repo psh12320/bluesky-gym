@@ -1,0 +1,10 @@
+{
+  "model": "runs\\sac-ma-route-residual-v1-100k-seed2900\\checkpoints\\model_25000_steps.zip",
+  "model_sha256": "dcea8a2871e307b9b4ba030ab2d85fece64cb8a20e18517db1ad410a1854f041",
+  "timesteps": 25000,
+  "optimizer_updates": 7996,
+  "actor_mean_weight_norm": 0.8100001811981201,
+  "actor_mean_bias_norm": 0.015495218336582184,
+  "initial_mean_weight_norm": 0.0,
+  "initial_mean_bias_norm": 0.0
+}

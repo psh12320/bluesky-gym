@@ -1,0 +1,6 @@
+{
+  "timesteps": 600,
+  "updates": 120,
+  "saved_configuration_preserved": true,
+  "invalid_architectures_rejected": true
+}

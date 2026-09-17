@@ -1,0 +1,42 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\sa-ppo-static\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\sa-ppo-static\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\sa-ppo-static\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\sa-ppo-static\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\sa-ppo-static\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\native-policy-development-v1\sa-ppo-static\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\atc_rl\competition.py", line 221, in <module>
+    main()
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\atc_rl\competition.py", line 193, in main
+    native_records = harness.run_single_agent(args.episodes, actor)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\scripts\evaluate_competition.py", line 63, in run_single_agent
+    obs, info = env.reset(seed=SEED if ep == 0 else None)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\atc_rl\competition.py", line 95, in reset
+    result = self.env.reset(seed=seed, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\atc_rl\deployment.py", line 96, in reset
+    observation, info = self.env.reset(seed=seed, options=options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\.venv\Lib\site-packages\gymnasium\core.py", line 554, in reset
+    return self.observation(obs), info
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\atc_rl\deployment.py", line 81, in observation
+    return timed_observation(result, self.unwrapped)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\onpolicy-native-source-v1-verify\atc_rl\deployment.py", line 23, in timed_observation
+    remaining = max(0.0, 1 - float(world.sim_time) / world.episode_time_limit)
+                                   ^^^^^^^^^^^^^^
+AttributeError: 'PredictiveEnv' object has no attribute 'sim_time'

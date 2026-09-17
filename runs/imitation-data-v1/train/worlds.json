@@ -1,0 +1,258 @@
+[
+  {
+    "episode": 0,
+    "file": "world-00000.npz",
+    "sha256": "4a9cc555de6202a28d78c4f5353b11ff46fd50777097de214913aacc8fe1eeae",
+    "scenario_sha256": "a07123a5af16d04392aa69616acd90414218397d9e3f0b4c8da6312ddf325e7b",
+    "live_transitions": 2034,
+    "interventions": 269
+  },
+  {
+    "episode": 1,
+    "file": "world-00001.npz",
+    "sha256": "2515b355e07e0cd28153f28680a4db4dcb6f79f7a005a51653ad3a0f907a19f9",
+    "scenario_sha256": "3d4beb9c57dd75b620b22483c8046003f8f2edcd37e1fe47cf13ed3cff334a72",
+    "live_transitions": 1597,
+    "interventions": 199
+  },
+  {
+    "episode": 2,
+    "file": "world-00002.npz",
+    "sha256": "460c2934240039c7a45b5666976bec6242a15c20486f4db2b09af5fd66d82100",
+    "scenario_sha256": "2ca40acea1bb4978404a2b276c0431f49b84841ef36f15ecb27e86efcb6aacd8",
+    "live_transitions": 1933,
+    "interventions": 166
+  },
+  {
+    "episode": 3,
+    "file": "world-00003.npz",
+    "sha256": "f0ac5abb6c492e7b314c4652b109eb108740fd735f7a7c754f35e8e00a59927c",
+    "scenario_sha256": "4fe3f4c183d8f9e5dade25b2e04c966c962c1a9d1231a0c887b37a71e108eb79",
+    "live_transitions": 2494,
+    "interventions": 627
+  },
+  {
+    "episode": 4,
+    "file": "world-00004.npz",
+    "sha256": "dc1dfcd59fceab04a1e5e99666825146ec264282e62b64e3b3c086a6e3955f90",
+    "scenario_sha256": "911f4ff97946318ae52edaac59d482b23fdcac0a83d747c7057f892342ecfac8",
+    "live_transitions": 2222,
+    "interventions": 216
+  },
+  {
+    "episode": 5,
+    "file": "world-00005.npz",
+    "sha256": "026be58d05209091e965afa56988fcba6e015f390f81a11defccf1e0fe8027c8",
+    "scenario_sha256": "a8b9c23589ba8bcb08451259b370197732dada132f3c4d6002a5ca2569b4cacc",
+    "live_transitions": 1788,
+    "interventions": 1
+  },
+  {
+    "episode": 6,
+    "file": "world-00006.npz",
+    "sha256": "fb38ea04b94dbac953ea68009144777bcdafb8b37adaf57d794ec05d493adb0a",
+    "scenario_sha256": "fadaefa074439f5de2f4faa364a806536d8bdcc30239221afcfe452120e7d8a5",
+    "live_transitions": 1897,
+    "interventions": 128
+  },
+  {
+    "episode": 7,
+    "file": "world-00007.npz",
+    "sha256": "38568b97f4433d588c41c24a4d557b9d00a37073884e9ebd501f669a92e9a904",
+    "scenario_sha256": "4f17f34cbeab9b06ea8ce92dc7cda6708d3b64ad038e2b9e8925e9489f75fcb3",
+    "live_transitions": 2072,
+    "interventions": 404
+  },
+  {
+    "episode": 8,
+    "file": "world-00008.npz",
+    "sha256": "b2e8dea6dedb817d74f8027e06cc42a95fbd67ebd598ac8dc618dc27f8cec1ad",
+    "scenario_sha256": "6d200f4c14188c61fbec67426d1f05e8a96c19a37dada7ed027c0f156e043619",
+    "live_transitions": 1875,
+    "interventions": 303
+  },
+  {
+    "episode": 9,
+    "file": "world-00009.npz",
+    "sha256": "ffd0be52822ad9113ea56bce37f21e392db35f0ac731e6db62c8648680985e8b",
+    "scenario_sha256": "753501f797cab940fae0dcbccb328a49a67670012741f7339dda73f55e75fab0",
+    "live_transitions": 1994,
+    "interventions": 359
+  },
+  {
+    "episode": 10,
+    "file": "world-00010.npz",
+    "sha256": "054c45eca44d02e0e0a1f9f4d7435dc13eebc2d9672fb6a91a962be162b24103",
+    "scenario_sha256": "87ff3518d2bd83ed1d81c46a9fcd9de599d82cba02a1269136d25617680e4510",
+    "live_transitions": 1466,
+    "interventions": 467
+  },
+  {
+    "episode": 11,
+    "file": "world-00011.npz",
+    "sha256": "541429799989a0609d133ae6d0221c14dc13dae2525bb03d34959442fdf63d0d",
+    "scenario_sha256": "bb805664161f0b111aeff2a841def52dd5634807ccf0cb119caa07a03edaa3e6",
+    "live_transitions": 2139,
+    "interventions": 153
+  },
+  {
+    "episode": 12,
+    "file": "world-00012.npz",
+    "sha256": "b67fbca0159634696c1a4bd38b5be5800fb83f8bdec4219d508a3bfb974fcf5d",
+    "scenario_sha256": "b37045ea302738e364f3c7245a95ffc360f9d2358fc539a6acb1bdb393aeefa5",
+    "live_transitions": 1970,
+    "interventions": 241
+  },
+  {
+    "episode": 13,
+    "file": "world-00013.npz",
+    "sha256": "940326847794ad3cb1c9ebc6f145bf1f0f4e2ff75fffe2ea7aa54032ee11a32d",
+    "scenario_sha256": "682b8d70de0dca65d032e1621d0b6ac20baab12149e3e8fc952773a4a6b9fd05",
+    "live_transitions": 2057,
+    "interventions": 389
+  },
+  {
+    "episode": 14,
+    "file": "world-00014.npz",
+    "sha256": "5946128d0d614af5e9e240459495d502dfe0536249f3b7c29a70c93ae832fb7a",
+    "scenario_sha256": "43f4ec0c6d1ab95aae9477e9e3696c6358c0a873a82298cceece9e388fa3f2db",
+    "live_transitions": 1883,
+    "interventions": 154
+  },
+  {
+    "episode": 15,
+    "file": "world-00015.npz",
+    "sha256": "1b4b5c5da81dc5b1a000316e4a4905f88efc3bc369b52662759454397553af55",
+    "scenario_sha256": "5f8e8c8333eb1a9a546632ae24cca2053f330724d76a7a13af3bc777d263fc6f",
+    "live_transitions": 2854,
+    "interventions": 236
+  },
+  {
+    "episode": 16,
+    "file": "world-00016.npz",
+    "sha256": "f208fba0fbf4554227f45d2b241df48caa05e22258078644a669753b4f5bd55c",
+    "scenario_sha256": "c24b69ea57ed19ff50b114f011254c4eda5d1e757fbcb9826da8579c52c2fb56",
+    "live_transitions": 1923,
+    "interventions": 201
+  },
+  {
+    "episode": 17,
+    "file": "world-00017.npz",
+    "sha256": "ccfe4321cac340e5a989ea17388764e4e8a295253c84c2d6710a4c0614525dcd",
+    "scenario_sha256": "32a23fddb8de9679d2eccd44087e465c1167b51976728778083c527078d91259",
+    "live_transitions": 1631,
+    "interventions": 219
+  },
+  {
+    "episode": 18,
+    "file": "world-00018.npz",
+    "sha256": "00b1cd0273de82ec3ea68c48bfc06e578820105e97bfe3d8472097b09f2dcb80",
+    "scenario_sha256": "2c20086ad9343eff5b378db0a6378395a9ef5d88a261e4f63bf05f29f10fc509",
+    "live_transitions": 1874,
+    "interventions": 383
+  },
+  {
+    "episode": 19,
+    "file": "world-00019.npz",
+    "sha256": "dd797577e62946f0259cb7321d7920c5dc27f66a2046bdc3109c047630a31f7a",
+    "scenario_sha256": "85b3b2cbe38bf39e3ebe5f5d8546a6f7372367e7940007ebd6ee579c46026880",
+    "live_transitions": 2228,
+    "interventions": 840
+  },
+  {
+    "episode": 20,
+    "file": "world-00020.npz",
+    "sha256": "f1f093ded401977e7802e7865d0212b25d31024235a87932fc82c7339d654ae9",
+    "scenario_sha256": "711beeac9d615c8debe1aa3fc551ed1d6490713de370c58a57364584aaa82101",
+    "live_transitions": 2721,
+    "interventions": 1186
+  },
+  {
+    "episode": 21,
+    "file": "world-00021.npz",
+    "sha256": "ff7af613bb5feaa9999c1bea653d6267948bccf2d23a69381de49655d8b7111f",
+    "scenario_sha256": "cb6cdd6389e685621a7f071c0ebdb3f84d107b539c58c10417ae5067c69cf6bd",
+    "live_transitions": 1582,
+    "interventions": 117
+  },
+  {
+    "episode": 22,
+    "file": "world-00022.npz",
+    "sha256": "f2645de15eb06172529dee4286fdd0a48b42743aed36c1cae411bd69b06d133b",
+    "scenario_sha256": "fb35281240f555a1b5b0732ddeca783a2dfe2774e3b0b91888590212b309aa80",
+    "live_transitions": 2476,
+    "interventions": 585
+  },
+  {
+    "episode": 23,
+    "file": "world-00023.npz",
+    "sha256": "df91887070cfea7add02fb35b748127385f166373e6ecec52b5a73dd6553e3cb",
+    "scenario_sha256": "d8526d4c345d71d9e31215d6040975585a881ab611a144ed23c6d5ec1c41b441",
+    "live_transitions": 1861,
+    "interventions": 217
+  },
+  {
+    "episode": 24,
+    "file": "world-00024.npz",
+    "sha256": "c1fa8a383f9d9fddad4e5237a755e22cef2f1ef911bc1bafa8edfbaa37694fe1",
+    "scenario_sha256": "aa936a177d208cc5e4b02375f00e9621e8f2626fdd27e833983099eaaf019642",
+    "live_transitions": 1647,
+    "interventions": 160
+  },
+  {
+    "episode": 25,
+    "file": "world-00025.npz",
+    "sha256": "0bccbd74ef4151817136a1f4ad9c323462aae4164cf0d83fcc9a6f975763e8d1",
+    "scenario_sha256": "62cf6078f55aebaa8531cf31c51faff89e064020b7b2dd8add569cd406db4087",
+    "live_transitions": 1468,
+    "interventions": 130
+  },
+  {
+    "episode": 26,
+    "file": "world-00026.npz",
+    "sha256": "c036482dc6d8d4019f149d7ca17e53c8cded6b9e7a886ef0ff816851fa8b5718",
+    "scenario_sha256": "aeea56ccb05efb63c246b8de1a51957dc6ba169da56613ca2f9a79a17626eaae",
+    "live_transitions": 2020,
+    "interventions": 263
+  },
+  {
+    "episode": 27,
+    "file": "world-00027.npz",
+    "sha256": "4e1cc504e51d12c3c2a313f476d194c7f32258839b01767241af76e64e94dc3e",
+    "scenario_sha256": "9f2a1c003f6ef5047dea7e31d18e587a8105044e88fd597fafffe33a5319999c",
+    "live_transitions": 1669,
+    "interventions": 150
+  },
+  {
+    "episode": 28,
+    "file": "world-00028.npz",
+    "sha256": "c4c4142aa045505e94663b6ba9e1efa53a5ff528252ce0000be30947d3450550",
+    "scenario_sha256": "6a22643cf657e71c29d5dc3a74a4547f80449e5f0b56835495d57bdedbba3a1a",
+    "live_transitions": 1697,
+    "interventions": 91
+  },
+  {
+    "episode": 29,
+    "file": "world-00029.npz",
+    "sha256": "5130fd42dcf96a2900c5f8a74dafe24bef6ddcaaea10db9051314e8e0d60423d",
+    "scenario_sha256": "4a234b76fa4cfb3ef39e1b7de911b9b873826beb258171c705a8cba4ecda09e8",
+    "live_transitions": 2028,
+    "interventions": 206
+  },
+  {
+    "episode": 30,
+    "file": "world-00030.npz",
+    "sha256": "64a9792cee60dda35fb1a91ed34aae80aa18857beda012e7378233692132f1c6",
+    "scenario_sha256": "1b6811798b732b2975b31afb648d58112d2c88c6f90cc6ebdf1da18524d2869e",
+    "live_transitions": 1627,
+    "interventions": 194
+  },
+  {
+    "episode": 31,
+    "file": "world-00031.npz",
+    "sha256": "7b081d7f7f7cdde465f294d8b00ccfbd362727de9e89c9daac9e1e7489514c95",
+    "scenario_sha256": "c81d5f4983fd553b1c53f1837bb34c9553b29669b333fd48337b33263facaa75",
+    "live_transitions": 2017,
+    "interventions": 306
+  }
+]

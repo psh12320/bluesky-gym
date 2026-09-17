@@ -1,0 +1,105 @@
+{
+  "recorded_at_utc": "2026-09-16T06:52:48.246430+00:00",
+  "cases": {
+    "integration_seed49040": {
+      "checkpoint_sha256": "9bfd837b1802e0bd557e1e90f4e368941be8c606aab8e08162ea675953a4c890",
+      "in_memory_probe_only": true,
+      "weights": {
+        "0.01": {
+          "std_mean_per_channel": [
+            0.07329767942428589,
+            0.07329767942428589
+          ],
+          "std_p10_p50_p90_per_channel": [
+            [
+              0.07034844160079956,
+              0.07034844160079956
+            ],
+            [
+              0.0736365020275116,
+              0.0736365020275116
+            ],
+            [
+              0.07574719935655594,
+              0.07574719935655594
+            ]
+          ],
+          "heading_std_median_degrees": 6.627285003662109
+        },
+        "0.05": {
+          "std_mean_per_channel": [
+            0.36645564436912537,
+            0.36645564436912537
+          ],
+          "std_p10_p50_p90_per_channel": [
+            [
+              0.3517080247402191,
+              0.3517080247402191
+            ],
+            [
+              0.36814987659454346,
+              0.36814987659454346
+            ],
+            [
+              0.3787042796611786,
+              0.3787042796611786
+            ]
+          ],
+          "heading_std_median_degrees": 33.133487701416016
+        }
+      }
+    },
+    "registered_seed51700": {
+      "checkpoint_sha256": "cfd62e3c067afdd4e4993d0f5a7be9b6a2a367ddc263f46dc56776f8dc2c1255",
+      "in_memory_probe_only": true,
+      "weights": {
+        "0.01": {
+          "std_mean_per_channel": [
+            0.07237238436937332,
+            0.07237238436937332
+          ],
+          "std_p10_p50_p90_per_channel": [
+            [
+              0.06910059601068497,
+              0.06910059601068497
+            ],
+            [
+              0.07296506315469742,
+              0.07296506315469742
+            ],
+            [
+              0.07490142434835434,
+              0.07490142434835434
+            ]
+          ],
+          "heading_std_median_degrees": 6.5668559074401855
+        },
+        "0.05": {
+          "std_mean_per_channel": [
+            0.36182883381843567,
+            0.36182883381843567
+          ],
+          "std_p10_p50_p90_per_channel": [
+            [
+              0.3454682230949402,
+              0.3454682230949402
+            ],
+            [
+              0.36479243636131287,
+              0.36479243636131287
+            ],
+            [
+              0.37447506189346313,
+              0.37447506189346313
+            ]
+          ],
+          "heading_std_median_degrees": 32.83131790161133
+        }
+      }
+    }
+  },
+  "reference_observations_sha256": "a1679dfd030e75b7b50944a6ca7f157b3e760dddd9d5744275d2cf53fc7762e4",
+  "sample_count": 371,
+  "interpretation": "Marginal action noise is input-dependent. The registered weight std .01 is unchanged; this is not a performance test.",
+  "script_sha256": "e54acfcd8ae0a942a40f3d83764de89dd5bbfdefee4b01a4d8073a1671cfab59"
+}

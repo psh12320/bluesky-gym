@@ -1,0 +1,63 @@
+{
+  "env": "sa",
+  "episodes": 5,
+  "seed": 2026,
+  "heading_transport": {
+    "revision": 1,
+    "encoding": "plain_decimal"
+  },
+  "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+  "deployment_manifest_sha256": "8d1a0e58ecc73c5613161bc763aff92e56a0936c1d6f7440c3c123fa5b013840",
+  "recording_sha256": "4ad7c0cd9189a186554890c4ea4f158e0ca1aadb3385babab6562a5b614f9b79",
+  "reel_sha256": "fe3bdd1c709bc2e297b9d4d4b05fde70cfd69c8acec6210517a4fefa09a3834e",
+  "reel_frame_count": 289,
+  "matches_original_reel_bytes": true,
+  "file": "sa-first-five.mp4",
+  "mp4_sha256": "2e28f766f14aa60981a54717344566b3726d5bec6a7fbb036f17a73f5ad8a36b",
+  "duration_seconds": 38.4,
+  "bytes": 1136515,
+  "codec": "h264",
+  "full_stream_decodes": true,
+  "visual_check_frames": {
+    "motion": "sa-motion-early-check.png",
+    "final": "sa-final-check.png"
+  },
+  "visual_inspection": {
+    "in_flight_frame_inspected": true,
+    "final_frame_inspected": true,
+    "metrics_headers_readable": true,
+    "conflict_exposure_visible": true
+  },
+  "all_nine_metrics_exact": true,
+  "scope": "First five development scenarios; corrected deployment, not a population estimate or official-protocol score",
+  "conversion_command": [
+    "C:\\ffmpeg\\bin\\ffmpeg.exe",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-n",
+    "-ignore_loop",
+    "1",
+    "-i",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\preview-decimal-v1\\sa\\five-scenario-reel.gif",
+    "-vf",
+    "fps=10",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-threads",
+    "1",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "-an",
+    "-metadata",
+    "title=SA first five development scenarios, decimal heading transport revision 1",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\output\\videos\\decimal-heading-v1\\sa-first-five.mp4"
+  ]
+}

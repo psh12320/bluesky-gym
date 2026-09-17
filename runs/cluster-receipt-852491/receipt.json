@@ -1,0 +1,230 @@
+{
+  "received_at_utc": "2026-09-16T08:36:34.760705+00:00",
+  "job_id": 852491,
+  "evidence_scope": "User-provided terminal transcript. Original checkpoints, complete logs and per-aircraft CSVs have not yet been independently downloaded and audited.",
+  "transcript_sha256": "18de2f28b0222252f5f48629ab122d8dd8fe3667b8dbcdefd4908d33dfd7cffb",
+  "application_checks_reported_complete": true,
+  "scheduler_status": "scontrol returned Invalid job id specified; no current Slurm state asserted.",
+  "expected_source_bundle_sha256": "f246182da64c516a436c138a389e8f2e575a360c6973c7d353a3f996f71129b9",
+  "reported_final_bundle_verification_files": 148,
+  "report": {
+    "status": "complete",
+    "matched_metric_values": 180,
+    "cuda_reload": {
+      "torch": "2.14.0+cu126",
+      "cuda_runtime": "12.6",
+      "device": "cuda",
+      "gpu": "NVIDIA H200 NVL",
+      "loaded_actor_device": "cuda:0",
+      "reload_action_finite_and_bounded": true,
+      "live_transitions": 21493,
+      "padded_transitions": 9227,
+      "aircraft_completed": 71,
+      "gradient_rounds": 2576,
+      "performance_evidence": false
+    },
+    "training": {
+      "status": "complete",
+      "algorithm": "sac",
+      "live_transitions": 21493,
+      "padded_transitions": 9227,
+      "counted_transitions": 30720,
+      "replay_size": 21493,
+      "optimizer_steps": 2576,
+      "actor_optimizer_steps": 2576,
+      "entropy_optimizer_steps": 2576,
+      "gradient_rounds": 2576,
+      "first_update": {
+        "live_transitions": 5040,
+        "counted_transitions": 5040
+      },
+      "worlds_completed": 3,
+      "aircraft_completed": 71,
+      "wall_seconds": 41.90498044999549,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "9f6da2ed2a0335ebc54cb331684a2a611a7ad0b61eb9ba370ae4a96b3f67a8f8",
+      "training_seed": 51900,
+      "performance_evaluation": "Separate paired initial/trained/classical evaluations required"
+    },
+    "performance_evidence": false
+  },
+  "checkpoint_audit": {
+    "algorithm": "sac",
+    "status": "complete",
+    "model_sha256": "9f6da2ed2a0335ebc54cb331684a2a611a7ad0b61eb9ba370ae4a96b3f67a8f8",
+    "live_transitions": 21493,
+    "optimizer_steps": 2576,
+    "verified_checkpoints": 4,
+    "verified_source_files": 101,
+    "learning_rows": 3,
+    "aircraft_completed": 71,
+    "actor_parameter_count": 38916,
+    "critic_parameter_count": 220674,
+    "actor_and_critic_changed": true,
+    "actor_and_critics_use_local_inputs_only": true,
+    "finite_task_deadline": true,
+    "historical_replay_loaded": false,
+    "policy_quality_assessed": false
+  },
+  "vector_evaluation": {
+    "episodes": 2,
+    "agent_episodes": 20,
+    "metrics": {
+      "waypoint_reached": {
+        "mean": 0.95,
+        "std": 0.21794494717703367
+      },
+      "flight_time": {
+        "mean": 1450.2,
+        "std": 562.5624054271668
+      },
+      "intrusion_events": {
+        "mean": 1.3,
+        "std": 1.3453624047073711
+      },
+      "intrusion_time": {
+        "mean": 97.3,
+        "std": 99.29556888401414
+      },
+      "restricted_area_events": {
+        "mean": 0.1,
+        "std": 0.30000000000000004
+      },
+      "time_in_restricted_area": {
+        "mean": 4.55,
+        "std": 13.650915720199873
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "total_reward": {
+        "mean": -59.033918300700996,
+        "std": 97.67556147939189
+      }
+    },
+    "clean_completion_rate": 0.35,
+    "all_aircraft_clean_completion_rate": 0.0,
+    "algorithm": "sac",
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "seed": 20260,
+    "live_transitions": 5810,
+    "padded_transitions": 4760,
+    "world_decisions": 1057,
+    "aircraft_terminated": 19,
+    "aircraft_truncated": 1,
+    "wall_seconds": 17.835556691046804,
+    "actor_inference_uses_joint_context": false,
+    "runtime": {
+      "static_area_filter": true,
+      "traffic_conflict_filter": false,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap",
+      "population": 10,
+      "decision_interval_seconds": 5,
+      "episode_time_limit": 3000,
+      "actor_addition": "time_remaining_fraction",
+      "worker_imported_torch": true,
+      "isolated_simulator_files": true,
+      "training_progress_scale": 0.0,
+      "action_reference": "goal_offset",
+      "conflict_features": true,
+      "mask_conflict_features": false,
+      "traffic_position_scale": 1.0
+    },
+    "csv_sha256": "da9ac1b8131e4c78ba0724751e9dc8c6e3c23a9a174f41dd124c405aba55e039"
+  },
+  "native_evaluation": {
+    "episodes": 2,
+    "agent_episodes": 20,
+    "metrics": {
+      "waypoint_reached": {
+        "mean": 0.95,
+        "std": 0.21794494717703367
+      },
+      "flight_time": {
+        "mean": 1450.2,
+        "std": 562.5624054271668
+      },
+      "intrusion_events": {
+        "mean": 1.3,
+        "std": 1.3453624047073711
+      },
+      "intrusion_time": {
+        "mean": 97.3,
+        "std": 99.29556888401414
+      },
+      "restricted_area_events": {
+        "mean": 0.1,
+        "std": 0.30000000000000004
+      },
+      "time_in_restricted_area": {
+        "mean": 4.55,
+        "std": 13.650915720199873
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "total_reward": {
+        "mean": -59.033918300700996,
+        "std": 97.67556147939189
+      }
+    },
+    "clean_completion_rate": 0.35,
+    "all_aircraft_clean_completion_rate": 0.0,
+    "algorithm": "sac",
+    "seed": 20260,
+    "track": "ma",
+    "official_protocol": false,
+    "runtime": {
+      "static_area_filter": true,
+      "traffic_conflict_filter": false,
+      "traffic_position_scale": 1.0,
+      "actor_uses_joint_context": false,
+      "training_track": "ma",
+      "evaluation_track": "ma",
+      "single_agent_transfer": false,
+      "observed_traffic_slots": 9,
+      "simulated_scripted_intruders": 0,
+      "episode_time_limit": 3000,
+      "intrusion_distance": 5,
+      "distance_margin": 5,
+      "action_frequency": 5,
+      "sim_dt": 1,
+      "n_obstacles": 5,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap"
+    },
+    "actor_inference_uses_joint_context": false,
+    "world_decisions": 1057,
+    "wall_seconds": 9.79068662901409,
+    "csv_sha256": "da9ac1b8131e4c78ba0724751e9dc8c6e3c23a9a174f41dd124c405aba55e039",
+    "original_harness_csv_sha256": "5505a885ea5a425778decab3063a2b5e8edf5f12a5746da870a1e503da115824"
+  },
+  "performance_claim": false,
+  "interpretation": "SAC training and CUDA reload work on the existing cluster environment, with 180 exact vector/native physical-metric matches on two development worlds. This is a technical check, not evidence of competitive learning.",
+  "requested_resources": {
+    "partition": "gpu",
+    "gpu": "h200-141:1",
+    "cpus": 16,
+    "memory_gb": 64,
+    "simulator_workers": 8
+  },
+  "resource_evidence": "Requested values from the preserved job script; transcript confirms H200 NVL use, not scheduler allocation accounting.",
+  "next_action": "Reuse the existing environment for registered, multi-seed RL training. Preserve this job and all existing evaluations; do not resubmit the check."
+}

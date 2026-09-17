@@ -1,0 +1,36 @@
+{
+  "reviewed_at_utc": "2026-09-15T16:26:45.134718+00:00",
+  "comparison_sha256": "9ef3ec08e9032b8dee685361233bf6f676719ac8b2f9203c786939151dcd10bd",
+  "changed_aircraft_records": [
+    {
+      "episode": 8,
+      "agent": "KL002",
+      "changes": {
+        "total_reward": 0.000631091182036414
+      }
+    },
+    {
+      "episode": 8,
+      "agent": "KL006",
+      "changes": {
+        "flight_time": -126.0,
+        "total_reward": 0.03830639234518429
+      }
+    },
+    {
+      "episode": 14,
+      "agent": "KL002",
+      "changes": {
+        "total_reward": 2.8481395020207856e-10
+      }
+    }
+  ],
+  "flight_delta_seconds": -0.6300000000000011,
+  "flight_delta_paired_ci95": [
+    -1.8900000000000035,
+    0.0
+  ],
+  "interpretation": "One of 200 aircraft arrives 126 seconds earlier; all arrival and safety records are unchanged. The mean gain is 0.63 seconds with a scenario-bootstrap interval reaching zero. Not a sizeable general improvement on this development sample.",
+  "timing_scope": "496.139 s versus 642.407 s measured evaluation time under changing concurrent local load; not a controlled throughput comparison.",
+  "selected_deployment_promoted": false
+}

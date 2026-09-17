@@ -1,0 +1,85 @@
+{
+  "episodes": 2,
+  "agent_episodes": 20,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 1015.35,
+      "std": 242.53603340534784
+    },
+    "intrusion_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "intrusion_time": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "restricted_area_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_in_restricted_area": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 37.31081231807649,
+      "std": 0.06989553595831467
+    }
+  },
+  "clean_completion_rate": 1.0,
+  "all_aircraft_clean_completion_rate": 1.0,
+  "wall_seconds": 51.15455350000411,
+  "world_decisions": 573,
+  "seed": 2026,
+  "env": "ma",
+  "residual_statistics": {
+    "actions": 4070,
+    "heading_adjusted_actions": 4007,
+    "speed_adjusted_actions": 200,
+    "absolute_heading_adjustment_deg": 18787.806648669157,
+    "absolute_speed_action": 4023.798494696617
+  },
+  "route_input_statistics": {
+    "observations": 4090,
+    "redirected_observations": 1818,
+    "route_replans": 10,
+    "failed_replans": 0,
+    "route_choices": 30,
+    "shorter_route_choices": 6,
+    "lower_clearance_fallbacks": 1,
+    "geometric_detour_avoided_km": 884.8117158459754,
+    "unroutable_initializations": 0
+  },
+  "traffic_projection_statistics": {
+    "actions": 4070,
+    "interventions": 566,
+    "speed_interventions": 4,
+    "nominal_static_violation": 35,
+    "nominal_traffic_conflict": 531,
+    "no_static_feasible_candidate": 0,
+    "no_jointly_feasible_candidate": 4
+  },
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "protocol_sha256": "89a73663fe90b4198d431678ba9342f96255b26377aa2c8d116bb75db1dd7d13",
+  "csv_sha256": "85967fa623c488066bd4bd2db388f4f992849be3e84af7ba5e4edf806407d857",
+  "runtime": {
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap"
+  },
+  "official_protocol": false,
+  "training_penalty_enabled": true,
+  "penalty_coefficient": 0.0
+}

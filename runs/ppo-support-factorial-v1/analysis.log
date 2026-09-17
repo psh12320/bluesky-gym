@@ -1,0 +1,15 @@
+{"verified_files": 122, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 107, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_seed": 49900, "group": "g0-f0"}
+{"verified_seed": 49900, "group": "g1-f0"}
+{"verified_seed": 49900, "group": "g0-f1"}
+{"verified_seed": 49900, "group": "g1-f1"}
+{"verified_seed": 49920, "group": "g0-f0"}
+{"verified_seed": 49920, "group": "g1-f0"}
+{"verified_seed": 49920, "group": "g0-f1"}
+{"verified_seed": 49920, "group": "g1-f1"}
+{"verified_seed": 49940, "group": "g0-f0"}
+{"verified_seed": 49940, "group": "g1-f0"}
+{"verified_seed": 49940, "group": "g0-f1"}
+{"verified_seed": 49940, "group": "g1-f1"}
+{"result": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\four-cell-results.json", "verified_rows": 12, "all_twelve_rows_included": true}

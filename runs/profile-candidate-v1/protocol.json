@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-09-15T14:38:59.252768+00:00",
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "track": "ma",
+  "seed": 2026,
+  "episodes": 2,
+  "command": [
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "cProfile",
+    "-o",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\profile.pstats",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\profile-candidate-v1\\candidate\\check_development.py",
+    "--env",
+    "ma"
+  ],
+  "scope": "Diagnostic profile of a fixed development prefix; no policy changes or new performance-selection data",
+  "timing_limitations": "cProfile overhead and other simultaneous local jobs; not an isolated throughput benchmark"
+}

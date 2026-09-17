@@ -1,0 +1,41 @@
+{
+  "registered_at_utc": "2026-09-16T00:43:48.855923+00:00",
+  "algorithm": "historical_sac",
+  "candidate": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\decimal-transport-candidates-v1\\extracted-v1",
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "candidate_manifest_sha256": "6204cca9f370fff78de02905a9a9b2ffca3792e1ea5f512d90d75b8ed4530f91",
+  "evaluator_sha256": "709306a5db287790d1a5d0debb33a828af85930d5cb428462e66ca4ef1374352",
+  "common_physics_and_controller_source_files_identical": 64,
+  "classical_reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "classical_csv_sha256": "202955dcbe08427b0b537f51f4dcd59593b4a91e99cd6589c68c9d8105e61641",
+  "original_harness_fixture": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\decimal-transport-candidates-v1\\extracted-v1\\evidence\\integration-ma.json",
+  "original_harness_fixture_sha256": "34adac9d4438dfaf014ca3223d6743deaf50e559a44b5b7d44fbe83cd91522fa",
+  "stages": [
+    {
+      "mode": "zero-residual",
+      "episodes": 2,
+      "seed": 20260,
+      "out": "zero-reference-check",
+      "purpose": "Match all nine classical metrics and scenario identities on the first two shared development worlds."
+    },
+    {
+      "mode": "learned",
+      "episodes": 2,
+      "seed": 2026,
+      "out": "harness-reproduction",
+      "purpose": "Match the twenty saved aircraft records from the original harness with the fixed SAC deployment."
+    },
+    {
+      "mode": "learned",
+      "episodes": 20,
+      "seed": 20260,
+      "out": "eval-dev20",
+      "purpose": "System reference on the same twenty development scenarios used for PPO and MAPPO."
+    }
+  ],
+  "launch_gate": "Run sequentially after the MAPPO 300k evaluator has exited, preserving the four current training simulator workers. Stop on any validation mismatch.",
+  "training_changes": false,
+  "additional_training_transitions": 0,
+  "unseen_scenarios_used": false,
+  "interpretation": "SAC is a preserved system reference with a smaller historical budget and different supports/action mapping. This does not isolate SAC versus PPO or MAPPO learning algorithms."
+}

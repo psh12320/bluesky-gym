@@ -1,0 +1,18 @@
+{
+  "status": "wall_limit_before_budget",
+  "algorithm": "mappo",
+  "live_transitions": 708127,
+  "padded_transitions": 244193,
+  "counted_transitions": 952320,
+  "optimizer_steps": 7729,
+  "policy_epochs": 1837,
+  "rollouts": 186,
+  "worlds_completed": 389,
+  "aircraft_completed": 3900,
+  "wall_seconds": 7841.5220383,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "3ec248d5d7cbccceff6715cf796da06e027cdb872054e46a96ee01b105957b94",
+  "training_seed": 49900,
+  "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+}

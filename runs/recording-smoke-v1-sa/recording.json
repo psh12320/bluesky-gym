@@ -1,0 +1,51 @@
+{
+  "reference": "runs\\fast-reference-interval5-v1-ma25k-sa\\validation-20",
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "env": "sa",
+  "seed": 2026,
+  "recipe": "public_route_choice_fast_residual_interval5_sa_transfer",
+  "official_protocol": false,
+  "recording_purpose": "Development preview; selected scenarios are not a population estimate",
+  "frame_stride_decisions": 8,
+  "decision_interval_seconds": 5,
+  "fps": 10,
+  "playback_speedup": 400,
+  "final_card_hold_ms": 2000,
+  "episodes": [
+    {
+      "episode": 0,
+      "file": "episode-000.gif",
+      "frames": 23,
+      "decisions": 169,
+      "matches_reference": true,
+      "maximum_absolute_metric_differences": {
+        "waypoint_reached": 0.0,
+        "flight_time": 0.0,
+        "intrusion_events": 0.0,
+        "intrusion_time": 0.0,
+        "restricted_area_events": 0.0,
+        "time_in_restricted_area": 0.0,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 0.0
+      },
+      "scenario_rng_unchanged": true,
+      "final_records": [
+        {
+          "episode": 0,
+          "agent": "KL001",
+          "total_reward": 37.344798402596815,
+          "flight_time": 845.0,
+          "waypoint_reached": 1,
+          "intrusion_events": 0,
+          "intrusion_time": 0.0,
+          "sector_exit_events": 0,
+          "time_outside_sector": 0.0,
+          "restricted_area_events": 0,
+          "time_in_restricted_area": 0.0
+        }
+      ],
+      "gif_sha256": "f8d8cfc0f7248662a359f88d362dfafde06f03267d330cdf177cc7f239e5d3c2"
+    }
+  ]
+}

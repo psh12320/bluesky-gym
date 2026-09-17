@@ -1,0 +1,10 @@
+{
+  "training_transitions": 62744,
+  "validation_transitions": 16108,
+  "training_worlds": 32,
+  "validation_worlds": 8,
+  "scenarios_disjoint": true,
+  "evaluation_data_used": false,
+  "training_complete_sha256": "fd609798f023be25c58232979729bde7efb538f1a6771da524ad026f9e736606",
+  "validation_complete_sha256": "6ce0738e4a839680c67d7812af63e0ae55ca99a3e41096576e66286b31e860ec"
+}

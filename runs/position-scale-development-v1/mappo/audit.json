@@ -1,0 +1,23 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\position-scale-development-v1\\mappo\\train",
+  "algorithm": "mappo",
+  "exploration": "gaussian",
+  "sde_weight_std": null,
+  "sde_sample_freq": null,
+  "status": "complete",
+  "live_transitions": 1280,
+  "padded_transitions": 0,
+  "optimizer_steps": 7,
+  "verified_checkpoints": 3,
+  "verified_source_files": 98,
+  "learning_curve_rows": 2,
+  "aircraft_completed": 0,
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 550145,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": true,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "ad5a4398c7f91ddc6e4534a4332a9c246b770ef121648c7ec0d1cff52c913659",
+  "policy_quality_assessed": false
+}

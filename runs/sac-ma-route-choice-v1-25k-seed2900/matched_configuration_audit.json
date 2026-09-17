@@ -1,0 +1,53 @@
+{
+  "reference_run": "sac-ma-route-residual-v1-100k-seed2900",
+  "changes": {
+    "max_wall_seconds": [
+      3600.0,
+      1800.0
+    ],
+    "recipe": [
+      "public_route_residual",
+      "public_route_choice_residual"
+    ],
+    "route_choice_fallback": [
+      null,
+      "lower_clearance_only_if_no_preferred_path"
+    ],
+    "route_choice_max_detour_ratio": [
+      null,
+      1.15
+    ],
+    "route_choice_min_preferred_clearance_km": [
+      null,
+      2.0
+    ],
+    "route_choice_revision": [
+      null,
+      1
+    ],
+    "route_input_clearances_km": [
+      [
+        6.0,
+        3.0,
+        1.0,
+        0.0
+      ],
+      [
+        6.0,
+        3.0,
+        2.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "run_dir": [
+      "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-route-residual-v1-100k-seed2900",
+      "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-route-choice-v1-25k-seed2900"
+    ],
+    "steps": [
+      100000,
+      25000
+    ]
+  },
+  "other_configuration_fields_match": true
+}

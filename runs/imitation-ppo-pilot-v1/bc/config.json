@@ -1,0 +1,59 @@
+{
+  "algorithm": "behavior_cloning",
+  "policy_family": "AircraftPolicy",
+  "training_method": "behavior_cloning_only",
+  "reinforcement_learning_performed": false,
+  "seed": 61400,
+  "device": "cpu",
+  "epochs": 40,
+  "batch_size": 1024,
+  "learning_rate": 0.0003,
+  "intervention_fraction": 0.5,
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "traffic_position_scale": 1.0,
+  "action_reference": "direct",
+  "exploration": "gaussian",
+  "initial_action_std": 0.05,
+  "neutral_action_mean": false,
+  "pretraining_initialization": "neutral mean",
+  "reward_scale": 0.01,
+  "progress_scale": 0.0,
+  "actor_widths": [
+    128,
+    128
+  ],
+  "critic_widths": [
+    256,
+    256
+  ],
+  "gamma": 0.996508469331006,
+  "gae_lambda": 0.95,
+  "teacher_has_combined_filter": true,
+  "student_has_traffic_filter": false,
+  "teacher_uses_privileged_state": true,
+  "student_uses_local_inputs_only": true,
+  "demonstration_transitions": 62744,
+  "validation_transitions": 16108,
+  "dataset_provenance": {
+    "train": {
+      "directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\train",
+      "seed": 61200,
+      "complete_sha256": "fd609798f023be25c58232979729bde7efb538f1a6771da524ad026f9e736606",
+      "protocol_sha256": "8206e5e72eb910b5b84590defbc9ed7167c83e1f97f15062bbef1f6b8e0f0534",
+      "world_manifest_sha256": "f9b6d17d046700f6616d5ffa0599c9985a554e47edf67d08b52c0f3456995f6f"
+    },
+    "validation": {
+      "directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-data-v1\\validation",
+      "seed": 61300,
+      "complete_sha256": "6ce0738e4a839680c67d7812af63e0ae55ca99a3e41096576e66286b31e860ec",
+      "protocol_sha256": "8d35a6494c4a2a6391021bf81106afe17634ee8ef822527712a3f9d793ccf878",
+      "world_manifest_sha256": "5204b0e1479ceef96b2cdbc06a5c4e09662aaf9cfd8ae42f95163e3029463922"
+    }
+  },
+  "checkpoint_selection": "Fixed final epoch; validation is reported but does not select epochs.",
+  "budget_interpretation": "live_transitions and PPO optimizer_steps are zero; supervised updates and repeated examples are recorded separately."
+}

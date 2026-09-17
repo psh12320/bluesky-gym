@@ -1,0 +1,58 @@
+Collecting torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260 (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (196.3 MB)
+Collecting bluesky-simulator (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading bluesky_simulator-1.1.1-cp312-cp312-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.1 kB)
+Collecting gymnasium (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 3))
+  Downloading gymnasium-1.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting numpy (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 4))
+  Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting pettingzoo (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 5))
+  Downloading pettingzoo-1.27.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting pygame (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 6))
+  Downloading pygame-2.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting PyQt6 (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 7))
+  Downloading pyqt6-6.11.0-cp310-abi3-manylinux_2_34_x86_64.whl.metadata (2.1 kB)
+Collecting shapely (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 8))
+  Downloading shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.8 kB)
+Collecting SuperSuit (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 9))
+  Downloading supersuit-3.11.0-py3-none-any.whl.metadata (4.2 kB)
+Collecting stable-baselines3 (from -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 10))
+  Downloading stable_baselines3-2.9.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting filelock (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading filelock-3.32.6-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=77.0.3 (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 1))
+  Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+Collecting bluesky-navdata (from bluesky-simulator->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading bluesky_navdata-1.0.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting matplotlib (from bluesky-simulator->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting msgpack>=1.0.0 (from bluesky-simulator->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading msgpack-1.2.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+Collecting openap (from bluesky-simulator->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading openap-2.6.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting pandas (from bluesky-simulator->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting scipy (from bluesky-simulator->-r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2))
+  Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+INFO: pip is looking at multiple versions of bluesky-simulator to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install -r C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\linux-runtime-v1\requirements-linux.txt (line 2) because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    bluesky-simulator 1.1.1 depends on zmq
+    The user requested (constraint) zmq==0.0.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts

@@ -1,0 +1,29 @@
+{
+  "script_sha256": "42b80fa658e645b72ece86909b633dcdcd25c2a36cbafbf465edfd637d5848eb",
+  "function_source_lf_sha256": "ece54e78a04aa664e8740b21283cbfa0276f2297b923d5e6a40e70d0cb6a6b4c",
+  "function_file_sha256": "83411273ea55dcc23e475c6bb7bf295638ffdacf3f0633a0f478057b5f63a79d",
+  "source_hash_note": "The recorded function-source hash uses LF; the generated Windows file uses CRLF. Normalized source matches exactly.",
+  "original_reference_exact": true,
+  "extra_braking_selections": 8,
+  "original_conflicts": [
+    [
+      "KL005",
+      36.0
+    ],
+    [
+      "KL004",
+      36.0
+    ]
+  ],
+  "revised_conflicts": [
+    [
+      "KL005",
+      41.0
+    ],
+    [
+      "KL004",
+      41.0
+    ]
+  ],
+  "decision": "Do not promote this unsuccessful selected-case intervention"
+}

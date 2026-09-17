@@ -1,0 +1,61 @@
+{
+  "recorded_at_utc": "2026-09-16T07:38:45.130470+00:00",
+  "result": "paired-results.json",
+  "both_registered_arms_complete": true,
+  "both_screens_failed": true,
+  "position_scale_to_keep": 1.0,
+  "reason": "Scaled inputs raised clean completion modestly but worsened intrusion time and flight time; neither recipe passed the multi-metric screen.",
+  "evidence": {
+    "original": {
+      "live_transitions": 101437,
+      "final_clean_completion": 0.23000000000000004,
+      "clean_learning_change": {
+        "mean_difference": -0.025,
+        "paired_world_bootstrap_95_interval": [
+          -0.08499999999999999,
+          0.03
+        ]
+      },
+      "flight_time_learning_change": {
+        "mean_difference": 58.989999999999995,
+        "paired_world_bootstrap_95_interval": [
+          40.879375,
+          79.36050000000002
+        ]
+      },
+      "intrusion_time_learning_change": {
+        "mean_difference": 14.670000000000005,
+        "paired_world_bootstrap_95_interval": [
+          -23.059999999999995,
+          53.761999999999986
+        ]
+      }
+    },
+    "scaled": {
+      "live_transitions": 100623,
+      "final_clean_completion": 0.275,
+      "clean_learning_change": {
+        "mean_difference": 0.02,
+        "paired_world_bootstrap_95_interval": [
+          -0.034999999999999996,
+          0.07500000000000001
+        ]
+      },
+      "flight_time_learning_change": {
+        "mean_difference": 131.15,
+        "paired_world_bootstrap_95_interval": [
+          97.55487499999998,
+          166.4905
+        ]
+      },
+      "intrusion_time_learning_change": {
+        "mean_difference": 23.32,
+        "paired_world_bootstrap_95_interval": [
+          -14.411750000000003,
+          71.09149999999998
+        ]
+      }
+    }
+  },
+  "limitations": "One training seed and twenty reused worlds at 100k live transitions. Does not establish convergence or rule out other scaling recipes."
+}

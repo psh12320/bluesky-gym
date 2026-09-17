@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "protocol_sha256": "ae7b2662874c1dac7f57fdc78740ea81b06c3d5f7876d29b9e84646ce687887a",
+  "stages": [
+    {
+      "ordinal": 0,
+      "mode": "scalar",
+      "started_at_utc": "2026-09-15T15:36:48.840695+00:00",
+      "pid": 16564,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T15:39:31.407574+00:00"
+    },
+    {
+      "ordinal": 1,
+      "mode": "batch",
+      "started_at_utc": "2026-09-15T15:39:31.425826+00:00",
+      "pid": 12132,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T15:41:20.799955+00:00"
+    },
+    {
+      "ordinal": 2,
+      "mode": "batch",
+      "started_at_utc": "2026-09-15T15:41:20.810959+00:00",
+      "pid": 41332,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T15:42:46.429993+00:00"
+    },
+    {
+      "ordinal": 3,
+      "mode": "scalar",
+      "started_at_utc": "2026-09-15T15:42:46.442082+00:00",
+      "pid": 40684,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T15:44:08.006298+00:00"
+    }
+  ],
+  "summary_sha256": "3d6d1bea12d778adcac51ded2562c47e6ae1f526c5365d592ea522e8581483d7",
+  "completed_at_utc": "2026-09-15T15:44:08.044368+00:00"
+}

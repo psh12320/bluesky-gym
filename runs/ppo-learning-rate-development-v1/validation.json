@@ -1,0 +1,26 @@
+{
+  "full_rl_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "250",
+    "time": "13.198",
+    "timestamp": "2026-09-16T19:42:47.862154+08:00",
+    "hostname": "Shri-Laptop"
+  },
+  "source_bundle_sha256": "3e960b076fdd5449578e3bdeeb7fe4e1c9078e3d7b40ad578b428b9daa253d19",
+  "changed_files": [
+    "atc_rl/audit.py",
+    "atc_rl/curves.py",
+    "atc_rl/train.py",
+    "tests/rl/test_curve_configuration.py"
+  ],
+  "new_files": [
+    "atc_rl/learning_rate.py",
+    "tests/rl/test_learning_rate.py"
+  ],
+  "fixed_environment_and_benchmark_files_unchanged": 65,
+  "default_learning_rate_unchanged": true,
+  "new_protocol_sha256": "873b2693c09a2fd832547d83e4259207b66f4216bac20e07080f845b00c50c26"
+}

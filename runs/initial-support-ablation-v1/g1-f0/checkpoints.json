@@ -1,0 +1,12 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "f9c6e64ed1b8c3ed59d1fcf7f15b69ad4d44935e40abae082079d1a8f1af8870",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0
+  }
+]

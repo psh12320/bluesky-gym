@@ -1,0 +1,11 @@
+{
+  "initial_evaluation_exactly_reproduces_raw_initial_csv": true,
+  "initial_csv_sha256": "a5ca5907b2590effa4bfa32a4c17f26a0f3e3aba268d272348fc29d3647070ee",
+  "trained_csv_sha256": "ba293cd8431a8877ed326ff94f89a56f085c1cb5289b1b758c440ebd0ed22a3b",
+  "arrival_gain_percentage_points": 4.0,
+  "outside_time_change_seconds": -1394.0549999999998,
+  "preset_minimum_arrival_gain_percentage_points": 10,
+  "screen_passed": false,
+  "decision": "Do not extend this shaping recipe; preserve as a negative development result.",
+  "limitations": "One training seed and twenty development worlds. No held-out result."
+}

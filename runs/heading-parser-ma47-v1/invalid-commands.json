@@ -1,0 +1,15 @@
+[
+  {
+    "episode": 46,
+    "command": "HDG KL008 7.843909918392455e-05",
+    "heading_text": "7.843909918392455e-05",
+    "simulator_time": 570.0,
+    "aircraft": "KL008",
+    "current_heading": 359.6616645677401,
+    "error": "txt2hdg needs either a float, optionally with an M/T prefix or a position",
+    "finite_numeric_heading": true,
+    "decimal_equivalent": "0.00007843909918392455",
+    "decimal_float_identical": true,
+    "decimal_parser_value": 7.843909918392455e-05
+  }
+]

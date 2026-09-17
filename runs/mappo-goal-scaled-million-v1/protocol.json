@@ -1,0 +1,62 @@
+{
+  "registered_at_utc": "2026-09-16T00:06:39.057274+00:00",
+  "algorithm": "mappo",
+  "matched_configuration": {
+    "workers": 2,
+    "live_steps": 1000000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "seed": 49900,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": false,
+    "filter": false,
+    "progress_scale": 0.0,
+    "reward_scale": 0.01,
+    "checkpoint_live_steps": 100000,
+    "max_wall_seconds": 7200.0
+  },
+  "actor_reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train\\initial-model.zip",
+  "actor_reference_sha256": "f9c6e64ed1b8c3ed59d1fcf7f15b69ad4d44935e40abae082079d1a8f1af8870",
+  "ppo_comparison_run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+  "source_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-durable-source-v1.zip",
+    "sha256": "b44303f1712386362bf36321b1add00201a3707727ff0b5320d33f2e622f658f",
+    "bytes": 226612,
+    "source_files": 117,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "purpose": "Compare a centralized critic with the trained shared PPO baseline under the navigation-prior and reward-scale recipe that showed a modest development learning signal.",
+  "critic_information": "Joint aircraft observations, alive flags and target identity; deployed actor remains local.",
+  "capacity_caveat": "Both critics have two 256-wide hidden layers, but joint input increases MAPPO critic parameters. This is not a parameter-count-matched information-only ablation.",
+  "controls": "Identical actor tensors and reconstructed learner RNG before the first rollout; same world seeds, action mapping, reward recipe, support flags and optimization settings.",
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "curve_targets": [
+    0,
+    100000,
+    300000,
+    1000000
+  ],
+  "advancement_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "initial_evaluation": "Evaluate the MAPPO initial checkpoint explicitly, despite matching PPO actor weights.",
+  "limitations": [
+    "One development seed; no claim of general MAPPO superiority.",
+    "Three canonical seeds and unseen scenarios remain required.",
+    "No matrix rows or competition evaluations are altered."
+  ]
+}

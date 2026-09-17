@@ -1,0 +1,9 @@
+{
+  "frozen_named_executable_files_match": 100,
+  "new_opt_in_module_only": "atc/heading_transport.py",
+  "existing_environment_recipes_and_harness_unchanged": true,
+  "formatter_test_command": "python -m pytest tests/test_heading_transport.py -q --basetemp runs/pytest-heading-transport-v1",
+  "formatter_tests_passed": 7,
+  "formatter_test_wall_seconds": 18.32,
+  "original_and_corrected_results_kept_separate": true
+}

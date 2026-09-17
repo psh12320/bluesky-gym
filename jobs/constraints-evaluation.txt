@@ -1,0 +1,14 @@
+# Main evaluation package versions used by the frozen local candidates.
+# This is a constraints file, not a complete transitive dependency lock.
+# Published wheels were checked for CPython 3.12, Linux x86-64, glibc 2.35.
+# Actual Linux installation and runtime parity remain to be verified.
+bluesky-simulator==1.1.1
+gymnasium==1.3.0
+numpy==2.3.5
+pettingzoo==1.27.0
+pygame==2.6.1
+PyQt6==6.11.0
+shapely==2.1.2
+SuperSuit==3.11.0
+torch==2.14.0
+stable-baselines3==2.9.0

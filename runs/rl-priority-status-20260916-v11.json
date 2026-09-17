@@ -1,0 +1,72 @@
+{
+  "time_utc": "2026-09-16T00:22:21.408722+00:00",
+  "goal_turn_classification": "progress",
+  "running_training": [
+    {
+      "algorithm": "ppo",
+      "session": 83552,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "latest_learning_row": {
+        "rollout": "77",
+        "live_transitions": "317670",
+        "padded_transitions": "76570",
+        "counted_transitions": "394240",
+        "worlds_completed": "185",
+        "aircraft_completed": "1850",
+        "optimizer_steps": "3336",
+        "policy_epochs": "745",
+        "wall_seconds": "1539.4498402999998",
+        "live_transitions_per_second": "206.35293965673748",
+        "training_return_last100": "-0.7364353636537204",
+        "native_return_last100": "-73.64353636537207",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.011192540773190558",
+        "value_loss": "0.015261529255658388",
+        "approx_kl": "0.013664377853274345",
+        "clip_fraction": "0.1665261860191822"
+      }
+    },
+    {
+      "algorithm": "mappo",
+      "session": 33044,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "latest_learning_row": {
+        "rollout": "35",
+        "live_transitions": "144861",
+        "padded_transitions": "34339",
+        "counted_transitions": "179200",
+        "worlds_completed": "84",
+        "aircraft_completed": "841",
+        "optimizer_steps": "1525",
+        "policy_epochs": "332",
+        "wall_seconds": "921.5025982000006",
+        "live_transitions_per_second": "157.200858991566",
+        "training_return_last100": "-0.8072411102839804",
+        "native_return_last100": "-80.72411102839804",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.012394850412965753",
+        "value_loss": "0.030894043995067476",
+        "approx_kl": "0.013415824621915817",
+        "clip_fraction": "0.14790253825485705"
+      }
+    }
+  ],
+  "running_evaluation": {
+    "algorithm": "mappo",
+    "checkpoint_live_transitions": 100275,
+    "session": 4853,
+    "out": "runs/mappo-goal-scaled-million-v1/eval-100k-dev20"
+  },
+  "completed_initial_evaluation": "runs/mappo-goal-scaled-million-v1/eval-initial-dev20",
+  "initial_evaluation_parity": "runs/mappo-goal-scaled-million-v1/initial-evaluation-parity.json",
+  "ppo_300k_prefix": "runs/goal-offset-scaled-million-retry-v1/300k-prefix-reproduction.json",
+  "new_comparison_module": "atc_rl/algorithm_compare.py",
+  "new_comparison_tests_passed": 8,
+  "comparison_pending": "After MAPPO 100k evaluation, compare own initial/trained/classical and matched PPO 100k; retain all nine metrics, initial actor identity, actual live counts and source differences.",
+  "matching_source_evidence": "PPO 100k and 300k original/retry policy and optimizer tensors match. Current PPO and MAPPO train from onpolicy-durable-source-v1-verify.",
+  "resource_limit": "Five simulator processes currently occupied; do not add more local simulations until one finishes.",
+  "training_source": "runs/onpolicy-durable-source-v1-verify",
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "cluster": "No authenticated SSH/bootstrap result; no Slurm jobs submitted.",
+  "completion": false
+}

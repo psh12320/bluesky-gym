@@ -1,0 +1,149 @@
+{
+  "time_utc": "2026-09-15T20:11:06.125845+00:00",
+  "running_training": [
+    {
+      "name": "native",
+      "session": 22042,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-budget-scale-v1\\native",
+      "latest_learning_row": {
+        "rollout": "66",
+        "live_transitions": "254908",
+        "padded_transitions": "83012",
+        "counted_transitions": "337920",
+        "worlds_completed": "135",
+        "aircraft_completed": "1356",
+        "optimizer_steps": "2674",
+        "policy_epochs": "641",
+        "wall_seconds": "1057.6782476999797",
+        "live_transitions_per_second": "241.00713100068126",
+        "training_return_last100": "-141.68293518372715",
+        "native_return_last100": "-141.68293518372715",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.007637358685315121",
+        "value_loss": "289.44126052856444",
+        "approx_kl": "0.01349790021777153",
+        "clip_fraction": "0.13431463465094567"
+      },
+      "saved_checkpoints": [
+        {
+          "file": "initial-model.zip",
+          "sha256": "445bcf82326663e3405725a20fe230b82db664b1b219c39e14a87030b7ddf7fa",
+          "live_transitions": 0,
+          "counted_transitions": 0,
+          "padded_transitions": 0,
+          "optimizer_steps": 0,
+          "policy_epochs": 0,
+          "rollouts": 0
+        },
+        {
+          "file": "policy-live-103226.zip",
+          "sha256": "24c79e67eb55ed462b46719ae755076d02f75a4dc5e362c67d5c5390e3f1ecec",
+          "live_transitions": 103226,
+          "counted_transitions": 128000,
+          "padded_transitions": 24774,
+          "optimizer_steps": 1093,
+          "policy_epochs": 243,
+          "rollouts": 25
+        },
+        {
+          "file": "policy-live-201645.zip",
+          "sha256": "b106077f33f901d203c345d94dae690af5b7973054b4fbc12a0ab51dad20afb6",
+          "live_transitions": 201645,
+          "counted_transitions": 261120,
+          "padded_transitions": 59475,
+          "optimizer_steps": 2104,
+          "policy_epochs": 491,
+          "rollouts": 51
+        }
+      ],
+      "requested_live_transitions": 1000000
+    },
+    {
+      "name": "scaled",
+      "session": 11266,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-budget-scale-v1\\scaled",
+      "latest_learning_row": {
+        "rollout": "60",
+        "live_transitions": "247964",
+        "padded_transitions": "59236",
+        "counted_transitions": "307200",
+        "worlds_completed": "144",
+        "aircraft_completed": "1447",
+        "optimizer_steps": "2634",
+        "policy_epochs": "585",
+        "wall_seconds": "1026.5184286999865",
+        "live_transitions_per_second": "241.55825464724387",
+        "training_return_last100": "-0.6822273335406323",
+        "native_return_last100": "-68.22273335406322",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.010644384138286113",
+        "value_loss": "0.021334423907101153",
+        "approx_kl": "0.01272784173488617",
+        "clip_fraction": "0.1765773166716099"
+      },
+      "saved_checkpoints": [
+        {
+          "file": "initial-model.zip",
+          "sha256": "dd66fb84b7743c03f72d33c62888be34cf074794c00de21377e6e10834ac8663",
+          "live_transitions": 0,
+          "counted_transitions": 0,
+          "padded_transitions": 0,
+          "optimizer_steps": 0,
+          "policy_epochs": 0,
+          "rollouts": 0
+        },
+        {
+          "file": "policy-live-100699.zip",
+          "sha256": "e7853e2bc896540ab9d22cc3b517a0f66fe0da7d2982361de77cce46ab4b11f3",
+          "live_transitions": 100699,
+          "counted_transitions": 122880,
+          "padded_transitions": 22181,
+          "optimizer_steps": 1048,
+          "policy_epochs": 225,
+          "rollouts": 24
+        },
+        {
+          "file": "policy-live-203251.zip",
+          "sha256": "a75eff30962632b5ab4a6424703a81ddd8cbec93364d5c63bfe1d0589ade6bad",
+          "live_transitions": 203251,
+          "counted_transitions": 250880,
+          "padded_transitions": 47629,
+          "optimizer_steps": 2154,
+          "policy_epochs": 475,
+          "rollouts": 49
+        }
+      ],
+      "requested_live_transitions": 1000000
+    }
+  ],
+  "training_source": "runs/onpolicy-goal-offset-source-v2-verify",
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "native_prefix_reproduced": "runs/goal-offset-budget-scale-v1/native-prefix-reproduction.json",
+  "native_103226_development_evaluation_reusable": "runs/goal-offset-v1/eval-trained-dev20",
+  "initial_evaluation_reusable_for_both": "runs/goal-offset-v1/eval-initial-dev20",
+  "next_curve_evaluations": [
+    "Scaled policy-live-100699.zip",
+    "Each run checkpoint closest above 300000 live steps",
+    "Each final million-live-step model"
+  ],
+  "resource_limit": "Both training runs use two worlds; the original MA evaluation uses one. Five long simulator processes are active. Wait for capacity before another local simulator evaluation.",
+  "preserved_evaluation": {
+    "session": 78410,
+    "run": "runs/official-decimal-v1/ma"
+  },
+  "matrix_infrastructure": {
+    "source_bundle": "runs/onpolicy-matrix-source-v1.zip",
+    "source_sha256": "9dd428df87a083e7918c8807d3816d703727300f5a655677403ebb0bb8a64c2f",
+    "unit_tests_passed": 67,
+    "bash_syntax_checked": true,
+    "verified_cli_dry_runs": 24,
+    "actual_matrix_training_runs": 0,
+    "slurm_jobs_submitted": 0,
+    "validation_record": "runs/matrix-protocol-validation-v1.json",
+    "documentation": "docs/competition/MATRIX_RL.md"
+  },
+  "public_budget_review": "runs/public-budget-review-20260916-v1/review.json",
+  "public_source_limitations": "Live browser fetches failed. Cached Markdown matches recorded Git blob bytes; Python sources match after CRLF-to-LF normalization. Author reports are not independently verified competition results.",
+  "cluster_status": "Awaiting bootstrap job ID or exact error from user-authenticated SSH session; no new question sent this turn.",
+  "goal_status": "Active. Prior pilots did not establish learned safety gains; no competitive learned-system claim. Three seeds and unseen-scenario evidence remain required."
+}

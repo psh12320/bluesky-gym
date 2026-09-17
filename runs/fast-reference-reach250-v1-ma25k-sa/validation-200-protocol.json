@@ -1,0 +1,15 @@
+{
+  "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+  "env": "sa",
+  "recipe": "public_route_choice_fast_residual_reach250_sa_transfer",
+  "seed": 2026,
+  "episodes": 200,
+  "official_protocol": false,
+  "additional_training": 0,
+  "decision": "Expand SA only after exact two-scenario original-harness check. MA reward ablation loses two arrivals and is not promoted.",
+  "comparisons": [
+    "runs/goal-route-choice-v1-fast-joint-sa-200",
+    "runs/fast-reference-v1-ma25k-sa/validation-200"
+  ],
+  "interpretation": "Twenty-scenario SA means improve safety over the matching classical reference, with intervals including no improvement. The broader result must include all metrics, first-prefix reproduction, additional-180 summary and failed arrivals. No assumption of winning or a global scalar score."
+}

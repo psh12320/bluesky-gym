@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "algorithm": "sac",
+  "live_transitions": 100441,
+  "padded_transitions": 55719,
+  "counted_transitions": 156160,
+  "replay_size": 100441,
+  "optimizer_steps": 15116,
+  "actor_optimizer_steps": 15116,
+  "entropy_optimizer_steps": 15116,
+  "gradient_rounds": 15116,
+  "first_update": {
+    "live_transitions": 3980,
+    "counted_transitions": 5010
+  },
+  "worlds_completed": 30,
+  "aircraft_completed": 307,
+  "wall_seconds": 1204.9229247999974,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "61f23006dcc7f5299aa8d75aa3e2172adcf2e8a3050affdceb62a28325346a29",
+  "training_seed": 51800,
+  "performance_evaluation": "Separate paired initial/trained/classical evaluations required"
+}

@@ -1,0 +1,24 @@
+{"collection": 1, "live_transitions": 640, "padded_transitions": 0, "counted_transitions": 640, "replay_size": 640, "world_decisions": 64, "worlds_completed": 0, "aircraft_completed": 0, "optimizer_steps": 54, "actor_optimizer_steps": 54, "entropy_optimizer_steps": 54, "gradient_rounds": 54, "wall_seconds": 25.628994600003352, "live_transitions_per_second": 24.971716994310665, "training_return_last100": null, "native_return_last100": null, "training_arrival_last100": null, "entropy_coefficient": 0.009994626976549625, "actor_loss": 0.03863031417131424, "critic_loss": 0.0008870715973898768}
+{"collection": 2, "live_transitions": 1280, "padded_transitions": 0, "counted_transitions": 1280, "replay_size": 1280, "world_decisions": 128, "worlds_completed": 0, "aircraft_completed": 0, "optimizer_steps": 118, "actor_optimizer_steps": 118, "entropy_optimizer_steps": 118, "gradient_rounds": 118, "wall_seconds": 30.65552910000406, "live_transitions_per_second": 41.75429482311008, "training_return_last100": null, "native_return_last100": null, "training_arrival_last100": null, "entropy_coefficient": 0.009732089936733246, "actor_loss": 0.004970227368175983, "critic_loss": 0.0005909610772505403}
+{"status": "complete", "algorithm": "sac", "live_transitions": 1280, "padded_transitions": 0, "counted_transitions": 1280, "replay_size": 1280, "optimizer_steps": 118, "actor_optimizer_steps": 118, "entropy_optimizer_steps": 118, "gradient_rounds": 118, "first_update": {"live_transitions": 110, "counted_transitions": 110}, "worlds_completed": 0, "aircraft_completed": 0, "wall_seconds": 30.822426800004905, "actor_and_critic_parameters_changed": true, "source_unchanged": true, "model_sha256": "9cefbc48c001ed274dfb8c6e0ec1b5959fdb7f22329dab331fb00c5f261924f9", "training_seed": 49040, "performance_evaluation": "Separate paired initial/trained/classical evaluations required"}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\sac-comparison-development-v1\sac\train\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

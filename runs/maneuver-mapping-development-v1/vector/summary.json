@@ -1,0 +1,107 @@
+{
+  "episodes": 2,
+  "agent_episodes": 20,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 874.35,
+      "std": 256.17987333122016
+    },
+    "intrusion_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "intrusion_time": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "restricted_area_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_in_restricted_area": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 37.35685214455977,
+      "std": 0.08612151469428493
+    }
+  },
+  "clean_completion_rate": 1.0,
+  "all_aircraft_clean_completion_rate": 1.0,
+  "rl_updates": 0,
+  "live_training_transitions": 0,
+  "world_decisions": 590,
+  "checked_benchmark_commands": 5900,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": true,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "direct",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0
+  },
+  "model_sha256": "12288bb52b988f217ae9e2c6f0e2a1c05e63c4fbc8633798f9e6918ff689bc27",
+  "mapping": {
+    "version": 1,
+    "actor_dim": 170,
+    "cosine_index": 1,
+    "sine_index": 77,
+    "heading_choices": [
+      "observed_route_bearing",
+      -45.0,
+      -40.0,
+      -35.0,
+      -30.0,
+      -25.0,
+      -20.0,
+      -15.0,
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0
+    ],
+    "speed_choices": [
+      -1,
+      0,
+      1
+    ],
+    "default_deterministic_choice": [
+      0,
+      2
+    ],
+    "navigation_prior": "Category zero follows the bearing in the existing local observation; no planner or other-aircraft state is queried.",
+    "command_dtype": "float32",
+    "mapping_changes_rewards": false
+  },
+  "interpretation": "Implementation parity for an explicit route-choice prior, not learned performance."
+}

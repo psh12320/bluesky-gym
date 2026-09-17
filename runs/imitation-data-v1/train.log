@@ -1,0 +1,54 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\train\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"world": 0, "live_transitions": 2034, "interventions": 269, "total_live_transitions": 2034}
+{"world": 1, "live_transitions": 1597, "interventions": 199, "total_live_transitions": 3631}
+{"world": 2, "live_transitions": 1933, "interventions": 166, "total_live_transitions": 5564}
+{"world": 3, "live_transitions": 2494, "interventions": 627, "total_live_transitions": 8058}
+{"world": 4, "live_transitions": 2222, "interventions": 216, "total_live_transitions": 10280}
+{"world": 5, "live_transitions": 1788, "interventions": 1, "total_live_transitions": 12068}
+{"world": 6, "live_transitions": 1897, "interventions": 128, "total_live_transitions": 13965}
+{"world": 7, "live_transitions": 2072, "interventions": 404, "total_live_transitions": 16037}
+{"world": 8, "live_transitions": 1875, "interventions": 303, "total_live_transitions": 17912}
+{"world": 9, "live_transitions": 1994, "interventions": 359, "total_live_transitions": 19906}
+{"world": 10, "live_transitions": 1466, "interventions": 467, "total_live_transitions": 21372}
+{"world": 11, "live_transitions": 2139, "interventions": 153, "total_live_transitions": 23511}
+{"world": 12, "live_transitions": 1970, "interventions": 241, "total_live_transitions": 25481}
+{"world": 13, "live_transitions": 2057, "interventions": 389, "total_live_transitions": 27538}
+{"world": 14, "live_transitions": 1883, "interventions": 154, "total_live_transitions": 29421}
+{"world": 15, "live_transitions": 2854, "interventions": 236, "total_live_transitions": 32275}
+{"world": 16, "live_transitions": 1923, "interventions": 201, "total_live_transitions": 34198}
+{"world": 17, "live_transitions": 1631, "interventions": 219, "total_live_transitions": 35829}
+{"world": 18, "live_transitions": 1874, "interventions": 383, "total_live_transitions": 37703}
+{"world": 19, "live_transitions": 2228, "interventions": 840, "total_live_transitions": 39931}
+{"world": 20, "live_transitions": 2721, "interventions": 1186, "total_live_transitions": 42652}
+{"world": 21, "live_transitions": 1582, "interventions": 117, "total_live_transitions": 44234}
+{"world": 22, "live_transitions": 2476, "interventions": 585, "total_live_transitions": 46710}
+{"world": 23, "live_transitions": 1861, "interventions": 217, "total_live_transitions": 48571}
+{"world": 24, "live_transitions": 1647, "interventions": 160, "total_live_transitions": 50218}
+{"world": 25, "live_transitions": 1468, "interventions": 130, "total_live_transitions": 51686}
+{"world": 26, "live_transitions": 2020, "interventions": 263, "total_live_transitions": 53706}
+{"world": 27, "live_transitions": 1669, "interventions": 150, "total_live_transitions": 55375}
+{"world": 28, "live_transitions": 1697, "interventions": 91, "total_live_transitions": 57072}
+{"world": 29, "live_transitions": 2028, "interventions": 206, "total_live_transitions": 59100}
+{"world": 30, "live_transitions": 1627, "interventions": 194, "total_live_transitions": 60727}
+{"world": 31, "live_transitions": 2017, "interventions": 306, "total_live_transitions": 62744}
+{"status": "complete", "worlds": 32, "live_transitions": 62744, "intervened_transitions": 9560, "actor_dim": 170, "eligible_for_learning": true, "reinforcement_learning_updates": 0, "teacher_source_unchanged": true, "exact_reference_metric_matches": 0, "protocol_sha256": "8206e5e72eb910b5b84590defbc9ed7167c83e1f97f15062bbef1f6b8e0f0534", "world_manifest_sha256": "f9b6d17d046700f6616d5ffa0599c9985a554e47edf67d08b52c0f3456995f6f", "space_sha256": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481", "wall_seconds": 5265.530999999995}

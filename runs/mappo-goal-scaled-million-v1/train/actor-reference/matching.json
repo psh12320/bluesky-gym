@@ -1,0 +1,20 @@
+{
+  "reference_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train\\initial-model.zip",
+  "reference_sha256": "f9c6e64ed1b8c3ed59d1fcf7f15b69ad4d44935e40abae082079d1a8f1af8870",
+  "reference_live_transitions": 0,
+  "actor_parameters_identical": true,
+  "critic_parameters_unchanged": true,
+  "actor_parameter_names": [
+    "action_net.bias",
+    "action_net.weight",
+    "log_std",
+    "mlp_extractor.policy_net.0.bias",
+    "mlp_extractor.policy_net.0.weight",
+    "mlp_extractor.policy_net.2.bias",
+    "mlp_extractor.policy_net.2.weight"
+  ],
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 423425,
+  "learner_rng": "Reconstructed through seeded local-critic PPO loading before the first rollout.",
+  "simulation_rng": "Original per-world seeds retained; no simulator steps executed by this helper."
+}

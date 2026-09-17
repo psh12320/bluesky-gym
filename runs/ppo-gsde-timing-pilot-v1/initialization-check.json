@@ -1,0 +1,14 @@
+{
+  "changed_tensors": [],
+  "identical_initial_tensors": true,
+  "same_parameter_count": true,
+  "sde_resampling_decisions": [
+    1,
+    12
+  ],
+  "noise_matrix_weight_std": 0.01,
+  "checkpoint_sha256": [
+    "cfd62e3c067afdd4e4993d0f5a7be9b6a2a367ddc263f46dc56776f8dc2c1255",
+    "e64fd96d58881031fb906f34bab3d20a14324c2fd3dc5eea23f78636aac91030"
+  ]
+}

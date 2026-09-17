@@ -1,0 +1,24 @@
+{
+  "case": "ppo-masked",
+  "matched_physical_metrics": 180,
+  "model_sha256": "d1c817c1ed733645179b2bdc22116a579ddaa0b9097cc506ba26adea3eee5223",
+  "runtime": {
+    "static_area_filter": false,
+    "traffic_conflict_filter": false,
+    "actor_uses_joint_context": false,
+    "training_track": "ma",
+    "evaluation_track": "ma",
+    "single_agent_transfer": false,
+    "observed_traffic_slots": 9,
+    "simulated_scripted_intruders": 0,
+    "episode_time_limit": 3000,
+    "intrusion_distance": 5,
+    "distance_margin": 5,
+    "action_frequency": 5,
+    "sim_dt": 1,
+    "n_obstacles": 5,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap"
+  },
+  "csv_sha256": "aaf587b06e3d6a5ed7d779b2f85b4f4c3801f18bd6ff6fdba4ad69916f8969b7"
+}

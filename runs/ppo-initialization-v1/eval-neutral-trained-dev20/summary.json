@@ -1,0 +1,66 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.04,
+      "std": 0.19595917942265426
+    },
+    "flight_time": {
+      "mean": 2911.42,
+      "std": 434.14322936100257
+    },
+    "intrusion_events": {
+      "mean": 0.4,
+      "std": 0.670820393249937
+    },
+    "intrusion_time": {
+      "mean": 132.53,
+      "std": 414.7053642045156
+    },
+    "restricted_area_events": {
+      "mean": 0.805,
+      "std": 1.008451783676344
+    },
+    "time_in_restricted_area": {
+      "mean": 149.715,
+      "std": 219.0856311468189
+    },
+    "sector_exit_events": {
+      "mean": 0.96,
+      "std": 0.19595917942265428
+    },
+    "time_outside_sector": {
+      "mean": 1937.42,
+      "std": 557.7598619477741
+    },
+    "total_reward": {
+      "mean": -460.12627941661617,
+      "std": 431.3051794429253
+    }
+  },
+  "clean_completion_rate": 0.02,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": false,
+  "filter": false,
+  "seed": 20260,
+  "live_transitions": 116459,
+  "padded_transitions": 3541,
+  "world_decisions": 12000,
+  "aircraft_terminated": 8,
+  "aircraft_truncated": 192,
+  "wall_seconds": 765.4108974999981,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true
+  },
+  "csv_sha256": "891024d78eb9c6a22e283be7c56a608d970f9350fc21250fa233220b0c56afb8"
+}

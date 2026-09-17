@@ -1,0 +1,308 @@
+{
+  "sampled_live_observations": 371,
+  "world_decisions": 252,
+  "reference_world_seconds": 14.546999999998661,
+  "scenario_sha256": "6684926c7289bd8432a31af5074bd32b85fff20f3961f66edf76fb6119b4b60b",
+  "reference_physical_metrics_matched": 90,
+  "reference_csv_sha256": "935bee120e9bc8c279389e78297227422defd1751e66d744047fb4be9154c18b",
+  "input_fields": {
+    "airspeed": {
+      "rms": 0.11789599061012268,
+      "max_absolute": 0.12017885595560074,
+      "nonzero_fraction": 1.0,
+      "dimension": 1
+    },
+    "cos_drift": {
+      "rms": 0.9921067953109741,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 1.0,
+      "dimension": 1
+    },
+    "cos_track": {
+      "rms": 0.6913577914237976,
+      "max_absolute": 0.999904990196228,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "inside_sector": {
+      "rms": 1.0,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 1.0,
+      "dimension": 1
+    },
+    "intruder_distance": {
+      "rms": 0.26201722025871277,
+      "max_absolute": 0.5163721442222595,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "obstacle_cos_bearing": {
+      "rms": 0.4755181074142456,
+      "max_absolute": 0.9997391104698181,
+      "nonzero_fraction": 1.0,
+      "dimension": 5
+    },
+    "obstacle_distance": {
+      "rms": 0.746661365032196,
+      "max_absolute": 1.1985688209533691,
+      "nonzero_fraction": 1.0,
+      "dimension": 5
+    },
+    "obstacle_radius": {
+      "rms": 1.8691068887710571,
+      "max_absolute": 2.8318450450897217,
+      "nonzero_fraction": 1.0,
+      "dimension": 5
+    },
+    "obstacle_sin_bearing": {
+      "rms": 0.8797059655189514,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 1.0,
+      "dimension": 5
+    },
+    "sector_point_cos_bearing": {
+      "rms": 0.7031213045120239,
+      "max_absolute": 0.9999668002128601,
+      "nonzero_fraction": 1.0,
+      "dimension": 12
+    },
+    "sector_point_distance": {
+      "rms": 0.9944146871566772,
+      "max_absolute": 1.662233829498291,
+      "nonzero_fraction": 1.0,
+      "dimension": 12
+    },
+    "sector_point_sin_bearing": {
+      "rms": 0.7110698819160461,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 1.0,
+      "dimension": 12
+    },
+    "sin_drift": {
+      "rms": 0.12539543211460114,
+      "max_absolute": 0.9238062500953674,
+      "nonzero_fraction": 1.0,
+      "dimension": 1
+    },
+    "sin_track": {
+      "rms": 0.6167375445365906,
+      "max_absolute": 0.9999998211860657,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "traffic_dcpa": {
+      "rms": 3.4696929454803467,
+      "max_absolute": 4.0,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "traffic_entry_time": {
+      "rms": 0.913554847240448,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 0.8499550763701708,
+      "dimension": 9
+    },
+    "traffic_predicted_conflict": {
+      "rms": 0.17305804789066315,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 0.02994908655286014,
+      "dimension": 9
+    },
+    "traffic_present": {
+      "rms": 0.9264668226242065,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "traffic_tcpa": {
+      "rms": 0.5825955271720886,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 0.4546271338724169,
+      "dimension": 9
+    },
+    "vx_r": {
+      "rms": 1.2369019985198975,
+      "max_absolute": 2.030824661254883,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "vy_r": {
+      "rms": 0.665385365486145,
+      "max_absolute": 1.01592218875885,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "waypoint_distance": {
+      "rms": 0.4950621724128723,
+      "max_absolute": 0.9916810393333435,
+      "nonzero_fraction": 1.0,
+      "dimension": 1
+    },
+    "x_r": {
+      "rms": 0.07730813324451447,
+      "max_absolute": 0.2045859694480896,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "y_r": {
+      "rms": 0.09349082410335541,
+      "max_absolute": 0.2325548529624939,
+      "nonzero_fraction": 0.8583408206049715,
+      "dimension": 9
+    },
+    "time_remaining": {
+      "rms": 0.847943127155304,
+      "max_absolute": 1.0,
+      "nonzero_fraction": 1.0,
+      "dimension": 1
+    }
+  },
+  "models": {
+    "guided_49900_100k": {
+      "checkpoint_sha256": "ffa8a1ceee4fae55e8fc4e42f0953aecc4277799428c12b86b3441f4ef8da3d9",
+      "live_transitions": 101144,
+      "actor_tanh1_fraction_abs_above_0_99": 0.013245451264083385,
+      "actor_tanh2_fraction_abs_above_0_99": 0.0021479111164808273,
+      "learned_stochastic_standard_deviation": [
+        0.05319862440228462,
+        0.05308463051915169
+      ],
+      "latent_mean_by_action": [
+        -0.013164374977350235,
+        0.013509915210306644
+      ],
+      "latent_std_across_reference_states": [
+        0.02882358618080616,
+        0.026589877903461456
+      ],
+      "latent_5_50_95_percentiles_by_action": [
+        [
+          -0.06926758959889412,
+          -0.030035195872187614
+        ],
+        [
+          -0.011311152949929237,
+          0.011500424705445766
+        ],
+        [
+          0.031147929839789867,
+          0.058646947145462036
+        ]
+      ],
+      "fraction_mean_outside_action_bounds": 0.0,
+      "heading_offset_degrees_mean": -1.184794306755066,
+      "heading_offset_degrees_std": 2.5941221714019775
+    },
+    "guided_49920_100k": {
+      "checkpoint_sha256": "e651505027477200aa6d4289246a47114282b2341351d46f11b8577258f31d12",
+      "live_transitions": 101336,
+      "actor_tanh1_fraction_abs_above_0_99": 0.013940364122390747,
+      "actor_tanh2_fraction_abs_above_0_99": 0.0010950134601444006,
+      "learned_stochastic_standard_deviation": [
+        0.051862683147192,
+        0.054249439388513565
+      ],
+      "latent_mean_by_action": [
+        0.008205221965909004,
+        9.252106974599883e-05
+      ],
+      "latent_std_across_reference_states": [
+        0.034560926258563995,
+        0.024748090654611588
+      ],
+      "latent_5_50_95_percentiles_by_action": [
+        [
+          -0.05025327391922474,
+          -0.03878382407128811
+        ],
+        [
+          0.00586024159565568,
+          -0.000513934064656496
+        ],
+        [
+          0.06365639716386795,
+          0.041572749614715576
+        ]
+      ],
+      "fraction_mean_outside_action_bounds": 0.0,
+      "heading_offset_degrees_mean": 0.7384698987007141,
+      "heading_offset_degrees_std": 3.1104836463928223
+    },
+    "guided_49940_100k": {
+      "checkpoint_sha256": "cb683c1ccb8d6fe7b8d7db996a984729c642ba7894850d45edab1c13519f2927",
+      "live_transitions": 101894,
+      "actor_tanh1_fraction_abs_above_0_99": 0.015709232538938522,
+      "actor_tanh2_fraction_abs_above_0_99": 0.0006106806104071438,
+      "learned_stochastic_standard_deviation": [
+        0.053970564156770706,
+        0.05099864676594734
+      ],
+      "latent_mean_by_action": [
+        0.021320581436157227,
+        0.00934497732669115
+      ],
+      "latent_std_across_reference_states": [
+        0.034353844821453094,
+        0.03164754435420036
+      ],
+      "latent_5_50_95_percentiles_by_action": [
+        [
+          -0.037183281034231186,
+          -0.045687904581427574
+        ],
+        [
+          0.02198096178472042,
+          0.010537190362811089
+        ],
+        [
+          0.07292121648788452,
+          0.05874884873628616
+        ]
+      ],
+      "fraction_mean_outside_action_bounds": 0.0,
+      "heading_offset_degrees_mean": 1.9188528060913086,
+      "heading_offset_degrees_std": 3.091845750808716
+    },
+    "features_50400_100k": {
+      "checkpoint_sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c",
+      "live_transitions": 100555,
+      "actor_tanh1_fraction_abs_above_0_99": 0.07841981202363968,
+      "actor_tanh2_fraction_abs_above_0_99": 0.006317385472357273,
+      "learned_stochastic_standard_deviation": [
+        0.053956348448991776,
+        0.05448324978351593
+      ],
+      "latent_mean_by_action": [
+        -0.08028015494346619,
+        0.09441722929477692
+      ],
+      "latent_std_across_reference_states": [
+        0.05591347813606262,
+        0.045237947255373
+      ],
+      "latent_5_50_95_percentiles_by_action": [
+        [
+          -0.16035813093185425,
+          0.015501145273447037
+        ],
+        [
+          -0.09058044850826263,
+          0.10095761716365814
+        ],
+        [
+          0.02442658133804798,
+          0.15423951297998428
+        ]
+      ],
+      "fraction_mean_outside_action_bounds": 0.0,
+      "heading_offset_degrees_mean": -7.225213050842285,
+      "heading_offset_degrees_std": 5.032212734222412
+    }
+  },
+  "limitations": [
+    "One development world under the untrained reference, not each learned policy's state distribution.",
+    "Actor outputs are inspected without commanding the simulator.",
+    "Input scales and activation summaries alone cannot establish the cause of failed learning.",
+    "Different architectures and training seeds are descriptive here, not a controlled algorithm ranking."
+  ]
+}

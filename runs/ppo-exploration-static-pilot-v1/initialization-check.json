@@ -1,0 +1,15 @@
+{
+  "changed_tensors": [
+    "log_std"
+  ],
+  "identical_remaining_initial_tensors": true,
+  "same_parameter_count": true,
+  "initial_std": [
+    0.05,
+    0.2
+  ],
+  "checkpoint_sha256": [
+    "3ed5e478bf5f9e670da76a8ce4b4363e2760bdeea23d1c51cc10c6be736cbb1f",
+    "e9927fb244d49af235af8add55de8d4c457988baf2f317945e4c93999bef3433"
+  ]
+}

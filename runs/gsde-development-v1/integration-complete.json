@@ -1,0 +1,103 @@
+{
+  "gaussian_initial_and_trained_policy_tensors_identical": {
+    "initial-model.zip": true,
+    "model.zip": true
+  },
+  "gsde_initial_actor_match": {
+    "initial_actor_tensors_identical": true,
+    "actor_parameters": 38914,
+    "ppo_critic_parameters": 109825,
+    "mappo_critic_parameters": 550145
+  },
+  "performance_evidence": false,
+  "training": {
+    "ppo": {
+      "summary": {
+        "status": "complete",
+        "algorithm": "ppo",
+        "live_transitions": 1280,
+        "padded_transitions": 0,
+        "counted_transitions": 1280,
+        "optimizer_steps": 12,
+        "policy_epochs": 4,
+        "rollouts": 2,
+        "worlds_completed": 0,
+        "aircraft_completed": 0,
+        "wall_seconds": 28.22356569999829,
+        "actor_and_critic_parameters_changed": true,
+        "source_unchanged": true,
+        "model_sha256": "79e1636a9f5015f161421e71c8776c315ed8cbc342bbaacc1fc006a653317d1a",
+        "training_seed": 49040,
+        "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+      },
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\gsde-development-v1\\ppo\\train",
+        "algorithm": "ppo",
+        "exploration": "gsde",
+        "sde_weight_std": 0.05,
+        "sde_sample_freq": 12,
+        "status": "complete",
+        "live_transitions": 1280,
+        "padded_transitions": 0,
+        "optimizer_steps": 12,
+        "verified_checkpoints": 3,
+        "verified_source_files": 97,
+        "learning_curve_rows": 2,
+        "aircraft_completed": 0,
+        "actor_parameter_count": 38914,
+        "critic_parameter_count": 109825,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": false,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "79e1636a9f5015f161421e71c8776c315ed8cbc342bbaacc1fc006a653317d1a",
+        "policy_quality_assessed": false
+      },
+      "native_evaluation_csv_sha256": "2bd9e7e012f2223c561ecd5c099fbfd1d9b4d30b40bcaf4df49a1a4c585ef305"
+    },
+    "mappo": {
+      "summary": {
+        "status": "complete",
+        "algorithm": "mappo",
+        "live_transitions": 1280,
+        "padded_transitions": 0,
+        "counted_transitions": 1280,
+        "optimizer_steps": 12,
+        "policy_epochs": 4,
+        "rollouts": 2,
+        "worlds_completed": 0,
+        "aircraft_completed": 0,
+        "wall_seconds": 32.68425069999648,
+        "actor_and_critic_parameters_changed": true,
+        "source_unchanged": true,
+        "model_sha256": "6eb0afc237b7760b184c0446a62490cdd81c18bff4498e1cc087729ee9be79ed",
+        "training_seed": 49040,
+        "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+      },
+      "audit": {
+        "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\gsde-development-v1\\mappo\\train",
+        "algorithm": "mappo",
+        "exploration": "gsde",
+        "sde_weight_std": 0.05,
+        "sde_sample_freq": 12,
+        "status": "complete",
+        "live_transitions": 1280,
+        "padded_transitions": 0,
+        "optimizer_steps": 12,
+        "verified_checkpoints": 3,
+        "verified_source_files": 97,
+        "learning_curve_rows": 2,
+        "aircraft_completed": 0,
+        "actor_parameter_count": 38914,
+        "critic_parameter_count": 550145,
+        "actor_and_critic_changed": true,
+        "actor_gradient_to_joint_context_zero": true,
+        "critic_uses_joint_context": true,
+        "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+        "model_sha256": "6eb0afc237b7760b184c0446a62490cdd81c18bff4498e1cc087729ee9be79ed",
+        "policy_quality_assessed": false
+      },
+      "native_evaluation_csv_sha256": "3f8de5547710217867e634df6c68779a73d2d470c6ca188997323ee0bf96e894"
+    }
+  }
+}

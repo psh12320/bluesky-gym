@@ -1,0 +1,581 @@
+{
+  "training_seeds": 1,
+  "worlds": 20,
+  "initial_identity": {
+    "initial_actor_tensors_identical": true,
+    "actor_parameters": 32900,
+    "ppo_critic_parameters": 98305,
+    "mappo_critic_parameters": 423425
+  },
+  "live_count_tolerance": 5120,
+  "training_source_differences": [
+    "atc_rl/cluster.py",
+    "atc_rl/curves.py",
+    "atc_rl/matrix.py",
+    "atc_rl/matrix_evaluate.py",
+    "atc_rl/train.py",
+    "atc_rl/training_records.py"
+  ],
+  "training_source_identical": false,
+  "source_caveat": "Changed training sources require separate verification before attributing differences solely to the critic.",
+  "checkpoints": {
+    "ppo": {
+      "file": "policy-live-100699.zip",
+      "sha256": "e7853e2bc896540ab9d22cc3b517a0f66fe0da7d2982361de77cce46ab4b11f3",
+      "live_transitions": 100699,
+      "counted_transitions": 122880,
+      "padded_transitions": 22181,
+      "optimizer_steps": 1048,
+      "policy_epochs": 225,
+      "rollouts": 24
+    },
+    "mappo": {
+      "file": "policy-live-100275.zip",
+      "sha256": "34404cd69a17f2cbfab207cb7b1f7619386f2da432352b7612b16542421d83f2",
+      "live_transitions": 100275,
+      "counted_transitions": 122880,
+      "padded_transitions": 22605,
+      "optimizer_steps": 1045,
+      "policy_epochs": 222,
+      "rollouts": 24
+    }
+  },
+  "training_configurations": {
+    "ppo": {
+      "algorithm": "ppo",
+      "workers": 2,
+      "live_steps": 1000000,
+      "rollout_steps": 256,
+      "batch_size": 1024,
+      "epochs": 10,
+      "seed": 49900,
+      "device": "cpu",
+      "initial_action_std": 0.05,
+      "neutral_action_mean": true,
+      "action_reference": "goal_offset",
+      "guidance": false,
+      "filter": false,
+      "progress_scale": 0.0,
+      "reward_scale": 0.01,
+      "actor_reference": null,
+      "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-budget-scale-v1\\scaled",
+      "checkpoint_live_steps": 100000,
+      "max_wall_seconds": 7200.0,
+      "world_seeds": [
+        49900,
+        49910
+      ],
+      "actor_information": "own standard aircraft observation plus remaining-time fraction",
+      "critic_information": "same local observation as actor",
+      "actor_widths": [
+        128,
+        128
+      ],
+      "critic_widths": [
+        256,
+        256
+      ],
+      "shared_actor": true,
+      "shared_critic": true,
+      "gamma": 0.996508469331006,
+      "gae_lambda": 0.95,
+      "learning_rate": 0.0003,
+      "clip_range": 0.2,
+      "entropy_coefficient": 0.01,
+      "value_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "target_kl": 0.03,
+      "decision_interval_seconds": 5,
+      "reward_recipe": "public_weights",
+      "automatic_residual_controller": true,
+      "navigation_prior": "Goal/reference-bearing tracking before learned heading offset",
+      "learning_reward_formula": "reward_scale * (native_reward + potential_shaping)",
+      "progress_shaping": {
+        "scale": 0.0,
+        "distance_norm_km": 150.0,
+        "distance_cap_km": 1500.0,
+        "potential": "-scale * clipped_distance_to_goal_region / 150 * remaining_time_fraction",
+        "formula": "gamma * next_potential - current_potential; terminal potential is zero",
+        "original_scoring_info_unchanged": true
+      },
+      "finite_horizon": "Do not bootstrap beyond goal completion or the actual 3000-second competition deadline; bootstrap at rollout cuts.",
+      "action_distribution": "SB3 diagonal Gaussian; clip sampled latent actions to [-1,1] before the recorded action mapping",
+      "action_mapping": "Heading: observed reference bearing plus learned +/-90 degree offset, wrapped and clipped to +/-45 degree turn; speed increment unchanged",
+      "active_mask": "Policy, value, entropy and advantage-normalization samples exclude inactive aircraft slots",
+      "budget_unit": "Live aircraft transitions; finish the current rollout, recording exact overshoot and padded slot count"
+    },
+    "mappo": {
+      "algorithm": "mappo",
+      "workers": 2,
+      "live_steps": 1000000,
+      "rollout_steps": 256,
+      "batch_size": 1024,
+      "epochs": 10,
+      "seed": 49900,
+      "device": "cpu",
+      "initial_action_std": 0.05,
+      "neutral_action_mean": true,
+      "action_reference": "goal_offset",
+      "guidance": false,
+      "filter": false,
+      "progress_scale": 0.0,
+      "reward_scale": 0.01,
+      "actor_reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train\\initial-model.zip",
+      "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "checkpoint_live_steps": 100000,
+      "max_wall_seconds": 7200.0,
+      "world_seeds": [
+        49900,
+        49910
+      ],
+      "actor_information": "own standard aircraft observation plus remaining-time fraction",
+      "critic_information": "joint aircraft observations, alive flags and target identity",
+      "actor_widths": [
+        128,
+        128
+      ],
+      "critic_widths": [
+        256,
+        256
+      ],
+      "shared_actor": true,
+      "shared_critic": true,
+      "gamma": 0.996508469331006,
+      "gae_lambda": 0.95,
+      "learning_rate": 0.0003,
+      "clip_range": 0.2,
+      "entropy_coefficient": 0.01,
+      "value_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "target_kl": 0.03,
+      "decision_interval_seconds": 5,
+      "reward_recipe": "public_weights",
+      "automatic_residual_controller": true,
+      "navigation_prior": "Goal/reference-bearing tracking before learned heading offset",
+      "learning_reward_formula": "reward_scale * (native_reward + potential_shaping)",
+      "progress_shaping": {
+        "scale": 0.0,
+        "distance_norm_km": 150.0,
+        "distance_cap_km": 1500.0,
+        "potential": "-scale * clipped_distance_to_goal_region / 150 * remaining_time_fraction",
+        "formula": "gamma * next_potential - current_potential; terminal potential is zero",
+        "original_scoring_info_unchanged": true
+      },
+      "finite_horizon": "Do not bootstrap beyond goal completion or the actual 3000-second competition deadline; bootstrap at rollout cuts.",
+      "action_distribution": "SB3 diagonal Gaussian; clip sampled latent actions to [-1,1] before the recorded action mapping",
+      "action_mapping": "Heading: observed reference bearing plus learned +/-90 degree offset, wrapped and clipped to +/-45 degree turn; speed increment unchanged",
+      "active_mask": "Policy, value, entropy and advantage-normalization samples exclude inactive aircraft slots",
+      "budget_unit": "Live aircraft transitions; finish the current rollout, recording exact overshoot and padded slot count"
+    }
+  },
+  "evaluations": {
+    "ppo_initial": {
+      "directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-v1\\eval-initial-dev20",
+      "csv_sha256": "1c49d63dbec9c89d1faf118680f51a5a7bde3380b0ab16631990262e866a727c"
+    },
+    "ppo": {
+      "directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-budget-scale-v1\\eval-scaled-100k-dev20",
+      "csv_sha256": "d4db480e221fc5051722b216d6f8dcb8e2a75f4b01171fa181ea17955c10b4c6"
+    },
+    "mappo_initial": {
+      "directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\eval-initial-dev20",
+      "csv_sha256": "1c49d63dbec9c89d1faf118680f51a5a7bde3380b0ab16631990262e866a727c"
+    },
+    "mappo": {
+      "directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\eval-100k-dev20",
+      "csv_sha256": "7fd70efef0e5b6f3a25ce8ffe023ee01b806146b8d251c84464ee3fcd671c1e4"
+    }
+  },
+  "means": {
+    "ppo_initial": {
+      "waypoint_reached": 1.0,
+      "flight_time": 857.2,
+      "intrusion_events": 0.95,
+      "intrusion_time": 73.77000000000001,
+      "restricted_area_events": 0.85,
+      "time_in_restricted_area": 127.005,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -95.84946248984842,
+      "clean_completion": 0.195,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "ppo": {
+      "waypoint_reached": 1.0,
+      "flight_time": 856.3750000000002,
+      "intrusion_events": 0.9400000000000001,
+      "intrusion_time": 69.22999999999999,
+      "restricted_area_events": 0.85,
+      "time_in_restricted_area": 123.545,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -89.83419668784462,
+      "clean_completion": 0.195,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "mappo_initial": {
+      "waypoint_reached": 1.0,
+      "flight_time": 857.2,
+      "intrusion_events": 0.95,
+      "intrusion_time": 73.77000000000001,
+      "restricted_area_events": 0.85,
+      "time_in_restricted_area": 127.005,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -95.84946248984842,
+      "clean_completion": 0.195,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "mappo": {
+      "waypoint_reached": 1.0,
+      "flight_time": 884.6700000000001,
+      "intrusion_events": 0.9800000000000001,
+      "intrusion_time": 77.61,
+      "restricted_area_events": 0.845,
+      "time_in_restricted_area": 131.24999999999997,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": -101.6092341637983,
+      "clean_completion": 0.185,
+      "all_aircraft_clean_completion": 0.0
+    }
+  },
+  "effects": {
+    "waypoint_reached": {
+      "ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "flight_time": {
+      "ppo_learning": {
+        "mean_difference": -0.8249999999999943,
+        "paired_world_bootstrap_95_interval": [
+          -5.745249999999999,
+          3.7350000000000136
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 27.46999999999998,
+        "paired_world_bootstrap_95_interval": [
+          21.444874999999975,
+          33.89512499999998
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 28.294999999999977,
+        "paired_world_bootstrap_95_interval": [
+          19.75474999999997,
+          36.76512499999998
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 28.294999999999977,
+        "paired_world_bootstrap_95_interval": [
+          19.75474999999997,
+          36.76512499999998
+        ]
+      }
+    },
+    "intrusion_events": {
+      "ppo_learning": {
+        "mean_difference": -0.010000000000000012,
+        "paired_world_bootstrap_95_interval": [
+          -0.07000000000000002,
+          0.05999999999999998
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 0.029999999999999992,
+        "paired_world_bootstrap_95_interval": [
+          -0.06,
+          0.11999999999999997
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 0.04,
+        "paired_world_bootstrap_95_interval": [
+          -0.04999999999999999,
+          0.12000000000000002
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 0.04,
+        "paired_world_bootstrap_95_interval": [
+          -0.04999999999999999,
+          0.12000000000000002
+        ]
+      }
+    },
+    "intrusion_time": {
+      "ppo_learning": {
+        "mean_difference": -4.540000000000001,
+        "paired_world_bootstrap_95_interval": [
+          -10.51025,
+          0.8699999999999978
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 3.8400000000000007,
+        "paired_world_bootstrap_95_interval": [
+          -2.4799999999999995,
+          10.179999999999998
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 8.38,
+        "paired_world_bootstrap_95_interval": [
+          0.589750000000003,
+          16.32025
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 8.38,
+        "paired_world_bootstrap_95_interval": [
+          0.589750000000003,
+          16.32025
+        ]
+      }
+    },
+    "restricted_area_events": {
+      "ppo_learning": {
+        "mean_difference": 5.551115123125783e-18,
+        "paired_world_bootstrap_95_interval": [
+          -0.019999999999999997,
+          0.020000000000000007
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": -0.0050000000000000044,
+        "paired_world_bootstrap_95_interval": [
+          -0.020000000000000018,
+          0.009999999999999998
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": -0.00500000000000001,
+        "paired_world_bootstrap_95_interval": [
+          -0.025000000000000022,
+          0.014999999999999996
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": -0.00500000000000001,
+        "paired_world_bootstrap_95_interval": [
+          -0.025000000000000022,
+          0.014999999999999996
+        ]
+      }
+    },
+    "time_in_restricted_area": {
+      "ppo_learning": {
+        "mean_difference": -3.4599999999999986,
+        "paired_world_bootstrap_95_interval": [
+          -6.774999999999997,
+          -0.4000000000000012
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 4.245,
+        "paired_world_bootstrap_95_interval": [
+          1.1898749999999996,
+          7.680249999999998
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 7.704999999999998,
+        "paired_world_bootstrap_95_interval": [
+          3.3547499999999992,
+          12.625124999999999
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 7.704999999999998,
+        "paired_world_bootstrap_95_interval": [
+          3.3547499999999992,
+          12.625124999999999
+        ]
+      }
+    },
+    "sector_exit_events": {
+      "ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "time_outside_sector": {
+      "ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "total_reward": {
+      "ppo_learning": {
+        "mean_difference": 6.015265802003801,
+        "paired_world_bootstrap_95_interval": [
+          0.6681718118936799,
+          11.815933127373293
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": -5.75977167394989,
+        "paired_world_bootstrap_95_interval": [
+          -12.302079625724325,
+          0.4982481931935682
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": -11.775037475953692,
+        "paired_world_bootstrap_95_interval": [
+          -19.6646117756365,
+          -4.122993642382329
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": -11.775037475953692,
+        "paired_world_bootstrap_95_interval": [
+          -19.6646117756365,
+          -4.122993642382329
+        ]
+      }
+    },
+    "clean_completion": {
+      "ppo_learning": {
+        "mean_difference": -2.7755575615628915e-18,
+        "paired_world_bootstrap_95_interval": [
+          -0.04000000000000001,
+          0.034999999999999996
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": -0.01,
+        "paired_world_bootstrap_95_interval": [
+          -0.030000000000000006,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": -0.009999999999999998,
+        "paired_world_bootstrap_95_interval": [
+          -0.034999999999999996,
+          0.01
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": -0.009999999999999998,
+        "paired_world_bootstrap_95_interval": [
+          -0.034999999999999996,
+          0.010000000000000004
+        ]
+      }
+    },
+    "all_aircraft_clean_completion": {
+      "ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_final": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "mappo_minus_ppo_learning": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "One training seed on paired development scenarios; no general algorithm ranking.",
+    "Joint critic input changes parameter count even with the same hidden widths; this is not a capacity-matched information-only ablation.",
+    "Intervals resample worlds, not independent training seeds. Actual experience counts and partial runs remain explicit.",
+    "The initial navigation prior is controlled by separate initial-policy evaluations."
+  ]
+}

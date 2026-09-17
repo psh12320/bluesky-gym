@@ -1,0 +1,13 @@
+{
+  "episode": 14,
+  "agent": "KL002",
+  "exact_reference_metrics_match": true,
+  "start_goal_distance_km": 160.27358457623504,
+  "minimum_sampled_goal_distance_km": 41.07946319216305,
+  "maximum_sampled_goal_distance_km": 206.27467801658128,
+  "last_sample_time_seconds": 2990.0,
+  "last_sample_goal_distance_km": 41.07946319216305,
+  "samples_within_20km": 0,
+  "first_sample_alone_time_seconds": 1970.0,
+  "interpretation": "Repeated long detours/loops well away from the destination; not a near-goal capture failure. No separation, restricted-area or sector violation for this aircraft."
+}

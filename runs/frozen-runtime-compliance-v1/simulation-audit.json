@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-09-15T11:57:36.313897+00:00",
+  "seed": 2026,
+  "decisions_per_track": 1,
+  "scope": "Read the actual BlueSky clock and unwrapped conflict-resolution implementation after each frozen controller executes its first development decision. No simulator-setting changes.",
+  "checks": {
+    "sa": {
+      "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+      "simulator_elapsed_seconds": 10.0,
+      "actual_simulator_step_seconds": 1.0,
+      "expected_decision_interval_seconds": 10,
+      "selected_resolution_implementation": "bluesky.traffic.asas.resolution.ConflictResolution",
+      "bluesky_conflict_resolution_off": true
+    },
+    "ma": {
+      "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+      "simulator_elapsed_seconds": 5.0,
+      "actual_simulator_step_seconds": 1.0,
+      "expected_decision_interval_seconds": 5,
+      "selected_resolution_implementation": "bluesky.traffic.asas.resolution.ConflictResolution",
+      "bluesky_conflict_resolution_off": true
+    }
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "completed_at_utc": "2026-09-15T16:39:23.769800+00:00",
+  "protocol_sha256": "c8efeedd860d54e619c4f35b7fe7284d0bd5b5fa52c09978e55745b694916177",
+  "all_declared_seeds_included": true,
+  "primary_candidates_unchanged": true,
+  "scenario_stream": 2027,
+  "scope": "Three fixed training seeds per method on the same previously evaluated scenario stream; no replica selection",
+  "uncertainty": "Scenario bootstrap intervals are pointwise and conditional on a trained model. Training-seed mean/range/sample standard deviation are descriptive from n=3, with no claimed precise population interval.",
+  "tracks": {
+    "ma": {
+      "classical_csv_sha256": "4fa8bbb0c1e0b70e96219521c472a3c40247b9419beb165da2e618c0fcd92928",
+      "training_seeds": {
+        "2900": {
+          "role": "primary",
+          "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+          "csv_sha256": "5d635b49fa04a444cca89cbbbfc904cfd9eaa6f282b5bfb68d305e6ede46971b",
+          "values": {
+            "waypoint_reached": 0.9935,
+            "flight_time": 995.1085,
+            "intrusion_events": 0.056,
+            "intrusion_time": 2.671,
+            "restricted_area_events": 0.0215,
+            "time_in_restricted_area": 0.9,
+            "sector_exit_events": 0.0,
+            "time_outside_sector": 0.0,
+            "clean_completion_rate": 0.939,
+            "all_aircraft_clean_completion_rate": 0.735
+          },
+          "paired_classical_comparison": {
+            "waypoint_reached": {
+              "reference": 0.9934999999999999,
+              "candidate": 0.9934999999999999,
+              "delta": -5.551115123125783e-19,
+              "ci95": [
+                -0.0025000000000000005,
+                0.0024999999999999988
+              ],
+              "better": "higher"
+            },
+            "flight_time": {
+              "reference": 994.0735000000001,
+              "candidate": 995.1085,
+              "delta": 1.0349999999999988,
+              "ci95": [
+                -8.7721125,
+                10.9416125
+              ],
+              "better": "lower"
+            },
+            "intrusion_events": {
+              "reference": 0.051,
+              "candidate": 0.05600000000000001,
+              "delta": 0.005000000000000001,
+              "ci95": [
+                -0.01,
+                0.023000000000000003
+              ],
+              "better": "lower"
+            },
+            "intrusion_time": {
+              "reference": 2.536,
+              "candidate": 2.6710000000000003,
+              "delta": 0.13499999999999993,
+              "ci95": [
+                -0.7290000000000001,
+                1.0350749999999989
+              ],
+              "better": "lower"
+            },
+            "restricted_area_events": {
+              "reference": 0.021,
+              "candidate": 0.021500000000000005,
+              "delta": 0.0004999999999999995,
+              "ci95": [
+                -0.0045,
+                0.004999999999999999
+              ],
+              "better": "lower"
+            },
+            "time_in_restricted_area": {
+              "reference": 0.9275,
+              "candidate": 0.9000000000000001,
+              "delta": -0.02749999999999999,
+              "ci95": [
+                -0.128,
+                0.047
+              ],
+              "better": "lower"
+            },
+            "sector_exit_events": {
+              "reference": 0.0,
+              "candidate": 0.0,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "time_outside_sector": {
+              "reference": 0.0,
+              "candidate": 0.0,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "clean_completion_rate": {
+              "reference": 0.938,
+              "candidate": 0.9390000000000001,
+              "delta": 0.0009999999999999998,
+              "ci95": [
+                -0.01,
+                0.011999999999999997
+              ],
+              "better": "higher"
+            },
+            "all_aircraft_clean_completion_rate": {
+              "reference": 0.73,
+              "candidate": 0.735,
+              "delta": 0.005,
+              "ci95": [
+                -0.035,
+                0.045
+              ],
+              "better": "higher"
+            }
+          }
+        },
+        "2902": {
+          "role": "replication",
+          "model_sha256": "069d02fcce6238e68abf71fbe55508106723c944ad0d4e4647e4a4dae88aa84f",
+          "csv_sha256": "7de6ee027abfb745ab7a360c5264a887285e671f71ed4809eb9264e15c879a3b",
+          "values": {
+            "waypoint_reached": 0.992,
+            "flight_time": 999.199,
+            "intrusion_events": 0.051,
+            "intrusion_time": 2.347,
+            "restricted_area_events": 0.018,
+            "time_in_restricted_area": 0.9435,
+            "sector_exit_events": 0.0,
+            "time_outside_sector": 0.0,
+            "clean_completion_rate": 0.939,
+            "all_aircraft_clean_completion_rate": 0.725
+          },
+          "paired_classical_comparison": {
+            "waypoint_reached": {
+              "reference": 0.9934999999999999,
+              "candidate": 0.9919999999999999,
+              "delta": -0.0014999999999999996,
+              "ci95": [
+                -0.004499999999999999,
+                0.0009999999999999998
+              ],
+              "better": "higher"
+            },
+            "flight_time": {
+              "reference": 994.0735000000001,
+              "candidate": 999.199,
+              "delta": 5.125500000000004,
+              "ci95": [
+                -3.991424999999997,
+                14.091550000000007
+              ],
+              "better": "lower"
+            },
+            "intrusion_events": {
+              "reference": 0.051,
+              "candidate": 0.051,
+              "delta": -2.7755575615628914e-19,
+              "ci95": [
+                -0.009999999999999998,
+                0.011
+              ],
+              "better": "lower"
+            },
+            "intrusion_time": {
+              "reference": 2.536,
+              "candidate": 2.347,
+              "delta": -0.18899999999999997,
+              "ci95": [
+                -0.7849999999999995,
+                0.3820749999999993
+              ],
+              "better": "lower"
+            },
+            "restricted_area_events": {
+              "reference": 0.021,
+              "candidate": 0.018000000000000002,
+              "delta": -0.0030000000000000005,
+              "ci95": [
+                -0.007000000000000001,
+                0.0005000000000000001
+              ],
+              "better": "lower"
+            },
+            "time_in_restricted_area": {
+              "reference": 0.9275,
+              "candidate": 0.9435000000000001,
+              "delta": 0.015999999999999983,
+              "ci95": [
+                -0.0635,
+                0.10799999999999997
+              ],
+              "better": "lower"
+            },
+            "sector_exit_events": {
+              "reference": 0.0,
+              "candidate": 0.0,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "time_outside_sector": {
+              "reference": 0.0,
+              "candidate": 0.0,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "clean_completion_rate": {
+              "reference": 0.938,
+              "candidate": 0.9390000000000001,
+              "delta": 0.0009999999999999998,
+              "ci95": [
+                -0.0085,
+                0.010000000000000004
+              ],
+              "better": "higher"
+            },
+            "all_aircraft_clean_completion_rate": {
+              "reference": 0.73,
+              "candidate": 0.725,
+              "delta": -0.005,
+              "ci95": [
+                -0.045,
+                0.03
+              ],
+              "better": "higher"
+            }
+          }
+        },
+        "2904": {
+          "role": "replication",
+          "model_sha256": "b80405b8f9a1d759f600ccb5fb097a800fbf1a9fbfa8fa9ca212581942109e56",
+          "csv_sha256": "c728df9701efc00e0159b5a16c21dcae17427a8025716832bed0834dfcbdfc83",
+          "values": {
+            "waypoint_reached": 0.993,
+            "flight_time": 1001.9095,
+            "intrusion_events": 0.049,
+            "intrusion_time": 2.527,
+            "restricted_area_events": 0.0195,
+            "time_in_restricted_area": 0.956,
+            "sector_exit_events": 0.0,
+            "time_outside_sector": 0.0,
+            "clean_completion_rate": 0.9445,
+            "all_aircraft_clean_completion_rate": 0.735
+          },
+          "paired_classical_comparison": {
+            "waypoint_reached": {
+              "reference": 0.9934999999999999,
+              "candidate": 0.9930000000000001,
+              "delta": -0.0004999999999999999,
+              "ci95": [
+                -0.004999999999999999,
+                0.003999999999999999
+              ],
+              "better": "higher"
+            },
+            "flight_time": {
+              "reference": 994.0735000000001,
+              "candidate": 1001.9095,
+              "delta": 7.836000000000006,
+              "ci95": [
+                -3.1625749999999937,
+                19.142350000000004
+              ],
+              "better": "lower"
+            },
+            "intrusion_events": {
+              "reference": 0.051,
+              "candidate": 0.049,
+              "delta": -0.0019999999999999996,
+              "ci95": [
+                -0.015,
+                0.012000000000000002
+              ],
+              "better": "lower"
+            },
+            "intrusion_time": {
+              "reference": 2.536,
+              "candidate": 2.5269999999999997,
+              "delta": -0.009000000000000022,
+              "ci95": [
+                -0.7060250000000001,
+                0.774074999999999
+              ],
+              "better": "lower"
+            },
+            "restricted_area_events": {
+              "reference": 0.021,
+              "candidate": 0.019500000000000003,
+              "delta": -0.0015,
+              "ci95": [
+                -0.006499999999999999,
+                0.0034999999999999996
+              ],
+              "better": "lower"
+            },
+            "time_in_restricted_area": {
+              "reference": 0.9275,
+              "candidate": 0.9560000000000001,
+              "delta": 0.028500000000000004,
+              "ci95": [
+                -0.08949999999999997,
+                0.14
+              ],
+              "better": "lower"
+            },
+            "sector_exit_events": {
+              "reference": 0.0,
+              "candidate": 0.0,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "time_outside_sector": {
+              "reference": 0.0,
+              "candidate": 0.0,
+              "delta": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "clean_completion_rate": {
+              "reference": 0.938,
+              "candidate": 0.9445,
+              "delta": 0.0065000000000000014,
+              "ci95": [
+                -0.003999999999999997,
+                0.016500000000000008
+              ],
+              "better": "higher"
+            },
+            "all_aircraft_clean_completion_rate": {
+              "reference": 0.73,
+              "candidate": 0.735,
+              "delta": 0.005,
+              "ci95": [
+                -0.04,
+                0.05
+              ],
+              "better": "higher"
+            }
+          }
+        }
+      },
+      "descriptive_seed_distribution": {
+        "waypoint_reached": {
+          "mean": 0.9928333333333333,
+          "minimum": 0.992,
+          "maximum": 0.9935,
+          "sample_standard_deviation": 0.0007637626158259982
+        },
+        "flight_time": {
+          "mean": 998.7389999999999,
+          "minimum": 995.1085,
+          "maximum": 1001.9095,
+          "sample_standard_deviation": 3.4237552847713486
+        },
+        "intrusion_events": {
+          "mean": 0.052,
+          "minimum": 0.049,
+          "maximum": 0.056,
+          "sample_standard_deviation": 0.0036055512754639895
+        },
+        "intrusion_time": {
+          "mean": 2.515,
+          "minimum": 2.347,
+          "maximum": 2.671,
+          "sample_standard_deviation": 0.1623329911016241
+        },
+        "restricted_area_events": {
+          "mean": 0.019666666666666666,
+          "minimum": 0.018,
+          "maximum": 0.0215,
+          "sample_standard_deviation": 0.001755942292142123
+        },
+        "time_in_restricted_area": {
+          "mean": 0.9331666666666667,
+          "minimum": 0.9,
+          "maximum": 0.956,
+          "sample_standard_deviation": 0.02939529440800571
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "sample_standard_deviation": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "sample_standard_deviation": 0.0
+        },
+        "clean_completion_rate": {
+          "mean": 0.9408333333333333,
+          "minimum": 0.939,
+          "maximum": 0.9445,
+          "sample_standard_deviation": 0.003175426480542977
+        },
+        "all_aircraft_clean_completion_rate": {
+          "mean": 0.7316666666666666,
+          "minimum": 0.725,
+          "maximum": 0.735,
+          "sample_standard_deviation": 0.005773502691896263
+        }
+      }
+    },
+    "sa": {
+      "classical_csv_sha256": "157d39b9941cbf8278def690756155e260d7d80197a1eeb96d1718e4b65010d0",
+      "training_seeds": {
+        "2900": {
+          "role": "primary",
+          "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+          "csv_sha256": "0606314b84413329ff88760d4a6459f1cccc63bd91520b6827e9e7dc47bf3124",
+          "values": {
+            "waypoint_reached": 1.0,
+            "flight_time": 1243.15,
+            "intrusion_events": 0.335,
+            "intrusion_time": 17.67,
+            "restricted_area_events": 0.03,
+            "time_in_restricted_area": 1.09,
+            "sector_exit_events": 0.0,
+            "time_outside_sector": 0.0,
+            "clean_completion_rate": 0.69,
+            "all_aircraft_clean_completion_rate": 0.69
+          },
+          "paired_classical_comparison": {
+            "waypoint_reached": {
+              "reference": 0.97,
+              "candidate": 1.0,
+              "delta": 0.03,
+              "ci95": [
+                0.01,
+                0.055
+              ],
+              "better": "higher"
+            },
+            "flight_time": {
+              "reference": 1221.205,
+              "candidate": 1243.15,
+              "delta": 21.945,
+              "ci95": [
+                -32.7365,
+                75.65174999999998
+              ],
+              "better": "lower"
+            },
+            "intrusion_events": {
+              "reference": 0.335,
+              "candidate": 0.335,
+              "delta": 0.0,
+              "ci95": [
+                -0.06,
+                0.06
+              ],
+              "better": "lower"
+            },
+            "intrusion_time": {
+              "reference": 18.635,
+              "candidate": 17.67,
+              "delta": -0.965,
+              "ci95": [
+                -5.15,
+                3.02
+              ],
+              "better": "lower"
+            },
+            "restricted_area_events": {
+              "reference": 0.03,
+              "candidate": 0.03,
+              "delta": 0.0,
+              "ci95": [
+                -0.02,
+                0.02
+              ],
+              "better": "lower"
+            },
+            "time_in_restricted_area": {
+              "reference": 0.925,
+              "candidate": 1.09,
+              "delta": 0.165,
+              "ci95": [
+                -0.83,
+                1.425
+              ],
+              "better": "lower"
+            },
+            "sector_exit_events": {
+              "reference": 0.01,
+              "candidate": 0.0,
+              "delta": -0.01,
+              "ci95": [
+                -0.025,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "time_outside_sector": {
+              "reference": 0.465,
+              "candidate": 0.0,
+              "delta": -0.465,
+              "ci95": [
+                -1.355,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "clean_completion_rate": {
+              "reference": 0.68,
+              "candidate": 0.69,
+              "delta": 0.01,
+              "ci95": [
+                -0.04,
+                0.06
+              ],
+              "better": "higher"
+            },
+            "all_aircraft_clean_completion_rate": {
+              "reference": 0.68,
+              "candidate": 0.69,
+              "delta": 0.01,
+              "ci95": [
+                -0.04,
+                0.06
+              ],
+              "better": "higher"
+            }
+          }
+        },
+        "2902": {
+          "role": "replication",
+          "model_sha256": "87e374be18cea1f85e235374c6522d489cc3b5438eb871a06eb124c1135e995e",
+          "csv_sha256": "ecdac08d3ff7301aa91d9fc78e60372a9870487e16703f21556513d224a61056",
+          "values": {
+            "waypoint_reached": 0.98,
+            "flight_time": 1250.8,
+            "intrusion_events": 0.335,
+            "intrusion_time": 18.35,
+            "restricted_area_events": 0.04,
+            "time_in_restricted_area": 1.495,
+            "sector_exit_events": 0.0,
+            "time_outside_sector": 0.0,
+            "clean_completion_rate": 0.68,
+            "all_aircraft_clean_completion_rate": 0.68
+          },
+          "paired_classical_comparison": {
+            "waypoint_reached": {
+              "reference": 0.97,
+              "candidate": 0.98,
+              "delta": 0.01,
+              "ci95": [
+                -0.015,
+                0.04
+              ],
+              "better": "higher"
+            },
+            "flight_time": {
+              "reference": 1221.205,
+              "candidate": 1250.8,
+              "delta": 29.595,
+              "ci95": [
+                -29.272125,
+                86.43749999999997
+              ],
+              "better": "lower"
+            },
+            "intrusion_events": {
+              "reference": 0.335,
+              "candidate": 0.335,
+              "delta": 0.0,
+              "ci95": [
+                -0.07,
+                0.065
+              ],
+              "better": "lower"
+            },
+            "intrusion_time": {
+              "reference": 18.635,
+              "candidate": 18.35,
+              "delta": -0.285,
+              "ci95": [
+                -4.65,
+                3.98
+              ],
+              "better": "lower"
+            },
+            "restricted_area_events": {
+              "reference": 0.03,
+              "candidate": 0.04,
+              "delta": 0.01,
+              "ci95": [
+                -0.02,
+                0.04
+              ],
+              "better": "lower"
+            },
+            "time_in_restricted_area": {
+              "reference": 0.925,
+              "candidate": 1.495,
+              "delta": 0.57,
+              "ci95": [
+                -0.84,
+                2.33
+              ],
+              "better": "lower"
+            },
+            "sector_exit_events": {
+              "reference": 0.01,
+              "candidate": 0.0,
+              "delta": -0.01,
+              "ci95": [
+                -0.025,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "time_outside_sector": {
+              "reference": 0.465,
+              "candidate": 0.0,
+              "delta": -0.465,
+              "ci95": [
+                -1.355,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "clean_completion_rate": {
+              "reference": 0.68,
+              "candidate": 0.68,
+              "delta": 0.0,
+              "ci95": [
+                -0.055,
+                0.055
+              ],
+              "better": "higher"
+            },
+            "all_aircraft_clean_completion_rate": {
+              "reference": 0.68,
+              "candidate": 0.68,
+              "delta": 0.0,
+              "ci95": [
+                -0.055,
+                0.055
+              ],
+              "better": "higher"
+            }
+          }
+        },
+        "2904": {
+          "role": "replication",
+          "model_sha256": "8b99fa0662d2c7cb304afbbd99c91eab1c64863c91184f4d03c958436a5e5143",
+          "csv_sha256": "3aca5fed657563afbdd5004bf49fe98433c99addbba0f2cd2e6ca159bcd795b0",
+          "values": {
+            "waypoint_reached": 0.99,
+            "flight_time": 1198.75,
+            "intrusion_events": 0.33,
+            "intrusion_time": 16.08,
+            "restricted_area_events": 0.025,
+            "time_in_restricted_area": 1.61,
+            "sector_exit_events": 0.005,
+            "time_outside_sector": 0.32,
+            "clean_completion_rate": 0.685,
+            "all_aircraft_clean_completion_rate": 0.685
+          },
+          "paired_classical_comparison": {
+            "waypoint_reached": {
+              "reference": 0.97,
+              "candidate": 0.99,
+              "delta": 0.02,
+              "ci95": [
+                0.0,
+                0.045
+              ],
+              "better": "higher"
+            },
+            "flight_time": {
+              "reference": 1221.205,
+              "candidate": 1198.75,
+              "delta": -22.455,
+              "ci95": [
+                -72.89,
+                23.475374999999996
+              ],
+              "better": "lower"
+            },
+            "intrusion_events": {
+              "reference": 0.335,
+              "candidate": 0.33,
+              "delta": -0.005,
+              "ci95": [
+                -0.065,
+                0.05
+              ],
+              "better": "lower"
+            },
+            "intrusion_time": {
+              "reference": 18.635,
+              "candidate": 16.08,
+              "delta": -2.555,
+              "ci95": [
+                -6.795125,
+                1.3101249999999982
+              ],
+              "better": "lower"
+            },
+            "restricted_area_events": {
+              "reference": 0.03,
+              "candidate": 0.025,
+              "delta": -0.005,
+              "ci95": [
+                -0.025,
+                0.015
+              ],
+              "better": "lower"
+            },
+            "time_in_restricted_area": {
+              "reference": 0.925,
+              "candidate": 1.61,
+              "delta": 0.685,
+              "ci95": [
+                -0.86,
+                2.735
+              ],
+              "better": "lower"
+            },
+            "sector_exit_events": {
+              "reference": 0.01,
+              "candidate": 0.005,
+              "delta": -0.005,
+              "ci95": [
+                -0.015,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "time_outside_sector": {
+              "reference": 0.465,
+              "candidate": 0.32,
+              "delta": -0.145,
+              "ci95": [
+                -0.395,
+                0.0
+              ],
+              "better": "lower"
+            },
+            "clean_completion_rate": {
+              "reference": 0.68,
+              "candidate": 0.685,
+              "delta": 0.005,
+              "ci95": [
+                -0.045,
+                0.055
+              ],
+              "better": "higher"
+            },
+            "all_aircraft_clean_completion_rate": {
+              "reference": 0.68,
+              "candidate": 0.685,
+              "delta": 0.005,
+              "ci95": [
+                -0.045,
+                0.055
+              ],
+              "better": "higher"
+            }
+          }
+        }
+      },
+      "descriptive_seed_distribution": {
+        "waypoint_reached": {
+          "mean": 0.9899999999999999,
+          "minimum": 0.98,
+          "maximum": 1.0,
+          "sample_standard_deviation": 0.010000000000000009
+        },
+        "flight_time": {
+          "mean": 1230.8999999999999,
+          "minimum": 1198.75,
+          "maximum": 1250.8,
+          "sample_standard_deviation": 28.104225660921532
+        },
+        "intrusion_events": {
+          "mean": 0.3333333333333333,
+          "minimum": 0.33,
+          "maximum": 0.335,
+          "sample_standard_deviation": 0.0028867513459481316
+        },
+        "intrusion_time": {
+          "mean": 17.366666666666667,
+          "minimum": 16.08,
+          "maximum": 18.35,
+          "sample_standard_deviation": 1.1650035765324231
+        },
+        "restricted_area_events": {
+          "mean": 0.03166666666666667,
+          "minimum": 0.025,
+          "maximum": 0.04,
+          "sample_standard_deviation": 0.007637626158259733
+        },
+        "time_in_restricted_area": {
+          "mean": 1.3983333333333334,
+          "minimum": 1.09,
+          "maximum": 1.61,
+          "sample_standard_deviation": 0.27314526049948834
+        },
+        "sector_exit_events": {
+          "mean": 0.0016666666666666668,
+          "minimum": 0.0,
+          "maximum": 0.005,
+          "sample_standard_deviation": 0.002886751345948129
+        },
+        "time_outside_sector": {
+          "mean": 0.10666666666666667,
+          "minimum": 0.0,
+          "maximum": 0.32,
+          "sample_standard_deviation": 0.18475208614068026
+        },
+        "clean_completion_rate": {
+          "mean": 0.685,
+          "minimum": 0.68,
+          "maximum": 0.69,
+          "sample_standard_deviation": 0.004999999999999949
+        },
+        "all_aircraft_clean_completion_rate": {
+          "mean": 0.685,
+          "minimum": 0.68,
+          "maximum": 0.69,
+          "sample_standard_deviation": 0.004999999999999949
+        }
+      }
+    }
+  }
+}

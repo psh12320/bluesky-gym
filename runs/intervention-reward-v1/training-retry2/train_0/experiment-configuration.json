@@ -1,0 +1,7 @@
+{
+  "coefficient": 0.0,
+  "reward_formula": "coefficient * 0.5 * ((executed_heading - nominal_heading)^2 / 90^2 + (executed_speed - nominal_speed)^2 / 2^2)",
+  "training_configuration_scope": "Read this record together with training/config.json; generic resume omits this experimental reward wrapper.",
+  "protocol_sha256": "89a73663fe90b4198d431678ba9342f96255b26377aa2c8d116bb75db1dd7d13",
+  "extension_sha256": "82335cb0a4861d8ac64e08bf3d8c8d273727d71a32e4cd72dfc5eb1b26201dc3"
+}

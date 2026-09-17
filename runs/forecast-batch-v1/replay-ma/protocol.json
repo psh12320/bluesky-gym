@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-09-15T15:17:29.802300+00:00",
+  "track": "ma",
+  "seed": 2026,
+  "episodes": 2,
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "kernel_summary_sha256": "60215b9b32dbf049b1668d499b94ef56c3979180193e36fb80ee5e7d975a09f7",
+  "trial_script_sha256": "1c9eede0e3c2f5af2a7cbf9e5849ca3d4b25f7a61dfcde54dd8d43afeabe8dde",
+  "mode": "Mandatory scalar forecast/lifetime verification at every decision",
+  "scope": "Experimental batching in an isolated process. The selected deployment and all running scoring jobs remain unchanged.",
+  "timing_scope": "Verification repeats scalar calculations; elapsed time is not an optimization benchmark"
+}

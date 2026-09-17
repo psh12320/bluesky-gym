@@ -1,0 +1,14 @@
+{
+  "protocol_sha256": "b155a46b545b56c93198d508c39d839a8a06f328afcc84fac0d059566cddf1f8",
+  "files": [
+    "jobs\\analyze_ppo_gsde_v1.py",
+    "jobs\\analyze_ppo_gsde_v1.slurm",
+    "jobs\\evaluate_ppo_gsde_v1.slurm",
+    "jobs\\ppo_gsde_v1.json",
+    "jobs\\ppo_gsde_v1.py",
+    "jobs\\submit_ppo_gsde_v1.sh",
+    "jobs\\train_ppo_gsde_v1.slurm"
+  ],
+  "base_source_sha256": "51fba29cbe8b9196b7a169aedb107e9edf6a5ed3593a1638c9f964d3d478a669",
+  "no_cluster_submission_performed": true
+}

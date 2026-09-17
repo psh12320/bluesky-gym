@@ -1,0 +1,68 @@
+{
+  "time_utc": "2026-09-16T00:08:55.324404+00:00",
+  "goal_turn_classification": "progress",
+  "running_training": [
+    {
+      "algorithm": "ppo",
+      "session": 83552,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "latest_learning_row": {
+        "rollout": "43",
+        "live_transitions": "178575",
+        "padded_transitions": "41585",
+        "counted_transitions": "220160",
+        "worlds_completed": "104",
+        "aircraft_completed": "1040",
+        "optimizer_steps": "1894",
+        "policy_epochs": "415",
+        "wall_seconds": "745.0409447000002",
+        "live_transitions_per_second": "239.68481366068465",
+        "training_return_last100": "-0.7511230553345976",
+        "native_return_last100": "-75.11230553345978",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.009253222082043067",
+        "value_loss": "0.015497644152492284",
+        "approx_kl": "0.0119499322026968",
+        "clip_fraction": "0.15625751428306103"
+      }
+    },
+    {
+      "algorithm": "mappo",
+      "session": 33044,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "latest_learning_row": {
+        "rollout": "3",
+        "live_transitions": "12880",
+        "padded_transitions": "2480",
+        "counted_transitions": "15360",
+        "worlds_completed": "6",
+        "aircraft_completed": "70",
+        "optimizer_steps": "101",
+        "policy_epochs": "21",
+        "wall_seconds": "108.75801930000125",
+        "live_transitions_per_second": "118.42804864321258",
+        "training_return_last100": "-0.9722510849475309",
+        "native_return_last100": "-97.22510849475307",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.009327340208692476",
+        "value_loss": "0.04662757847458124",
+        "approx_kl": "0.01982882060110569",
+        "clip_fraction": "0.1739417614042759"
+      }
+    }
+  ],
+  "training_source": "runs/onpolicy-durable-source-v1-verify",
+  "required_evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "resource_limit": "Four simulator workers and two learners. Check memory before launching additional simulator jobs.",
+  "ppo_verified_100k_prefix": "runs/goal-offset-scaled-million-retry-v1/100k-prefix-reproduction.json",
+  "mappo_verified_initial_actor": "runs/mappo-goal-scaled-million-v1/initial-actor-verification.json",
+  "matched_initial_physical_rollout": "runs/mappo-goal-scaled-million-v1/first-rollout-parity.json",
+  "next_actions": [
+    "Verify PPO checkpoint 301272 against interrupted scaled run before reusing its 300k evaluation.",
+    "Audit both completed training runs, then evaluate initial/100k/300k/final MAPPO checkpoints and final PPO with native scoring.",
+    "Compare actual training budgets and all physical metrics; retain the critic parameter-count caveat and one-seed limitation."
+  ],
+  "cluster": "No authenticated SSH session or bootstrap result; no Slurm jobs submitted.",
+  "preserved_original_ma_evaluation": "Stopped externally with no final result; original artifacts remain unchanged.",
+  "completion": false
+}

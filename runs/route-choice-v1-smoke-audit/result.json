@@ -1,0 +1,32 @@
+{
+  "route-choice-v1-training-smoke": {
+    "timesteps": 400,
+    "optimizer_updates": 30,
+    "model_sha256": "3ecbd32f37f1e82f6bb860d333e83682f18b3332037850064cfe65e7f79c69d3",
+    "training_summary": {
+      "timesteps": 400,
+      "new_timesteps": 400,
+      "wall_seconds": 19.21655989997089,
+      "live_transitions": 400,
+      "skipped_transitions": 0,
+      "new_live_transitions": 400,
+      "new_skipped_transitions": 0
+    }
+  },
+  "route-choice-v1-resume-smoke": {
+    "timesteps": 600,
+    "optimizer_updates": 50,
+    "model_sha256": "97785fa156238f9a2b9c1cf093a3324316d2d250d95d75958a549fbb199a7010",
+    "training_summary": {
+      "timesteps": 600,
+      "new_timesteps": 200,
+      "wall_seconds": 14.98183889995562,
+      "live_transitions": 600,
+      "skipped_transitions": 0,
+      "new_live_transitions": 200,
+      "new_skipped_transitions": 0
+    }
+  },
+  "stale_route_choice_replay_rejected_before_run": true,
+  "negative_check_stderr": "usage: train.py [-h] --env {sa,ma} --algorithm {ppo,sac}\n                [--recipe {baseline,balanced,goal_relative,route_guided,route_guided_inset,public_weights,public_cpa,goal_relative_cpa,public_sa_transfer,public_cpa_sa_transfer,public_route_input,public_route_input_sa_transfer,public_route_residual,public_route_residual_sa_transfer,public_route_choice,public_route_choice_sa_transfer,public_route_choice_residual,public_route_choice_residual_sa_transfer}]\n                [--guard-static | --no-guard-static]\n                [--guard-traffic | --no-guard-traffic] [--workers WORKERS]\n                [--steps STEPS] [--seed SEED] [--device DEVICE]\n                [--net-arch NET_ARCH] [--learning-rate LEARNING_RATE]\n                [--tau TAU] --run-dir RUN_DIR\n                [--checkpoint-every CHECKPOINT_EVERY]\n                [--learning-starts LEARNING_STARTS]\n                [--gradient-steps GRADIENT_STEPS] [--batch-size BATCH_SIZE]\n                [--rollout-steps ROLLOUT_STEPS] [--resume RESUME]\n                [--resume-replay RESUME_REPLAY] [--save-replay]\n                [--buffer-size BUFFER_SIZE]\n                [--max-wall-seconds MAX_WALL_SECONDS]\ntrain.py: error: Route input changed; use fresh replay\n"
+}

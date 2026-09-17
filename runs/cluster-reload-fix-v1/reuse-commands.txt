@@ -1,0 +1,22 @@
+system-python -m atc_rl.cluster verify
+nvidia-smi
+system-python --version
+reused-python -m pip check
+reused-python -m pip freeze
+reused-python -c import torch; print("Torch",torch.__version__,"CUDA",torch.version.cuda); assert torch.cuda.is_available(); print(torch.cuda.get_device_name(0)); x=torch.randn(512,512,device="cuda",requires_grad=True); x.square().mean().backward(); torch.cuda.synchronize(); assert torch.isfinite(x.grad).all()
+reused-python -m pytest tests/rl -q -p no:cacheprovider --basetemp=runs/cluster-check-900001/tests --junitxml=runs/cluster-check-900001/tests.xml
+reused-python -m atc_rl.train --algorithm ppo --workers 8 --live-steps 12800 --rollout-steps 64 --batch-size 1024 --epochs 2 --seed 49000 --device cuda --checkpoint-live-steps 12800 --max-wall-seconds 600 --run-dir runs/cluster-check-900001/training
+reused-python -m atc_rl.evaluate --classical --episodes 2 --seed 20260 --out runs/cluster-check-900001/classical
+reused-python -m atc_rl.check_cluster_result runs/cluster-check-900001/classical
+reused-python -m atc_rl.evaluate --model runs/cluster-check-900001/training/model.zip --episodes 2 --seed 20260 --out runs/cluster-check-900001/reload
+reused-python -m atc_rl.cluster verify
+system-python -m atc_rl.cluster verify
+nvidia-smi
+system-python --version
+reused-python -m pip check
+system-python -m atc_rl.cluster verify
+nvidia-smi
+system-python --version
+system-python -m atc_rl.cluster verify
+nvidia-smi
+system-python --version

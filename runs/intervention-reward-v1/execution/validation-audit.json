@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "decision_boundary_traces_exact": true,
+  "all_nine_metric_records_exact": true,
+  "worlds": 2,
+  "aircraft": 20,
+  "feedback_nonzero": true,
+  "penalty_sum": 20.82663483798151
+}

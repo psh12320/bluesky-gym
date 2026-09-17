@@ -1,0 +1,26 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"episode_started": 1}
+{"episode_started": 2}
+
+wrote per-episode metrics to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\position-scale-development-v1\initial-sa-control\original-harness.csv
+{"episodes": 2, "agent_episodes": 2, "metrics": {"waypoint_reached": {"mean": 1.0, "std": 0.0}, "flight_time": {"mean": 841.5, "std": 86.5}, "intrusion_events": {"mean": 2.5, "std": 0.5}, "intrusion_time": {"mean": 143.5, "std": 27.5}, "restricted_area_events": {"mean": 0.0, "std": 0.0}, "time_in_restricted_area": {"mean": 0.0, "std": 0.0}, "sector_exit_events": {"mean": 0.0, "std": 0.0}, "time_outside_sector": {"mean": 0.0, "std": 0.0}, "total_reward": {"mean": -98.33828467751593, "std": 26.054504338825915}}, "clean_completion_rate": 0.0, "all_aircraft_clean_completion_rate": 0.0, "algorithm": "ppo", "seed": 20260, "track": "sa", "official_protocol": false, "runtime": {"static_area_filter": true, "traffic_conflict_filter": false, "traffic_position_scale": 1.0, "actor_uses_joint_context": false, "training_track": "ma", "evaluation_track": "sa", "single_agent_transfer": true, "observed_traffic_slots": 9, "simulated_scripted_intruders": 10, "episode_time_limit": 3000, "intrusion_distance": 5, "distance_margin": 5, "action_frequency": 5, "sim_dt": 1, "n_obstacles": 5, "geo_backend": "bluesky.tools.geo._cgeo", "performance_module": "bluesky.traffic.performance.openap.perfoap"}, "actor_inference_uses_joint_context": false, "world_decisions": 337, "wall_seconds": 5.067219600001408, "csv_sha256": "673ebbeaed6431f5ab0841e67566a74650c9762f5f027afc1bfac73b5a191e46", "original_harness_csv_sha256": "4a77f670f3ab40d79e1126cc69023174b4c6d3e3c1062e9550d1f024545b603d"}

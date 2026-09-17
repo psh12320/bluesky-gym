@@ -1,0 +1,21 @@
+{
+  "reference": "runs\\goal-route-choice-v1-fast-joint-ma-20",
+  "candidate": "runs\\fast-reference-smoke-v1\\initial-validation-20",
+  "episodes": 20,
+  "agent_episodes": 200,
+  "all_nine_metrics_exact": true,
+  "route_and_projection_statistics_exact": true,
+  "maximum_absolute_metric_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "model_sha256": "a8af4aab376cbc28bdb6f896bc17139c360dbe1ab68add4f890a1a3f337eac0f",
+  "trained_transitions": 0
+}

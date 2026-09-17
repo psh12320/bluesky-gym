@@ -1,0 +1,29 @@
+{
+  "recorded_at_utc": "2026-09-16T07:08:57.379113+00:00",
+  "result_sha256": "56efd049b0ada499bc395d596691e27cd1cf9734680ee93583d2db7932693e87",
+  "training_seeds": [
+    50400,
+    50500,
+    50600
+  ],
+  "all_six_runs_included": true,
+  "total_live_transitions": 604447,
+  "decision": "Neither input condition passes the registered multi-metric advancement screen. Do not promote predictive inputs as a demonstrated learning improvement under this recipe.",
+  "evidence": {
+    "features_own_initial_clean_change_pp": -0.8333333333333331,
+    "masked_own_initial_clean_change_pp": -1.5,
+    "features_minus_masked_clean_change_pp": 0.6666666666666667,
+    "features_own_initial_intrusion_change_seconds": 5.54,
+    "features_own_initial_restricted_change_seconds": 11.648333333333335,
+    "features_minus_masked_flight_change_seconds": -72.16166666666668
+  },
+  "scope": "Three 100k-live training seeds, twenty reused development worlds, route guidance on and both filters off.",
+  "limitations": [
+    "Not a convergence claim at larger budgets.",
+    "Cannot infer the feature effect under static support from this unfiltered study.",
+    "Scenario bootstrap intervals and three-seed variability answer different uncertainty questions.",
+    "Reserved unseen scenarios were not used."
+  ],
+  "next_action": "Complete the already registered static-support input-scaling and exploration-persistence studies. The separate cluster static-support feature/mask study remains ready for user submission.",
+  "existing_sources_models_and_evaluations_preserved": true
+}

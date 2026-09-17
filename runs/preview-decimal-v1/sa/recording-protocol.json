@@ -1,0 +1,21 @@
+{
+  "started_at_utc": "2026-09-15T12:59:23.926482+00:00",
+  "env": "sa",
+  "seed": 2026,
+  "episodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "heading_transport": {
+    "revision": 1,
+    "encoding": "plain_decimal"
+  },
+  "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+  "deployment_manifest_sha256": "8d1a0e58ecc73c5613161bc763aff92e56a0936c1d6f7440c3c123fa5b013840",
+  "runner_sha256": "8d14c2ca74772a58457a356c9ffbd1fb58fd76b463b1e47edf5904ff6f2a4dca",
+  "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\fast-reference-reach250-v1-ma25k-sa\\validation-200",
+  "purpose": "Corrected deployment preview checked against the original first five development scenarios; not a population or official score"
+}

@@ -1,0 +1,64 @@
+{
+  "full_initial_tensor_fingerprints": {
+    "default": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee",
+    "smaller": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee"
+  },
+  "bc_parent_fingerprint": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee",
+  "only_optimizer_setting_changed": "learning_rate",
+  "resource_change": "recovery disables elapsed-time cutoff",
+  "rates": {
+    "default": 0.0003,
+    "smaller": 3e-05
+  },
+  "supervised_initialization": {
+    "method": "behavior_cloning",
+    "original_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-pilot-v1\\bc",
+    "archived_directory": "pretraining",
+    "archived_files": {
+      "model.zip": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+      "config.json": "60fdfd3b93d991b8ec83b25eaa5e031e9030a19d2638ed429576650f324601b8",
+      "training_summary.json": "745612c99f6283b102f684d0776be0a7d14fd324a81726fe3a0930b3e769ee3e",
+      "checkpoints.json": "204efb0e4d6062f51a9dd9d500ac3f47be574a973a6ecfa72ac5aa65afa5e635",
+      "provenance.json": "774c1dbb9ac77697569cec14cd909cb71a40cfddbc33e82bf3565d34eb6dd583"
+    },
+    "parent_checkpoint": {
+      "file": "model.zip",
+      "sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+      "policy_fingerprint": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee",
+      "live_transitions": 0,
+      "counted_transitions": 0,
+      "padded_transitions": 0,
+      "optimizer_steps": 0,
+      "policy_epochs": 0,
+      "rollouts": 0,
+      "training_method": "behavior_cloning",
+      "supervised_epochs": 40,
+      "supervised_optimizer_steps": 2480,
+      "supervised_examples_seen": 2509760,
+      "demonstration_transitions": 62744
+    },
+    "demonstration_transitions": 62744,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "initial_policy_is_untrained": false,
+    "rl_live_transitions_at_initialization": 0,
+    "ppo_optimizer_inherited": false,
+    "action_space_compatibility": {
+      "parent_dtype": "float32",
+      "ppo_dtype": "float64",
+      "shape": [
+        2
+      ],
+      "low": [
+        -1.0,
+        -1.0
+      ],
+      "high": [
+        1.0,
+        1.0
+      ],
+      "only_floating_storage_dtype_may_differ": true
+    }
+  },
+  "initial_policy_is_untrained": false
+}

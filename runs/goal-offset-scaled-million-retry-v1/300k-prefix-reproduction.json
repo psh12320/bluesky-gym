@@ -1,0 +1,13 @@
+{
+  "live_transitions": 301272,
+  "verified_rollouts": 73,
+  "policy_fingerprint": "82e333eb60d3324e530e9faf86f65222f8d5217f34357f814c5ceb5a4e6a8040",
+  "all_policy_tensors_identical": true,
+  "optimizer_state_identical": true,
+  "nontiming_learning_fields_identical": true,
+  "original_checkpoint_sha256": "fbbd444727baceee7fb4e1926b48747caf0e672ba68f3d1cb2b905dc3bc5d146",
+  "retry_checkpoint_sha256": "d8ff08f6439c2c7445b6985895ed946c8f2cc2d87bb1692cd6e7b584b24a61ff",
+  "reusable_evaluation": "runs/goal-offset-budget-scale-v1/eval-scaled-300k-dev20",
+  "required_evaluator_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "independent_training_seed": false
+}

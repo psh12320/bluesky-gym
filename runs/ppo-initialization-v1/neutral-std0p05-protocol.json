@@ -1,0 +1,32 @@
+{
+  "algorithm": "ppo",
+  "workers": 2,
+  "seed": 49900,
+  "live_steps": 100000,
+  "rollout_steps": 256,
+  "batch_size": 1024,
+  "epochs": 10,
+  "initial_action_std": 0.05,
+  "neutral_action_mean": true,
+  "reward_scale": 1.0,
+  "progress_scale": 0.0,
+  "guidance": false,
+  "filter": false,
+  "source_bundle_sha256": "233783cfdf993282a8fef4cdb77f363017304b2683407e25dc75ef735efd30dc",
+  "initial_reference": "runs/ppo-initialization-v1/neutral-reference/initial-model.zip",
+  "initial_evaluation": "runs/ppo-initialization-v1/eval-neutral-initial-dev20",
+  "evaluation_source": "runs/onpolicy-cluster-v1-verify",
+  "development_seed": 20260,
+  "evaluation_worlds": 20,
+  "screen": {
+    "minimum_arrival_rate": 0.95,
+    "maximum_arrival_drop_percentage_points": 2,
+    "minimum_clean_completion_gain_percentage_points": 5,
+    "intrusion_time_must_not_increase": true,
+    "restricted_time_must_not_increase": true,
+    "outside_time_must_not_increase": true
+  },
+  "interpretation": "Pilot triage against the untrained neutral actor, not a statistical-significance or competition-quality claim. Complete initialization factorial controls before attributing effects.",
+  "registered_before_training": true,
+  "unseen_scenarios_used": false
+}

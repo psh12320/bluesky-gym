@@ -1,0 +1,13 @@
+{
+  "action_interval_seconds": 5,
+  "heading_range_degrees": 45,
+  "current_log_std": -0.5,
+  "current_std_normalized": 0.6065306597126334,
+  "current_std_heading_degrees": 27.293879687068504,
+  "initial_zero_mean_approximate_probability_of_clipping": 0.09920475041111469,
+  "interpretation": "Distribution of requested relative heading commands before aircraft dynamics; not a claim about realized turn rates.",
+  "next_candidate_std_normalized": 0.05,
+  "next_candidate_std_heading_degrees": 2.25,
+  "hypothesis": "Smaller early exploration commands, with an exactly zero initial mean head, may expose more navigation successes.",
+  "status": "diagnosis and candidate only; no configuration change or experiment launched yet"
+}

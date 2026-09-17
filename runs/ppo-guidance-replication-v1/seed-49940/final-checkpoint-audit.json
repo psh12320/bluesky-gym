@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 101894,
+  "padded_transitions": 51706,
+  "optimizer_steps": 1121,
+  "verified_checkpoints": 4,
+  "verified_source_files": 92,
+  "learning_curve_rows": 30,
+  "aircraft_completed": 490,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "cb683c1ccb8d6fe7b8d7db996a984729c642ba7894850d45edab1c13519f2927",
+  "policy_quality_assessed": false
+}

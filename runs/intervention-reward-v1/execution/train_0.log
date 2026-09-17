@@ -1,0 +1,29 @@
+fatal: detected dubious ownership in repository at 'C:/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym'
+'C:/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym' is owned by:
+	'S-1-5-32-544'
+but the current user is:
+	'S-1-5-21-4148799098-3151306978-2869499381-1001'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory C:/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym
+Traceback (most recent call last):
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\run_experiment.py", line 217, in <module>
+    parent() if args.stage is None else (training(args.stage) if args.stage.startswith('train') else evaluation(args.stage))
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\run_experiment.py", line 65, in training
+    try:trainer.main()
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\train_0\candidate\source\atc\train.py", line 193, in main
+    capture(args.run_dir)
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\train_0\candidate\source\atc\provenance.py", line 18, in capture
+    metadata = {"git_commit": command("rev-parse", "HEAD").strip(),
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\train_0\candidate\source\atc\provenance.py", line 17, in command
+    return subprocess.check_output(git + list(args), text=True, encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-c', 'safe.directory=C:/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/intervention-reward-v1/execution/train_0/candidate/source', '-C', 'C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\intervention-reward-v1\\execution\\train_0\\candidate\\source', 'rev-parse', 'HEAD']' returned non-zero exit status 128.

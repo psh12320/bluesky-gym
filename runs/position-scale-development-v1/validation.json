@@ -1,0 +1,72 @@
+{
+  "recorded_at_utc": "2026-09-16T06:35:05.491810+00:00",
+  "status": "complete",
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "193",
+    "time": "8.733",
+    "timestamp": "2026-09-16T14:26:25.493081+08:00",
+    "hostname": "Shri-Laptop"
+  },
+  "simulator_integration": {
+    "gaussian_default_initial_and_trained_policy_tensors_unchanged": true,
+    "scaled_and_unscaled_initial_full_policy_tensors_identical": true,
+    "ppo_mappo_initial_actor_match": {
+      "initial_actor_tensors_identical": true,
+      "actor_parameters": 38660,
+      "ppo_critic_parameters": 109825,
+      "mappo_critic_parameters": 550145
+    },
+    "matched_metric_values": {
+      "unchanged_initial_ma": 180,
+      "trained_vector_native": 180,
+      "unchanged_initial_sa": 18
+    },
+    "performance_evidence": false,
+    "training": {
+      "ppo": {
+        "status": "complete",
+        "algorithm": "ppo",
+        "live_transitions": 1280,
+        "padded_transitions": 0,
+        "counted_transitions": 1280,
+        "optimizer_steps": 7,
+        "policy_epochs": 3,
+        "rollouts": 2,
+        "worlds_completed": 0,
+        "aircraft_completed": 0,
+        "wall_seconds": 31.975939500000095,
+        "actor_and_critic_parameters_changed": true,
+        "source_unchanged": true,
+        "model_sha256": "0e2b8d752b754720e1d0b3bc717ab6a9fe74f5c03852bc60351d6775c929795d",
+        "training_seed": 49040,
+        "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+      },
+      "mappo": {
+        "status": "complete",
+        "algorithm": "mappo",
+        "live_transitions": 1280,
+        "padded_transitions": 0,
+        "counted_transitions": 1280,
+        "optimizer_steps": 7,
+        "policy_epochs": 3,
+        "rollouts": 2,
+        "worlds_completed": 0,
+        "aircraft_completed": 0,
+        "wall_seconds": 36.38598600000114,
+        "actor_and_critic_parameters_changed": true,
+        "source_unchanged": true,
+        "model_sha256": "ad5a4398c7f91ddc6e4534a4332a9c246b770ef121648c7ec0d1cff52c913659",
+        "training_seed": 49040,
+        "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+      }
+    }
+  },
+  "protected_controller_environment_harness_files_unchanged": 64,
+  "bundle_sha256": "f8a31797cffd66c74c3259cde4f0115ab29b6a1b87271e2b8cf39322fee863af",
+  "source_files": 138,
+  "performance_evidence": false
+}

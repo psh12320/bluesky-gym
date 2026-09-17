@@ -1,0 +1,7 @@
+{
+  "new_optimizer_updates": 30,
+  "new_timesteps": 400,
+  "initial_projection_norm": 0.0,
+  "trained_actor_projection_norm": 0.10818380862474442,
+  "trained_critic_projection_norm": 0.09935852885246277
+}

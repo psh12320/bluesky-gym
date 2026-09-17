@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "summary": {
+    "episodes": 2,
+    "agent_episodes": 2,
+    "metrics": {
+      "waypoint_reached": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "flight_time": {
+        "mean": 775.5,
+        "std": 80.5
+      },
+      "intrusion_events": {
+        "mean": 2.0,
+        "std": 1.0
+      },
+      "intrusion_time": {
+        "mean": 101.5,
+        "std": 44.5
+      },
+      "restricted_area_events": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "time_in_restricted_area": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "sector_exit_events": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "time_outside_sector": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "total_reward": {
+        "mean": -58.61553604316963,
+        "std": 42.12792555474441
+      }
+    },
+    "clean_completion_rate": 0.0,
+    "all_aircraft_clean_completion_rate": 0.0,
+    "algorithm": "ppo",
+    "seed": 20260,
+    "track": "sa",
+    "official_protocol": false,
+    "runtime": {
+      "static_area_filter": true,
+      "traffic_conflict_filter": false,
+      "traffic_position_scale": 1.0,
+      "actor_uses_joint_context": false,
+      "training_track": "ma",
+      "evaluation_track": "sa",
+      "single_agent_transfer": true,
+      "observed_traffic_slots": 9,
+      "simulated_scripted_intruders": 10,
+      "episode_time_limit": 3000,
+      "intrusion_distance": 5,
+      "distance_margin": 5,
+      "action_frequency": 5,
+      "sim_dt": 1,
+      "n_obstacles": 5,
+      "geo_backend": "bluesky.tools.geo._cgeo",
+      "performance_module": "bluesky.traffic.performance.openap.perfoap"
+    },
+    "actor_inference_uses_joint_context": false,
+    "world_decisions": 311,
+    "wall_seconds": 12.234796400007326,
+    "csv_sha256": "f3ee24dd07dbb1dce2b4ee7b3965cb93b5e44a32a2c82c8af0a30081437a6431",
+    "original_harness_csv_sha256": "90d415c6b0e3ee1386ded3d24690d155c4c5b7477f90915ceec19e6a42a1400e"
+  },
+  "model_sha256": "e5091059de23caf2c39217882eee6ee68176fcba443edcb5588b92ebf9c3cbd2",
+  "scenario_population_verified": true,
+  "performance_claim": false,
+  "interpretation": "Technical deployment only; two scenarios do not establish transfer quality."
+}

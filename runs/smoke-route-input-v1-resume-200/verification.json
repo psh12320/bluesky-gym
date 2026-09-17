@@ -1,0 +1,16 @@
+[
+  {
+    "run": "smoke-route-input-v1-train-400",
+    "timesteps": 400,
+    "optimizer_updates": 120,
+    "route_input_configuration_preserved": true,
+    "both_filters_preserved": true
+  },
+  {
+    "run": "smoke-route-input-v1-resume-200",
+    "timesteps": 600,
+    "optimizer_updates": 200,
+    "route_input_configuration_preserved": true,
+    "both_filters_preserved": true
+  }
+]

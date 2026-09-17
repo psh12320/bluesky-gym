@@ -1,0 +1,28 @@
+C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\.venv\Lib\site-packages\stable_baselines3\ppo\ppo.py:155: UserWarning: You have specified a mini-batch size of 256, but because the `RolloutBuffer` is of size `n_steps * n_envs = 640`, after every 2 untruncated mini-batches, there will be a truncated mini-batch of size 128
+We recommend using a `batch_size` that is a factor of `n_steps * n_envs`.
+Info: (n_steps=64 and n_envs=10)
+  warnings.warn(
+{"rollout": 1, "live_transitions": 640, "padded_transitions": 0, "counted_transitions": 640, "worlds_completed": 0, "aircraft_completed": 0, "optimizer_steps": 1, "policy_epochs": 1, "wall_seconds": 28.323724499998207, "live_transitions_per_second": 22.595898360755506, "training_return_last100": null, "native_return_last100": null, "training_arrival_last100": null, "policy_loss": 0.04939064010977745, "value_loss": 0.1403238382190466, "approx_kl": 0.07227019220590591, "clip_fraction": 0.36328125, "rollout_live_samples": 640, "rollout_return_variance_live": 0.07966385578440156, "rollout_value_mse_live": 0.05020022228868424, "rollout_value_explained_variance_live": 0.449890035328693, "rollout_action_box_clip_fraction_live": 0.0}
+{"rollout": 2, "live_transitions": 1280, "padded_transitions": 0, "counted_transitions": 1280, "worlds_completed": 0, "aircraft_completed": 0, "optimizer_steps": 2, "policy_epochs": 2, "wall_seconds": 33.57820879999781, "live_transitions_per_second": 38.11996070499399, "training_return_last100": null, "native_return_last100": null, "training_arrival_last100": null, "policy_loss": 0.020382152870297432, "value_loss": 0.1284930780529976, "approx_kl": 0.024075396358966827, "clip_fraction": 0.279296875, "rollout_live_samples": 640, "rollout_return_variance_live": 0.04850702185688381, "rollout_value_mse_live": 0.12976308801070352, "rollout_value_explained_variance_live": -1.64662221143705, "rollout_action_box_clip_fraction_live": 0.0}
+{"status": "complete", "algorithm": "ppo", "live_transitions": 1280, "padded_transitions": 0, "counted_transitions": 1280, "optimizer_steps": 2, "policy_epochs": 2, "rollouts": 2, "worlds_completed": 0, "aircraft_completed": 0, "wall_seconds": 33.725278400001116, "actor_and_critic_parameters_changed": true, "source_unchanged": true, "model_sha256": "d5a1dad888d6413c4e1c3907dadaab6c8ef8350e34af07107b7fc8789928ea74", "training_seed": 49040, "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\credit-assignment-development-v1\ppo\train\workers\world-0\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED

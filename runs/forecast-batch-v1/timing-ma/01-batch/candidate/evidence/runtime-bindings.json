@@ -1,0 +1,163 @@
+{
+  "checked_at_utc": "2026-09-15T11:54:45.538064+00:00",
+  "source_hashes": {
+    "core/scenario.py": "9788945d05ada883980e521d134977bbcf0ba55e67b87c94fedd85c624570e69",
+    "core/actions.py": "81a720c03a961d4e721379fd80083e2d348b727d98c9b501fa6333c91f34ecd1",
+    "bluesky_gym/envs/competition_env.py": "7938d9c2ba98e790846567c801217957c25f1b3675103785ad61a56e20753df0",
+    "bluesky_zoo/competition/competition.py": "3c99ad803db202f42bce9885f54b93cb0013925c834a111b9d3136687d19915f"
+  },
+  "fixed_source_matches_original_head": true,
+  "checks": {
+    "sa": {
+      "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+      "base_scoring_and_step_bindings": {
+        "step": "bluesky_gym.envs.competition_env.CompetitionEnv.step",
+        "_update_metrics": "bluesky_gym.envs.competition_env.CompetitionEnv._update_metrics",
+        "_get_info": "bluesky_gym.envs.competition_env.CompetitionEnv._get_info",
+        "_init_metrics": "bluesky_gym.envs.competition_env.CompetitionEnv._init_metrics"
+      },
+      "fixed_parameters": {
+        "episode_time_limit": 3000.0,
+        "intrusion_distance": 5.0,
+        "distance_margin": 5.0,
+        "ac_spd": 150.0,
+        "altitude": 350,
+        "center": [
+          52.0,
+          4.0
+        ],
+        "n_obstacles": 5,
+        "sim_dt": 1,
+        "action_frequency": 10
+      },
+      "generator_configuration": {
+        "n_obstacles": 5,
+        "n_intruders": 10,
+        "n_agents": 1,
+        "sector_area_range": [
+          15000,
+          23000
+        ],
+        "obstacle_area_range": [
+          500,
+          1500
+        ],
+        "goal_distance_range": [
+          100,
+          170
+        ],
+        "agent_speed": 150.0,
+        "intruder_speed_range": [
+          120,
+          180
+        ],
+        "center": [
+          52.0,
+          4.0
+        ],
+        "agent_start_margin_nm": 10.0,
+        "obstacle_clearance_nm": 10.0,
+        "route_agent_proximity_nm": 15.0,
+        "agent_separation_nm": 10.0
+      },
+      "scenario_agents": 1,
+      "scripted_intruders": 10,
+      "observed_traffic_slots": 9,
+      "action_dimensions": 2,
+      "action_classes": [
+        "HeadingAction",
+        "SpeedAction"
+      ],
+      "first_decision_flight_times": [
+        10.0
+      ],
+      "first_decision_scenario_rng_unchanged": true,
+      "aircraft_types": [
+        "A320"
+      ],
+      "conflict_resolution_runtime_class": "bluesky.core.entity.Proxy",
+      "original_reset_contains_reso_off": true
+    },
+    "ma": {
+      "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+      "base_scoring_and_step_bindings": {
+        "step": "bluesky_zoo.competition.competition.CompetitionZooEnv.step",
+        "_update_metrics": "bluesky_zoo.competition.competition.CompetitionZooEnv._update_metrics",
+        "_get_info": "bluesky_zoo.competition.competition.CompetitionZooEnv._get_info",
+        "_init_metrics": "bluesky_zoo.competition.competition.CompetitionZooEnv._init_metrics"
+      },
+      "fixed_parameters": {
+        "episode_time_limit": 3000.0,
+        "intrusion_distance": 5.0,
+        "distance_margin": 5.0,
+        "ac_spd": 150.0,
+        "altitude": 350,
+        "center": [
+          52.0,
+          4.0
+        ],
+        "n_obstacles": 5,
+        "sim_dt": 1,
+        "action_frequency": 5
+      },
+      "generator_configuration": {
+        "n_obstacles": 5,
+        "n_intruders": 0,
+        "n_agents": 10,
+        "sector_area_range": [
+          15000,
+          23000
+        ],
+        "obstacle_area_range": [
+          500,
+          1500
+        ],
+        "goal_distance_range": [
+          100,
+          170
+        ],
+        "agent_speed": 150.0,
+        "intruder_speed_range": [
+          120,
+          180
+        ],
+        "center": [
+          52.0,
+          4.0
+        ],
+        "agent_start_margin_nm": 10.0,
+        "obstacle_clearance_nm": 10.0,
+        "route_agent_proximity_nm": 15.0,
+        "agent_separation_nm": 10.0
+      },
+      "scenario_agents": 10,
+      "scripted_intruders": 0,
+      "observed_traffic_slots": 9,
+      "action_dimensions": 2,
+      "action_classes": [
+        "HeadingAction",
+        "SpeedAction"
+      ],
+      "first_decision_flight_times": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "first_decision_scenario_rng_unchanged": true,
+      "aircraft_types": [
+        "A320"
+      ],
+      "conflict_resolution_runtime_class": "bluesky.core.entity.Proxy",
+      "original_reset_contains_reso_off": true
+    }
+  },
+  "scope": "Exact frozen model/configuration runtime bindings, all fixed constructor/generator parameters and one development decision per track. Complements full metric replays; not a claim of operational safety.",
+  "coordination": "One shared neural policy; the joint MA command filter uses centralized live traffic state and processes aircraft in a stable order. Not fully decentralized execution."
+}

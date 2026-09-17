@@ -1,0 +1,10 @@
+{
+  "status": "running",
+  "stages": [
+    {
+      "stage": "train_0",
+      "started_at_utc": "2026-09-15T16:58:13.885004+00:00",
+      "pid": 17328
+    }
+  ]
+}

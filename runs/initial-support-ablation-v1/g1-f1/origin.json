@@ -1,0 +1,13 @@
+{
+  "model_sha256": "f9c6e64ed1b8c3ed59d1fcf7f15b69ad4d44935e40abae082079d1a8f1af8870",
+  "full_policy_fingerprint": "3817e1a9ed5b41fbe00da564e86543a3edb85bb6daf74298d19ef73951d8b310",
+  "source_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train\\initial-model.zip",
+  "source_configuration_sha256": "5e0b609b6653a462d8e19733ebb83811c38f7ea8757da8990860bbbffeabb164",
+  "source_provenance_sha256": "b99e5adb012c38a466e972e3d65b5638e0a5bae80ece4e62450143bc68927080",
+  "changed_execution_flags": {
+    "guidance": true,
+    "filter": true
+  },
+  "additional_training_transitions": 0,
+  "interpretation": "Exact untrained policy archive; only evaluator support flags differ. No training or classical-controller refinement occurred."
+}

@@ -1,0 +1,7 @@
+{
+  "completed_aircraft": 161,
+  "scale": 0.01,
+  "formula": "learning_return = .01 * (native_return + shaping_return)",
+  "max_absolute_error": 2.220446049250313e-16,
+  "training_returns_sha256": "77f6bfbd45bad37ad4d06bf4ee35e3e6848e75e141f6283f77b82d142cf11695"
+}

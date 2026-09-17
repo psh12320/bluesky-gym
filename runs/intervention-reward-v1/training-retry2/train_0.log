@@ -1,0 +1,51 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\candidate\source\runs\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\candidate\source\runs\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\candidate\source\runs\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\candidate\source\runs\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\candidate\source\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\candidate\source\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Using cpu device
+Logging to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\training
+------------------------------------
+| time/                 |          |
+|    episodes           | 40       |
+|    fps                | 65       |
+|    time_elapsed       | 141      |
+|    total_timesteps    | 9230     |
+| train/                |          |
+|    actor_loss         | -8.97    |
+|    actor_updates      | 1688     |
+|    critic_loss        | 2.67     |
+|    ent_coef           | 0.589    |
+|    ent_coef_loss      | -1.73    |
+|    held_actor_updates | 0        |
+|    learning_rate      | 0.0003   |
+|    n_updates          | 1688     |
+------------------------------------
+------------------------------------
+| time/                 |          |
+|    episodes           | 80       |
+|    fps                | 65       |
+|    time_elapsed       | 267      |
+|    total_timesteps    | 17570    |
+| train/                |          |
+|    actor_loss         | -13.7    |
+|    actor_updates      | 5024     |
+|    critic_loss        | 3.89     |
+|    ent_coef           | 0.221    |
+|    ent_coef_loss      | -4.29    |
+|    held_actor_updates | 0        |
+|    learning_rate      | 0.0003   |
+|    n_updates          | 5024     |
+------------------------------------
+Saving model checkpoint to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\training-retry2\train_0\training\checkpoints\model_25000_steps.zip
+{"timesteps": 25000, "new_timesteps": 25000, "wall_seconds": 378.3215468999697, "critic_updates": 8000, "held_actor_updates": 0, "actor_updates": 8000, "live_transitions": 13875, "skipped_transitions": 11125, "new_live_transitions": 13875, "new_skipped_transitions": 11125}

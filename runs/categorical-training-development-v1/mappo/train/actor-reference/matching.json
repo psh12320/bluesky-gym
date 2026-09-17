@@ -1,0 +1,19 @@
+{
+  "reference_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-training-development-v1\\ppo\\train\\initial-model.zip",
+  "reference_sha256": "0a3fb9397d43ba8a46b1648f14e14af47a04b7b72217f7668807e648c67eff0a",
+  "reference_live_transitions": 0,
+  "actor_parameters_identical": true,
+  "critic_parameters_unchanged": true,
+  "actor_parameter_names": [
+    "action_net.bias",
+    "action_net.weight",
+    "mlp_extractor.policy_net.0.bias",
+    "mlp_extractor.policy_net.0.weight",
+    "mlp_extractor.policy_net.2.bias",
+    "mlp_extractor.policy_net.2.weight"
+  ],
+  "actor_parameter_count": 41367,
+  "critic_parameter_count": 550145,
+  "learner_rng": "Reconstructed through seeded local-critic PPO loading before the first rollout.",
+  "simulation_rng": "Original per-world seeds retained; no simulator steps executed by this helper."
+}

@@ -1,0 +1,81 @@
+{
+  "registered_at_utc": "2026-09-16T11:44:36.547297+00:00",
+  "purpose": "Test whether smaller PPO steps improve fine-tuning from the same behavior-cloned policy. The default-rate control remains unchanged and must finish.",
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-learning-rate-source-v1-verify",
+  "training_bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-learning-rate-source-v1.zip",
+  "training_bundle_sha256": "3e960b076fdd5449578e3bdeeb7fe4e1c9078e3d7b40ad578b428b9daa253d19",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-ppo-source-v3-verify",
+  "evaluation_bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-ppo-source-v3.zip",
+  "evaluation_bundle_sha256": "c329c4ba0ee3a472c89477856740811947c6f3634335c395089eff6682e4404d",
+  "config": {
+    "algorithm": "ppo",
+    "workers": 1,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "action_reference": "direct",
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0,
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "gae_lambda": 0.95,
+    "neutral_action_mean": false,
+    "exploration": "gaussian",
+    "seed": 61420,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600,
+    "learning_rate": 3e-05
+  },
+  "pretrained_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-pilot-v1\\bc\\model.zip",
+  "pretrained_model_sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+  "baseline_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\ppo",
+  "baseline_configuration_sha256": "b9e2e5b324a9fff2d5db0b4e962d6fe42cb40fcb3f84ac3e4e77b78878790153",
+  "baseline_initial_sha256": "fb28701a296ecd83488081bb76c29ecc41dc0e64064429ae9ce710749794e07b",
+  "baseline_protocol": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\protocol.json",
+  "baseline_protocol_sha256": "28c14001a32333b0142c1b2da23e02c7a4db87184329b23b382815a8ce6675ff",
+  "classical": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "evaluation": {
+    "seed": 20260,
+    "worlds": 20,
+    "stages": [
+      "initial",
+      "50k",
+      "final"
+    ],
+    "initial_means": "Same full policy tensors as the learned behavior-cloning parent, with zero additional PPO updates."
+  },
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "changed_training_setting": "Constant optimizer learning rate: 3e-4 in the existing control, 3e-5 in the new arm.",
+  "motivation_record": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-learning-rate-development-v1\\motivation.json",
+  "motivation_record_sha256": "c1d5494046feff1680a88d40806166400673d855479bc33d3c524574cb456c48",
+  "technical_validation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\native-action-precision-v1\\integration-validation.json",
+  "fixed_checkpoint_selection": "Own initial, first checkpoint at or above 50k, and full-budget final. No performance-based checkpoint selection.",
+  "resource_policy": "One simulator worker; at most three concurrent simulator workers across this arm, the original imitation PPO pilot, and gSDE recovery.",
+  "failure_behavior": "Stop and preserve all outputs; no automatic retries.",
+  "limitations": [
+    "One training seed; reused development scenarios; an exploratory rate comparison selected after observing partial training diagnostics.",
+    "A shared 62,744-transition demonstration dataset and one supervised fitting seed are reused across both PPO arms.",
+    "Both full actor and untrained critic tensors start identically; only PPO optimization rate changes.",
+    "Equal live-transition budgets do not imply equal optimizer steps because KL stopping depends on the learned policy.",
+    "Route guidance and static-area filtering remain on; aircraft-conflict filtering is off.",
+    "Training source differs in rate configuration, validation and reporting; evaluation uses exactly the same frozen implementation.",
+    "No official or reserved unseen scenario results may be used for selection."
+  ]
+}

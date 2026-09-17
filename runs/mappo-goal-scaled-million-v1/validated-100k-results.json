@@ -1,0 +1,73 @@
+{
+  "checked_at_utc": "2026-09-16T00:35:21.942833+00:00",
+  "comparison_sha256": "e91ea5d733d8d1c49d089c9ce60ac32d329d334aec3c3816ef6cd2569b6da3ce",
+  "registered_protocol_sha256": "e946da21c07e4a37a170017e5fd53552ec4bf43d864c3cff07036f7a79e9a6a6",
+  "training_seed_count": 1,
+  "paired_development_worlds": 20,
+  "checkpoint": {
+    "file": "policy-live-100275.zip",
+    "sha256": "34404cd69a17f2cbfab207cb7b1f7619386f2da432352b7612b16542421d83f2",
+    "live_transitions": 100275,
+    "counted_transitions": 122880,
+    "padded_transitions": 22605,
+    "optimizer_steps": 1045,
+    "policy_epochs": 222,
+    "rollouts": 24
+  },
+  "source_equivalence": {
+    "current_ppo_and_mappo_provenance_identical": true,
+    "frozen_source_files_verified": 89,
+    "original_ppo_checkpoint_reproduced_exactly": true,
+    "proof_sha256": "7cad755b77189cbb433bc1390aaa84ae95e6f94c47e8a17a58d5b5f0f72dd878",
+    "proof_file": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\100k-prefix-reproduction.json",
+    "original_ppo_sha256": "e7853e2bc896540ab9d22cc3b517a0f66fe0da7d2982361de77cce46ab4b11f3",
+    "current_ppo_sha256": "6d07c2639bedc5a4112980597e12c2067f552b567bee0bed3d16a45203ec6e01",
+    "training_recipe_controls_rechecked": true,
+    "interpretation": "The reused PPO evaluation represents an exactly reproduced policy from the same source used for current MAPPO. Original evaluation provenance remains unchanged. Critic capacity and one-seed limitations remain."
+  },
+  "means": {
+    "waypoint_reached": 1.0,
+    "flight_time": 884.6700000000001,
+    "intrusion_events": 0.9800000000000001,
+    "intrusion_time": 77.61,
+    "restricted_area_events": 0.845,
+    "time_in_restricted_area": 131.24999999999997,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": -101.6092341637983,
+    "clean_completion": 0.185,
+    "all_aircraft_clean_completion": 0.0
+  },
+  "learning_changes": {
+    "waypoint_reached": 0.0,
+    "flight_time": 27.46999999999998,
+    "intrusion_events": 0.029999999999999992,
+    "intrusion_time": 3.8400000000000007,
+    "restricted_area_events": -0.0050000000000000044,
+    "time_in_restricted_area": 4.245,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": -5.75977167394989,
+    "clean_completion": -0.01,
+    "all_aircraft_clean_completion": 0.0
+  },
+  "advancement_checks": {
+    "arrival_at_least": true,
+    "arrival_change_at_least": true,
+    "clean_completion_change_at_least": false,
+    "intrusion_time": false,
+    "time_in_restricted_area": false,
+    "time_outside_sector": true
+  },
+  "advancement_screen_passed": false,
+  "next_registered_target_live_transitions": 300000,
+  "full_budget_training_continues": true,
+  "unseen_evaluation_used": false,
+  "optimizer_diagnostic": {
+    "file_sha256": "6c2cffb8ac1f901302620058534a4c06d4000a5f611c3b967035bb5b43285647",
+    "observation": "Both actors have nearly identical median saved Adam epsilon attenuation (~0.915). This does not support a substantially stronger epsilon bottleneck for MAPPO at this checkpoint.",
+    "limitations": "Moments are post-clipping and collected on different learned trajectories. They cannot identify clipping dominance or establish causality.",
+    "reference_implementation": "https://github.com/marlbenchmark/on-policy/blob/main/onpolicy/algorithms/r_mappo/r_mappo.py",
+    "verified_reference_difference": "The reference implementation clips actor and critic gradients separately; our registered runs use SB3 joint clipping. No running optimization settings have been changed."
+  }
+}

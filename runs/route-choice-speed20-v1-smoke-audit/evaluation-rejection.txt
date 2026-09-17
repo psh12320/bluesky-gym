@@ -1,0 +1,9 @@
+usage: evaluate.py [-h] --env {sa,ma} [--episodes EPISODES] [--seed SEED]
+                   [--model MODEL] [--algorithm {ppo,sac}]
+                   [--controller {neutral,goal}]
+                   [--goal-speed-action GOAL_SPEED_ACTION]
+                   [--recipe {baseline,balanced,goal_relative,route_guided,route_guided_inset,public_weights,public_cpa,goal_relative_cpa,public_sa_transfer,public_cpa_sa_transfer,public_route_input,public_route_input_sa_transfer,public_route_residual,public_route_residual_sa_transfer,public_route_choice,public_route_choice_sa_transfer,public_route_choice_residual,public_route_choice_residual_sa_transfer,public_route_choice_speed20,public_route_choice_speed20_sa_transfer,public_route_choice_speed20_residual,public_route_choice_speed20_residual_sa_transfer}]
+                   [--guard-static | --no-guard-static]
+                   [--guard-traffic | --no-guard-traffic] [--official]
+                   [--batch-inference] --out OUT
+evaluate.py: error: Checkpoint speed-command settings differ

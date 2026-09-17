@@ -1,0 +1,41 @@
+{
+  "smoke_actor_exact_through_30_held_updates": true,
+  "smoke_critic_changed": true,
+  "resumed_actor_changed_after_warmup": true,
+  "resume_updates": 50,
+  "held_updates": 40,
+  "actor_updates": 10,
+  "smoke_model_sha256": {
+    "runs\\fast-reference-smoke-v1\\initial-model.zip": "a8af4aab376cbc28bdb6f896bc17139c360dbe1ab68add4f890a1a3f337eac0f",
+    "runs\\fast-reference-smoke-v1\\model.zip": "b3d33cb98b4ea783d7d8d21d0dfea2897a194309f441a39e1f3e157194cd89bf",
+    "runs\\fast-reference-smoke-resume-v1\\model.zip": "97673bacf8d995ee8ea9fd6a641be49b1c14eaa191fa039dca586597bec7da0f"
+  },
+  "matched_training_initial_policy_state_exact": true,
+  "matched_configuration": {
+    "seed": 2900,
+    "steps": 25000,
+    "world_seeds": [
+      2900
+    ],
+    "actual_net_arch": [
+      64,
+      64
+    ],
+    "actual_learning_rate": 0.0003,
+    "actual_tau": 0.005,
+    "actual_gradient_steps": 4,
+    "actual_batch_size": 256,
+    "actual_buffer_size": 100000,
+    "actual_learning_starts": 5000,
+    "recipe": "public_route_choice_fast_residual",
+    "guard_static": true,
+    "guard_traffic": true,
+    "route_residual_speed_reference": 1.0,
+    "route_residual_speed_scale": 2.0
+  },
+  "critic_warmup_updates": [
+    0,
+    2000
+  ],
+  "note": "Equal total critic/environment budgets; warmup deliberately reduces actor updates."
+}

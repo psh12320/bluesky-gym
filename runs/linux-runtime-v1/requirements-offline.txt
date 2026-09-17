@@ -1,0 +1,10 @@
+torch==2.14.0+cpu
+bluesky-simulator
+gymnasium
+numpy
+pettingzoo
+pygame
+PyQt6
+shapely
+SuperSuit
+stable-baselines3

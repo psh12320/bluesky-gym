@@ -1,0 +1,56 @@
+{
+  "time_utc": "2026-09-15T23:58:07.911046+00:00",
+  "goal_turn_classification": "progress",
+  "completed_evaluations": 5,
+  "evaluation_results": "runs/goal-offset-budget-scale-v1/saved-checkpoint-results-v1.json",
+  "all_saved_checkpoint_screens_passed": false,
+  "training_interruption": "runs/goal-offset-budget-scale-v1/interruption-record-v1.json",
+  "partial_checkpoint_audit": "runs/goal-offset-budget-scale-v1/partial-checkpoint-audit-v1.json",
+  "native_curve": "runs/goal-offset-budget-scale-v1/curve-native-dev20/curve.json",
+  "scaled_curve": "runs/goal-offset-budget-scale-v1/curve-scaled-dev20/curve.json",
+  "running_training": {
+    "session": 83552,
+    "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+    "source": "runs/onpolicy-durable-source-v1-verify",
+    "requested_live_transitions": 1000000,
+    "latest_learning_row": {
+      "rollout": "3",
+      "live_transitions": "12872",
+      "padded_transitions": "2488",
+      "counted_transitions": "15360",
+      "worlds_completed": "6",
+      "aircraft_completed": "69",
+      "optimizer_steps": "101",
+      "policy_epochs": "21",
+      "wall_seconds": "88.8196351000006",
+      "live_transitions_per_second": "144.92291018205177",
+      "training_return_last100": "-1.0018566964064999",
+      "native_return_last100": "-100.18566964065",
+      "training_arrival_last100": "1.0",
+      "policy_loss": "-0.009065388415474445",
+      "value_loss": "0.03669612869620323",
+      "approx_kl": "0.014390061609447002",
+      "clip_fraction": "0.16488505333662032"
+    },
+    "currently_persisted_aircraft": 69,
+    "currently_persisted_returns": 69,
+    "initial_policy_identity_record": "runs/goal-offset-scaled-million-retry-v1/initial-policy-match.json",
+    "not_an_independent_seed": true
+  },
+  "next_actions": [
+    "Check saved 100699-live-transition full policy tensors against the interrupted scaled run before reusing evaluations.",
+    "At completion, run the full checkpoint audit and evaluate the million-step checkpoint with the original goal-offset evaluator.",
+    "Keep all original partial runs and the stopped full MA evaluation unchanged."
+  ],
+  "unit_tests_passed": 103,
+  "new_training_change": "Every rollout flushes completed aircraft and reward records; abrupt-exit test passed. Checkpoint manifests are replaced atomically.",
+  "source_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-durable-source-v1.zip",
+    "sha256": "b44303f1712386362bf36321b1add00201a3707727ff0b5320d33f2e622f658f",
+    "bytes": 226612,
+    "source_files": 117,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "cluster": "Bootstrap result still pending; no Slurm jobs submitted.",
+  "overall_completion": false
+}

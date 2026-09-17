@@ -1,0 +1,30 @@
+<frozen runpy>:128: RuntimeWarning: 'scripts.evaluate_competition' found in sys.modules after import of package 'scripts', but prior to execution of 'scripts.evaluate_competition'; this may result in unpredictable behaviour
+{"submission_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\official-sa-reach250-v1\\candidate\\model.zip", "env": "sa", "algorithm": "sac", "recipe": "public_route_choice_fast_residual_reach250_sa_transfer", "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08"}
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+
+### Single-agent — mean over 1000 episodes (seed 42)
+
+| Metric | Mean | Std |
+| --- | ---: | ---: |
+| Goal completion rate [%] | 98.500 | 12.155 |
+| Flight time [s] | 1175.885 | 471.031 |
+| Intrusion events | 0.344 | 0.627 |
+| Intrusion time [s] | 17.386 | 40.042 |
+| Restricted-area events | 0.028 | 0.177 |
+| Restricted-area time [s] | 1.040 | 8.638 |
+| Sector-exit events | 0.001 | 0.032 |
+| Time outside sector [s] | 0.087 | 2.750 |
+
+_total_reward (own reward, not comparable across teams): 229.201 ± 50.050_
+
+wrote per-episode metrics to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\official-sa-reach250-v1\metrics.csv

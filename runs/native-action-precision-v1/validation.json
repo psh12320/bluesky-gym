@@ -1,0 +1,21 @@
+{
+  "full_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "239",
+    "time": "18.367",
+    "timestamp": "2026-09-16T19:16:57.323193+08:00",
+    "hostname": "Shri-Laptop"
+  },
+  "bundle_sha256": "c329c4ba0ee3a472c89477856740811947c6f3634335c395089eff6682e4404d",
+  "changed_files_from_v2": [
+    "atc_rl/deployment.py",
+    "tests/rl/test_native_deployment.py"
+  ],
+  "corrected_evaluation_protocol": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\protocol.json",
+  "protocol_sha256": "28c14001a32333b0142c1b2da23e02c7a4db87184329b23b382815a8ce6675ff",
+  "technical_checkpoint_unchanged": true,
+  "new_performance_evidence": false
+}

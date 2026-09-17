@@ -1,0 +1,216 @@
+{
+  "registered_at_utc": "2026-09-16T08:58:32.168073+00:00",
+  "purpose": "Complete the four-cell PPO training factorial for route guidance and the existing combined safety filter, adding only the missing g0-f0 cell.",
+  "seeds": [
+    49900,
+    49920,
+    49940
+  ],
+  "support_groups": [
+    {
+      "name": "g0-f0",
+      "guidance": false,
+      "filter": false
+    }
+  ],
+  "world_seeds": {
+    "49900": [
+      49900,
+      49910
+    ],
+    "49920": [
+      49920,
+      49930
+    ],
+    "49940": [
+      49940,
+      49950
+    ]
+  },
+  "config": {
+    "algorithm": "ppo",
+    "workers": 2,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600
+  },
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-learning-source-v2-verify",
+  "training_bundle_sha256": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "guidance_only_comparison": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\protocol.json",
+  "primary_learning_measure": "Per-seed final-minus-own-initial change in all nine native metrics, clean completion and all-aircraft-clean completion.",
+  "aggregation": "All twelve cells and all three training seeds required. Report per-seed values, mean/sample SD, and paired whole-world bootstrap intervals within each training seed; never pool aircraft as independent samples.",
+  "support_comparison": "Report guidance and combined-filter effects at each setting of the other factor, their averaged effects and interaction, separately for initial scores, final scores and final-minus-initial learning.",
+  "advancement_policy": "Diagnostic factorial only; no automatic candidate selection or changes to prior screens. High scores from fixed support do not constitute a learning contribution.",
+  "limitations": [
+    "This extends nine completed cells after their outcomes were known; it is a retrospective exploratory completion, not a prospectively registered twelve-run confirmatory study.",
+    "The filter flag enables the existing combined static-area and aircraft-conflict filter. This factorial does not isolate traffic filtering from static filtering.",
+    "Goal-offset actions retain goal/reference-bearing tracking even with route guidance off; g0-f0 is not a navigation-prior-free controller.",
+    "Three 100k-live-transition seeds per cell, two simulator workers and Gaussian exploration; findings do not establish behavior of the newer gSDE recipe.",
+    "All development worlds have been reused. No reserved or official scenarios are used.",
+    "Training supports change trajectories and observed experiences even with paired generator seeds; compare outcomes at matched live budgets and full initial tensors.",
+    "The fixed classical controller differs from the initial policy, including its speed command. It is retained as context, never tuned."
+  ],
+  "scheduling": "One coordinator sequentially adds three g0-f0 runs, with two simulator workers during training and one during evaluation. Two existing one-worker coordinators remain unchanged; total maximum four simulator workers.",
+  "failure_behavior": "Stop that coordinator on errors or incomplete budgets, retain all outputs and do not relaunch automatically.",
+  "all_support_groups": [
+    "g0-f0",
+    "g1-f0",
+    "g0-f1",
+    "g1-f1"
+  ],
+  "rows": [
+    {
+      "seed": 49900,
+      "group": "g0-f0",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49900\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49900\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49900\\eval-final-dev20",
+      "new_training": true,
+      "guidance": false,
+      "filter": false
+    },
+    {
+      "seed": 49900,
+      "group": "g1-f0",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\eval-g1-f0-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\eval-final-dev20",
+      "new_training": false,
+      "guidance": true,
+      "filter": false
+    },
+    {
+      "seed": 49900,
+      "group": "g0-f1",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49900\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49900\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49900\\eval-final-dev20",
+      "new_training": false,
+      "guidance": false,
+      "filter": true
+    },
+    {
+      "seed": 49900,
+      "group": "g1-f1",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49900\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49900\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49900\\eval-final-dev20",
+      "new_training": false,
+      "guidance": true,
+      "filter": true
+    },
+    {
+      "seed": 49920,
+      "group": "g0-f0",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49920\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49920\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49920\\eval-final-dev20",
+      "new_training": true,
+      "guidance": false,
+      "filter": false
+    },
+    {
+      "seed": 49920,
+      "group": "g1-f0",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\eval-final-dev20",
+      "new_training": false,
+      "guidance": true,
+      "filter": false
+    },
+    {
+      "seed": 49920,
+      "group": "g0-f1",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49920\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49920\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49920\\eval-final-dev20",
+      "new_training": false,
+      "guidance": false,
+      "filter": true
+    },
+    {
+      "seed": 49920,
+      "group": "g1-f1",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49920\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49920\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49920\\eval-final-dev20",
+      "new_training": false,
+      "guidance": true,
+      "filter": true
+    },
+    {
+      "seed": 49940,
+      "group": "g0-f0",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49940\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49940\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-support-factorial-v1\\g0-f0\\seed-49940\\eval-final-dev20",
+      "new_training": true,
+      "guidance": false,
+      "filter": false
+    },
+    {
+      "seed": 49940,
+      "group": "g1-f0",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\eval-final-dev20",
+      "new_training": false,
+      "guidance": true,
+      "filter": false
+    },
+    {
+      "seed": 49940,
+      "group": "g0-f1",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49940\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49940\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49940\\eval-final-dev20",
+      "new_training": false,
+      "guidance": false,
+      "filter": true
+    },
+    {
+      "seed": 49940,
+      "group": "g1-f1",
+      "training": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49940\\train",
+      "initial_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49940\\eval-initial-dev20",
+      "final_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49940\\eval-final-dev20",
+      "new_training": false,
+      "guidance": true,
+      "filter": true
+    }
+  ],
+  "prior_three_cell_results": {
+    "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\three-seed-support-results.json",
+    "sha256": "1b5e3b43c1abf97f10c850b369372db99be581e786766694d09a25d8bb03a1d5",
+    "protocol_sha256": "fe9f40c1a7d9fba3036b3a43d9b25d47e9ade0d885be34c35a0e341925e7bd16"
+  },
+  "all_existing_initial_tensor_checks": {
+    "49900": {
+      "all_three_existing_cells_have_identical_full_initial_tensors": true,
+      "tensors": 13
+    },
+    "49920": {
+      "all_three_existing_cells_have_identical_full_initial_tensors": true,
+      "tensors": 13
+    },
+    "49940": {
+      "all_three_existing_cells_have_identical_full_initial_tensors": true,
+      "tensors": 13
+    }
+  },
+  "existing_results_preserved": true
+}

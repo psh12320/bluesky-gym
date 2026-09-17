@@ -1,0 +1,22 @@
+{
+  "validation": {
+    "status": "passed",
+    "paired_worlds": 3,
+    "paired_aircraft": 30,
+    "identical_observations_metrics_terminals": true,
+    "matches_original_adapter_fixture": true,
+    "arrivals": 20,
+    "timeouts": 10,
+    "padding_slots_checked": 2394,
+    "decision_pairs": 1190,
+    "nonzero_shaping_steps": 9506,
+    "max_discounted_identity_error": 1.8474111129762605e-13,
+    "wall_seconds": 199.02642969996668,
+    "records_sha256": "ed8f27c2a905c5a527247cfc363d72e2de7a8d26a1f56c943e858a508101e150"
+  },
+  "training": "started; not completed",
+  "evaluation": "not started",
+  "unit_tests_passed": 27,
+  "raw_million_training": "continues from unchanged source",
+  "cluster_setup": "awaiting user job ID or error"
+}

@@ -1,0 +1,37 @@
+{
+  "run": "sac-ma-fast-reference-v1-25k-seed2900",
+  "training_summary": {
+    "timesteps": 25000,
+    "new_timesteps": 25000,
+    "wall_seconds": 677.4088468999835,
+    "critic_updates": 8000,
+    "held_actor_updates": 0,
+    "actor_updates": 8000,
+    "live_transitions": 15214,
+    "skipped_transitions": 9786,
+    "new_live_transitions": 15214,
+    "new_skipped_transitions": 9786
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "checkpoints/model_25000_steps.zip",
+      "sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+      "timesteps": 25000,
+      "critic_updates": 7996,
+      "held_actor_updates": 0,
+      "actor_updates": 7996,
+      "actor_changed_from_initial": true
+    },
+    {
+      "checkpoint": "model.zip",
+      "sha256": "b4938dd90360f9a67a550714524e545ca115269719e0e17ccb4a416c7cdf8646",
+      "timesteps": 25000,
+      "critic_updates": 8000,
+      "held_actor_updates": 0,
+      "actor_updates": 8000,
+      "actor_changed_from_initial": true
+    }
+  ],
+  "evaluated_checkpoint": "checkpoints/model_25000_steps.zip",
+  "note": "25k callback precedes the last four gradient updates."
+}

@@ -1,0 +1,6 @@
+{
+  "matched_rollout_rows_excluding_elapsed_time": 37,
+  "matched_partial_live_transitions": 59207,
+  "50k_full_policy_tensors_identical": true,
+  "preserved_partial_model_sha256": "fd358f6e1c404cc3aab0f2b499457c4c0a925494118c1887e608c38989ec713d"
+}

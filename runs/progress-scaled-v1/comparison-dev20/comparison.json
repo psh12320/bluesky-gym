@@ -1,0 +1,297 @@
+{
+  "worlds": 20,
+  "aircraft_per_policy": 200,
+  "training_seeds": 1,
+  "checkpoint": {
+    "file": "model.zip",
+    "sha256": "4d997326d527b7349c1180abb5f8408e9c79f08a3f2b4a99f61da1adef9e4d7f",
+    "live_transitions": 104783,
+    "counted_transitions": 107520,
+    "padded_transitions": 2737,
+    "optimizer_steps": 1050,
+    "policy_epochs": 210,
+    "rollouts": 21
+  },
+  "training_configuration": {
+    "algorithm": "ppo",
+    "workers": 2,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "seed": 49900,
+    "device": "cpu",
+    "guidance": false,
+    "filter": false,
+    "progress_scale": 100.0,
+    "reward_scale": 0.01,
+    "actor_reference": null,
+    "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\progress-scaled-v1\\train",
+    "checkpoint_live_steps": 25000,
+    "max_wall_seconds": 900.0,
+    "world_seeds": [
+      49900,
+      49910
+    ],
+    "actor_information": "own standard aircraft observation plus remaining-time fraction",
+    "critic_information": "same local observation as actor",
+    "actor_widths": [
+      128,
+      128
+    ],
+    "critic_widths": [
+      256,
+      256
+    ],
+    "shared_actor": true,
+    "shared_critic": true,
+    "gamma": 0.996508469331006,
+    "gae_lambda": 0.95,
+    "learning_rate": 0.0003,
+    "clip_range": 0.2,
+    "entropy_coefficient": 0.01,
+    "value_coefficient": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.03,
+    "decision_interval_seconds": 5,
+    "reward_recipe": "public_weights",
+    "automatic_residual_controller": false,
+    "learning_reward_formula": "reward_scale * (native_reward + potential_shaping)",
+    "progress_shaping": {
+      "scale": 100.0,
+      "distance_norm_km": 150.0,
+      "distance_cap_km": 1500.0,
+      "potential": "-scale * clipped_distance_to_goal_region / 150 * remaining_time_fraction",
+      "formula": "gamma * next_potential - current_potential; terminal potential is zero",
+      "original_scoring_info_unchanged": true
+    },
+    "finite_horizon": "Do not bootstrap beyond goal completion or the actual 3000-second competition deadline; bootstrap at rollout cuts.",
+    "action_distribution": "SB3 diagonal Gaussian; clip sampled commands to the original [-1,1] execution bounds",
+    "active_mask": "Policy, value, entropy and advantage-normalization samples exclude inactive aircraft slots",
+    "budget_unit": "Live aircraft transitions; finish the current rollout, recording exact overshoot and padded slot count"
+  },
+  "training_configuration_sha256": "8fcb696fe3939847b6e83e3c008001ff77ff2b6804a3515be65921866b78eeb5",
+  "initial_reference_reused": true,
+  "initial_reference_validation": "Exact full policy tensor identity with the trained run initial checkpoint; identical evaluation source, settings and scenarios.",
+  "support": {
+    "initial": {
+      "guidance": false,
+      "filter": false
+    },
+    "trained": {
+      "guidance": false,
+      "filter": false
+    },
+    "classical": {
+      "guidance": true,
+      "filter": true
+    }
+  },
+  "means": {
+    "initial": {
+      "waypoint_reached": 0.04,
+      "flight_time": 2914.1850000000004,
+      "intrusion_events": 0.9400000000000001,
+      "intrusion_time": 100.64,
+      "restricted_area_events": 1.485,
+      "time_in_restricted_area": 291.375,
+      "sector_exit_events": 0.915,
+      "time_outside_sector": 1416.745,
+      "total_reward": -430.78310381907977,
+      "clean_completion": 0.0,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "trained": {
+      "waypoint_reached": 0.18000000000000002,
+      "flight_time": 2745.255,
+      "intrusion_events": 1.6199999999999999,
+      "intrusion_time": 263.31,
+      "restricted_area_events": 0.55,
+      "time_in_restricted_area": 108.82000000000001,
+      "sector_exit_events": 1.1599999999999997,
+      "time_outside_sector": 1037.1250000000002,
+      "total_reward": -436.8175185068335,
+      "clean_completion": 0.034999999999999996,
+      "all_aircraft_clean_completion": 0.0
+    },
+    "classical": {
+      "waypoint_reached": 0.9949999999999999,
+      "flight_time": 1082.1299999999999,
+      "intrusion_events": 0.06000000000000001,
+      "intrusion_time": 2.51,
+      "restricted_area_events": 0.01,
+      "time_in_restricted_area": 0.26999999999999996,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 34.60570799520568,
+      "clean_completion": 0.945,
+      "all_aircraft_clean_completion": 0.8
+    }
+  },
+  "comparisons": {
+    "learning_trained_minus_initial": {
+      "waypoint_reached": {
+        "mean_difference": 0.14,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.06999999999999999,
+          0.21000000000000002
+        ]
+      },
+      "flight_time": {
+        "mean_difference": -168.9300000000001,
+        "paired_world_bootstrap_95_percent_interval": [
+          -290.24012500000015,
+          -49.8756250000001
+        ]
+      },
+      "intrusion_events": {
+        "mean_difference": 0.6799999999999999,
+        "paired_world_bootstrap_95_percent_interval": [
+          -0.039999999999999966,
+          1.55
+        ]
+      },
+      "intrusion_time": {
+        "mean_difference": 162.67000000000002,
+        "paired_world_bootstrap_95_percent_interval": [
+          42.76800000000001,
+          291.59075
+        ]
+      },
+      "restricted_area_events": {
+        "mean_difference": -0.9349999999999998,
+        "paired_world_bootstrap_95_percent_interval": [
+          -1.1999999999999997,
+          -0.6849999999999999
+        ]
+      },
+      "time_in_restricted_area": {
+        "mean_difference": -182.555,
+        "paired_world_bootstrap_95_percent_interval": [
+          -249.20662500000006,
+          -118.55587500000007
+        ]
+      },
+      "sector_exit_events": {
+        "mean_difference": 0.24499999999999994,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.014999999999999968,
+          0.485
+        ]
+      },
+      "time_outside_sector": {
+        "mean_difference": -379.61999999999995,
+        "paired_world_bootstrap_95_percent_interval": [
+          -658.635375,
+          -102.34375000000011
+        ]
+      },
+      "total_reward": {
+        "mean_difference": -6.0344146877538005,
+        "paired_world_bootstrap_95_percent_interval": [
+          -135.7055784749623,
+          114.86007614798059
+        ]
+      },
+      "clean_completion": {
+        "mean_difference": 0.034999999999999996,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.01,
+          0.06000000000000001
+        ]
+      },
+      "all_aircraft_clean_completion": {
+        "mean_difference": 0.0,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "system_trained_minus_classical": {
+      "waypoint_reached": {
+        "mean_difference": -0.8150000000000001,
+        "paired_world_bootstrap_95_percent_interval": [
+          -0.875,
+          -0.755
+        ]
+      },
+      "flight_time": {
+        "mean_difference": 1663.125,
+        "paired_world_bootstrap_95_percent_interval": [
+          1502.3342499999997,
+          1802.2026249999997
+        ]
+      },
+      "intrusion_events": {
+        "mean_difference": 1.56,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.9800000000000001,
+          2.28
+        ]
+      },
+      "intrusion_time": {
+        "mean_difference": 260.79999999999995,
+        "paired_world_bootstrap_95_percent_interval": [
+          157.36249999999998,
+          376.4317499999999
+        ]
+      },
+      "restricted_area_events": {
+        "mean_difference": 0.54,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.35500000000000004,
+          0.7300000000000001
+        ]
+      },
+      "time_in_restricted_area": {
+        "mean_difference": 108.55000000000003,
+        "paired_world_bootstrap_95_percent_interval": [
+          56.67925000000001,
+          166.09537499999996
+        ]
+      },
+      "sector_exit_events": {
+        "mean_difference": 1.1599999999999997,
+        "paired_world_bootstrap_95_percent_interval": [
+          0.9399999999999998,
+          1.3999999999999997
+        ]
+      },
+      "time_outside_sector": {
+        "mean_difference": 1037.1250000000002,
+        "paired_world_bootstrap_95_percent_interval": [
+          837.83475,
+          1241.2609999999997
+        ]
+      },
+      "total_reward": {
+        "mean_difference": -471.42322650203926,
+        "paired_world_bootstrap_95_percent_interval": [
+          -581.0083194150977,
+          -373.93876469660887
+        ]
+      },
+      "clean_completion": {
+        "mean_difference": -0.9099999999999998,
+        "paired_world_bootstrap_95_percent_interval": [
+          -0.96,
+          -0.85
+        ]
+      },
+      "all_aircraft_clean_completion": {
+        "mean_difference": -0.8,
+        "paired_world_bootstrap_95_percent_interval": [
+          -0.95,
+          -0.6
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Development scenarios, one training seed; not final generalization evidence.",
+    "Intervals resample whole worlds; they do not estimate variation across training seeds.",
+    "Classical system has guidance/filter support; only the initial/trained pair isolates learning.",
+    "No official aggregate scalar score is invented; all physical metrics are retained."
+  ]
+}

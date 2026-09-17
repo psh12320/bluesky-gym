@@ -1,0 +1,54 @@
+{
+  "episodes": 5,
+  "agent_episodes": 50,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.66,
+      "std": 0.4737087712930805
+    },
+    "flight_time": {
+      "mean": 1946.54,
+      "std": 894.5824324230831
+    },
+    "intrusion_events": {
+      "mean": 0.88,
+      "std": 1.2592060990957756
+    },
+    "intrusion_time": {
+      "mean": 51.12,
+      "std": 91.86395158058464
+    },
+    "restricted_area_events": {
+      "mean": 0.52,
+      "std": 0.6705221845696083
+    },
+    "time_in_restricted_area": {
+      "mean": 75.2,
+      "std": 148.8330608433489
+    },
+    "sector_exit_events": {
+      "mean": 0.56,
+      "std": 1.3734627770711516
+    },
+    "time_outside_sector": {
+      "mean": 81.32,
+      "std": 204.83285283371904
+    },
+    "total_reward": {
+      "mean": -72.38928602824411,
+      "std": 109.03066236633254
+    }
+  },
+  "clean_completion_rate": 0.14,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "wall_seconds": 181.8114800999756,
+  "world_decisions": 1500,
+  "seed": 2026,
+  "env": "ma",
+  "policy": "runs\\sac-ma-cpa-600k-seed1400\\model.zip",
+  "recipe": "public_cpa",
+  "guard_static": false,
+  "official_protocol": false,
+  "model_sha256": "b444e4bd882117c0b70067d918a2cfb7645209f5e434349fb308d5843f0e1a93",
+  "inference_mode": "per_aircraft"
+}

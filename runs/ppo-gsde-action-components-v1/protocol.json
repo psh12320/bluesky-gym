@@ -1,0 +1,61 @@
+{
+  "registered_at_utc": "2026-09-16T08:16:35.483786+00:00",
+  "protected_inputs": {
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\train\\model.zip": "5fdebf1b43623b623b6575f4517b6035523a557a27cffaa26131302a5aa5d571",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\train\\config.json": "0f349e1f9cce837bc893b9f6f896a9158b1ac889d81babfd83291cc24b24d505",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\train\\checkpoints.json": "974cd7dd3cb2affcce86918eb76ced7a3b71cb76abec62b3349d936f1dc11dfb",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-gsde-source-v1.zip": "51fba29cbe8b9196b7a169aedb107e9edf6a5ed3593a1638c9f964d3d478a669",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-action-components-v1\\run.py": "831c6acd5faa858806676c2f5e2374a051f63ee08f95b1ea7bf8531dbfd6a953",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-initial-dev20\\aircraft.csv": "1ea2645fe0f1fd30f9bf3739291d7d10282734f625171ee90a415f6aa5fd5ffd",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-initial-dev20\\summary.json": "ae578e200d583505d4a1b4e71c0f59cff0f93844fc1b8831969baa1f82dbe0f8",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-initial-dev20\\protocol.json": "3592fc756435bff74461289eefd7e66a89a84547eebf39dba783bf065805e34d",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-initial-dev20\\scenarios.json": "4eba8f13eeeb7893540fb95f5fcbc7abeb8bba4f0ed61455707ddfd11cbc4ee8",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-final-dev20\\aircraft.csv": "673675cd116d8065f8d9323fc411652b56e17732e11d79c279920c850a17bb43",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-final-dev20\\summary.json": "00cb4b61039ead79d6b46d726b88db2c3a95924fd2f68034bd37e83f24427c1b",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-final-dev20\\protocol.json": "71074a2c5f1407bf328c2d454a59c4c6e8db8bf11b67dedeeb806a7cc4202c68",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-gsde-timing-pilot-v1\\seed-51700\\every12\\eval-final-dev20\\scenarios.json": "4eba8f13eeeb7893540fb95f5fcbc7abeb8bba4f0ed61455707ddfd11cbc4ee8"
+  },
+  "source_manifest_sha256": "ceb2fb16004c52edab909baa9e8388b6544491156106bd5046b63c261c1fe0c2",
+  "analysis": "All physical metrics; paired whole-world bootstrap, 10000 resamples seed701; report both components and their interaction.",
+  "controls": "Full and zero-both must reproduce every aircraft metric and scenario in the original final and initial twenty-world evaluations exactly, before continuing.",
+  "resource_policy": "Sequential arms with one simulator worker; existing three coordinators remain unchanged; at most four simulator workers combined.",
+  "zero_action_meaning": "Zero heading follows unchanged goal/route guidance; zero speed removes the learned speed increment. Static filtering remains active.",
+  "checkpoint": {
+    "file": "model.zip",
+    "sha256": "5fdebf1b43623b623b6575f4517b6035523a557a27cffaa26131302a5aa5d571",
+    "live_transitions": 100438,
+    "counted_transitions": 158720,
+    "padded_transitions": 58282,
+    "optimizer_steps": 814,
+    "policy_epochs": 273,
+    "rollouts": 62
+  },
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-gsde-source-v1-verify",
+  "diagnostic_script_sha256": "831c6acd5faa858806676c2f5e2374a051f63ee08f95b1ea7bf8531dbfd6a953",
+  "worlds_per_arm": 20,
+  "stream": 20260,
+  "arms": [
+    "full_policy",
+    "zero_both",
+    "zero_heading",
+    "zero_speed"
+  ],
+  "mapping": "Zero the selected latent action after deterministic model prediction, before goal_offset mapping.",
+  "support": {
+    "guidance": true,
+    "filter": false,
+    "static_filter": true,
+    "conflict_features": true
+  },
+  "reason": "The persistent-exploration pilot improved clean completion by 16 percentage points but increased restricted-area time; identify action-component effects.",
+  "selection": "Outcome-selected exploratory every12 checkpoint, seed51700, 100438 live transitions; fresh three-seed timing replications remain separate.",
+  "limits": [
+    "Twenty reused development worlds and one outcome-selected training seed; no unseen generalization or across-seed inference.",
+    "Heading and speed interact through subsequent states; this is a closed-loop policy-component ablation.",
+    "Changing inference behavior is not additional RL training.",
+    "These variants are not nominated competition candidates.",
+    "Disabling a component changes subsequent observations; this does not estimate retraining with that action removed.",
+    "Zero heading retains route support and may still turn the aircraft; this is not a constant-heading controller.",
+    "World bootstrap intervals do not account for outcome-based checkpoint selection or training-seed variation."
+  ]
+}

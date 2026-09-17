@@ -1,0 +1,40 @@
+{
+  "registered_at_utc": "2026-09-16T02:26:19.619305+00:00",
+  "runs": [
+    {
+      "algorithm": "ppo",
+      "training_run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train\\model.zip",
+      "model_sha256": "dec5dc24e64da553b140de9d64d68e67a97114fea09d546e3a4b357fe4e62559",
+      "live_transitions": 948398,
+      "evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\eval-final-dev20",
+      "status": "wall_limit_before_budget",
+      "audit": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\final-checkpoint-audit.json"
+    },
+    {
+      "algorithm": "mappo",
+      "training_run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train\\model.zip",
+      "model_sha256": "3ec248d5d7cbccceff6715cf796da06e027cdb872054e46a96ee01b105957b94",
+      "live_transitions": 708127,
+      "evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\eval-final-dev20",
+      "status": "wall_limit_before_budget",
+      "audit": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\final-checkpoint-audit.json"
+    }
+  ],
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "worlds": 20,
+  "purpose": "Evaluate all saved final checkpoints against their own exact untrained reference and frozen classical baseline.",
+  "selection": "Final wall-limit checkpoint from each pre-existing run; no metric-based selection.",
+  "limitations": [
+    "Actual budgets differ: do not attribute final-policy differences solely to PPO versus MAPPO.",
+    "Both runs stopped before their requested million-live-transition budget.",
+    "One training seed and development scenarios; unseen streams remain reserved."
+  ],
+  "future_matched_comparison": {
+    "ppo_live": 700844,
+    "mappo_live": 701204,
+    "selection": "Closest common periodic 700k checkpoints, selected without observing their evaluation results."
+  }
+}

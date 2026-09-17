@@ -1,0 +1,19 @@
+# Optional conflict-prediction observations
+
+The --conflict-features training option exposes the existing atc.conflicts observation augmentation to shared PPO and centralized-critic MAPPO. It defaults to off. It changes the policy input; the learned actor still chooses both heading and speed.
+
+For each of the nine visible traffic slots, five values are appended: presence, time of closest approach, distance at closest approach, predicted separation-entry time, and a predicted-conflict indicator. Positions and velocities come from the current relative observation. Presence comes from the current traffic population. The calculation assumes constant velocity over 180 seconds and the existing five-nautical-mile separation radius; absent slots are zeroed. It neither reads future trajectories nor commands aircraft.
+
+Enabling the option retains reward weights, action bounds, decision interval, scenario generation, route-guidance setting, conflict-filter setting and scoring. Guidance and filtering remain separate options. A feature-enabled checkpoint records the setting in config.json, runtime.json and its evaluation protocol; the evaluator reconstructs its observation space when loading it. Legacy checkpoints default to the original observation. Initial/final comparisons, learning curves and PPO/MAPPO comparisons reject mismatched observation settings. The existing canonical support matrix currently excludes this optional experiment.
+
+The source is frozen separately as runs/onpolicy-cpa-source-v2.zip. The cluster-ppo-baseline-v1.zip already given to the user is unchanged. Existing training and evaluation processes use their original frozen sources.
+
+Validation records are in runs/cpa-observation-development-v1/: analytic feature tests, reward/action recipe checks, full RL tests, two-world fixed-action simulator comparisons with guidance off/on, and a small train/audit/reload cycle. Only completed records constitute passing evidence. The smoke run is an integration check and is excluded from claims about learned performance.
+
+The --mask-conflict-features option now implements a same-size zero-feature control. It requires --conflict-features and zeroes only the 45 additional channels after flattening. Both arms retain identical 170-dimensional spaces, architecture and parameter counts. Within each paired seed the full initial actor and critic tensors must match. Both networks receive the chosen inputs, so the experiment does not isolate actor-only from critic-only effects.
+
+The current implementation passed 133 tests. Two 1,280-live-transition integration runs passed training, audit and reload checks. Their initial weights matched, and the masked initial policy reproduced all 180 checked physical metrics over two worlds. Evidence: runs/cpa-mask-development-v1/validation.json. These checks validate implementation, not performance.
+
+The registered experiment is now running under runs/ppo-cpa-matched-v1/protocol.json. It pairs real versus zero feature inputs at seeds 50400, 50500 and 50600, 100,000 live transitions per arm, with shared PPO, goal-relative actions, guidance on and filtering off. Each arm uses one simulator world containing ten aircraft and batch size 512. This differs from earlier two-world/batch-1024 pilots; only the within-study contrast isolates feature information.
+
+Every run evaluates its own initial, approximately 50k and final policy on twenty paired development worlds. The primary contrast is the difference between the two arms' trained-minus-initial changes. All seeds, native metrics, actual budgets and fixed classical comparisons are retained. The unseen streams remain reserved. No feature benefit is claimed while evaluation is incomplete.

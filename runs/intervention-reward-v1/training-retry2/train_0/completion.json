@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "f6c9f1d4c49418956816cbab1a96a66529df6988a6d4ad9875dbb9f0c48b9947",
+  "training_summary": {
+    "timesteps": 25000,
+    "new_timesteps": 25000,
+    "wall_seconds": 378.3215468999697,
+    "critic_updates": 8000,
+    "held_actor_updates": 0,
+    "actor_updates": 8000,
+    "live_transitions": 13875,
+    "skipped_transitions": 11125,
+    "new_live_transitions": 13875,
+    "new_skipped_transitions": 11125
+  },
+  "coefficient": 0.0,
+  "unchanged_packaged_files": 145,
+  "initial_policy_matches_control": null
+}

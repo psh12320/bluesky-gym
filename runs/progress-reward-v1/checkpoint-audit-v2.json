@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\progress-reward-v1\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 100217,
+  "padded_transitions": 2183,
+  "optimizer_steps": 1000,
+  "verified_checkpoints": 6,
+  "verified_source_files": 77,
+  "learning_curve_rows": 20,
+  "aircraft_completed": 162,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "2f09e8210b4ce95331e06e77527f66f8a5885f561c3774c87002012bb02de4c2",
+  "policy_quality_assessed": false
+}

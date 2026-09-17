@@ -1,0 +1,11 @@
+{
+  "episode": 2,
+  "agent": "KL002",
+  "samples": 300,
+  "starting_goal_distance_km": 124.4695790434067,
+  "minimum_goal_distance_km": 15.964426604102615,
+  "maximum_goal_distance_km": 236.3717549519725,
+  "interventions": 116,
+  "infeasible_candidates": 0,
+  "conclusion": "A long boundary detour exhausts the time limit; the goal-entry prediction correction did not change the rollout."
+}

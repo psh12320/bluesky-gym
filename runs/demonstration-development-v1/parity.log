@@ -1,0 +1,24 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\demonstration-development-v1\parity\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"world": 0, "live_transitions": 1727, "interventions": 179, "total_live_transitions": 1727}
+{"world": 1, "live_transitions": 1779, "interventions": 451, "total_live_transitions": 3506}
+{"status": "complete", "worlds": 2, "live_transitions": 3506, "intervened_transitions": 630, "actor_dim": 170, "eligible_for_learning": false, "reinforcement_learning_updates": 0, "teacher_source_unchanged": true, "exact_reference_metric_matches": 180, "protocol_sha256": "00f25bdd72bbe2df63723cbf5af293d48b55eaf656e8391d22f533766f235f0f", "world_manifest_sha256": "b3d9656eb142c65b3287775439f356fafcb87a6e2d5836377d562c9c9120c37c", "space_sha256": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481", "wall_seconds": 52.9690000000046}

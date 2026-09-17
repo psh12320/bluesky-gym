@@ -1,0 +1,14 @@
+{
+  "episodes": 5,
+  "frame_count": 242,
+  "duration_ms": 33700,
+  "dimensions": [
+    720,
+    828
+  ],
+  "all_nine_metrics_exact_for_every_replay": true,
+  "all_individual_gif_hashes_verified": true,
+  "reel_sha256": "6083e7a66d275b18127b9f886c382e398b5fe8ff7af6ae85b7ee4d35fd1dcea8",
+  "reel_bytes": 7631807,
+  "scope": "First five development scenarios; an inspectable prototype preview, not a competition score"
+}

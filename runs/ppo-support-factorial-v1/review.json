@@ -1,0 +1,636 @@
+{
+  "recorded_at_utc": "2026-09-16T11:14:06.929838+00:00",
+  "source_sha256": "fdfe83b49b2302fcffe6f80588eab2749344b3827503313b671e7510f155ec0d",
+  "all_twelve_results_checked": true,
+  "numeric_summary_checks": 264,
+  "screen": {
+    "g0-f0": {
+      "checks": {
+        "arrival_at_least_95_percent": true,
+        "arrival_decline_at_most_2_percentage_points": true,
+        "clean_completion_gain_at_least_5_percentage_points": false,
+        "intrusion_time_not_increased": true,
+        "time_in_restricted_area_not_increased": true,
+        "time_outside_sector_not_increased": true
+      },
+      "passes_all": false,
+      "clean_completion_change_percentage_points": -0.8333333333333337,
+      "across_seed_sample_sd_percentage_points": 0.7637626158259733
+    },
+    "g1-f0": {
+      "checks": {
+        "arrival_at_least_95_percent": true,
+        "arrival_decline_at_most_2_percentage_points": true,
+        "clean_completion_gain_at_least_5_percentage_points": false,
+        "intrusion_time_not_increased": false,
+        "time_in_restricted_area_not_increased": false,
+        "time_outside_sector_not_increased": false
+      },
+      "passes_all": false,
+      "clean_completion_change_percentage_points": -1.6666666666666663,
+      "across_seed_sample_sd_percentage_points": 0.763762615825973
+    },
+    "g0-f1": {
+      "checks": {
+        "arrival_at_least_95_percent": false,
+        "arrival_decline_at_most_2_percentage_points": true,
+        "clean_completion_gain_at_least_5_percentage_points": false,
+        "intrusion_time_not_increased": false,
+        "time_in_restricted_area_not_increased": false,
+        "time_outside_sector_not_increased": true
+      },
+      "passes_all": false,
+      "clean_completion_change_percentage_points": 1.1666666666666663,
+      "across_seed_sample_sd_percentage_points": 1.6072751268321595
+    },
+    "g1-f1": {
+      "checks": {
+        "arrival_at_least_95_percent": true,
+        "arrival_decline_at_most_2_percentage_points": true,
+        "clean_completion_gain_at_least_5_percentage_points": false,
+        "intrusion_time_not_increased": false,
+        "time_in_restricted_area_not_increased": false,
+        "time_outside_sector_not_increased": true
+      },
+      "passes_all": false,
+      "clean_completion_change_percentage_points": -3.0000000000000004,
+      "across_seed_sample_sd_percentage_points": 1.3228756555322951
+    }
+  },
+  "any_group_passes_mean_screen": false,
+  "conclusion": "No support setting demonstrates the required five-percentage-point mean clean-completion gain. High supported scores already occur before PPO training.",
+  "physical_metrics": {
+    "initial": {
+      "g0-f0": {
+        "waypoint_reached": {
+          "mean": 1.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "flight_time": {
+          "mean": 857.2000000000002,
+          "sample_standard_deviation_across_training_seeds": 1.3923737144427707e-13
+        },
+        "intrusion_events": {
+          "mean": 0.9499999999999998,
+          "sample_standard_deviation_across_training_seeds": 1.3597399555105182e-16
+        },
+        "intrusion_time": {
+          "mean": 73.77000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "restricted_area_events": {
+          "mean": 0.85,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_in_restricted_area": {
+          "mean": 127.005,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": -95.84946248984842,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "clean_completion": {
+          "mean": 0.19499999999999998,
+          "sample_standard_deviation_across_training_seeds": 3.3993498887762956e-17
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        }
+      },
+      "g1-f0": {
+        "waypoint_reached": {
+          "mean": 0.9949999999999998,
+          "sample_standard_deviation_across_training_seeds": 1.3597399555105182e-16
+        },
+        "flight_time": {
+          "mean": 1087.5500000000002,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "intrusion_events": {
+          "mean": 1.53,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "intrusion_time": {
+          "mean": 114.07000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "restricted_area_events": {
+          "mean": 0.015000000000000005,
+          "sample_standard_deviation_across_training_seeds": 2.1245936804851847e-18
+        },
+        "time_in_restricted_area": {
+          "mean": 0.705,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "sector_exit_events": {
+          "mean": 0.005,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.034999999999999996,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": -71.09742242524528,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "clean_completion": {
+          "mean": 0.25999999999999995,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        }
+      },
+      "g0-f1": {
+        "waypoint_reached": {
+          "mean": 0.8800000000000002,
+          "sample_standard_deviation_across_training_seeds": 1.3597399555105182e-16
+        },
+        "flight_time": {
+          "mean": 1376.345,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "intrusion_events": {
+          "mean": 0.05000000000000001,
+          "sample_standard_deviation_across_training_seeds": 8.498374721940739e-18
+        },
+        "intrusion_time": {
+          "mean": 2.29,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "restricted_area_events": {
+          "mean": 0.049999999999999996,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_in_restricted_area": {
+          "mean": 1.3950000000000002,
+          "sample_standard_deviation_across_training_seeds": 2.7194799110210365e-16
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": 29.88065825405357,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "clean_completion": {
+          "mean": 0.8300000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.3499999999999999,
+          "sample_standard_deviation_across_training_seeds": 6.798699777552591e-17
+        }
+      },
+      "g1-f1": {
+        "waypoint_reached": {
+          "mean": 0.9899999999999999,
+          "sample_standard_deviation_across_training_seeds": 1.3597399555105182e-16
+        },
+        "flight_time": {
+          "mean": 1155.56,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "intrusion_events": {
+          "mean": 0.02,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "intrusion_time": {
+          "mean": 0.77,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "restricted_area_events": {
+          "mean": 0.005,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_in_restricted_area": {
+          "mean": 0.04,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": 36.17764495752881,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "clean_completion": {
+          "mean": 0.9700000000000001,
+          "sample_standard_deviation_across_training_seeds": 1.3597399555105182e-16
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.8000000000000002,
+          "sample_standard_deviation_across_training_seeds": 1.3597399555105182e-16
+        }
+      }
+    },
+    "final": {
+      "g0-f0": {
+        "waypoint_reached": {
+          "mean": 1.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "flight_time": {
+          "mean": 855.8166666666666,
+          "sample_standard_deviation_across_training_seeds": 3.932341329708458
+        },
+        "intrusion_events": {
+          "mean": 0.9433333333333334,
+          "sample_standard_deviation_across_training_seeds": 0.005773502691896198
+        },
+        "intrusion_time": {
+          "mean": 70.86,
+          "sample_standard_deviation_across_training_seeds": 1.4742116537322618
+        },
+        "restricted_area_events": {
+          "mean": 0.8466666666666667,
+          "sample_standard_deviation_across_training_seeds": 0.0028867513459480674
+        },
+        "time_in_restricted_area": {
+          "mean": 125.26666666666667,
+          "sample_standard_deviation_across_training_seeds": 2.2518344373717323
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": -92.23598167842142,
+          "sample_standard_deviation_across_training_seeds": 2.424908871281384
+        },
+        "clean_completion": {
+          "mean": 0.18666666666666668,
+          "sample_standard_deviation_across_training_seeds": 0.007637626158259738
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        }
+      },
+      "g1-f0": {
+        "waypoint_reached": {
+          "mean": 0.9783333333333334,
+          "sample_standard_deviation_across_training_seeds": 0.01892969448600089
+        },
+        "flight_time": {
+          "mean": 1085.6616666666666,
+          "sample_standard_deviation_across_training_seeds": 32.123540563476695
+        },
+        "intrusion_events": {
+          "mean": 1.5366666666666668,
+          "sample_standard_deviation_across_training_seeds": 0.06806859285554039
+        },
+        "intrusion_time": {
+          "mean": 123.89666666666666,
+          "sample_standard_deviation_across_training_seeds": 21.480587360063815
+        },
+        "restricted_area_events": {
+          "mean": 0.043333333333333335,
+          "sample_standard_deviation_across_training_seeds": 0.03013856886670854
+        },
+        "time_in_restricted_area": {
+          "mean": 4.533333333333333,
+          "sample_standard_deviation_across_training_seeds": 5.798537171850615
+        },
+        "sector_exit_events": {
+          "mean": 0.0033333333333333335,
+          "sample_standard_deviation_across_training_seeds": 0.002886751345948129
+        },
+        "time_outside_sector": {
+          "mean": 0.15166666666666664,
+          "sample_standard_deviation_across_training_seeds": 0.17960605038064092
+        },
+        "total_reward": {
+          "mean": -82.9482444220785,
+          "sample_standard_deviation_across_training_seeds": 18.149747069780986
+        },
+        "clean_completion": {
+          "mean": 0.24333333333333337,
+          "sample_standard_deviation_across_training_seeds": 0.007637626158259713
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        }
+      },
+      "g0-f1": {
+        "waypoint_reached": {
+          "mean": 0.9016666666666667,
+          "sample_standard_deviation_across_training_seeds": 0.03329164059239698
+        },
+        "flight_time": {
+          "mean": 1323.255,
+          "sample_standard_deviation_across_training_seeds": 75.2643805196056
+        },
+        "intrusion_events": {
+          "mean": 0.05000000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.026457513110645904
+        },
+        "intrusion_time": {
+          "mean": 2.326666666666667,
+          "sample_standard_deviation_across_training_seeds": 1.7164595344293248
+        },
+        "restricted_area_events": {
+          "mean": 0.07500000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.013228756555322957
+        },
+        "time_in_restricted_area": {
+          "mean": 2.078333333333333,
+          "sample_standard_deviation_across_training_seeds": 0.2764657905299196
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": 30.327112620434423,
+          "sample_standard_deviation_across_training_seeds": 1.7694631058895778
+        },
+        "clean_completion": {
+          "mean": 0.8416666666666667,
+          "sample_standard_deviation_across_training_seeds": 0.016072751268321646
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.3833333333333333,
+          "sample_standard_deviation_across_training_seeds": 0.028867513459481315
+        }
+      },
+      "g1-f1": {
+        "waypoint_reached": {
+          "mean": 0.9799999999999999,
+          "sample_standard_deviation_across_training_seeds": 0.010000000000000009
+        },
+        "flight_time": {
+          "mean": 1140.785,
+          "sample_standard_deviation_across_training_seeds": 6.141276333141256
+        },
+        "intrusion_events": {
+          "mean": 0.04000000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.009999999999999998
+        },
+        "intrusion_time": {
+          "mean": 1.956666666666667,
+          "sample_standard_deviation_across_training_seeds": 0.9921861384505095
+        },
+        "restricted_area_events": {
+          "mean": 0.008333333333333333,
+          "sample_standard_deviation_across_training_seeds": 0.002886751345948129
+        },
+        "time_in_restricted_area": {
+          "mean": 0.18000000000000002,
+          "sample_standard_deviation_across_training_seeds": 0.12489995996796795
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": 34.60690445144931,
+          "sample_standard_deviation_across_training_seeds": 1.05603631704498
+        },
+        "clean_completion": {
+          "mean": 0.9400000000000001,
+          "sample_standard_deviation_across_training_seeds": 0.013228756555322903
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.6833333333333332,
+          "sample_standard_deviation_across_training_seeds": 0.05773502691896257
+        }
+      }
+    },
+    "learning": {
+      "g0-f0": {
+        "waypoint_reached": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "flight_time": {
+          "mean": -1.3833333333333353,
+          "sample_standard_deviation_across_training_seeds": 3.932341329708463
+        },
+        "intrusion_events": {
+          "mean": -0.006666666666666682,
+          "sample_standard_deviation_across_training_seeds": 0.005773502691896246
+        },
+        "intrusion_time": {
+          "mean": -2.909999999999999,
+          "sample_standard_deviation_across_training_seeds": 1.4742116537322594
+        },
+        "restricted_area_events": {
+          "mean": -0.003333333333333327,
+          "sample_standard_deviation_across_training_seeds": 0.002886751345948128
+        },
+        "time_in_restricted_area": {
+          "mean": -1.7383333333333315,
+          "sample_standard_deviation_across_training_seeds": 2.251834437371747
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": 3.6134808114269887,
+          "sample_standard_deviation_across_training_seeds": 2.4249088712813807
+        },
+        "clean_completion": {
+          "mean": -0.008333333333333337,
+          "sample_standard_deviation_across_training_seeds": 0.007637626158259732
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        }
+      },
+      "g1-f0": {
+        "waypoint_reached": {
+          "mean": -0.016666666666666666,
+          "sample_standard_deviation_across_training_seeds": 0.01892969448600091
+        },
+        "flight_time": {
+          "mean": -1.8883333333333265,
+          "sample_standard_deviation_across_training_seeds": 32.123540563476695
+        },
+        "intrusion_events": {
+          "mean": 0.006666666666666644,
+          "sample_standard_deviation_across_training_seeds": 0.06806859285554047
+        },
+        "intrusion_time": {
+          "mean": 9.826666666666668,
+          "sample_standard_deviation_across_training_seeds": 21.480587360063815
+        },
+        "restricted_area_events": {
+          "mean": 0.02833333333333334,
+          "sample_standard_deviation_across_training_seeds": 0.03013856886670855
+        },
+        "time_in_restricted_area": {
+          "mean": 3.828333333333333,
+          "sample_standard_deviation_across_training_seeds": 5.798537171850615
+        },
+        "sector_exit_events": {
+          "mean": -0.0016666666666666668,
+          "sample_standard_deviation_across_training_seeds": 0.002886751345948129
+        },
+        "time_outside_sector": {
+          "mean": 0.11666666666666668,
+          "sample_standard_deviation_across_training_seeds": 0.17960605038064092
+        },
+        "total_reward": {
+          "mean": -11.850821996833226,
+          "sample_standard_deviation_across_training_seeds": 18.149747069780986
+        },
+        "clean_completion": {
+          "mean": -0.016666666666666663,
+          "sample_standard_deviation_across_training_seeds": 0.007637626158259731
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        }
+      },
+      "g0-f1": {
+        "waypoint_reached": {
+          "mean": 0.021666666666666654,
+          "sample_standard_deviation_across_training_seeds": 0.03329164059239697
+        },
+        "flight_time": {
+          "mean": -53.089999999999954,
+          "sample_standard_deviation_across_training_seeds": 75.26438051960568
+        },
+        "intrusion_events": {
+          "mean": -5.782411586589357e-19,
+          "sample_standard_deviation_across_training_seeds": 0.026457513110645904
+        },
+        "intrusion_time": {
+          "mean": 0.036666666666666514,
+          "sample_standard_deviation_across_training_seeds": 1.716459534429324
+        },
+        "restricted_area_events": {
+          "mean": 0.025000000000000005,
+          "sample_standard_deviation_across_training_seeds": 0.013228756555322952
+        },
+        "time_in_restricted_area": {
+          "mean": 0.6833333333333335,
+          "sample_standard_deviation_across_training_seeds": 0.2764657905299196
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": 0.44645436638085645,
+          "sample_standard_deviation_across_training_seeds": 1.769463105889579
+        },
+        "clean_completion": {
+          "mean": 0.011666666666666664,
+          "sample_standard_deviation_across_training_seeds": 0.016072751268321594
+        },
+        "all_aircraft_clean_completion": {
+          "mean": 0.03333333333333333,
+          "sample_standard_deviation_across_training_seeds": 0.02886751345948129
+        }
+      },
+      "g1-f1": {
+        "waypoint_reached": {
+          "mean": -0.009999999999999998,
+          "sample_standard_deviation_across_training_seeds": 0.009999999999999998
+        },
+        "flight_time": {
+          "mean": -14.774999999999997,
+          "sample_standard_deviation_across_training_seeds": 6.141276333141189
+        },
+        "intrusion_events": {
+          "mean": 0.02,
+          "sample_standard_deviation_across_training_seeds": 0.01
+        },
+        "intrusion_time": {
+          "mean": 1.1866666666666668,
+          "sample_standard_deviation_across_training_seeds": 0.9921861384505094
+        },
+        "restricted_area_events": {
+          "mean": 0.0033333333333333335,
+          "sample_standard_deviation_across_training_seeds": 0.002886751345948129
+        },
+        "time_in_restricted_area": {
+          "mean": 0.13999999999999999,
+          "sample_standard_deviation_across_training_seeds": 0.12489995996796796
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "sample_standard_deviation_across_training_seeds": 0.0
+        },
+        "total_reward": {
+          "mean": -1.570740506079507,
+          "sample_standard_deviation_across_training_seeds": 1.0560363170449776
+        },
+        "clean_completion": {
+          "mean": -0.030000000000000002,
+          "sample_standard_deviation_across_training_seeds": 0.013228756555322952
+        },
+        "all_aircraft_clean_completion": {
+          "mean": -0.11666666666666665,
+          "sample_standard_deviation_across_training_seeds": 0.057735026918962574
+        }
+      }
+    }
+  },
+  "limitations": [
+    "This extends nine completed cells after their outcomes were known; it is a retrospective exploratory completion, not a prospectively registered twelve-run confirmatory study.",
+    "The filter flag enables the existing combined static-area and aircraft-conflict filter. This factorial does not isolate traffic filtering from static filtering.",
+    "Goal-offset actions retain goal/reference-bearing tracking even with route guidance off; g0-f0 is not a navigation-prior-free controller.",
+    "Three 100k-live-transition seeds per cell, two simulator workers and Gaussian exploration; findings do not establish behavior of the newer gSDE recipe.",
+    "All development worlds have been reused. No reserved or official scenarios are used.",
+    "Training supports change trajectories and observed experiences even with paired generator seeds; compare outcomes at matched live budgets and full initial tensors.",
+    "The fixed classical controller differs from the initial policy, including its speed command. It is retained as context, never tuned.",
+    "World bootstrap intervals are conditional on the observed training seeds; they are not training-population confidence intervals.",
+    "Across-seed sample standard deviations summarize only three training seeds.",
+    "All physical metrics and contrasts are exploratory; no multiple-testing-adjusted significance or general algorithm ranking is claimed."
+  ],
+  "candidate_promoted": false,
+  "next_focus": "PPO exploration replication and demonstration-initialized PPO, preserving own-initial controls and the fixed classical benchmark."
+}

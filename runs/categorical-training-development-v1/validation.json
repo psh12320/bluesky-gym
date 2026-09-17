@@ -1,0 +1,33 @@
+{
+  "full_rl_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "282",
+    "time": "24.948",
+    "timestamp": "2026-09-17T10:48:54.017940+08:00",
+    "hostname": "Shri-Laptop"
+  },
+  "source_bundle_sha256": "5ff710b6d69a4d49bb3030c440dce6fdc64c46c6a7e31366dc5959638079ad3e",
+  "source_files": 155,
+  "changed_files": [
+    "atc_rl/audit.py",
+    "atc_rl/competition.py",
+    "atc_rl/deployment.py",
+    "atc_rl/evaluate.py",
+    "atc_rl/exploration.py",
+    "atc_rl/maneuvers.py",
+    "atc_rl/pretrained.py",
+    "atc_rl/rollout_diagnostics.py",
+    "atc_rl/train.py",
+    "atc_rl/world_pool.py",
+    "atc_rl/world_worker.py"
+  ],
+  "new_files": [
+    "tests/rl/test_categorical_training.py"
+  ],
+  "fixed_environment_and_benchmark_files_unchanged": 65,
+  "frozen_optional_navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "cache_scope": "Static simulator navigation data copied before this new snapshot is used; no active snapshot was altered."
+}

@@ -1,0 +1,38 @@
+{
+  "matched_training_settings": {
+    "seed": 2900,
+    "env": "ma",
+    "algorithm": "sac",
+    "workers": 1,
+    "steps": 25000,
+    "guard_static": true,
+    "guard_traffic": true,
+    "actual_gamma": 0.996508469331006,
+    "actual_net_arch": [
+      64,
+      64
+    ],
+    "actual_learning_rate": 0.0003,
+    "actual_tau": 0.005,
+    "actual_gradient_steps": 4,
+    "actual_batch_size": 256,
+    "actual_buffer_size": 100000,
+    "actual_learning_starts": 5000,
+    "actual_critic_warmup_updates": 0,
+    "route_residual_speed_reference": 1.0,
+    "route_residual_speed_scale": 2.0
+  },
+  "recipe_parameter_differences": {
+    "reach_reward": [
+      37.41716380974046,
+      250.0
+    ]
+  },
+  "all_initial_actor_critic_target_tensors_identical": true,
+  "identical_policy_state_entries": 32,
+  "initial_model_sha256": {
+    "sac-ma-fast-reference-v1-25k-seed2900": "6e63a0c6e0088110311fabf1973e3de2a0195251233770ccc49b1189727c5d06",
+    "sac-ma-fast-reference-reach250-v1-25k-seed2900": "d5488c4fc7e904d5d3e861ae0b5d2b2fedf424ebd45cdef775e75d2116fabfa1"
+  },
+  "scope": "Fresh same-seed, same-budget reward ablation; no performance claim before evaluation"
+}

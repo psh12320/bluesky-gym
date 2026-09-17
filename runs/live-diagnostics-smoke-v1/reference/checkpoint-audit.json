@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\live-diagnostics-smoke-v1\\reference",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 2270,
+  "padded_transitions": 290,
+  "optimizer_steps": 5,
+  "verified_checkpoints": 2,
+  "verified_source_files": 89,
+  "learning_curve_rows": 1,
+  "aircraft_completed": 10,
+  "actor_parameter_count": 32900,
+  "critic_parameter_count": 98305,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "864dda25f9db639e91342a74bcb40afb30e3ff6b8c6b266af56fdbc2289b41e9",
+  "policy_quality_assessed": false
+}

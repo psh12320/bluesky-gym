@@ -1,0 +1,56 @@
+{
+  "env": "sa",
+  "seed": 2026,
+  "episodes": 2,
+  "agent_episodes": 2,
+  "official_protocol": false,
+  "model_sha256": "70c826f504f0e16b488dfbd46486234b1ff33c45ae592bb1013ece1fd829ea67",
+  "reference": "runs\\route-residual-v1-zero-sa-20",
+  "matches_reference": true,
+  "max_absolute_metric_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "aggregate_metric_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "actual_records": [
+    {
+      "waypoint_reached": 1.0,
+      "flight_time": 2779.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 37.11626038171295
+    },
+    {
+      "waypoint_reached": 1.0,
+      "flight_time": 1935.0,
+      "intrusion_events": 1.0,
+      "intrusion_time": 26.0,
+      "restricted_area_events": 1.0,
+      "time_in_restricted_area": 2.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 11.62652488366533
+    }
+  ]
+}

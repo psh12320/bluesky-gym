@@ -1,0 +1,253 @@
+{
+  "episode": 12,
+  "seed": 2026,
+  "matches_reference": true,
+  "sampling_seconds": 10,
+  "minimum_sampled_pair_separation_nm": 4.654007133108932,
+  "time_of_sampled_minimum": 590.0,
+  "official_intrusion_seconds_per_aircraft": 22,
+  "interpretation": "The conflict was predicted before the violation. Candidate commands repeatedly failed joint feasibility; later replanning also changed a temporarily feasible forecast. This trace does not prove physical unavoidability or a general prediction guarantee.",
+  "comparison_scope": "Current selected scenario only; all nine final aircraft metrics match the saved full-prefix evaluation exactly.",
+  "selected_commands": [
+    {
+      "time": 490.0,
+      "agent": "KL003",
+      "nearest_nm": 16.844926883767023,
+      "chosen_turn_deg": -10.000000000000004,
+      "chosen_speed_action": 0.4097020626068115,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": false,
+      "predicted_minimum_separation_km": 10.746148353448643
+    },
+    {
+      "time": 490.0,
+      "agent": "KL005",
+      "nearest_nm": 16.844926883767023,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 0.0,
+      "nominal_traffic_conflict": false,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.542538613681307
+    },
+    {
+      "time": 500.0,
+      "agent": "KL003",
+      "nearest_nm": 15.345060715874316,
+      "chosen_turn_deg": -5.000000000000002,
+      "chosen_speed_action": 0.3888123035430908,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": false,
+      "predicted_minimum_separation_km": 10.381929146074532
+    },
+    {
+      "time": 500.0,
+      "agent": "KL005",
+      "nearest_nm": 15.345060715874316,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.402375662818397
+    },
+    {
+      "time": 510.0,
+      "agent": "KL003",
+      "nearest_nm": 13.787616802734993,
+      "chosen_turn_deg": -5.000000000000002,
+      "chosen_speed_action": 0.3691365718841553,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": false,
+      "predicted_minimum_separation_km": 10.373399810925395
+    },
+    {
+      "time": 510.0,
+      "agent": "KL005",
+      "nearest_nm": 13.787616802734993,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.41349740548971
+    },
+    {
+      "time": 520.0,
+      "agent": "KL003",
+      "nearest_nm": 12.210910941557332,
+      "chosen_turn_deg": -10.000000000000004,
+      "chosen_speed_action": 0.4307870864868164,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": false,
+      "predicted_minimum_separation_km": 11.017439209345714
+    },
+    {
+      "time": 520.0,
+      "agent": "KL005",
+      "nearest_nm": 12.210910941557332,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": -1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": false,
+      "predicted_minimum_separation_km": 10.981388755353336
+    },
+    {
+      "time": 530.0,
+      "agent": "KL003",
+      "nearest_nm": 10.718885149028207,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 0.44668853282928467,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": false,
+      "predicted_minimum_separation_km": 10.35225394614062
+    },
+    {
+      "time": 530.0,
+      "agent": "KL005",
+      "nearest_nm": 10.718885149028207,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.702963647247756
+    },
+    {
+      "time": 540.0,
+      "agent": "KL003",
+      "nearest_nm": 9.237300377189992,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": -1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.699783522830815
+    },
+    {
+      "time": 540.0,
+      "agent": "KL005",
+      "nearest_nm": 9.237300377189992,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": -1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.674448175249076
+    },
+    {
+      "time": 550.0,
+      "agent": "KL003",
+      "nearest_nm": 7.879048471220495,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": -1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.276406736114147
+    },
+    {
+      "time": 550.0,
+      "agent": "KL005",
+      "nearest_nm": 7.879048471220495,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.842268636750216
+    },
+    {
+      "time": 560.0,
+      "agent": "KL003",
+      "nearest_nm": 6.599063211159819,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.791677734991023
+    },
+    {
+      "time": 560.0,
+      "agent": "KL005",
+      "nearest_nm": 6.599063211159819,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 0.27661657333374023,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.791686410996533
+    },
+    {
+      "time": 570.0,
+      "agent": "KL003",
+      "nearest_nm": 5.538130247459478,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.78553903319141
+    },
+    {
+      "time": 570.0,
+      "agent": "KL005",
+      "nearest_nm": 5.538130247459478,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 0.2740974426269531,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.589333677961005
+    },
+    {
+      "time": 580.0,
+      "agent": "KL003",
+      "nearest_nm": 4.804598115672072,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 0.21163725852966309,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.567706477106228
+    },
+    {
+      "time": 580.0,
+      "agent": "KL005",
+      "nearest_nm": 4.804598115672072,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 0.27169668674468994,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.567706477106228
+    },
+    {
+      "time": 590.0,
+      "agent": "KL003",
+      "nearest_nm": 4.654007133108932,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 0.45436930656433105,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.610123138873407
+    },
+    {
+      "time": 590.0,
+      "agent": "KL005",
+      "nearest_nm": 4.654007133108932,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": -1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 8.610123138873407
+    },
+    {
+      "time": 600.0,
+      "agent": "KL003",
+      "nearest_nm": 5.139465896065835,
+      "chosen_turn_deg": 0.0,
+      "chosen_speed_action": 0.4575798511505127,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.45799048912491
+    },
+    {
+      "time": 600.0,
+      "agent": "KL005",
+      "nearest_nm": 5.139465896065835,
+      "chosen_turn_deg": 5.000000000000002,
+      "chosen_speed_action": 1.0,
+      "nominal_traffic_conflict": true,
+      "no_jointly_feasible_candidate": true,
+      "predicted_minimum_separation_km": 9.45799048912491
+    }
+  ]
+}

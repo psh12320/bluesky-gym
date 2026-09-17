@@ -1,0 +1,64 @@
+{
+  "declared_at_utc": "2026-09-15T16:51:14.661296+00:00",
+  "hypothesis": "Charging for required command corrections may improve the policy beyond the identical planner/filter baseline.",
+  "prior_work": "https://arxiv.org/html/2509.12833v2",
+  "novelty_scope": "Attributed action-adjustment reward experiment with an ATC-specific normalization; no claim of a new general algorithm or formal safety guarantee.",
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "extension_sha256": "82335cb0a4861d8ac64e08bf3d8c8d273727d71a32e4cd72dfc5eb1b26201dc3",
+  "unit_test_source_sha256": "4cd4b154c59d90e2a4fad566dfca58f819083f46a2aecd75b3044c9aa51434a9",
+  "unit_test_xml_sha256": "3436d19b81188ea305205ac2da7e59a68f75e67c7824beb2ae6572a85e42434e",
+  "validation": {
+    "episodes": 2,
+    "seed": 2026,
+    "policy": "frozen primary MA model",
+    "coefficients": [
+      0.0,
+      1.0
+    ],
+    "required": "Equal scenario specifications, decision-boundary observations/actions/traffic states and all nine scored metrics; nonzero feedback; original scoring info retained."
+  },
+  "training": {
+    "env": "ma",
+    "algorithm": "sac",
+    "recipe": "public_route_choice_fast_residual",
+    "seed": 2910,
+    "steps": 25000,
+    "workers": 1,
+    "learning_starts": 5000,
+    "gradient_steps": 4,
+    "batch_size": 256,
+    "buffer_size": 100000,
+    "checkpoint": "25000-step callback with 7996 optimizer updates",
+    "heading_transport": "plain_decimal",
+    "coefficients": [
+      0.0,
+      1.0
+    ],
+    "penalty": "coefficient * 0.5 * ((executed_heading - nominal_heading)^2 / 90^2 + (executed_speed - nominal_speed)^2 / 2^2)",
+    "penalty_applied": "Once per live-aircraft decision, including terminal transitions; zero if the filter does not intervene.",
+    "reward_storage": "Returned training reward changes; original total_reward and eight physical scoring metrics remain original."
+  },
+  "evaluation": {
+    "env": "ma",
+    "episodes": 20,
+    "seed": 2026,
+    "decision_interval_seconds": 5,
+    "training_penalty_enabled": false,
+    "comparators": [
+      "same-seed unshaped SAC",
+      "frozen primary SAC",
+      "matching classical route/filter"
+    ]
+  },
+  "stage_order": [
+    "validate_0",
+    "validate_1",
+    "train_0",
+    "evaluate_0",
+    "train_1",
+    "evaluate_1"
+  ],
+  "screen_gate": "Expand to 200 development worlds only if arrival is no lower than both same-seed control and classical, clean completion improves by at least 2 percentage points over both, intrusion/restricted/outside means do not increase over either, and mean flight increases by no more than 5% over either. This is a screening rule, not statistical proof or automatic deployment promotion.",
+  "selection_scope": "Development stream 2026 only. No further use of 2027 or official 42 outcomes for tuning. Fixed primary deployments remain unchanged.",
+  "retention": "Keep every arm, failed attempt, complete record and adverse outcome. No hyperparameter search in this initial experiment."
+}

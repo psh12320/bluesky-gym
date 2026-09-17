@@ -1,0 +1,7 @@
+{
+  "completed_aircraft": 161,
+  "learning_return_equals_native_times_scale": true,
+  "reward_scale": 0.01,
+  "potential_shaping": 0,
+  "maximum_numeric_discrepancy": 1.1368683772161603e-13
+}

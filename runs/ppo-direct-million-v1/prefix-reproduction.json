@@ -1,0 +1,14 @@
+[
+  {
+    "short": "initial-model.zip",
+    "long": "initial-model.zip",
+    "all_policy_tensors_identical": true,
+    "tensor_count": 13
+  },
+  {
+    "short": "model.zip",
+    "long": "policy-live-101244.zip",
+    "all_policy_tensors_identical": true,
+    "tensor_count": 13
+  }
+]

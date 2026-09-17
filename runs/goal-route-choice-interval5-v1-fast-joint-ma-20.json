@@ -1,0 +1,102 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 943.675,
+      "std": 284.2589301587551
+    },
+    "intrusion_events": {
+      "mean": 0.03,
+      "std": 0.1705872210923198
+    },
+    "intrusion_time": {
+      "mean": 1.36,
+      "std": 8.70691679069003
+    },
+    "restricted_area_events": {
+      "mean": 0.005,
+      "std": 0.07053367989832945
+    },
+    "time_in_restricted_area": {
+      "mean": 0.03,
+      "std": 0.42320207938997656
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 36.04308984509601,
+      "std": 8.241957421455904
+    }
+  },
+  "clean_completion_rate": 0.965,
+  "all_aircraft_clean_completion_rate": 0.8,
+  "wall_seconds": 585.5411210000166,
+  "world_decisions": 5832,
+  "seed": 2026,
+  "env": "ma",
+  "route_input_statistics": {
+    "observations": 38020,
+    "redirected_observations": 15296,
+    "route_replans": 76,
+    "failed_replans": 1,
+    "route_choices": 276,
+    "shorter_route_choices": 26,
+    "lower_clearance_fallbacks": 10,
+    "geometric_detour_avoided_km": 2684.2498961038445,
+    "unroutable_initializations": 0
+  },
+  "traffic_projection_statistics": {
+    "actions": 37820,
+    "interventions": 5063,
+    "speed_interventions": 285,
+    "nominal_static_violation": 325,
+    "nominal_traffic_conflict": 4752,
+    "no_static_feasible_candidate": 22,
+    "no_jointly_feasible_candidate": 385
+  },
+  "policy": "goal",
+  "recipe": "public_route_choice_interval5",
+  "guard_static": true,
+  "guard_traffic": true,
+  "official_protocol": false,
+  "model_sha256": null,
+  "inference_mode": "goal",
+  "goal_speed_action": 1.0,
+  "decision_interval_seconds": 5,
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0,
+  "route_input_revision": 1,
+  "route_input_planner_revision": 2,
+  "route_input_clearances_km": [
+    6.0,
+    3.0,
+    2.0,
+    1.0,
+    0.0
+  ],
+  "route_input_sector_clearance_km": 6.0,
+  "route_input_distance": "original_goal",
+  "route_input_direct_bearing": "original_observation",
+  "route_choice_revision": 1,
+  "route_choice_min_preferred_clearance_km": 2.0,
+  "route_choice_max_detour_ratio": 1.15,
+  "route_choice_fallback": "lower_clearance_only_if_no_preferred_path",
+  "traffic_projection_revision": 1,
+  "traffic_projection_horizon_seconds": 90.0,
+  "traffic_projection_sample_seconds": 5.0,
+  "traffic_projection_margin_km": 1.0,
+  "traffic_projection_turn_rate": 1.5,
+  "traffic_projection_acceleration": 1.0
+}

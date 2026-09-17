@@ -1,0 +1,23 @@
+{
+  "purpose": "Test additional learning with the current faster navigation reference",
+  "source_model_sha256": "b4938dd90360f9a67a550714524e545ca115269719e0e17ccb4a416c7cdf8646",
+  "source_replay_sha256": "50fcfc2bf62ed85c5b4a9c78197ac17f00a227c7ba6bf749f4b0025c4dee8c7f",
+  "source_timesteps": 25000,
+  "source_critic_updates": 8000,
+  "continuation_seed": 3906,
+  "requested_new_transitions": 75000,
+  "planned_total_transitions": 100000,
+  "max_wall_seconds": 2700,
+  "planned_evaluation_checkpoint": "checkpoints/model_100000_steps.zip",
+  "planned_evaluation_episodes": 20,
+  "evaluation_seed": 2026,
+  "comparison_references": [
+    "runs/sac-ma-fast-reference-v1-25k-seed2900/validation-20",
+    "runs/goal-route-choice-v1-fast-joint-ma-20"
+  ],
+  "checkpoint_rule": "Evaluate the planned 100k callback; if wall-limited before it exists, report the actual count before choosing further evaluation.",
+  "replay": "Reuse original replay; start updates immediately after the first new batch.",
+  "decision_interval_seconds": 10,
+  "additional_actor_hold_updates": 0,
+  "caveats": "Continuation with fresh scenario RNG is not independent retraining. Source is the 25k final model with 8000 updates; the existing 25k evaluation uses its callback with 7996 updates."
+}

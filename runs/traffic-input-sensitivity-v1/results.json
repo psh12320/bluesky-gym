@@ -1,0 +1,511 @@
+{
+  "protocol_sha256": "2c51203055e2d6f4d00f93e538fbf33836b2e086c6c38bcd737594851797d195",
+  "reference_states": 371,
+  "input_scale": {
+    "position": {
+      "present_slots": 2866,
+      "absolute_component_p50_p90_p99": [
+        0.0620978269726038,
+        0.15589612871408465,
+        0.21100794523954383
+      ],
+      "vector_norm_p10_p50_p90": [
+        0.03265901282429695,
+        0.12393501400947571,
+        0.19454073160886765
+      ]
+    },
+    "velocity": {
+      "present_slots": 2866,
+      "absolute_component_p50_p90_p99": [
+        0.8364418148994446,
+        1.9337295174598694,
+        2.027590193748474
+      ],
+      "vector_norm_p10_p50_p90": [
+        0.524966835975647,
+        1.5782840251922607,
+        2.0218825340270996
+      ]
+    },
+    "separation_threshold_normalized": 0.00926
+  },
+  "models": {
+    "cpa_50400_features": {
+      "model_sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c",
+      "live_transitions": 100555,
+      "heading_mean_degrees": -7.225213050842285,
+      "heading_std_across_reference_states_degrees": 5.032212734222412,
+      "groups": {
+        "relative_position": {
+          "heading_degrees_rms": 0.1829608976840973,
+          "speed_normalized_rms": 0.001944387098774314,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.08571258187294006,
+          "fraction_of_squared_standardized_heading_gradient": 0.0011657118875220134
+        },
+        "relative_velocity": {
+          "heading_degrees_rms": 2.054176092147827,
+          "speed_normalized_rms": 0.01732248067855835,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.7076836824417114,
+          "fraction_of_squared_standardized_heading_gradient": 0.14694337178744943
+        },
+        "relative_track": {
+          "heading_degrees_rms": 1.6468523740768433,
+          "speed_normalized_rms": 0.015901772305369377,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.5028082728385925,
+          "fraction_of_squared_standardized_heading_gradient": 0.09444609384242264
+        },
+        "traffic_distance": {
+          "heading_degrees_rms": 0.24632979929447174,
+          "speed_normalized_rms": 0.0019416249124333262,
+          "number_of_inputs": 9,
+          "input_std_rms": 0.13386857509613037,
+          "fraction_of_squared_standardized_heading_gradient": 0.0021130441260654993
+        },
+        "predictive_conflict": {
+          "heading_degrees_rms": 3.9258689880371094,
+          "speed_normalized_rms": 0.02788599207997322,
+          "number_of_inputs": 45,
+          "input_std_rms": 0.7282384037971497,
+          "fraction_of_squared_standardized_heading_gradient": 0.5367181295132571
+        },
+        "navigation": {
+          "heading_degrees_rms": 0.11215775460004807,
+          "speed_normalized_rms": 0.0015648907283321023,
+          "number_of_inputs": 3,
+          "input_std_rms": 0.16333287954330444,
+          "fraction_of_squared_standardized_heading_gradient": 0.00043805967100383846
+        },
+        "obstacles": {
+          "heading_degrees_rms": 1.3502416610717773,
+          "speed_normalized_rms": 0.019622765481472015,
+          "number_of_inputs": 20,
+          "input_std_rms": 0.5678181648254395,
+          "fraction_of_squared_standardized_heading_gradient": 0.06348888032473261
+        },
+        "sector": {
+          "heading_degrees_rms": 2.106884241104126,
+          "speed_normalized_rms": 0.014259048737585545,
+          "number_of_inputs": 37,
+          "input_std_rms": 0.5999875664710999,
+          "fraction_of_squared_standardized_heading_gradient": 0.15458096349273165
+        },
+        "airspeed": {
+          "heading_degrees_rms": 0.0007722340524196625,
+          "speed_normalized_rms": 8.208561666833702e-06,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.0014783140504732728,
+          "fraction_of_squared_standardized_heading_gradient": 2.0766942341558447e-08
+        },
+        "time": {
+          "heading_degrees_rms": 0.05509988218545914,
+          "speed_normalized_rms": 0.000306747475406155,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.10205741971731186,
+          "fraction_of_squared_standardized_heading_gradient": 0.00010572458787287505
+        }
+      }
+    },
+    "cpa_50400_zeros": {
+      "model_sha256": "9d38e5f15de2c660cddaa683faf0fb30052a85117994b9d5391ea297d9d2f85c",
+      "live_transitions": 100756,
+      "heading_mean_degrees": 1.6680306196212769,
+      "heading_std_across_reference_states_degrees": 4.570634841918945,
+      "groups": {
+        "relative_position": {
+          "heading_degrees_rms": 0.24551615118980408,
+          "speed_normalized_rms": 0.0022275964729487896,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.08571258187294006,
+          "fraction_of_squared_standardized_heading_gradient": 0.002895385382698282
+        },
+        "relative_velocity": {
+          "heading_degrees_rms": 2.145051956176758,
+          "speed_normalized_rms": 0.02342677116394043,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.7076836824417114,
+          "fraction_of_squared_standardized_heading_gradient": 0.2210150636111527
+        },
+        "relative_track": {
+          "heading_degrees_rms": 2.2315611839294434,
+          "speed_normalized_rms": 0.018238607794046402,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.5028082728385925,
+          "fraction_of_squared_standardized_heading_gradient": 0.23920146776208145
+        },
+        "traffic_distance": {
+          "heading_degrees_rms": 0.16693200170993805,
+          "speed_normalized_rms": 0.00247460906393826,
+          "number_of_inputs": 9,
+          "input_std_rms": 0.13386857509613037,
+          "fraction_of_squared_standardized_heading_gradient": 0.0013385217888764755
+        },
+        "predictive_conflict": {
+          "heading_degrees_rms": 0.0,
+          "speed_normalized_rms": 0.0,
+          "number_of_inputs": 45,
+          "input_std_rms": 0.0,
+          "fraction_of_squared_standardized_heading_gradient": 0.0
+        },
+        "navigation": {
+          "heading_degrees_rms": 0.4724336862564087,
+          "speed_normalized_rms": 0.0027900999411940575,
+          "number_of_inputs": 3,
+          "input_std_rms": 0.16333287954330444,
+          "fraction_of_squared_standardized_heading_gradient": 0.010720818820984331
+        },
+        "obstacles": {
+          "heading_degrees_rms": 2.414658546447754,
+          "speed_normalized_rms": 0.014168730936944485,
+          "number_of_inputs": 20,
+          "input_std_rms": 0.5678181648254395,
+          "fraction_of_squared_standardized_heading_gradient": 0.28006426343912055
+        },
+        "sector": {
+          "heading_degrees_rms": 2.2571191787719727,
+          "speed_normalized_rms": 0.02193484455347061,
+          "number_of_inputs": 37,
+          "input_std_rms": 0.5999875664710999,
+          "fraction_of_squared_standardized_heading_gradient": 0.24471197657959803
+        },
+        "airspeed": {
+          "heading_degrees_rms": 0.001426805043593049,
+          "speed_normalized_rms": 2.622845750011038e-05,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.0014783140504732728,
+          "fraction_of_squared_standardized_heading_gradient": 9.778573729339867e-08
+        },
+        "time": {
+          "heading_degrees_rms": 0.033030301332473755,
+          "speed_normalized_rms": 0.0002603040775284171,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.10205741971731186,
+          "fraction_of_squared_standardized_heading_gradient": 5.240482975085362e-05
+        }
+      }
+    },
+    "cpa_50500_features": {
+      "model_sha256": "c0d189d6433fca44f4419f2279e4c8c4648d6a476b89cf7e8696340491631916",
+      "live_transitions": 101525,
+      "heading_mean_degrees": 0.0002293107972946018,
+      "heading_std_across_reference_states_degrees": 4.443680286407471,
+      "groups": {
+        "relative_position": {
+          "heading_degrees_rms": 0.1303934007883072,
+          "speed_normalized_rms": 0.0015200483612716198,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.08571258187294006,
+          "fraction_of_squared_standardized_heading_gradient": 0.00099315129175097
+        },
+        "relative_velocity": {
+          "heading_degrees_rms": 1.5991519689559937,
+          "speed_normalized_rms": 0.01663292944431305,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.7076836824417114,
+          "fraction_of_squared_standardized_heading_gradient": 0.14937697536911254
+        },
+        "relative_track": {
+          "heading_degrees_rms": 0.9657119512557983,
+          "speed_normalized_rms": 0.01620962843298912,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.5028082728385925,
+          "fraction_of_squared_standardized_heading_gradient": 0.05447527099448008
+        },
+        "traffic_distance": {
+          "heading_degrees_rms": 0.18895874917507172,
+          "speed_normalized_rms": 0.0018068309873342514,
+          "number_of_inputs": 9,
+          "input_std_rms": 0.13386857509613037,
+          "fraction_of_squared_standardized_heading_gradient": 0.002085634480192607
+        },
+        "predictive_conflict": {
+          "heading_degrees_rms": 2.871994972229004,
+          "speed_normalized_rms": 0.031169839203357697,
+          "number_of_inputs": 45,
+          "input_std_rms": 0.7282384037971497,
+          "fraction_of_squared_standardized_heading_gradient": 0.48180526085830266
+        },
+        "navigation": {
+          "heading_degrees_rms": 0.09633154422044754,
+          "speed_normalized_rms": 0.0012342946138232946,
+          "number_of_inputs": 3,
+          "input_std_rms": 0.16333287954330444,
+          "fraction_of_squared_standardized_heading_gradient": 0.0005420523500098717
+        },
+        "obstacles": {
+          "heading_degrees_rms": 1.2139403820037842,
+          "speed_normalized_rms": 0.015776123851537704,
+          "number_of_inputs": 20,
+          "input_std_rms": 0.5678181648254395,
+          "fraction_of_squared_standardized_heading_gradient": 0.08607933521988038
+        },
+        "sector": {
+          "heading_degrees_rms": 1.9609180688858032,
+          "speed_normalized_rms": 0.019580082967877388,
+          "number_of_inputs": 37,
+          "input_std_rms": 0.5999875664710999,
+          "fraction_of_squared_standardized_heading_gradient": 0.22460689487521948
+        },
+        "airspeed": {
+          "heading_degrees_rms": 0.0005388979916460812,
+          "speed_normalized_rms": 1.2392863027343992e-05,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.0014783140504732728,
+          "fraction_of_squared_standardized_heading_gradient": 1.6963572426369663e-08
+        },
+        "time": {
+          "heading_degrees_rms": 0.024620458483695984,
+          "speed_normalized_rms": 0.00023428299755323678,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.10205741971731186,
+          "fraction_of_squared_standardized_heading_gradient": 3.5407597478903566e-05
+        }
+      }
+    },
+    "cpa_50500_zeros": {
+      "model_sha256": "baa23019d5e5e9acc86c5e3788710d65fc3adb6b244eeb28ea0e2292c55b3a44",
+      "live_transitions": 100405,
+      "heading_mean_degrees": 3.134894847869873,
+      "heading_std_across_reference_states_degrees": 5.302963733673096,
+      "groups": {
+        "relative_position": {
+          "heading_degrees_rms": 0.26740291714668274,
+          "speed_normalized_rms": 0.0033755148760974407,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.08571258187294006,
+          "fraction_of_squared_standardized_heading_gradient": 0.003583206979598082
+        },
+        "relative_velocity": {
+          "heading_degrees_rms": 2.644484758377075,
+          "speed_normalized_rms": 0.030420949682593346,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.7076836824417114,
+          "fraction_of_squared_standardized_heading_gradient": 0.35044651898255885
+        },
+        "relative_track": {
+          "heading_degrees_rms": 1.767686367034912,
+          "speed_normalized_rms": 0.01423312071710825,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.5028082728385925,
+          "fraction_of_squared_standardized_heading_gradient": 0.15658495755498494
+        },
+        "traffic_distance": {
+          "heading_degrees_rms": 0.36254531145095825,
+          "speed_normalized_rms": 0.0021086016204208136,
+          "number_of_inputs": 9,
+          "input_std_rms": 0.13386857509613037,
+          "fraction_of_squared_standardized_heading_gradient": 0.006586644136931226
+        },
+        "predictive_conflict": {
+          "heading_degrees_rms": 0.0,
+          "speed_normalized_rms": 0.0,
+          "number_of_inputs": 45,
+          "input_std_rms": 0.0,
+          "fraction_of_squared_standardized_heading_gradient": 0.0
+        },
+        "navigation": {
+          "heading_degrees_rms": 0.34607136249542236,
+          "speed_normalized_rms": 0.0012665927642956376,
+          "number_of_inputs": 3,
+          "input_std_rms": 0.16333287954330444,
+          "fraction_of_squared_standardized_heading_gradient": 0.0060016537936081246
+        },
+        "obstacles": {
+          "heading_degrees_rms": 2.128190755844116,
+          "speed_normalized_rms": 0.018970290198922157,
+          "number_of_inputs": 20,
+          "input_std_rms": 0.5678181648254395,
+          "fraction_of_squared_standardized_heading_gradient": 0.2269659555440661
+        },
+        "sector": {
+          "heading_degrees_rms": 2.2325193881988525,
+          "speed_normalized_rms": 0.024977808818221092,
+          "number_of_inputs": 37,
+          "input_std_rms": 0.5999875664710999,
+          "fraction_of_squared_standardized_heading_gradient": 0.2497641444685538
+        },
+        "airspeed": {
+          "heading_degrees_rms": 0.0030237624887377024,
+          "speed_normalized_rms": 4.783820713782916e-06,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.0014783140504732728,
+          "fraction_of_squared_standardized_heading_gradient": 4.581787721786604e-07
+        },
+        "time": {
+          "heading_degrees_rms": 0.03641761839389801,
+          "speed_normalized_rms": 0.0008987966575659811,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.10205741971731186,
+          "fraction_of_squared_standardized_heading_gradient": 6.646036092669814e-05
+        }
+      }
+    },
+    "static_std005": {
+      "model_sha256": "e2736c6f8d482e3d0dfca676bef28063b969d1c4b6a5bebfeae1fe09a1355ac2",
+      "live_transitions": 101257,
+      "heading_mean_degrees": 2.908906936645508,
+      "heading_std_across_reference_states_degrees": 3.4898922443389893,
+      "groups": {
+        "relative_position": {
+          "heading_degrees_rms": 0.1459006816148758,
+          "speed_normalized_rms": 0.0012780781835317612,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.08571258187294006,
+          "fraction_of_squared_standardized_heading_gradient": 0.0013393473426857637
+        },
+        "relative_velocity": {
+          "heading_degrees_rms": 1.717011570930481,
+          "speed_normalized_rms": 0.017595719546079636,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.7076836824417114,
+          "fraction_of_squared_standardized_heading_gradient": 0.18549193106827636
+        },
+        "relative_track": {
+          "heading_degrees_rms": 1.365797996520996,
+          "speed_normalized_rms": 0.008904296904802322,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.5028082728385925,
+          "fraction_of_squared_standardized_heading_gradient": 0.11736849111833815
+        },
+        "traffic_distance": {
+          "heading_degrees_rms": 0.1622541844844818,
+          "speed_normalized_rms": 0.001379120978526771,
+          "number_of_inputs": 9,
+          "input_std_rms": 0.13386857509613037,
+          "fraction_of_squared_standardized_heading_gradient": 0.001656419713770915
+        },
+        "predictive_conflict": {
+          "heading_degrees_rms": 2.37485671043396,
+          "speed_normalized_rms": 0.025723077356815338,
+          "number_of_inputs": 45,
+          "input_std_rms": 0.7282384037971497,
+          "fraction_of_squared_standardized_heading_gradient": 0.3548570198603449
+        },
+        "navigation": {
+          "heading_degrees_rms": 0.20071956515312195,
+          "speed_normalized_rms": 0.0027565439231693745,
+          "number_of_inputs": 3,
+          "input_std_rms": 0.16333287954330444,
+          "fraction_of_squared_standardized_heading_gradient": 0.0025348834362492697
+        },
+        "obstacles": {
+          "heading_degrees_rms": 1.720812439918518,
+          "speed_normalized_rms": 0.0109647111967206,
+          "number_of_inputs": 20,
+          "input_std_rms": 0.5678181648254395,
+          "fraction_of_squared_standardized_heading_gradient": 0.18631406982026966
+        },
+        "sector": {
+          "heading_degrees_rms": 1.5460889339447021,
+          "speed_normalized_rms": 0.015576458536088467,
+          "number_of_inputs": 37,
+          "input_std_rms": 0.5999875664710999,
+          "fraction_of_squared_standardized_heading_gradient": 0.15039989123681544
+        },
+        "airspeed": {
+          "heading_degrees_rms": 0.0005076918168924749,
+          "speed_normalized_rms": 3.3440812785556773e-06,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.0014783140504732728,
+          "fraction_of_squared_standardized_heading_gradient": 1.6217313249023464e-08
+        },
+        "time": {
+          "heading_degrees_rms": 0.024552922695875168,
+          "speed_normalized_rms": 0.00038752600084990263,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.10205741971731186,
+          "fraction_of_squared_standardized_heading_gradient": 3.793018593621507e-05
+        }
+      }
+    },
+    "static_std020": {
+      "model_sha256": "09d4ab2242ae29bb73ea6863d5c3596be736d78a11906b849541abf7e6ada930",
+      "live_transitions": 100557,
+      "heading_mean_degrees": -9.90723991394043,
+      "heading_std_across_reference_states_degrees": 15.432687759399414,
+      "groups": {
+        "relative_position": {
+          "heading_degrees_rms": 0.5554476976394653,
+          "speed_normalized_rms": 0.004713411442935467,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.08571258187294006,
+          "fraction_of_squared_standardized_heading_gradient": 0.001284284708572731
+        },
+        "relative_velocity": {
+          "heading_degrees_rms": 5.9118876457214355,
+          "speed_normalized_rms": 0.09116289764642715,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.7076836824417114,
+          "fraction_of_squared_standardized_heading_gradient": 0.14548804675880228
+        },
+        "relative_track": {
+          "heading_degrees_rms": 7.238255023956299,
+          "speed_normalized_rms": 0.04804665595293045,
+          "number_of_inputs": 18,
+          "input_std_rms": 0.5028082728385925,
+          "fraction_of_squared_standardized_heading_gradient": 0.2180935042592825
+        },
+        "traffic_distance": {
+          "heading_degrees_rms": 0.5993103981018066,
+          "speed_normalized_rms": 0.005312759429216385,
+          "number_of_inputs": 9,
+          "input_std_rms": 0.13386857509613037,
+          "fraction_of_squared_standardized_heading_gradient": 0.001495128759398996
+        },
+        "predictive_conflict": {
+          "heading_degrees_rms": 10.340873718261719,
+          "speed_normalized_rms": 0.08732838928699493,
+          "number_of_inputs": 45,
+          "input_std_rms": 0.7282384037971497,
+          "fraction_of_squared_standardized_heading_gradient": 0.44513263818269067
+        },
+        "navigation": {
+          "heading_degrees_rms": 0.4892190098762512,
+          "speed_normalized_rms": 0.004097907803952694,
+          "number_of_inputs": 3,
+          "input_std_rms": 0.16333287954330444,
+          "fraction_of_squared_standardized_heading_gradient": 0.0009962804733462483
+        },
+        "obstacles": {
+          "heading_degrees_rms": 4.115227699279785,
+          "speed_normalized_rms": 0.04642185568809509,
+          "number_of_inputs": 20,
+          "input_std_rms": 0.5678181648254395,
+          "fraction_of_squared_standardized_heading_gradient": 0.07049571342367929
+        },
+        "sector": {
+          "heading_degrees_rms": 5.3004984855651855,
+          "speed_normalized_rms": 0.05239418148994446,
+          "number_of_inputs": 37,
+          "input_std_rms": 0.5999875664710999,
+          "fraction_of_squared_standardized_heading_gradient": 0.1169522009421095
+        },
+        "airspeed": {
+          "heading_degrees_rms": 0.0035154216457158327,
+          "speed_normalized_rms": 1.889194936666172e-05,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.0014783140504732728,
+          "fraction_of_squared_standardized_heading_gradient": 5.144341782608289e-08
+        },
+        "time": {
+          "heading_degrees_rms": 0.12219030410051346,
+          "speed_normalized_rms": 0.0008985114982351661,
+          "number_of_inputs": 1,
+          "input_std_rms": 0.10205741971731186,
+          "fraction_of_squared_standardized_heading_gradient": 6.215104869997462e-05
+        }
+      }
+    }
+  },
+  "performance_evidence": false,
+  "limitations": [
+    "One reused development world under an untrained reference trajectory, not each learned policy's state distribution.",
+    "Partial derivatives hold other observations fixed; they are not physically consistent interventions or causal importance scores.",
+    "Gradient magnitudes depend on the chosen state distribution and model; small sensitivity does not prove an input is useless or improperly scaled.",
+    "No simulator commands, training, model selection or performance comparison are performed.",
+    "All completed models from the two completed CPA seed pairs and both width arms are included; incomplete CPA seed 50600 is excluded until complete."
+  ]
+}

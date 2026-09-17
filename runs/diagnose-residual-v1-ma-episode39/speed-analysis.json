@@ -1,0 +1,35 @@
+{
+  "scope": "Descriptive ten-second trajectory summaries; not a causal ablation",
+  "agents": {
+    "KL004": {
+      "minimum_cas_mps": 75.00322884761266,
+      "sampled_seconds_below_120_mps": 1510,
+      "proposed_deceleration_decisions": 123,
+      "executed_deceleration_decisions": 122,
+      "executed_decelerations_with_nonnegative_proposal": 0,
+      "minimum_goal_distance_km": 95.09824880234576,
+      "no_joint_feasible_decisions": 1,
+      "reference_matches": true
+    },
+    "KL007": {
+      "minimum_cas_mps": 66.99999999999949,
+      "sampled_seconds_below_120_mps": 1720,
+      "proposed_deceleration_decisions": 117,
+      "executed_deceleration_decisions": 117,
+      "executed_decelerations_with_nonnegative_proposal": 0,
+      "minimum_goal_distance_km": 84.73330709719188,
+      "no_joint_feasible_decisions": 0,
+      "reference_matches": true
+    },
+    "KL008": {
+      "minimum_cas_mps": 95.13099720342503,
+      "sampled_seconds_below_120_mps": 1780,
+      "proposed_deceleration_decisions": 103,
+      "executed_deceleration_decisions": 103,
+      "executed_decelerations_with_nonnegative_proposal": 0,
+      "minimum_goal_distance_km": 41.6603424593116,
+      "no_joint_feasible_decisions": 0,
+      "reference_matches": true
+    }
+  }
+}

@@ -1,0 +1,65 @@
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{
+  "env": "sa",
+  "algorithm": "sac",
+  "recipe": "public_route_choice_fast_residual_reach250_sa_transfer",
+  "guard_static": true,
+  "gamma": 0.996508469331006,
+  "reward_kwargs": {
+    "reach_reward": 250.0,
+    "intrusion_penalty": -0.9456977940944832,
+    "restricted_area_penalty": -0.5,
+    "sector_exit_penalty": -0.13428297844288217,
+    "drift_penalty": -0.0010342143754210312
+  },
+  "source_training_env": "ma",
+  "source_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-fast-reference-reach250-v1-25k-seed2904\\checkpoints\\model_25000_steps.zip",
+  "source_model_sha256": "8b99fa0662d2c7cb304afbbd99c91eab1c64863c91184f4d03c958436a5e5143",
+  "source_timesteps": 25000,
+  "sa_training_transitions": 0,
+  "initialization": "zero-shot MA-to-SA transfer; checkpoint bytes unchanged",
+  "simulated_intruders": 10,
+  "observed_traffic_slots": 9,
+  "guard_traffic": true,
+  "traffic_projection_revision": 1,
+  "traffic_projection_horizon_seconds": 90.0,
+  "traffic_projection_sample_seconds": 5.0,
+  "traffic_projection_margin_km": 1.0,
+  "traffic_projection_turn_rate": 1.5,
+  "traffic_projection_acceleration": 1.0,
+  "route_input_revision": 1,
+  "route_input_planner_revision": 2,
+  "route_input_clearances_km": [
+    6.0,
+    3.0,
+    2.0,
+    1.0,
+    0.0
+  ],
+  "route_input_sector_clearance_km": 6.0,
+  "route_input_distance": "original_goal",
+  "route_input_direct_bearing": "original_observation",
+  "route_choice_revision": 1,
+  "route_choice_min_preferred_clearance_km": 2.0,
+  "route_choice_max_detour_ratio": 1.15,
+  "route_choice_fallback": "lower_clearance_only_if_no_preferred_path",
+  "route_residual_revision": 1,
+  "route_residual_heading_limit_deg": 15.0,
+  "route_residual_speed_scale": 2.0,
+  "route_residual_composition": "clipped_direct_reference_plus_adjustment",
+  "route_residual_reference": "last_observation_bearing_float32",
+  "route_residual_speed_reference": 1.0,
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0
+}

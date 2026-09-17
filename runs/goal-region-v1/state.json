@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "execution_plan_sha256": "7e712142e7f391c4d07a063d9eed4649703dc3b144d6547d574cf5f7eafe89b1",
+  "stages": [
+    {
+      "mode": "classical_point_goal",
+      "started_at_utc": "2026-09-15T15:57:18.946343+00:00",
+      "pid": 39904,
+      "exit_code": 1,
+      "finished_at_utc": "2026-09-15T15:58:02.321242+00:00"
+    }
+  ],
+  "error": "RuntimeError('classical_point_goal failed; retain the log')"
+}

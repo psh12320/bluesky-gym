@@ -1,0 +1,14 @@
+[
+  {
+    "case": "negative",
+    "exit_code": 2,
+    "expected_error": "nonnegative count",
+    "no_output_created": true
+  },
+  {
+    "case": "resume_override",
+    "exit_code": 2,
+    "expected_error": "Resume retains the saved critic warmup",
+    "no_output_created": true
+  }
+]

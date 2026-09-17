@@ -1,0 +1,7 @@
+{
+  "timesteps": 700,
+  "new_timesteps": 100,
+  "wall_seconds": 5.002865899994504,
+  "live_transitions": 90,
+  "skipped_transitions": 0
+}

@@ -1,0 +1,273 @@
+{
+  "track": "sa",
+  "training_seed": 2904,
+  "started_at_utc": "2026-09-15T12:45:17.029284+00:00",
+  "protocol_sha256": "c8efeedd860d54e619c4f35b7fe7284d0bd5b5fa52c09978e55745b694916177",
+  "runner_sha256": "5de95cb2e2e141e3f0f779a8a4e6871b542558038992e2d344bc6f63ea1059ff",
+  "stages": [
+    {
+      "name": "train",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.train",
+        "--env",
+        "ma",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual_reach250",
+        "--guard-traffic",
+        "--workers",
+        "1",
+        "--steps",
+        "25000",
+        "--seed",
+        "2904",
+        "--device",
+        "cpu",
+        "--run-dir",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-fast-reference-reach250-v1-25k-seed2904",
+        "--checkpoint-every",
+        "25000",
+        "--learning-starts",
+        "5000",
+        "--gradient-steps",
+        "4",
+        "--batch-size",
+        "256",
+        "--buffer-size",
+        "100000",
+        "--save-replay",
+        "--critic-warmup-updates",
+        "0",
+        "--max-wall-seconds",
+        "0"
+      ],
+      "started_at_utc": "2026-09-15T12:45:17.103185+00:00",
+      "pid": 14232,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T12:55:12.101654+00:00"
+    },
+    {
+      "name": "transfer",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.transfer_track",
+        "--model",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-ma-fast-reference-reach250-v1-25k-seed2904\\checkpoints\\model_25000_steps.zip",
+        "--out-dir",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\candidate"
+      ],
+      "started_at_utc": "2026-09-15T12:55:18.953949+00:00",
+      "pid": 44780,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T12:55:43.259954+00:00"
+    },
+    {
+      "name": "development-20",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.evaluate",
+        "--env",
+        "sa",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual_reach250_sa_transfer",
+        "--model",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\candidate\\model.zip",
+        "--episodes",
+        "20",
+        "--seed",
+        "2026",
+        "--out",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\development-20"
+      ],
+      "started_at_utc": "2026-09-15T12:55:43.308787+00:00",
+      "pid": 39088,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T12:58:34.383076+00:00"
+    },
+    {
+      "name": "replication-200",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.evaluate",
+        "--env",
+        "sa",
+        "--algorithm",
+        "sac",
+        "--recipe",
+        "public_route_choice_fast_residual_reach250_sa_transfer",
+        "--model",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\candidate\\model.zip",
+        "--episodes",
+        "200",
+        "--seed",
+        "2027",
+        "--out",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\replication-200"
+      ],
+      "started_at_utc": "2026-09-15T12:58:34.433072+00:00",
+      "pid": 37040,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T13:36:08.856790+00:00"
+    },
+    {
+      "name": "comparison",
+      "command": [
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "atc.compare",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\heldout-2027-sa-reach250-v1\\classical",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\replication-200",
+        "--out",
+        "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\replication-frozen-v1\\sa-seed2904\\comparison.json"
+      ],
+      "started_at_utc": "2026-09-15T13:36:08.927683+00:00",
+      "pid": 42524,
+      "exit_code": 0,
+      "finished_at_utc": "2026-09-15T13:36:10.217214+00:00"
+    }
+  ],
+  "training_audit": {
+    "exact_25000_step_callback": true,
+    "callback_optimizer_updates": 7996,
+    "final_optimizer_updates": 8000,
+    "matched_configuration_except": [
+      "max_wall_seconds",
+      "run_dir",
+      "seed",
+      "world_seeds"
+    ],
+    "initial_hidden_actor_weights_differ_from_primary": true,
+    "initial_actor_mean_zero": true,
+    "checkpoint_sha256": "8b99fa0662d2c7cb304afbbd99c91eab1c64863c91184f4d03c958436a5e5143",
+    "training_summary": {
+      "timesteps": 25000,
+      "new_timesteps": 25000,
+      "wall_seconds": 561.1744912999566,
+      "critic_updates": 8000,
+      "held_actor_updates": 0,
+      "actor_updates": 8000,
+      "live_transitions": 14191,
+      "skipped_transitions": 10809,
+      "new_live_transitions": 14191,
+      "new_skipped_transitions": 10809
+    }
+  },
+  "deployed_model_sha256": "8b99fa0662d2c7cb304afbbd99c91eab1c64863c91184f4d03c958436a5e5143",
+  "evaluations": {
+    "development-20": {
+      "seed": 2026,
+      "episodes": 20,
+      "summary_recomputed": true,
+      "csv_sha256": "9b258329f8c083ac48abdc431c9dbc4af96feb8cd43906ca74657bfd11fec154",
+      "summary": {
+        "episodes": 20,
+        "agent_episodes": 20,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "flight_time": {
+            "mean": 939.25,
+            "std": 252.8651567535551
+          },
+          "intrusion_events": {
+            "mean": 0.3,
+            "std": 0.6403124237432849
+          },
+          "intrusion_time": {
+            "mean": 12.25,
+            "std": 26.389154969418783
+          },
+          "restricted_area_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_in_restricted_area": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "sector_exit_events": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "time_outside_sector": {
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "total_reward": {
+            "mean": 238.36752261008183,
+            "std": 24.960842567440665
+          }
+        },
+        "clean_completion_rate": 0.8,
+        "all_aircraft_clean_completion_rate": 0.8
+      }
+    },
+    "replication-200": {
+      "seed": 2027,
+      "episodes": 200,
+      "summary_recomputed": true,
+      "csv_sha256": "3aca5fed657563afbdd5004bf49fe98433c99addbba0f2cd2e6ca159bcd795b0",
+      "summary": {
+        "episodes": 200,
+        "agent_episodes": 200,
+        "metrics": {
+          "waypoint_reached": {
+            "mean": 0.99,
+            "std": 0.09949874371066199
+          },
+          "flight_time": {
+            "mean": 1198.75,
+            "std": 517.6229491628052
+          },
+          "intrusion_events": {
+            "mean": 0.33,
+            "std": 0.5577633906953737
+          },
+          "intrusion_time": {
+            "mean": 16.08,
+            "std": 33.5231800400857
+          },
+          "restricted_area_events": {
+            "mean": 0.025,
+            "std": 0.15612494995995993
+          },
+          "time_in_restricted_area": {
+            "mean": 1.61,
+            "std": 13.042158563673427
+          },
+          "sector_exit_events": {
+            "mean": 0.005,
+            "std": 0.07053367989832944
+          },
+          "time_outside_sector": {
+            "mean": 0.32,
+            "std": 4.514155513493084
+          },
+          "total_reward": {
+            "mean": 231.3600681102558,
+            "std": 44.254013313914285
+          }
+        },
+        "clean_completion_rate": 0.685,
+        "all_aircraft_clean_completion_rate": 0.685
+      }
+    }
+  },
+  "completed_at_utc": "2026-09-15T13:36:10.229991+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,7 @@
+First training job: 930001
+stage	job_id
+train_seed50100	930001
+train_seed50200_50300	930002
+eval_seed50100	930003
+eval_seed50200_50300	930004
+Outputs: /c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/cluster-ppo-baseline-v1-preparation/shell-success/runs/cluster-ppo-baseline-v1

@@ -1,0 +1,44 @@
+{
+  "source_policy_sha256": "b4c7a671dbd0fae8146522fa8278f19f4119c859caf2e1b07fe0bb56eae45093",
+  "treatment": "runs\\sac-ma-cpa-guarded-predictions-seed2600",
+  "control": "runs\\sac-ma-cpa-guarded-control-seed2600",
+  "initial_parity": "runs/cpa-guarded-initial-parity/result.json",
+  "matched_configuration": {
+    "env": "ma",
+    "algorithm": "sac",
+    "recipe": "public_cpa",
+    "guard_static": true,
+    "workers": 1,
+    "steps": 100000,
+    "seed": 2600,
+    "world_seeds": [
+      2600
+    ],
+    "actual_gamma": 0.996508469331006,
+    "actual_net_arch": [
+      64,
+      64
+    ],
+    "actual_learning_rate": 0.0003,
+    "actual_tau": 0.005,
+    "actual_gradient_steps": 4,
+    "actual_buffer_size": 100000,
+    "actual_learning_starts": 401520,
+    "actual_batch_size": 256,
+    "initial_timesteps": 391520,
+    "observation_shape": [
+      169
+    ],
+    "static_projection_revision": 4
+  },
+  "intended_difference": "The zero-initialized CPA projection can learn in treatment and remains frozen in control.",
+  "optimizer_initialization": "Both reset; original policy weights, critics and entropy coefficient retained.",
+  "evaluation": {
+    "episodes": 20,
+    "seed": 2026,
+    "inference": "per_aircraft",
+    "metrics": "Complete objective vector plus clean completion and severe intrusion cases."
+  },
+  "selection": "Compare against both the matched control and the retained original filtered/unfiltered policies. Beating a regressed control is insufficient for promotion. Preserve seed 2027 and official seed 42 for later frozen candidates.",
+  "interpretation_limit": "This compares an enabled predictive representation against a frozen zero projection. It does not isolate representation benefit from the additional trainable capacity; the predictions are derived from already observed current state."
+}

@@ -1,0 +1,27 @@
+{
+  "manifest": {
+    "verified_files": 127,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "bundle_sha256": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+  "base_files_unchanged": 122,
+  "new_python_compiles": true,
+  "bash_syntax_checks": 3,
+  "simulated_scheduler_checks": [
+    "Dependencies and seed arrays",
+    "Job IDs retained immediately",
+    "Partial submission stops",
+    "Duplicate submission preserves receipt"
+  ],
+  "simulated_driver_checks": [
+    "Registered flags",
+    "First-seed tests before training",
+    "Audit after training",
+    "Partial-budget rejection",
+    "Duplicate-output rejection",
+    "Five evaluations plus comparison and curve"
+  ],
+  "validation_scope": "Scheduler and driver tests used stubs, not real GPU training. Training/evaluation package bytes are unchanged.",
+  "actual_cluster_expanded_suite": "Scheduled in first training allocation; not yet run.",
+  "real_cluster_submission": "Not submitted by local validation."
+}

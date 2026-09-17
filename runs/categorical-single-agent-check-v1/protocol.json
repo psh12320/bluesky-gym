@@ -1,0 +1,12 @@
+{
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-training-source-v1-verify",
+  "model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\categorical-training-development-v1\\ppo\\train\\model.zip",
+  "model_sha256": "e5091059de23caf2c39217882eee6ee68176fcba443edcb5588b92ebf9c3cbd2",
+  "episodes": 2,
+  "seed": 20260,
+  "track": "sa",
+  "purpose": "Verify deployment on the required single-agent track while retaining all ten scripted intruders; no performance or transfer-quality claim.",
+  "expected_simulated_population": 11,
+  "expected_observed_traffic_slots": 9,
+  "fixed_scenario_settings": true
+}

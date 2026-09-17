@@ -1,0 +1,12 @@
+{
+  "modified_files": [
+    "tests/rl/test_initialization.py",
+    "tests/rl/test_actor_reference.py"
+  ],
+  "change": "CPU-input test model constructors explicitly request device=cpu.",
+  "affected_tests_passed": 5,
+  "junit_xml": "runs/cluster-reload-fix-v1/extra-cpu-fixtures.xml",
+  "recovery_bundle_851227_unchanged": true,
+  "existing_training_and_evaluation_sources_unchanged": true,
+  "actual_gpu_validation": "Pending future cluster run; these checks ran on CPU."
+}

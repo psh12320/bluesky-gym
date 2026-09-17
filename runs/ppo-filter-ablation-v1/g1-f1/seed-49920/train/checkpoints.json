@@ -1,0 +1,42 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "97fd0e6bcfab4931ecd3bb15eda5797ed84997a1900fb4f5057be378c289db96",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0
+  },
+  {
+    "file": "policy-live-53348.zip",
+    "sha256": "f91b88404acffd5cbda47b41d8c7a4743b13d7acf4c7b524ba14b0634263825f",
+    "live_transitions": 53348,
+    "counted_transitions": 81920,
+    "padded_transitions": 28572,
+    "optimizer_steps": 600,
+    "policy_epochs": 160,
+    "rollouts": 16
+  },
+  {
+    "file": "policy-live-100462.zip",
+    "sha256": "c17a8942f10d79669a5ce5d9f4c0c29f53b35bafa4b0c069d79f6f863a962a92",
+    "live_transitions": 100462,
+    "counted_transitions": 163840,
+    "padded_transitions": 63378,
+    "optimizer_steps": 1140,
+    "policy_epochs": 320,
+    "rollouts": 32
+  },
+  {
+    "file": "model.zip",
+    "sha256": "c17a8942f10d79669a5ce5d9f4c0c29f53b35bafa4b0c069d79f6f863a962a92",
+    "live_transitions": 100462,
+    "counted_transitions": 163840,
+    "padded_transitions": 63378,
+    "optimizer_steps": 1140,
+    "policy_epochs": 320,
+    "rollouts": 32
+  }
+]

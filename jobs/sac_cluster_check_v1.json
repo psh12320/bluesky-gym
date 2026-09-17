@@ -1,0 +1,52 @@
+{
+  "registered_at_utc": "2026-09-16T07:38:44.827091+00:00",
+  "purpose": "Technical verification of fresh SAC on the established CUDA Slurm environment; no performance claim.",
+  "base_source_bundle": "sac-comparison-source-v1.zip",
+  "base_source_sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+  "resources": {
+    "partition": "gpu",
+    "account": "allusers",
+    "qos": "normal",
+    "gpu": "h200-141:1",
+    "cpus": 16,
+    "memory_gb": 64,
+    "wall_minutes": 30
+  },
+  "environment": "Reuse $HOME/cs4246-rl/onpolicy-v1/.venv-cluster/bin/python; do not install dependencies.",
+  "training": {
+    "algorithm": "sac",
+    "workers": 8,
+    "live_steps": 20000,
+    "seed": 51900,
+    "device": "cuda",
+    "collection_steps": 128,
+    "learning_starts": 5000,
+    "gradient_steps": 8,
+    "buffer_size": 200000,
+    "batch_size": 256,
+    "checkpoint_live_steps": 10000,
+    "initial_action_std": 0.05,
+    "entropy_initial": 0.01,
+    "reward_scale": 0.01,
+    "guidance": true,
+    "static_filter": true,
+    "filter": false,
+    "conflict_features": true,
+    "action_reference": "goal_offset",
+    "max_wall_seconds": 1200
+  },
+  "checks": [
+    "SAC unit tests",
+    "Immutable source verification before and after",
+    "Complete live budget and nonzero arrivals/padding records",
+    "Checkpoint audit",
+    "Explicit CUDA actor reload with finite bounded inference",
+    "Two reused development worlds with 180 exact native/vector metric comparisons"
+  ],
+  "limitations": [
+    "This short CUDA check is not a competition result or a trained-policy selection experiment.",
+    "Eight gradient rounds per vector step preserve the local one-worker pilot gradient rounds per simulator decision, but the parallel collection schedule still differs.",
+    "GPU execution awaits manual authenticated submission; CPU tests and local simulator integration already passed."
+  ],
+  "submission_guard": "Exclusive submission-lock directory; retain it and logs after failure rather than repeating submission blindly."
+}

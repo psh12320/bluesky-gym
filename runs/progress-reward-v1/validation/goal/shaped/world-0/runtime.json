@@ -1,0 +1,13 @@
+{
+  "geo_backend": "bluesky.tools.geo._cgeo",
+  "performance_module": "bluesky.traffic.performance.openap.perfoap",
+  "population": 10,
+  "decision_interval_seconds": 5,
+  "episode_time_limit": 3000,
+  "actor_addition": "time_remaining_fraction",
+  "worker_imported_torch": true,
+  "isolated_simulator_files": true,
+  "training_progress_scale": 100.0,
+  "simulator_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\progress-reward-v1\\validation\\goal\\shaped\\world-0\\simulator",
+  "copied_navdata_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875"
+}

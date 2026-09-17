@@ -1,0 +1,97 @@
+{
+  "original_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-pilot-v1\\bc\\model.zip",
+  "model_sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+  "parent_checkpoint": {
+    "file": "model.zip",
+    "sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+    "policy_fingerprint": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0,
+    "training_method": "behavior_cloning",
+    "supervised_epochs": 40,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "demonstration_transitions": 62744
+  },
+  "summary": {
+    "status": "complete",
+    "completed_at_utc": "2026-09-16T11:02:56.706119+00:00",
+    "training_method": "behavior_cloning_only",
+    "reinforcement_learning_updates": 0,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "demonstration_transitions": 62744,
+    "validation_transitions": 16108,
+    "epochs": 40,
+    "changed_parameter_names": [
+      "mlp_extractor.policy_net.0.weight",
+      "mlp_extractor.policy_net.0.bias",
+      "mlp_extractor.policy_net.2.weight",
+      "mlp_extractor.policy_net.2.bias",
+      "action_net.weight",
+      "action_net.bias"
+    ],
+    "actor_mean_only_changed": true,
+    "critic_and_noise_unchanged": true,
+    "initial_errors": {
+      "epoch": 0,
+      "supervised_optimizer_steps": 0,
+      "train": {
+        "action_mse": 0.5166919110554802,
+        "mean_absolute_heading_command_error_degrees": 2.190115451812744,
+        "mean_absolute_speed_action_error": 0.9974499344825745,
+        "intervention_action_mse": 0.5040441952817271,
+        "nominal_action_mse": 0.5189653798204673,
+        "equal_world_mean_action_mse": 0.5157230030047679,
+        "rows": 62744,
+        "worlds": 32
+      },
+      "validation": {
+        "action_mse": 0.5171535862003136,
+        "mean_absolute_heading_command_error_degrees": 2.253941774368286,
+        "mean_absolute_speed_action_error": 0.9981375932693481,
+        "intervention_action_mse": 0.5034580000691571,
+        "nominal_action_mse": 0.519672060145643,
+        "equal_world_mean_action_mse": 0.5161985937154389,
+        "rows": 16108,
+        "worlds": 8
+      }
+    },
+    "final_errors": {
+      "epoch": 40,
+      "supervised_optimizer_steps": 2480,
+      "supervised_examples_seen": 2509760,
+      "weighted_training_loss": 0.02806804598187148,
+      "train": {
+        "action_mse": 0.016574143064256572,
+        "mean_absolute_heading_command_error_degrees": 3.6523211002349854,
+        "mean_absolute_speed_action_error": 0.03208823874592781,
+        "intervention_action_mse": 0.04365881562433587,
+        "nominal_action_mse": 0.011705583541197792,
+        "equal_world_mean_action_mse": 0.015808134599953318,
+        "rows": 62744,
+        "worlds": 32
+      },
+      "validation": {
+        "action_mse": 0.03046279247519368,
+        "mean_absolute_heading_command_error_degrees": 4.6501007080078125,
+        "mean_absolute_speed_action_error": 0.04360433667898178,
+        "intervention_action_mse": 0.12142717710801101,
+        "nominal_action_mse": 0.013735400857428793,
+        "equal_world_mean_action_mse": 0.028771770486488657,
+        "rows": 16108,
+        "worlds": 8
+      }
+    },
+    "serialization_actions_identical": true,
+    "model_sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+    "performance_claim": false,
+    "next_validation": "Evaluate the saved learned policy in the simulator, then measure PPO gains against its own pretrained starting policy."
+  },
+  "new_supervised_updates": 0,
+  "original_attempt_preserved": true
+}

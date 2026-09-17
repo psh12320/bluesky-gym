@@ -1,0 +1,51 @@
+{
+  "registered_at_utc": "2026-09-16T09:21:30.366817+00:00",
+  "purpose": "Fresh benchmark demonstrations for a neural starting policy, followed by separately accounted PPO improvement.",
+  "training": {
+    "seed": 61200,
+    "worlds": 32,
+    "role": "train"
+  },
+  "validation": {
+    "seed": 61300,
+    "worlds": 8,
+    "role": "validation"
+  },
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\demonstration-source-v1-verify",
+  "source_bundle_sha256": "d74dfd5f3bc2cb807399ba6b57db7131d28f4dbe0cb41ad2496f2ea5c9d32901",
+  "teacher_replay_exact_metrics": 180,
+  "teacher_modified": false,
+  "actor_input_dim": 170,
+  "actor_uses_privileged_teacher_state": false,
+  "teacher_uses_privileged_state": true,
+  "reserved_evaluation_data_used_for_training": false,
+  "student_plan": {
+    "seed": 61400,
+    "epochs": 40,
+    "batch_size": 1024,
+    "learning_rate": 0.0003,
+    "intervention_fraction": 0.5,
+    "initial_action_std": 0.05,
+    "action_reference": "direct",
+    "guidance": true,
+    "static_filter": true,
+    "traffic_filter": false,
+    "actor_widths": [
+      128,
+      128
+    ],
+    "critic_widths": [
+      256,
+      256
+    ]
+  },
+  "checkpoint_selection": "Fixed final supervised epoch; validation does not select epochs.",
+  "rl_contribution_requirement": "Compare PPO after additional RL against its own behavior-cloned starting policy, and retain demonstration-only and fixed classical baselines.",
+  "resource_policy": "One sequential collection process; two existing coordinators remain unchanged. Maximum four concurrent simulator processes.",
+  "limitations": [
+    "Teacher labels use privileged simulator information; the deployed student receives local observations only.",
+    "Behavior cloning alone is not a reinforcement-learning contribution.",
+    "Action-prediction error is not safety performance; closed-loop evaluation is required.",
+    "Demonstrations sample teacher trajectories; covariate shift is possible."
+  ]
+}

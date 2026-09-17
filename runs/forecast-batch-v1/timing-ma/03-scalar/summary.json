@@ -1,0 +1,38 @@
+{
+  "mode": "scalar",
+  "ordinal": 3,
+  "wall_seconds": 79.9915737999836,
+  "active_replay_seconds": 59.91202249994967,
+  "command_statistics": {
+    "mode": "scalar",
+    "decision_batches": 0,
+    "aircraft_forecasts": 0,
+    "actions": 4070,
+    "command_seconds": 25.464237002423033
+  },
+  "development_check": {
+    "env": "ma",
+    "seed": 2026,
+    "episodes": 2,
+    "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+    "extracted_source_used": true,
+    "source_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\forecast-batch-v1\\timing-ma\\03-scalar\\candidate\\source",
+    "all_metrics_match": true,
+    "metric_max_absolute_difference": {
+      "waypoint_reached": 0.0,
+      "flight_time": 0.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 0.0
+    },
+    "dependency_environment": "Existing interpreter; dependencies were not reinstalled by this check"
+  },
+  "unchanged_packaged_files": 145,
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "navigation_cache_sha256": "aa07275a7656c95eaaa02c12b6e1f130b4afa4eef4e9ec9d588b6ec130eca875",
+  "per_forecast_scalar_verification": false
+}

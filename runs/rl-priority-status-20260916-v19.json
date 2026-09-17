@@ -1,0 +1,75 @@
+{
+  "recorded_at_utc": "2026-09-16T04:25:49.365319+00:00",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "cluster_status": "User reports finishing cluster steps; read-only collection command supplied, output not yet received.",
+  "cluster_bootstrap_job": 851402,
+  "cluster_baseline_archive_sha256": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+  "cluster_analysis_validation": {
+    "two_completed_real_runs_audited": true,
+    "all_seed_metric_effects_matched": 22,
+    "real_incomplete_million_step_run_rejected": "Seed 49900 did not complete the registered budget",
+    "cluster_baseline_results_received": false,
+    "validation_does_not_constitute_new_training": true
+  },
+  "additional_analyzer_tests_passed": 10,
+  "active_coordinators": {
+    "filtered_no_guidance": 33654,
+    "filtered_with_guidance": 28101,
+    "capacity_matched_features": 24621
+  },
+  "filtered_seed_49920_training": {
+    "g0-f1": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 102007,
+      "padded_transitions": 82313,
+      "counted_transitions": 184320,
+      "optimizer_steps": 1190,
+      "policy_epochs": 360,
+      "rollouts": 36,
+      "worlds_completed": 35,
+      "aircraft_completed": 358,
+      "wall_seconds": 1109.0765238000022,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "e1c419363a540b5518878eb228de4d23c9e4d37a1e79a9e7c2491cbe081c5530",
+      "training_seed": 49920,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "g1-f1": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 100462,
+      "padded_transitions": 63378,
+      "counted_transitions": 163840,
+      "optimizer_steps": 1140,
+      "policy_epochs": 320,
+      "rollouts": 32,
+      "worlds_completed": 39,
+      "aircraft_completed": 398,
+      "wall_seconds": 1069.582247000002,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "c17a8942f10d79669a5ce5d9f4c0c29f53b35bafa4b0c069d79f6f863a962a92",
+      "training_seed": 49920,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    }
+  },
+  "feature_seed_50400": {
+    "real_feature_arm": "Training, audit, initial/50k/final evaluation and curve complete.",
+    "zero_feature_arm": "Training confirmed started.",
+    "final_clean_completion": 0.255,
+    "own_initial_clean_completion": 0.25999999999999995,
+    "interpretation": "No learned clean-completion gain; restricted-area occupancy substantially worse."
+  },
+  "diagnostics_complete": [
+    "runs/ppo-observation-diagnostic-v1/results.json",
+    "runs/ppo-action-components-v1/results.json",
+    "runs/ppo-action-components-v1/interpretation.json"
+  ],
+  "new_reward_variant_implemented": false,
+  "unseen_scenarios_used": false
+}

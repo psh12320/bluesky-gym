@@ -1,0 +1,80 @@
+{
+  "seed": 2026,
+  "scope": "Two known development geometry diagnostics; no simulator execution, performance improvement or hidden-test evidence",
+  "navigation_radius_km": 4.75,
+  "original_capture_radius_km": 5,
+  "script_sha256": "708ab494a4d0ef83651710baab5cf042aa134f1704bbd04deaa15f0cb8a0cc9a",
+  "extension_sha256": "1586748db416454ff5db0c06200cb6977f43a9fd9db45b3fec675bb0a734f917",
+  "cases": [
+    {
+      "episode": 103,
+      "agent": "KL006",
+      "source_scenario_sha256": "29c5ba859fd1b4e3e94fe9a8a36d5af65bb5b1f27483187f4d43d4636a01e416",
+      "goal_distance_to_free_space_km": 23.594581288768243,
+      "goal_distance_to_2km_margin_space_km": 25.594581288768243,
+      "routes": [
+        {
+          "clearance_km": 6,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 3,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 2,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 1,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 0,
+          "point_route_exists": false,
+          "region_route_exists": false
+        }
+      ]
+    },
+    {
+      "episode": 107,
+      "agent": "KL005",
+      "source_scenario_sha256": "4b1709b87e7420de562c10559df90fee3fe1afa7c6eccabf2128f6ba2b68fe67",
+      "goal_distance_to_free_space_km": 4.685792090906685,
+      "goal_distance_to_2km_margin_space_km": 6.685792090906688,
+      "routes": [
+        {
+          "clearance_km": 6,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 3,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 2,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 1,
+          "point_route_exists": false,
+          "region_route_exists": false
+        },
+        {
+          "clearance_km": 0,
+          "point_route_exists": false,
+          "region_route_exists": true,
+          "endpoint_scored_distance_km": 4.749761435660814,
+          "geometric_path_length_km": 206.8358476868116
+        }
+      ]
+    }
+  ]
+}

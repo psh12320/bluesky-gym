@@ -1,0 +1,53 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.975,
+      "std": 0.15612494995995996
+    },
+    "flight_time": {
+      "mean": 1148.225,
+      "std": 454.01758157036164
+    },
+    "intrusion_events": {
+      "mean": 1.12,
+      "std": 1.0934349546269315
+    },
+    "intrusion_time": {
+      "mean": 109.89,
+      "std": 211.024282725946
+    },
+    "restricted_area_events": {
+      "mean": 0.025,
+      "std": 0.1854049621773916
+    },
+    "time_in_restricted_area": {
+      "mean": 3.335,
+      "std": 27.177431353974566
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -89.63288709669946,
+      "std": 212.59358088005908
+    }
+  },
+  "clean_completion_rate": 0.335,
+  "all_aircraft_clean_completion_rate": 0.05,
+  "wall_seconds": 400.2536253000144,
+  "world_decisions": 3744,
+  "seed": 2026,
+  "env": "ma",
+  "policy": "runs\\sac-ma-route-guided-pilot-seed1300\\model.zip",
+  "recipe": "route_guided_inset",
+  "guard_static": true,
+  "official_protocol": false,
+  "model_sha256": "d11d52743d0da873babeca038b88b6d869ce4596b11735fa2047fb4c26b4be7f"
+}

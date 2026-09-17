@@ -1,0 +1,76 @@
+{
+  "started_at_utc": "2026-09-15T14:07:53.976013+00:00",
+  "python_asset": {
+    "name": "cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+    "size": 34143368,
+    "browser_download_url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14%2B20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+    "digest": "sha256:72748da13197c1fb161e3afeef20a6a385ff24f2165e6e2758e47008e7faba4c"
+  },
+  "scope": "Local WSL interpreter setup; no university connection or simulator evaluation",
+  "status": "interpreter_ready",
+  "commands": [
+    {
+      "argv": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--exec",
+        "/bin/tar",
+        "-xzf",
+        "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+        "-C",
+        "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--exec",
+        "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/python/bin/python3.12",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "Python 3.12.14\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--exec",
+        "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/python/bin/python3.12",
+        "-m",
+        "venv",
+        "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/.venv"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu",
+        "--exec",
+        "/mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/.venv/bin/python",
+        "-m",
+        "pip",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "pip 25.0.1 from /mnt/c/Users/Shricharan/VSCodeProjects/airtrafficcontrol/bluesky-gym/runs/linux-runtime-v1/.venv/lib/python3.12/site-packages/pip (python 3.12)\n",
+      "stderr": ""
+    }
+  ],
+  "python_version": "Python 3.12.14",
+  "archive_sha256": "72748da13197c1fb161e3afeef20a6a385ff24f2165e6e2758e47008e7faba4c",
+  "completed_at_utc": "2026-09-15T14:15:27.438607+00:00",
+  "dependencies_installed": false
+}

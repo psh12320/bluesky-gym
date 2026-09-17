@@ -1,0 +1,219 @@
+{
+  "purpose": "Small action-component diagnostic; no performance selection.",
+  "full_policy_metrics_matched_to_existing_evaluation": 180,
+  "all_arms_use_identical_scenarios": true,
+  "results": {
+    "full_policy": {
+      "episodes": 2,
+      "agent_episodes": 20,
+      "metrics": {
+        "waypoint_reached": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "flight_time": {
+          "mean": 811.9,
+          "std": 157.11839484923462
+        },
+        "intrusion_events": {
+          "mean": 1.3,
+          "std": 1.2288205727444508
+        },
+        "intrusion_time": {
+          "mean": 73.6,
+          "std": 77.60953549661278
+        },
+        "restricted_area_events": {
+          "mean": 0.1,
+          "std": 0.30000000000000004
+        },
+        "time_in_restricted_area": {
+          "mean": 12.75,
+          "std": 41.44981905871243
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_reward": {
+          "mean": -38.60798527822484,
+          "std": 70.20410167944658
+        }
+      },
+      "clean_completion_rate": 0.3,
+      "all_aircraft_clean_completion_rate": 0.0,
+      "arm": "full_policy",
+      "checkpoint_sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c",
+      "scenarios": [
+        "6684926c7289bd8432a31af5074bd32b85fff20f3961f66edf76fb6119b4b60b",
+        "ccab10940199f04759a7aee3b98da016aa5c2c4f70da11a1ab00aafd823377c1"
+      ],
+      "world_decisions": 436,
+      "csv_sha256": "b445917f931b82c72da35b16966dc86bd9c93220146e9280960a909522f27975",
+      "wall_seconds": 39.43799999999828,
+      "diagnostic_only": true
+    },
+    "zero_heading": {
+      "episodes": 2,
+      "agent_episodes": 20,
+      "metrics": {
+        "waypoint_reached": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "flight_time": {
+          "mean": 804.95,
+          "std": 160.67186281362396
+        },
+        "intrusion_events": {
+          "mean": 2.2,
+          "std": 1.661324772583615
+        },
+        "intrusion_time": {
+          "mean": 115.7,
+          "std": 99.60727885049366
+        },
+        "restricted_area_events": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "time_in_restricted_area": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_reward": {
+          "mean": -72.02908109024108,
+          "std": 94.18412577173822
+        }
+      },
+      "clean_completion_rate": 0.25,
+      "all_aircraft_clean_completion_rate": 0.0,
+      "arm": "zero_heading",
+      "checkpoint_sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c",
+      "scenarios": [
+        "6684926c7289bd8432a31af5074bd32b85fff20f3961f66edf76fb6119b4b60b",
+        "ccab10940199f04759a7aee3b98da016aa5c2c4f70da11a1ab00aafd823377c1"
+      ],
+      "world_decisions": 431,
+      "csv_sha256": "578a0c93994aea242d0e6c762739049548c24e98d2c8b93f0e45312bdc1d20c1",
+      "wall_seconds": 38.90600000000268,
+      "diagnostic_only": true
+    },
+    "zero_speed": {
+      "episodes": 2,
+      "agent_episodes": 20,
+      "metrics": {
+        "waypoint_reached": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "flight_time": {
+          "mean": 870.2,
+          "std": 164.14036675967313
+        },
+        "intrusion_events": {
+          "mean": 1.3,
+          "std": 1.2288205727444508
+        },
+        "intrusion_time": {
+          "mean": 80.4,
+          "std": 84.51236595907133
+        },
+        "restricted_area_events": {
+          "mean": 0.1,
+          "std": 0.30000000000000004
+        },
+        "time_in_restricted_area": {
+          "mean": 13.95,
+          "std": 45.50436792221161
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_reward": {
+          "mean": -45.6394559290285,
+          "std": 76.44756852313547
+        }
+      },
+      "clean_completion_rate": 0.3,
+      "all_aircraft_clean_completion_rate": 0.0,
+      "arm": "zero_speed",
+      "checkpoint_sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c",
+      "scenarios": [
+        "6684926c7289bd8432a31af5074bd32b85fff20f3961f66edf76fb6119b4b60b",
+        "ccab10940199f04759a7aee3b98da016aa5c2c4f70da11a1ab00aafd823377c1"
+      ],
+      "world_decisions": 469,
+      "csv_sha256": "0352a57038c5af9bb6a9b6b6b9126706a06344e9aeccd52519eb2de8636986fb",
+      "wall_seconds": 38.5779999999977,
+      "diagnostic_only": true
+    },
+    "own_initial_policy": {
+      "episodes": 2,
+      "agent_episodes": 20,
+      "metrics": {
+        "waypoint_reached": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "flight_time": {
+          "mean": 865.6,
+          "std": 173.8983611193619
+        },
+        "intrusion_events": {
+          "mean": 2.2,
+          "std": 1.6613247725836149
+        },
+        "intrusion_time": {
+          "mean": 127.9,
+          "std": 108.65537262372257
+        },
+        "restricted_area_events": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "time_in_restricted_area": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "sector_exit_events": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "time_outside_sector": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "total_reward": {
+          "mean": -83.56919378665336,
+          "std": 102.7418569791663
+        }
+      },
+      "clean_completion_rate": 0.25,
+      "all_aircraft_clean_completion_rate": 0.0
+    }
+  },
+  "limitations": [
+    "Two development worlds; diagnostic evidence only.",
+    "Heading and speed interact through subsequent states; this is a closed-loop policy-component ablation.",
+    "Changing inference behavior is not additional RL training.",
+    "These variants are not nominated competition candidates."
+  ]
+}

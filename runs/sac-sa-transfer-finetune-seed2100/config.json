@@ -1,0 +1,52 @@
+{
+  "env": "sa",
+  "algorithm": "sac",
+  "recipe": "public_sa_transfer",
+  "guard_static": false,
+  "workers": 2,
+  "steps": 300000,
+  "seed": 2100,
+  "device": "cpu",
+  "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\sac-sa-transfer-finetune-seed2100",
+  "checkpoint_every": 100000,
+  "learning_starts": 10000,
+  "gradient_steps": 2,
+  "batch_size": 256,
+  "rollout_steps": 512,
+  "resume": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\public-sa-transfer-391k\\model.zip",
+  "resume_replay": null,
+  "save_replay": true,
+  "buffer_size": 1000000,
+  "max_wall_seconds": 3600.0,
+  "torch": "2.14.0+cpu",
+  "world_seeds": [
+    2100,
+    2101
+  ],
+  "step_unit": "SB3 vector transitions, including inactive aircraft padding in MA",
+  "gamma": 0.996508469331006,
+  "reward_kwargs": {
+    "reach_reward": 37.41716380974046,
+    "intrusion_penalty": -0.9456977940944832,
+    "restricted_area_penalty": -0.5,
+    "sector_exit_penalty": -0.13428297844288217,
+    "drift_penalty": -0.0010342143754210312
+  },
+  "navigation_initialization": false,
+  "navigation_warmup_std": null,
+  "observation_shape": [
+    124
+  ],
+  "policy_parameters": 61832,
+  "trainable_policy_parameters": 61832,
+  "features_extractor": "FlattenExtractor",
+  "observed_traffic_slots": 9,
+  "vector_slots": 2,
+  "actual_gamma": 0.996508469331006,
+  "initial_timesteps": 391520,
+  "actual_buffer_size": 400000,
+  "actual_learning_starts": 401520,
+  "actual_batch_size": 256,
+  "starting_live_transitions": 0,
+  "starting_skipped_transitions": 0
+}

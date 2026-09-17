@@ -1,0 +1,84 @@
+{
+  "recorded_at_utc": "2026-09-16T03:28:49.161748+00:00",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "guided_three_seed_analysis_complete": true,
+  "guided_clean_completion_initial": 0.26,
+  "guided_clean_completion_final_by_seed": {
+    "49900": 0.235,
+    "49920": 0.245,
+    "49940": 0.25
+  },
+  "guided_all_three_registered_screens_failed": true,
+  "support_control_analysis_complete": true,
+  "filter_pilot_training": {
+    "g0-f1": {
+      "seed": 49900,
+      "last_recorded_live_transitions": 83066,
+      "training_wall_seconds": 945.2010909000019,
+      "coordinator_session": 33654
+    },
+    "g1-f1": {
+      "seed": 49900,
+      "last_recorded_live_transitions": 88826,
+      "training_wall_seconds": 961.8069321999974,
+      "coordinator_session": 28101
+    }
+  },
+  "additional_filter_pilot_seeds_per_group": [
+    49920,
+    49940
+  ],
+  "intermediate_learning_curve_evaluations_session": 34290,
+  "optional_cpa_features": {
+    "checked_at_utc": "2026-09-16T03:28:49.082039+00:00",
+    "unit_tests": {
+      "passed": 128,
+      "failed": 0,
+      "errors": 0,
+      "seconds": 20.638
+    },
+    "fixed_action_parity": {
+      "cases": 4,
+      "worlds_per_case": 2,
+      "all_scored_aircraft_metrics_identical": true,
+      "scenarios_identical": true,
+      "added_local_features": 45,
+      "actor_dimensions": {
+        "g0-cpa0": 125,
+        "g0-cpa1": 170,
+        "g1-cpa0": 125,
+        "g1-cpa1": 170
+      },
+      "scope": "Fixed zero latent actions, goal_offset, guidance off/on, filtering off; validates observation-only parity, not policy quality."
+    },
+    "historical_reference_metrics_matched": 360,
+    "controller_and_simulator_source_files_unchanged": 64,
+    "smoke_live_transitions": 1280,
+    "smoke_optimizer_steps": 7,
+    "smoke_model_sha256": "c4a3336026bef9d2c72571449aeb4c4925332da854a2eb3e1bf64610b6a7cb88",
+    "model_reload_passed": true,
+    "feature_performance_evidence": false,
+    "new_bundle": {
+      "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cpa-source-v1.zip",
+      "sha256": "7eb8df2ea08d3dda66ae2e70f6aafc430965d877c448d0a466809ae9fa70a816",
+      "bytes": 241694,
+      "source_files": 123,
+      "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+    },
+    "cluster_baseline_bundle_unchanged": true
+  },
+  "cluster_baseline_training_submission": "Awaiting user job IDs; question pending, not resubmitted.",
+  "cluster_bootstrap_job": 851402,
+  "cluster_bootstrap_status": "COMPLETED",
+  "unseen_scenarios_used": false,
+  "remaining_work": [
+    "Finish filtered PPO cohorts and conditional learning-contribution analysis.",
+    "Finish all three guided-PPO physical learning curves.",
+    "Run the selected university baseline and evaluate every seed.",
+    "Train a controlled feature-ablation pilot if justified; integration success is not performance evidence.",
+    "Establish strong learned performance and evaluate reserved unseen scenarios."
+  ]
+}

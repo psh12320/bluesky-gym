@@ -1,0 +1,34 @@
+{
+  "default_observation_historical_parity": [
+    {
+      "guidance": false,
+      "worlds": 2,
+      "exact_aircraft_metrics": 180,
+      "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-v1\\eval-initial-dev20",
+      "reference_csv_sha256": "1c49d63dbec9c89d1faf118680f51a5a7bde3380b0ab16631990262e866a727c"
+    },
+    {
+      "guidance": true,
+      "worlds": 2,
+      "exact_aircraft_metrics": 180,
+      "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\eval-g1-f0-dev20",
+      "reference_csv_sha256": "935bee120e9bc8c279389e78297227422defd1751e66d744047fb4be9154c18b"
+    }
+  ],
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "128",
+    "time": "20.638",
+    "timestamp": "2026-09-16T11:17:27.709398+08:00",
+    "hostname": "Shri-Laptop"
+  },
+  "previous_bundles_unchanged": {
+    "runs/cluster-ppo-baseline-v1.zip": "27bec8a905b56360225ab15db4ddc33d0f3235733cb0425d47c4263de00c3d8c",
+    "runs/onpolicy-learning-source-v2.zip": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c"
+  },
+  "new_feature_integration": "Still running separately; see integration-complete.json when complete.",
+  "test_runtime_note": "The test process emitted Windows WMI exception diagnostics while collecting system information, then passed all 128 tests with exit code zero."
+}

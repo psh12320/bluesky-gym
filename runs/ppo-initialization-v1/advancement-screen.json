@@ -1,0 +1,51 @@
+{
+  "screen_passed": false,
+  "checks": [
+    {
+      "criterion": "arrival_rate",
+      "observed": 0.04,
+      "relation": ">=",
+      "threshold": 0.95,
+      "passed": false
+    },
+    {
+      "criterion": "arrival_change_percentage_points",
+      "observed": -96.0,
+      "relation": ">=",
+      "threshold": -2,
+      "passed": false
+    },
+    {
+      "criterion": "clean_completion_gain_percentage_points",
+      "observed": -17.5,
+      "relation": ">=",
+      "threshold": 5,
+      "passed": false
+    },
+    {
+      "criterion": "intrusion_time_change_seconds",
+      "observed": 59.09000000000001,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": false
+    },
+    {
+      "criterion": "time_in_restricted_area_change_seconds",
+      "observed": 22.74,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": false
+    },
+    {
+      "criterion": "time_outside_sector_change_seconds",
+      "observed": 1937.42,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": false
+    }
+  ],
+  "comparison_sha256": "c747bf6be0ee6baa6d9396ba4cdadbb4723202a10cb65326e43ff8e22a6c7d28",
+  "protocol_sha256": "c2c9eb92ff982f874d27e31e48aa96f963c7647629b91be30a43e8569a28c984",
+  "decision": "Do not extend this recipe as a successful navigation and safety system.",
+  "interpretation": "Registered one-seed development triage. This is not final generalization evidence."
+}

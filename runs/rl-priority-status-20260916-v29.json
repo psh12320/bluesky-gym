@@ -1,0 +1,166 @@
+{
+  "recorded_at_utc": "2026-09-16T07:42:02.662609+00:00",
+  "previous_status": "runs/rl-priority-status-20260916-v28.json",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "completed_position_scaling": {
+    "result": "runs/ppo-position-scale-pilot-v1/paired-results.json",
+    "decision": "runs/ppo-position-scale-pilot-v1/decision.json",
+    "coordinator_session": 50520,
+    "coordinator_exit_code": 0,
+    "both_screens_failed": true,
+    "keep_position_scale": 1.0,
+    "total_live_transitions": 202060,
+    "evidence": {
+      "original": {
+        "initial_clean_completion": 0.255,
+        "final_clean_completion": 0.23000000000000004,
+        "clean_learning_change": {
+          "mean_difference": -0.025,
+          "paired_world_bootstrap_95_interval": [
+            -0.08499999999999999,
+            0.03
+          ]
+        },
+        "flight_time_learning_change": {
+          "mean_difference": 58.989999999999995,
+          "paired_world_bootstrap_95_interval": [
+            40.879375,
+            79.36050000000002
+          ]
+        },
+        "intrusion_time_learning_change": {
+          "mean_difference": 14.670000000000005,
+          "paired_world_bootstrap_95_interval": [
+            -23.059999999999995,
+            53.761999999999986
+          ]
+        }
+      },
+      "scaled": {
+        "initial_clean_completion": 0.255,
+        "final_clean_completion": 0.275,
+        "clean_learning_change": {
+          "mean_difference": 0.02,
+          "paired_world_bootstrap_95_interval": [
+            -0.034999999999999996,
+            0.07500000000000001
+          ]
+        },
+        "flight_time_learning_change": {
+          "mean_difference": 131.15,
+          "paired_world_bootstrap_95_interval": [
+            97.55487499999998,
+            166.4905
+          ]
+        },
+        "intrusion_time_learning_change": {
+          "mean_difference": 23.32,
+          "paired_world_bootstrap_95_interval": [
+            -14.411750000000003,
+            71.09149999999998
+          ]
+        }
+      }
+    }
+  },
+  "fresh_sac_ppo_pilot": {
+    "protocol": "runs/sac-ppo-matched-pilot-v1/protocol.json",
+    "protocol_sha256": "6e866ef99fa39e3b11fcb49bc1ee5fde6c7fe3ef25b12b2624105656bf13e087",
+    "source_bundle_sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+    "session_id": 57529,
+    "confirmed_live_this_turn": true,
+    "training_seed": 51800,
+    "per_algorithm_live_budget": 100000,
+    "arm_order": [
+      "sac",
+      "ppo"
+    ],
+    "sac_latest_training_row": {
+      "collection": "66",
+      "live_transitions": "53904",
+      "padded_transitions": "30576",
+      "counted_transitions": "84480",
+      "replay_size": "53904",
+      "world_decisions": "8448",
+      "worlds_completed": "17",
+      "aircraft_completed": "179",
+      "optimizer_steps": "7948",
+      "actor_optimizer_steps": "7948",
+      "entropy_optimizer_steps": "7948",
+      "gradient_rounds": "7948",
+      "wall_seconds": "565.2895693000028",
+      "live_transitions_per_second": "95.35643841217386",
+      "training_return_last100": "-0.6444851736090044",
+      "native_return_last100": "-64.44851736090042",
+      "training_arrival_last100": "0.93",
+      "actor_loss": "0.2388828694820404",
+      "critic_loss": "0.0013543334789574146",
+      "entropy_coefficient": "0.00100747833494097"
+    },
+    "analysis_prepared": "runs/sac-ppo-matched-pilot-v1/analyze.py",
+    "performance_conclusion_pending": true
+  },
+  "continuing_exploration_persistence": {
+    "protocol": "runs/ppo-gsde-timing-pilot-v1/protocol.json",
+    "session_id": 76386,
+    "confirmed_live_this_turn": true,
+    "every12_training": {
+      "status": "complete",
+      "algorithm": "ppo",
+      "live_transitions": 100438,
+      "padded_transitions": 58282,
+      "counted_transitions": 158720,
+      "optimizer_steps": 814,
+      "policy_epochs": 273,
+      "rollouts": 62,
+      "worlds_completed": 46,
+      "aircraft_completed": 469,
+      "wall_seconds": 687.7443136000002,
+      "actor_and_critic_parameters_changed": true,
+      "source_unchanged": true,
+      "model_sha256": "5fdebf1b43623b623b6575f4517b6035523a557a27cffaa26131302a5aa5d571",
+      "training_seed": 51700,
+      "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+    },
+    "completed_every12_evaluations": [
+      "initial"
+    ],
+    "last_confirmed_stage": "every12 eval-50k"
+  },
+  "new_cluster_sac_check": {
+    "bundle": {
+      "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cluster-sac-check-v1.zip",
+      "sha256": "f246182da64c516a436c138a389e8f2e575a360c6973c7d353a3f996f71129b9",
+      "bytes": 292907,
+      "source_files": 148,
+      "base_source_sha256": "14519f052b658d2015d1e1a7013953911b3b7dd7dd882a94cfcf3ef229912f75",
+      "all_base_files_byte_identical": true,
+      "submitted": false
+    },
+    "instructions": "docs/competition/SAC_CLUSTER_CHECK.md",
+    "validation": "runs/sac-comparison-development-v1/cluster-job-checks/validation.json",
+    "shell_and_embedded_python_checks_passed": true,
+    "duplicate_submission_guard_tested": true,
+    "real_jobs_submitted": 0,
+    "cuda_execution_verified": false,
+    "existing_environment_reused": true
+  },
+  "pending_cluster_items": {
+    "raw_baseline_archive_present": false,
+    "baseline_retrieval": "docs/competition/BASELINE_RESULTS_DOWNLOAD.md",
+    "static_study_submission_observed": false,
+    "static_study_submission_question_pending": true
+  },
+  "preserved": {
+    "classical_benchmark_fixed": true,
+    "historical_sac_unchanged": true,
+    "training_source_frozen": true,
+    "reserved_unseen_streams": [
+      20301,
+      20302
+    ]
+  }
+}

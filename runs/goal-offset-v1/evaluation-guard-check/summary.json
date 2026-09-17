@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "deliberately_mismatched_action_semantics_rejected": true,
+  "no_comparison_created": true,
+  "reference_evaluations_unchanged": true,
+  "error": "ValueError: Initial/trained comparison changed action reference"
+}

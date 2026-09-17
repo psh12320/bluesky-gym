@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "worlds": 32,
+  "live_transitions": 62744,
+  "intervened_transitions": 9560,
+  "actor_dim": 170,
+  "eligible_for_learning": true,
+  "reinforcement_learning_updates": 0,
+  "teacher_source_unchanged": true,
+  "exact_reference_metric_matches": 0,
+  "protocol_sha256": "8206e5e72eb910b5b84590defbc9ed7167c83e1f97f15062bbef1f6b8e0f0534",
+  "world_manifest_sha256": "f9b6d17d046700f6616d5ffa0599c9985a554e47edf67d08b52c0f3456995f6f",
+  "space_sha256": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481",
+  "wall_seconds": 5265.530999999995
+}

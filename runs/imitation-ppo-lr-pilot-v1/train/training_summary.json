@@ -1,0 +1,69 @@
+{
+  "status": "wall_limit_before_budget",
+  "algorithm": "ppo",
+  "live_transitions": 59207,
+  "padded_transitions": 35513,
+  "counted_transitions": 94720,
+  "optimizer_steps": 1380,
+  "policy_epochs": 370,
+  "rollouts": 37,
+  "worlds_completed": 28,
+  "aircraft_completed": 288,
+  "wall_seconds": 52630.320150600004,
+  "actor_and_critic_parameters_changed": true,
+  "source_unchanged": true,
+  "model_sha256": "fd358f6e1c404cc3aab0f2b499457c4c0a925494118c1887e608c38989ec713d",
+  "training_seed": 61420,
+  "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations.",
+  "pretraining": {
+    "method": "behavior_cloning",
+    "original_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-pilot-v1\\bc",
+    "archived_directory": "pretraining",
+    "archived_files": {
+      "model.zip": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+      "config.json": "60fdfd3b93d991b8ec83b25eaa5e031e9030a19d2638ed429576650f324601b8",
+      "training_summary.json": "745612c99f6283b102f684d0776be0a7d14fd324a81726fe3a0930b3e769ee3e",
+      "checkpoints.json": "204efb0e4d6062f51a9dd9d500ac3f47be574a973a6ecfa72ac5aa65afa5e635",
+      "provenance.json": "774c1dbb9ac77697569cec14cd909cb71a40cfddbc33e82bf3565d34eb6dd583"
+    },
+    "parent_checkpoint": {
+      "file": "model.zip",
+      "sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+      "policy_fingerprint": "cb2d5736069d69db530a015bacefcb9ad2495d7489ae32ec0e93616ffd3245ee",
+      "live_transitions": 0,
+      "counted_transitions": 0,
+      "padded_transitions": 0,
+      "optimizer_steps": 0,
+      "policy_epochs": 0,
+      "rollouts": 0,
+      "training_method": "behavior_cloning",
+      "supervised_epochs": 40,
+      "supervised_optimizer_steps": 2480,
+      "supervised_examples_seen": 2509760,
+      "demonstration_transitions": 62744
+    },
+    "demonstration_transitions": 62744,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "initial_policy_is_untrained": false,
+    "rl_live_transitions_at_initialization": 0,
+    "ppo_optimizer_inherited": false,
+    "action_space_compatibility": {
+      "parent_dtype": "float32",
+      "ppo_dtype": "float64",
+      "shape": [
+        2
+      ],
+      "low": [
+        -1.0,
+        -1.0
+      ],
+      "high": [
+        1.0,
+        1.0
+      ],
+      "only_floating_storage_dtype_may_differ": true
+    }
+  },
+  "training_method": "ppo_after_behavior_cloning"
+}

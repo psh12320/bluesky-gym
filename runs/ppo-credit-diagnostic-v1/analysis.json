@@ -1,0 +1,402 @@
+{
+  "cases": {
+    "initial": {
+      "live_decisions": 3462,
+      "metric_matches": 180,
+      "native_reward_components": {
+        "total": {
+          "goal": 748.3432761948092,
+          "intrusion": -2419.094957293688,
+          "restricted": 0.0,
+          "outside": 0.0,
+          "drift": -0.6202678608819363
+        },
+        "nonzero_fraction": {
+          "goal": 0.005777007510109763,
+          "intrusion": 0.14240323512420566,
+          "restricted": 0.0,
+          "outside": 0.0,
+          "drift": 0.9962449451184286
+        }
+      },
+      "critic_on_deterministic_trajectories": {
+        "mean_prediction": 0.27154237217501725,
+        "mean_realized_return": -0.3028910486224195,
+        "prediction_return_correlation": 0.09910030608375617,
+        "mse": 0.9879087936571955,
+        "realized_return_variance": 0.5724482584954267,
+        "explained_variance": -0.14933538352865217
+      },
+      "offline_full_trajectory_advantages": {
+        "0.95": {
+          "rms": 0.33487305727849653,
+          "correlation_with_realized_advantage": 0.6428459992375141,
+          "sign_agreement_with_realized_advantage": 0.8180242634315424
+        },
+        "0.99": {
+          "rms": 0.6806103391782865,
+          "correlation_with_realized_advantage": 0.9560328894809009,
+          "sign_agreement_with_realized_advantage": 0.9477180820335066
+        },
+        "1.0": {
+          "rms": 0.9939360108463704,
+          "correlation_with_realized_advantage": 0.9999999999999999,
+          "sign_agreement_with_realized_advantage": 1.0
+        }
+      },
+      "aircraft_intrusion_occupancy_onsets": {
+        "count": 39,
+        "predicted_earlier_within_180s": 39,
+        "earliest_warning_lead_seconds_p10_p50_p90": [
+          159.0,
+          180.0,
+          180.0
+        ]
+      },
+      "aircraft_level_flags_descriptive_only": {
+        "flag_fraction": 0.377527440785673,
+        "observed_intrusion_within_180s_given_flag": 0.9984697781178271,
+        "flag_given_intrusion_within_180s": 0.9717051377513031
+      },
+      "future_intrusion_buckets": {
+        "after_180s": {
+          "decisions": 530,
+          "mean_discounted_return": -0.8787574080925507,
+          "mean_critic_value": 0.2573532103086418,
+          "mean_immediate_scaled_reward": -3.032918032485406e-06,
+          "predicted_flag_fraction": 0.0
+        },
+        "121_to_180s": {
+          "decisions": 192,
+          "mean_discounted_return": -0.9359199618456944,
+          "mean_critic_value": 0.3497438174769438,
+          "mean_immediate_scaled_reward": -1.5728005798178197e-06,
+          "predicted_flag_fraction": 0.8697916666666666
+        },
+        "61_to_120s": {
+          "decisions": 261,
+          "mean_discounted_return": -0.8785774640437676,
+          "mean_critic_value": 0.32282252525518224,
+          "mean_immediate_scaled_reward": -1.8221366997091262e-06,
+          "predicted_flag_fraction": 0.9501915708812261
+        },
+        "31_to_60s": {
+          "decisions": 180,
+          "mean_discounted_return": -0.8931278434880061,
+          "mean_critic_value": 0.2989285269131263,
+          "mean_immediate_scaled_reward": -1.6435754083391952e-06,
+          "predicted_flag_fraction": 1.0
+        },
+        "within_30s": {
+          "decisions": 217,
+          "mean_discounted_return": -0.8908344009193148,
+          "mean_critic_value": 0.31948642597495136,
+          "mean_immediate_scaled_reward": -1.3838228573392064e-06,
+          "predicted_flag_fraction": 1.0
+        },
+        "current_intrusion": {
+          "decisions": 493,
+          "mean_discounted_return": -0.6206891046162196,
+          "mean_critic_value": 0.18650487353968573,
+          "mean_immediate_scaled_reward": -0.04755189716374218,
+          "predicted_flag_fraction": 1.0
+        },
+        "no_later_intrusion": {
+          "decisions": 1589,
+          "mean_discounted_return": 0.30598601142300885,
+          "mean_critic_value": 0.2751368200271628,
+          "mean_immediate_scaled_reward": 0.0042368451524279266,
+          "predicted_flag_fraction": 0.0012586532410320957
+        }
+      }
+    },
+    "std005": {
+      "live_decisions": 3787,
+      "metric_matches": 180,
+      "native_reward_components": {
+        "total": {
+          "goal": 748.3432761948092,
+          "intrusion": -2838.9847778716385,
+          "restricted": 0.0,
+          "outside": 0.0,
+          "drift": -0.8527191440627224
+        },
+        "nonzero_fraction": {
+          "goal": 0.0052812252442566675,
+          "intrusion": 0.14364932664378136,
+          "restricted": 0.0,
+          "outside": 0.0,
+          "drift": 1.0
+        }
+      },
+      "critic_on_deterministic_trajectories": {
+        "mean_prediction": -0.33636363437937844,
+        "mean_realized_return": -0.3985991845923983,
+        "prediction_return_correlation": 0.7957404330954739,
+        "mse": 0.23007062697608155,
+        "realized_return_variance": 0.6128973924364836,
+        "explained_variance": 0.6309376315559937
+      },
+      "offline_full_trajectory_advantages": {
+        "0.95": {
+          "rms": 0.20759587541267452,
+          "correlation_with_realized_advantage": 0.6580628497992915,
+          "sign_agreement_with_realized_advantage": 0.7707948243992606
+        },
+        "0.99": {
+          "rms": 0.35335975850621987,
+          "correlation_with_realized_advantage": 0.9443481871255751,
+          "sign_agreement_with_realized_advantage": 0.9210456825983628
+        },
+        "1.0": {
+          "rms": 0.479656780392065,
+          "correlation_with_realized_advantage": 1.0,
+          "sign_agreement_with_realized_advantage": 1.0
+        }
+      },
+      "aircraft_intrusion_occupancy_onsets": {
+        "count": 37,
+        "predicted_earlier_within_180s": 37,
+        "earliest_warning_lead_seconds_p10_p50_p90": [
+          148.0,
+          180.0,
+          180.0
+        ]
+      },
+      "aircraft_level_flags_descriptive_only": {
+        "flag_fraction": 0.39371534195933455,
+        "observed_intrusion_within_180s_given_flag": 0.9684775318578136,
+        "flag_given_intrusion_within_180s": 0.9280205655526992
+      },
+      "future_intrusion_buckets": {
+        "after_180s": {
+          "decisions": 914,
+          "mean_discounted_return": -0.7194861883012311,
+          "mean_critic_value": -0.3973349620487757,
+          "mean_immediate_scaled_reward": -3.5164517947940946e-06,
+          "predicted_flag_fraction": 0.047045951859956234
+        },
+        "121_to_180s": {
+          "decisions": 259,
+          "mean_discounted_return": -0.9059274431101736,
+          "mean_critic_value": -0.6632011311234813,
+          "mean_immediate_scaled_reward": -2.23328592467381e-06,
+          "predicted_flag_fraction": 0.7953667953667953
+        },
+        "61_to_120s": {
+          "decisions": 348,
+          "mean_discounted_return": -0.8216073441112411,
+          "mean_critic_value": -0.6841323256991728,
+          "mean_immediate_scaled_reward": -2.202692187429736e-06,
+          "predicted_flag_fraction": 0.882183908045977
+        },
+        "31_to_60s": {
+          "decisions": 189,
+          "mean_discounted_return": -0.8716069352655631,
+          "mean_critic_value": -0.7917570752922012,
+          "mean_immediate_scaled_reward": -2.1358314562119506e-06,
+          "predicted_flag_fraction": 0.9365079365079365
+        },
+        "within_30s": {
+          "decisions": 216,
+          "mean_discounted_return": -0.9351921549330121,
+          "mean_critic_value": -0.8360158322008189,
+          "mean_immediate_scaled_reward": -1.959679572539912e-06,
+          "predicted_flag_fraction": 0.9722222222222222
+        },
+        "current_intrusion": {
+          "decisions": 544,
+          "mean_discounted_return": -0.6803409767672586,
+          "mean_critic_value": -0.8359240973201368,
+          "mean_immediate_scaled_reward": -0.05150092045739076,
+          "predicted_flag_fraction": 1.0
+        },
+        "no_later_intrusion": {
+          "decisions": 1317,
+          "mean_discounted_return": 0.3079047343692256,
+          "mean_critic_value": 0.21576798037200143,
+          "mean_immediate_scaled_reward": 0.005396313195459924,
+          "predicted_flag_fraction": 0.0030372057706909645
+        }
+      }
+    },
+    "std020": {
+      "live_decisions": 6064,
+      "metric_matches": 180,
+      "native_reward_components": {
+        "total": {
+          "goal": 748.3432761948092,
+          "intrusion": -1999.2051367157374,
+          "restricted": 0.0,
+          "outside": 0.0,
+          "drift": -2.606813396817089
+        },
+        "nonzero_fraction": {
+          "goal": 0.0032981530343007917,
+          "intrusion": 0.0728891820580475,
+          "restricted": 0.0,
+          "outside": 0.0,
+          "drift": 1.0
+        }
+      },
+      "critic_on_deterministic_trajectories": {
+        "mean_prediction": -0.333789715412998,
+        "mean_realized_return": -0.15153585691442778,
+        "prediction_return_correlation": 0.6049666748587438,
+        "mse": 0.27518433518366986,
+        "realized_return_variance": 0.3814086365333207,
+        "explained_variance": 0.3655941605168288
+      },
+      "offline_full_trajectory_advantages": {
+        "0.95": {
+          "rms": 0.15782852610967293,
+          "correlation_with_realized_advantage": 0.5613743476642163,
+          "sign_agreement_with_realized_advantage": 0.7557717678100264
+        },
+        "0.99": {
+          "rms": 0.3181053953212984,
+          "correlation_with_realized_advantage": 0.8890513578245469,
+          "sign_agreement_with_realized_advantage": 0.9088060686015831
+        },
+        "1.0": {
+          "rms": 0.5245801513435957,
+          "correlation_with_realized_advantage": 1.0,
+          "sign_agreement_with_realized_advantage": 1.0
+        }
+      },
+      "aircraft_intrusion_occupancy_onsets": {
+        "count": 20,
+        "predicted_earlier_within_180s": 20,
+        "earliest_warning_lead_seconds_p10_p50_p90": [
+          113.0,
+          170.0,
+          180.0
+        ]
+      },
+      "aircraft_level_flags_descriptive_only": {
+        "flag_fraction": 0.1875,
+        "observed_intrusion_within_180s_given_flag": 0.8715919085312225,
+        "flag_given_intrusion_within_180s": 0.9483253588516747
+      },
+      "future_intrusion_buckets": {
+        "after_180s": {
+          "decisions": 1309,
+          "mean_discounted_return": -0.7226519052969913,
+          "mean_critic_value": -0.44047434280453585,
+          "mean_immediate_scaled_reward": -4.596504419487195e-06,
+          "predicted_flag_fraction": 0.014514896867838044
+        },
+        "121_to_180s": {
+          "decisions": 174,
+          "mean_discounted_return": -1.0079744418101624,
+          "mean_critic_value": -0.6425790190375571,
+          "mean_immediate_scaled_reward": -3.711590558841789e-06,
+          "predicted_flag_fraction": 0.7586206896551724
+        },
+        "61_to_120s": {
+          "decisions": 200,
+          "mean_discounted_return": -1.0223386268533745,
+          "mean_critic_value": -0.7519078163057565,
+          "mean_immediate_scaled_reward": -3.8512488235397195e-06,
+          "predicted_flag_fraction": 0.95
+        },
+        "31_to_60s": {
+          "decisions": 112,
+          "mean_discounted_return": -1.018288037316792,
+          "mean_critic_value": -0.8598887309698122,
+          "mean_immediate_scaled_reward": -3.5551595803495266e-06,
+          "predicted_flag_fraction": 0.9821428571428571
+        },
+        "within_30s": {
+          "decisions": 117,
+          "mean_discounted_return": -1.0207419123294847,
+          "mean_critic_value": -0.8956209032708763,
+          "mean_immediate_scaled_reward": -3.603149186499386e-06,
+          "predicted_flag_fraction": 1.0
+        },
+        "current_intrusion": {
+          "decisions": 442,
+          "mean_discounted_return": -0.6587555533157661,
+          "mean_critic_value": -0.7703285932823241,
+          "mean_immediate_scaled_reward": -0.04438751429495653,
+          "predicted_flag_fraction": 1.0
+        },
+        "no_later_intrusion": {
+          "decisions": 3710,
+          "mean_discounted_return": 0.2510884648080634,
+          "mean_critic_value": -0.17351730058692658,
+          "mean_immediate_scaled_reward": 0.001911818656692229,
+          "predicted_flag_fraction": 0.03423180592991914
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Two reused development worlds, not new performance evidence.",
+    "Deterministic trajectory returns differ from the stochastic-policy returns the critic was trained to predict.",
+    "Full-trajectory GAE here differs from actual finite training rollouts and is diagnostic only.",
+    "Aircraft-level predicted flags need not refer to the same pair as a later observed conflict.",
+    "A delayed reward or a short residual weighting scale does not prove a learning bug; a good critic can convey long-term consequences.",
+    "No models, training parameters, rewards or evaluation settings change."
+  ],
+  "timing_weights": {
+    "gamma": 0.996508469331006,
+    "seconds_per_decision": 5,
+    "by_lambda": {
+      "0.95": {
+        "residual_e_folding_seconds": 91.25597198956432,
+        "residual_weight_after_seconds": {
+          "30": 0.7198261114245639,
+          "60": 0.5181496306886085,
+          "120": 0.26847903978274146,
+          "180": 0.13911231531105975,
+          "300": 0.03734874083666728
+        },
+        "discount_weight_after_seconds": {
+          "30": 0.9792328287182487,
+          "60": 0.958896932839543,
+          "120": 0.919483327809083,
+          "180": 0.8816897428332259,
+          "300": 0.8106990188354292
+        }
+      },
+      "0.99": {
+        "residual_e_folding_seconds": 369.0588135021459,
+        "residual_weight_after_seconds": {
+          "30": 0.9219282698800207,
+          "60": 0.8499517348039685,
+          "120": 0.7224179514962755,
+          "180": 0.6140203911277885,
+          "300": 0.4435793531354788
+        },
+        "discount_weight_after_seconds": {
+          "30": 0.9792328287182487,
+          "60": 0.958896932839543,
+          "120": 0.919483327809083,
+          "180": 0.8816897428332259,
+          "300": 0.8106990188354292
+        }
+      },
+      "1.0": {
+        "residual_e_folding_seconds": 1429.5352262748527,
+        "residual_weight_after_seconds": {
+          "30": 0.9792328287182487,
+          "60": 0.958896932839543,
+          "120": 0.919483327809083,
+          "180": 0.8816897428332259,
+          "300": 0.8106990188354292
+        },
+        "discount_weight_after_seconds": {
+          "30": 0.9792328287182487,
+          "60": 0.958896932839543,
+          "120": 0.919483327809083,
+          "180": 0.8816897428332259,
+          "300": 0.8106990188354292
+        }
+      }
+    }
+  },
+  "protocol_sha256": "c5413e0915b53d3540579d370e7bc7350ad09961629dc7f5a731e28d326ab393",
+  "diagnostic_only": true,
+  "training_performed": false
+}

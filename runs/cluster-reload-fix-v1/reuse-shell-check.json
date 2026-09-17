@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "Reuse branch passed; no installs; existing outputs and environment preserved; missing interpreter rejected.\n",
+  "stderr": "",
+  "scope": "Stubbed shell control-flow check; not a CUDA or Slurm execution."
+}

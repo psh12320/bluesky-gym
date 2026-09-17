@@ -1,0 +1,10 @@
+{
+  "matched_rollouts": 5,
+  "matched_through_live_transitions": 21065,
+  "excluded_fields": [
+    "live_transitions_per_second",
+    "wall_seconds"
+  ],
+  "all_other_logged_fields_identical": true,
+  "limit": "Early numeric-log validation only; saved policy tensor identity at 100699 is still pending."
+}

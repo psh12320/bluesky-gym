@@ -1,0 +1,75 @@
+TY  - CONF
+ID  - 1
+AU  - Groot, D.J.
+AU  - Leto, G.
+AU  - Vlaskin, A.
+AU  - Moec, A.A.G.
+AU  - Ellerbroek, Joost
+TI  - BlueSky-Gym: Reinforcement Learning Environments for Air Traffic Applications
+T2  - SESAR Innovation Days 2024
+PY  - 2024
+UR  - https://research.tudelft.nl/en/publications/bluesky-gym-reinforcement-learning-environments-for-air-traffic-a/
+ER  -
+
+TY  - ELEC
+ID  - 2
+AU  - TUDelft-CNS-ATM
+TI  - BlueSky-Gym Air Traffic Control RL Competition
+N1  - AI4REAL-NET-Competition branch; revision 00930013219af4c17e509c3efc84a8becd0f3546
+Y2  - 2026/09/15
+UR  - https://github.com/TUDelft-CNS-ATM/bluesky-gym/blob/00930013219af4c17e509c3efc84a8becd0f3546/docs/competition/COMPETITION.md
+ER  -
+
+TY  - CONF
+ID  - 3
+AU  - Haarnoja, Tuomas
+AU  - Zhou, Aurick
+AU  - Abbeel, Pieter
+AU  - Levine, Sergey
+TI  - Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor
+T2  - Proceedings of the 35th International Conference on Machine Learning
+T3  - Proceedings of Machine Learning Research
+VL  - 80
+SP  - 1861
+EP  - 1870
+PY  - 2018
+UR  - https://proceedings.mlr.press/v80/haarnoja18b.html
+ER  -
+
+TY  - RPRT
+ID  - 4
+AU  - Johannink, Tobias
+AU  - Bahl, Shikhar
+AU  - Nair, Ashvin
+AU  - Luo, Jianlan
+AU  - Kumar, Avinash
+AU  - Loskyll, Matthias
+AU  - Aparicio Ojea, Juan
+AU  - Solowjow, Eugen
+AU  - Levine, Sergey
+TI  - Residual Reinforcement Learning for Robot Control
+PY  - 2018
+M3  - arXiv:1812.03201
+UR  - https://arxiv.org/abs/1812.03201
+ER  -
+
+TY  - RPRT
+ID  - 5
+AU  - Silver, Tom
+AU  - Allen, Kelsey
+AU  - Tenenbaum, Josh
+AU  - Kaelbling, Leslie
+TI  - Residual Policy Learning
+PY  - 2018
+M3  - arXiv:1812.06298
+UR  - https://arxiv.org/abs/1812.06298
+ER  -
+
+TY  - ELEC
+ID  - 6
+AU  - CGCooke
+TI  - BlueSky-Gym competition experiments and parameter reference
+N1  - Repository snapshot a458870c711679e4fedb764abc1d58c8f4ffdb61; public reports are not independently rerun or judge-verified
+Y2  - 2026/09/15
+UR  - https://github.com/CGCooke/bluesky-gym/tree/a458870c711679e4fedb764abc1d58c8f4ffdb61
+ER  -

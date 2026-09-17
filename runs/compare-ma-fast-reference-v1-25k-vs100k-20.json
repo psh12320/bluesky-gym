@@ -1,0 +1,110 @@
+{
+  "reference": "runs\\sac-ma-fast-reference-v1-25k-seed2900\\validation-20",
+  "candidate": "runs\\sac-ma-fast-reference-v1-100k-continuation-seed3906\\validation-100k-20",
+  "env": "ma",
+  "seed": 2026,
+  "episodes": 20,
+  "interval": "95% paired scenario bootstrap, pointwise; does not include training-seed uncertainty",
+  "metrics": {
+    "waypoint_reached": {
+      "reference": 1.0,
+      "candidate": 1.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "better": "higher"
+    },
+    "flight_time": {
+      "reference": 941.4199999999998,
+      "candidate": 971.0049999999998,
+      "delta": 29.58499999999998,
+      "ci95": [
+        -4.410750000000013,
+        71.75112499999997
+      ],
+      "better": "lower"
+    },
+    "intrusion_events": {
+      "reference": 0.030000000000000006,
+      "candidate": 0.02,
+      "delta": -0.01,
+      "ci95": [
+        -0.030000000000000006,
+        0.0
+      ],
+      "better": "lower"
+    },
+    "intrusion_time": {
+      "reference": 1.41,
+      "candidate": 1.0,
+      "delta": -0.41,
+      "ci95": [
+        -1.16,
+        0.0
+      ],
+      "better": "lower"
+    },
+    "restricted_area_events": {
+      "reference": 0.0,
+      "candidate": 0.005,
+      "delta": 0.005,
+      "ci95": [
+        0.0,
+        0.015000000000000003
+      ],
+      "better": "lower"
+    },
+    "time_in_restricted_area": {
+      "reference": 0.0,
+      "candidate": 0.475,
+      "delta": 0.475,
+      "ci95": [
+        0.0,
+        1.425
+      ],
+      "better": "lower"
+    },
+    "sector_exit_events": {
+      "reference": 0.0,
+      "candidate": 0.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "better": "lower"
+    },
+    "time_outside_sector": {
+      "reference": 0.0,
+      "candidate": 0.0,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "better": "lower"
+    },
+    "clean_completion_rate": {
+      "reference": 0.9700000000000001,
+      "candidate": 0.975,
+      "delta": 0.004999999999999999,
+      "ci95": [
+        -0.014999999999999996,
+        0.029999999999999992
+      ],
+      "better": "higher"
+    },
+    "all_aircraft_clean_completion_rate": {
+      "reference": 0.85,
+      "candidate": 0.85,
+      "delta": 0.0,
+      "ci95": [
+        -0.15,
+        0.15
+      ],
+      "better": "higher"
+    }
+  }
+}

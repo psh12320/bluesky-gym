@@ -1,0 +1,6 @@
+{
+  "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\initial-model.zip",
+  "target": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\progress-scaled-v1\\train\\initial-model.zip",
+  "full_policy_fingerprint": "12b569809f9ef0ff5720fda1a18b6dd5e3f694fb2b9ca917eff0f645df702c78",
+  "all_policy_tensors_identical": true
+}

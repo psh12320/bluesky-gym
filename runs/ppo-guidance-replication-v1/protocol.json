@@ -1,0 +1,59 @@
+{
+  "registered_at_utc": "2026-09-16T02:42:44.923614+00:00",
+  "purpose": "Replicate the guided PPO pilot across three independent learner seeds; retain every run.",
+  "first_seed": 49900,
+  "first_run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\train",
+  "additional_seeds": [
+    49920,
+    49940
+  ],
+  "world_seeds": {
+    "49900": [
+      49900,
+      49910
+    ],
+    "49920": [
+      49920,
+      49930
+    ],
+    "49940": [
+      49940,
+      49950
+    ]
+  },
+  "live_steps_per_run": 100000,
+  "workers": 2,
+  "recipe": "Same as the first guided PPO pilot: goal_offset, neutral mean, std .05, guidance on, filter off, reward scale .01, no shaping.",
+  "source_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-learning-source-v2.zip",
+    "sha256": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c",
+    "bytes": 239059,
+    "source_files": 122,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "training_source_files_identical_to_first_run": 92,
+  "source_differences": "Test-only explicit CPU model fixtures and documentation; all training package bytes remain identical.",
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "evaluation_controls": "Evaluate each independent run initial and final policy explicitly; no best-seed selection.",
+  "registration_timing": "Additional seeds committed after first guided training finished, before its completed learned-checkpoint evaluation results are available.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "limitations": [
+    "This is a three-seed 100k feasibility pilot, not the canonical eight-worker million-step matrix.",
+    "Development scenarios only; unseen generalization remains outstanding.",
+    "All seeds remain visible even if the original seed or replications fail.",
+    "High scores from the route prior do not count as learning."
+  ],
+  "scheduling": "Train the two additional runs sequentially, using two simulator workers at a time; existing evaluations continue."
+}

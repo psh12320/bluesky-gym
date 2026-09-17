@@ -1,0 +1,34 @@
+{
+  "declared_at_utc": "2026-09-15T15:51:45.993345+00:00",
+  "stage": "geometry implementation and declared classical development screen",
+  "hypothesis": "Routing to reachable points inside the existing goal-capture region can reduce unnecessary final detours without changing aircraft goals or scoring.",
+  "navigation_radius_km": 4.75,
+  "maximum_endpoint_scored_distance_km": 4.95,
+  "clearances_km": [
+    6,
+    3,
+    2,
+    1,
+    0
+  ],
+  "minimum_preferred_clearance_km": 2,
+  "maximum_detour_ratio": 1.15,
+  "initial_arms": [
+    "classical_point_goal",
+    "classical_goal_region"
+  ],
+  "track": "ma",
+  "episodes_per_arm": 20,
+  "scenario_seed": 2026,
+  "speed_action": 1.0,
+  "decision_interval_seconds": 5,
+  "heading_transport": "plain_decimal",
+  "traffic_and_static_filter": "unchanged scalar forecasting",
+  "selection_scope": "Development evidence only. No seed-2027 or seed-42 outcomes used for routing choices, parameter selection or checkpoint selection.",
+  "goals_scenarios_dynamics_scoring_changed": false,
+  "selected_deployment_changed": false,
+  "training_performed": false,
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "diagnostic_motivation": "Previously saved seed-2026 planar goal geometry, documented in PILOT_RESULTS.md",
+  "interpretation": "The finite endpoint search is a geometric approximation. Aircraft dynamics and moving traffic can still invalidate apparent path advantages. Report all objective metrics and both arms."
+}

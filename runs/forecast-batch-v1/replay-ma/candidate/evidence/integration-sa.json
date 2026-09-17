@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-09-15T12:27:58.731555+00:00",
+  "env": "sa",
+  "episodes": 2,
+  "agent_episodes": 2,
+  "seed": 2026,
+  "official_protocol": false,
+  "scope": "Original rollout functions with the corrected deployment integration hooks; development prefix only",
+  "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+  "manifest_sha256": "8d1a0e58ecc73c5613161bc763aff92e56a0936c1d6f7440c3c123fa5b013840",
+  "checker_sha256": "65fe3e4ca87c201abdd65d2be98858101bf0b848229b0ce1f162b4d0c89abb77",
+  "harness_sha256": "fa542c14afb8d844ec743364044492b20d517e3a4dd75bf492cf2f53fe403c2e",
+  "heading_transport_revision": 1,
+  "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\fast-reference-reach250-v1-ma25k-sa\\validation-200",
+  "metric_max_absolute_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "matches_reference": true,
+  "actual_records": [
+    {
+      "waypoint_reached": 1.0,
+      "flight_time": 929.0,
+      "intrusion_events": 0.0,
+      "intrusion_time": 0.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 249.9625820837948
+    },
+    {
+      "waypoint_reached": 1.0,
+      "flight_time": 1060.0,
+      "intrusion_events": 2.0,
+      "intrusion_time": 78.0,
+      "restricted_area_events": 0.0,
+      "time_in_restricted_area": 0.0,
+      "sector_exit_events": 0.0,
+      "time_outside_sector": 0.0,
+      "total_reward": 176.15328394130302
+    }
+  ]
+}

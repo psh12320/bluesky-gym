@@ -1,0 +1,11 @@
+{
+  "timesteps": 400,
+  "updates": 80,
+  "net_arch": [
+    256,
+    256
+  ],
+  "learning_rate": 0.000442773440394527,
+  "tau": 0.00824290145571395,
+  "matched_saved_configuration": true
+}

@@ -1,0 +1,316 @@
+{
+  "model_sha256": "dcea8a2871e307b9b4ba030ab2d85fece64cb8a20e18517db1ad410a1854f041",
+  "additional_training_transitions": 0,
+  "analysis_script_sha256": "43febbdf48a0c521a481765e61b621a4f867ead1236a2082cbf0107bcdebf626",
+  "scope": "Four selected development failure cases; not a distributional performance estimate",
+  "cases": {
+    "179": {
+      "scenario_sha256": "c4eb002f5d3121808ce426d6ebf1f1bee80bd43371cc4766324585f7a8eec243",
+      "original": {
+        "metrics": {
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -0.41127283123925523
+        },
+        "wall_seconds": 33.635264200042,
+        "route_statistics": {
+          "observations": 301,
+          "redirected_observations": 249,
+          "route_replans": 1,
+          "failed_replans": 0
+        },
+        "traffic_statistics": {
+          "actions": 300,
+          "interventions": 49,
+          "speed_interventions": 0,
+          "nominal_static_violation": 27,
+          "nominal_traffic_conflict": 22,
+          "no_static_feasible_candidate": 0,
+          "no_jointly_feasible_candidate": 0
+        }
+      },
+      "original_reference_differences": {
+        "waypoint_reached": 0.0,
+        "flight_time": 0.0,
+        "intrusion_events": 0.0,
+        "intrusion_time": 0.0,
+        "restricted_area_events": 0.0,
+        "time_in_restricted_area": 0.0,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 0.0
+      },
+      "route_choice": {
+        "metrics": {
+          "waypoint_reached": 1.0,
+          "flight_time": 715.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": 37.39776673557963
+        },
+        "wall_seconds": 7.331132700026501,
+        "route_statistics": {
+          "observations": 73,
+          "redirected_observations": 42,
+          "route_replans": 0,
+          "failed_replans": 0,
+          "route_choices": 1,
+          "shorter_route_choices": 1,
+          "lower_clearance_fallbacks": 0,
+          "geometric_detour_avoided_km": 388.10393079288906,
+          "unroutable_initializations": 0
+        },
+        "traffic_statistics": {
+          "actions": 72,
+          "interventions": 0,
+          "speed_interventions": 0,
+          "nominal_static_violation": 0,
+          "nominal_traffic_conflict": 0,
+          "no_static_feasible_candidate": 0,
+          "no_jointly_feasible_candidate": 0
+        }
+      }
+    },
+    "181": {
+      "scenario_sha256": "8c4fe76dd1a9a5569b2704bd166092239dd6f8a6ed034fe8118a85ad0cbb80be",
+      "original": {
+        "metrics": {
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -0.3726629916822171
+        },
+        "wall_seconds": 35.88467220001621,
+        "route_statistics": {
+          "observations": 301,
+          "redirected_observations": 255,
+          "route_replans": 7,
+          "failed_replans": 0
+        },
+        "traffic_statistics": {
+          "actions": 300,
+          "interventions": 155,
+          "speed_interventions": 2,
+          "nominal_static_violation": 149,
+          "nominal_traffic_conflict": 9,
+          "no_static_feasible_candidate": 0,
+          "no_jointly_feasible_candidate": 0
+        }
+      },
+      "original_reference_differences": {
+        "waypoint_reached": 0.0,
+        "flight_time": 0.0,
+        "intrusion_events": 0.0,
+        "intrusion_time": 0.0,
+        "restricted_area_events": 0.0,
+        "time_in_restricted_area": 0.0,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 0.0
+      },
+      "route_choice": {
+        "metrics": {
+          "waypoint_reached": 1.0,
+          "flight_time": 1792.0,
+          "intrusion_events": 1.0,
+          "intrusion_time": 64.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -23.2736997163235
+        },
+        "wall_seconds": 21.461981200031005,
+        "route_statistics": {
+          "observations": 181,
+          "redirected_observations": 131,
+          "route_replans": 3,
+          "failed_replans": 0,
+          "route_choices": 4,
+          "shorter_route_choices": 0,
+          "lower_clearance_fallbacks": 1,
+          "geometric_detour_avoided_km": 0.0,
+          "unroutable_initializations": 0
+        },
+        "traffic_statistics": {
+          "actions": 180,
+          "interventions": 68,
+          "speed_interventions": 12,
+          "nominal_static_violation": 51,
+          "nominal_traffic_conflict": 17,
+          "no_static_feasible_candidate": 0,
+          "no_jointly_feasible_candidate": 14
+        }
+      }
+    },
+    "86": {
+      "scenario_sha256": "6d801052d9f60d2a5f5e0635c2ba00640c83c695c289a88340598f50ac528f30",
+      "original": {
+        "metrics": {
+          "waypoint_reached": 0.0,
+          "flight_time": 3000.0,
+          "intrusion_events": 3.0,
+          "intrusion_time": 482.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -456.34532693778664
+        },
+        "wall_seconds": 28.480661700014025,
+        "route_statistics": {
+          "observations": 301,
+          "redirected_observations": 197,
+          "route_replans": 3,
+          "failed_replans": 0
+        },
+        "traffic_statistics": {
+          "actions": 300,
+          "interventions": 111,
+          "speed_interventions": 16,
+          "nominal_static_violation": 10,
+          "nominal_traffic_conflict": 111,
+          "no_static_feasible_candidate": 1,
+          "no_jointly_feasible_candidate": 49
+        }
+      },
+      "original_reference_differences": {
+        "waypoint_reached": 0.0,
+        "flight_time": 0.0,
+        "intrusion_events": 0.0,
+        "intrusion_time": 0.0,
+        "restricted_area_events": 0.0,
+        "time_in_restricted_area": 0.0,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 0.0
+      },
+      "route_choice": {
+        "metrics": {
+          "waypoint_reached": 1.0,
+          "flight_time": 2460.0,
+          "intrusion_events": 3.0,
+          "intrusion_time": 482.0,
+          "restricted_area_events": 0.0,
+          "time_in_restricted_area": 0.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -418.70801460293046
+        },
+        "wall_seconds": 22.062106899975333,
+        "route_statistics": {
+          "observations": 247,
+          "redirected_observations": 100,
+          "route_replans": 4,
+          "failed_replans": 0,
+          "route_choices": 5,
+          "shorter_route_choices": 1,
+          "lower_clearance_fallbacks": 2,
+          "geometric_detour_avoided_km": 454.3394905953909,
+          "unroutable_initializations": 0
+        },
+        "traffic_statistics": {
+          "actions": 246,
+          "interventions": 150,
+          "speed_interventions": 16,
+          "nominal_static_violation": 49,
+          "nominal_traffic_conflict": 111,
+          "no_static_feasible_candidate": 1,
+          "no_jointly_feasible_candidate": 49
+        }
+      }
+    },
+    "96": {
+      "scenario_sha256": "160c4f45127136f0b804cb2881d77686a9da2e9f426b55188d5b69d7b476562f",
+      "original": {
+        "metrics": {
+          "waypoint_reached": 1.0,
+          "flight_time": 1073.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 1.0,
+          "time_in_restricted_area": 90.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -7.657028947085621
+        },
+        "wall_seconds": 11.140206200012472,
+        "route_statistics": {
+          "observations": 109,
+          "redirected_observations": 39,
+          "route_replans": 3,
+          "failed_replans": 9
+        },
+        "traffic_statistics": {
+          "actions": 108,
+          "interventions": 68,
+          "speed_interventions": 36,
+          "nominal_static_violation": 26,
+          "nominal_traffic_conflict": 48,
+          "no_static_feasible_candidate": 23,
+          "no_jointly_feasible_candidate": 39
+        }
+      },
+      "original_reference_differences": {
+        "waypoint_reached": 0.0,
+        "flight_time": 0.0,
+        "intrusion_events": 0.0,
+        "intrusion_time": 0.0,
+        "restricted_area_events": 0.0,
+        "time_in_restricted_area": 0.0,
+        "sector_exit_events": 0.0,
+        "time_outside_sector": 0.0,
+        "total_reward": 0.0
+      },
+      "route_choice": {
+        "metrics": {
+          "waypoint_reached": 1.0,
+          "flight_time": 1073.0,
+          "intrusion_events": 0.0,
+          "intrusion_time": 0.0,
+          "restricted_area_events": 1.0,
+          "time_in_restricted_area": 90.0,
+          "sector_exit_events": 0.0,
+          "time_outside_sector": 0.0,
+          "total_reward": -7.657028947085621
+        },
+        "wall_seconds": 11.184130400011782,
+        "route_statistics": {
+          "observations": 109,
+          "redirected_observations": 39,
+          "route_replans": 4,
+          "failed_replans": 9,
+          "route_choices": 5,
+          "shorter_route_choices": 0,
+          "lower_clearance_fallbacks": 2,
+          "geometric_detour_avoided_km": 0.0,
+          "unroutable_initializations": 0
+        },
+        "traffic_statistics": {
+          "actions": 108,
+          "interventions": 68,
+          "speed_interventions": 36,
+          "nominal_static_violation": 26,
+          "nominal_traffic_conflict": 48,
+          "no_static_feasible_candidate": 23,
+          "no_jointly_feasible_candidate": 39
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-09-16T06:35:05.497475+00:00",
+  "result_sha256": "1e55195bb893013ed90b2b13fdaaede57e80a2124b2da9cd4ae0eaeb0d5ff1b9",
+  "decision": "Neither Gaussian-width arm advances to replication under the registered screen.",
+  "reason": "The wider arm raises clean completion but lowers arrivals and increases flight and intrusion time; the narrow arm also deteriorates.",
+  "next_experiment": "runs/ppo-position-scale-pilot-v1/protocol.json",
+  "next_experiment_sha256": "8694b607c0d1dabf9e8022bc222b92f880d5ed0cec633dea8c0ced080339a901",
+  "single_factor": "Existing relative x/y positions multiplied by 20; same Gaussian exploration std 0.05, initial tensors, architecture, support and budget.",
+  "gSDE_performance_study": "Not started; keep exploration timing separate from input conditioning.",
+  "unseen_scenarios_used": false,
+  "fixed_benchmark_changed": false
+}

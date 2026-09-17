@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-09-16T03:05:50.075110+00:00",
+  "job_id": 851402,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed_seconds": 62,
+  "allocated_cpus": 16,
+  "max_rss_kib": 4690400,
+  "transcript_sha256": "53ba7865d63fb0993e88410478d5d38baeaaa15a952c7a40c7fd652cbc96a1ab",
+  "environment": "/home/s/shri/cs4246-rl/onpolicy-v1/.venv-cluster/bin/python",
+  "source_files_verified": 84,
+  "smoke_live_transitions": 15258,
+  "smoke_optimizer_steps": 30,
+  "classical_parity": "Two scenarios and all 180 aircraft metrics match the Windows reference.",
+  "scope": "Bootstrap integration passed. The tiny raw PPO smoke policy has zero arrivals; this is not trained-policy performance evidence.",
+  "evidence": "User-supplied sacct output and log tail; full remote log and artifacts have not been downloaded."
+}

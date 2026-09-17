@@ -1,0 +1,62 @@
+{
+  "algorithm": "ppo",
+  "workers": 1,
+  "live_steps": 1,
+  "rollout_steps": 256,
+  "batch_size": 512,
+  "epochs": 2,
+  "seed": 49800,
+  "device": "cpu",
+  "initial_action_std": 0.05,
+  "neutral_action_mean": true,
+  "action_reference": "goal_offset",
+  "guidance": false,
+  "filter": false,
+  "progress_scale": 0.0,
+  "reward_scale": 0.01,
+  "actor_reference": null,
+  "run_dir": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\live-diagnostics-smoke-v1\\reference",
+  "checkpoint_live_steps": 100000,
+  "max_wall_seconds": 180.0,
+  "world_seeds": [
+    49800
+  ],
+  "actor_information": "own standard aircraft observation plus remaining-time fraction",
+  "critic_information": "same local observation as actor",
+  "actor_widths": [
+    128,
+    128
+  ],
+  "critic_widths": [
+    256,
+    256
+  ],
+  "shared_actor": true,
+  "shared_critic": true,
+  "gamma": 0.996508469331006,
+  "gae_lambda": 0.95,
+  "learning_rate": 0.0003,
+  "clip_range": 0.2,
+  "entropy_coefficient": 0.01,
+  "value_coefficient": 0.5,
+  "max_grad_norm": 0.5,
+  "target_kl": 0.03,
+  "decision_interval_seconds": 5,
+  "reward_recipe": "public_weights",
+  "automatic_residual_controller": true,
+  "navigation_prior": "Goal/reference-bearing tracking before learned heading offset",
+  "learning_reward_formula": "reward_scale * (native_reward + potential_shaping)",
+  "progress_shaping": {
+    "scale": 0.0,
+    "distance_norm_km": 150.0,
+    "distance_cap_km": 1500.0,
+    "potential": "-scale * clipped_distance_to_goal_region / 150 * remaining_time_fraction",
+    "formula": "gamma * next_potential - current_potential; terminal potential is zero",
+    "original_scoring_info_unchanged": true
+  },
+  "finite_horizon": "Do not bootstrap beyond goal completion or the actual 3000-second competition deadline; bootstrap at rollout cuts.",
+  "action_distribution": "SB3 diagonal Gaussian; clip sampled latent actions to [-1,1] before the recorded action mapping",
+  "action_mapping": "Heading: observed reference bearing plus learned +/-90 degree offset, wrapped and clipped to +/-45 degree turn; speed increment unchanged",
+  "active_mask": "Policy, value, entropy and advantage-normalization samples exclude inactive aircraft slots",
+  "budget_unit": "Live aircraft transitions; finish the current rollout, recording exact overshoot and padded slot count"
+}

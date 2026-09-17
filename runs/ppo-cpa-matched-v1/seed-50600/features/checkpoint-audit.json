@@ -1,0 +1,20 @@
+{
+  "run_directory": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50600\\features\\train",
+  "algorithm": "ppo",
+  "status": "complete",
+  "live_transitions": 100660,
+  "padded_transitions": 45260,
+  "optimizer_steps": 2074,
+  "verified_checkpoints": 4,
+  "verified_source_files": 93,
+  "learning_curve_rows": 57,
+  "aircraft_completed": 510,
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 109825,
+  "actor_and_critic_changed": true,
+  "actor_gradient_to_joint_context_zero": true,
+  "critic_uses_joint_context": false,
+  "structural_probe": "Synthetic bounded inputs verify computation dependencies; these are not performance scenarios.",
+  "model_sha256": "b2c7c0a603fa2bdd8f6b2b8b1c4a88824ebfd4293cf9b9f3e3edb325aceb77f3",
+  "policy_quality_assessed": false
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "episode": 0,
+    "file": "world-00000.npz",
+    "sha256": "39b9f871a5a90776a068ee0ea679309b697ae034371fc4d04757e9c7dbb7463c",
+    "scenario_sha256": "8388f25666cef8ec73a8eb2721fe9664650153ca7408ce2ea48949a07c42256b",
+    "live_transitions": 1967,
+    "interventions": 196
+  },
+  {
+    "episode": 1,
+    "file": "world-00001.npz",
+    "sha256": "5cc33e35a0df0e0240fa80a35ae5a91ebd2a51042b5d79c79dfd8f1a70fd1076",
+    "scenario_sha256": "ce995e6c6c710170d2c4a3f202e4554b19df57df70aa2bc75c9520ddc83f034d",
+    "live_transitions": 1751,
+    "interventions": 384
+  },
+  {
+    "episode": 2,
+    "file": "world-00002.npz",
+    "sha256": "a36409276643cabd7b4c4406e63e758e6fbb379c21e3b641cf6c3df183ec12f6",
+    "scenario_sha256": "9ec3a4560b76ba54f3269ea4fa45ea81001415b983990ad71c4b5e880159004f",
+    "live_transitions": 2611,
+    "interventions": 557
+  },
+  {
+    "episode": 3,
+    "file": "world-00003.npz",
+    "sha256": "a8580ca72e00b613ca448fee10c14b358329560979743ca2461cc1e1551c363d",
+    "scenario_sha256": "b8f25f9d3bbb527419c088f24f0a74930d23fbaaf737c113bee55c472d9df37e",
+    "live_transitions": 1643,
+    "interventions": 67
+  },
+  {
+    "episode": 4,
+    "file": "world-00004.npz",
+    "sha256": "fc2c5eaf03a534ec1fc5d06fd8e55e5a4d2842d2fc263acbb4914fdb0e7285c7",
+    "scenario_sha256": "14c11600d5bb498e0b21d1351b6746249c9b0f33fc5ba1b554778be2e9b1ee9f",
+    "live_transitions": 1897,
+    "interventions": 215
+  },
+  {
+    "episode": 5,
+    "file": "world-00005.npz",
+    "sha256": "258cdb90412a3a1194cfa55a6ec8928a0b7e3cb9c69612094f2c225891e02621",
+    "scenario_sha256": "5e3af86908fd9dd4aa794c38b69b1da43be0c4344fe8d72c1aedb1d13aa17d68",
+    "live_transitions": 2162,
+    "interventions": 193
+  },
+  {
+    "episode": 6,
+    "file": "world-00006.npz",
+    "sha256": "1f560d1ef96af9d5d8b1185103a7c871731fb2918346be4b3cd2773a5b65708d",
+    "scenario_sha256": "20f174eed8718550c63e187b3d304e77eb9649ac79a2768ca2af0bb8eb6355b1",
+    "live_transitions": 2110,
+    "interventions": 290
+  },
+  {
+    "episode": 7,
+    "file": "world-00007.npz",
+    "sha256": "1c298f79bb551b4e52c34635e7cd514cf1561cbf9501345d643914310df7cdf6",
+    "scenario_sha256": "bfb852106b5b81022c373535dc3755ac1c3733ada6da2deecd3cf840828e0c57",
+    "live_transitions": 1967,
+    "interventions": 600
+  }
+]

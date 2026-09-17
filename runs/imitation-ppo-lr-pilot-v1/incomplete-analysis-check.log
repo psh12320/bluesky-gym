@@ -1,0 +1,10 @@
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 152, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+{"verified_files": 150, "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"}
+Traceback (most recent call last):
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-lr-pilot-v1\analyze.py", line 155, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-ppo-lr-pilot-v1\analyze.py", line 77, in main
+    raise ValueError("Wait for both registered arms and all their evaluations")
+ValueError: Wait for both registered arms and all their evaluations

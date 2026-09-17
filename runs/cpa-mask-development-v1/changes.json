@@ -1,0 +1,18 @@
+{
+  "files": [
+    "atc_rl/feature_mask.py",
+    "atc_rl/world_pool.py",
+    "atc_rl/world_worker.py",
+    "atc_rl/train.py",
+    "atc_rl/evaluate.py",
+    "atc_rl/curves.py",
+    "atc_rl/compare.py",
+    "atc_rl/algorithm_compare.py",
+    "atc_rl/matrix_evaluate.py",
+    "jobs/train_onpolicy.slurm",
+    "tests/rl/test_algorithm_compare.py",
+    "tests/rl/test_curve_configuration.py",
+    "tests/rl/test_feature_mask.py"
+  ],
+  "scope": "Same-size zero-input control; no classical controller or frozen source changed."
+}

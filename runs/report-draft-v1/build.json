@@ -1,0 +1,16 @@
+{
+  "pdf": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\output\\pdf\\feasibility-working-draft.pdf",
+  "pages": 4,
+  "pdf_sha256": "2da163ea8eb0cb557559ddbf41d846de81eb49673f3bc64ee131405af471b5c2",
+  "evidence_sha256": "982bc5d21ea864d828e29f6962c86e41c8b2173d1e131c636b49fa2d7c898864",
+  "source_sha256": "5cac27521c3130ace6aaa0684e9ae2e57754dc86215e404e826f9d27097503b6",
+  "verified_development_evaluations": [
+    "ma_classical",
+    "ma_historical",
+    "ma_learned",
+    "sa_classical",
+    "sa_learned"
+  ],
+  "heldout_outcomes_read": false,
+  "official_results_claimed": false
+}

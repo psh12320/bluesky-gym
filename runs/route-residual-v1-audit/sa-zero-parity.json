@@ -1,0 +1,27 @@
+{
+  "env": "sa",
+  "episodes": 20,
+  "agent_episodes": 20,
+  "exact_zero_adjustment_parity": true,
+  "max_absolute_metric_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "residual_statistics": {
+    "actions": 2647,
+    "heading_adjusted_actions": 0,
+    "speed_adjusted_actions": 0,
+    "absolute_heading_adjustment_deg": 0.0,
+    "absolute_speed_action": 0.0
+  },
+  "model_sha256": "70c826f504f0e16b488dfbd46486234b1ff33c45ae592bb1013ece1fd829ea67",
+  "reference": "runs/goal-route-input-v1-joint-sa-20",
+  "candidate": "runs/route-residual-v1-zero-sa-20"
+}

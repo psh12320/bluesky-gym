@@ -1,0 +1,18 @@
+{"deployment_model": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\intervention-reward-v1\\execution\\validate_1\\candidate\\models\\ma\\model.zip", "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb", "env": "ma", "heading_transport": {"revision": 1, "encoding": "plain_decimal"}}
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\validate_1\candidate\source\runs\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\validate_1\candidate\source\runs\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\validate_1\candidate\source\runs\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\validate_1\candidate\source\runs\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\validate_1\candidate\source\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\intervention-reward-v1\execution\validate_1\candidate\source\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Scenario 1/2: completion=100%, intrusion=0.0s
+Scenario 2/2: completion=100%, intrusion=0.0s

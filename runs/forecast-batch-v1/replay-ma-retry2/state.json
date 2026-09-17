@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "pid": 7088,
+  "protocol_sha256": "55b0316e44bdbf7c7a5429ad5584a8dc661aaa1003aff099b46fd34900e89165",
+  "prediction_checks": {
+    "decision_batches": 500,
+    "aircraft_forecasts_checked": 3984,
+    "all_forecast_coordinates_byte_equal": true,
+    "all_lifetimes_byte_equal": true
+  },
+  "completed_at_utc": "2026-09-15T15:32:28.596323+00:00",
+  "summary_sha256": "b7169b55c844e9134b118ad7d9a5a3513f5572c7726e563f2ae97f727d86a834"
+}

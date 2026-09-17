@@ -1,0 +1,15 @@
+{
+  "same_initial_actor_and_critic_tensors": true,
+  "initial_policy_fingerprint": "ad867ec9e93870b346fdca71c11b918629ac247de2f4f1059f75b3a8ce06a7e7",
+  "actor_parameters_each": 38660,
+  "critic_parameters_each": 109825,
+  "smoke_live_transitions_by_arm": {
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cpa-mask-development-v1\\features\\train": 1280,
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cpa-mask-development-v1\\zeros\\train": 1280
+  },
+  "masked_initial_physical_metrics_identical": 180,
+  "worlds": 2,
+  "masked_checkpoint_reload_uses_recorded_features": true,
+  "performance_evidence": false,
+  "scope": "Small integration runs, excluded from pilot performance claims."
+}

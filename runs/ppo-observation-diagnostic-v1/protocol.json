@@ -1,0 +1,35 @@
+{
+  "registered_at_utc": "2026-09-16T04:16:08.716140+00:00",
+  "source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-cpa-source-v2-verify",
+  "source_bundle_sha256": "e6048403809a7c1121291a8b16590946d71a991788717798fd85498e9c15fe71",
+  "worlds": 1,
+  "stream": 20260,
+  "behavior": "Zero latent actions, goal_offset, guidance on, filter off.",
+  "sample": "Every live aircraft observation before every fifth world decision.",
+  "purpose": "Inspect input scales, hidden saturation and action variation on a fixed reference trajectory.",
+  "models": {
+    "guided_49900_100k": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\train\\model.zip",
+      "sha256": "ffa8a1ceee4fae55e8fc4e42f0953aecc4277799428c12b86b3441f4ef8da3d9"
+    },
+    "guided_49920_100k": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\train\\model.zip",
+      "sha256": "e651505027477200aa6d4289246a47114282b2341351d46f11b8577258f31d12"
+    },
+    "guided_49940_100k": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\train\\model.zip",
+      "sha256": "cb683c1ccb8d6fe7b8d7db996a984729c642ba7894850d45edab1c13519f2927"
+    },
+    "features_50400_100k": {
+      "path": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50400\\features\\train\\model.zip",
+      "sha256": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c"
+    }
+  },
+  "performance_comparison": false,
+  "limitations": [
+    "One development world under the untrained reference, not each learned policy's state distribution.",
+    "Actor outputs are inspected without commanding the simulator.",
+    "Input scales and activation summaries alone cannot establish the cause of failed learning.",
+    "Different architectures and training seeds are descriptive here, not a controlled algorithm ranking."
+  ]
+}

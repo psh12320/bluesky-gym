@@ -1,0 +1,71 @@
+{
+  "episodes": 2,
+  "agent_episodes": 20,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 836.55,
+      "std": 161.7249130468154
+    },
+    "intrusion_events": {
+      "mean": 2.1,
+      "std": 1.57797338380595
+    },
+    "intrusion_time": {
+      "mean": 121.7,
+      "std": 105.20461016514439
+    },
+    "restricted_area_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_in_restricted_area": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -77.70574387747666,
+      "std": 99.4806244859355
+    }
+  },
+  "clean_completion_rate": 0.25,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "seed": 20260,
+  "track": "ma",
+  "official_protocol": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "actor_uses_joint_context": false,
+    "training_track": "ma",
+    "evaluation_track": "ma",
+    "single_agent_transfer": false,
+    "observed_traffic_slots": 9,
+    "simulated_scripted_intruders": 0,
+    "episode_time_limit": 3000,
+    "intrusion_distance": 5,
+    "distance_margin": 5,
+    "action_frequency": 5,
+    "sim_dt": 1,
+    "n_obstacles": 5,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap"
+  },
+  "actor_inference_uses_joint_context": false,
+  "world_decisions": 449,
+  "wall_seconds": 25.991149000001315,
+  "csv_sha256": "14c0d46adca3eb9e7dd0216875c7380dc6e8638324296ce78d516fd3b10bee9e",
+  "original_harness_csv_sha256": "a35f13c8ffe5dd8d47325a0a93c512da6c28f735bf922cf01726ae5b39b747e8"
+}

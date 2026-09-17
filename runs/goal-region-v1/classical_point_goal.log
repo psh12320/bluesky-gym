@@ -1,0 +1,29 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\runs\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\runs\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\runs\simulator\output"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\runs\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\runs\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Reading cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\runs\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+Traceback (most recent call last):
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\run_screen.py", line 136, in <module>
+    parent() if args.mode is None else child(args.mode)
+                                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\run_screen.py", line 70, in child
+    rows,summary=evaluation.evaluate('ma',20,2026,None,recipe='public_route_choice_interval5',
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\classical_point_goal\candidate\source\atc\evaluate.py", line 24, in evaluate
+    env = make_env(kind, recipe, guard_static, guard_traffic)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\goal-region-v1\run_screen.py", line 44, in make_env
+    assert 'openap' in runtime['performance_module'].lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

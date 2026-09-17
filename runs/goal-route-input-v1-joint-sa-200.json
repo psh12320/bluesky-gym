@@ -1,0 +1,91 @@
+{
+  "episodes": 200,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.975,
+      "std": 0.15612494995995996
+    },
+    "flight_time": {
+      "mean": 1292.855,
+      "std": 570.1307253384964
+    },
+    "intrusion_events": {
+      "mean": 0.39,
+      "std": 0.6913031173081747
+    },
+    "intrusion_time": {
+      "mean": 21.19,
+      "std": 55.162703885868396
+    },
+    "restricted_area_events": {
+      "mean": 0.055,
+      "std": 0.24894778569009207
+    },
+    "time_in_restricted_area": {
+      "mean": 2.3,
+      "std": 14.849242404917502
+    },
+    "sector_exit_events": {
+      "mean": 0.01,
+      "std": 0.09949874371066199
+    },
+    "time_outside_sector": {
+      "mean": 0.665,
+      "std": 6.9572102886142515
+    },
+    "total_reward": {
+      "mean": 15.118456207603918,
+      "std": 55.93303675617376
+    }
+  },
+  "clean_completion_rate": 0.66,
+  "all_aircraft_clean_completion_rate": 0.66,
+  "wall_seconds": 2299.53979369998,
+  "world_decisions": 25952,
+  "seed": 2026,
+  "env": "sa",
+  "route_input_statistics": {
+    "observations": 26152,
+    "redirected_observations": 12465,
+    "route_replans": 145,
+    "failed_replans": 60
+  },
+  "traffic_projection_statistics": {
+    "actions": 25952,
+    "interventions": 6447,
+    "speed_interventions": 1024,
+    "nominal_static_violation": 952,
+    "nominal_traffic_conflict": 5661,
+    "no_static_feasible_candidate": 210,
+    "no_jointly_feasible_candidate": 1191
+  },
+  "policy": "goal",
+  "recipe": "public_route_input_sa_transfer",
+  "guard_static": true,
+  "guard_traffic": true,
+  "official_protocol": false,
+  "model_sha256": null,
+  "inference_mode": "goal",
+  "goal_speed_action": 0.0,
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0,
+  "route_input_revision": 1,
+  "route_input_planner_revision": 2,
+  "route_input_clearances_km": [
+    6.0,
+    3.0,
+    1.0,
+    0.0
+  ],
+  "route_input_sector_clearance_km": 6.0,
+  "route_input_distance": "original_goal",
+  "route_input_direct_bearing": "original_observation",
+  "traffic_projection_revision": 1,
+  "traffic_projection_horizon_seconds": 90.0,
+  "traffic_projection_sample_seconds": 5.0,
+  "traffic_projection_margin_km": 1.0,
+  "traffic_projection_turn_rate": 1.5,
+  "traffic_projection_acceleration": 1.0
+}

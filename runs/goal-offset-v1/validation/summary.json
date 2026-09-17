@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "paired_worlds": 4,
+  "paired_aircraft": 40,
+  "decision_pairs": 888,
+  "padding_slots": 2322,
+  "arrivals": 40,
+  "timeouts": 0,
+  "all_observations_rewards_terminals_metrics_identical": true,
+  "supported_guidance_filter_combinations": 4,
+  "guided_filtered_world_matches_preserved_fixture": true,
+  "source_unchanged": true,
+  "wall_seconds": 215.92302869999548,
+  "records_sha256": "765e4b0c1b167370bdc048d3a8ae377077316d8b959f643eb6fa797a894584a7"
+}

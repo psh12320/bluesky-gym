@@ -1,0 +1,29 @@
+{
+  "recorded_at_utc": "2026-09-16T06:47:35.299454+00:00",
+  "analysis_sha256": "8bb6849aa33467d6d9ea2798234e68510213f7ab44e4224625d7527c78e81fc1",
+  "evidence": {
+    "reproduced_metric_values": 540,
+    "trained_critic_correlations": {
+      "std005": 0.7957404330954739,
+      "std020": 0.6049666748587438
+    },
+    "native_reward_decomposition_verified": true,
+    "future_residual_weight_at_180_seconds": {
+      "0.95": 0.13911231531105975,
+      "0.99": 0.6140203911277885
+    }
+  },
+  "decision": "Keep the native reward fixed. Add a configurable GAE lambda for an isolated future training comparison; do not replace the current experiment.",
+  "reason": "The trained critics convey useful future-return information, so the data do not support a generally non-learning critic. Delayed residual weighting remains a testable hypothesis.",
+  "performance_experiment_launched_for_lambda": false,
+  "current_performance_priority": "Complete the existing input-scaling pilot and all six conflict-feature runs before interpreting their complete results.",
+  "no_claim": "Higher lambda has not been shown to improve trained policies. Offline agreement with realized returns does not estimate policy-gradient variance or establish causality.",
+  "limitations": [
+    "Two reused development worlds, not new performance evidence.",
+    "Deterministic trajectory returns differ from the stochastic-policy returns the critic was trained to predict.",
+    "Full-trajectory GAE here differs from actual finite training rollouts and is diagnostic only.",
+    "Aircraft-level predicted flags need not refer to the same pair as a later observed conflict.",
+    "A delayed reward or a short residual weighting scale does not prove a learning bug; a good critic can convey long-term consequences.",
+    "No models, training parameters, rewards or evaluation settings change."
+  ]
+}

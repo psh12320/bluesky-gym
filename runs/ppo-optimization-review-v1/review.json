@@ -1,0 +1,715 @@
+{
+  "reviewed_at_utc": "2026-09-16T05:05:43.859281+00:00",
+  "runs": [
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-pilot-v1\\train",
+      "status": "complete",
+      "seed": 49900,
+      "algorithm": "ppo",
+      "live_transitions": 101144,
+      "workers": 2,
+      "guidance": true,
+      "filter": false,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05319862440228462,
+        0.053084634244441986
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.787876196205616
+      ],
+      "all": {
+        "rollouts": 29,
+        "optimizer_steps": 1091,
+        "maximum_optimizer_steps_without_KL_stop": 1140,
+        "fraction_of_possible_optimizer_steps": 0.9570175438596491,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 1,
+        "mean_logged_approx_kl": 0.013273082673549652
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 361,
+        "maximum_optimizer_steps_without_KL_stop": 410,
+        "fraction_of_possible_optimizer_steps": 0.8804878048780488,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 1,
+        "mean_logged_approx_kl": 0.013345876429229974
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 390,
+        "maximum_optimizer_steps_without_KL_stop": 390,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013677042629569768
+      },
+      "source_artifacts": {
+        "config.json": "929a0d16759ed198fd4dfb90fabc6f72a1f4cc396135ea2fbf69b8c9866acbf8",
+        "training_summary.json": "2b3d32f1caaede167a73d277d3a857ff04ec81ea0a71c53b8c649e3b390ab9ed",
+        "learning.csv": "d3394d7fcec40b7aa2ba91455e21886281d19abdd22d1cdeb7e2054c6061cb61",
+        "model.zip": "ffa8a1ceee4fae55e8fc4e42f0953aecc4277799428c12b86b3441f4ef8da3d9"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49920\\train",
+      "status": "complete",
+      "seed": 49920,
+      "algorithm": "ppo",
+      "live_transitions": 101336,
+      "workers": 2,
+      "guidance": true,
+      "filter": false,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.051862683147192,
+        0.054249439388513565
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.66764148324728
+      ],
+      "all": {
+        "rollouts": 30,
+        "optimizer_steps": 1140,
+        "maximum_optimizer_steps_without_KL_stop": 1140,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01296760474021236
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 400,
+        "maximum_optimizer_steps_without_KL_stop": 400,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.012066962663084269
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 340,
+        "maximum_optimizer_steps_without_KL_stop": 340,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.012973683327436447
+      },
+      "source_artifacts": {
+        "config.json": "23c1989f375cd39a870e6ee7b75db3d800b601c05c43c189c7fdfd1d21ea196b",
+        "training_summary.json": "781bbce9334ac19c653a10f6cd1cec4587f3c116998741e1643e80020c33ef16",
+        "learning.csv": "14631c4bfa8052138f2fabd7f790f75d9de9e05e8e03bf3633df48e456fb25e8",
+        "model.zip": "e651505027477200aa6d4289246a47114282b2341351d46f11b8577258f31d12"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\seed-49940\\train",
+      "status": "complete",
+      "seed": 49940,
+      "algorithm": "ppo",
+      "live_transitions": 101894,
+      "workers": 2,
+      "guidance": true,
+      "filter": false,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05397056043148041,
+        0.05099864676594734
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.857350438833237
+      ],
+      "all": {
+        "rollouts": 30,
+        "optimizer_steps": 1121,
+        "maximum_optimizer_steps_without_KL_stop": 1150,
+        "fraction_of_possible_optimizer_steps": 0.9747826086956521,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013890978476653496
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 390,
+        "maximum_optimizer_steps_without_KL_stop": 390,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.011742718424648047
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 370,
+        "maximum_optimizer_steps_without_KL_stop": 370,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.014358538947999478
+      },
+      "source_artifacts": {
+        "config.json": "ba476b9e92375880a8c582ef4eb8ff32cafcbaac1dd933262cc80fff4783437f",
+        "training_summary.json": "3547cd1fd0671ad06f3ab418c2fc06c454a750cd98195bc7a6606b3b8aa9e135",
+        "learning.csv": "397cde1b4f27c43beca1f98f9d784332b277019196cd72f562de1bd430961eab",
+        "model.zip": "cb683c1ccb8d6fe7b8d7db996a984729c642ba7894850d45edab1c13519f2927"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49900\\train",
+      "status": "complete",
+      "seed": 49900,
+      "algorithm": "ppo",
+      "live_transitions": 102477,
+      "workers": 2,
+      "guidance": false,
+      "filter": true,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.04965012148022652,
+        0.050248365849256516
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.4685109332203865
+      ],
+      "all": {
+        "rollouts": 37,
+        "optimizer_steps": 1220,
+        "maximum_optimizer_steps_without_KL_stop": 1220,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01489965761130726
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 350,
+        "maximum_optimizer_steps_without_KL_stop": 350,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.012932707369327546
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 340,
+        "maximum_optimizer_steps_without_KL_stop": 340,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.016377203818410634
+      },
+      "source_artifacts": {
+        "config.json": "021bc29788883e1e67b544c717f905b810fef9792f27b2cb219dc8357f7cbc09",
+        "training_summary.json": "f0f9554025ae33f1fb6760f016543087f6751f19db3ffaa5477bb2a3b2fdf2d5",
+        "learning.csv": "d48da70ecf0cf8fa633ca6d17462107ac429168e65d9d458f6c41164e5c7788a",
+        "model.zip": "a8d41bb333b83e086b26e0932f594e170107eb65cfaa6a91fb45f067e09b24fc"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49920\\train",
+      "status": "complete",
+      "seed": 49920,
+      "algorithm": "ppo",
+      "live_transitions": 102007,
+      "workers": 2,
+      "guidance": false,
+      "filter": true,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.053006600588560104,
+        0.05221351981163025
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.770594052970409
+      ],
+      "all": {
+        "rollouts": 36,
+        "optimizer_steps": 1190,
+        "maximum_optimizer_steps_without_KL_stop": 1190,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01389402880643805
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 340,
+        "maximum_optimizer_steps_without_KL_stop": 340,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.012425161711871625
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 290,
+        "maximum_optimizer_steps_without_KL_stop": 290,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01393493078649044
+      },
+      "source_artifacts": {
+        "config.json": "0e807f315fd1a46dde58e094f28e6171e6a0aebe855beb75b4a0c1b23158a9fa",
+        "training_summary.json": "bc14b7fb7f435e6694d0db40739b6c4122a1c61885a1b2534009e90840016d06",
+        "learning.csv": "aebc2e57ed691dd05ede57817c165fd757aaf8d867aabca69b6969b72e8dd10a",
+        "model.zip": "e1c419363a540b5518878eb228de4d23c9e4d37a1e79a9e7c2491cbe081c5530"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g0-f1\\seed-49940\\train",
+      "status": "complete",
+      "seed": 49940,
+      "algorithm": "ppo",
+      "live_transitions": 102374,
+      "workers": 2,
+      "guidance": false,
+      "filter": true,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05070280283689499,
+        0.051359016448259354
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.563252255320549
+      ],
+      "all": {
+        "rollouts": 37,
+        "optimizer_steps": 1210,
+        "maximum_optimizer_steps_without_KL_stop": 1210,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.014923362413773665
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 360,
+        "maximum_optimizer_steps_without_KL_stop": 360,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013014324940741062
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 310,
+        "maximum_optimizer_steps_without_KL_stop": 310,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01663979459553957
+      },
+      "source_artifacts": {
+        "config.json": "b52dbe3c1bd4c8fa7e4d6729b310e178f233158d3619d232615eed7baef9a5da",
+        "training_summary.json": "533465454a01a1f8dffa5ac81ef4433cb37c3946f390cd79fcf9d1f5a2f2e5da",
+        "learning.csv": "cab57a3d354419aa3ee7e5c0d8dfa382849b63a14a40079579af7e98ffda0e1d",
+        "model.zip": "f2a8d568f35c7a33db4be3b2fd9b9906b90fa1344e77a14c28f3f6c777d6fd03"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49900\\train",
+      "status": "complete",
+      "seed": 49900,
+      "algorithm": "ppo",
+      "live_transitions": 102580,
+      "workers": 2,
+      "guidance": true,
+      "filter": true,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.051879364997148514,
+        0.05040498450398445
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.669142849743366
+      ],
+      "all": {
+        "rollouts": 31,
+        "optimizer_steps": 1140,
+        "maximum_optimizer_steps_without_KL_stop": 1140,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013518480854409357
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 370,
+        "maximum_optimizer_steps_without_KL_stop": 370,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.012005567830055953
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 370,
+        "maximum_optimizer_steps_without_KL_stop": 370,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.014792132377624511
+      },
+      "source_artifacts": {
+        "config.json": "aeb5a066a85f056c50f21cf22eb2caeaa8786d660da6edd5439ce5824c82c5a3",
+        "training_summary.json": "7cbd1a5b34497f7c54acabb314cc22e53bd48534b274297ae42072c508b5c135",
+        "learning.csv": "1172a6c441a83ea0f810c388e45c8564ee91d1e41b3d2966f96093dc327f4e82",
+        "model.zip": "073701436ffee186e68a9ccdcb79d48c265b7f345f0945bc9a3185c7e5724d66"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49920\\train",
+      "status": "complete",
+      "seed": 49920,
+      "algorithm": "ppo",
+      "live_transitions": 100462,
+      "workers": 2,
+      "guidance": true,
+      "filter": true,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05215752124786377,
+        0.05174791440367699
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.694176912307739
+      ],
+      "all": {
+        "rollouts": 32,
+        "optimizer_steps": 1140,
+        "maximum_optimizer_steps_without_KL_stop": 1140,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013786929048364982
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 350,
+        "maximum_optimizer_steps_without_KL_stop": 350,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013610167521983385
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 340,
+        "maximum_optimizer_steps_without_KL_stop": 340,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.013863875158131122
+      },
+      "source_artifacts": {
+        "config.json": "3f54ed6625f2b032a6a8f29a2489add648bcbb1127899cbc0b99176ac6bfe503",
+        "training_summary.json": "35903d938a623416a1fc2a0fae8e6e49723b580b6c5120674d6e1d7993a6702b",
+        "learning.csv": "5f8379cc775aafbb016e1ab87ab5a81919f0348706ce7c073743dcd7f2f2e7f8",
+        "model.zip": "c17a8942f10d79669a5ce5d9f4c0c29f53b35bafa4b0c069d79f6f863a962a92"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\seed-49940\\train",
+      "status": "complete",
+      "seed": 49940,
+      "algorithm": "ppo",
+      "live_transitions": 103665,
+      "workers": 2,
+      "guidance": true,
+      "filter": true,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05006030574440956,
+        0.05163530632853508
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.5054275169968605
+      ],
+      "all": {
+        "rollouts": 32,
+        "optimizer_steps": 1141,
+        "maximum_optimizer_steps_without_KL_stop": 1170,
+        "fraction_of_possible_optimizer_steps": 0.9752136752136752,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.0141183165833354
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 370,
+        "maximum_optimizer_steps_without_KL_stop": 370,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01202424792572856
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 350,
+        "maximum_optimizer_steps_without_KL_stop": 350,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.014091027528047561
+      },
+      "source_artifacts": {
+        "config.json": "4b677c30402bc179df3a5edce56dd7efbfc3c629e6b15322bdc04466a54e91ec",
+        "training_summary.json": "72bb09afb9c9f2300e47d9a0ca24f616f79b505e8699bfefa22c530744a8d45e",
+        "learning.csv": "275c934fcdd78ab786cf41760d1ae56a406620d0787735ccd73547efedc04d89",
+        "model.zip": "7b2c28d3205fc71789c4e5a4bb898bd9828547a8b1088d534da575b80b76d010"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50400\\features\\train",
+      "status": "complete",
+      "seed": 50400,
+      "algorithm": "ppo",
+      "live_transitions": 100555,
+      "workers": 1,
+      "guidance": true,
+      "filter": false,
+      "conflict_features": true,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05395634472370148,
+        0.05448324605822563
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.856071025133133
+      ],
+      "all": {
+        "rollouts": 56,
+        "optimizer_steps": 1894,
+        "maximum_optimizer_steps_without_KL_stop": 2260,
+        "fraction_of_possible_optimizer_steps": 0.8380530973451328,
+        "rollouts_stopped_before_full_update_budget": 15,
+        "rollouts_at_most_two_updates": 3,
+        "mean_logged_approx_kl": 0.02415516965889505
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 264,
+        "maximum_optimizer_steps_without_KL_stop": 380,
+        "fraction_of_possible_optimizer_steps": 0.6947368421052632,
+        "rollouts_stopped_before_full_update_budget": 3,
+        "rollouts_at_most_two_updates": 3,
+        "mean_logged_approx_kl": 0.020571695920079947
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 345,
+        "maximum_optimizer_steps_without_KL_stop": 380,
+        "fraction_of_possible_optimizer_steps": 0.9078947368421053,
+        "rollouts_stopped_before_full_update_budget": 2,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.024771293438971043
+      },
+      "source_artifacts": {
+        "config.json": "9809e5228dd6f3fec134371db5a9c79be25ccdb7698704fd71d6466e201e2c9e",
+        "training_summary.json": "df1d04a670ed4c69d10472221ade7714ebf2f1459d9cb6934593530e8c07bc61",
+        "learning.csv": "097f07cd1a2f1ce29b296b02375f45f49f305b474fe9ddcbf51c9488abeebd32",
+        "model.zip": "f2482b18a81e3a3e39eec451e14dd745fb4b02f8b072e9b1670b6b294fedc77c"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-cpa-matched-v1\\seed-50400\\zeros\\train",
+      "status": "complete",
+      "seed": 50400,
+      "algorithm": "ppo",
+      "live_transitions": 100756,
+      "workers": 1,
+      "guidance": true,
+      "filter": false,
+      "conflict_features": true,
+      "mask_conflict_features": true,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.05315450578927994,
+        0.051612142473459244
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        4.783905521035194
+      ],
+      "all": {
+        "rollouts": 57,
+        "optimizer_steps": 2149,
+        "maximum_optimizer_steps_without_KL_stop": 2250,
+        "fraction_of_possible_optimizer_steps": 0.9551111111111111,
+        "rollouts_stopped_before_full_update_budget": 6,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.019468677834722035
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 358,
+        "maximum_optimizer_steps_without_KL_stop": 380,
+        "fraction_of_possible_optimizer_steps": 0.9421052631578948,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.017359153367578983
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 350,
+        "maximum_optimizer_steps_without_KL_stop": 350,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.018189051188528538
+      },
+      "source_artifacts": {
+        "config.json": "fb1d74daaed471e1ec55a169de688a28ee3ad80ce00c1408a8bd03714438dd4e",
+        "training_summary.json": "8d85ba8ef57baefe015ce97bf5dd8e2f46aed8775fcaccef9f33de9b1ad6dc41",
+        "learning.csv": "4052eb4b06a3cedab25e3ebef808617b8985e19ac7c2b0a141e4a27c74d46901",
+        "model.zip": "9d38e5f15de2c660cddaa683faf0fb30052a85117994b9d5391ea297d9d2f85c"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "status": "wall_limit_before_budget",
+      "seed": 49900,
+      "algorithm": "ppo",
+      "live_transitions": 948398,
+      "workers": 2,
+      "guidance": false,
+      "filter": false,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.07787727564573288,
+        0.07507012784481049
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        7.008954808115959
+      ],
+      "all": {
+        "rollouts": 234,
+        "optimizer_steps": 10156,
+        "maximum_optimizer_steps_without_KL_stop": 10370,
+        "fraction_of_possible_optimizer_steps": 0.9793635486981678,
+        "rollouts_stopped_before_full_update_budget": 11,
+        "rollouts_at_most_two_updates": 1,
+        "mean_logged_approx_kl": 0.015839682891964912
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 441,
+        "maximum_optimizer_steps_without_KL_stop": 490,
+        "fraction_of_possible_optimizer_steps": 0.9,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 1,
+        "mean_logged_approx_kl": 0.013009041361510754
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 435,
+        "maximum_optimizer_steps_without_KL_stop": 440,
+        "fraction_of_possible_optimizer_steps": 0.9886363636363636,
+        "rollouts_stopped_before_full_update_budget": 2,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.01897551491856575
+      },
+      "source_artifacts": {
+        "config.json": "5e0b609b6653a462d8e19733ebb83811c38f7ea8757da8990860bbbffeabb164",
+        "training_summary.json": "7c668b654d5eb9e839fd79dfabe6977eb90634915a036560e4dbb09807f4b085",
+        "learning.csv": "b2c2ff228ac934e30892b7b5e152e7642bb9bccb021d5d106dc58298ea92e1df",
+        "model.zip": "dec5dc24e64da553b140de9d64d68e67a97114fea09d546e3a4b357fe4e62559"
+      }
+    },
+    {
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "status": "wall_limit_before_budget",
+      "seed": 49900,
+      "algorithm": "mappo",
+      "live_transitions": 708127,
+      "workers": 2,
+      "guidance": false,
+      "filter": false,
+      "conflict_features": false,
+      "mask_conflict_features": false,
+      "initial_action_std": 0.05,
+      "final_action_std": [
+        0.0737362876534462,
+        0.06914160400629044
+      ],
+      "latent_heading_std_degrees": [
+        4.5,
+        6.636265888810158
+      ],
+      "all": {
+        "rollouts": 186,
+        "optimizer_steps": 7729,
+        "maximum_optimizer_steps_without_KL_stop": 7850,
+        "fraction_of_possible_optimizer_steps": 0.9845859872611465,
+        "rollouts_stopped_before_full_update_budget": 3,
+        "rollouts_at_most_two_updates": 1,
+        "mean_logged_approx_kl": 0.014642111886973662
+      },
+      "first10": {
+        "rollouts": 10,
+        "optimizer_steps": 441,
+        "maximum_optimizer_steps_without_KL_stop": 490,
+        "fraction_of_possible_optimizer_steps": 0.9,
+        "rollouts_stopped_before_full_update_budget": 1,
+        "rollouts_at_most_two_updates": 1,
+        "mean_logged_approx_kl": 0.013923851866275072
+      },
+      "last10": {
+        "rollouts": 10,
+        "optimizer_steps": 360,
+        "maximum_optimizer_steps_without_KL_stop": 360,
+        "fraction_of_possible_optimizer_steps": 1.0,
+        "rollouts_stopped_before_full_update_budget": 0,
+        "rollouts_at_most_two_updates": 0,
+        "mean_logged_approx_kl": 0.016201667487621307
+      },
+      "source_artifacts": {
+        "config.json": "156e2b06e5b043719e62570e6ac76e3d12786dca6d67cdf13cc07d193bf1fb17",
+        "training_summary.json": "36ecf1c83bc5ef552064fbf40ff0d3c646a455dc2c9129c7aa3af941ce42463f",
+        "learning.csv": "6416fc8bbd4d8161a4b791867e7f9b9d5ed89fc12e724be1b89ad8115c208b41",
+        "model.zip": "3ec248d5d7cbccceff6715cf796da06e027cdb872054e46a96ee01b105957b94"
+      }
+    }
+  ],
+  "inference": "The installed PPO implementation stops minibatch updates when approximate KL exceeds 1.5 times target_kl. Update-budget shortfall indicates early stopping in these completed rollouts; it is not itself a bug.",
+  "limitations": [
+    "These runs use different support, feature and worker settings; no pooled causal effect is claimed.",
+    "The logged KL is a mean over the last attempted epoch, not the maximum minibatch KL.",
+    "Latent heading dispersion precedes +/-45-degree command bounds and optional projections.",
+    "Exploration is a candidate explanation, not a demonstrated cause of poor physical performance.",
+    "No model, reward, policy input, scenario or active-run source changed."
+  ]
+}

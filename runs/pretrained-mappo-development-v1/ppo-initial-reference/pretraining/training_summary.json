@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-09-17T03:24:08.519699+00:00",
+  "training_method": "behavior_cloning_only",
+  "reinforcement_learning_updates": 0,
+  "supervised_optimizer_steps": 2480,
+  "supervised_examples_seen": 2509760,
+  "demonstration_transitions": 62744,
+  "validation_transitions": 16108,
+  "epochs": 40,
+  "changed_parameter_names": [
+    "mlp_extractor.policy_net.0.weight",
+    "mlp_extractor.policy_net.0.bias",
+    "mlp_extractor.policy_net.2.weight",
+    "mlp_extractor.policy_net.2.bias",
+    "action_net.weight",
+    "action_net.bias"
+  ],
+  "actor_mean_only_changed": false,
+  "actor_parameters_only_changed": true,
+  "critic_and_noise_unchanged": true,
+  "separate_noise_parameters_present": false,
+  "initial_errors": {
+    "epoch": 0,
+    "supervised_optimizer_steps": 0,
+    "train": {
+      "action_mse": 0.05456257325484854,
+      "exact_command_match_rate": 0.8476348336095881,
+      "mean_absolute_heading_command_error_degrees": 4.463525295257568,
+      "mean_absolute_speed_action_error": 0.013164605014026165,
+      "intervention_action_mse": 0.35810398496885115,
+      "nominal_action_mse": 0.0,
+      "equal_world_mean_action_mse": 0.05065085729342848,
+      "rows": 62744,
+      "worlds": 32
+    },
+    "validation": {
+      "action_mse": 0.059069676795808525,
+      "exact_command_match_rate": 0.8446734541842563,
+      "mean_absolute_heading_command_error_degrees": 4.353207588195801,
+      "mean_absolute_speed_action_error": 0.01986590586602688,
+      "intervention_action_mse": 0.3802935067253732,
+      "nominal_action_mse": 0.0,
+      "equal_world_mean_action_mse": 0.05532968333829717,
+      "rows": 16108,
+      "worlds": 8
+    }
+  },
+  "final_errors": {
+    "epoch": 40,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "weighted_training_loss": 0.3092176788705626,
+    "train": {
+      "action_mse": 0.016303183175410272,
+      "exact_command_match_rate": 0.9280568659951549,
+      "mean_absolute_heading_command_error_degrees": 0.9446094036102295,
+      "mean_absolute_speed_action_error": 0.009801734238862991,
+      "intervention_action_mse": 0.0715375052864205,
+      "nominal_action_mse": 0.006374630990895046,
+      "equal_world_mean_action_mse": 0.015212642464619045,
+      "rows": 62744,
+      "worlds": 32
+    },
+    "validation": {
+      "action_mse": 0.03802039651166519,
+      "exact_command_match_rate": 0.8413210826918301,
+      "mean_absolute_heading_command_error_degrees": 2.320551872253418,
+      "mean_absolute_speed_action_error": 0.02123168669641018,
+      "intervention_action_mse": 0.21048436971908788,
+      "nominal_action_mse": 0.0063060895173265375,
+      "equal_world_mean_action_mse": 0.03561630777528102,
+      "rows": 16108,
+      "worlds": 8
+    }
+  },
+  "serialization_actions_identical": true,
+  "model_sha256": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+  "performance_claim": false,
+  "next_validation": "Evaluate the saved learned policy in the simulator, then measure PPO gains against its own pretrained starting policy."
+}

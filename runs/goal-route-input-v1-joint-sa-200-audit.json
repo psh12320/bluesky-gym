@@ -1,0 +1,169 @@
+{
+  "source": "runs\\goal-route-input-v1-joint-sa-200",
+  "csv_sha256": "5487fed542e9eb9fcf997ff901a73254a90ca734d2b6e973bf2e1e5537b8d2ba",
+  "first_twenty_all_nine_metrics_exact": true,
+  "prefix_max_differences": {
+    "waypoint_reached": 0.0,
+    "flight_time": 0.0,
+    "intrusion_events": 0.0,
+    "intrusion_time": 0.0,
+    "restricted_area_events": 0.0,
+    "time_in_restricted_area": 0.0,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 0.0
+  },
+  "additional_180": {
+    "episodes": 180,
+    "agent_episodes": 180,
+    "metrics": {
+      "waypoint_reached": {
+        "mean": 0.9722222222222222,
+        "std": 0.16433554953054488
+      },
+      "flight_time": {
+        "mean": 1289.8277777777778,
+        "std": 568.0552284432636
+      },
+      "intrusion_events": {
+        "mean": 0.40555555555555556,
+        "std": 0.712563620724667
+      },
+      "intrusion_time": {
+        "mean": 22.56111111111111,
+        "std": 57.736101154677996
+      },
+      "restricted_area_events": {
+        "mean": 0.05555555555555555,
+        "std": 0.25215123817578255
+      },
+      "time_in_restricted_area": {
+        "mean": 2.5444444444444443,
+        "std": 15.632701558741896
+      },
+      "sector_exit_events": {
+        "mean": 0.011111111111111112,
+        "std": 0.1048220125784067
+      },
+      "time_outside_sector": {
+        "mean": 0.7388888888888889,
+        "std": 7.3298202864803415
+      },
+      "total_reward": {
+        "mean": 13.5865205768052,
+        "std": 58.538453508332836
+      }
+    },
+    "clean_completion_rate": 0.65,
+    "all_aircraft_clean_completion_rate": 0.65
+  },
+  "additional_180_learned_comparison": {
+    "waypoint_reached": {
+      "reference": 0.9722222222222222,
+      "candidate": 0.9833333333333333,
+      "delta": 0.011111111111111112,
+      "ci95": [
+        -0.011111111111111112,
+        0.03333333333333333
+      ],
+      "better": "higher"
+    },
+    "flight_time": {
+      "reference": 1289.8277777777778,
+      "candidate": 1221.4833333333333,
+      "delta": -68.34444444444445,
+      "ci95": [
+        -122.39458333333333,
+        -15.954166666666687
+      ],
+      "better": "lower"
+    },
+    "intrusion_events": {
+      "reference": 0.40555555555555556,
+      "candidate": 0.3888888888888889,
+      "delta": -0.016666666666666666,
+      "ci95": [
+        -0.09444444444444444,
+        0.05555555555555555
+      ],
+      "better": "lower"
+    },
+    "intrusion_time": {
+      "reference": 22.56111111111111,
+      "candidate": 19.47222222222222,
+      "delta": -3.088888888888889,
+      "ci95": [
+        -9.455694444444445,
+        2.4055555555555554
+      ],
+      "better": "lower"
+    },
+    "restricted_area_events": {
+      "reference": 0.05555555555555555,
+      "candidate": 0.05,
+      "delta": -0.005555555555555556,
+      "ci95": [
+        -0.027777777777777776,
+        0.011111111111111112
+      ],
+      "better": "lower"
+    },
+    "time_in_restricted_area": {
+      "reference": 2.5444444444444443,
+      "candidate": 2.5388888888888888,
+      "delta": -0.005555555555555556,
+      "ci95": [
+        -0.15555555555555556,
+        0.15
+      ],
+      "better": "lower"
+    },
+    "sector_exit_events": {
+      "reference": 0.011111111111111112,
+      "candidate": 0.0,
+      "delta": -0.011111111111111112,
+      "ci95": [
+        -0.027777777777777776,
+        0.0
+      ],
+      "better": "lower"
+    },
+    "time_outside_sector": {
+      "reference": 0.7388888888888889,
+      "candidate": 0.0,
+      "delta": -0.7388888888888889,
+      "ci95": [
+        -1.9666666666666666,
+        0.0
+      ],
+      "better": "lower"
+    },
+    "clean_completion_rate": {
+      "reference": 0.65,
+      "candidate": 0.6388888888888888,
+      "delta": -0.011111111111111112,
+      "ci95": [
+        -0.06666666666666667,
+        0.044444444444444446
+      ],
+      "better": "higher"
+    },
+    "all_aircraft_clean_completion_rate": {
+      "reference": 0.65,
+      "candidate": 0.6388888888888888,
+      "delta": -0.011111111111111112,
+      "ci95": [
+        -0.06666666666666667,
+        0.044444444444444446
+      ],
+      "better": "higher"
+    }
+  },
+  "missed_scenarios": [
+    54,
+    86,
+    159,
+    175,
+    179
+  ]
+}

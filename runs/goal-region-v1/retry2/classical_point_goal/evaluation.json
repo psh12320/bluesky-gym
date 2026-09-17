@@ -1,0 +1,91 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "flight_time": {
+      "mean": 943.675,
+      "std": 284.2589301587551
+    },
+    "intrusion_events": {
+      "mean": 0.03,
+      "std": 0.1705872210923198
+    },
+    "intrusion_time": {
+      "mean": 1.36,
+      "std": 8.70691679069003
+    },
+    "restricted_area_events": {
+      "mean": 0.005,
+      "std": 0.07053367989832945
+    },
+    "time_in_restricted_area": {
+      "mean": 0.03,
+      "std": 0.42320207938997656
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": 36.04308984509601,
+      "std": 8.241957421455904
+    }
+  },
+  "clean_completion_rate": 0.965,
+  "all_aircraft_clean_completion_rate": 0.8,
+  "wall_seconds": 496.13921560003655,
+  "world_decisions": 5832,
+  "seed": 2026,
+  "env": "ma",
+  "route_input_statistics": {
+    "observations": 38020,
+    "redirected_observations": 15296,
+    "route_replans": 76,
+    "failed_replans": 1,
+    "route_choices": 276,
+    "shorter_route_choices": 26,
+    "lower_clearance_fallbacks": 10,
+    "geometric_detour_avoided_km": 2684.2498961038445,
+    "unroutable_initializations": 0
+  },
+  "traffic_projection_statistics": {
+    "actions": 37820,
+    "interventions": 5063,
+    "speed_interventions": 285,
+    "nominal_static_violation": 325,
+    "nominal_traffic_conflict": 4752,
+    "no_static_feasible_candidate": 22,
+    "no_jointly_feasible_candidate": 385
+  },
+  "mode": "classical_point_goal",
+  "policy": "goal",
+  "recipe": "public_route_choice_interval5",
+  "guard_static": true,
+  "guard_traffic": true,
+  "official_protocol": false,
+  "model_sha256": null,
+  "goal_speed_action": 1.0,
+  "heading_transport": "plain_decimal",
+  "experimental_goal_region": false,
+  "protocol_sha256": "5e33d56dadf207105ff600d1e8283d8bf5baf8793cd84e7c4ff7534119365371",
+  "execution_plan_sha256": "fb391270c129dfb0c4efc2edeb9e472b647fd8731a0467496f497d08ac35f374",
+  "candidate_archive_sha256": "da020cf4079af110fcfcb7598b13f58e84859f8b5a0e549d9a96ad9ab5c86b2c",
+  "extension_sha256": "1586748db416454ff5db0c06200cb6977f43a9fd9db45b3fec675bb0a734f917",
+  "csv_sha256": "ab8b168e1f4490571a5b645f982801ce3b6c8551e2a47d5847556584599bd62a",
+  "runtime": {
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "distance_margin_km": 5.0,
+    "action_interval_seconds": 5,
+    "intrusion_distance_nm": 5.0
+  },
+  "all_scenarios_and_goals_unchanged": true
+}

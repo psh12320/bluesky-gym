@@ -1,0 +1,76 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.95,
+      "std": 0.21794494717703372
+    },
+    "flight_time": {
+      "mean": 1361.04,
+      "std": 595.376249442317
+    },
+    "intrusion_events": {
+      "mean": 1.58,
+      "std": 1.3797101144805746
+    },
+    "intrusion_time": {
+      "mean": 165.74,
+      "std": 212.25322706616265
+    },
+    "restricted_area_events": {
+      "mean": 0.015,
+      "std": 0.12155245781143217
+    },
+    "time_in_restricted_area": {
+      "mean": 0.41,
+      "std": 3.7764930822126503
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -121.5228987984926,
+      "std": 203.93358639164828
+    }
+  },
+  "clean_completion_rate": 0.245,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 54520,
+  "padded_transitions": 34380,
+  "world_decisions": 8890,
+  "aircraft_terminated": 190,
+  "aircraft_truncated": 10,
+  "wall_seconds": 464.35026609999477,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false
+  },
+  "csv_sha256": "8f5cf091e52e4ea8962876019cb719e1ae040edccf6a6aadfb274792f61637cb"
+}

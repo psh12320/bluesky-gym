@@ -1,0 +1,72 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.995,
+      "std": 0.07053367989832943
+    },
+    "flight_time": {
+      "mean": 1097.365,
+      "std": 437.3238408490898
+    },
+    "intrusion_events": {
+      "mean": 0.99,
+      "std": 1.1915955689746418
+    },
+    "intrusion_time": {
+      "mean": 82.48,
+      "std": 130.7624548561245
+    },
+    "restricted_area_events": {
+      "mean": 0.035,
+      "std": 0.1837797594948911
+    },
+    "time_in_restricted_area": {
+      "mean": 1.35,
+      "std": 8.176032044946988
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -41.56539926841544,
+      "std": 124.40402198077264
+    }
+  },
+  "clean_completion_rate": 0.41,
+  "all_aircraft_clean_completion_rate": 0.05,
+  "arm": "zero_speed",
+  "checkpoint_sha256": "5fdebf1b43623b623b6575f4517b6035523a557a27cffaa26131302a5aa5d571",
+  "scenarios": [
+    "6684926c7289bd8432a31af5074bd32b85fff20f3961f66edf76fb6119b4b60b",
+    "ccab10940199f04759a7aee3b98da016aa5c2c4f70da11a1ab00aafd823377c1",
+    "07a72834afc7379c1010660987a6759a162efff1b4ea783c53ab2a58d863cbde",
+    "0a5997db5ebb5494ffb5d848d6af1c6e5c584da3cf9000a49ec350f57d26398e",
+    "d46ac064805525f914d87a00b0dd1b99da09e909b7cd766db7ee9c83f10827d6",
+    "e0daf81b610b3b33dc5672fc371af5dd35f6ccbdd34756d95f2d4c6bda18ec00",
+    "8d915d2753481bf9c39320e6a985ac23ab4477110d38da24ae410f875d250876",
+    "b03e4b74439428fe825d98c3965ed8c90b492a0bb5769a86382ed1e73f59a1f9",
+    "665ded0efdf7ac7c9ea693633328eda67f72339beeb54e04c5a817bca4ecbfc0",
+    "6b198bc1f242b64b218484e76cff2dfd32d3aeb1c88068f36a41fb83dd45ef50",
+    "f6b4b94b33388cab2c6c339f649a431ee9aaa3d2f1537c7b8627d9456bfea492",
+    "4297e107a3ed5ef2cdc14d76885593fe5b43fff8bb629da95e035ac0f5176c66",
+    "f1eea4d212fb14158e26f8baab02f46d3017e88924d521d2acb30d0a4745bd18",
+    "182af055cce0c2a777f85dc27409503530046680ed808fe93752e61f45e35d5a",
+    "a641dfef84745c36b72815115b37a573ba194beb64116145413be151a6384b06",
+    "a6eb6a9b1cc34a72e471aed423c6dab93e5a22468a5fcd86f12482dd457899a1",
+    "418e90bf0089a9af55825f8d303373659697686aae06c6f49429f64232a23e5f",
+    "155b6a12d7a1102eb8bd93d6bd2a87ba163d4dd09605e8396b9b50c604673a86",
+    "3f754fa1031b75d20078693d6148606b91aad20dae498f040cd6b913511a02dd",
+    "a1e1c9151ff417b8d48eda2506748a1ca9c342bd88cc2ede80a5bf2331a3eb0c"
+  ],
+  "world_decisions": 6607,
+  "csv_sha256": "c536158bf0a688076b39d9f1dc46cfd6579b26d4b0293a9f3fea67be15f9e33f",
+  "wall_seconds": 411.875,
+  "diagnostic_only": true
+}

@@ -1,0 +1,9 @@
+{
+  "timesteps": 584360,
+  "new_timesteps": 192840,
+  "wall_seconds": 3604.5249331000377,
+  "live_transitions": 112292,
+  "skipped_transitions": 80538,
+  "new_live_transitions": 112292,
+  "new_skipped_transitions": 80538
+}

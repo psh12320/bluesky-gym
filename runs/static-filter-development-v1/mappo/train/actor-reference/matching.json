@@ -1,0 +1,20 @@
+{
+  "reference_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\static-filter-development-v1\\ppo\\train\\initial-model.zip",
+  "reference_sha256": "04411c99b83c38a33bfac6713c34cd98bc3d2c4dab7039305a6f88fc820c74f5",
+  "reference_live_transitions": 0,
+  "actor_parameters_identical": true,
+  "critic_parameters_unchanged": true,
+  "actor_parameter_names": [
+    "action_net.bias",
+    "action_net.weight",
+    "log_std",
+    "mlp_extractor.policy_net.0.bias",
+    "mlp_extractor.policy_net.0.weight",
+    "mlp_extractor.policy_net.2.bias",
+    "mlp_extractor.policy_net.2.weight"
+  ],
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 550145,
+  "learner_rng": "Reconstructed through seeded local-critic PPO loading before the first rollout.",
+  "simulation_rng": "Original per-world seeds retained; no simulator steps executed by this helper."
+}

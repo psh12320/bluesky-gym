@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "all_nine_metrics_recomputed": true,
+  "decision_boundary_trace_sha256": "feebd37a8a6deb81cd2aee36097a741fe1a3444f8d94604839751d5ea48827c9",
+  "unchanged_packaged_files": 145,
+  "reward_statistics": [
+    {
+      "steps": 573,
+      "commands": 4070,
+      "interventions": 566,
+      "correction_cost": 20.82663483798151,
+      "penalty": 20.82663483798151,
+      "original_reward": 746.2162463615309,
+      "training_reward": 725.3896115235493
+    }
+  ],
+  "summary_sha256": "39b45f6cc0e7e8a6c48cc078fe577ae8e8b863ccf80a0172890d32dc4843fc2e"
+}

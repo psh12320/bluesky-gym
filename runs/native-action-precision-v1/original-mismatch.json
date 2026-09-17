@@ -1,0 +1,70 @@
+{
+  "technical_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v1\\technical\\train\\model.zip",
+  "differences": [
+    {
+      "episode": 0,
+      "agent": "KL007",
+      "metric": "total_reward",
+      "difference": 2.943068011518335e-10
+    },
+    {
+      "episode": 0,
+      "agent": "KL0010",
+      "metric": "total_reward",
+      "difference": 2.347633198951371e-10
+    },
+    {
+      "episode": 0,
+      "agent": "KL002",
+      "metric": "total_reward",
+      "difference": -1.1950263001381245e-09
+    },
+    {
+      "episode": 0,
+      "agent": "KL009",
+      "metric": "total_reward",
+      "difference": 3.2946445571724325e-10
+    },
+    {
+      "episode": 0,
+      "agent": "KL005",
+      "metric": "total_reward",
+      "difference": 3.6221194932295475e-09
+    },
+    {
+      "episode": 0,
+      "agent": "KL001",
+      "metric": "total_reward",
+      "difference": 2.373383267695317e-09
+    },
+    {
+      "episode": 0,
+      "agent": "KL003",
+      "metric": "total_reward",
+      "difference": -4.70276617647869e-09
+    },
+    {
+      "episode": 0,
+      "agent": "KL006",
+      "metric": "total_reward",
+      "difference": 1.6370904631912708e-09
+    },
+    {
+      "episode": 0,
+      "agent": "KL008",
+      "metric": "total_reward",
+      "difference": 2.7521700474153477e-09
+    },
+    {
+      "episode": 0,
+      "agent": "KL004",
+      "metric": "total_reward",
+      "difference": 9.299085945713159e-10
+    }
+  ],
+  "exact_metric_values": 170,
+  "physical_metric_values_exact": 160,
+  "maximum_reward_difference": 4.70276617647869e-09,
+  "old_failure_preserved": true,
+  "physical_thresholds_relaxed": false
+}

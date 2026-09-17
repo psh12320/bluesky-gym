@@ -1,0 +1,62 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.99,
+      "std": 0.09949874371066199
+    },
+    "flight_time": {
+      "mean": 1110.26,
+      "std": 411.476150463183
+    },
+    "intrusion_events": {
+      "mean": 0.67,
+      "std": 0.8608716512930368
+    },
+    "intrusion_time": {
+      "mean": 45.53,
+      "std": 90.36049523990005
+    },
+    "restricted_area_events": {
+      "mean": 0.155,
+      "std": 0.5300707499947531
+    },
+    "time_in_restricted_area": {
+      "mean": 9.535,
+      "std": 45.74296421308965
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -10.860668870986787,
+      "std": 88.25520459887336
+    }
+  },
+  "clean_completion_rate": 0.48,
+  "all_aircraft_clean_completion_rate": 0.05,
+  "wall_seconds": 405.9738898000214,
+  "world_decisions": 3923,
+  "seed": 2026,
+  "env": "ma",
+  "static_projection_statistics": {
+    "actions": 22294,
+    "interventions": 5681,
+    "no_feasible_candidate": 538
+  },
+  "policy": "runs\\sac-ma-cpa-guarded-predictions-seed2600\\model.zip",
+  "recipe": "public_cpa",
+  "guard_static": true,
+  "official_protocol": false,
+  "model_sha256": "eb72857355e112fda1a5ac576766e415facb4c42155aa3fb79e3bbf3ed303f7f",
+  "inference_mode": "per_aircraft",
+  "static_projection_revision": 4,
+  "static_projection_horizon_seconds": 90.0,
+  "static_projection_clearance_km": 2.0
+}

@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "centralized": false,
+      "original_implicit_device_rejected": true,
+      "fixed_explicit_device_passed": true
+    },
+    {
+      "centralized": true,
+      "original_implicit_device_rejected": true,
+      "fixed_explicit_device_passed": true
+    }
+  ],
+  "device_requests": [
+    "cpu",
+    "auto",
+    "cpu",
+    "cpu",
+    "cpu",
+    "cpu",
+    "auto",
+    "cpu",
+    "cpu",
+    "cpu"
+  ],
+  "scope": "CPU regression that rejects implicit auto selection; actual CUDA rerun required on cluster."
+}

@@ -1,0 +1,15 @@
+{
+  "num_timesteps": 25000,
+  "_n_updates": 7996,
+  "n_envs": 10,
+  "seed": 2900,
+  "gamma": 0.996508469331006,
+  "learning_starts": 5000,
+  "gradient_steps": 4,
+  "batch_size": 256,
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "counter_source": "data entry in the unchanged serialized SAC model",
+  "step_unit": "Historical SB3 counted transitions, including inactive MA aircraft padding",
+  "live_transitions": "Not derivable from these saved model counters; do not equate with PPO/MAPPO live experience",
+  "additional_training_transitions": 0
+}

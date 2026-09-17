@@ -1,0 +1,25 @@
+{
+  "model_sha256": "c51a447ab59a50ac5d13488937825eeddc47b7b51d42889463d477243d61db81",
+  "actual_timesteps": 347540,
+  "optimizer_updates": 119012,
+  "actual_net_arch": [
+    256,
+    256
+  ],
+  "actual_learning_rate": 0.000442773440394527,
+  "actual_tau": 0.008242901455713948,
+  "actual_gradient_steps": 4,
+  "actual_learning_starts": 50000,
+  "actual_batch_size": 256,
+  "actual_buffer_size": 1000000,
+  "training_summary": {
+    "timesteps": 347540,
+    "new_timesteps": 347540,
+    "wall_seconds": 7207.978791099973,
+    "live_transitions": 254456,
+    "skipped_transitions": 93074,
+    "new_live_transitions": 254456,
+    "new_skipped_transitions": 93074
+  },
+  "counted_but_not_stored": 10
+}

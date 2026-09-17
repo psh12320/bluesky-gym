@@ -1,0 +1,81 @@
+{
+  "registered_at_utc": "2026-09-16T05:08:40.671622+00:00",
+  "purpose": "Controlled exploration-scale pilot within fixed static support; test learning, not a claimed optimizer repair.",
+  "seeds": [
+    51200
+  ],
+  "arm_order": {
+    "51200": [
+      "std005",
+      "std020"
+    ]
+  },
+  "config": {
+    "algorithm": "ppo",
+    "workers": 1,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 512,
+    "epochs": 10,
+    "device": "cpu",
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600,
+    "static_filter": true,
+    "mask_conflict_features": false
+  },
+  "arms": {
+    "std005": {
+      "initial_action_std": 0.05
+    },
+    "std020": {
+      "initial_action_std": 0.2
+    }
+  },
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-static-source-v1-verify",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-static-source-v1-verify",
+  "source_bundle_sha256": "37d3ce7b264dd96ba1c0804224263ee616056ffb609f8a88b5cd3ecbe3525b1a",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "stages": [
+    "initial",
+    "50k",
+    "final"
+  ],
+  "checkpoint_selection": "First saved checkpoint at/above 50k, within one full 2560-slot rollout; retain exact live counts.",
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "capacity_control": "Same 170-dimensional local input, architecture and parameter count. Initial tensors match except log_std; both arms receive real predictive inputs.",
+  "learning_control": "Each run is evaluated against its own saved zero-experience policy; paired initial behavior must be identical.",
+  "primary_contrast": "For every metric: (trained - own initial) with std 0.20 minus (trained - own initial) with std 0.05.",
+  "aggregation": "One exploratory training seed. Report all paired-world effects; do not estimate across-seed variability or select only the better checkpoint.",
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "resource_policy": "One simulator worker per arm, sequential runs; existing coordinators remain untouched and combined local use stays at most five workers.",
+  "limitations": [
+    "One training seed and twenty reused development worlds; no generalization claim.",
+    "Both heading and speed exploration standard deviations change together.",
+    "The optimizer review found most runs received almost all planned updates; this experiment does not assume KL early stopping caused the general failure.",
+    "Classical results are the preserved fixed Windows benchmark from an earlier evaluator revision; the causal exploration comparison uses one identical frozen source.",
+    "The cluster static-support bundle is unchanged and remains a separate three-seed 1M study.",
+    "Results do not replace the ongoing three-seed predictive-feature or support studies."
+  ],
+  "failure_behavior": "Stop this coordinator on a failed check or incomplete budget, preserve every artifact, and do not restart automatically.",
+  "training_bundle_sha256": "37d3ce7b264dd96ba1c0804224263ee616056ffb609f8a88b5cd3ecbe3525b1a",
+  "initial_control": "All initial tensors must match except log_std. Deterministic initial behavior must match on paired evaluation worlds.",
+  "source_review": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-optimization-review-v1\\review.json"
+}

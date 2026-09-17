@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-09-15T16:26:45.136720+00:00",
+  "status": "deferred_before_launch",
+  "execution_started": false,
+  "reason": "The explicit 1.5 GiB available-physical-memory check did not pass",
+  "tool_exit_code": 1,
+  "protocol_sha256": "630b9e383c6b0b025eab21eae2d4a8a058aa5b36ea335487707b3d338e79ac8d",
+  "runner_sha256": "e3413ae34845ddeb692320644c232b0642b8b22e483eb9c49036af85a4abae00",
+  "output_directory_created": false,
+  "next_condition": "Retry after a running simulator job finishes or physical memory recovers; keep the declared experiment unchanged."
+}

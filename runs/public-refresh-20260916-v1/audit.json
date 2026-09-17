@@ -1,0 +1,305 @@
+{
+  "checked_at_utc": "2026-09-15T16:09:14.866228+00:00",
+  "scope": "Public API metadata only; no authenticated, private, email or Discord submissions accessed",
+  "requests": {
+    "upstream": {
+      "url": "https://api.github.com/repos/TUDelft-CNS-ATM/bluesky-gym",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:12 GMT",
+        "ETag": "W/\"4d121c1527bd59dd017043f8bab627fa818df4375c16fc6ddce2b9346ff2aa4f\"",
+        "Last-Modified": "Mon, 31 Aug 2026 07:25:54 GMT",
+        "Link": null,
+        "X-RateLimit-Remaining": "59"
+      },
+      "sha256": "54d6a7454f95a8178f55ddef61876403f33a12c9b430c2b5e69c749063ae3057"
+    },
+    "forks": {
+      "url": "https://api.github.com/repos/TUDelft-CNS-ATM/bluesky-gym/forks?per_page=100&sort=newest",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:14 GMT",
+        "ETag": "W/\"465d4a986218aaa4ffafb021fd60cfafdc46b1121f32e09bce271e3767426fd4\"",
+        "Last-Modified": null,
+        "Link": null,
+        "X-RateLimit-Remaining": "56"
+      },
+      "sha256": "1e37f242412ef2cee92bad50ab20b792d8448462a63b2740fce8582629dfabf8"
+    },
+    "CGCooke": {
+      "url": "https://api.github.com/repos/CGCooke/bluesky-gym/branches?per_page=100",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:13 GMT",
+        "ETag": "W/\"6132e63e9a8971b1e9bc30198fe175c28eb1bfc9b63664cdf299b3e491385c65\"",
+        "Last-Modified": null,
+        "Link": null,
+        "X-RateLimit-Remaining": "55"
+      },
+      "sha256": "cf247838125e27825b3c7fa703787395cc64d69d949145f0919db5a07e247880"
+    },
+    "danielkalmanson": {
+      "url": "https://api.github.com/repos/danielkalmanson/bluesky-gym/branches?per_page=100",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:13 GMT",
+        "ETag": "W/\"7383d822a62520e489050aecbfaaef484515897902954eafab3c35409c8df845\"",
+        "Last-Modified": null,
+        "Link": null,
+        "X-RateLimit-Remaining": "58"
+      },
+      "sha256": "200f45345362b50253d43e68f4bc5e24cd57eaeb50f2d8c28e805c6826c676d3"
+    },
+    "cyf617": {
+      "url": "https://api.github.com/repos/cyf617/bluesky-gym/branches?per_page=100",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:13 GMT",
+        "ETag": "W/\"f4a03a2cb7affdbd0c2f3e60708c6a48eec0c001eb4b6a23f30ffbf580831aa6\"",
+        "Last-Modified": null,
+        "Link": null,
+        "X-RateLimit-Remaining": "57"
+      },
+      "sha256": "3c37648b1afa2e95e13cd528fad1e65b37292053f3cecd82693bda5ef52a32e9"
+    },
+    "michael2992": {
+      "url": "https://api.github.com/repos/michael2992/bluesky-gym/branches?per_page=100",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:14 GMT",
+        "ETag": "W/\"b8073080f1779299d402ed899dc03e6c78bac720db3a55852bb3e444b3399987\"",
+        "Last-Modified": null,
+        "Link": null,
+        "X-RateLimit-Remaining": "54"
+      },
+      "sha256": "e857b50281fac6bcb9bbf5d1b49a703b623254b2ba771d5ca376da9208d038e7"
+    },
+    "Pablomg02": {
+      "url": "https://api.github.com/repos/Pablomg02/bluesky-gym/branches?per_page=100",
+      "status": "retrieved",
+      "headers": {
+        "Date": "Tue, 15 Sep 2026 16:09:14 GMT",
+        "ETag": "W/\"f1472fbb84b6504464c2282397aaff48ee6478cbe2c4f893c23efcaa531c5f46\"",
+        "Last-Modified": null,
+        "Link": null,
+        "X-RateLimit-Remaining": "53"
+      },
+      "sha256": "5f02b2d37e9d05b667d275cc6280c37af2d722c2fbabb4857cdd53b42cf49aa8"
+    }
+  },
+  "listed_public_forks": 38,
+  "fork_page_complete": true,
+  "forks": [
+    {
+      "name": "psh12320/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-07-24T08:32:46Z"
+    },
+    {
+      "name": "michael2992/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-08-13T02:22:45Z"
+    },
+    {
+      "name": "SongqiyingYang/bluesky-gym",
+      "default_branch": "AI4REAL-NET-Competition",
+      "pushed_at": "2026-07-24T08:32:46Z"
+    },
+    {
+      "name": "LZWuuu/bluesky-gym",
+      "default_branch": "AI4REAL-NET-Competition",
+      "pushed_at": "2026-07-24T08:32:46Z"
+    },
+    {
+      "name": "CGCooke/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-08-03T11:31:41Z"
+    },
+    {
+      "name": "vinzentbeer/bluesky-gym-mechinterp",
+      "default_branch": "main",
+      "pushed_at": "2026-07-24T08:32:46Z"
+    },
+    {
+      "name": "danielkalmanson/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-08-23T16:21:53Z"
+    },
+    {
+      "name": "cyf617/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-08-26T05:09:43Z"
+    },
+    {
+      "name": "Pablomg02/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-07-31T10:56:05Z"
+    },
+    {
+      "name": "danialzendehdel/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-07-22T19:16:37Z"
+    },
+    {
+      "name": "Rhymer-Lcy/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-07-09T07:48:46Z"
+    },
+    {
+      "name": "nic22062019-bit/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-09-15T07:36:36Z"
+    },
+    {
+      "name": "JAgterdenbos/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-09-08T13:23:22Z"
+    },
+    {
+      "name": "FynnOppermann/bluesky-gym-safety",
+      "default_branch": "main",
+      "pushed_at": "2026-05-05T09:23:51Z"
+    },
+    {
+      "name": "jooste/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-02-24T16:48:59Z"
+    },
+    {
+      "name": "TwanvanDam/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-08-12T22:36:39Z"
+    },
+    {
+      "name": "stanley-dss/bluesky-gym-dss",
+      "default_branch": "main",
+      "pushed_at": "2026-03-06T20:50:41Z"
+    },
+    {
+      "name": "aesaertthomas/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-12-06T15:10:49Z"
+    },
+    {
+      "name": "StefanHamm/bluesky-gym-xrl-methods",
+      "default_branch": "main",
+      "pushed_at": "2026-08-17T11:09:49Z"
+    },
+    {
+      "name": "joshuawe/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-06-25T08:30:52Z"
+    },
+    {
+      "name": "BorisStaarman/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-04-14T06:56:38Z"
+    },
+    {
+      "name": "rclarsfull/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-10-21T13:10:58Z"
+    },
+    {
+      "name": "sfo/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-07-09T18:19:45Z"
+    },
+    {
+      "name": "nczempin/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-06-19T12:55:55Z"
+    },
+    {
+      "name": "BvDillen/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-06-19T12:04:52Z"
+    },
+    {
+      "name": "fazlurnu/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-06-19T09:39:42Z"
+    },
+    {
+      "name": "Somnathab3/bluesky-gym-hallucination",
+      "default_branch": "main",
+      "pushed_at": "2025-07-29T13:04:47Z"
+    },
+    {
+      "name": "wyatt522/bluesky-gym-altitude-variation",
+      "default_branch": "main",
+      "pushed_at": "2025-05-10T02:44:44Z"
+    },
+    {
+      "name": "VVinayak/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-03-28T14:43:35Z"
+    },
+    {
+      "name": "Gregory119/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-06-06T18:53:25Z"
+    },
+    {
+      "name": "JohnMuirhead2000/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2025-05-09T00:08:53Z"
+    },
+    {
+      "name": "bdemuynck/bluesky-gym-daa",
+      "default_branch": "main",
+      "pushed_at": "2025-03-04T12:54:17Z"
+    },
+    {
+      "name": "amoec/CR-HiFi",
+      "default_branch": "main",
+      "pushed_at": "2025-05-13T18:54:38Z"
+    },
+    {
+      "name": "andubadea/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2024-11-21T13:23:20Z"
+    },
+    {
+      "name": "AI4REALNET/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-09-02T16:17:00Z"
+    },
+    {
+      "name": "jangroter/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-07-23T11:51:32Z"
+    },
+    {
+      "name": "svlaskin/bluesky-gym-sasha",
+      "default_branch": "main",
+      "pushed_at": "2026-02-27T13:47:47Z"
+    },
+    {
+      "name": "giulialeto/bluesky-gym",
+      "default_branch": "main",
+      "pushed_at": "2026-09-01T13:11:46Z"
+    }
+  ],
+  "upstream_reported_fork_count": 39,
+  "prior_review_head_comparison": {
+    "CGCooke": {
+      "branch": "AI4REAL-NET-Competition",
+      "prior_review_sha256_not_applicable_commit": "a458870c711679e4fedb764abc1d58c8f4ffdb61",
+      "current_commit": "a458870c711679e4fedb764abc1d58c8f4ffdb61",
+      "unchanged": true
+    },
+    "danielkalmanson": {
+      "branch": "daniel/main",
+      "prior_review_sha256_not_applicable_commit": "55c636b933a8ad79fb9eb3821065daeba756e177",
+      "current_commit": "55c636b933a8ad79fb9eb3821065daeba756e177",
+      "unchanged": true
+    },
+    "cyf617": {
+      "branch": "cursor/competition-mdp-v1-4e46",
+      "prior_review_sha256_not_applicable_commit": "e3875b02857194d813272465a2311e8b8d5277d8",
+      "current_commit": "e3875b02857194d813272465a2311e8b8d5277d8",
+      "unchanged": true
+    }
+  }
+}

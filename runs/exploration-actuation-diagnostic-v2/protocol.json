@@ -1,0 +1,47 @@
+{
+  "registered_at_utc": "2026-09-16T06:02:37.387828+00:00",
+  "hypothesis": "Independent five-second goal-offset noise may yield smaller physical heading deviations than temporally persistent noise because of aircraft turn dynamics and repeated recentering.",
+  "initial_checkpoint": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/train/initial-model.zip",
+  "initial_checkpoint_sha256": "3ed5e478bf5f9e670da76a8ce4b4363e2760bdeea23d1c51cc10c6be736cbb1f",
+  "source_bundle": "runs/onpolicy-native-source-v2.zip",
+  "source_bundle_sha256": "7018b264ef978680951b10ef72ad2c9a940d96efa72295b8be20af26bfa919a5",
+  "initial_reference_csv": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/eval-initial-dev20/aircraft.csv",
+  "scenario_seed": 20260,
+  "worlds": 2,
+  "noise_seed": 51400,
+  "cases": {
+    "zero": {
+      "std": 0.0,
+      "heading_hold_decisions": 1
+    },
+    "iid005": {
+      "std": 0.05,
+      "heading_hold_decisions": 1
+    },
+    "iid020": {
+      "std": 0.2,
+      "heading_hold_decisions": 1
+    },
+    "held020": {
+      "std": 0.2,
+      "heading_hold_decisions": 12
+    }
+  },
+  "controls": "Identical two scenarios, untrained neutral actor, original dynamics and scorer, fixed route/static support, traffic filter off. Noise draws are shared by aircraft slot and decision.",
+  "held_noise_scope": "Only heading noise is held for twelve decisions (60 simulated seconds). Speed noise remains independent and identical to iid020 for the same world/decision/aircraft.",
+  "primary_diagnostics": [
+    "Latent heading offset standard deviation and within-aircraft lag-one correlation.",
+    "Actual turn RMS and route-reference drift RMS, with filter intervention and command saturation reported.",
+    "Original physical metrics shown only as descriptive consequences on these two reused worlds."
+  ],
+  "limitations": [
+    "No PPO training and no learned-policy claim.",
+    "Temporal holding is an actuation probe, not a valid drop-in on-policy sampling method.",
+    "Only two previously used development worlds; this cannot justify a performance ranking.",
+    "Static support can change commands; intervention rates are recorded.",
+    "Terminal aircraft removed before step returns have no post-step simulator heading."
+  ],
+  "next_action": "Use measured response to decide whether a properly specified temporal exploration method warrants a separate matched RL experiment. Do not infer learning from this diagnostic.",
+  "preservation": "No model, source bundle, classical controller or active experiment is changed.",
+  "previous_attempt": "runs/exploration-actuation-diagnostic-v1: startup failed before any scenarios ran because the simulator work directory did not exist; all files retained."
+}

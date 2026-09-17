@@ -1,0 +1,104 @@
+{
+  "recorded_at_utc": "2026-09-17T03:24:48.161264+00:00",
+  "previous_status": "runs/rl-priority-status-20260917-v43.json",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "fixed_environment_and_benchmark_files_unchanged": 65,
+  "cluster": {
+    "sac_job_852491_passed_per_user_transcript": true,
+    "same_transcript_sha256_verified": true,
+    "original_cluster_artifacts_downloaded": false,
+    "ppo_gsde_submission_ids_received": false,
+    "resubmit_or_reinstall": false,
+    "pending_user_item": "Existing cluster-ppo-gsde-v1 submissions.tsv, if submitted."
+  },
+  "continuous_imitation_ppo_rate_comparison": {
+    "complete": "runs/imitation-ppo-lr-recovery-v1/paired-results.json",
+    "sha256": "7534580aead81385a284f75421fe4efb6d955ff015dfd8cca237a65fc5dd243a",
+    "both_registered_rates_failed_advance_screen": true,
+    "default_final_clean_completion": 0.57,
+    "smaller_final_clean_completion": 0.33,
+    "shared_initial_clean_completion": 0.345,
+    "scope": "One training seed and 20 reused development worlds. Original interrupted attempt retained."
+  },
+  "categorical_imitation_ppo_pilot": {
+    "directory": "runs\\categorical-imitation-ppo-pilot-v1",
+    "session": 56512,
+    "source_bundle_sha256": "d72575b87b1e63f5cdd8fb0c77fe7db5d31017f7fbcb72f27dc2c13971275903",
+    "source_files": 156,
+    "frozen_source_tests_passed": 289,
+    "registered_before_training": true,
+    "protocol_sha256": "64ce7b5bf0834b56b6810e7069498d2b82e03e24fd86d4cd5a21094447918a49",
+    "runner_sha256": "b0096d5c95776ad3a19a33e63b197a01559bf72f47822e318675852f8a42e83e",
+    "stage": "40 supervised epochs complete; PPO training and untrained-prior evaluation launched",
+    "supervised_epochs": 40,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "demonstration_transitions": 62744,
+    "supervised_model_sha256": "c8c1554a938487f54db098410144473017b0cb2adcfcf45ec5afe78d66e83b75",
+    "registered_ppo_live_transition_budget": 100000,
+    "ppo_training_seed": 62320,
+    "max_simulators_for_this_study": 2,
+    "flight_performance_not_yet_known": true,
+    "controls": [
+      "untrained navigation prior",
+      "own supervised starting policy",
+      "fixed classical system"
+    ],
+    "checkpoints": [
+      "initial",
+      "first at least 50k",
+      "fixed final budget"
+    ],
+    "native_parity_check_scheduled": true,
+    "aircraft_conflict_filter_enabled": false,
+    "reserved_unseen_streams_used": false
+  },
+  "action_component_diagnostic": {
+    "directory": "runs/imitation-ppo-component-swap-v1",
+    "session": 17778,
+    "confirmed_live_at_last_poll": true,
+    "latest_seen_stage": "trained_heading, 16 of 20 worlds",
+    "original_checkpoints_unchanged": true,
+    "new_component_selector_tests_passed": 8,
+    "status": "running; preserve source and allow completion"
+  },
+  "gsde_recovery": {
+    "session": 73914,
+    "confirmed_live_at_last_poll": true,
+    "stage": "seed-52400/every12 training",
+    "latest_learning_row": {
+      "rollout": "48",
+      "live_transitions": "79656",
+      "padded_transitions": "43224",
+      "counted_transitions": "122880",
+      "worlds_completed": "38",
+      "aircraft_completed": "380",
+      "optimizer_steps": "549",
+      "policy_epochs": "179",
+      "wall_seconds": "664.6542215999943",
+      "live_transitions_per_second": "119.84577455665209",
+      "training_return_last100": "-0.594241714496638",
+      "native_return_last100": "-59.42417144966379",
+      "training_arrival_last100": "1.0",
+      "policy_loss": "-0.021857836416789463",
+      "value_loss": "0.02905939013830253",
+      "approx_kl": "0.0403941385447979",
+      "clip_fraction": "0.2360772831099374",
+      "rollout_live_samples": "1843",
+      "rollout_return_variance_live": "0.2645214518484721",
+      "rollout_value_mse_live": "0.030090459444170627",
+      "rollout_value_explained_variance_live": "0.8864732032204143",
+      "rollout_action_box_clip_fraction_live": "0.0"
+    },
+    "aggregate_complete": false
+  },
+  "next_actions": [
+    "Poll sessions 56512, 17778, and 73914; do not restart running studies.",
+    "Inspect component-swap results after both hybrid arms and control checks finish.",
+    "Review categorical own-initial learning and native metrics only after full fixed-budget completion.",
+    "Complete the registered gSDE cohort and aggregate all three fresh local seeds.",
+    "Use saved cluster submission IDs before any further scheduling; never infer failure from queue disappearance."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "decision_interval_seconds": 5,
+  "all_summary_metrics_exact": true,
+  "episodes": 20,
+  "agent_episodes": 20,
+  "missed_arrivals": []
+}

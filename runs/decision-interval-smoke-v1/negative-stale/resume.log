@@ -1,0 +1,16 @@
+usage: train.py [-h] --env {sa,ma} --algorithm {ppo,sac}
+                [--recipe {baseline,balanced,goal_relative,route_guided,route_guided_inset,public_weights,public_cpa,goal_relative_cpa,public_sa_transfer,public_cpa_sa_transfer,public_route_input,public_route_input_sa_transfer,public_route_residual,public_route_residual_sa_transfer,public_route_choice,public_route_choice_sa_transfer,public_route_choice_residual,public_route_choice_residual_sa_transfer,public_route_choice_speed20,public_route_choice_speed20_sa_transfer,public_route_choice_speed20_residual,public_route_choice_speed20_residual_sa_transfer,public_route_choice_fast_residual,public_route_choice_fast_residual_sa_transfer,public_route_choice_interval5,public_route_choice_interval5_sa_transfer,public_route_choice_fast_residual_interval5,public_route_choice_fast_residual_interval5_sa_transfer}]
+                [--guard-static | --no-guard-static]
+                [--guard-traffic | --no-guard-traffic] [--workers WORKERS]
+                [--steps STEPS] [--seed SEED] [--device DEVICE]
+                [--net-arch NET_ARCH] [--learning-rate LEARNING_RATE]
+                [--tau TAU] --run-dir RUN_DIR
+                [--checkpoint-every CHECKPOINT_EVERY]
+                [--learning-starts LEARNING_STARTS]
+                [--critic-warmup-updates CRITIC_WARMUP_UPDATES]
+                [--gradient-steps GRADIENT_STEPS] [--batch-size BATCH_SIZE]
+                [--rollout-steps ROLLOUT_STEPS] [--resume RESUME]
+                [--resume-replay RESUME_REPLAY] [--save-replay]
+                [--buffer-size BUFFER_SIZE]
+                [--max-wall-seconds MAX_WALL_SECONDS]
+train.py: error: Decision interval changed; use fresh replay

@@ -1,0 +1,29 @@
+{
+  "reference_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-v1\\train\\model.zip",
+  "current_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-budget-scale-v1\\native\\policy-live-103226.zip",
+  "live_transitions": 103226,
+  "policy_fingerprint": "2bb36d46823abc43e810473f64ac3837e5f8fe723d0091f8be73af76402de1a1",
+  "all_initial_policy_tensors_previously_matched": true,
+  "all_checkpoint_policy_tensors_identical": true,
+  "exact_learning_prefix_rows": 25,
+  "identical_columns": [
+    "rollout",
+    "live_transitions",
+    "padded_transitions",
+    "counted_transitions",
+    "worlds_completed",
+    "aircraft_completed",
+    "optimizer_steps",
+    "policy_epochs",
+    "training_return_last100",
+    "native_return_last100",
+    "training_arrival_last100",
+    "policy_loss",
+    "value_loss",
+    "approx_kl",
+    "clip_fraction"
+  ],
+  "wall_time_excluded": true,
+  "reusable_development_evaluation": "runs/goal-offset-v1/eval-trained-dev20",
+  "required_evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify"
+}

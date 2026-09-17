@@ -1,0 +1,50 @@
+{
+  "training": {
+    "decision-interval-smoke-v1": {
+      "timesteps": 400,
+      "new_timesteps": 400,
+      "wall_seconds": 22.804675100021996,
+      "critic_updates": 30,
+      "held_actor_updates": 0,
+      "actor_updates": 30,
+      "live_transitions": 400,
+      "skipped_transitions": 0,
+      "new_live_transitions": 400,
+      "new_skipped_transitions": 0,
+      "model_sha256": "efe6b0b1df7241b3c25310d41797fbd735dfcb5356924a2aab9f3ede0643dd0b",
+      "decision_interval_seconds": 5
+    },
+    "decision-interval-smoke-resume-v1": {
+      "timesteps": 600,
+      "new_timesteps": 200,
+      "wall_seconds": 17.100950099993497,
+      "critic_updates": 50,
+      "held_actor_updates": 0,
+      "actor_updates": 50,
+      "live_transitions": 600,
+      "skipped_transitions": 0,
+      "new_live_transitions": 200,
+      "new_skipped_transitions": 0,
+      "model_sha256": "336d2c6facd74e26e2d44be63bb188031abbcf8b5642fe0ab1fbb318f6e8cd3e",
+      "decision_interval_seconds": 5
+    }
+  },
+  "negative_checks": {
+    "missing_evaluate": {
+      "returncode": 2,
+      "expected_message": "Checkpoint decision-interval settings differ"
+    },
+    "missing_resume": {
+      "returncode": 2,
+      "expected_message": "Decision interval changed; use fresh replay"
+    },
+    "stale_evaluate": {
+      "returncode": 2,
+      "expected_message": "Checkpoint decision-interval settings differ"
+    },
+    "stale_resume": {
+      "returncode": 2,
+      "expected_message": "Decision interval changed; use fresh replay"
+    }
+  }
+}

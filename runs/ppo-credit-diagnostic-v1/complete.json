@@ -1,0 +1,26 @@
+{
+  "cases": {
+    "initial": {
+      "live_decisions": 3462,
+      "metric_matches": 180,
+      "step_csv_sha256": "4781e17e85b78806e61596c799a7703f9efaad857294d272a37a726835869796",
+      "checkpoint_sha256": "3ed5e478bf5f9e670da76a8ce4b4363e2760bdeea23d1c51cc10c6be736cbb1f"
+    },
+    "std005": {
+      "live_decisions": 3787,
+      "metric_matches": 180,
+      "step_csv_sha256": "b9e02f7599a08e02ce5f667a24a55e43b6d9ac4fda06c598925ed63276687af0",
+      "checkpoint_sha256": "e2736c6f8d482e3d0dfca676bef28063b969d1c4b6a5bebfeae1fe09a1355ac2"
+    },
+    "std020": {
+      "live_decisions": 6064,
+      "metric_matches": 180,
+      "step_csv_sha256": "45446c5ba89e8bbd4b80ec3ea200324f213e40d4f9979eececa839c486d80acc",
+      "checkpoint_sha256": "09d4ab2242ae29bb73ea6863d5c3596be736d78a11906b849541abf7e6ada930"
+    }
+  },
+  "completed_at_utc": "2026-09-16T06:41:10.185530+00:00",
+  "diagnostic_only": true,
+  "training_performed": false,
+  "unseen_scenarios_used": false
+}

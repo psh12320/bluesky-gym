@@ -1,0 +1,17 @@
+{
+  "guard_selection_cases": 4,
+  "classical_physical_metrics_unchanged": 180,
+  "legacy_checkpoint_physical_metrics_unchanged": 180,
+  "ppo_mappo_initial_actor_identity": {
+    "initial_actor_tensors_identical": true,
+    "actor_parameters": 38660,
+    "ppo_critic_parameters": 109825,
+    "mappo_critic_parameters": 550145
+  },
+  "smoke_live_transitions": {
+    "ppo": 1280,
+    "mappo": 1280
+  },
+  "static_only_checkpoint_reload_verified": true,
+  "performance_evidence": false
+}

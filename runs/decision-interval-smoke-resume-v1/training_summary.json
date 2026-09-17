@@ -1,0 +1,12 @@
+{
+  "timesteps": 600,
+  "new_timesteps": 200,
+  "wall_seconds": 17.100950099993497,
+  "critic_updates": 50,
+  "held_actor_updates": 0,
+  "actor_updates": 50,
+  "live_transitions": 600,
+  "skipped_transitions": 0,
+  "new_live_transitions": 200,
+  "new_skipped_transitions": 0
+}

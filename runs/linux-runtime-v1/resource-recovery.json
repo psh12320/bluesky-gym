@@ -1,0 +1,22 @@
+{
+  "started_at_utc": "2026-09-15T15:26:44.8644183Z",
+  "status": "complete",
+  "reason": "Local disk below 600 MB and severe memory pressure",
+  "installer_stop": "Project installer PID 333 verified by exact runtime path, then SIGINT; tool confirmed exit 1",
+  "cache_helper_stop": "Project helper PID 5700 verified by script path, then SIGTERM; tool confirmed exit 1",
+  "free_disk_before": 1246978048,
+  "removed_disposable_paths": [
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\linux-runtime-v1\\.venv",
+    "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\linux-runtime-v1\\tmp"
+  ],
+  "preserved": [
+    "all Windows models and evaluations",
+    "Linux package wheelhouse and published hashes",
+    "Python runtime archive",
+    "failed installation logs and reports"
+  ],
+  "offline_install_state_sha256": "18cacad10f15f227569cffb141d9a5a5b334b558d6c83bec84fc7ff18f2dbaa1",
+  "native_simulator_validation": "not performed",
+  "completed_at_utc": "2026-09-15T15:27:18.0267465Z",
+  "free_disk_after": 3794120704
+}

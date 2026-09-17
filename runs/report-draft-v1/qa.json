@@ -1,0 +1,56 @@
+{
+  "pages": 4,
+  "all_final_pages_visually_reviewed": true,
+  "unchanged_pages_1_3_4_render_identically": true,
+  "page_2_rechecked_after_table_alignment": true,
+  "main_body_font_pt": 12,
+  "small_nonzero_metrics_preserved": true,
+  "source_evaluation_means_recomputed_at_build": true,
+  "checkpoint_counts_and_training_configuration_verified": [
+    {
+      "path": "runs\\sac-ma-fast-reference-v1-25k-seed2900\\checkpoints\\model_25000_steps.zip",
+      "sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+      "counted_transitions": 25000,
+      "updates": 7996
+    },
+    {
+      "path": "runs\\sac-ma-fast-reference-reach250-v1-25k-seed2900\\checkpoints\\model_25000_steps.zip",
+      "sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+      "counted_transitions": 25000,
+      "updates": 7996
+    }
+  ],
+  "reference_records": 6,
+  "reference_manager_import_not_yet_performed": true,
+  "github_live_link_checks": "Web fetch returned cache misses; pinned local upstream specification and previously reviewed public source support these references. Live reachability is not claimed.",
+  "heldout_outcomes_read": false,
+  "pdf_sha256": "2da163ea8eb0cb557559ddbf41d846de81eb49673f3bc64ee131405af471b5c2",
+  "figure_sha256": "35df1d6161fba82dfa6dcb32d56121855ec800de9f9af732e9550e7626e9c268",
+  "evidence_sha256": "982bc5d21ea864d828e29f6962c86e41c8b2173d1e131c636b49fa2d7c898864",
+  "explicit_training_configuration_values": {
+    "sac-ma-fast-reference-v1-25k-seed2900": {
+      "actual_net_arch": [
+        64,
+        64
+      ],
+      "actual_learning_rate": 0.0003,
+      "actual_tau": 0.005,
+      "batch_size": 256,
+      "gamma": 0.996508469331006,
+      "learning_starts": 5000,
+      "gradient_steps": 4
+    },
+    "sac-ma-fast-reference-reach250-v1-25k-seed2900": {
+      "actual_net_arch": [
+        64,
+        64
+      ],
+      "actual_learning_rate": 0.0003,
+      "actual_tau": 0.005,
+      "batch_size": 256,
+      "gamma": 0.996508469331006,
+      "learning_starts": 5000,
+      "gradient_steps": 4
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "changed_tensors": [],
+  "identical_initial_tensors": true,
+  "same_parameter_count": true,
+  "traffic_position_scales": [
+    1,
+    20
+  ],
+  "initial_action_std": 0.05,
+  "checkpoint_sha256": [
+    "163e12e0adaf0b9fad5ad2a82242ba8a534e3dd641e8b3d7adc76e6c98d0115c",
+    "28729e8c8ce5b1cfc56aeca8ddc87027df8e25ea0f35632c12fc106a05e30793"
+  ]
+}

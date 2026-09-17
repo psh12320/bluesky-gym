@@ -1,0 +1,142 @@
+{
+  "registered_at_utc": "2026-09-16T08:40:08.150956+00:00",
+  "experiment": "cluster-ppo-gsde-v1",
+  "purpose": "Test PPO exploration persistence at one million live transitions on three fresh training seeds with paired full initial parameters and own-initial controls.",
+  "seeds": [
+    52600,
+    52700,
+    52800
+  ],
+  "rows": [
+    {
+      "seed": 52600,
+      "arm": "every12"
+    },
+    {
+      "seed": 52600,
+      "arm": "every1"
+    },
+    {
+      "seed": 52700,
+      "arm": "every1"
+    },
+    {
+      "seed": 52700,
+      "arm": "every12"
+    },
+    {
+      "seed": 52800,
+      "arm": "every12"
+    },
+    {
+      "seed": 52800,
+      "arm": "every1"
+    }
+  ],
+  "config": {
+    "algorithm": "ppo",
+    "workers": 8,
+    "live_steps": 1000000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "device": "cuda",
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "conflict_features": true,
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 100000,
+    "max_wall_seconds": 9900,
+    "static_filter": true,
+    "mask_conflict_features": false,
+    "exploration": "gsde",
+    "sde_weight_std": 0.01
+  },
+  "arms": {
+    "every1": {
+      "sde_sample_freq": 1
+    },
+    "every12": {
+      "sde_sample_freq": 12
+    }
+  },
+  "evaluation": {
+    "seed": 20260,
+    "worlds": 20,
+    "stages": [
+      "initial",
+      "100k",
+      "300k",
+      "final"
+    ],
+    "reward_scale": 1.0,
+    "progress_scale": 0.0,
+    "checkpoint_selection": "First saved checkpoint at/above the threshold, within one rollout; final is the registered full budget, never a best checkpoint.",
+    "classical": "Fixed controller with both filters, rerun per row on the same Linux environment; never tuned."
+  },
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "source_base_sha256": "51fba29cbe8b9196b7a169aedb107e9edf6a5ed3593a1638c9f964d3d478a669",
+  "resources": {
+    "training": {
+      "partition": "gpu",
+      "gpu_request": "h200-141:1",
+      "cpus": 16,
+      "memory_gb": 64,
+      "hours": 3
+    },
+    "evaluation": {
+      "partition": "normal",
+      "cpus": 2,
+      "memory_gb": 8,
+      "hours": 3
+    }
+  },
+  "existing_interpreter": "$HOME/cs4246-rl/onpolicy-v1/.venv-cluster/bin/python",
+  "environment_checks": {
+    "prior_ppo_baseline_jobs": [
+      851486,
+      851487,
+      851488,
+      851489
+    ],
+    "sac_cuda_check_job": 852491
+  },
+  "scheduling": "First training row gates the other five on technical success, never physical score. One GPU task at a time. CPU evaluations use separate allocations; final analysis requires all six completed rows.",
+  "selected_pilot": {
+    "seed": 51700,
+    "live_transitions": 100438,
+    "clean_completion_initial": 0.255,
+    "clean_completion_final": 0.415,
+    "restricted_time_initial": 0.38,
+    "restricted_time_final": 1.285,
+    "screen_passed": false,
+    "results_sha256": "d98f4b1983bb25a27bbc9f354424cacf3789de2d8a286714ffcf3fd24cd38cb9",
+    "excluded_from_primary_aggregate": true
+  },
+  "limitations": [
+    "Exploratory extension of an outcome-selected recipe that failed its restricted-area screen; this does not declare a candidate safe or competitive.",
+    "All three fresh cluster training seeds and both timing arms are required in the primary analysis; no selection of only successful runs.",
+    "Both arms use the same eight workers, CUDA device, batch size, rewards, source and initial tensors within each seed. Only gSDE resampling frequency differs.",
+    "Compared with the local pilot, workers, batch size, device, seed and budget change. Cross-study differences cannot isolate extra training alone.",
+    "Noise resampling changes both heading and speed correlation; the .01 value is noise-matrix weight std, not marginal action std.",
+    "The fixed KL stopping rule can yield different optimizer-step counts; actual counts and full-budget fractions must be reported.",
+    "Route guidance and static filtering stay on; traffic-conflict filtering stays off.",
+    "Twenty reused development worlds do not establish unseen generalization. Reserved20301/20302 and official42 remain unused.",
+    "The fixed classical system includes traffic filtering and is context, not a matched learning control.",
+    "No automatic promotion; apply the unchanged multi-metric screen to each seed and the three-seed mean, retain failures."
+  ],
+  "failure_behavior": "Stop on failed checks or incomplete budgets; preserve all artifacts and do not overwrite or resubmit automatically."
+}

@@ -1,0 +1,71 @@
+{
+  "registered_at_utc": "2026-09-16T03:12:08.329318+00:00",
+  "purpose": "Measure learned PPO changes with conflict filtering enabled, with route guidance separately off or on.",
+  "seeds": [
+    49900,
+    49920,
+    49940
+  ],
+  "support_groups": [
+    {
+      "name": "g0-f1",
+      "guidance": false,
+      "filter": true
+    },
+    {
+      "name": "g1-f1",
+      "guidance": true,
+      "filter": true
+    }
+  ],
+  "world_seeds": {
+    "49900": [
+      49900,
+      49910
+    ],
+    "49920": [
+      49920,
+      49930
+    ],
+    "49940": [
+      49940,
+      49950
+    ]
+  },
+  "config": {
+    "algorithm": "ppo",
+    "workers": 2,
+    "live_steps": 100000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "device": "cpu",
+    "initial_action_std": 0.05,
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "reward_scale": 0.01,
+    "progress_scale": 0.0,
+    "checkpoint_live_steps": 50000,
+    "max_wall_seconds": 3600
+  },
+  "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-learning-source-v2-verify",
+  "training_bundle_sha256": "33579f122d1fffd6bf6f9aefdabad846111afe20cbaadb56e390ae2d5a849b8c",
+  "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-goal-offset-source-v1-verify",
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+  "guidance_only_comparison": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-guidance-replication-v1\\protocol.json",
+  "primary_learning_measure": "Per-seed final-minus-own-initial change in all nine native metrics, clean completion and all-aircraft-clean completion.",
+  "aggregation": "Keep all three seed effects; report their mean and sample standard deviation. Paired-world bootstrap intervals describe scenarios, not training-seed uncertainty.",
+  "support_comparison": "Guidance effect with filtering fixed on; filter effect with guidance fixed on using the completed guidance-only cohort. Compare changes from own initial policies, not just final scores.",
+  "advancement_policy": "No automatic selection or longer-budget launch. Review learned physical changes across all seeds; high initial support scores do not count as learning.",
+  "limitations": [
+    "100k feasibility pilots, not the canonical eight-world million-transition matrix.",
+    "Goal-offset actions supply a navigation prior even with guidance disabled.",
+    "These six runs and the existing three guidance-only runs do not constitute a complete four-cell, three-seed training matrix.",
+    "Previously used development worlds; unseen streams 20301/20302 remain reserved.",
+    "The historical +5-point clean-completion gate is not used to rank a control already at 97%; no previous screen outcome is changed."
+  ],
+  "scheduling": "Two coordinators, one per support group; each trains two worlds and evaluates one world sequentially per seed. Existing evaluation continues.",
+  "failure_behavior": "Stop that coordinator on errors or incomplete budgets, retain all outputs and do not relaunch automatically."
+}

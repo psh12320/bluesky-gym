@@ -1,0 +1,16 @@
+{
+  "fresh_extraction_rebuild_passed": true,
+  "pages": 4,
+  "all_page_text_identical": true,
+  "all_page_render_bytes_identical": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true
+  },
+  "figure_bytes_identical": true,
+  "binary_pdf_difference": "Expected metadata/document-ID difference between separate builds; page content and rendering are identical.",
+  "archive_sha256": "53edff53fcc9467c193e4fa7189dd2bba616ed73cb043cbeca923e4115a1293d",
+  "original_pdf_sha256": "2da163ea8eb0cb557559ddbf41d846de81eb49673f3bc64ee131405af471b5c2",
+  "rebuilt_pdf_sha256": "719bdc5309a71164f301557b963674d5758f5a9f340fd583d0a332a062231934"
+}

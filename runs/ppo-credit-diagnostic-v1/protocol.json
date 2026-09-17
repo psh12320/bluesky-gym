@@ -1,0 +1,41 @@
+{
+  "registered_at_utc": "2026-09-16T06:38:10.231533+00:00",
+  "seed": 20260,
+  "worlds": 2,
+  "source": "runs/onpolicy-position-source-v1-verify",
+  "source_bundle_sha256": "f8a31797cffd66c74c3259cde4f0115ab29b6a1b87271e2b8cf39322fee863af",
+  "cases": {
+    "initial": {
+      "checkpoint": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/train/initial-model.zip",
+      "sha256": "3ed5e478bf5f9e670da76a8ce4b4363e2760bdeea23d1c51cc10c6be736cbb1f",
+      "reference_csv": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/eval-initial-dev20/aircraft.csv",
+      "reference_csv_sha256": "1ea2645fe0f1fd30f9bf3739291d7d10282734f625171ee90a415f6aa5fd5ffd"
+    },
+    "std005": {
+      "checkpoint": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/train/model.zip",
+      "sha256": "e2736c6f8d482e3d0dfca676bef28063b969d1c4b6a5bebfeae1fe09a1355ac2",
+      "reference_csv": "runs/ppo-exploration-static-pilot-v1/seed-51200/std005/eval-final-dev20/aircraft.csv",
+      "reference_csv_sha256": "490feac44e86012fa6d8a016b10a607be0e24ac99f4cf94395a27f31ee04b083"
+    },
+    "std020": {
+      "checkpoint": "runs/ppo-exploration-static-pilot-v1/seed-51200/std020/train/model.zip",
+      "sha256": "09d4ab2242ae29bb73ea6863d5c3596be736d78a11906b849541abf7e6ada930",
+      "reference_csv": "runs/ppo-exploration-static-pilot-v1/seed-51200/std020/eval-final-dev20/aircraft.csv",
+      "reference_csv_sha256": "fef44a159956dbea08912e6a8e86455786a6fd8d8d7680cb768ad0bd4ab6d8af"
+    }
+  },
+  "purpose": "Record reward components, predicted conflict flags and critic values along existing deterministic reference trajectories.",
+  "reward_credit": "Full-trajectory GAE recomputed offline with lambda .95, .99 and 1; same gamma .996508469331006 and reward_scale .01.",
+  "decision_interval_seconds": 5,
+  "references": [
+    "https://arxiv.org/abs/1506.02438"
+  ],
+  "limitations": [
+    "Two reused development worlds, not new performance evidence.",
+    "Deterministic trajectory returns differ from the stochastic-policy returns the critic was trained to predict.",
+    "Full-trajectory GAE here differs from actual finite training rollouts and is diagnostic only.",
+    "Aircraft-level predicted flags need not refer to the same pair as a later observed conflict.",
+    "A delayed reward or a short residual weighting scale does not prove a learning bug; a good critic can convey long-term consequences.",
+    "No models, training parameters, rewards or evaluation settings change."
+  ]
+}

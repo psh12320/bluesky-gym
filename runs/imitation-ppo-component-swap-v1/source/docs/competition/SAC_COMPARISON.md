@@ -1,0 +1,15 @@
+# Fresh shared SAC comparison
+
+This separate trainer uses the PPO/MAPPO WorldPool: ten aircraft, five-second decisions, the original scenario generator and physical scoring, individual arrival terminals, and a finite 3000-second task deadline. Each actor observation includes remaining time. The actor and two Q critics receive only local observations; this is shared SAC, not centralized-critic MAPPO.
+
+`python -m atc_rl.train_sac --run-dir runs/sac-example --workers 8 --device cuda --live-steps 1000000 --seed 51800 --guidance --static-filter --conflict-features`
+
+The example enables fixed route guidance and static-area filtering, with aircraft conflict filtering off. Compare each trained checkpoint with its own untrained checkpoint and the unchanged classical benchmark. `atc_rl.evaluate`, `atc_rl.compare`, `atc_rl.curves`, and native `atc_rl.competition` accept these fresh SAC artifacts. Use `python -m atc_rl.audit_sac --run runs/sac-example --out runs/sac-example/audit.json` before performance evaluation.
+
+The default reward multiplier is .01, with no progress shaping. The actor has two 128-unit Tanh layers; each Q critic has two 256-unit layers. Gamma is .996508469331006, learning rate .0003, target interpolation .005, batch size 256, live replay capacity 200000, and one SAC gradient round per vector decision after 5000 counted slots of warmup. Automatic entropy temperature starts at .01; its changing value is logged. This differs from PPO's fixed entropy coefficient. The initial actor has zero mean and pre-tanh Gaussian standard deviation .05. SAC squashes actions with tanh; PPO clips Gaussian samples. Warmup uses independent, clipped zero-mean Gaussian commands. These algorithmic differences are recorded, not treated as identical optimization.
+
+Replay excludes inactive aircraft. Deadline transitions keep done=1 when sampled; collection chunk boundaries bootstrap. Every collection completes before budget checks, avoiding a callback stop that would count but discard its final transition. Checkpoint and learning records contain live, padded, counted and stored experience, plus actor, critic and entropy optimizer counts. Here `optimizer_steps` means critic optimizer steps, not the sum of all three optimizers. Record exact overshoot and update counts when comparing algorithms.
+
+Each run saves its initial model, periodic checkpoints, final model, source snapshot, dependency versions, physical training metrics and returns. This workflow always starts fresh. It does not load historical replay or resume training from inference checkpoints. Existing SAC source, checkpoints and logs remain unchanged.
+
+For Slurm, reuse the established cluster environment. Eight simulator worlds need at least eight CPU cores in addition to learner capacity; the existing 16-CPU GPU allocation is suitable for an initial throughput check. Do not assume a GPU alone accelerates simulation, or that matching live experience also matches optimizer work. First verify a short run and native/vector parity, then register seed, checkpoint and unseen-scenario budgets before a substantive comparison.

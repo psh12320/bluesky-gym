@@ -1,0 +1,66 @@
+{
+  "time_utc": "2026-09-16T00:36:07.427222+00:00",
+  "goal_turn_classification": "progress",
+  "running_training": [
+    {
+      "algorithm": "ppo",
+      "session": 83552,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "latest_learning_row": {
+        "rollout": "114",
+        "live_transitions": "468467",
+        "padded_transitions": "115213",
+        "counted_transitions": "583680",
+        "worlds_completed": "270",
+        "aircraft_completed": "2709",
+        "optimizer_steps": "4928",
+        "policy_epochs": "1109",
+        "wall_seconds": "2371.5592208",
+        "live_transitions_per_second": "197.5354424596539",
+        "training_return_last100": "-0.8323134490684422",
+        "native_return_last100": "-83.23134490684419",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.010700568521860987",
+        "value_loss": "0.03547133975662291",
+        "approx_kl": "0.01235237717628479",
+        "clip_fraction": "0.16896128840744495"
+      }
+    },
+    {
+      "algorithm": "mappo",
+      "session": 33044,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "latest_learning_row": {
+        "rollout": "69",
+        "live_transitions": "282616",
+        "padded_transitions": "70664",
+        "counted_transitions": "353280",
+        "worlds_completed": "164",
+        "aircraft_completed": "1649",
+        "optimizer_steps": "3029",
+        "policy_epochs": "667",
+        "wall_seconds": "1749.5912671000006",
+        "live_transitions_per_second": "161.53258496108316",
+        "training_return_last100": "-0.9127861010458657",
+        "native_return_last100": "-91.27861010458656",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.01128576566115953",
+        "value_loss": "0.012781134899705648",
+        "approx_kl": "0.01164347305893898",
+        "clip_fraction": "0.14495694003999232"
+      }
+    }
+  ],
+  "completed_mapppo_100k_evaluation": "runs/mappo-goal-scaled-million-v1/eval-100k-dev20",
+  "validated_comparison": "runs/mappo-goal-scaled-million-v1/validated-100k-results.json",
+  "paired_algorithm_comparison": "runs/mappo-goal-scaled-million-v1/ppo-mappo-100k-dev20.json",
+  "mappo_100k_screen_passed": false,
+  "comparison_tests_passed": 11,
+  "comparison_test_retry": "Initial attempt had 10 passes and one inaccessible system temporary-folder setup error; all 11 passed using a fresh repository test directory.",
+  "source_preservation": "Both learners still use the unchanged frozen durable source. No classical, SAC, model, or evaluation sources modified.",
+  "optimizer_diagnostic": "PPO/MAPPO actor hidden epsilon attenuation both approximately .915; no large difference at 100k. No causal claim.",
+  "next_action": "At the first MAPPO checkpoint at or above 300k live transitions, evaluate twenty seed-20260 worlds with frozen goal-offset-source-v1. Then compare with the verified PPO 301272 checkpoint and each initial policy.",
+  "resource_limit": "Four training simulator workers. At most one additional evaluation simulator; keep analyses sequential.",
+  "cluster": "Bootstrap result remains pending; no Slurm jobs submitted.",
+  "completion": false
+}

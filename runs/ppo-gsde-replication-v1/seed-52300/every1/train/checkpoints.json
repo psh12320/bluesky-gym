@@ -1,0 +1,22 @@
+[
+  {
+    "file": "initial-model.zip",
+    "sha256": "91012210c0318c70ddea328773dc72c14cbb873c59e0744f3adcd922753fdbb5",
+    "live_transitions": 0,
+    "counted_transitions": 0,
+    "padded_transitions": 0,
+    "optimizer_steps": 0,
+    "policy_epochs": 0,
+    "rollouts": 0
+  },
+  {
+    "file": "model.zip",
+    "sha256": "878a06427ad4fb00f21bb9fd00c24f79c0dcc23d10a356762bad49d1409c4d20",
+    "live_transitions": 13481,
+    "counted_transitions": 20480,
+    "padded_transitions": 6999,
+    "optimizer_steps": 290,
+    "policy_epochs": 80,
+    "rollouts": 8
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "registered_at_utc": "2026-09-15T23:47:44.978930+00:00",
+  "reason": "Both training processes ended before the requested million-step budget. Evaluate the latest durable checkpoint from each, regardless of its performance.",
+  "checkpoint_selection": "Largest saved live-transition count in each original manifest, selected without inspecting checkpoint performance.",
+  "models": {
+    "native": "native/policy-live-400149.zip",
+    "scaled": "scaled/policy-live-403577.zip"
+  },
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "seed": 20260,
+  "episodes": 20,
+  "interpretation": "Supplemental interrupted-run endpoints. Retain the registered 0/100k/300k points; the million-step point is missing, not replaced or relabelled.",
+  "advancement_screen": "Unchanged from protocol.json; neither these endpoints nor one training seed can establish the final project claim."
+}

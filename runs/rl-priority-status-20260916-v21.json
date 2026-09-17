@@ -1,0 +1,272 @@
+{
+  "recorded_at_utc": "2026-09-16T05:17:45.988575+00:00",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "new_completed_evidence": {
+    "group": "guidance_on_full_filter_on",
+    "training_seeds": [
+      49900,
+      49920,
+      49940
+    ],
+    "learning_changes": {
+      "all_aircraft_clean_completion": {
+        "mean_learning_change": -0.11666666666666665,
+        "learning_change_sample_standard_deviation": 0.057735026918962574,
+        "per_seed_learning_changes": {
+          "49900": -0.15,
+          "49920": -0.15,
+          "49940": -0.05
+        }
+      },
+      "clean_completion": {
+        "mean_learning_change": -0.030000000000000002,
+        "learning_change_sample_standard_deviation": 0.013228756555322952,
+        "per_seed_learning_changes": {
+          "49900": -0.025,
+          "49920": -0.045,
+          "49940": -0.02
+        }
+      },
+      "flight_time": {
+        "mean_learning_change": -14.774999999999997,
+        "learning_change_sample_standard_deviation": 6.141276333141189,
+        "per_seed_learning_changes": {
+          "49900": -21.580000000000005,
+          "49920": -9.644999999999992,
+          "49940": -13.099999999999994
+        }
+      },
+      "intrusion_events": {
+        "mean_learning_change": 0.02,
+        "learning_change_sample_standard_deviation": 0.01,
+        "per_seed_learning_changes": {
+          "49900": 0.01,
+          "49920": 0.03,
+          "49940": 0.02
+        }
+      },
+      "intrusion_time": {
+        "mean_learning_change": 1.1866666666666668,
+        "learning_change_sample_standard_deviation": 0.9921861384505094,
+        "per_seed_learning_changes": {
+          "49900": 0.05999999999999996,
+          "49920": 1.9300000000000002,
+          "49940": 1.57
+        }
+      },
+      "restricted_area_events": {
+        "mean_learning_change": 0.0033333333333333335,
+        "learning_change_sample_standard_deviation": 0.002886751345948129,
+        "per_seed_learning_changes": {
+          "49900": 0.005,
+          "49920": 0.005,
+          "49940": 0.0
+        }
+      },
+      "sector_exit_events": {
+        "mean_learning_change": 0.0,
+        "learning_change_sample_standard_deviation": 0.0,
+        "per_seed_learning_changes": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "time_in_restricted_area": {
+        "mean_learning_change": 0.13999999999999999,
+        "learning_change_sample_standard_deviation": 0.12489995996796796,
+        "per_seed_learning_changes": {
+          "49900": 0.24,
+          "49920": 0.18,
+          "49940": 0.0
+        }
+      },
+      "time_outside_sector": {
+        "mean_learning_change": 0.0,
+        "learning_change_sample_standard_deviation": 0.0,
+        "per_seed_learning_changes": {
+          "49900": 0.0,
+          "49920": 0.0,
+          "49940": 0.0
+        }
+      },
+      "total_reward": {
+        "mean_learning_change": -1.570740506079507,
+        "learning_change_sample_standard_deviation": 1.0560363170449776,
+        "per_seed_learning_changes": {
+          "49900": -0.5565760710067342,
+          "49920": -2.664180615089235,
+          "49940": -1.4914648321425517
+        }
+      },
+      "waypoint_reached": {
+        "mean_learning_change": -0.009999999999999998,
+        "learning_change_sample_standard_deviation": 0.009999999999999998,
+        "per_seed_learning_changes": {
+          "49900": -0.009999999999999998,
+          "49920": -0.019999999999999997,
+          "49940": 0.0
+        }
+      }
+    },
+    "results": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-filter-ablation-v1\\g1-f1\\completed-three-seed-results.json"
+  },
+  "interpretation": "All three supported 100k PPO seeds lose clean completion relative to their own initial policies. Shorter flights do not establish a safety or overall learning advantage.",
+  "optimization_review": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-optimization-review-v1\\review.json",
+  "optimization_decision": {
+    "reviewed_runs": 13,
+    "general_optimizer_early_stop_failure_supported": false,
+    "evidence": "Guidance/support pilots received about 96-100% of possible optimizer updates. The CPA feature arm received 83.8%; its first three rollouts were affected more strongly.",
+    "next_test": "Same-source, same-seed static-supported PPO with std 0.05 versus 0.20, changing exploration only.",
+    "current_cluster_recipe_changed": false,
+    "exploration_causes_poor_performance_established": false,
+    "new_performance_claim": false
+  },
+  "exploration_pilot": {
+    "protocol": {
+      "registered_at_utc": "2026-09-16T05:08:40.671622+00:00",
+      "purpose": "Controlled exploration-scale pilot within fixed static support; test learning, not a claimed optimizer repair.",
+      "seeds": [
+        51200
+      ],
+      "arm_order": {
+        "51200": [
+          "std005",
+          "std020"
+        ]
+      },
+      "config": {
+        "algorithm": "ppo",
+        "workers": 1,
+        "live_steps": 100000,
+        "rollout_steps": 256,
+        "batch_size": 512,
+        "epochs": 10,
+        "device": "cpu",
+        "neutral_action_mean": true,
+        "action_reference": "goal_offset",
+        "guidance": true,
+        "filter": false,
+        "conflict_features": true,
+        "reward_scale": 0.01,
+        "progress_scale": 0.0,
+        "checkpoint_live_steps": 50000,
+        "max_wall_seconds": 3600,
+        "static_filter": true,
+        "mask_conflict_features": false
+      },
+      "arms": {
+        "std005": {
+          "initial_action_std": 0.05
+        },
+        "std020": {
+          "initial_action_std": 0.2
+        }
+      },
+      "training_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-static-source-v1-verify",
+      "evaluation_source": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\onpolicy-static-source-v1-verify",
+      "source_bundle_sha256": "37d3ce7b264dd96ba1c0804224263ee616056ffb609f8a88b5cd3ecbe3525b1a",
+      "evaluation_seed": 20260,
+      "evaluation_worlds": 20,
+      "stages": [
+        "initial",
+        "50k",
+        "final"
+      ],
+      "checkpoint_selection": "First saved checkpoint at/above 50k, within one full 2560-slot rollout; retain exact live counts.",
+      "classical_evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-direct-pilot-v1\\eval-classical-dev20",
+      "capacity_control": "Same 170-dimensional local input, architecture and parameter count. Initial tensors match except log_std; both arms receive real predictive inputs.",
+      "learning_control": "Each run is evaluated against its own saved zero-experience policy; paired initial behavior must be identical.",
+      "primary_contrast": "For every metric: (trained - own initial) with std 0.20 minus (trained - own initial) with std 0.05.",
+      "aggregation": "One exploratory training seed. Report all paired-world effects; do not estimate across-seed variability or select only the better checkpoint.",
+      "advance_screen": {
+        "arrival_at_least": 0.95,
+        "arrival_change_at_least": -0.02,
+        "clean_completion_change_at_least": 0.05,
+        "safety_time_changes_at_most": 0.0,
+        "metrics": [
+          "intrusion_time",
+          "time_in_restricted_area",
+          "time_outside_sector"
+        ]
+      },
+      "resource_policy": "One simulator worker per arm, sequential runs; existing coordinators remain untouched and combined local use stays at most five workers.",
+      "limitations": [
+        "One training seed and twenty reused development worlds; no generalization claim.",
+        "Both heading and speed exploration standard deviations change together.",
+        "The optimizer review found most runs received almost all planned updates; this experiment does not assume KL early stopping caused the general failure.",
+        "Classical results are the preserved fixed Windows benchmark from an earlier evaluator revision; the causal exploration comparison uses one identical frozen source.",
+        "The cluster static-support bundle is unchanged and remains a separate three-seed 1M study.",
+        "Results do not replace the ongoing three-seed predictive-feature or support studies."
+      ],
+      "failure_behavior": "Stop this coordinator on a failed check or incomplete budget, preserve every artifact, and do not restart automatically.",
+      "training_bundle_sha256": "37d3ce7b264dd96ba1c0804224263ee616056ffb609f8a88b5cd3ecbe3525b1a",
+      "initial_control": "All initial tensors must match except log_std. Deterministic initial behavior must match on paired evaluation worlds.",
+      "source_review": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\ppo-optimization-review-v1\\review.json"
+    },
+    "coordinator_session": 92196,
+    "first_arm_latest_learning_row": {
+      "rollout": "23",
+      "live_transitions": "37836",
+      "padded_transitions": "21044",
+      "counted_transitions": "58880",
+      "worlds_completed": "18",
+      "aircraft_completed": "180",
+      "optimizer_steps": "772",
+      "policy_epochs": "218",
+      "wall_seconds": "480.8162368000012",
+      "live_transitions_per_second": "78.69118616253832",
+      "training_return_last100": "-1.0325517757632938",
+      "native_return_last100": "-103.2551775763294",
+      "training_arrival_last100": "1.0",
+      "policy_loss": "-0.012209222395904362",
+      "value_loss": "0.01275585771072656",
+      "approx_kl": "0.020659897476434708",
+      "clip_fraction": "0.24804036542773247",
+      "rollout_live_samples": "737",
+      "rollout_return_variance_live": "0.42142225386213383",
+      "rollout_value_mse_live": "0.018873661109547687",
+      "rollout_value_explained_variance_live": "0.9605296303528748",
+      "rollout_action_box_clip_fraction_live": "0.0"
+    },
+    "first_arm_performance_evaluation_complete": false
+  },
+  "active_coordinators": {
+    "filtered_no_guidance": 33654,
+    "capacity_matched_features": 24621,
+    "exploration_static": 92196
+  },
+  "completed_handles": {
+    "filtered_with_guidance": 28101,
+    "guided_group_analysis": 50265
+  },
+  "feature_seed50500_zeros_training": {
+    "status": "complete",
+    "algorithm": "ppo",
+    "live_transitions": 100405,
+    "padded_transitions": 50635,
+    "counted_transitions": 151040,
+    "optimizer_steps": 2201,
+    "policy_epochs": 570,
+    "rollouts": 59,
+    "worlds_completed": 47,
+    "aircraft_completed": 470,
+    "wall_seconds": 1034.7118519000032,
+    "actor_and_critic_parameters_changed": true,
+    "source_unchanged": true,
+    "model_sha256": "baa23019d5e5e9acc86c5e3788710d65fc3adb6b244eeb28ea0e2292c55b3a44",
+    "training_seed": 50500,
+    "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+  },
+  "cluster_static_bundle": {
+    "sha256": "a0ad40c1e209cc7d33675e20250f02348a3f4d2e90b903ac69f0c1ba77dafb53",
+    "new_job_id_received": false,
+    "ready_for_manual_submission": true
+  },
+  "baseline_raw_archive_received": false,
+  "models_and_existing_runs_preserved": true,
+  "unseen_scenarios_used": false
+}

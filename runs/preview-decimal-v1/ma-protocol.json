@@ -1,0 +1,21 @@
+{
+  "started_at_utc": "2026-09-15T13:02:24.705733+00:00",
+  "env": "ma",
+  "seed": 2026,
+  "episodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "heading_transport": {
+    "revision": 1,
+    "encoding": "plain_decimal"
+  },
+  "model_sha256": "961f525f11bec7a0f417933d209230ca99c5b4b8c00d883233a006b8ee38c4bb",
+  "deployment_manifest_sha256": "44034e213b22719f2d076f53b771f637497affa9f8f8d7f29b4fff35768342e4",
+  "runner_sha256": "8d14c2ca74772a58457a356c9ffbd1fb58fd76b463b1e47edf5904ff6f2a4dca",
+  "reference": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\fast-reference-interval5-v1-ma25k-ma\\validation-20",
+  "purpose": "Corrected deployment preview checked against the original first five development scenarios; not a population or official score"
+}

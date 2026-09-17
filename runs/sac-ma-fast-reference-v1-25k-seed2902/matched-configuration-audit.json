@@ -1,0 +1,30 @@
+{
+  "training_seeds": [
+    2900,
+    2902
+  ],
+  "matched_configuration": {
+    "recipe": "public_route_choice_fast_residual",
+    "steps": 25000,
+    "workers": 1,
+    "guard_static": true,
+    "guard_traffic": true,
+    "actual_net_arch": [
+      64,
+      64
+    ],
+    "actual_learning_rate": 0.0003,
+    "actual_tau": 0.005,
+    "actual_gradient_steps": 4,
+    "actual_batch_size": 256,
+    "actual_buffer_size": 100000,
+    "actual_learning_starts": 5000,
+    "actual_critic_warmup_updates": 0,
+    "route_residual_speed_reference": 1.0,
+    "route_residual_speed_scale": 2.0
+  },
+  "execution_source_files_identical": 70,
+  "initial_hidden_actor_weights_differ": true,
+  "both_initial_mean_policies_exact_zero": true,
+  "independent_initial_model_sha256": "33c12498ffce783ad4230bb81d5587df232b7efb08d7abf590f6e7aa6ad69568"
+}

@@ -1,0 +1,9 @@
+{
+  "all_200_aircraft_records_identical": true,
+  "csv_sha256": "1c49d63dbec9c89d1faf118680f51a5a7bde3380b0ab16631990262e866a727c",
+  "paired_worlds": 20,
+  "initial_arrival": 1.0,
+  "initial_clean_completion": 0.195,
+  "evaluation_source_identical": true,
+  "interpretation": "Initial PPO and MAPPO have identical actor behavior; critic information does not affect deployed actions."
+}

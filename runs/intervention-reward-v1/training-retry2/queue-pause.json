@@ -1,0 +1,15 @@
+{
+  "paused_at_utc": "2026-09-15T17:01:49.2838297Z",
+  "reason": "User reprioritized shared-policy PPO and genuine MAPPO; defer remaining SAC correction-feedback stages.",
+  "coordinator_pid": 18828,
+  "coordinator_stopped": true,
+  "training_child_pid": 1592,
+  "training_child_still_running": true,
+  "queued_stages_deferred": [
+    "evaluate_0",
+    "train_1",
+    "evaluate_1"
+  ],
+  "existing_scoring_evaluations_untouched": true,
+  "original_state_preserved": true
+}

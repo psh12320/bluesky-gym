@@ -1,0 +1,84 @@
+[
+  {
+    "checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train\\policy-live-100699.zip",
+    "optimizer_steps": [
+      1048.0
+    ],
+    "optimizer_epsilon": [
+      1e-05
+    ],
+    "initial_log_standard_deviation": -2.995732273553991,
+    "final_action_standard_deviations": [
+      0.05229582265019417,
+      0.050761234015226364
+    ],
+    "groups": {
+      "actor_hidden": {
+        "parameters": 32640,
+        "median_bias_corrected_gradient_rms": 0.00010781901073642075,
+        "median_epsilon_attenuation_factor": 0.9151239991188049,
+        "fraction_attenuation_below_half": 0.045128677040338516
+      },
+      "actor_head": {
+        "parameters": 258,
+        "median_bias_corrected_gradient_rms": 0.027833834290504456,
+        "median_epsilon_attenuation_factor": 0.9996408224105835,
+        "fraction_attenuation_below_half": 0.0
+      },
+      "log_std": {
+        "parameters": 2,
+        "median_bias_corrected_gradient_rms": 0.0028932231944054365,
+        "median_epsilon_attenuation_factor": 0.996555507183075,
+        "fraction_attenuation_below_half": 0.0
+      },
+      "critic": {
+        "parameters": 98305,
+        "median_bias_corrected_gradient_rms": 2.0371129721752368e-05,
+        "median_epsilon_attenuation_factor": 0.6707399487495422,
+        "fraction_attenuation_below_half": 0.27401453256607056
+      }
+    },
+    "interpretation": "Saved optimizer moments are measured after clipping. Trajectories differ between trained policies; this diagnostic alone is not causal or performance evidence."
+  },
+  {
+    "checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train\\policy-live-100275.zip",
+    "optimizer_steps": [
+      1045.0
+    ],
+    "optimizer_epsilon": [
+      1e-05
+    ],
+    "initial_log_standard_deviation": -2.995732273553991,
+    "final_action_standard_deviations": [
+      0.0519070029258728,
+      0.05052225664258003
+    ],
+    "groups": {
+      "actor_hidden": {
+        "parameters": 32640,
+        "median_bias_corrected_gradient_rms": 0.00010771741654025391,
+        "median_epsilon_attenuation_factor": 0.9150508046150208,
+        "fraction_attenuation_below_half": 0.045649509876966476
+      },
+      "actor_head": {
+        "parameters": 258,
+        "median_bias_corrected_gradient_rms": 0.027925580739974976,
+        "median_epsilon_attenuation_factor": 0.999642014503479,
+        "fraction_attenuation_below_half": 0.0
+      },
+      "log_std": {
+        "parameters": 2,
+        "median_bias_corrected_gradient_rms": 0.003173684235662222,
+        "median_epsilon_attenuation_factor": 0.9968589544296265,
+        "fraction_attenuation_below_half": 0.0
+      },
+      "critic": {
+        "parameters": 423425,
+        "median_bias_corrected_gradient_rms": 1.951671947608702e-05,
+        "median_epsilon_attenuation_factor": 0.661208987236023,
+        "fraction_attenuation_below_half": 0.284201443195343
+      }
+    },
+    "interpretation": "Saved optimizer moments are measured after clipping. Trajectories differ between trained policies; this diagnostic alone is not causal or performance evidence."
+  }
+]

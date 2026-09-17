@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-09-15T15:05:51.265206+00:00",
+  "source_sha256": "bdbbb4b4519a9808f5545cd816f77348afa9ad332bec83d15e760c13e44f1765",
+  "synthetic_rng_seed": 8032,
+  "fleet_sizes": [
+    1,
+    2,
+    3,
+    5,
+    9,
+    10,
+    11
+  ],
+  "batches_per_size": 150,
+  "test_scope": "Pure deterministic forecast kernel with zero commanded turns and unchanged target speeds; no simulator scenarios, training or policy selection",
+  "requirement": "Exact coordinates and byte equality to independent scalar calls before any controller integration",
+  "timing_scope": "Interleaved local kernel timings under concurrent work; no end-to-end or GPU speedup claim"
+}

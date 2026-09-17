@@ -1,0 +1,30 @@
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\scenario"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\plugins"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\output"
+Creating directory "C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\cache"
+Copying default configfile to C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\settings.cfg
+Reading config from C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\settings.cfg
+Using compiled geo functions
+Reading magnetic variation data
+Warning: RTree could not be loaded. areafilter get_intersecting and get_knearest won't work
+Loading global navigation database...
+Cachefile not found: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\cache\navdata.p
+Reading nav.dat
+Reading fix.dat
+Reading awy.dat
+Reading apt.dat from apt.zip
+Writing cache: C:\Users\Shricharan\VSCodeProjects\airtrafficcontrol\bluesky-gym\runs\imitation-data-v1\validation\simulator\cache\navdata.p
+Successfully loaded OpenAP performance model
+Failed to load BADA performance model
+Successfully loaded legacy performance model
+Successfully loaded plugin AREA
+Successfully loaded plugin DATAFEED
+{"world": 0, "live_transitions": 1967, "interventions": 196, "total_live_transitions": 1967}
+{"world": 1, "live_transitions": 1751, "interventions": 384, "total_live_transitions": 3718}
+{"world": 2, "live_transitions": 2611, "interventions": 557, "total_live_transitions": 6329}
+{"world": 3, "live_transitions": 1643, "interventions": 67, "total_live_transitions": 7972}
+{"world": 4, "live_transitions": 1897, "interventions": 215, "total_live_transitions": 9869}
+{"world": 5, "live_transitions": 2162, "interventions": 193, "total_live_transitions": 12031}
+{"world": 6, "live_transitions": 2110, "interventions": 290, "total_live_transitions": 14141}
+{"world": 7, "live_transitions": 1967, "interventions": 600, "total_live_transitions": 16108}
+{"status": "complete", "worlds": 8, "live_transitions": 16108, "intervened_transitions": 2502, "actor_dim": 170, "eligible_for_learning": true, "reinforcement_learning_updates": 0, "teacher_source_unchanged": true, "exact_reference_metric_matches": 0, "protocol_sha256": "8d35a6494c4a2a6391021bf81106afe17634ee8ef822527712a3f9d793ccf878", "world_manifest_sha256": "5204b0e1479ceef96b2cdbc06a5c4e09662aaf9cfd8ae42f95163e3029463922", "space_sha256": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481", "wall_seconds": 741.0310000000027}

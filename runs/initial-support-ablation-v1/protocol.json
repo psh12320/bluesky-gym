@@ -1,0 +1,59 @@
+{
+  "registered_at_utc": "2026-09-16T01:13:16.969031+00:00",
+  "purpose": "Separate route-guidance and conflict-filter contributions before learning.",
+  "controls": [
+    {
+      "name": "g0-f0",
+      "guidance": false,
+      "filter": false,
+      "checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\g0-f0\\initial-model.zip",
+      "evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-v1\\eval-initial-dev20",
+      "reused_evaluation": true
+    },
+    {
+      "name": "g1-f0",
+      "guidance": true,
+      "filter": false,
+      "checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\g1-f0\\initial-model.zip",
+      "evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\eval-g1-f0-dev20",
+      "reused_evaluation": false
+    },
+    {
+      "name": "g0-f1",
+      "guidance": false,
+      "filter": true,
+      "checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\g0-f1\\initial-model.zip",
+      "evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\eval-g0-f1-dev20",
+      "reused_evaluation": false
+    },
+    {
+      "name": "g1-f1",
+      "guidance": true,
+      "filter": true,
+      "checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\g1-f1\\initial-model.zip",
+      "evaluation": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\initial-support-ablation-v1\\eval-g1-f1-dev20",
+      "reused_evaluation": false
+    }
+  ],
+  "source_initial_model_sha256": "f9c6e64ed1b8c3ed59d1fcf7f15b69ad4d44935e40abae082079d1a8f1af8870",
+  "full_policy_fingerprint": "3817e1a9ed5b41fbe00da564e86543a3edb85bb6daf74298d19ef73951d8b310",
+  "source_serialized_training_counters": {
+    "num_timesteps": 0,
+    "optimizer_updates": 0
+  },
+  "evaluation_seed": 20260,
+  "evaluation_worlds": 20,
+  "evaluation_source": "runs/onpolicy-goal-offset-source-v1-verify",
+  "inference": "deterministic per aircraft; identical actor/critic tensors in all cells",
+  "reuse_note": "The g0-f0 reference has exact full initial-policy identity; unused learning reward scale does not affect its native-scoring evaluation.",
+  "physical_metrics": "All nine native metrics plus aircraft and whole-world clean completion",
+  "analysis": "Paired-world guidance effects at each filter setting, filter effects at each guidance setting, and their interaction.",
+  "scheduling": "Run one evaluation simulator at a time. Final evaluations of the existing million-step learners take priority.",
+  "limitations": [
+    "These are zero-experience support effects, not learned improvements.",
+    "They do not replace training with each support combination, three training seeds, or unseen scenarios.",
+    "The fixed classical benchmark remains separate; its speed reference is +1 whereas this initial neural actor outputs zero speed adjustment."
+  ],
+  "trained_runs_created": 0,
+  "unseen_scenarios_used": false
+}

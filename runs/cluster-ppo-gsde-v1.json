@@ -1,0 +1,18 @@
+{
+  "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\cluster-ppo-gsde-v1.zip",
+  "sha256": "8a9a4496f94323cf896ca0b51c6d27fd1cb4a738b4ed484005ac2f20121818bd",
+  "bytes": 283456,
+  "source_files": 143,
+  "all_base_files_identical": 135,
+  "added_files": [
+    "jobs/analyze_ppo_gsde_v1.py",
+    "jobs/analyze_ppo_gsde_v1.slurm",
+    "jobs/evaluate_ppo_gsde_v1.slurm",
+    "jobs/ppo_gsde_v1.json",
+    "jobs/ppo_gsde_v1.py",
+    "jobs/submit_ppo_gsde_v1.sh",
+    "jobs/train_ppo_gsde_v1.slurm",
+    "scripts/analyze_rl_cohort.py"
+  ],
+  "submitted": false
+}

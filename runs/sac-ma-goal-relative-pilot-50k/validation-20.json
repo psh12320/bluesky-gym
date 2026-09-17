@@ -1,0 +1,52 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.975,
+      "std": 0.15612494995995996
+    },
+    "flight_time": {
+      "mean": 1728.755,
+      "std": 514.3841900515606
+    },
+    "intrusion_events": {
+      "mean": 0.71,
+      "std": 0.9197282207261013
+    },
+    "intrusion_time": {
+      "mean": 79.8,
+      "std": 173.35036775271058
+    },
+    "restricted_area_events": {
+      "mean": 1.035,
+      "std": 1.2424874244836444
+    },
+    "time_in_restricted_area": {
+      "mean": 173.345,
+      "std": 250.01707136713685
+    },
+    "sector_exit_events": {
+      "mean": 0.41,
+      "std": 0.5761076288333631
+    },
+    "time_outside_sector": {
+      "mean": 257.87,
+      "std": 436.1435349744394
+    },
+    "total_reward": {
+      "mean": -488.4157093625617,
+      "std": 468.0505757191295
+    }
+  },
+  "clean_completion_rate": 0.11,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "wall_seconds": 321.4689234000398,
+  "world_decisions": 5050,
+  "seed": 2026,
+  "env": "ma",
+  "policy": "runs\\sac-ma-goal-relative-pilot-50k\\model.zip",
+  "recipe": "goal_relative",
+  "official_protocol": false,
+  "model_sha256": "b06bfc58c5ac22b91c6e8293750ef9ad322bcd1f1897d7ce13d0d4b58e2d68c8"
+}

@@ -1,0 +1,76 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.97,
+      "std": 0.1705872210923198
+    },
+    "flight_time": {
+      "mean": 1181.63,
+      "std": 548.7458000750438
+    },
+    "intrusion_events": {
+      "mean": 1.52,
+      "std": 1.2959938271457931
+    },
+    "intrusion_time": {
+      "mean": 124.1,
+      "std": 152.02184053615454
+    },
+    "restricted_area_events": {
+      "mean": 0.02,
+      "std": 0.17204650534085253
+    },
+    "time_in_restricted_area": {
+      "mean": 0.585,
+      "std": 5.459191789999687
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -81.46627827249701,
+      "std": 145.31993296147087
+    }
+  },
+  "clean_completion_rate": 0.245,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "goal_offset",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 47337,
+  "padded_transitions": 28723,
+  "world_decisions": 7606,
+  "aircraft_terminated": 194,
+  "aircraft_truncated": 6,
+  "wall_seconds": 8303.354098300013,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "goal_offset",
+    "conflict_features": true,
+    "mask_conflict_features": false
+  },
+  "csv_sha256": "0b779f5812b98ab9bda968798434b577368a40edbd57653be8df56cd1bb4f8f1"
+}

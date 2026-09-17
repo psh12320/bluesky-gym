@@ -1,0 +1,11 @@
+{
+  "actor_tensors_identical": true,
+  "actor_tensor_count": 7,
+  "actor_parameter_count": 32900,
+  "ppo_critic_parameter_count": 98305,
+  "mappo_critic_parameter_count": 423425,
+  "mappo_initial_checkpoint_sha256": "76d0b074236fb7e87751de2eab796a19bcca2f6a8be8e8806633e7fd918a639a",
+  "critic_information": "PPO local observation; MAPPO joint observations, activity and target identity.",
+  "critic_parameters_copied_from_ppo": false,
+  "not_a_capacity_matched_comparison": true
+}

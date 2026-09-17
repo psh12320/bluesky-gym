@@ -1,0 +1,271 @@
+{
+  "recorded_at_utc": "2026-09-16T11:59:58.041372+00:00",
+  "previous_status": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\rl-priority-status-20260916-v38.json",
+  "previous_goal_turn_classification": "progress",
+  "this_goal_turn_classification": "progress",
+  "full_goal_complete": false,
+  "competitive_learned_performance_demonstrated": false,
+  "cluster_sac_check": {
+    "job": 852491,
+    "status": "application checks complete per user transcript",
+    "live_transitions": 21493,
+    "gradient_rounds": 2576,
+    "matched_native_vector_values": 180,
+    "cuda_reload": "passed on H200 NVL",
+    "raw_archive_downloaded": false,
+    "repeat_needed": false
+  },
+  "implementation_validation": {
+    "bc_handoff_fix": "runs/pretrained-space-fix-v1/validation.json",
+    "bc_handoff_suite_passed": 237,
+    "native_action_conversion_fix": "runs/native-action-precision-v1/validation.json",
+    "latest_rl_suite_passed": 250,
+    "latest_source_bundle_sha256": "3e960b076fdd5449578e3bdeeb7fe4e1c9078e3d7b40ad578b428b9daa253d19",
+    "original_dtype_failure_retained": "runs/imitation-ppo-pilot-v1/technical/train/failure.json",
+    "original_precision_mismatch_retained": "runs/native-action-precision-v1/original-mismatch.json",
+    "precision_change": "Native RL actions converted to float32 before projection, matching WorldPool.",
+    "strict_metric_equality_retained": true,
+    "learning_rate_validation": "runs/ppo-learning-rate-development-v1/validation.json"
+  },
+  "behavior_cloning": {
+    "training_worlds": 32,
+    "validation_worlds": 8,
+    "demonstration_transitions": 62744,
+    "validation_transitions": 16108,
+    "epochs": 40,
+    "supervised_optimizer_steps": 2480,
+    "supervised_examples_seen": 2509760,
+    "rl_updates": 0,
+    "model_sha256": "a4ecb4852cd967b16c765af3f4da770de5b4024859c891c834d98edb209a912b",
+    "parent_reused_unchanged": true,
+    "closed_loop_performance_not_established": true,
+    "validation_mse_initial": 0.5171535862003136,
+    "validation_mse_final": 0.03046279247519368,
+    "heading_mae_increased": true,
+    "imitation_error_is_not_flight_performance": true
+  },
+  "imitation_ppo_pipeline": {
+    "session": 60532,
+    "confirmed_live": true,
+    "protocol": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-recovery-v2\\protocol.json",
+    "protocol_sha256": "28c14001a32333b0142c1b2da23e02c7a4db87184329b23b382815a8ce6675ff",
+    "short_training_complete": true,
+    "technical_live_transitions": 1808,
+    "technical_optimizer_steps": 2,
+    "technical_checkpoint_reused": true,
+    "technical_parity_complete_at_snapshot": true,
+    "full_100k_pilot_started_at_snapshot": true,
+    "failure_history": [
+      "Original handoff stopped at zero live transitions because of Box dtype mismatch.",
+      "First recovery completed 1808 technical live transitions, then strict parity caught ten reward differences below 5e-9; all 160 physical metric values matched."
+    ],
+    "learning_reference": "Unchanged behavior-cloned parent; supervised experience is separate from PPO updates.",
+    "latest_confirmed_stage": "ppo/train.log",
+    "native_vector_metric_matches": 180,
+    "technical_integration_report": "runs/native-action-precision-v1/integration-validation.json"
+  },
+  "support_factorial": {
+    "session": 99673,
+    "exit_code": 0,
+    "all_twelve_complete": true,
+    "existing_nine_unchanged": true,
+    "review": "runs/ppo-support-factorial-v1/review.json",
+    "plot": "runs/ppo-support-factorial-v1/learning-contribution.png",
+    "clean_completion_learning": {
+      "g0-f0": {
+        "checks": {
+          "arrival_at_least_95_percent": true,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": true,
+          "time_in_restricted_area_not_increased": true,
+          "time_outside_sector_not_increased": true
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": -0.8333333333333337,
+        "across_seed_sample_sd_percentage_points": 0.7637626158259733
+      },
+      "g1-f0": {
+        "checks": {
+          "arrival_at_least_95_percent": true,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": false,
+          "time_in_restricted_area_not_increased": false,
+          "time_outside_sector_not_increased": false
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": -1.6666666666666663,
+        "across_seed_sample_sd_percentage_points": 0.763762615825973
+      },
+      "g0-f1": {
+        "checks": {
+          "arrival_at_least_95_percent": false,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": false,
+          "time_in_restricted_area_not_increased": false,
+          "time_outside_sector_not_increased": true
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": 1.1666666666666663,
+        "across_seed_sample_sd_percentage_points": 1.6072751268321595
+      },
+      "g1-f1": {
+        "checks": {
+          "arrival_at_least_95_percent": true,
+          "arrival_decline_at_most_2_percentage_points": true,
+          "clean_completion_gain_at_least_5_percentage_points": false,
+          "intrusion_time_not_increased": false,
+          "time_in_restricted_area_not_increased": false,
+          "time_outside_sector_not_increased": true
+        },
+        "passes_all": false,
+        "clean_completion_change_percentage_points": -3.0000000000000004,
+        "across_seed_sample_sd_percentage_points": 1.3228756555322951
+      }
+    },
+    "any_group_passes_screen": false,
+    "three_training_seeds": true,
+    "reused_development_worlds": 20,
+    "unseen_scenarios_used": false
+  },
+  "gsde_recovery": {
+    "session": 73914,
+    "confirmed_live": true,
+    "protocol": "runs/ppo-gsde-recovery-v1/protocol.json",
+    "reused_completed_seed": 52200,
+    "new_seed_arms": 4,
+    "seeds": [
+      52300,
+      52400
+    ],
+    "max_wall_seconds": 14400,
+    "old_incomplete_attempt_preserved": true,
+    "three_seed_results_complete": false,
+    "completed_training_arm": {
+      "seed": 52300,
+      "arm": "every1",
+      "summary": {
+        "status": "complete",
+        "algorithm": "ppo",
+        "live_transitions": 101267,
+        "padded_transitions": 42093,
+        "counted_transitions": 143360,
+        "optimizer_steps": 2165,
+        "policy_epochs": 552,
+        "rollouts": 56,
+        "worlds_completed": 50,
+        "aircraft_completed": 501,
+        "wall_seconds": 2077.0305858000065,
+        "actor_and_critic_parameters_changed": true,
+        "source_unchanged": true,
+        "model_sha256": "f58e043d2369859b313285697af7210b02a5672bbda882d1c96af35698138019",
+        "training_seed": 52300,
+        "performance_evaluation": "Not performed by this training command; use separate fixed-scenario evaluations."
+      }
+    }
+  },
+  "cluster_gsde_submission_observed": false,
+  "cluster_next_commands": "docs/competition/GSDE_CLUSTER.md",
+  "preservation": {
+    "fixed_source_files_checked": 65,
+    "fixed_files_changed": [],
+    "imitation_original_artifacts_checked": 57,
+    "original_bc_model_unchanged": true,
+    "completed_and_running_evaluation_sources_unchanged": true,
+    "source_snapshots_verified": {
+      "pretrained-ppo-source-v3-verify": 150,
+      "ppo-learning-rate-source-v1-verify": 152
+    }
+  },
+  "next_actions": [
+    "Allow both registered imitation-initialized PPO rate arms to finish training and initial/50k/final evaluations; do not select based on partial diagnostics.",
+    "Run the paired analyzer only after both complete; report all metrics, own-initial gains, rate contrast, optimizer counts and classical comparison.",
+    "Require fresh training seeds and unseen scenarios before any promotion; small-KL diagnostics alone are not flight-performance evidence.",
+    "Complete the gSDE recovery and review the full six-arm comparison including the original partial attempt.",
+    "Use the prepared university-cluster PPO study once the user uploads/submits it; no new cluster submission was observed this turn."
+  ],
+  "progress_this_turn": [
+    "Identified large policy shifts and one-update stopping in the first seven imitation-initialized PPO rollouts.",
+    "Added a constant learning-rate option with serialized optimizer/schedule validation; existing 3e-4 default unchanged.",
+    "All 250 RL tests passed, including learning-rate reload, invalid-input and curve-mixing checks.",
+    "Registered and launched a 3e-5 PPO arm with the same learned parent, training seed, live budget and frozen evaluator.",
+    "Verified identical complete initial policy tensors and identical first-rollout returns/accounting.",
+    "Observed 50 optimizer updates over ten epochs at the smaller rate versus one update in the original first rollout.",
+    "Prepared the paired analysis and validated it rejects changed settings, invalid world arrays and incomplete results."
+  ],
+  "learning_rate_pilot": {
+    "session": 2387,
+    "confirmed_live": true,
+    "protocol": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-ppo-lr-pilot-v1\\protocol.json",
+    "protocol_sha256": "873b2693c09a2fd832547d83e4259207b66f4216bac20e07080f845b00c50c26",
+    "default_rate": 0.0003,
+    "smaller_rate": 3e-05,
+    "seed": 61420,
+    "live_budget_per_arm": 100000,
+    "shared_initial_weights_verified": true,
+    "new_supervised_updates": 0,
+    "shared_demonstration_transitions": 62744,
+    "shared_supervised_steps": 2480,
+    "paired_analysis": "runs/imitation-ppo-lr-pilot-v1/analyze.py",
+    "analysis_validation": {
+      "initial_real_models_checked": true,
+      "controlled_configuration_passed": true,
+      "known_constant_effect_checked": true,
+      "invalid_inputs_rejected": 8,
+      "incomplete_analysis_rejected": true,
+      "source_sha256": "dafff32bfbbb064dd4f509e42bc33e08ef3c50daaec3a204535ffbc61eb04dc7"
+    },
+    "first_rollout_diagnostic": "runs/imitation-ppo-lr-pilot-v1/first-rollout-diagnostic.json",
+    "competitive_performance_evidence": false,
+    "default_latest_training_row": {
+      "rollout": "46",
+      "live_transitions": "62814",
+      "padded_transitions": "54946",
+      "counted_transitions": "117760",
+      "worlds_completed": "26",
+      "aircraft_completed": "267",
+      "optimizer_steps": "165",
+      "policy_epochs": "98",
+      "wall_seconds": "1211.8749968999982",
+      "live_transitions_per_second": "51.8320785235107",
+      "training_return_last100": "-0.4280782624739543",
+      "native_return_last100": "-42.80782624739543",
+      "training_arrival_last100": "0.98",
+      "policy_loss": "0.0037217464164963792",
+      "value_loss": "0.868364508662905",
+      "approx_kl": "0.0552302822470665",
+      "clip_fraction": "0.2274573436672134",
+      "rollout_live_samples": "821",
+      "rollout_return_variance_live": "0.5632184884388843",
+      "rollout_value_mse_live": "2.3801683589393314",
+      "rollout_value_explained_variance_live": "0.5044749404344466",
+      "rollout_action_box_clip_fraction_live": "0.058465286236297195"
+    },
+    "smaller_latest_training_row": {
+      "rollout": "13",
+      "live_transitions": "22993",
+      "padded_transitions": "10287",
+      "counted_transitions": "33280",
+      "worlds_completed": "11",
+      "aircraft_completed": "110",
+      "optimizer_steps": "540",
+      "policy_epochs": "130",
+      "wall_seconds": "909.4018461000014",
+      "live_transitions_per_second": "25.28365221448165",
+      "training_return_last100": "-0.7074361509796013",
+      "native_return_last100": "-70.74361509796013",
+      "training_arrival_last100": "1.0",
+      "policy_loss": "-0.014193435793276876",
+      "value_loss": "0.02996132862754166",
+      "approx_kl": "0.00976188201457262",
+      "clip_fraction": "0.09240385553566739",
+      "rollout_live_samples": "1775",
+      "rollout_return_variance_live": "0.21475553327315403",
+      "rollout_value_mse_live": "0.04847900558075928",
+      "rollout_value_explained_variance_live": "0.7936274065568284",
+      "rollout_action_box_clip_fraction_live": "0.4495774647887324"
+    }
+  }
+}

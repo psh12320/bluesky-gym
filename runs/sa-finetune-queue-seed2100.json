@@ -1,0 +1,16 @@
+{
+  "status_at_recording": "queued",
+  "wait_for_pid": 30588,
+  "wait_for_run": "runs/sac-ma-cpa-600k-seed1400",
+  "source_model": "runs/public-sa-transfer-391k/model.zip",
+  "source_model_sha256": "b4c7a671dbd0fae8146522fa8278f19f4119c859caf2e1b07fe0bb56eae45093",
+  "run_dir": "runs/sac-sa-transfer-finetune-seed2100",
+  "workers": 2,
+  "seed": 2100,
+  "requested_new_transitions": 300000,
+  "max_learning_wall_seconds": 3600,
+  "fresh_replay": true,
+  "warmup_transitions": 10000,
+  "gradient_steps": 2,
+  "note": "A queued plan is not a completed experiment. Inspect the destination config and training_summary for actual execution."
+}

@@ -1,0 +1,63 @@
+{
+  "recorded_at_utc": "2026-09-16T10:50:51.285575+00:00",
+  "all_rl_tests_passed": 227,
+  "test_report": "runs/pretraining-development-v1/tests.xml",
+  "new_tests_passed": 26,
+  "synthetic_cli_and_handoff_test_passed": true,
+  "checks": [
+    "Exact supervised policy tensors transferred into PPO",
+    "Fresh PPO optimizer and counters",
+    "Python, NumPy and Torch random states preserved through parent load",
+    "Archived parent history validated and tampering rejected",
+    "Only actor mean fitted during behavior cloning",
+    "Local-only actor inference and device-explicit serialization",
+    "Complete train/validation worlds required; reserved and parity worlds rejected"
+  ],
+  "teacher_replay": {
+    "status": "complete",
+    "worlds": 2,
+    "live_transitions": 3506,
+    "intervened_transitions": 630,
+    "actor_dim": 170,
+    "eligible_for_learning": false,
+    "reinforcement_learning_updates": 0,
+    "teacher_source_unchanged": true,
+    "exact_reference_metric_matches": 180,
+    "protocol_sha256": "00f25bdd72bbe2df63723cbf5af293d48b55eaf656e8391d22f533766f235f0f",
+    "world_manifest_sha256": "b3d9656eb142c65b3287775439f356fafcb87a6e2d5836377d562c9c9120c37c",
+    "space_sha256": "e345dd8899797c3c610c6d698a646b35ebd7c0c3dbb665f7c708899a2cf5b481",
+    "wall_seconds": 52.9690000000046
+  },
+  "collector_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\demonstration-source-v1.zip",
+    "sha256": "d74dfd5f3bc2cb807399ba6b57db7131d28f4dbe0cb41ad2496f2ea5c9d32901",
+    "bytes": 297140,
+    "source_files": 147,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "imitation_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\imitation-source-v1.zip",
+    "sha256": "0d95c53b023a9b6ad30338c59b5370e6c7b683fd6efc2ad97e73ab53115bcc3b",
+    "bytes": 304514,
+    "source_files": 149,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "pretrained_ppo_bundle": {
+    "bundle": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\pretrained-ppo-source-v1.zip",
+    "sha256": "2c946ef77e00580f05578a11d53add541359926000fca350b2da6c6427c8fb8a",
+    "bytes": 307721,
+    "source_files": 150,
+    "upstream_commit": "00930013219af4c17e509c3efc84a8becd0f3546"
+  },
+  "fixed_controller_and_environment_files_unchanged": 65,
+  "simulator_ppo_after_bc_integration_complete": false,
+  "new_rl_performance_claim": false,
+  "research_inspiration": {
+    "source": "https://arxiv.org/abs/1709.10087",
+    "relationship": "Demonstration-assisted RL motivation; this implementation uses behavior cloning followed by plain PPO, not the paper's demonstration-augmented natural-policy-gradient objective."
+  },
+  "first_test_attempt": {
+    "report": "runs/demonstration-development-v1/tests.xml",
+    "result": "12 passed and 8 fixture setup errors because the temporary parent directory did not exist; preserved and corrected before source packaging."
+  }
+}

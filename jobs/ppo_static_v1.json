@@ -1,0 +1,125 @@
+{
+  "registered_at_utc": "2026-09-16T04:55:01.222777+00:00",
+  "experiment": "cluster-ppo-static-v1",
+  "purpose": "Measure learned traffic avoidance with fixed static-area support, and test closest-approach inputs against equal-capacity zero channels.",
+  "seeds": [
+    50800,
+    50900,
+    51000
+  ],
+  "config": {
+    "algorithm": "ppo",
+    "workers": 8,
+    "live_steps": 1000000,
+    "rollout_steps": 256,
+    "batch_size": 1024,
+    "epochs": 10,
+    "device": "cuda",
+    "checkpoint_live_steps": 100000,
+    "max_wall_seconds": 9900,
+    "initial_action_std": 0.05,
+    "neutral_action_mean": true,
+    "action_reference": "goal_offset",
+    "guidance": true,
+    "filter": false,
+    "progress_scale": 0.0,
+    "reward_scale": 0.01,
+    "static_filter": true,
+    "conflict_features": true
+  },
+  "evaluation": {
+    "seed": 20260,
+    "worlds": 20,
+    "stages": [
+      "initial",
+      "100k",
+      "300k",
+      "final"
+    ],
+    "checkpoint_selection": "First saved checkpoint at/above each threshold, within one rollout.",
+    "reward_scale": 1.0,
+    "progress_scale": 0.0,
+    "classical": "Fixed controller with both filters, rerun per row; never tuned."
+  },
+  "advance_screen": {
+    "arrival_at_least": 0.95,
+    "arrival_change_at_least": -0.02,
+    "clean_completion_change_at_least": 0.05,
+    "safety_time_changes_at_most": 0.0,
+    "metrics": [
+      "intrusion_time",
+      "time_in_restricted_area",
+      "time_outside_sector"
+    ]
+  },
+  "resources": {
+    "training": {
+      "partition": "gpu",
+      "gpu_request": "h200-141:1",
+      "cpus": 16,
+      "memory_gb": 64,
+      "hours": 3
+    },
+    "evaluation": {
+      "partition": "normal",
+      "cpus": 2,
+      "memory_gb": 8,
+      "hours": 3
+    }
+  },
+  "source_base_sha256": "37d3ce7b264dd96ba1c0804224263ee616056ffb609f8a88b5cd3ecbe3525b1a",
+  "bootstrap_job": 851402,
+  "interpretation": [
+    "StaticActionProjection and route guidance are unchanged classical support.",
+    "Aircraft-to-aircraft traffic filtering is OFF; the learned policy must contribute traffic avoidance.",
+    "Each trained policy is compared to its own zero-experience initial checkpoint with identical support.",
+    "For each seed the two arms must have identical full initial weights, architecture, environment and training recipe except the 45-channel input mask.",
+    "Neither this study nor earlier source/worker/seed configurations alone isolates the effect of adding static filtering. A matched static-off run would be required for that causal claim.",
+    "The paired feature-minus-zero change in learning tests predictive input information at fixed network capacity.",
+    "All native safety metrics and fixed classical comparisons are retained; clean completion is a development metric, not an official scalar score.",
+    "Development stream 20260 has been reused. Reserved streams 20301 and 20302 remain unused until selecting a candidate.",
+    "Three training seeds and twenty worlds are a screening experiment, not final competitive evidence."
+  ],
+  "remaining_experiments": [
+    "Separate trained guidance/filter ablations",
+    "Matched centralized-critic MAPPO if justified",
+    "Preserved SAC comparison",
+    "Unseen streams 20301 and 20302 after candidate selection"
+  ],
+  "scheduling": "First training row gates the other five on technical completion, not performance; one GPU training task at a time. CPU evaluation has its own allocation. All six rows must be reported.",
+  "failure_behavior": "Stop on failed checks or incomplete training. Never overwrite existing output.",
+  "arms": {
+    "features": {
+      "mask_conflict_features": false
+    },
+    "zeros": {
+      "mask_conflict_features": true
+    }
+  },
+  "rows": [
+    {
+      "seed": 50800,
+      "arm": "features"
+    },
+    {
+      "seed": 50800,
+      "arm": "zeros"
+    },
+    {
+      "seed": 50900,
+      "arm": "zeros"
+    },
+    {
+      "seed": 50900,
+      "arm": "features"
+    },
+    {
+      "seed": 51000,
+      "arm": "features"
+    },
+    {
+      "seed": 51000,
+      "arm": "zeros"
+    }
+  ]
+}

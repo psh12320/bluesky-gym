@@ -1,0 +1,20 @@
+{
+  "reference_checkpoint": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\position-scale-development-v1\\ppo\\train\\initial-model.zip",
+  "reference_sha256": "ff143bc998e7badcf435913de833e46f12a14b5389800f833de1dc576a2043ca",
+  "reference_live_transitions": 0,
+  "actor_parameters_identical": true,
+  "critic_parameters_unchanged": true,
+  "actor_parameter_names": [
+    "action_net.bias",
+    "action_net.weight",
+    "log_std",
+    "mlp_extractor.policy_net.0.bias",
+    "mlp_extractor.policy_net.0.weight",
+    "mlp_extractor.policy_net.2.bias",
+    "mlp_extractor.policy_net.2.weight"
+  ],
+  "actor_parameter_count": 38660,
+  "critic_parameter_count": 550145,
+  "learner_rng": "Reconstructed through seeded local-critic PPO loading before the first rollout.",
+  "simulation_rng": "Original per-world seeds retained; no simulator steps executed by this helper."
+}

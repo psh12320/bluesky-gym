@@ -1,0 +1,12 @@
+{
+  "model_sha256": "d10742e80bd1e320dbb203ad684c4f13e08a1d794b3e3830b32ee9e0d182fd00",
+  "timesteps": 32123,
+  "optimizer_updates": 31122,
+  "actual_training": {
+    "timesteps": 32123,
+    "new_timesteps": 32123,
+    "wall_seconds": 3607.1770758000202
+  },
+  "requested_timesteps": 40000,
+  "stopped_at_wall_limit": true
+}

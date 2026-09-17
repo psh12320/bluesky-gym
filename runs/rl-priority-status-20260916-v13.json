@@ -1,0 +1,83 @@
+{
+  "time_utc": "2026-09-16T00:54:33.104661+00:00",
+  "goal_turn_classification": "progress",
+  "running_training": [
+    {
+      "algorithm": "ppo",
+      "session": 83552,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\goal-offset-scaled-million-retry-v1\\train",
+      "latest_learning_row": {
+        "rollout": "156",
+        "live_transitions": "639443",
+        "padded_transitions": "159277",
+        "counted_transitions": "798720",
+        "worlds_completed": "371",
+        "aircraft_completed": "3710",
+        "optimizer_steps": "6798",
+        "policy_epochs": "1529",
+        "wall_seconds": "3492.903236099999",
+        "live_transitions_per_second": "183.06919968214467",
+        "training_return_last100": "-0.8562287769449081",
+        "native_return_last100": "-85.62287769449081",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.013648235541768371",
+        "value_loss": "0.02673323401249945",
+        "approx_kl": "0.014676994644105434",
+        "clip_fraction": "0.15302956346422433"
+      }
+    },
+    {
+      "algorithm": "mappo",
+      "session": 33044,
+      "run": "C:\\Users\\Shricharan\\VSCodeProjects\\airtrafficcontrol\\bluesky-gym\\runs\\mappo-goal-scaled-million-v1\\train",
+      "latest_learning_row": {
+        "rollout": "108",
+        "live_transitions": "435803",
+        "padded_transitions": "117157",
+        "counted_transitions": "552960",
+        "worlds_completed": "250",
+        "aircraft_completed": "2503",
+        "optimizer_steps": "4709",
+        "policy_epochs": "1057",
+        "wall_seconds": "2856.488389100001",
+        "live_transitions_per_second": "152.5659973493921",
+        "training_return_last100": "-1.0849327325264084",
+        "native_return_last100": "-108.4932732526408",
+        "training_arrival_last100": "1.0",
+        "policy_loss": "-0.011575153218582273",
+        "value_loss": "0.016867389250546694",
+        "approx_kl": "0.011625560000538826",
+        "clip_fraction": "0.15146525368094443"
+      }
+    }
+  ],
+  "completed_mappo_checkpoint": 303095,
+  "completed_evaluation": "runs/mappo-goal-scaled-million-v1/eval-300k-dev20",
+  "validated_result": "runs/mappo-goal-scaled-million-v1/validated-300k-results.json",
+  "comparison": "runs/mappo-goal-scaled-million-v1/ppo-mappo-300k-dev20.json",
+  "learning_curve": "runs/mappo-goal-scaled-million-v1/curve-through-300k-dev20",
+  "mappo_300k_screen_passed": false,
+  "added_evaluator": "atc_rl/legacy_reference.py",
+  "sac_reference": {
+    "session": 5393,
+    "runner": "runs/sac-reference-dev20-v1/run.py",
+    "stage": "eval-dev20",
+    "output": "runs/sac-reference-dev20-v1/eval-dev20",
+    "zero_reference_parity": "Passed: twenty aircraft, all physical metrics exact, maximum reward difference 1.35e-9.",
+    "original_harness_parity": "Passed: twenty aircraft, all nine metrics exactly reproduced.",
+    "source_files_common_with_ppo_identical": 64,
+    "candidate_manifest_files_verified": 145,
+    "saved_counted_transitions": 25000,
+    "saved_optimizer_updates": 7996,
+    "additional_training_transitions": 0
+  },
+  "next_actions": [
+    "Let the SAC twenty-world reference complete and inspect its automatically generated paired classical comparison.",
+    "Keep both registered PPO/MAPPO runs on their million-live-transition budgets; audit and evaluate the final checkpoints.",
+    "Do not edit the frozen training/evaluation sources, SAC candidate, or active legacy_reference.py/run.py while in use."
+  ],
+  "remaining_scope": "Strong learned performance, three training seeds, guidance/filter ablations, unseen scenarios and authenticated cluster execution remain incomplete.",
+  "resource_limit": "Four training simulator workers plus one SAC evaluation simulator; no additional long simulations.",
+  "cluster": "Bootstrap result pending; no Slurm jobs submitted.",
+  "completion": false
+}

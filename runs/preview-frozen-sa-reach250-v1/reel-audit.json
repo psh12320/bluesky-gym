@@ -1,0 +1,25 @@
+{
+  "episodes": 5,
+  "frame_count": 289,
+  "duration_ms": 38400,
+  "dimensions": [
+    720,
+    828
+  ],
+  "all_nine_metrics_exact_for_every_replay": true,
+  "all_individual_gif_hashes_verified": true,
+  "model_sha256": "f89ea9427a6dc2900286bbe94f39119a150ec2bb10bb589333f8c89c32349f08",
+  "decision_interval_seconds": 10,
+  "reel_sha256": "fe3bdd1c709bc2e297b9d4d4b05fde70cfd69c8acec6210517a4fefa09a3834e",
+  "reel_bytes": 9464364,
+  "scope": "First five development scenarios; frozen SA candidate; not a population estimate or official scoring run",
+  "visual_inspection": {
+    "final_frames": [
+      1,
+      4
+    ],
+    "motion_frame_index": 75,
+    "readable_headers_and_original_renderer": true,
+    "intrusion_exposure_visible_and_labeled": true
+  }
+}

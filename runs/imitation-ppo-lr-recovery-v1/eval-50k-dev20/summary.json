@@ -1,0 +1,77 @@
+{
+  "episodes": 20,
+  "agent_episodes": 200,
+  "metrics": {
+    "waypoint_reached": {
+      "mean": 0.97,
+      "std": 0.1705872210923198
+    },
+    "flight_time": {
+      "mean": 1088.365,
+      "std": 513.8562267551109
+    },
+    "intrusion_events": {
+      "mean": 1.21,
+      "std": 1.2632893571941466
+    },
+    "intrusion_time": {
+      "mean": 115.87,
+      "std": 252.36555450377932
+    },
+    "restricted_area_events": {
+      "mean": 0.025,
+      "std": 0.18540496217739155
+    },
+    "time_in_restricted_area": {
+      "mean": 0.69,
+      "std": 5.5591276294037355
+    },
+    "sector_exit_events": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "time_outside_sector": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "total_reward": {
+      "mean": -73.76213555871412,
+      "std": 241.23971009459655
+    }
+  },
+  "clean_completion_rate": 0.335,
+  "all_aircraft_clean_completion_rate": 0.0,
+  "algorithm": "ppo",
+  "guidance": true,
+  "filter": false,
+  "static_filter": true,
+  "action_reference": "direct",
+  "conflict_features": true,
+  "mask_conflict_features": false,
+  "seed": 20260,
+  "live_transitions": 43616,
+  "padded_transitions": 26454,
+  "world_decisions": 7007,
+  "aircraft_terminated": 194,
+  "aircraft_truncated": 6,
+  "wall_seconds": 382.11093450000044,
+  "actor_inference_uses_joint_context": false,
+  "runtime": {
+    "static_area_filter": true,
+    "traffic_conflict_filter": false,
+    "geo_backend": "bluesky.tools.geo._cgeo",
+    "performance_module": "bluesky.traffic.performance.openap.perfoap",
+    "population": 10,
+    "decision_interval_seconds": 5,
+    "episode_time_limit": 3000,
+    "actor_addition": "time_remaining_fraction",
+    "worker_imported_torch": true,
+    "isolated_simulator_files": true,
+    "training_progress_scale": 0.0,
+    "action_reference": "direct",
+    "conflict_features": true,
+    "mask_conflict_features": false,
+    "traffic_position_scale": 1.0
+  },
+  "csv_sha256": "a249cac7cb554b008ffa070a2b95e786f520e717070c498e4d4906d1c8545211"
+}

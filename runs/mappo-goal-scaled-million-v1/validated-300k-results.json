@@ -1,0 +1,68 @@
+{
+  "checked_at_utc": "2026-09-16T00:50:33.400063+00:00",
+  "checkpoint": {
+    "file": "policy-live-303095.zip",
+    "sha256": "fcd8e521794fe788945e8a20d28c71e6bdf133a70af7c40b207eac215ccd9667",
+    "live_transitions": 303095,
+    "counted_transitions": 378880,
+    "padded_transitions": 75785,
+    "optimizer_steps": 3259,
+    "policy_epochs": 717,
+    "rollouts": 74
+  },
+  "comparison_sha256": "a420848d517a7c5bd33f7edbc478f0929cb098e1492ab454fb64cfb5dd429dbb",
+  "registered_protocol_sha256": "e946da21c07e4a37a170017e5fd53552ec4bf43d864c3cff07036f7a79e9a6a6",
+  "source_equivalence": {
+    "current_ppo_mappo_provenance_identical": true,
+    "frozen_source_files_verified": 89,
+    "reproduced_ppo_checkpoint_sha256": "d8ff08f6439c2c7445b6985895ed946c8f2cc2d87bb1692cd6e7b584b24a61ff",
+    "original_ppo_checkpoint_sha256": "fbbd444727baceee7fb4e1926b48747caf0e672ba68f3d1cb2b905dc3bc5d146",
+    "proof_sha256": "5a86392c97fba3f5b9472055797f2b2c25b3a6692598ed1b18edd812d8cf0e0e"
+  },
+  "means": {
+    "waypoint_reached": 1.0,
+    "flight_time": 869.15,
+    "intrusion_events": 0.8700000000000001,
+    "intrusion_time": 69.66,
+    "restricted_area_events": 0.85,
+    "time_in_restricted_area": 123.13999999999999,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": -90.0426413795158,
+    "clean_completion": 0.21000000000000002,
+    "all_aircraft_clean_completion": 0.0
+  },
+  "learning_changes": {
+    "waypoint_reached": 0.0,
+    "flight_time": 11.949999999999994,
+    "intrusion_events": -0.08000000000000002,
+    "intrusion_time": -4.110000000000001,
+    "restricted_area_events": -5.551115123125783e-18,
+    "time_in_restricted_area": -3.8649999999999975,
+    "sector_exit_events": 0.0,
+    "time_outside_sector": 0.0,
+    "total_reward": 5.806821110332623,
+    "clean_completion": 0.014999999999999996,
+    "all_aircraft_clean_completion": 0.0
+  },
+  "advancement_checks": {
+    "arrival_at_least": true,
+    "arrival_change_at_least": true,
+    "clean_completion_change_at_least": false,
+    "intrusion_time": true,
+    "time_in_restricted_area": true,
+    "time_outside_sector": true
+  },
+  "advancement_screen_passed": false,
+  "training_seed_count": 1,
+  "paired_development_worlds": 20,
+  "unseen_evaluation_used": false,
+  "next_registered_target_live_transitions": 1000000,
+  "full_budget_training_continues": true,
+  "limitations": [
+    "One training seed on paired development scenarios; no general algorithm ranking.",
+    "Joint critic input changes parameter count even with the same hidden widths; this is not a capacity-matched information-only ablation.",
+    "Intervals resample worlds, not independent training seeds. Actual experience counts and partial runs remain explicit.",
+    "The initial navigation prior is controlled by separate initial-policy evaluations."
+  ]
+}
